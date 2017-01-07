@@ -1,0 +1,40 @@
+
+struct appdata {
+    float3 Position         : POSITION;
+};
+
+struct vertout {
+    float4 HPOS : POSITION;
+    float4 TEX0 : TEXCOORD0;
+    float4 COL0 : COLOR0;
+};
+
+
+vertout main(appdata IN,
+	uniform float4x4 WorldViewProj,
+  uniform float4x4 World,
+  uniform float4x4 TexTransform,
+  uniform float4 AmbientColor)
+{
+	vertout O;
+
+  //build float4
+  float4 tempPos;
+
+  tempPos.xyz = IN.Position.xyz;
+  tempPos.w   = 1.0;
+
+  float4 worldPos;
+
+  // transform into homogeneous-clip space
+  worldPos         = mul(World,         tempPos);
+
+	O.HPOS         = mul(WorldViewProj, tempPos);
+
+	O.TEX0         = mul(TexTransform,  worldPos);
+
+  O.COL0         = AmbientColor;
+
+	return O;
+}
+

@@ -4,4 +4,5 @@
 *.mp3
 *.bik
 *.pak
+*.adb
 ./LaunchPad.libs/*

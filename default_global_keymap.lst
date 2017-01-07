@@ -1,0 +1,47 @@
+# Chat Specific Commands
+#-------------------------------------------
+km_addbinding "Enter" 		"Open Chat"
+km_addbinding "/" 		"Open Chat Slash"
+km_addbinding "Num Pad /" 	"Open Chat Slash"
+km_addbinding "Backspace" 	"Open Chat Reply"
+km_addbinding "page up"   	"Chat Window PgUp"
+km_addbinding "page down" 	"Chat Window PgDn"
+km_addbinding "shift + page up"   "Status Window PgUp"
+km_addbinding "shift + page down" "Status Window PgDn"
+
+
+# Squad Controls
+#----------------------------
+km_addbinding "Alt"  "Toggle Squad List"
+km_addbinding "Alt + 1" "Squad Msg 1"
+km_addbinding "Alt + 2" "Squad Msg 2"
+km_addbinding "Alt + 3" "Squad Msg 3"
+km_addbinding "Alt + 4" "Squad Msg 4"
+km_addbinding "Alt + 5" "Squad Msg 5"
+km_addbinding "Alt + 6" "Squad Msg 6"
+km_addbinding "Alt + 7" "Squad Msg 7"
+km_addbinding "Alt + 8" "Squad Msg 8"
+km_addbinding "Alt + 9" "Squad Msg 9"
+km_addbinding "Alt + 0" "Squad Msg 10"
+
+
+
+# Bring up overhead map
+#-------------------------------------------
+km_addbinding "M" "Toggle Overhead Map"
+
+
+# Voice Macros
+#-------------------------------------------
+km_addbinding "V" "Open Voice Macros"
+
+
+# Misc Controls
+#----------------------------
+
+km_addbinding "Escape" "Clear HUD"
+km_addbinding "=" "Screenshot"
+km_addbinding "H" "Toggle Help Page"
+
+
+

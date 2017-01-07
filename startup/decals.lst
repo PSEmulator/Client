@@ -1,0 +1,1449 @@
+### Conditional surface properties are listed below:
+
+## TERRAIN
+## BUILDING
+## TERMINAL
+## DOOR
+## GRATE
+## PANEL
+## FLOOR
+## WALL
+## GLASS
+## BRIDGE
+## OBJECT
+## EFFECT
+## SHIFTER
+## SKY
+## SOLDIER
+## VEHICLE
+## TREE
+## LEAVES
+## ROCK
+## WATER
+## UI
+## DETAIL
+## DUV
+## CUBEMAP
+## GROUNDCOVER
+## WARPGATE
+## WEAPON
+## SIGN
+## DECAL
+## SHADOW
+## BUMP
+## METAL
+## CONCRETE
+## WHEEL
+## NO_DECAL
+## GENERATOR
+## DIRT
+## GRASS
+## LAVA
+## SAND
+## SNOW
+##############################################
+
+## Standard bullet impact
+decal_begin     decal_bullethole
+
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+decal_exclude   soldier
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      2
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  none
+decal_include   door
+decal_effect    impact_doorbullet
+
+decal_material  none
+decal_include   leaves
+decal_effect    impact_leavebullet
+
+decal_material  decal_glassbreaka
+decal_include   glass
+decal_size      0.20:0.05
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     D0FFFFFF
+decal_effect    impact_glassbullet
+
+decal_material  decal_treebullet
+decal_include   tree
+decal_size      0.50:0.1<0.4:0.6>
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     80FFFFFF
+decal_effect    impact_treebullet
+
+decal_material  decal_dirtbullet
+decal_include   terrain dirt grass lava sand
+decal_size      0.80:0.2<0.4:0.9>
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     80FFFFFF
+decal_effect    impact_dirtbullet
+
+decal_material  decal_dirtbullet
+decal_include   snow
+decal_size      0.80:0.2<0.4:0.9>
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     80FFFFFF
+decal_effect    impact_snowbullet
+
+decal_material  decal_bridgebullet
+decal_include   bridge
+decal_size      0.50:0.1<0.4:0.6>
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     80FFFFFF
+decal_effect    impact_rockbullet
+
+decal_material  decal_concretebullet
+decal_include   concrete rock
+decal_size      0.50:0.1<0.4:0.6>
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     FFFFFFFF
+decal_effect    impact_rockbullet
+
+decal_material  decal_metalbullet
+decal_include   metal vehicle floor
+decal_size      0.20:0.05
+decal_cell      4
+###decal_random_orientation
+decal_spacing   0.1
+decal_range     40
+decal_color     A0FFFFFF
+decal_effect    impact_metalbullet
+
+decal_material  decal_terminalbullet
+decal_include   terminal
+decal_keep
+decal_size      0.40:0.1
+decal_cell      4
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     FFFFFFFF
+decal_effect    impact_terminalbullet
+
+decal_material  decal_generatorbullet
+decal_include   generator
+decal_size      1.00:0.2
+decal_cell      4
+decal_random_orientation
+decal_spacing   1
+decal_range     40
+decal_color     FFFFFFFF
+decal_effect    impact_generatorbullet
+
+decal_material  decal_bullethole
+decal_cell      4
+decal_size      0.13:0.04<0.09:0.15>
+decal_random_orientation
+decal_spacing   0.25
+decal_range     40
+decal_color     A0FFFFFF
+decal_effect    impact_bullethole
+
+decal_end
+
+##############################################
+decal_begin     decal_black_smear
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_size      0.3:0.1<0.2:0.4>
+decal_random_orientation
+decal_spacing   0.2
+decal_range     30
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_bloody
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_bloody
+decal_size      4
+decal_random_orientation
+decal_spacing   4
+decal_range     10
+decal_effect    impact_bloody
+
+decal_end
+
+##############################################
+decal_begin     decal_scorch1
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_size      1
+decal_random_orientation
+decal_spacing   1.5
+decal_range     40
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_skull
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_skull
+decal_size      1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     40
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_sun
+
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_sun
+decal_include   door leaves
+decal_size      2.5:0.2
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.2
+decal_color     FF28EEF9
+
+decal_material  decal_sun
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    decal_black_smear
+
+decal_end
+
+##############################################
+decal_begin     decal_beamer_hit_effect
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_sun
+decal_include   terrain dirt grass lava sand
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_dirtbullet_energy
+
+decal_material  decal_sun
+decal_include   snow
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_snowbullet_energy
+
+decal_material  decal_sun
+decal_include   concrete rock bridge
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_rockbullet_energy
+
+decal_material  decal_sun
+decal_include   tree
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_treebullet_energy
+
+decal_material  decal_sun
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+
+decal_end
+
+##############################################
+decal_begin     decal_beamer_hit_effect2
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_sun
+decal_include   terrain dirt grass lava sand
+decal_size      1.8:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.0
+decal_color     FFE432B4
+decal_effect    impact_dirtbullet_energy
+
+decal_material  decal_sun
+decal_include   snow
+decal_size      1.8:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.0
+decal_color     FFE432B4
+decal_effect    impact_snowbullet_energy
+
+decal_material  decal_sun
+decal_include   concrete rock bridge
+decal_size      1.8:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.0
+decal_color     FFE432B4
+decal_effect    impact_rockbullet_energy
+
+decal_material  decal_sun
+decal_include   tree
+decal_size      1.8:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.0
+decal_color     FFE432B4
+decal_effect    impact_treebullet_energy
+
+decal_material  decal_sun
+decal_size      1.8:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      1.0
+decal_color     FFE432B4
+
+decal_end
+
+##############################################
+decal_begin     decal_energy_big
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_sun
+decal_include   terrain dirt grass lava sand
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FFE432B4
+decal_effect    impact_dirt_energy_big
+
+decal_material  decal_sun
+decal_include   snow
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FFE432B4
+decal_effect    impact_snow_energy_big
+
+decal_material  decal_sun
+decal_include   concrete rock bridge
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FFE432B4
+decal_effect    impact_rock_energy_big
+
+decal_material  decal_sun
+decal_include   tree
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FFE432B4
+decal_effect    impact_tree_energy_big
+
+decal_material  decal_sun
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FFE432B4
+decal_effect    scorch
+
+decal_end
+
+##############################################
+decal_begin     decal_burster_detonate
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_end
+
+##############################################
+decal_begin     decal_heavy_impact
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_include   terrain dirt grass lava sand
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_dirt_big
+
+decal_material  decal_scorch1
+decal_include   snow
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_snow_big
+
+decal_material  decal_scorch1
+decal_include   rock concrete bridge
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_rock_big
+
+decal_material  decal_scorch1
+decal_include   snow
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_snow_big
+
+decal_material  decal_scorch1
+decal_include   tree
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_tree_big
+
+decal_material  none
+decal_include   water
+decal_effect    impact_water_big
+
+decal_material  decal_scorch1
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_ef_heavy_impact
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_knife_hit_effect
+
+decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  none
+decal_include   bridge concrete rock
+decal_effect    impact_knife_concrete
+
+decal_material  none
+decal_include   tree
+decal_effect    impact_knife_wood
+
+decal_material  none
+decal_include   glass
+decal_effect    impact_knife_armor
+
+decal_material  none
+decal_include   building default door floor generator grate metal panel terminal vehicle wall wheel
+decal_effect    impact_knife_metal
+
+decal_material  none
+
+decal_end
+
+##############################################
+decal_begin     decal_chainblade
+
+decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  none
+decal_include   bridge concrete rock
+decal_effect    impact_chainblade_concrete
+
+decal_material  none
+decal_include   tree
+decal_effect    impact_chainblade_wood
+
+decal_material  none
+decal_include   glass
+decal_effect    impact_chainblade_armor
+
+decal_material  none
+decal_include   building default door floor generator grate metal panel terminal vehicle wall wheel
+decal_effect    impact_chainblade_metal
+
+decal_material  none
+
+decal_end
+
+##############################################
+decal_begin     decal_magcutter
+
+decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  none
+decal_include   bridge concrete rock
+decal_effect    impact_magcutter_concrete
+
+decal_material  none
+decal_include   tree
+decal_effect    impact_magcutter_wood
+
+decal_material  none
+decal_include   glass
+decal_effect    impact_magcutter_armor
+
+decal_material  none
+decal_include   building default door floor generator grate metal panel terminal vehicle wall wheel
+decal_effect    impact_magcutter_metal
+
+decal_material  none
+
+decal_end
+
+##############################################
+decal_begin     decal_forceblade
+
+decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  none
+decal_include   bridge concrete rock
+decal_effect    impact_forceblade_concrete
+
+decal_material  none
+decal_include   tree
+decal_effect    impact_forceblade_wood
+
+decal_material  none
+decal_include   glass
+decal_effect    impact_forceblade_armor
+
+decal_material  none
+decal_include   building default door floor generator grate metal panel terminal vehicle wall wheel
+decal_effect    impact_forceblade_metal
+
+decal_material  none
+
+decal_end
+
+##############################################
+decal_begin     decal_lancer_hit_effect
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_sun
+decal_include   terrain dirt grass lava sand
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_dirtbullet_energy
+
+decal_material  decal_sun
+decal_include   snow
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_snowbullet_energy
+
+decal_material  decal_sun
+decal_include   concrete rock bridge
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_rockbullet_energy
+
+decal_material  decal_sun
+decal_include   tree
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    impact_treebullet_energy
+
+decal_material  decal_sun
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.8
+decal_color     FF28EEF9
+decal_effect    decal_black_smear
+
+decal_end
+
+##############################################
+decal_begin     decal_medium_impact
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch1
+decal_size      3.5:0.1
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+
+decal_end
+
+##############################################
+decal_begin     decal_yellow_glow
+
+decal_material  decal_sun
+decal_size      2.5:0.2
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      0.1
+decal_color     FFFFFF00
+
+decal_end
+
+##############################################
+decal_begin     decal_vehicle_explosion
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_scorch2
+decal_size      4
+decal_cell      4
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_end
+
+##############################################
+decal_begin     decal_lasher_hit_effect
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome
+decal_framerate 90
+decal_size      10
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_material  decal_lasher_hit
+decal_include   terrain dirt grass lava sand
+decal_framerate 120
+decal_size      12
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FF28FFF7
+decal_effect    impact_dirt_energy_big
+
+decal_material  decal_lasher_hit
+decal_include   snow
+decal_framerate 120
+decal_size      12
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FF28FFF7
+decal_effect    impact_snow_energy_big
+
+decal_material  decal_lasher_hit
+decal_include   concrete rock bridge
+decal_framerate 120
+decal_size      12
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FF28FFF7
+decal_effect    impact_rock_energy_big
+
+decal_material  decal_lasher_hit
+decal_include   tree
+decal_framerate 120
+decal_size      12
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FF28FFF7
+decal_effect    impact_tree_energy_big
+
+decal_material  decal_lasher_hit
+decal_framerate 120
+decal_size      12
+decal_random_orientation
+decal_spacing   3.5
+decal_range     200
+decal_fade      0.9
+decal_color     FF28FFF7
+decal_effect    scorch
+
+decal_end
+
+##############################################
+
+##############################################
+decal_begin     decal_grenade_bounce
+
+decal_exclude   leaves
+
+decal_include   terrain dirt grass lava sand snow
+decal_material  none
+decal_effect    grenade_bounce_dirt
+
+decal_material  none
+decal_effect    grenade_bounce_rock
+
+decal_end
+
+### Playback an animated texture on a decal, and freeze on the last frame of the animation
+decal_begin     decal_water_ripple_freeze
+
+decal_material  decal_water_ripple
+decal_freeze
+decal_framerate 60
+decal_size      2.5:0.2
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_end
+
+
+### Playback an animated texture on a decal, and freeze on the last frame of the animation
+
+
+### Standard pass through decal for an avatar passing through a warpgate dome
+decal_begin     decal_warpgate_pass
+
+decal_material  decal_warpgate_pass
+decal_normal_only
+decal_normal_only
+decal_framerate 60
+decal_size      6
+decal_random_orientation
+decal_spacing   0.05
+decal_range     200
+decal_fade      1
+
+decal_end
+
+### Pass through decal for a very large object passing through a warpgate dome
+decal_begin     decal_warpgate_pass_large
+
+decal_material  decal_warpgate_pass
+decal_normal_only
+decal_framerate 60
+decal_size      15
+decal_random_orientation
+decal_spacing   0.05
+decal_range     200
+decal_fade      1
+
+decal_end
+
+
+## Ground effect decal as an avatar walks through a warpgate dome
+decal_begin     decal_warpgate_ground
+
+decal_material  decal_warpgate_pass
+decal_normal_only
+decal_framerate 60
+decal_size      6
+decal_random_orientation
+decal_spacing   0.05
+decal_range     200
+decal_fade      1
+
+decal_end
+
+## Ground effect decal when a large object passses through a warpgate dome
+decal_begin     decal_warpgate_ground_large
+
+decal_material  decal_warpgate_pass
+decal_normal_only
+decal_framerate 60
+decal_size      15
+decal_random_orientation
+decal_spacing   0.05
+decal_range     200
+decal_fade      1
+
+decal_end
+
+## Ground effect decal as an avatar walks through a warpgate dome
+decal_begin     decal_trheavy_anchor
+
+decal_exclude   leaves no_decals soldier tree
+
+decal_material  none
+decal_include   terrain dirt grass lava sand
+decal_effect    trhev_anchor_dirt
+
+decal_material  none
+decal_include   snow
+decal_effect    trhev_anchor_snow
+
+decal_material  none
+decal_include   floor building grate
+decal_effect    trhev_anchor_metal
+
+decal_material  none
+decal_include   rock bridge concrete
+decal_effect    trhev_anchor_rock
+
+decal_material  none
+decal_include   water
+decal_effect    trhev_anchor_water
+
+decal_material  none
+
+decal_end
+
+
+##############################################
+decal_begin     decal_lava_splash
+
+decal_material  decal_sun
+decal_size      8.0:0.0
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_fade      2.0
+decal_color     FFFFC000
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bailout_splash_glow
+
+decal_material  decal_bailout_glow
+decal_normal_only
+decal_size      15
+decal_spacing   0.5
+decal_fade      1.0
+decal_range     200
+decal_color     AF00BFBF
+
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bailout_splash_ripple
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_framerate 60
+decal_size      20
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+
+decal_end
+
+
+##############################################
+decal_begin     decal_waypoint_nc
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      50
+decal_range     20000
+decal_color     AF0000A0
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_waypoint_tr
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      50
+decal_range     20000
+decal_color     AF800000
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_waypoint_vs
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      50
+decal_range     20000
+decal_color     AF4B0096
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deployable_nc
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      3
+decal_range     25
+decal_color     AF0000A0
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deployable_tr
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      3
+decal_range     25
+decal_color     AFBE0000
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deployable_vs
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      3
+decal_range     25
+decal_color     AF4B0096
+decal_infinite
+
+decal_end
+
+##############################################
+decal_begin     decal_deploy_success
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      2
+decal_range     20
+decal_color     AF00FF00
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deploy_failure
+
+decal_material  decal_waypoint
+decal_normal_only
+decal_size      2
+decal_range     20
+decal_color     AFFF0000
+decal_infinite
+
+decal_end
+
+##############################################
+decal_begin     decal_circle
+
+decal_material  decal_circle
+decal_normal_only
+decal_size      2
+decal_range     20
+decal_color     AFFF0000
+decal_infinite
+
+decal_end
+
+##############################################
+decal_begin     decal_underwater
+
+decal_material  decal_sun
+decal_size      8.0:0.0
+decal_spacing   0.5
+decal_range     50
+decal_fade      2.0
+decal_color     FF404040
+decal_effect    ef_water_explosion
+
+decal_end
+
+
+##############################################
+decal_begin     decal_footprint
+
+decal_material  ef_soldierfootprint
+decal_size      0.5
+decal_spacing   0.1
+decal_range     50
+decal_fade      2.0
+
+decal_end
+
+
+##############################################
+decal_begin     decal_em_yellow
+
+decal_material  decal_em_yellow
+decal_normal_only
+decal_size      20
+decal_range     10
+decal_color     FFE6D719
+decal_infinite
+
+decal_end
+
+##############################################
+decal_begin     decal_em_red
+
+decal_material  decal_em_red
+decal_normal_only
+decal_size      20
+decal_range     10
+decal_color     FFE61919
+decal_infinite
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_nc
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      60:10.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AF0000A0 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_tr
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      60:10.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AFBE0000 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_vs
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      60:10.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AF4B0096 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_lrg_nc
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      120:30.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AF0000A0 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_lrg_tr
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      120:30.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AFBE0000 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_lrg_vs
+
+decal_material  decal_bluedeath
+decal_normal_only
+decal_spacing   15
+decal_framerate 30
+decal_size      120:30.0
+decal_random_orientation
+decal_range     500
+decal_fade      1
+decal_color     AF4B0096 FFFFFFFF
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_exp_small
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_framerate 90
+decal_size      150
+decal_random_orientation
+decal_range     500
+
+decal_end
+
+
+##############################################
+decal_begin     decal_bluedeath_exp_lrg
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_framerate 90
+decal_size      300
+decal_random_orientation
+decal_range     500
+
+decal_end
+
+
+##############################################

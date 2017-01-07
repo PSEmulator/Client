@@ -1,0 +1,6 @@
+#include "common.cg"
+
+float4 main(vertout IN, uniform sampler tex0) : COLOR
+{
+    return IN.COL0*tex2D(tex0, IN.TEX0);
+}

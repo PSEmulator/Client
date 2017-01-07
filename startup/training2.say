@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 2
+# Interaction
+#=======================================================
+
+$begin OfflineTrainingMission2
+	$levelup
+	$quit
+$end

@@ -1,0 +1,70 @@
+#tod_begin
+
+##op_cycle
+
+tod_time op_atmosphere 5am 0.0
+tod_time op_atmosphere 11am 0.0
+tod_time op_atmosphere 3pm 0.0
+tod_time op_atmosphere 11pm 0.0
+tod_end
+
+##desert_cycle
+
+tod_time desert_morn 5am 0.0
+tod_time desert_day 8am 0.0
+tod_time desert_even 6pm 0.0
+tod_time desert_night 9pm 0.0
+tod_end
+
+##artic_cycle
+
+tod_time artic_morn 5am 0.000000
+tod_time artic_day 11am 0.000000
+tod_time artic_night 6pm 0.000000
+tod_end
+
+##map07cycle
+
+tod_time map07day 6am 0.0
+tod_time map07night 8pm 0.0
+tod_time map07night 2am 0.0
+tod_end
+
+##VRshoot_cycle
+
+tod_time VRshootingLight 5am 0.0
+tod_time VRshootingLightB 7am 0.0
+tod_time VRshootingLight 10am 0.0
+tod_time VRshootingLightB 12pm 0.0
+tod_time VRshootingLight 2pm 0.0
+tod_time VRshootingLightB 5pm 0.0
+tod_time VRshootingLight 12am 0.0
+tod_time VRshootingLightB 3am 0.0
+tod_end
+
+##map02
+
+tod_time artic_day 5am 0.0
+tod_end
+
+##map01
+
+tod_time sunrise 5am 0.0
+tod_time daylight 7am 0.0
+tod_time daylight 12pm 0.0
+tod_time daylight 4pm 0.0
+tod_time sunset 8pm 0.0
+tod_time moonlight 10pm 0.0
+tod_end
+
+##vr_training
+
+tod_time vr_training 5am 0.0
+tod_time vr_training 6am 0.0
+tod_time vr_training 7am 0.0
+tod_time vr_training 8am 0.0
+tod_time vr_training 9am 0.0
+tod_time vr_training 10am 0.0
+tod_time vr_training 11am 0.0
+tod_time vr_training 12pm 0.0
+tod_end

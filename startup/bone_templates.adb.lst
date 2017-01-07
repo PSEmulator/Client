@@ -1,0 +1,213 @@
+#btc_begin
+
+##ass_on_fire
+
+btc_bone bip01_head 0.6
+btc_bone bip01_neck 1.0
+btc_bone bip01_r_clavicle 1.0
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_bone bip01_l_clavicle 1.0
+btc_bone bip01_l_upperarm 1.0
+btc_bone bip01_l_forearm 1.0
+btc_bone bip01_l_hand 1.0
+btc_bone bip01_l_finger2 1.0
+btc_bone bip01_l_finger21 1.0
+btc_bone bip01_l_finger1 1.0
+btc_bone bip01_l_finger11 1.0
+btc_bone bip01_l_finger0 1.0
+btc_bone bip01_l_finger01 1.0
+btc_bone bip01_spine1 1.0
+btc_bone hp_shoulder_left 1.0
+btc_bone hp_shoulder_right 1.0
+btc_end
+
+##full_torso
+
+btc_bone bip01_head 0.6
+btc_bone bip01_neck 1.0
+btc_bone bip01_r_clavicle 1.0
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_bone bip01_l_clavicle 1.0
+btc_bone bip01_l_upperarm 1.0
+btc_bone bip01_l_forearm 1.0
+btc_bone bip01_l_hand 1.0
+btc_bone bip01_l_finger2 1.0
+btc_bone bip01_l_finger21 1.0
+btc_bone bip01_l_finger1 1.0
+btc_bone bip01_l_finger11 1.0
+btc_bone bip01_l_finger0 1.0
+btc_bone bip01_l_finger01 1.0
+btc_bone bip01_spine 0.01
+btc_bone bip01_spine1 1.0
+btc_bone hp_shoulder_left 1.0
+btc_bone hp_shoulder_right 1.0
+btc_end
+
+##partial
+
+btc_bone Bip01 0.1
+btc_bone bip01_pelvis 0.3
+btc_bone bip01_spine 0.3
+btc_bone bip01_r_thigh 0.3
+btc_bone hp_hip_right 0.3
+btc_bone bip01_r_calf 0.3
+btc_bone bip01_r_foot 0.3
+btc_bone Bip01_R_Toe0 0.3
+btc_bone bip01_l_thigh 0.3
+btc_bone hp_hip_left 0.3
+btc_bone bip01_l_calf 0.3
+btc_bone bip01_l_foot 0.3
+btc_bone Bip01_L_Toe0 0.3
+btc_bone bip01_spine1 0.3
+btc_bone hp_shoulder_left 0.3
+btc_bone hp_shoulder_right 0.3
+btc_bone bip01_neck 0.3
+btc_bone bip01_r_clavicle 0.3
+btc_bone bip01_r_upperarm 0.3
+btc_bone bip01_r_forearm 0.3
+btc_bone bip01_r_hand 0.3
+btc_bone hp_hand_right 0.3
+btc_bone bip01_r_finger2 0.3
+btc_bone bip01_r_finger21 0.3
+btc_bone bip01_r_finger1 0.3
+btc_bone bip01_r_finger11 0.3
+btc_bone bip01_r_finger0 0.3
+btc_bone bip01_r_finger01 0.3
+btc_bone bip01_l_clavicle 0.3
+btc_bone bip01_l_upperarm 0.3
+btc_bone bip01_l_forearm 0.3
+btc_bone bip01_l_hand 0.3
+btc_bone bip01_l_finger2 0.3
+btc_bone bip01_l_finger21 0.3
+btc_bone bip01_l_finger1 0.3
+btc_bone bip01_l_finger11 0.3
+btc_bone bip01_l_finger0 0.3
+btc_bone bip01_l_finger01 0.3
+btc_bone bip01_head 0.1
+btc_end
+
+##my_new_template
+
+btc_bone bip01_neck 0.8
+btc_bone bip01_r_clavicle 0.6
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_bone bip01_l_clavicle 1.0
+btc_bone bip01_l_upperarm 1.0
+btc_bone bip01_l_forearm 1.0
+btc_bone bip01_l_hand 1.0
+btc_bone bip01_l_finger2 1.0
+btc_bone bip01_l_finger21 1.0
+btc_bone bip01_l_finger1 1.0
+btc_bone bip01_l_finger11 1.0
+btc_bone bip01_l_finger0 1.0
+btc_bone bip01_l_finger01 1.0
+btc_bone bip01_spine 0.01
+btc_bone bip01_spine1 0.01
+btc_end
+
+##right_arm
+
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_end
+
+##just_arms
+
+btc_bone bip01_neck 0.8
+btc_bone bip01_r_clavicle 0.6
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_bone bip01_l_clavicle 1.0
+btc_bone bip01_l_upperarm 1.0
+btc_bone bip01_l_forearm 1.0
+btc_bone bip01_l_hand 1.0
+btc_bone bip01_l_finger2 1.0
+btc_bone bip01_l_finger21 1.0
+btc_bone bip01_l_finger1 1.0
+btc_bone bip01_l_finger11 1.0
+btc_bone bip01_l_finger0 1.0
+btc_bone bip01_l_finger01 1.0
+btc_bone bip01_spine 0.01
+btc_bone bip01_spine1 0.01
+btc_end
+
+##fire
+
+btc_bone Bip01 0.0
+btc_bone bip01_pelvis 0.0
+btc_bone bip01_spine 0.0
+btc_bone bip01_r_thigh 0.0
+btc_bone hp_hip_right 0.0
+btc_bone bip01_r_calf 0.0
+btc_bone bip01_r_foot 0.0
+btc_bone Bip01_R_Toe0 0.0
+btc_bone bip01_l_thigh 0.0
+btc_bone hp_hip_left 0.0
+btc_bone bip01_l_calf 0.0
+btc_bone bip01_l_foot 0.0
+btc_bone Bip01_L_Toe0 0.0
+btc_bone bip01_spine1 0.5
+btc_bone hp_shoulder_left 0.0
+btc_bone hp_shoulder_right 0.0
+btc_bone bip01_neck 0.1
+btc_bone bip01_r_clavicle 0.0
+btc_bone bip01_r_upperarm 1.0
+btc_bone bip01_r_forearm 1.0
+btc_bone bip01_r_hand 1.0
+btc_bone hp_hand_right 0.0
+btc_bone bip01_r_finger2 1.0
+btc_bone bip01_r_finger21 1.0
+btc_bone bip01_r_finger1 1.0
+btc_bone bip01_r_finger11 1.0
+btc_bone bip01_r_finger0 1.0
+btc_bone bip01_r_finger01 1.0
+btc_bone bip01_l_clavicle 0.0
+btc_bone bip01_l_upperarm 1.0
+btc_bone bip01_l_forearm 1.0
+btc_bone bip01_l_hand 1.0
+btc_bone bip01_l_finger2 1.0
+btc_bone bip01_l_finger21 1.0
+btc_bone bip01_l_finger1 1.0
+btc_bone bip01_l_finger11 1.0
+btc_bone bip01_l_finger0 1.0
+btc_bone bip01_l_finger01 1.0
+btc_bone bip01_head 0.1
+btc_end

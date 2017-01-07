@@ -1,0 +1,286 @@
+### Defines distribution rules for various types
+
+#############  Earth Type Definitions
+df_begin earth_brush
+df_flora jgrass1                  10
+df_flora jgrass17			    1
+df_flora jgrass18                 1
+df_flora jgrass19                 2
+df_flora jthickgrass              5
+df_flora jgrassy                  1
+df_flora vanu_flowers_1            1
+df_flora vanu_flowers_2            1
+df_flora gc_earthfungis_1         2
+
+df_mesh pleaves01               8
+df_mesh articrock1_256          5
+df_mesh rock_clutter            4
+df_end
+
+
+df_begin earth_grass
+
+df_flora gc_earthfungis_1         1
+df_flora grassswatch              1
+df_flora jgrass1                  1
+df_flora jgrass17                 10
+df_flora jgrass18                 10
+df_flora jgrass19                 1
+df_flora jgrass22                 1
+df_flora vanu_flowers_1            4
+df_flora vanu_flowers_2            3
+df_flora jflowers1                3
+
+df_mesh  earthshrub1              1
+df_mesh  earthshrub2              2
+df_mesh  pleaves01                3
+df_mesh  articrock1_256           2
+df_mesh  rock_clutter             5
+df_end
+
+
+df_begin earth_dirt
+df_flora jgrass22                 10
+df_flora jtwigs1                   1
+df_flora gc_earthfungis_1         1
+df_flora vanu_flowers_1            2
+df_flora vanu_flowers_2            2
+df_flora jflowers1                1
+
+df_mesh  rock_clutter             5
+df_mesh  articrock1_256           5
+df_mesh  pleaves01                1
+df_end
+
+
+df_begin earth_rock
+
+df_flora jgrass22                 10
+df_flora jgrass21                 3
+df_flora jgrass19                 1 
+df_flora jtwigs1                   1
+df_flora jflowers1                 3
+
+df_mesh  rock_clutter             10
+df_mesh  articrock1_256           5
+df_mesh volcanicshruba            2
+df_mesh desertshrubi              1
+df_end
+
+
+df_begin earth_shore
+df_flora jgrass22                 8
+df_flora jgrass21                 3
+df_flora vanu_flowers_1           2
+df_flora vanu_flowers_2           2
+df_flora jflowers1                 1  
+
+df_mesh earthshrubg		    3
+df_mesh rock_clutter		    2
+df_mesh articrock1_256            3
+df_end
+
+df_begin earth_scree
+df_flora jgrass17                 4
+df_flora jgrass18                 4
+df_flora jgrass19                 3
+df_flora jgrass21                 2
+df_end
+
+
+############ Desert Type Definitions
+df_begin desert_scorched
+df_flora jgrass17                 4
+df_flora jgrass18                 4
+df_flora jgrass19                 3
+df_flora jgrass21                 2
+df_end
+
+df_begin desert_brush
+df_flora desertswatch2        8
+df_flora desertswatch         1
+df_flora jdesertswatch        1
+df_flora volcanicgroundcoverb 1
+df_flora volcanicgroundcoverd 1
+df_flora volcanicgroundcoverh 1
+df_flora jtwigs1            2
+
+df_mesh volcanicshruba        1
+df_mesh  desertshrubi         1
+df_mesh  desertshrube         1
+df_mesh  desertshrubg         1
+df_mesh  desertcover          10
+df_end
+
+df_begin desert_grass
+df_flora desertclutterb       1
+df_flora desertdetailcoveri   1
+df_flora desertswatch         10
+df_flora desertswatch2        3
+df_flora jtwigs1             1
+
+df_mesh volcanicshruba        1
+df_mesh  desertshrubi         1
+df_mesh  desertshrubg         1
+df_mesh  desertshrube         1
+df_mesh  desertcover         10
+df_end
+
+df_begin desert_dirt
+df_flora desertdetailcoveri   4
+df_flora desertswatch         2
+df_flora desertswatch2        6
+df_flora jdesertswatch        1
+df_flora jtwigs1             1
+
+df_mesh volcanicshruba        1
+df_mesh desertshrubi          1
+df_mesh desertcover	 	12
+df_end
+
+df_begin desert_shore
+df_flora desertswatch         3
+df_flora desertswatch2        5
+df_flora volcanic_grounddetail_1 1
+df_flora jtwigs1             1
+
+df_mesh volcanicshruba        1
+df_mesh desertcover           8
+df_mesh rock_clutter          3
+df_mesh desertshrubg          1
+df_end
+
+df_begin desert_rock
+df_flora desertclutterb       3
+df_flora jtwigs1             1
+df_flora volcanic_grounddetail_1 1
+
+df_mesh volcanicshruba        1
+df_mesh desertshrubi          1
+df_mesh rock_clutter          4
+df_mesh desertcover           12
+df_end
+
+df_begin desert_scree
+df_flora desertclutterb       5
+df_flora jdesertswatch        1
+df_flora desertswatch2        1
+df_flora jtwigs1              1
+df_flora volcanic_grounddetail_1 1
+
+df_mesh volcanicshruba        1
+df_mesh desertshrubi          1
+df_mesh rock_clutter          4
+df_mesh desertcover           10
+df_end
+
+########## Arctic Type Definitions
+df_begin arctic_scorched
+df_end
+
+df_begin arctic_brush
+df_end
+
+df_begin arctic_grass
+df_end
+
+df_begin arctic_dirt
+df_end
+
+df_begin arctic_rock
+df_mesh articrock1_256          1
+df_end
+
+df_begin arctic_shore
+df_end
+
+df_begin arctic_scree
+df_end
+
+df_begin arctic_ice
+df_end
+
+df_begin arctic_snow
+df_end
+
+########### Volcanic Type Defintions
+df_begin volcanic_scorched
+df_flora volcanicgroundcoverh     6
+df_flora jtwigs1                4 
+df_flora volcanic_grounddetail_1  1
+
+df_mesh volcanicshruba            1
+df_mesh rock_clutter              9 
+df_end
+
+df_begin volcanic_brush
+df_flora jgrass22                 1
+df_flora volcanicgroundcoverf     6
+df_flora volcanicgroundcoverg     4
+df_flora volcanicgroundcoverh     1
+df_flora jflowers1                 1
+
+df_mesh volcanicshruba            3
+df_mesh rock_clutter              3
+df_mesh articrock1_256            2
+
+df_end
+
+df_begin volcanic_grass
+df_flora gc_earthfungis_1         1
+df_flora volcanicgroundcoverd     4
+df_flora jgrass17                 6
+df_flora jgrass18                 1
+df_flora jgrass22                 1
+
+df_mesh volcanicshruba            1
+df_mesh rock_clutter              5
+df_mesh articrock1_256            2
+
+df_end
+
+df_begin volcanic_dirt
+df_flora volcanicgroundcovere     10
+df_flora jdesertwatch             3  
+df_flora volcanicgroundcoverf     2
+df_flora volcanicgroundcoverg     1      
+df_flora volcanicgroundcoverh     1
+df_flora jflowers1                 1
+
+df_mesh volcanicshruba            2
+df_mesh rock_clutter              8
+df_mesh articrock1_256            2
+
+df_end
+
+df_begin volcanic_shore
+df_flora volcanic_grounddetail_1  6
+df_flora volcanicgroundcoverb     1
+df_flora volcanicgroundcoverc     1
+df_flora jflowers1                 1  
+df_flora jgrass22                 4
+df_flora 
+
+df_mesh earthshrubg		    1
+df_mesh rock_clutter		    8
+df_mesh articrock1_256            5
+df_mesh volcanicshruba            1
+
+df_end
+
+df_begin volcanic_rock
+df_flora volcanic_grounddetail_1  7
+df_flora volcanicgroundcoverh     1
+df_flora volcanicgroundcovercb    1
+df_flora jtwigs1                3   
+
+df_mesh volcanicshruba           1
+df_mesh rock_clutter             9
+df_end
+
+df_begin volcanic_scree
+df_end
+
+df_begin volcanic_lava
+df_end
+

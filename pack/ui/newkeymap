@@ -1,0 +1,214 @@
+<Page Name='Keymap' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = true' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='800,600' Size='800,600' Visible='false'>
+<Page Location='1,0' Name='DeleteKeymapping' PackLocation='0.5, 0.5' PackLocationProp='0001/0001,xxxx/xxxx' ScrollExtent='800,600' Size='800,600' Visible='false' visualeditlock='true'>
+<Button LocalText='New Button' Location='311,358' Name='Ok' ScrollExtent='56,32' Size='56,32' Style='/Buttons.OK_Text.style'>New Button</Button>
+<Button LocalText='New Button' Location='415,359' Name='Cancel' ScrollExtent='122,32' Size='122,32' Style='/Buttons.Cancel_Text.style'>New Button</Button>
+<Text Color='#00FF00' Font='DefaultFont' LocalText='[@DeleteKeymappingQuestion]' Location='239,270' Name='DeleteKeymappingText' PackLocation='center,center' PackLocationProp='-161/0001,-030/0001' ScrollExtent='319,23' Size='319,23' TextAlignment='Center'>@DeleteKeymappingQuestion</Text>
+<Text Color='#FF0000' Font='/Fonts.Medium' LocalText='[@DeleteKeymap]' Location='220,166' PackLocation='center,center' PackLocationProp='-180/0001,-134/0001' ScrollExtent='354,30' Size='354,30' TextAlignment='Center'>@DeleteKeymap</Text>
+<Image Location='200,150' ScrollExtent='401,302' Size='401,302' Stretch='false' Style='/Plates.Popup'/>
+</Page>
+<Page Location='1,0' Name='ChangeKeymapping' PackLocation='0.5, 0.5' PackLocationProp='0001/0001,xxxx/xxxx' ScrollExtent='800,600' Size='800,600' Visible='false' visualeditlock='true'>
+<Button LocalText='New Button' Location='337,386' Name='Cancel' ScrollExtent='122,32' Size='122,32' Style='/Buttons.Cancel_Text.style'>New Button</Button>
+<Textbox Cursor=' ' Location='220,277' Name='Textbox' ScrollExtent='358,30' Size='358,30' Style='/ConsoleTextbox.Style'></Textbox>
+<Text Color='#00FF00' Font='DefaultFont' LocalText='[@EnterNewKeyCode]' Location='240,247' PackLocation='center,center' PackLocationProp='-160/0001,-053/0001' ScrollExtent='319,23' Size='319,23' TextAlignment='Center'>@EnterNewKeyCode</Text>
+<Text Color='#FF0000' Font='/Fonts.Medium' LocalText='[@ChangeKeymapping]' Location='220,166' PackLocation='center,center' PackLocationProp='-180/0001,-134/0001' ScrollExtent='354,30' Size='354,30' TextAlignment='Center'>@ChangeKeymapping</Text>
+<Image Location='200,150' ScrollExtent='401,302' Size='401,302' Stretch='false' Style='/Plates.Popup'/>
+</Page>
+<Button LocalText='New Button' Location='648,485' Name='Cancel' ScrollExtent='122,32' Size='122,32' Style='/Buttons.Cancel_Text.style'>New Button</Button>
+<Button LocalText='New Button' Location='681,452' Name='Ok' ScrollExtent='56,32' Size='56,32' Style='/Buttons.OK_Text.style'>New Button</Button>
+<Button Color='#0000FF' LocalText='New Button' LocalTooltip='Load Default Settings' Location='640,537' Name='Default' ScrollExtent='132,32' Size='132,32' Style='/Buttons.Default_Text.style' Tooltip='Load Default Settings'>New Button</Button>
+<Page Location='35,76' Name='SoldierModePage' ScrollExtent='636,395' Size='636,395'>
+<Template Name='CommandListTemplate' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$ActionName$
+\</text\></Template>
+<Template Name='KeyListTemplate1' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key1$
+\</text\></Template>
+<Template Name='KeyListTemplate2' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key2$
+\</text\></Template>
+<Template Name='KeyListTemplate3' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key3$
+\</text\></Template>
+<DataSource Name='SoldierModePageData'>
+<Data actionname='@Forward' color='#ffffff' key1='W' key2='Up Arrow' key3='Num Pad 8' Localactionname='[@Forward]' Name='Forward'/>
+<Data actionname='@Backward' color='#ffffff' key1='S' key2='Down Arrow' key3='Num Pad 2' Localactionname='[@Backward]' Name='Backward'/>
+<Data actionname='@ToggleRunForward' color='#ffffff' key1='Shift + F' key2='Shift + Up Arrow' Localactionname='[@ToggleRunForward]' Name='Toggle Run Forward'/>
+<Data actionname='@ToggleRunBackward' color='#ffffff' key1='Shift + S' key2='Shift + Down Arrow' Localactionname='[@ToggleRunBackward]' Name='Toggle Run Backward'/>
+<Data actionname='@Autorun' color='#ffffff' key1='Q' Localactionname='[@Autorun]' Name='Autorun'/>
+<Data actionname='@StrafeLeft' color='#ffffff' key1='A' Localactionname='[@StrafeLeft]' Name='Strafe Left'/>
+<Data actionname='@StrafeRight' color='#ffffff' key1='D' Localactionname='[@StrafeRight]' Name='Strafe Right'/>
+<Data actionname='@ToggleStrafeLeft' color='#ffffff' key1='Shift + A' Localactionname='[@ToggleStrafeLeft]' Name='Toggle Strafe Left'/>
+<Data actionname='@ToggleStrafeRight' color='#ffffff' key1='Shift + D' Localactionname='[@ToggleStrafeRight]' Name='Toggle Strafe Right'/>
+<Data actionname='@TurnLeft' color='#ffffff' key1='Left Arrow' Localactionname='[@TurnLeft]' Name='Turn Left'/>
+<Data actionname='@TurnRight' color='#ffffff' key1='Right Arrow' Localactionname='[@TurnRight]' Name='Turn Right'/>
+<Data actionname='@Crouch' color='#ffffff' key1='C' key2='Ctrl' Localactionname='[@Crouch]' Name='Crouch'/>
+<Data actionname='@Jump' color='#ffffff' key1='Space' Localactionname='[@Jump]' Name='Jump'/>
+<Data actionname='@WeaponFire' color='#ffffff' key1='Left Mouse Button' Localactionname='[@WeaponFire]' Name='Weapon Fire'/>
+<Data actionname='@ChangeFireMode' color='#ffffff' key1='Right Mouse Button' Localactionname='[@ChangeFireMode]' Name='Change Fire Mode'/>
+<Data actionname='@ToggleInventory' color='#ffffff' key1='I' Localactionname='[@ToggleInventory]' Name='Toggle Inventory'/>
+<Data actionname='@ToggleCharacterPane' color='#ffffff' key1='I' Localactionname='[@ToggleCharacterPane]' Name='Toggle Character Pane'/>
+<Data actionname='@TogglePlayerPane' color='#ffffff' key1='I' Localactionname='[@TogglePlayerPane]' Name='Toggle Player Pane'/>
+<Data actionname='@ToggleJobPane' color='#ffffff' key1='I' Localactionname='[@ToggleJobPane]' Name='Toggle Job Pane'/>
+<Data actionname='@UseItem' color='#ffffff' key1='G' Localactionname='[@UseItem]' Name='Use Item'/>
+<Data actionname='@DropItem' color='#ffffff' key1='F' Localactionname='[@DropItem]' Name='Drop Item'/>
+<Data actionname='@Reload' color='#ffffff' key1='R' Localactionname='[@Reload]' Name='Reload'/>
+<Data actionname='@UseRightBackHolster' color='#ffffff' key1='1' Localactionname='[@UseRightBackHolster]' Name='Use Right Back Holster'/>
+<Data actionname='@UseRightHipHolster' color='#ffffff' key1='2' Localactionname='[@UseRightHipHolster]' Name='Use Right Hip Holster'/>
+<Data actionname='@UseLeftBackHolster' color='#ffffff' key1='3' Localactionname='[@UseLeftBackHolster]' Name='Use Left Back Holster'/>
+<Data actionname='@UseLeftHipHolster' color='#ffffff' key1='4' Localactionname='[@UseLeftHipHolster]' Name='Use Left Hip Holster'/>
+<Data actionname='@RaiseCamera' color='#ffffff' key1='Page Up' key2='Num Pad 9' Localactionname='[@RaiseCamera]' Name='Raise Camera'/>
+<Data actionname='@LowerCamera' color='#ffffff' key1='Page Down' key2='Num Pad 3' Localactionname='[@LowerCamera]' Name='Lower Camera'/>
+<Data actionname='@MoveCameraIn' color='#ffffff' key1='Num Pad +' Localactionname='[@MoveCameraIn]' Name='Move Camera In'/>
+<Data actionname='@MoveCameraOut' color='#ffffff' key1='Num Pad -' Localactionname='[@MoveCameraOut]' Name='Move Camera Out'/>
+<Data actionname='@ToggleThirdPersonCamera' color='#ffffff' key1='X' Localactionname='[@ToggleThirdPersonCamera]' Name='Toggle Third Person Camera'/>
+<Data actionname='@MoveThirdPersonCamera' color='#ffffff' key1='Right Mouse Button' Localactionname='[@MoveThirdPersonCamera]' Name='Move Third Person Camera'/>
+<Data actionname='@OpenChat' color='#ffffff' key1='Enter' Localactionname='[@OpenChat]' Name='Open Chat'/>
+<Data actionname='@OpenChatSlash' color='#ffffff' key1='/' key2='Num Pad /' Localactionname='[@OpenChatSlash]' Name='Open Chat Slash'/>
+<Data actionname='@ChatSize' color='#ffffff' key1=']' Localactionname='[@ChatSize]' Name='Chat Size'/>
+<Data actionname='@Zoom' color='#ffffff' key1='Z' Localactionname='[@Zoom]' Name='Zoom'/>
+<Data actionname='@SmoothZoom' color='#ffffff' key1='O' Localactionname='[@SmoothZoom]' Name='Smooth Zoom'/>
+<Data actionname='@ToggleOverheadMap' color='#ffffff' key1='M' Localactionname='[@ToggleOverheadMap]' Name='Toggle Overhead Map'/>
+<Data actionname='@TogglePerformance' color='#ffffff' key1='P' Localactionname='[@TogglePerformance]' Name='Toggle Performance'/>
+<Data actionname='@EmoteCharge' color='#ffffff' key1='Shift + 6' Localactionname='[@EmoteCharge]' Name='Emote Charge'/>
+<Data actionname='@EmoteHalt' color='#ffffff' key1='Shift + 7' Localactionname='[@EmoteHalt]' Name='Emote Halt'/>
+<Data actionname='@EmoteNod' color='#ffffff' key1='Shift + 8' Localactionname='[@EmoteNod]' Name='Emote Nod'/>
+<Data actionname='@EmoteStinky' color='#ffffff' key1='Shift + 9' Localactionname='[@EmoteStinky]' Name='Emote Stinky'/>
+<Data actionname='@EmoteWave' color='#ffffff' key1='Shift + 0' Localactionname='[@EmoteWave]' Name='Emote Wave'/>
+</DataSource>
+<Listbox DataSource='SoldierModePageData' Location='1,5' Name='CommandList' RowTemplate='CommandListTemplate' ScrollExtent='150,484' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SoldierModePageData' Location='161,5' Name='KeyList1' RowTemplate='KeyListTemplate1' ScrollExtent='150,484' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SoldierModePageData' Location='321,5' Name='KeyList2' RowTemplate='KeyListTemplate2' ScrollExtent='150,484' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SoldierModePageData' Location='481,5' Name='KeyList3' RowTemplate='KeyListTemplate3' ScrollExtent='150,484' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+</Page>
+<Page Location='35,76' Name='VehicleModePage' ScrollExtent='636,395' Size='636,395' Visible='false'>
+<Template Name='CommandListTemplate' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$ActionName$
+\</text\></Template>
+<Template Name='KeyListTemplate1' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key1$
+\</text\></Template>
+<Template Name='KeyListTemplate2' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key2$
+\</text\></Template>
+<Template Name='KeyListTemplate3' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key3$
+\</text\></Template>
+<DataSource Name='VehicleModePageData'>
+<Data actionname='@Forward' color='#ffffff' key1='W' Localactionname='[@Forward]' Name='Forward'/>
+<Data actionname='@Backward' color='#ffffff' key1='S' Localactionname='[@Backward]' Name='Backward'/>
+<Data actionname='@FlightLaunchOrLand' color='#ffffff' key1='L' Localactionname='[@FlightLaunchOrLand]' Name='Flight Launch Or Land'/>
+<Data actionname='@TurnLeft' color='#ffffff' key1='A' key2='Left Arrow' Localactionname='[@TurnLeft]' Name='Turn Left'/>
+<Data actionname='@TurnRight' color='#ffffff' key1='D' key2='Right Arrow' Localactionname='[@TurnRight]' Name='Turn Right'/>
+<Data actionname='@Brake' color='#ffffff' key1='Space' Localactionname='[@Brake]' Name='Brake'/>
+<Data actionname='@Cruise10PercentPower' color='#ffffff' key1='1' key2='Num Pad 1' Localactionname='[@Cruise10PercentPower]' Name='Cruise 10 Percent Power'/>
+<Data actionname='@Cruise20PercentPower' color='#ffffff' key1='2' key2='Num Pad 2' Localactionname='[@Cruise20PercentPower]' Name='Cruise 20 Percent Power'/>
+<Data actionname='@Cruise30PercentPower' color='#ffffff' key1='3' key2='Num Pad 3' Localactionname='[@Cruise30PercentPower]' Name='Cruise 30 Percent Power'/>
+<Data actionname='@Cruise40PercentPower' color='#ffffff' key1='4' key2='Num Pad 4' Localactionname='[@Cruise40PercentPower]' Name='Cruise 40 Percent Power'/>
+<Data actionname='@Cruise50PercentPower' color='#ffffff' key1='5' key2='Num Pad 5' Localactionname='[@Cruise50PercentPower]' Name='Cruise 50 Percent Power'/>
+<Data actionname='@Cruise60PercentPower' color='#ffffff' key1='6' key2='Num Pad 6' Localactionname='[@Cruise60PercentPower]' Name='Cruise 60 Percent Power'/>
+<Data actionname='@Cruise70PercentPower' color='#ffffff' key1='7' key2='Num Pad 7' Localactionname='[@Cruise70PercentPower]' Name='Cruise 70 Percent Power'/>
+<Data actionname='@Cruise80PercentPower' color='#ffffff' key1='8' key2='Num Pad 8' Localactionname='[@Cruise80PercentPower]' Name='Cruise 80 Percent Power'/>
+<Data actionname='@Cruise90PercentPower' color='#ffffff' key1='9' key2='Num Pad 9' Localactionname='[@Cruise90PercentPower]' Name='Cruise 90 Percent Power'/>
+<Data actionname='@Cruise100PercentPower' color='#ffffff' key1='0' key2='Num Pad 0' Localactionname='[@Cruise100PercentPower]' Name='Cruise 100 Percent Power'/>
+<Data actionname='@ResetControls' color='#ffffff' key1='R' Localactionname='[@ResetControls]' Name='Reset Controls'/>
+<Data actionname='@FlightElevate' color='#ffffff' key1='E' Localactionname='[@FlightElevate]' Name='Flight Elevate'/>
+</DataSource>
+<Listbox DataSource='VehicleModePageData' Location='1,5' Name='CommandList' RowTemplate='CommandListTemplate' ScrollExtent='150,395' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='VehicleModePageData' Location='161,5' Name='KeyList1' RowTemplate='KeyListTemplate1' ScrollExtent='150,395' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='VehicleModePageData' Location='321,5' Name='KeyList2' RowTemplate='KeyListTemplate2' ScrollExtent='150,395' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='VehicleModePageData' Location='481,5' Name='KeyList3' RowTemplate='KeyListTemplate3' ScrollExtent='150,395' Size='150,395' Style='/Listboxes.Generic.style'/>
+</Page>
+<Page Location='35,76' Name='SquadModePage' ScrollExtent='636,395' Size='636,395' Visible='false'>
+<Template Name='CommandListTemplate' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$ActionName$
+\</text\></Template>
+<Template Name='KeyListTemplate1' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key1$
+\</text\></Template>
+<Template Name='KeyListTemplate2' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key2$
+\</text\></Template>
+<Template Name='KeyListTemplate3' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key3$
+\</text\></Template>
+<DataSource Name='SquadModePageData'>
+<Data actionname='@ToggleSquadList' color='#ffffff' key1='Alt' Localactionname='[@ToggleSquadList]' Name='Toggle Squad List'/>
+<Data actionname='@SquadMsg1' color='#ffffff' key1='Alt + 1' Localactionname='[@SquadMsg1]' Name='Squad Msg 1'/>
+<Data actionname='@SquadMsg2' color='#ffffff' key1='Alt + 2' Localactionname='[@SquadMsg2]' Name='Squad Msg 2'/>
+<Data actionname='@SquadMsg3' color='#ffffff' key1='Alt + 3' Localactionname='[@SquadMsg3]' Name='Squad Msg 3'/>
+<Data actionname='@SquadMsg4' color='#ffffff' key1='Alt + 4' Localactionname='[@SquadMsg4]' Name='Squad Msg 4'/>
+<Data actionname='@SquadMsg5' color='#ffffff' key1='Alt + 5' Localactionname='[@SquadMsg5]' Name='Squad Msg 5'/>
+<Data actionname='@SquadMsg6' color='#ffffff' key1='Alt + 6' Localactionname='[@SquadMsg6]' Name='Squad Msg 6'/>
+<Data actionname='@SquadMsg7' color='#ffffff' key1='Alt + 7' Localactionname='[@SquadMsg7]' Name='Squad Msg 7'/>
+<Data actionname='@SquadMsg8' color='#ffffff' key1='Alt + 8' Localactionname='[@SquadMsg8]' Name='Squad Msg 8'/>
+<Data actionname='@SquadMsg9' color='#ffffff' key1='Alt + 9' Localactionname='[@SquadMsg9]' Name='Squad Msg 9'/>
+<Data actionname='@SquadMsg10' color='#ffffff' key1='Alt + 0' Localactionname='[@SquadMsg10]' Name='Squad Msg 10'/>
+</DataSource>
+<Listbox DataSource='SquadModePageData' Location='1,5' Name='CommandList' RowTemplate='CommandListTemplate' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SquadModePageData' Location='161,5' Name='KeyList1' RowTemplate='KeyListTemplate1' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SquadModePageData' Location='321,5' Name='KeyList2' RowTemplate='KeyListTemplate2' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='SquadModePageData' Location='481,5' Name='KeyList3' RowTemplate='KeyListTemplate3' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+</Page>
+<Page Location='35,76' Name='TBDModePage' ScrollExtent='636,395' Size='636,395' Visible='false'>
+<Template Name='CommandListTemplate' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$ActionName$
+\</text\></Template>
+<Template Name='KeyListTemplate1' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key1$
+\</text\></Template>
+<Template Name='KeyListTemplate2' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key2$
+\</text\></Template>
+<Template Name='KeyListTemplate3' Size='150,11'>\<text color = \'$color\' font = \'/SmallFont\' size = \'150,10\'\>
+$key3$
+\</text\></Template>
+<DataSource Name='TBDModePageData'>
+<Data actionname='Blah Blah' color='#ffffff' Name='Blah Blah'/>
+<Data actionname='Blah Blah' color='#ffffff' Name='Blah Blah'/>
+</DataSource>
+<Listbox DataSource='TBDModePageData' Location='1,5' Name='CommandList' RowTemplate='CommandListTemplate' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='TBDModePageData' Location='161,5' Name='KeyList1' RowTemplate='KeyListTemplate1' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='TBDModePageData' Location='321,5' Name='KeyList2' RowTemplate='KeyListTemplate2' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='TBDModePageData' Location='481,5' Name='KeyList3' RowTemplate='KeyListTemplate3' ScrollExtent='150,395' SelectedItemIndex='0' Size='150,395' Style='/Listboxes.Generic.style'/>
+</Page>
+<Page Location='28,76' Name='OptionsPage' ScrollExtent='732,450' Size='732,450' Visible='false'>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='17,0' Name='AlwaysRunCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@AlwaysRun</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='17,30' Name='HeadBobEnabledCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@HeadBobEnabled</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='17,60' Name='MouseFreelookCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@MouseFreelook</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='17,90' Name='InvertMouseCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@InvertMouse</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='17,120' Name='UseJoystickCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@UseJoystick</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='17,150' Name='InvertJoystickCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@InvertJoystick</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='337,0' Name='SmoothMouseCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@SmoothMouse</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='337,30' Name='SteerWithMouseCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@SteerWithMouse</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='337,60' Name='ShowEjectedCasingsCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@ShowEjectedCasings</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='337,90' Name='ShowLatencyCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@ShowLatency</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='337,120' Name='EnableStaccatoCheck' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@EnableStaccato</Checkbox>
+<Sliderbar Location='17,246' Name='MouseSensitivitySlider' ScrollExtent='285,25' Size='285,25' Style='/Sliderbars.HNew.Style' UpperLimit='1000' Value='502'/>
+<Text Font='/SmallFont' LocalText='[@Sensitivity]' Location='18,273' Name='MouseSensitivityText' ScrollExtent='100,12' Size='100,10'>@Sensitivity</Text>
+<Sliderbar Location='17,296' Name='MouseSteeringSensitivitySlider' ScrollExtent='285,25' Size='285,25' Style='/Sliderbars.HNew.Style' UpperLimit='1000' Value='500'/>
+<Text Font='/SmallFont' LocalText='[@SteeringSensitivity]' Location='18,325' Name='MouseSteeringSensitivityText' ScrollExtent='100,12' Size='100,10'>@SteeringSensitivity</Text>
+<Sliderbar Location='17,346' Name='MouseSteeringAutoCenterRegionSlider' ScrollExtent='285,25' Size='285,25' Style='/Sliderbars.HNew.Style' UpperLimit='1000' Value='500'/>
+<Text Font='/SmallFont' LocalText='[@SteeringAutoCenterRegion]' Location='18,376' Name='MouseSteeringAutoCenterRegionText' ScrollExtent='200,12' Size='200,10'>@SteeringAutoCenterRegion</Text>
+<Text Color='#00FF00' Font='DefaultFont' LocalText='Joystick Controls' Location='407,200' Name='JoystickControl' ScrollExtent='176,20' Size='176,20' TextAlignment='Center'>Joystick Controls</Text>
+<Sliderbar Location='357,246' Name='JoystickSensitivitySlider' ScrollExtent='285,25' Size='285,25' Style='/Sliderbars.HNew.Style' UpperLimit='1000' Value='744'/>
+<Text Font='/SmallFont' LocalText='Sensitivity' Location='358,273' Name='JoystickSensitivityText' ScrollExtent='100,12' Size='100,10'>Sensitivity</Text>
+<Checkbox BackgroundOpacity='1.000' Location='17,400' Name='ReversePilotChecked' ScrollExtent='320,20' Size='320,20' Style='/Buttons.Checkbox.style'>@ReversePilot</Checkbox>
+</Page>
+<Page BackgroundOpacity='1.000' Location='35,82' Name='BlackFill1' ScrollExtent='150,395' Size='150,395' Visible='false'/>
+<Page BackgroundOpacity='1.000' Location='195,82' Name='BlackFill2' ScrollExtent='150,395' Size='150,395' Visible='false'/>
+<Page BackgroundOpacity='1.000' Location='355,82' Name='BlackFill3' ScrollExtent='150,395' Size='150,395' Visible='false'/>
+<Page BackgroundOpacity='1.000' Location='515,82' Name='BlackFill4' ScrollExtent='150,395' Size='150,395' Visible='false'/>
+<Text Font='DefaultFont' LocalText='Command' Location='61,55' Name='CommandText' ScrollExtent='89,22' Size='89,22'>Command</Text>
+<Text Font='DefaultFont' LocalText='Primary Key' Location='222,55' Name='PrimaryKeyText' ScrollExtent='114,22' Size='114,22'>Primary Key</Text>
+<Text Font='DefaultFont' LocalText='Secondary Key' Location='373,55' Name='SecondaryKeyText' ScrollExtent='133,22' Size='133,22'>Secondary Key</Text>
+<Text Font='DefaultFont' LocalText='Tertiary Key' Location='542,55' Name='TertiaryKeyText' ScrollExtent='113,22' Size='113,22'>Tertiary Key</Text>
+<Button LocalText='[@PlayerMode]' Location='60,18' Name='PlayerModeButton' ScrollExtent='110,32' Size='110,32' Style='/Buttons.Medium'>@PlayerMode</Button>
+<Button Color='#777777' LocalText='[@VehicleMode]' Location='170,18' Name='VehicleModeButton' ScrollExtent='110,32' Size='110,32' Style='/Buttons.Medium'>@VehicleMode</Button>
+<Button Color='#777777' LocalText='[@SquadMode]' Location='280,18' Name='SquadModeButton' ScrollExtent='110,32' Size='110,32' Style='/Buttons.Medium'>@SquadMode</Button>
+<Button Color='#777777' LocalText='[@TBDMode]' Location='390,18' Name='TBDModeButton' ScrollExtent='110,32' Size='110,32' Style='/Buttons.Medium'>@TBDMode</Button>
+<Button Color='#777777' LocalText='[@Options]' Location='510,18' Name='OptionsButton' ScrollExtent='110,32' Size='110,32' Style='/Buttons.Medium'>@Options</Button>
+<Image Name='New Image' ScrollExtent='800,600' Size='800,600' Style='/Plates.Border'/>
+<Text Font='DefaultFont' LocalText='[@Status]' Location='20,510' Name='Status' ScrollExtent='70,25' Size='70,25'>@Status</Text>
+<Text Color='#00FF00' Font='DefaultFont' LocalText='Blah Blah Blah' Location='85,510' Name='StatusText' ScrollExtent='550,25' Size='550,25'>Blah Blah Blah</Text>
+<Text Color='#FF0000' Font='DefaultFont' LocalText='Warning:' Location='85,540' Name='WarningText' ScrollExtent='550,25' Size='550,25'>Warning:</Text>
+</Page>

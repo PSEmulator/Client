@@ -1,0 +1,30 @@
+########################################################
+# Continent Map Script
+########################################################
+
+# Start the event script.
+$begin ContinentMapScript
+	#-----------------------------------
+	$text @betty_map_01
+	$play betty_map_01.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_map_02
+	$play betty_map_02.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_map_03
+	$play betty_map_03.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_map_04
+	$play betty_map_04.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end
+

@@ -1,0 +1,17 @@
+ams
+apc
+droppod
+dropship
+lightgunship
+lightning
+magrider
+manned_turret
+mediumtransport
+mosquito
+prowler
+quadassault
+threemanheavybuggy
+two_man_assault_buggy
+twomanheavybuggy
+twomanhoverbuggy
+vanguard

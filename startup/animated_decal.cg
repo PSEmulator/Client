@@ -1,0 +1,26 @@
+#include "common.cg"
+
+vertout main(appdata IN,
+    	     uniform float4x4 WorldViewProj,
+             uniform float4 AmbientColor,
+             uniform float4 TextureOffset)
+{
+    vertout O;
+
+    //build float4
+    float4 tempPos;
+    tempPos.xyz = IN.Position.xyz;
+    tempPos.w = 1.f;
+
+    // transform into homogeneous-clip space
+    O.HPOS = mul(WorldViewProj, tempPos);
+
+    O.TEX0.x  = (IN.TexCoord0.x * TextureOffset.z ) + TextureOffset.x;
+    O.TEX0.y  = (IN.TexCoord0.y * TextureOffset.w ) + TextureOffset.y;
+
+    O.COL0    = AmbientColor;
+
+    return O;
+}
+
+

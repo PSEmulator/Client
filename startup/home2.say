@@ -1,0 +1,17 @@
+########################################################
+# Terran Sanctuary Script
+########################################################
+
+# Start the event script.
+
+$begin TerranSanctuary
+	#-----------------------------------
+	$text_dlg @betty_sanctuary_tr
+	$play betty_sanctuary.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end
+
+

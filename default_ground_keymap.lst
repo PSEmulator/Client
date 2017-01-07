@@ -1,0 +1,39 @@
+############################################################3
+# GROUND VEHICLE SPECIFIC KEYMAPS
+############################################################3
+km_addbinding "W" "Forward"
+km_addbinding "S" "Backward"
+
+km_addbinding "Left Arrow" "Turn Left"
+km_addbinding "Right Arrow" "Turn Right"
+km_addbinding "A" "Turn Left"
+km_addbinding "D" "Turn Right"
+
+km_addbinding "Space" "Brake"
+
+km_addbinding "1" "Cruise 10 Percent Power"
+km_addbinding "2" "Cruise 20 Percent Power"
+km_addbinding "3" "Cruise 30 Percent Power"
+km_addbinding "4" "Cruise 40 Percent Power"
+km_addbinding "5" "Cruise 50 Percent Power"
+km_addbinding "6" "Cruise 60 Percent Power"
+km_addbinding "7" "Cruise 70 Percent Power"
+km_addbinding "8" "Cruise 80 Percent Power"
+km_addbinding "9" "Cruise 90 Percent Power"
+km_addbinding "0" "Cruise 100 Percent Power"
+km_addbinding "." "Cruise Increment Power"
+km_addbinding "," "Cruise Decrement Power"
+
+km_addbinding "Num Pad 1" "Cruise 10 Percent Power"
+km_addbinding "Num Pad 2" "Cruise 20 Percent Power"
+km_addbinding "Num Pad 3" "Cruise 30 Percent Power"
+km_addbinding "Num Pad 4" "Cruise 40 Percent Power"
+km_addbinding "Num Pad 5" "Cruise 50 Percent Power"
+km_addbinding "Num Pad 6" "Cruise 60 Percent Power"
+km_addbinding "Num Pad 7" "Cruise 70 Percent Power"
+km_addbinding "Num Pad 8" "Cruise 80 Percent Power"
+km_addbinding "Num Pad 9" "Cruise 90 Percent Power"
+km_addbinding "Num Pad 0" "Cruise 100 Percent Power"
+
+km_addbinding "Alt + G" "Bail Vehicle"
+km_addbinding "Alt + R" "Reset Controls"

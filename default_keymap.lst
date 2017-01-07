@@ -1,0 +1,140 @@
+################ SOLDIER KEYMAPPINGS ################
+# Movement Controls
+#----------------------------
+
+km_addbinding "w" "Forward"
+km_addbinding "s" "Backward"
+km_addbinding "num pad 8" Forward
+km_addbinding "num pad 2" Backward
+km_addbinding "up arrow" "Forward"
+km_addbinding "down arrow" "Backward"
+
+km_addbinding "shift" "Walk/Run"
+
+km_addbinding "q" "Autorun"
+
+km_addbinding "a" "Strafe Left"
+km_addbinding "d" "Strafe Right"
+
+km_addbinding "left arrow" "Strafe Left"
+km_addbinding "right arrow" "Strafe Right"
+
+km_addbinding "C" "Toggle Crouch"
+km_addbinding "ctrl" "Crouch"
+
+km_addbinding "space" "Jump"
+
+
+# Weapon Controls
+#----------------------------
+
+km_addbinding 1 "Use Right Hip Holster"
+km_addbinding 2 "Use Right Back Holster"
+km_addbinding 3 "Use Left Hip Holster"
+km_addbinding 4 "Use Left Back Holster"
+km_addbinding 5 "Use Knife Holster"
+
+################ GENERAL KEYMAPPINGS ################
+# Weapon Controls
+#----------------------------
+
+km_addbinding "Left Mouse Button" "Weapon Fire"
+km_addbinding "Right Mouse Button" "Change Fire Mode"
+km_addbinding x "Change Ammunition"
+km_addbinding r "Reload"
+
+# Most Used Controls
+#----------------------------
+
+km_addbinding g "Use Item"
+km_addbinding t "Toggle Third Person Camera"
+
+
+# Inventory Controls
+#----------------------------
+
+km_addbinding i "Toggle Inventory"
+km_addbinding f "Drop Item"
+
+
+# Miscellaneous Controls
+#----------------------------
+
+km_addbinding "Z" "Zoom"
+km_addbinding "SHIFT+Z" "Smooth Zoom"
+
+km_addbinding "]" "Radar Increase"
+km_addbinding "[" "Radar Decrease"
+
+km_addbinding "tab" "Toggle Mouse Look"
+
+km_addbinding "Ctrl+C" "Toggle Chat Pane"
+km_addbinding "O" "Toggle Character Pane"
+km_addbinding "Ctrl+M" "Toggle Management Pane"
+km_addbinding "Ctrl+O" "Toggle Outfit Pane"
+km_addbinding "P" "Toggle Player Pane"
+km_addbinding "Ctrl+R" "Toggle Proximity Map"
+km_addbinding "Ctrl+V" "Toggle Vehicle Pane"
+
+
+km_addbinding "SHIFT+P" "Toggle Help"
+
+km_addbinding "n" "Cycle Character Names"
+km_addbinding "K" "Toggle Stealth Suit"
+
+
+# Shortcut hotbar keys
+#----------------------------
+
+km_addbinding "F1" "Use Quickslot 1"
+km_addbinding "F2" "Use Quickslot 2"
+km_addbinding "F3" "Use Quickslot 3"
+km_addbinding "F4" "Use Quickslot 4"
+km_addbinding "F5" "Use Quickslot 5"
+km_addbinding "F6" "Use Quickslot 6"
+km_addbinding "F7" "Use Quickslot 7"
+km_addbinding "F8" "Use Quickslot 8"
+
+
+# Camera Controls
+#----------------------------
+
+km_addbinding "home" "Raise Camera"
+km_addbinding "end" "Lower Camera"
+km_addbinding "num pad 9" "Raise Camera"
+km_addbinding "num pad 3" "Lower Camera"
+km_addbinding "num pad +" "Move Camera In"
+km_addbinding "num pad -" "Move Camera Out"
+km_addbinding "num pad 4" "Pan Camera Left"
+km_addbinding "num pad 6" "Pan Camera Right"
+
+
+# Emotes
+#------------------------------
+km_addbinding "Shift+6" "Emote Charge"
+km_addbinding "Shift+7" "Emote Halt"
+km_addbinding "Shift+8" "Emote Nod"
+km_addbinding "Shift+9" "Emote Stinky"
+km_addbinding "Shift+0" "Emote Wave"
+
+
+# DEBUG ONLY CONTROLS
+#----------------------------
+
+km_addbinding "Shift+F1" "Show Object Creation Menu"
+km_addbinding "Shift+F2" "Go To Free Camera"
+km_addbinding "Shift+F3" "Show Character Edit Menu"
+km_addbinding "Shift+F4" "Reset"
+km_addbinding "Shift+F5" "Toggle VTune Profiling"
+km_addbinding "Shift+F7" "Show Position"
+km_addbinding "Shift+F8" "Cycle Instance"
+km_addbinding "Shift+F9" "Super Fast"
+km_addbinding "Shift+F10" "Toggle User Interface"
+km_addbinding "Shift+F11" "Show Video Options Menu"
+km_addbinding "B"         "Building Anim Trigger"
+km_addbinding "Shift+B"   "Toggle Secondary Collisions"
+km_addbinding ";" 	  "Debug Forward Droppod Pos"
+km_addbinding "Shift+;"   "Debug Backward Droppod Pos"
+km_addbinding "Home" 	  "Zip Forward"
+km_addbinding "End"       "Zip Reverse"
+km_addbinding "SHIFT + ." "Toggle Performance"

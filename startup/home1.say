@@ -1,0 +1,16 @@
+########################################################
+# New Conglomerate Sanctuary Script
+########################################################
+
+# Start the event script.
+
+$begin NewConglomerateSanctuary
+
+	#-----------------------------------
+	$text_dlg @betty_sanctuary_nc
+	$play betty_sanctuary.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end

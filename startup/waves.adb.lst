@@ -1,0 +1,1251 @@
+#wav_begin
+
+##fp_flechette_fire
+
+wav_file fp_flechette_fire1.wav
+wav_file fp_flechette_fire2.wav
+wav_end
+
+##fp_forceblade_fire
+
+wav_file fp_forceblade_fire2.wav
+wav_file fp_forceblade_fire1.wav
+wav_end
+
+##fp_gauss_fire
+
+wav_file fp_gauss_fire1.wav
+wav_file fp_gauss_fire2.wav
+wav_end
+
+##fp_hunterseeker_fire
+
+wav_file fp_hunterseeker_fire1.wav
+wav_file fp_hunterseeker_fire2.wav
+wav_end
+
+##player_fem_pain
+
+wav_file player_fem_pain_05.wav
+wav_file player_fem_pain_04.wav
+wav_file player_fem_pain_03.wav
+wav_file player_fem_pain_02.wav
+wav_file player_fem_pain_01.wav
+wav_end
+
+##player_fem_vehit
+
+wav_file player_fem_vehit05.wav
+wav_file player_fem_vehit04.wav
+wav_file player_fem_vehit03.wav
+wav_file player_fem_vehit02.wav
+wav_file player_fem_vehit01.wav
+wav_end
+
+##player_male_die
+
+wav_file player_male_die_05.wav
+wav_file player_male_die_04.wav
+wav_file player_male_die_03.wav
+wav_file player_male_die_02.wav
+wav_file player_male_die_01.wav
+wav_end
+
+##player_male_pain
+
+wav_file player_male_pain_05.wav
+wav_file player_male_pain_04.wav
+wav_file player_male_pain_03.wav
+wav_file player_male_pain_02.wav
+wav_file player_male_pain_01.wav
+wav_end
+
+##male_death
+
+wav_file male_death_01.wav
+wav_end
+
+##fp_rocklet_fire
+
+wav_file fp_rocklet_fire1.wav
+wav_file fp_rocklet_fire2.wav
+wav_end
+
+##fp_r_shotgun_fire
+
+wav_file fp_r_shotgun_fire1.wav
+wav_file fp_r_shotgun_fire2.wav
+wav_end
+
+##fp_striker_fire
+
+wav_file fp_striker_fire1.wav
+wav_file fp_striker_fire2.wav
+wav_end
+
+##fp_suppressor_fire
+
+wav_file fp_suppressor_fire1.wav
+wav_file fp_suppressor_fire2.wav
+wav_end
+
+##fp_lancer_fire
+
+wav_file fp_lancer_fire1.wav
+wav_file fp_lancer_fire2.wav
+wav_end
+
+##fp_magcutter_fire
+
+wav_file fp_magcutter_fire2.wav
+wav_file fp_magcutter_fire1.wav
+wav_end
+
+##fp_phoenix_fire
+
+wav_file fp_phoenix_fire1.wav
+wav_file fp_phoenix_fire2.wav
+wav_end
+
+##c4_explode
+
+wav_file c4_explode1.wav
+wav_end
+
+##quad_bounce
+
+wav_file quad_bounce05.wav
+wav_file quad_bounce04.wav
+wav_file quad_bounce03.wav
+wav_file quad_bounce02.wav
+wav_file quad_bounce01.wav
+wav_end
+
+##medical_terminal_activate
+
+wav_file medical_terminal_activate2.wav
+wav_end
+
+##fp_gauss_fire_primary
+
+wav_file fp_gauss_fire_primary_01.wav
+wav_end
+
+##fp_flechette_reload
+
+wav_file fp_flechette_reload2.wav
+wav_end
+
+##fp_flame_spitter_fire_primary_
+
+wav_file fp_flame_spitter_fire_primary_1.wav
+wav_end
+
+##magrider_strafe
+
+wav_file magrider_strafe2.wav
+wav_file magrider_strafe1.wav
+wav_end
+
+##fp_cycler_dryfire
+
+wav_file fp_cycler_dryfire2.wav
+wav_end
+
+##twomanhoverbuggy_collision_roll
+
+wav_file twomanhoverbuggy_collision_roll2.wav
+wav_end
+
+##twomanhoverbuggy_clutch
+
+wav_file twomanhoverbuggy_clutch2.wav
+wav_end
+
+##twomanheavybuggy_collision_roll
+
+wav_file twomanheavybuggy_collision_roll2.wav
+wav_file twomanheavybuggy_collision_roll1.wav
+wav_end
+
+##twomanheavybuggy_clutch
+
+wav_file twomanheavybuggy_clutch2.wav
+wav_end
+
+##threemanheavybuggy_turret_chair_rotate
+
+wav_file threemanheavybuggy_turret_chair_rotate2.wav
+wav_end
+
+##threemanheavybuggy_clutch
+
+wav_file threemanheavybuggy_clutch2.wav
+wav_end
+
+##quadstealth_throttle_low
+
+wav_file quadstealth_throttle_low2.wav
+wav_end
+
+##quadstealth_throttle_idle
+
+wav_file quadstealth_throttle_idle2.wav
+wav_end
+
+##fp_rocklet_reload
+
+wav_file fp_rocklet_reload2.wav
+wav_end
+
+##fp_phoenix_fire_secondary
+
+wav_file fp_phoenix_fire_secondary_01.wav
+wav_end
+
+##fp_phoenix_fire_primary
+
+wav_file fp_phoenix_fire_primary_01.wav
+wav_end
+
+##fp_mini_chaingun_fire_primary
+
+wav_file fp_mini_chaingun_fire_primary_01.wav
+wav_end
+
+##ams_clutch
+
+wav_file ams_clutch2.wav
+wav_end
+
+##fp_isp_equip
+
+wav_file fp_isp_equip2.wav
+wav_end
+
+##fp_isp_holster
+
+wav_file fp_isp_holster2.wav
+wav_end
+
+##apc_clutch
+
+wav_file apc_clutch2.wav
+wav_end
+
+##wardoginfant_attack
+
+wav_file wardoginfant_attack02.wav
+wav_file wardoginfant_attack01.wav
+wav_end
+
+##wardoginfant_death
+
+wav_file wardoginfant_death02.wav
+wav_file wardoginfant_death01.wav
+wav_end
+
+##ncmmed_walkforward_base_concrete
+
+wav_file ncmmed_walkforward_base_concrete_01.wav
+wav_file ncmmed_walkforward_base_concrete_02.wav
+wav_file ncmmed_walkforward_base_concrete_03.wav
+wav_file ncmmed_walkforward_base_concrete_04.wav
+wav_end
+
+##ncmmed_walkforward_base_dirt
+
+wav_file ncmmed_walkforward_base_dirt_01.wav
+wav_file ncmmed_walkforward_base_dirt_02.wav
+wav_file ncmmed_walkforward_base_dirt_03.wav
+wav_file ncmmed_walkforward_base_dirt_04.wav
+wav_end
+
+##ncmlite_runforward_base_dirt
+
+wav_file ncmlite_runforward_base_dirt_01.wav
+wav_file ncmlite_runforward_base_dirt_02.wav
+wav_file ncmlite_runforward_base_dirt_03.wav
+wav_end
+
+##player_fem_die
+
+wav_file player_fem_die_05.wav
+wav_file player_fem_die_04.wav
+wav_file player_fem_die_03.wav
+wav_file player_fem_die_02.wav
+wav_file player_fem_die_01.wav
+wav_end
+
+##female_death
+
+wav_file female_death_01.wav
+wav_end
+
+##player_male_vehit
+
+wav_file player_male_vehit05.wav
+wav_file player_male_vehit04.wav
+wav_file player_male_vehit03.wav
+wav_file player_male_vehit02.wav
+wav_file player_male_vehit01.wav
+wav_end
+
+##two_man_assault_buggy_wheel_high
+
+wav_file two_man_assault_buggy_wheel_high2.wav
+wav_end
+
+##vanguard_turret_rotate
+
+wav_file vanguard_turret_rotate3.wav
+wav_file vanguard_turret_rotate2.wav
+wav_end
+
+##light_walk_dirt
+
+wav_file light_walk_dirt_05.wav
+wav_file light_walk_dirt_04.wav
+wav_file light_walk_dirt_03.wav
+wav_file light_walk_dirt_02.wav
+wav_file light_walk_dirt_01.wav
+wav_end
+
+##ambient_desert_wind
+
+wav_file ambient_desert_wind01.wav
+wav_end
+
+##nchev_jogforward_base_grass
+
+wav_file nchev_jogforward_base_grass_03.wav
+wav_file nchev_jogforward_base_grass_02.wav
+wav_file nchev_jogforward_base_grass_01.wav
+wav_end
+
+##nchev_jogforward_base_dirt
+
+wav_file nchev_jogforward_base_dirt_03.wav
+wav_file nchev_jogforward_base_dirt_02.wav
+wav_file nchev_jogforward_base_dirt_01.wav
+wav_end
+
+##nchev_jogforward_base_concrete
+
+wav_file nchev_jogforward_base_concrete_03.wav
+wav_file nchev_jogforward_base_concrete_02.wav
+wav_file nchev_jogforward_base_concrete_01.wav
+wav_end
+
+##movement_brush
+
+wav_file movement_brush_02.wav
+wav_file movement_brush_01.wav
+wav_end
+
+##medium_walk_dirt
+
+wav_file medium_walk_dirt_04.wav
+wav_file medium_walk_dirt_03.wav
+wav_file medium_walk_dirt_02.wav
+wav_file medium_walk_dirt_01.wav
+wav_end
+
+##medium_run_grass
+
+wav_file medium_run_grass_04.wav
+wav_file medium_run_grass_03.wav
+wav_file medium_run_grass_02.wav
+wav_file medium_run_grass_01.wav
+wav_end
+
+##medium_run_dirt
+
+wav_file medium_run_dirt_04.wav
+wav_file medium_run_dirt_03.wav
+wav_file medium_run_dirt_02.wav
+wav_file medium_run_dirt_01.wav
+wav_end
+
+##light_walk_grass
+
+wav_file light_walk_grass_04.wav
+wav_file light_walk_grass_03.wav
+wav_file light_walk_grass_02.wav
+wav_file light_walk_grass_01.wav
+wav_end
+
+##twomanhoverbuggy_gunnera_rotate
+
+wav_file twomanhoverbuggy_gunnera_rotate2.wav
+wav_end
+
+##interface_pane_open
+
+wav_file interface_pane_open2.wav
+wav_end
+
+##fp_rocklet_fire_primary
+
+wav_file fp_rocklet_fire_primary_01.wav
+wav_end
+
+##fp_repeater_fire
+
+wav_file fp_repeater_fire1.wav
+wav_end
+
+##fp_repeater_dryfire
+
+wav_file fp_repeater_dryfire1.wav
+wav_end
+
+##fp_punisher_reload
+
+wav_file fp_punisher_reload2.wav
+wav_end
+
+##fp_punisher_fire
+
+wav_file fp_punisher_fire2.wav
+wav_file fp_punisher_fire1.wav
+wav_end
+
+##fp_punisher_dryfire
+
+wav_file fp_punisher_dryfire2.wav
+wav_file fp_punisher_dryfire1.wav
+wav_end
+
+##fp_pulsar_fire
+
+wav_file fp_pulsar_fire2.wav
+wav_file fp_pulsar_fire1.wav
+wav_end
+
+##fp_pulsar_dryfire
+
+wav_file fp_pulsar_dryfire1.wav
+wav_end
+
+##fp_phoenix_lock
+
+wav_file fp_phoenix_lock2.wav
+wav_end
+
+##fp_phoenix_dryfire
+
+wav_file fp_phoenix_dryfire3.wav
+wav_file fp_phoenix_dryfire2.wav
+wav_file fp_phoenix_dryfire1.wav
+wav_end
+
+##fp_phalanx_fire
+
+wav_file fp_phalanx_fire1.wav
+wav_end
+
+##fp_mini_chaingun_fire
+
+wav_file fp_mini_chaingun_fire1.wav
+wav_end
+
+##fp_lasher_fire
+
+wav_file fp_lasher_fire1.wav
+wav_end
+
+##fp_lancer_fire_primary
+
+wav_file fp_lancer_fire_primary_01.wav
+wav_end
+
+##fp_isp_fire
+
+wav_file fp_isp_fire1.wav
+wav_end
+
+##fp_ilc9_fire
+
+wav_file fp_ilc9_fire1.wav
+wav_end
+
+##fp_ilc9_dryfire
+
+wav_file fp_ilc9_dryfire1.wav
+wav_end
+
+##fp_flechette_fire_primary
+
+wav_file fp_flechette_fire_primary_01.wav
+wav_end
+
+##fp_flechette_dryfire
+
+wav_file fp_flechette_dryfire2.wav
+wav_end
+
+##fp_cycler_primary_fire
+
+wav_file fp_cycler_primary_fire_01.wav
+wav_end
+
+##fp_bolt_driver_primary_fire
+
+wav_file fp_bolt_driver_primary_fire_01.wav
+wav_end
+
+##fp_beamer_fire
+
+wav_file fp_beamer_fire2.wav
+wav_file fp_beamer_fire1.wav
+wav_end
+
+##fp_beamer_dryfire
+
+wav_file fp_beamer_dryfire1.wav
+wav_end
+
+##fp_75mm_cannon_t_fire
+
+wav_file fp_75mm_cannon_t_fire1.wav
+wav_end
+
+##fp_20mm_cannon_f_fire
+
+wav_file fp_20mm_cannon_f_fire1.wav
+wav_end
+
+##fp_150mm_cannon_t_fire
+
+wav_file fp_150mm_cannon_t_fire1.wav
+wav_end
+
+##fp_105mm_cannon_t_fire
+
+wav_file fp_105mm_cannon_t_fire1.wav
+wav_end
+
+##bullet_nearmiss
+
+wav_file bullet_nearmiss4.wav
+wav_file bullet_nearmiss3.wav
+wav_file bullet_nearmiss2.wav
+wav_file bullet_nearmiss1.wav
+wav_end
+
+##bullet_impact_liquid
+
+wav_file bullet_impact_liquid_03.wav
+wav_file bullet_impact_liquid_02.wav
+wav_file bullet_impact_liquid_01.wav
+wav_end
+
+##bullet_impact_flesh
+
+wav_file bullet_impact_flesh_03.wav
+wav_file bullet_impact_flesh_02.wav
+wav_file bullet_impact_flesh_01.wav
+wav_end
+
+##bullet_energy_impact_liquid
+
+wav_file bullet_energy_impact_liquid_01.wav
+wav_end
+
+##brass_ejection
+
+wav_file brass_ejection2.wav
+wav_end
+
+##spawn
+
+wav_file spawn07.wav
+wav_end
+
+##light_run_grass
+
+wav_file light_run_grass_03.wav
+wav_file light_run_grass_02.wav
+wav_file light_run_grass_01.wav
+wav_end
+
+##light_walk_concrete
+
+wav_file light_walk_concrete_03.wav
+wav_file light_walk_concrete_02.wav
+wav_file light_walk_concrete_01.wav
+wav_end
+
+##light_run_dirt
+
+wav_file light_run_dirt_03.wav
+wav_file light_run_dirt_02.wav
+wav_file light_run_dirt_01.wav
+wav_end
+
+##medium_walk_grass
+
+wav_file medium_walk_grass_03.wav
+wav_file medium_walk_grass_02.wav
+wav_file medium_walk_grass_01.wav
+wav_end
+
+##medium_walk_concrete
+
+wav_file medium_walk_concrete_03.wav
+wav_file medium_walk_concrete_02.wav
+wav_file medium_walk_concrete_01.wav
+wav_end
+
+##medium_run_concrete
+
+wav_file medium_run_concrete_03.wav
+wav_file medium_run_concrete_02.wav
+wav_file medium_run_concrete_01.wav
+wav_end
+
+##heavy_walk_dirt
+
+wav_file heavy_walk_dirt_03.wav
+wav_file heavy_walk_dirt_02.wav
+wav_file heavy_walk_dirt_01.wav
+wav_end
+
+##heavy_walk_grass
+
+wav_file heavy_walk_grass_03.wav
+wav_file heavy_walk_grass_02.wav
+wav_file heavy_walk_grass_01.wav
+wav_end
+
+##heavy_walk_concrete
+
+wav_file heavy_walk_concrete_03.wav
+wav_file heavy_walk_concrete_02.wav
+wav_file heavy_walk_concrete_01.wav
+wav_end
+
+##heavy_run_dirt
+
+wav_file heavy_run_dirt_03.wav
+wav_file heavy_run_dirt_02.wav
+wav_file heavy_run_dirt_01.wav
+wav_end
+
+##heavy_run_grass
+
+wav_file heavy_run_grass_03.wav
+wav_file heavy_run_grass_02.wav
+wav_file heavy_run_grass_01.wav
+wav_end
+
+##heavy_run_concrete
+
+wav_file heavy_run_concrete_03.wav
+wav_file heavy_run_concrete_02.wav
+wav_file heavy_run_concrete_01.wav
+wav_end
+
+##equipment_grenade_jammer_active
+
+wav_file equipment_grenade_jammer_active2.wav
+wav_file equipment_grenade_jammer_active1.wav
+wav_end
+
+##fp_thumper_fire
+
+wav_file fp_thumper_fire1.wav
+wav_end
+
+##fp_suppressor_fire_primary
+
+wav_file fp_suppressor_fire_primary_01.wav
+wav_end
+
+##fp_striker_fire_primary
+
+wav_file fp_striker_fire_primary_01.wav
+wav_end
+
+##fp_r_shotgun_fire_primary
+
+wav_file fp_r_shotgun_fire_primary1.wav
+wav_end
+
+##fp_rotarychaingun_fire
+
+wav_file fp_rotarychaingun_fire1.wav
+wav_end
+
+##light_run_concrete
+
+wav_file light_run_concrete_03.wav
+wav_file light_run_concrete_02.wav
+wav_file light_run_concrete_01.wav
+wav_end
+
+##interface_pane_close
+
+wav_file interface_pane_close2.wav
+wav_end
+
+##explosion_vehicle_small
+
+wav_file explosion_vehicle_small_04.wav
+wav_file explosion_vehicle_small_03.wav
+wav_file explosion_vehicle_small_02.wav
+wav_file explosion_vehicle_small_01.wav
+wav_end
+
+##explosion_vehicle_medium
+
+wav_file explosion_vehicle_medium_03.wav
+wav_file explosion_vehicle_medium_02.wav
+wav_file explosion_vehicle_medium_01.wav
+wav_end
+
+##explosion_vehicle_large
+
+wav_file explosion_vehicle_large_04.wav
+wav_file explosion_vehicle_large_03.wav
+wav_file explosion_vehicle_large_02.wav
+wav_file explosion_vehicle_large_01.wav
+wav_end
+
+##equipment_mine_magnito_explosion
+
+wav_file equipment_mine_magnito_explosion2.wav
+wav_end
+
+##equipment_mine_he_explosion
+
+wav_file equipment_mine_he_explosion2.wav
+wav_end
+
+##implant_personal_shield_depleted
+
+wav_file implant_personal_shield_depleted2.wav
+wav_end
+
+##ambient_waves
+
+wav_file ambient_waves_01.wav
+wav_end
+
+##lightning_turret_rotate
+
+wav_file lightning_turret_rotate2.wav
+wav_end
+
+##mosquito_throttle_low
+
+wav_file mosquito_throttle_low2.wav
+wav_end
+
+##quad_headon
+
+wav_file quad_headon05.wav
+wav_file quad_headon04.wav
+wav_file quad_headon03.wav
+wav_file quad_headon02.wav
+wav_file quad_headon01.wav
+wav_end
+
+##quad_roll
+
+wav_file quad_roll05.wav
+wav_file quad_roll04.wav
+wav_file quad_roll03.wav
+wav_file quad_roll02.wav
+wav_file quad_roll01.wav
+wav_end
+
+##wardoginfant_painmotion
+
+wav_file wardoginfant_painmotion2.wav
+wav_file wardoginfant_painmotion1.wav
+wav_end
+
+##buggy_bounce
+
+wav_file buggy_bounce04.wav
+wav_file buggy_bounce03.wav
+wav_file buggy_bounce02.wav
+wav_file buggy_bounce01.wav
+wav_end
+
+##buggy_headon
+
+wav_file buggy_headon05.wav
+wav_file buggy_headon04.wav
+wav_file buggy_headon03.wav
+wav_file buggy_headon02.wav
+wav_file buggy_headon01.wav
+wav_end
+
+##buggy_roll
+
+wav_file buggy_roll01.wav
+wav_end
+
+##exp_fa
+
+wav_file exp_fa01.wav
+wav_end
+
+##exp_ma
+
+wav_file exp_ma01.wav
+wav_end
+
+##exp_mb
+
+wav_file exp_mb01.wav
+wav_end
+
+##exp_mc
+
+wav_file exp_mc01.wav
+wav_end
+
+##avianinfant_death
+
+wav_file avianinfant_death2.wav
+wav_file avianinfant_death1.wav
+wav_end
+
+##avianinfant_falling
+
+wav_file avianinfant_falling2.wav
+wav_file avianinfant_falling1.wav
+wav_end
+
+##avianinfant_pain
+
+wav_file avianinfant_pain2.wav
+wav_file avianinfant_pain1.wav
+wav_end
+
+##fp_bolt_driver_fire
+
+wav_file fp_bolt_driver_fire1.wav
+wav_file fp_bolt_driver_fire2.wav
+wav_end
+
+##fp_chainblade_fire
+
+wav_file fp_chainblade_fire2.wav
+wav_file fp_chainblade_fire1.wav
+wav_end
+
+##nchev_walkforward_base_dirt
+
+wav_file nchev_walkforward_base_dirt_01.wav
+wav_file nchev_walkforward_base_dirt_02.wav
+wav_file nchev_walkforward_base_dirt_03.wav
+wav_end
+
+##nchev_walkforward_base_grass
+
+wav_file nchev_walkforward_base_grass_01.wav
+wav_file nchev_walkforward_base_grass_02.wav
+wav_file nchev_walkforward_base_grass_03.wav
+wav_end
+
+##ncmlite_runforward_base_concrete
+
+wav_file ncmlite_runforward_base_concrete_01.wav
+wav_file ncmlite_runforward_base_concrete_02.wav
+wav_file ncmlite_runforward_base_concrete_03.wav
+wav_end
+
+##dirt_run
+
+wav_file dirt_run_01.wav
+wav_file dirt_run_02.wav
+wav_file dirt_run_03.wav
+wav_file dirt_run_04.wav
+wav_file dirt_run_05.wav
+wav_file dirt_run_06.wav
+wav_file dirt_run_07.wav
+wav_file dirt_run_08.wav
+wav_end
+
+##dirt_walk
+
+wav_file dirt_walk_01.wav
+wav_file dirt_walk_02.wav
+wav_file dirt_walk_03.wav
+wav_file dirt_walk_04.wav
+wav_end
+
+##twomanassaultbuggy_wheel_high
+
+wav_file twomanassaultbuggy_wheel_high2.wav
+wav_end
+
+##colt
+
+wav_file colt45.wav
+wav_end
+
+##spatial_rifle_bullet_fire
+
+wav_file spatial_rifle_bullet_fire2.wav
+wav_end
+
+##c4_beep
+
+wav_file c4_beep5.wav
+wav_file c4_beep4.wav
+wav_file c4_beep3.wav
+wav_file c4_beep2.wav
+wav_file c4_beep1.wav
+wav_end
+
+##quadstealth_throttle_high
+
+wav_file quadstealth_throttle_high2.wav
+wav_end
+
+##quadstealth_collision_roll
+
+wav_file quadstealth_collision_roll2.wav
+wav_end
+
+##quadstealth_clutch
+
+wav_file quadstealth_clutch2.wav
+wav_end
+
+##quadassault_turret_pitch
+
+wav_file quadassault_turret_pitch2.wav
+wav_end
+
+##quadassault_collision_roll
+
+wav_file quadassault_collision_roll2.wav
+wav_file quadassault_collision_roll1.wav
+wav_end
+
+##quadassault_clutch
+
+wav_file quadassault_clutch2.wav
+wav_file quadassault_clutch1.wav
+wav_end
+
+##prowler_collission_roll
+
+wav_file prowler_collission_roll2.wav
+wav_end
+
+##magrider_turret_rotate
+
+wav_file magrider_turret_rotate2.wav
+wav_file magrider_turret_rotate1.wav
+wav_end
+
+##lightgunship_take_off
+
+wav_file lightgunship_take_off2.wav
+wav_end
+
+##apc_collision_roll
+
+wav_file apc_collision_roll2.wav
+wav_file apc_collision_roll1.wav
+wav_end
+
+##ams_collision_roll
+
+wav_file ams_collision_roll2.wav
+wav_end
+
+##vehicle_air_crash_diving_small
+
+wav_file vehicle_air_crash_diving_small2.wav
+wav_end
+
+##vehicle_air_crash_diving_med
+
+wav_file vehicle_air_crash_diving_med2.wav
+wav_file vehicle_air_crash_diving_med1.wav
+wav_end
+
+##vehicle_air_crash_diving_large
+
+wav_file vehicle_air_crash_diving_large2.wav
+wav_end
+
+##equipment_grenade_jammer_explosion
+
+wav_file equipment_grenade_jammer_explosion2.wav
+wav_end
+
+##fp_hunterseeker_fire_primary
+
+wav_file fp_hunterseeker_fire_primary_01.wav
+wav_end
+
+##ncmlite_walkforward_base_concrete
+
+wav_file ncmlite_walkforward_base_concrete_01.wav
+wav_file ncmlite_walkforward_base_concrete_02.wav
+wav_file ncmlite_walkforward_base_concrete_03.wav
+wav_end
+
+##ncmlite_walkforward_base_dirt
+
+wav_file ncmlite_walkforward_base_dirt01.wav
+wav_file ncmlite_walkforward_base_dirt02.wav
+wav_file ncmlite_walkforward_base_dirt03.wav
+wav_file ncmlite_walkforward_base_dirt_01.wav
+wav_file ncmlite_walkforward_base_dirt_02.wav
+wav_file ncmlite_walkforward_base_dirt_03.wav
+wav_file ncmlite_walkforward_base_dirt_04.wav
+wav_file ncmlite_walkforward_base_dirt_05.wav
+wav_end
+
+##ncmlite_wlkforward_base_concrete
+
+wav_file ncmlite_wlkforward_base_concrete_01.wav
+wav_file ncmlite_wlkforward_base_concrete_02.wav
+wav_file ncmlite_wlkforward_base_concrete_03.wav
+wav_end
+
+##ncmmed_runforward_base_concrete
+
+wav_file ncmmed_runforward_base_concrete_01.wav
+wav_file ncmmed_runforward_base_concrete_02.wav
+wav_file ncmmed_runforward_base_concrete_03.wav
+wav_file ncmmed_runforward_base_concrete_04.wav
+wav_end
+
+##ncmmed_runforward_base_dirt
+
+wav_file ncmmed_runforward_base_dirt_01.wav
+wav_file ncmmed_runforward_base_dirt_04.wav
+wav_file ncmmed_runforward_base_dirt_02.wav
+wav_file ncmmed_runforward_base_dirt_03.wav
+wav_end
+
+##nchev_runforward_base_concrete
+
+wav_file nchev_runforward_base_concrete_01.wav
+wav_file nchev_runforward_base_concrete_02.wav
+wav_file nchev_runforward_base_concrete_03.wav
+wav_end
+
+##nchev_runforward_base_dirt
+
+wav_file nchev_runforward_base_dirt_01.wav
+wav_file nchev_runforward_base_dirt_02.wav
+wav_file nchev_runforward_base_dirt_03.wav
+wav_end
+
+##nchev_runforward_base_grass
+
+wav_file nchev_runforward_base_grass_01.wav
+wav_file nchev_runforward_base_grass_02.wav
+wav_file nchev_runforward_base_grass_03.wav
+wav_end
+
+##nchev_walkforward_base_concrete
+
+wav_file nchev_walkforward_base_concrete_01.wav
+wav_file nchev_walkforward_base_concrete_02.wav
+wav_file nchev_walkforward_base_concrete_03.wav
+wav_end
+
+##ncmmed_runforward_base_grass
+
+wav_file ncmmed_runforward_base_grass_01.wav
+wav_file ncmmed_runforward_base_grass_02.wav
+wav_file ncmmed_runforward_base_grass_03.wav
+wav_file ncmmed_runforward_base_grass_04.wav
+wav_end
+
+##ncmlite_land_concrete
+
+wav_file ncmlite_land_concrete_01.wav
+wav_end
+
+##ncmmed_walkforward_base_grass
+
+wav_file ncmmed_walkforward_base_grass_01.wav
+wav_end
+
+##ncmlite_walkforward_base_grass
+
+wav_file ncmlite_walkforward_base_grass_01.wav
+wav_file ncmlite_walkforward_base_grass_02.wav
+wav_file ncmlite_walkforward_base_grass_03.wav
+wav_file ncmlite_walkforward_base_grass_04.wav
+wav_end
+
+##ncmlite_runforward_base_grass
+
+wav_file ncmlite_runforward_base_grass_01.wav
+wav_file ncmlite_runforward_base_grass_02.wav
+wav_file ncmlite_runforward_base_grass_03.wav
+wav_end
+
+##ok
+
+wav_file ok_01.wav
+wav_end
+
+##fp_chaingun_fire
+
+wav_file fp_chaingun_fire1.wav
+wav_end
+
+##fp_cycler_fire
+
+wav_file fp_cycler_fire1.wav
+wav_file fp_cycler_fire2.wav
+wav_end
+
+##fp_flame_spitter_fire
+
+wav_file fp_flame_spitter_fire1.wav
+wav_file fp_flame_spitter_fire2.wav
+wav_end
+
+##spread_out
+
+wav_file spread_out_01.wav
+wav_end
+
+##follow_me
+
+wav_file follow_me_01.wav
+wav_end
+
+##cabbage_patch
+
+wav_file cabbage_patch_01.wav
+wav_end
+
+##thumbs_up
+
+wav_file thumbs_up_01.wav
+wav_end
+
+##point
+
+wav_file point_01.wav
+wav_end
+
+##come_here
+
+wav_file come_here_01.wav
+wav_end
+
+##wave
+
+wav_file wave_01.wav
+wav_end
+
+##thumbs_down
+
+wav_file thumbs_down_01.wav
+wav_end
+
+##vs_salute
+
+wav_file vs_salute_01.wav
+wav_end
+
+##nod
+
+wav_file nod_01.wav
+wav_end
+
+##no
+
+wav_file no_01.wav
+wav_end
+
+##fistupyeah
+
+wav_file fistupyeah_01.wav
+wav_end
+
+##dunno
+
+wav_file dunno_01.wav
+wav_end
+
+##cheer
+
+wav_file cheer_01.wav
+wav_end
+
+##charge
+
+wav_file charge_01.wav
+wav_end
+
+##vehicle_collision_small
+
+wav_file vehicle_collision_small02.wav
+wav_file vehicle_collision_small01.wav
+wav_end
+
+##vehicle_collision_medium
+
+wav_file vehicle_collision_medium02.wav
+wav_file vehicle_collision_medium01.wav
+wav_end
+
+##vehicle_collision_large
+
+wav_file vehicle_collision_large02.wav
+wav_file vehicle_collision_large01.wav
+wav_end
+
+##bullet_impact_hard
+
+wav_file bullet_impact_hard_02.wav
+wav_file bullet_impact_hard_01.wav
+wav_end
+
+##fp_striker_explosion
+
+wav_file fp_striker_explosion2.wav
+wav_end
+
+##bullet_energy_impact_shield
+
+wav_file bullet_energy_impact_shield_03.wav
+wav_file bullet_energy_impact_shield_02.wav
+wav_file bullet_energy_impact_shield_01.wav
+wav_end
+
+##bullet_impact_medium
+
+wav_file bullet_impact_medium_02.wav
+wav_file bullet_impact_medium_01.wav
+wav_end
+
+##bullet_impact_wood
+
+wav_file bullet_impact_wood_04.wav
+wav_file bullet_impact_wood_03.wav
+wav_file bullet_impact_wood_02.wav
+wav_file bullet_impact_wood_01.wav
+wav_end
+
+##bullet_impact_soft
+
+wav_file bullet_impact_soft_02.wav
+wav_file bullet_impact_soft_01.wav
+wav_end
+
+##fp_firebird_fire
+
+wav_file fp_firebird_fire_02.wav
+wav_end

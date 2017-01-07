@@ -1,0 +1,49 @@
+
+struct appdata : application2vertex {
+	float3 Position;
+	float3 Normal;
+  float2 TexCoord0;
+};
+
+#pragma bind vpconn.HPosition  = HPOS
+#pragma bind vpconn.TexCoord0  = TEX0
+#pragma bind vpconn.Color      = COL0
+
+struct vpconn : vertex2fragment {
+	float4 HPosition;
+	float4 TexCoord0;
+  float4 Color;
+};
+
+vpconn main(appdata IN,
+	uniform float4x4 WorldViewProj,
+	uniform float3x3 WorldIT,
+	uniform float3x4 World,
+	uniform float3 LightVec,
+  uniform float3 EyePos)
+{
+	vpconn OUT;
+
+	float3 worldNormal = normalize(mul(WorldIT, IN.Normal));
+
+  //build float4
+  float4 tempPos;
+  tempPos.xyz = IN.Position.xyz;
+  tempPos.w   = 1.0;
+
+	//compute worldspace position
+	float3 worldSpacePos = mul(World, tempPos);
+
+  // transform into homogeneous-clip space
+	OUT.HPosition = mul(WorldViewProj, tempPos);
+
+  OUT.TexCoord0.x  = IN.TexCoord0.x;
+  OUT.TexCoord0.y  = IN.TexCoord0.y;
+
+  OUT.Color.x      = 1.0;
+  OUT.Color.y      = 1.0;
+  OUT.Color.z      = 1.0;
+
+	return OUT;
+}
+

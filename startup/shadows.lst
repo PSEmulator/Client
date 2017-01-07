@@ -1,0 +1,704 @@
+coarse tech_plant          tech_plant_crp
+coarse comm_station        comm_station_crp
+coarse comm_station_dsp    comm_station_dsp_crp
+coarse amp_station         amp_station_crp
+coarse cryo_facility       cryo_facility_crp
+coarse mainbase_nc         mainbase_nc_crp
+coarse mainbase_tr         mainbase_tr_crp
+coarse mainbase_vs         mainbase_vs_crp
+coarse orbital_building_nc orbital_building_crp
+coarse orbital_building_tr orbital_building_crp
+coarse orbital_building_vs orbital_building_crp
+coarse tower_a             tower_a_crp
+coarse tower_b             tower_b_crp
+coarse tower_c             tower_c_crp
+coarse warpgate            warpgate_crp
+coarse bunker_lg           bunker_lg_crp
+coarse bunker_sm           bunker_sm_crp
+coarse bunker_gauntlet     bunker_guantlet_crp
+
+coarse rockformationa      rockformationa_crp
+coarse rockformationb      rockformationb_crp
+coarse rockformationc      rockformationc_crp
+coarse rockformationd      rockformationd_crp
+coarse rockformatione      rockformatione_crp
+coarse rockformationf      rockformationf_crp
+coarse rockformationg      rockformationg_crp
+coarse rockformationm      rockformationm_crp
+coarse rockformationn      rockformationn_crp
+coarse rockformationo      rockformationo_crp
+coarse rockformationp      rockformationp_crp
+coarse rockformationq      rockformationq_crp
+coarse rockformationr      rockformationr_crp
+coarse rockformations      rockformations_crp
+coarse rockformationh      rockformationh_crp
+coarse rockformationi      rockformationi_crp
+coarse rockformationj      rockformationj_crp
+coarse rockformationk      rockformationk_crp
+coarse rockformationl      rockformationl_crp
+
+## Vehicle collision reps already handled by the parent
+no_coarse wg_arm_piece1    warpgate_crp
+no_coarse wg_arm_piece2    warpgate_crp
+no_coarse wg_arm_piece3    warpgate_crp
+no_coarse wg_arm_piece4    warpgate_crp
+no_coarse wg_arm_piece5    warpgate_crp
+no_coarse wg_arm_piece6    warpgate_crp
+no_coarse wg_arm_piece7    warpgate_crp
+no_coarse wg_arm_piece8    warpgate_crp
+
+all_coarse bridge_extend   bridge_extend_crp
+all_coarse bridge_mid      bridge_mid_crp
+all_coarse bridge_support_foot bridge_support_foot_crp
+all_coarse bridge_start    bridge_start_crp
+all_coarse bridge_end      bridge_end_crp
+
+coarse articrocka     articrocka_crp
+coarse articrockb     articrockb_crp
+coarse articrockc     articrockc_crp
+coarse articrockd     articrockd_crp
+coarse articrocke     articrocke_crp
+coarse articrockf     articrockf_crp
+coarse articrockg     articrockg_crp
+coarse articrockh     articrockh_crp
+
+all_coarse earthrocka     earthrocka_crp
+all_coarse earthrockb     earthrockb_crp
+all_coarse earthrockc     earthrockc_crp
+all_coarse earthrockd     earthrockd_crp
+all_coarse earthrocke     earthrocke_crp
+all_coarse earthrockf     earthrockf_crp
+all_coarse earthrockg     earthrockg_crp
+all_coarse earthrockh     earthrockh_crp
+all_coarse earthrocki     earthrocki_crp
+all_coarse earthrockj     earthrockj_crp
+all_coarse earthrockk     earthrockk_crp
+all_coarse earthrockl     earthrockl_crp
+coarse desertrocka     desertrocka_crp
+coarse desertrockb     desertrockb_crp
+coarse desertrockc     desertrockc_crp
+coarse desertrockd     desertrockd_crp
+coarse desertrocke     desertrocke_crp
+all_coarse deserttreea     deserttreea_crp
+all_coarse deserttreeb     deserttreeb_crp
+all_coarse deserttreec     deserttreec_crp
+all_coarse deserttreed     deserttreed_crp
+all_coarse deserttreee     deserttreee_crp
+all_coarse deserttreef     deserttreef_crp
+all_coarse deserttreeg     deserttreeg_crp
+all_coarse deserttreeh     deserttreeh_crp
+all_coarse deserttreei     deserttreei_crp
+all_coarse desertrockf     desertrockf_crp
+all_coarse desertrockg     desertrockg_crp
+all_coarse desertrockh     desertrockh_crp
+all_coarse volcanicrocka     volcanicrocka_crp
+all_coarse volcanicrockb     volcanicrockb_crp
+all_coarse volcanicrockc     volcanicrockc_crp
+all_coarse volcanicrockd     volcanicrockd_crp
+all_coarse volcanicrocke     volcanicrocke_crp
+all_coarse volcanicrockf     volcanicrockf_crp
+all_coarse volcanicrockg     volcanicrockg_crp
+all_coarse volcanicrockh     volcanicrockh_crp
+all_coarse volcanictreea     volcanictreea_crp
+all_coarse volcanictreed     volcanictreed_crp
+all_coarse volcanictreeg     volcanictreeg_crp
+
+# SRM added stuff that should be in as well as the above stuff
+all_coarse articshruba    articshruba_crp
+all_coarse articshrubb    articshrubb_crp
+all_coarse articshrubc    articshrubc_crp
+all_coarse articshrubd    articshrubd_crp
+all_coarse articshrube    articshrube_crp
+all_coarse articshrubf    articshrubf_crp
+all_coarse articshrubg    articshrubg_crp
+all_coarse artictreea     artictreea_crp
+all_coarse artictreeb     artictreeb_crp
+all_coarse artictreec     artictreec_crp
+all_coarse artictreed     artictreed_crp
+all_coarse artictreee     artictreee_crp
+all_coarse earthtree2a    earthtree2a_crp
+all_coarse earthtree2b    earthtree2b_crp
+all_coarse earthtree2c    earthtree2c_crp
+all_coarse earthtree2d    earthtree2d_crp
+all_coarse earthtree2e    earthtree2e_crp
+all_coarse earthtree2f    earthtree2f_crp
+all_coarse earthtree2g    earthtree2g_crp
+all_coarse earthtree2h    earthtree2h_crp
+all_coarse earthtree2i    earthtree2i_crp
+all_coarse earthtree2j    earthtree2j_crp
+all_coarse earthtree3a    earthtree3a_crp
+all_coarse earthtree3b    earthtree3b_crp
+all_coarse earthtree3c    earthtree3c_crp
+all_coarse earthtree3d    earthtree3d_crp
+all_coarse earthtree3e    earthtree3e_crp
+all_coarse earthtree3f    earthtree3f_crp
+all_coarse earthtree3g    earthtree3g_crp
+all_coarse earthtree3h    earthtree3h_crp
+all_coarse earthtree3i    earthtree3i_crp
+all_coarse earthtree3j    earthtree3j_crp
+all_coarse earthtreea    earthtreea_crp
+all_coarse earthtreeb    earthtreeb_crp
+all_coarse earthtreec    earthtreec_crp
+all_coarse earthtreed    earthtreed_crp
+all_coarse earthtreee    earthtreee_crp
+all_coarse earthtreef    earthtreef_crp
+all_coarse earthtreeg    earthtreeg_crp
+all_coarse earthtreeh    earthtreeh_crp
+all_coarse earthtreei    earthtreei_crp
+all_coarse earthtreej    earthtreej_crp
+all_coarse swamptreea    swamptreea_crp
+all_coarse swamptreeb    swamptreeb_crp
+all_coarse swamptreec    swamptreec_crp
+all_coarse swamptreed    swamptreed_crp
+
+# added some grannies with CDTRI creps
+all_coarse gen_rigging       gen_rigging_crp
+all_coarse pad_landing       pad_landing_crp
+all_coarse pad_creation      pad_creation_crp
+all_coarse mb_pad_creation   mb_pad_creation_crp
+
+shadow_begin ncmsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trmsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsmsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncmlite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trmlite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsmlite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncmmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trmmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsmmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncmsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trmsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsmsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+
+shadow_begin ncfsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trfsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsfsi
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncflite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trflite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsflite
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncfmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trfmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsfmed
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin ncfsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trfsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vsfsth
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+
+shadow_begin nchev
+shadow_material ncmlite_shadow
+shadow_scale    4.0
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin trhev
+shadow_material ncmlite_shadow
+shadow_scale    4.0
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin vshev
+shadow_material ncmlite_shadow
+shadow_scale    4.0
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_bound     1 1 0.2
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+
+shadow_begin lightgunship
+shadow_material lightgunship_shadow
+shadow_scale 14.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_oriented
+shadow_bound 8 2 4
+shadow_render_to_texture
+shadow_end
+
+shadow_begin two_man_assault_buggy
+shadow_material two_man_assault_buggy_shadow
+shadow_scale    10.5
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range    60
+shadow_bound     6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin ams
+shadow_material ams_shadow
+shadow_scale 12.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin apc
+shadow_material apc_shadow
+shadow_scale 18.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+#shadow_begin droppod
+shadow_begin droppod_removed
+shadow_material droppod_shadow
+shadow_scale 6.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  20
+shadow_bound 6 2 2
+shadow_oriented
+shadow_offset_rotation 60
+#shadow_render_to_texture
+shadow_end
+
+shadow_begin dropship
+shadow_material dropship_shadow
+shadow_scale 69.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  100
+shadow_bound 14 4 4
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin lightning
+shadow_material lightning_shadow
+shadow_scale 11.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin magrider
+shadow_material magrider_shadow
+shadow_scale 17.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin mediumtransport
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin ant
+shadow_material ant_shadow
+shadow_scale 9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin mosquito
+shadow_material mosquito_shadow
+shadow_scale 14.2
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin prowler
+shadow_material prowler_shadow
+shadow_scale 17.4
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin quadassault
+shadow_material quadassault_shadow
+shadow_scale 4.9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin quadstealth
+shadow_material quadstealth_shadow
+shadow_scale 4.9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin threemanheavybuggy
+shadow_material threemanheavybuggy_shadow
+shadow_scale 9.5
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin twomanheavybuggy
+shadow_material twomanheavybuggy_shadow
+shadow_scale 10.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin twomanhoverbuggy
+shadow_material twomanhoverbuggy_shadow
+shadow_scale 10.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin vanguard
+shadow_material vanguard_shadow
+shadow_scale 17.6
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+

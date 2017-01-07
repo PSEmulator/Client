@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 1
+# Basic Controls and Waypoint Handling
+#=======================================================
+
+$begin OfflineTrainingMission1
+	$levelup
+	$quit
+$end

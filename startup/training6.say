@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 6
+# Capturing Facilities
+#=======================================================
+
+$begin OfflineTrainingMission6
+	$levelup
+	$quit
+$end

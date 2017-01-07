@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 7
+# Silos and the ANT
+#=======================================================
+
+$begin OfflineTrainingMission7
+	$levelup
+	$quit
+$end

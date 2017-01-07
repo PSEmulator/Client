@@ -1,0 +1,29 @@
+
+struct appdata : application2vertex {
+	float3 Position         : POSITION;
+	float3 Normal           : NORMAL;
+  float2 TexCoord0        : TEXCOORD0;
+};
+
+vf20 main(appdata IN,
+    	    uniform float4x4 WorldViewProj,
+          uniform float4 AmbientColor)
+{
+	vf20 O;
+
+  //build float4
+  float4 tempPos;
+  tempPos.xyz = IN.Position.xyz;
+  tempPos.w   = 1.0;
+
+  // transform into homogeneous-clip space
+	O.HPOS = mul(WorldViewProj, tempPos);
+
+  O.TEX0.x  = IN.TexCoord0.x;
+  O.TEX0.y  = IN.TexCoord0.y;
+
+  O.COL0         = AmbientColor;
+
+	return O;
+}
+

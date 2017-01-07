@@ -1,0 +1,91 @@
+#tf_begin
+
+##tiny
+
+tf_cache DXT1_4X4 0
+tf_cache DXT1_8X8 0
+tf_cache DXT1_16X16 0
+tf_cache DXT1_32X32 0
+tf_cache DXT1_64X64 64
+tf_cache DXT1_128X128 64
+tf_cache DXT1_256X256 64
+tf_cache DXT1_512X512 16
+tf_cache DXT1_1024X512 0
+tf_cache DXT5_4X4 8
+tf_cache DXT5_8X8 8
+tf_cache DXT5_16X16 32
+tf_cache DXT5_32X32 128
+tf_cache DXT5_64X64 64
+tf_cache DXT5_128X128 159
+tf_cache DXT5_256X256 64
+tf_cache DXT5_512X512 20
+tf_cache DXT5_1024X512 2
+tf_cache ARGB8_4X4 0
+tf_cache ARGB8_8X8 0
+tf_cache ARGB8_16X16 0
+tf_cache ARGB8_32X32 0
+tf_cache ARGB8_64X64 0
+tf_cache ARGB8_128X128 0
+tf_cache ARGB8_256X256 0
+tf_cache ARGB8_512X512 0
+tf_end
+
+##small
+
+tf_cache DXT1_4X4 0
+tf_cache DXT1_8X8 0
+tf_cache DXT1_16X16 0
+tf_cache DXT1_32X32 0
+tf_cache DXT1_64X64 8
+tf_cache DXT1_128X128 32
+tf_cache DXT1_256X256 64
+tf_cache DXT1_512X512 16
+tf_cache DXT1_1024X512 0
+tf_cache DXT5_4X4 8
+tf_cache DXT5_8X8 8
+tf_cache DXT5_16X16 64
+tf_cache DXT5_32X32 128
+tf_cache DXT5_64X64 128
+tf_cache DXT5_128X128 64
+tf_cache DXT5_256X256 32
+tf_cache DXT5_512X512 8
+tf_cache DXT5_1024X512 0
+tf_cache ARGB8_4X4 0
+tf_cache ARGB8_8X8 0
+tf_cache ARGB8_16X16 0
+tf_cache ARGB8_32X32 0
+tf_cache ARGB8_64X64 0
+tf_cache ARGB8_128X128 0
+tf_cache ARGB8_256X256 0
+tf_cache ARGB8_512X512 0
+tf_end
+
+##default
+
+tf_cache DXT1_4X4 0
+tf_cache DXT1_8X8 0
+tf_cache DXT1_16X16 0
+tf_cache DXT1_32X32 0
+tf_cache DXT1_64X64 64
+tf_cache DXT1_128X128 64
+tf_cache DXT1_256X256 64
+tf_cache DXT1_512X512 16
+tf_cache DXT1_1024X512 0
+tf_cache DXT5_4X4 8
+tf_cache DXT5_8X8 8
+tf_cache DXT5_16X16 64
+tf_cache DXT5_32X32 128
+tf_cache DXT5_64X64 128
+tf_cache DXT5_128X128 128
+tf_cache DXT5_256X256 140
+tf_cache DXT5_512X512 96
+tf_cache DXT5_1024X512 6
+tf_cache ARGB8_4X4 0
+tf_cache ARGB8_8X8 0
+tf_cache ARGB8_16X16 0
+tf_cache ARGB8_32X32 0
+tf_cache ARGB8_64X64 0
+tf_cache ARGB8_128X128 0
+tf_cache ARGB8_256X256 0
+tf_cache ARGB8_512X512 0
+tf_end

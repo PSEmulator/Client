@@ -1,0 +1,4 @@
+km_addbinding "space" "Announcer Next"
+km_addbinding "Escape" "Announcer Close"
+
+

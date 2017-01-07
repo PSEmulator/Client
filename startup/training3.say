@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 3
+# Vehicle Handling
+#=======================================================
+
+$begin OfflineTrainingMission3
+	$levelup
+	$quit
+$end

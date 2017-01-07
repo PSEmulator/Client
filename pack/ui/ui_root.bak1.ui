@@ -1,0 +1,760 @@
+<Page Cursor='/Cursors.Default' Name='root' PackSize='1,1' ScrollExtent='800,600' Size='800,600' TooltipStyle='/Tooltips.Default'>
+<Namespace Name='Icon50_styles'>
+<ImageStyle Loop='false' Name='icon50_mini_chaingun'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='0,50,150,100'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_r_shotgun'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='0,0,150,50'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_ihc12'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='150,0,250,50'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_bolt_driver'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='0,100,150,150'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_assault_rifle'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='150,0,250,50'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_isp'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='150,100,200,150'/>
+</ImageStyle>
+<ImageStyle Loop='false' Name='icon50_medkit'>
+<ImageFrame Name='icon50_weapons1_frame1' Source='icon50_weapons1_00' SourceRect='0,150,50,200'/>
+</ImageStyle>
+</Namespace>
+<include>ui_console.inc</include>
+<include>ui_dialogs.inc</include>
+<Text Color='#FF0000' Font='/DefaultFont' GetsInput='false' Location='160,10' Name='Status4' ScrollExtent='0,20' Size='630,20' Visible='false' visualeditlock='true'></Text>
+<Text Color='#FF0000' Font='/DefaultFont' GetsInput='false' Location='160,30' Name='Status3' ScrollExtent='0,20' Size='630,20' visualeditlock='true'></Text>
+<Text Color='#FF0000' Font='/DefaultFont' GetsInput='false' Location='160,50' Name='Status2' ScrollExtent='0,20' Size='630,20' visualeditlock='true'></Text>
+<Text Color='#FF0000' Font='/DefaultFont' GetsInput='false' Location='160,70' Name='Status1' ScrollExtent='0,20' Size='630,20' visualeditlock='true'></Text>
+<include>ui_creationtest.inc</include>
+<Page Name='SplashScreen' PackLocation='center,center' ScrollExtent='800,600' Size='800,600' Visible='false'>
+<Image Location='37,186' Name='Logo' PackLocation='proportional,proportional' ScrollExtent='763,200' Size='726,171' Stretch='false' Style='/Plates.Logo'/>
+<3DPlanet Color='#000000' Name='Planet' PackSize='1,1' ScrollExtent='800,600' Size='800,600'/>
+</Page>
+<include>ui_login.inc</include>
+<include>ui_mapselect.inc</include>
+<include>ui_navbar.inc</include>
+<include>ui_selectserver.inc</include>
+<include>ui_createcharacter.inc</include>
+<include>ui_keymap.inc</include>
+<include>ui_videooptions.inc</include>
+<Page Name='PurchaseScreen' ScrollExtent='800,600' Size='800,600' Visible='false'>
+<Listbox DataSource='/DataSources.Vendor' Location='149,80' Name='WeaponListBox' RowTemplate='PurchaseGrid_template' ScrollExtent='233,350' Size='233,350' Style='/Listboxes.Generic.style'/>
+<Template Name='PurchaseGrid_template' Size='155,54'>\<text font = \'/smallfont\' location = \'0,38\' size = \'150,50\' textalignment = \'center\'\>
+$Name$
+\</text\>
+\<image location = \'0,0\' packlocation = \'center,center\' size = \'150,50\' stretch = \'false\' style = \'$graphic$\'/\></Template>
+<Button Location='391,496' Name='Buy' ScrollExtent='115,32' Size='200,32' Style='/Buttons.Default' Tooltip='Buy Selected Item'>Close</Button>
+<Button Location='126,496' Name='Buy' ScrollExtent='115,32' Size='200,32' Style='/Buttons.Default' Tooltip='Buy Selected Item'>Buy</Button>
+</Page>
+<include>ui_news.inc</include>
+<include>ui_editor.inc</include>
+<include>ui_map.inc</include>
+<include>ui_hud.inc</include>
+<include>ui_defaultfont.inc</include>
+<include>ui_smallfont.inc</include>
+<include>ui_lcdfont.inc</include>
+<include>ui_scrollbarstyle.inc</include>
+<include>ui_scrollbarstyle.inc</include>
+<include>ui_consoletextboxstyle.inc</include>
+<include>ui_consoletextboxstyle.inc</include>
+<include>ui_checkbox.inc</include>
+<include>ui_gridstyle.inc</include>
+<include>ui_gridstyle.inc</include>
+<include>ui_dropdown20.inc</include>
+<Namespace Name='DataSources'>
+<DataSource Name='Characters'/>
+<DataSource Name='Inventory'>
+<Data e='1,1' guid='4322' l='0,0' Name='medkit' qty='5' t='icon50x1' tooltip='Medkit'/>
+<Data e='2,1' guid='324' l='0,1' Name='assault_rifle' t='icon50x2' tooltip='Assault Rifle'/>
+<Data e='2,1' guid='323' l='0,13' Name='assault_rifle' t='icon50x2' tooltip='Assault Rifle'/>
+<Data e='1,1' guid='3406' l='0,11' Name='isp' t='icon50x1' tooltip='ISP'/>
+<Data e='1,1' guid='1346' l='0,20' Name='isp' t='vkey' tooltip='ISP'/>
+</DataSource>
+<DataSource Name='TargetInventory'>
+<Data e='3,1' guid='322' l='0,0' Name='Bolt_Driver' t='icon50x3' tooltip='Bolt Driver'/>
+<Data e='1,1' guid='340' l='0,11' Name='isp' t='icon50x1' tooltip='ISP'/>
+<Data e='1,1' guid='1346' l='0,20' Name='isp' t='vkey' tooltip='Vehicle Key'/>
+</DataSource>
+<DataSource Name='Corporation'/>
+<DataSource Name='PermanentOutfit'/>
+<DataSource Name='TemporaryOutfit'/>
+<DataSource Name='VendorCategories'/>
+<DataSource Name='Vendor'>
+<Data e='3,1' graphic='/Icon50_styles.icon50_rotory_shotgun' l='0,0' Name='Rotory Assault Shotgun' price='150' quantity='50' t='PurchaseGrid_template' type='60'/>
+<Data e='3,1' graphic='/Icon50_styles.icon50_mini_chaingun' l='0,1' Name='Mini Chaingun' price='150' quantity='50' t='PurchaseGrid_template' type='62'/>
+<Data e='2,1' graphic='/Icon50_styles.icon50_ihc12' l='0,2' Name='IHC 12 Rifle' price='150' quantity='50' t='PurchaseGrid_template' type='47'/>
+<Data e='3,1' graphic='/Icon50_styles.icon50_bolt_driver' l='0,3' Name='Bolt Driver' price='150' quantity='50' t='PurchaseGrid_template' type='53'/>
+<Data e='2,1' graphic='/Icon50_styles.icon50_assault_rifle' l='0,4' Name='Assault Rifle' price='150' quantity='50' t='PurchaseGrid_template' type='275'/>
+<Data e='1,1' graphic='/Icon50_styles.icon50_isp' l='0,5' Name='ISP' price='150' quantity='50' t='PurchaseGrid_template' type='64'/>
+</DataSource>
+<DataSource Name='BuyList'/>
+<DataSource Name='SellList'/>
+<DataSource Name='ScreenResolutions'>
+<Data height='600' Name='800 x 600' width='800'/>
+<Data height='768' Name='1024 x 768' width='1024'/>
+<Data height='1024' Name='1280 x 1024' width='1280'/>
+<Data height='1200' Name='1600 x 1200' width='1600'/>
+</DataSource>
+<DataSource Name='Maps'/>
+<DataSource Name='Shortcuts'>
+<Data e='1,1' l='0,0' Name='Medkit' t='icon30x1'/>
+</DataSource>
+<DataSource Name='Email'>
+<Data body='This is the body of message 1' from='Don Neufeld' guid='1' recieved='Oct 30, 2000' subject='Test Message 1'/>
+<Data body='This is the body of message 2' from='Steve Manchester' guid='4' recieved='Oct 30, 2000' subject='Test Message 2'/>
+<Data body='This is the body of message 3' from='John Ratcliff' guid='2' recieved='Oct 30, 2000' subject='Test Message 3'/>
+</DataSource>
+<DataSource Name='News'>
+<Data body='Greetings, all -
+
+The PlanetSide team welcomes you to the battlefield. We\'re very excited to finally have an internally playable version of our game. This DeathMatch milestone was an extremely significant milestone for us, because it utilizes the majority of the foundational architecture that the game content will be built upon. So just by logging in and playing you\'re helping us test PlanetSide both technically and gameplay-wise.
+
+We\'ll be doing biweekly updates of PlanetSide. The next scheduled release is this Friday, March 16th. Just always run the autopatcher and you\'ll be fine. These biweekly updates allow us to introduce and steadily test content on a regular basis. Throughout the coming months the real game content will be implemented, as well as the remaining technical assets. And of course we\'ll be doing constant clean-up and optimization.
+
+With that said, please jump in and have fun. If you have any problems connecting to a server, contact me at EXT 3137.
+
+-	Kevin
+' date='03/12/01' Name='Welcome!'/>
+<Data body='Hi gents -
+
+Once you\'re in the game, select a server and create a character. Be sure to enter a name for the character above the actual character model (or it won\'t let you save). Keep in mind this interface is temporary and will become more intuitive later. Once you\'ve saved your character, just click on Connect.
+
+Now a quick breakdown of the primary controls for this release follows:
+
+W		Forward
+S		Back
+A		Strafe Left
+D		Strafe Right
+Space Bar	Jump
+Shift		Walk (default is run)
+CTRL		Crouch/Crouchwalk
+R		Reload
+G		Use
+1		Primary Weapon
+2		Secondary Weapon
+I		Personal Stats (per gaming session)
+Z		Zoom Toggle (2x, 4x, 8x, Normal)' date='02/28/01' Name='New Release!'/>
+</DataSource>
+<DataSource Name='Missions'>
+<Data availablepositions='3 x Foot Soldier' description='Investigate disturbance in cantina' info='Oh no, Guido is Dead!' location='Mos Eisly'/>
+</DataSource>
+<DataSource Name='Channels'>
+<Data Name='Channel 1'/>
+<Data Name='Channel 2'/>
+<Data Name='Channel 3'/>
+<Data Name='Channel 4'/>
+</DataSource>
+<DataSource Name='ChannelUsers'>
+<Data country='d00dz' friend='N' Name='l33t dewd' outfit='none'/>
+</DataSource>
+<DataSource Name='D3DDrivers'>
+<Data Name='GeForce T&L HAL'/>
+<Data Name='New Data'/>
+</DataSource>
+<DataSource Name='FilteredChat'/>
+<DataSource Name='IgnoredCharacters'/>
+<DataSource Name='AudioTracks'>
+<Data enabled='True' Name='Track 1'/>
+<Data enabled='True' Name='Track 2'/>
+<Data enabled='True' Name='Track 3'/>
+<Data enabled='True' Name='Track 4'/>
+<Data enabled='True' Name='Track 5'/>
+<Data enabled='True' Name='Track 6'/>
+<Data enabled='True' Name='Track 7'/>
+<Data enabled='True' Name='Track 8'/>
+<Data enabled='True' Name='Track 9'/>
+<Data enabled='True' Name='Track 10'/>
+<Data enabled='True' Name='Track 11'/>
+<Data enabled='True' Name='Track 12'/>
+<Data enabled='True' Name='Track 13'/>
+<Data enabled='True' Name='Track 14'/>
+<Data enabled='True' Name='Track 15'/>
+<Data enabled='True' Name='Track 16'/>
+<Data enabled='True' Name='Track 17'/>
+<Data enabled='True' Name='Track 18'/>
+</DataSource>
+<DataSource Name='Quickslot'/>
+<DataSource Name='ServerList'>
+<Data ip='222,222,222,222' Name='Hillsafar' num='1504' status='Available'/>
+<Data ip='222,222,222,221' Name='Lakeanear' num='88888' status='Offline'/>
+</DataSource>
+</Namespace>
+<include>ui_backdrops.inc</include>
+<Namespace Name='Buttons'>
+<ButtonStyle DisabledImage='Exit.Disabled' Name='Exit' NormalImage='Exit.Normal' PressedImage='Exit.Pressed'/>
+<ImageStyle Name='Exit.Normal'>
+<ImageFrame Source='ui_exitbutton' SourceRect='0,0,16,16'/>
+</ImageStyle>
+<ImageStyle Name='Exit.Disabled'>
+<ImageFrame Source='ui_exitbutton' SourceRect='0,16,16,32'/>
+</ImageStyle>
+<ImageStyle Name='Exit.Pressed'>
+<ImageFrame Source='ui_exitbutton' SourceRect='16,0,32,16'/>
+</ImageStyle>
+<ButtonStyle DisabledImage='Default.Disabled' MouseOverTextColor='#FFFF00' Name='Default' NormalImage='Default.Normal' NormalTextColor='#00FF00' NormalTextStyle='/DefaultFont' PressedImage='Default.Pressed' PressSound='beep01_s.wav' ReleaseSound='beep02_s.wav'/>
+<ImageStyle Name='Default.Normal'>
+<ImageFrame Source='ui_button' SourceRect='0,0,200,32'/>
+</ImageStyle>
+<ImageStyle Name='Default.Pressed'>
+<ImageFrame Source='ui_button' SourceRect='0,66,200,98'/>
+</ImageStyle>
+<ImageStyle Name='Default.Disabled'>
+<ImageFrame Source='ui_button' SourceRect='0,99,200,131'/>
+</ImageStyle>
+<ButtonStyle Name='Small' NormalImage='SmallImages.Background.Normal' NormalLeftCap='SmallImages.LeftCap.Normal' NormalRightCap='SmallImages.RightCap.Normal' NormalTextStyle='/SmallFont' PressedImage='SmallImages.Background.Pressed' PressedLeftCap='SmallImages.LeftCap.Pressed' PressedRightCap='SmallImages.RightCap.Pressed'/>
+<Namespace Name='SmallImages'>
+<ImageStyle Name='LeftCap.Normal'>
+<ImageFrame Source='ui_smallbutton' SourceRect='0,0,1,16'/>
+</ImageStyle>
+<ImageStyle Name='LeftCap.Pressed'>
+<ImageFrame Source='ui_smallbutton' SourceRect='0,16,1,32'/>
+</ImageStyle>
+<ImageStyle Name='LeftCap.Disabled'>
+<ImageFrame Source='ui_smallbutton' SourceRect='0,32,1,48'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Normal'>
+<ImageFrame Source='ui_smallbutton' SourceRect='63,0,64,16'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Pressed'>
+<ImageFrame Source='ui_smallbutton' SourceRect='63,16,64,32'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Disabled'>
+<ImageFrame Source='ui_smallbutton' SourceRect='63,32,64,48'/>
+</ImageStyle>
+<ImageStyle Name='Background.Normal'>
+<ImageFrame Source='ui_smallbutton' SourceRect='1,0,63,16'/>
+</ImageStyle>
+<ImageStyle Name='Background.Pressed'>
+<ImageFrame Source='ui_smallbutton' SourceRect='1,16,63,32'/>
+</ImageStyle>
+<ImageStyle Name='Background.Disabled'>
+<ImageFrame Source='ui_smallbutton' SourceRect='1,32,63,48'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='MediumImages'>
+<ImageStyle Name='LeftCap.Normal'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='0,0,1,24'/>
+</ImageStyle>
+<ImageStyle Name='LeftCap.Pressed'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='0,24,1,48'/>
+</ImageStyle>
+<ImageStyle Name='LeftCap.Disabled'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='0,48,1,72'/>
+</ImageStyle>
+<ImageStyle Name='Background.Normal'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='1,0,127,24'/>
+</ImageStyle>
+<ImageStyle Name='Background.Pressed'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='1,24,127,48'/>
+</ImageStyle>
+<ImageStyle Name='Background.Disabled'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='1,48,127,72'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Normal'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='127,0,128,24'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Pressed'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='127,24,128,48'/>
+</ImageStyle>
+<ImageStyle Name='RightCap.Normal'>
+<ImageFrame Source='ui_mediumbutton' SourceRect='127,48,128,72'/>
+</ImageStyle>
+</Namespace>
+<ButtonStyle DisabledTextColor='#808080' MouseOverTextColor='#FFFF00' Name='Medium' NormalImage='MediumImages.Background.Normal' NormalLeftCap='MediumImages.LeftCap.Normal' NormalRightCap='MediumImages.RightCap.Normal' NormalTextColor='#00FF00' NormalTextStyle='/DefaultFont' PressedImage='MediumImages.Background.Pressed' PressedLeftCap='MediumImages.LeftCap.Pressed' PressedRightCap='MediumImages.RightCap.Pressed'/>
+<Namespace Name='Start'>
+<ImageStyle Name='Normal'>
+<ImageFrame SourceRect='0,0,88,28'/>
+</ImageStyle>
+<ButtonStyle Name='style' NormalImage='Normal'/>
+</Namespace>
+<Namespace Name='Chat'>
+<ImageStyle Name='Normal'>
+<ImageFrame SourceRect='0,28,88,56'/>
+</ImageStyle>
+<ButtonStyle Name='style' NormalImage='Normal'/>
+</Namespace>
+<Namespace Name='Options'>
+<ImageStyle Name='Normal'>
+<ImageFrame SourceRect='0,56,88,84'/>
+</ImageStyle>
+<ButtonStyle Name='style' NormalImage='Normal'/>
+</Namespace>
+<Namespace Name='Quit'>
+<ImageStyle Name='Normal'>
+<ImageFrame SourceRect='0,84,88,112'/>
+</ImageStyle>
+<ButtonStyle Name='style' NormalImage='Normal'/>
+</Namespace>
+<Namespace Name='LeftArrow'>
+<ButtonStyle DisabledImage='Disabled' MouseOverImage='Selected' Name='style' NormalImage='Normal' PressedImage='Pressed' SelectedImage='Selected'/>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ui_h_arrows' SourceRect='0,0,16,29'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ui_h_arrows' SourceRect='32,29,48,58'/>
+</ImageStyle>
+<ImageStyle Name='Selected'>
+<ImageFrame Source='ui_h_arrows' SourceRect='0,29,16,58'/>
+</ImageStyle>
+<ImageStyle Name='Disabled'>
+<ImageFrame Source='ui_h_arrows' SourceRect='32,0,48,29'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='RightArrow'>
+<ButtonStyle DisabledImage='Disabled' MouseOverImage='Selected' Name='style' NormalImage='Normal' PressedImage='Pressed' SelectedImage='Selected'/>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ui_h_arrows' SourceRect='16,0,32,29'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ui_h_arrows' SourceRect='48,29,64,58'/>
+</ImageStyle>
+<ImageStyle Name='Selected'>
+<ImageFrame Source='ui_h_arrows' SourceRect='16,29,32,58'/>
+</ImageStyle>
+<ImageStyle Name='Disabled'>
+<ImageFrame Source='ui_h_arrows' SourceRect='48,0,64,29'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Checkbox'>
+<ButtonStyle DisabledImage='Exit.Disabled' Name='Exit' NormalImage='Exit.Normal' PressedImage='Exit.Pressed'/>
+</Namespace>
+<Namespace Name='LargeRadiobox'>
+<ImageStyle Name='Unchecked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='0,105,17,121'/>
+</ImageStyle>
+<ImageStyle Name='Checked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='17,105,34,121'/>
+</ImageStyle>
+<CheckboxStyle Name='Style' NormalCheckedImage='Checked' NormalUncheckedImage='Unchecked'/>
+</Namespace>
+<Namespace Name='SmallRadiobox'>
+<ImageStyle Name='Unchecked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='34,105,44,115'/>
+</ImageStyle>
+<ImageStyle Name='Checked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='44,105,54,115'/>
+</ImageStyle>
+<CheckboxStyle Name='Style' NormalCheckedImage='Checked' NormalUncheckedImage='Unchecked'/>
+</Namespace>
+<Namespace Name='Checkbox'>
+<ImageStyle Name='Unchecked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='0,130,10,140'/>
+</ImageStyle>
+<ImageStyle Name='Checked'>
+<ImageFrame Source='ps_interface_art_00' SourceRect='10,130,20,140'/>
+</ImageStyle>
+<CheckboxStyle Name='Style' NormalCheckedImage='Checked' NormalUncheckedImage='Unchecked'/>
+</Namespace>
+<Namespace Name='Connect'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_selectserver_art' SourceRect='0,0,139,29'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_selectserver_art' SourceRect='0,58,139,87'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_selectserver_art' SourceRect='0,29,139,58'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='OK'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,174,51,203'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='51,203,102,232'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,203,51,232'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='LArrow'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='0,174,51,207'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='102,174,153,207'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='51,174,102,207'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='RArrow'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='0,207,51,240'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='102,207,153,240'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_charcreate_art' SourceRect='51,207,102,240'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='Yes'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,0,65,29'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,58,65,87'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,29,65,58'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='No'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,87,52,116'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,145,52,174'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='0,116,52,145'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+<Namespace Name='Cancel'>
+<ImageStyle Name='Normal'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='65,0,184,29'/>
+</ImageStyle>
+<ImageStyle Name='Pressed'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='65,58,184,87'/>
+</ImageStyle>
+<ImageStyle Name='Rollover'>
+<ImageFrame Source='ps_interface_popup_art' SourceRect='65,29,184,58'/>
+</ImageStyle>
+<ButtonStyle MouseOverImage='Rollover' Name='Style' NormalImage='Normal' OnDisableEffector='/Effectors.FadeButtonOut' OnEnableEffector='/Effectors.FadeButtonIn' PressedImage='Pressed'/>
+</Namespace>
+</Namespace>
+<Namespace Name='Plates'>
+<ImageStyle Name='Large'>
+<ImageFrame>
+<ImageFragment Source='ps_interface_plate_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ps_interface_plate_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ps_interface_plate_02' SourceRect='0,0,252,256'/>
+<ImageFragment Offset='0,256' Source='ps_interface_plate_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ps_interface_plate_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ps_interface_plate_05' SourceRect='0,0,252,256'/>
+<ImageFragment Offset='0,512' Source='ps_interface_plate_06' SourceRect='0,0,256,29'/>
+<ImageFragment Offset='256,512' Source='ps_interface_plate_07' SourceRect='0,0,256,29'/>
+<ImageFragment Offset='512,512' Source='ps_interface_plate_08' SourceRect='0,0,252,29'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='VerySmall'>
+<ImageFrame>
+<ImageFragment SourceRect='0,0,128,127'/>
+<ImageFragment Offset='128,0' SourceRect='0,0,128,127'/>
+<ImageFragment Offset='256,0' SourceRect='0,0,128,127'/>
+<ImageFragment Offset='384,0' SourceRect='0,0,6,127'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Small'>
+<ImageFrame>
+<ImageFragment SourceRect='0,0,256,252'/>
+<ImageFragment Offset='256,0' SourceRect='0,0,134,252'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Border'>
+<ImageFrame>
+<ImageFragment Source='ps_interface_border_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ps_interface_border_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ps_interface_border_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ps_interface_border_03' SourceRect='0,0,33,256'/>
+<ImageFragment Offset='0,256' Source='ps_interface_border_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ps_interface_border_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ps_interface_border_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ps_interface_border_07' SourceRect='0,0,33,256'/>
+<ImageFragment Offset='0,512' Source='ps_interface_border_08' SourceRect='0,0,256,90'/>
+<ImageFragment Offset='256,512' Source='ps_interface_border_09' SourceRect='0,0,256,90'/>
+<ImageFragment Offset='512,512' Source='ps_interface_border_10' SourceRect='0,0,256,90'/>
+<ImageFragment Offset='768,512' Source='ps_interface_border_11' SourceRect='0,0,33,90'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Planet'>
+<ImageFrame>
+<ImageFragment SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' SourceRect='0,0,32,256'/>
+<ImageFragment Offset='0,256' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' SourceRect='0,0,32,256'/>
+<ImageFragment Offset='0,512' SourceRect='0,0,256,88'/>
+<ImageFragment Offset='256,512' SourceRect='0,0,256,88'/>
+<ImageFragment Offset='512,512' SourceRect='0,0,256,88'/>
+<ImageFragment Offset='768,512' SourceRect='0,0,32,88'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Logo'>
+<ImageFrame>
+<ImageFragment Source='ps_logo_00' SourceRect='0,0,256,138'/>
+<ImageFragment Offset='256,0' Source='ps_logo_01' SourceRect='0,0,256,138'/>
+<ImageFragment Offset='512,0' Source='ps_logo_02' SourceRect='0,0,214,138'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Popup'>
+<ImageFrame>
+<ImageFragment Source='ps_interface_popup_screen_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ps_interface_popup_screen_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='384,0' Source='ps_interface_popup_screen_02' SourceRect='0,0,16,128'/>
+<ImageFragment Offset='256,128' Source='ps_interface_popup_screen_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='384,128' Source='ps_interface_popup_screen_04' SourceRect='0,0,16,128'/>
+<ImageFragment Offset='0,256' Source='ps_interface_popup_screen_05' SourceRect='0,0,128,44'/>
+<ImageFragment Offset='128,256' Source='ps_interface_popup_screen_06' SourceRect='0,0,128,44'/>
+<ImageFragment Offset='256,256' Source='ps_interface_popup_screen_07' SourceRect='0,0,128,44'/>
+<ImageFragment Offset='384,256' Source='ps_interface_popup_screen_08' SourceRect='0,0,16,44'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='OldLogo'>
+<ImageFrame>
+<ImageFragment Source='ps_login_logo_00' SourceRect='0,0,256,150'/>
+<ImageFragment Offset='256,0' Source='ps_login_logo_01' SourceRect='0,0,256,150'/>
+<ImageFragment Offset='512,0' Source='ps_login_logo_02' SourceRect='0,0,138,150'/>
+</ImageFrame>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Listboxes'>
+<Namespace Name='Generic'>
+<ListboxStyle GridStyle='/EmbeddedGrid.style' Name='style'/>
+</Namespace>
+<Namespace Name='EmbeddedListbox16'>
+<ListboxStyle GridStyle='/EmbeddedGrid.style' Name='style'/>
+</Namespace>
+</Namespace>
+<Namespace Name='Cursors'>
+<ImageStyle Name='DefaultCursorImage'>
+<ImageFrame Source='ui_cursor' SourceRect='0,0,10,18'/>
+</ImageStyle>
+<Cursor ImageStyle='DefaultCursorImage' Name='Default'/>
+</Namespace>
+<Namespace Name='ProgressBars'>
+<Namespace Name='ActionProgress'>
+<ProgressbarStyle Background='Background.Center' Bar.Background='Bar.Center' Bar.EndCap='Bar.RightCap' Bar.StartCap='Bar.LeftCap' EndCap='Background.RightCap' Name='style' StartCap='Background.LeftCap'/>
+<ImageStyle Name='Background.LeftCap'>
+<ImageFrame Source='ui_taskprogress' SourceRect='0,0,1,15'/>
+</ImageStyle>
+<ImageStyle Name='Background.Center'>
+<ImageFrame Source='ui_taskprogress' SourceRect='1,0,63,15'/>
+</ImageStyle>
+<ImageStyle Name='Background.RightCap'>
+<ImageFrame Source='ui_taskprogress' SourceRect='63,0,64,15'/>
+</ImageStyle>
+<ImageStyle Name='Bar.LeftCap'>
+<ImageFrame Source='ui_taskprogress' SourceRect='0,15,1,30'/>
+</ImageStyle>
+<ImageStyle Name='Bar.Center'>
+<ImageFrame Source='ui_taskprogress' SourceRect='1,15,63,30'/>
+</ImageStyle>
+<ImageStyle Name='Bar.RightCap'>
+<ImageFrame Source='ui_taskprogress' SourceRect='63,15,64,30'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Overkill'>
+<ProgressbarStyle Bar.Background='Image' Layout='Vertical' Name='style'/>
+<ImageStyle Name='Image'>
+<ImageFrame>
+<ImageFragment Source='ui_overkill_00' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,0' Source='ui_overkill_01' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,64' Source='ui_overkill_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,64' Source='ui_overkill_03' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,128' Source='ui_overkill_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,128' Source='ui_overkill_05' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,192' Source='ui_overkill_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,192' Source='ui_overkill_07' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,256' Source='ui_overkill_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_overkill_09' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,320' Source='ui_overkill_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,320' Source='ui_overkill_11' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,384' Source='ui_overkill_12' SourceRect='0,0,64,16'/>
+<ImageFragment Offset='64,384' Source='ui_overkill_13' SourceRect='0,0,16,16'/>
+</ImageFrame>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Default'>
+<ProgressbarStyle Background='Background.Center' Bar.Background='Bar.Center' Bar.EndCap='Bar.RightCap' Bar.StartCap='Bar.LeftCap' EndCap='Background.RightCap' Name='Style' StartCap='Background.LeftCap'/>
+<ImageStyle Name='Background.LeftCap'>
+<ImageFrame Source='ps_login_art' SourceRect='0,350,5,379'/>
+</ImageStyle>
+<ImageStyle Name='Background.RightCap'>
+<ImageFrame Source='ps_login_art' SourceRect='499,350,504,379'/>
+</ImageStyle>
+<ImageStyle Name='Background.Center'>
+<ImageFrame Source='ps_login_art' SourceRect='5,350,500,379'/>
+</ImageStyle>
+<ImageStyle Name='Bar.LeftCap'>
+<ImageFrame Source='ps_login_art' SourceRect='0,379,16,408'/>
+</ImageStyle>
+<ImageStyle Name='Bar.RightCap'>
+<ImageFrame Source='ps_login_art' SourceRect='488,379,504,408'/>
+</ImageStyle>
+<ImageStyle Name='Bar.Center'>
+<ImageFrame Source='ps_login_art' SourceRect='16,379,488,408'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Attribute'>
+<ProgressbarStyle Background='Background.Center' Bar.Background='Bar.Center' Bar.EndCap='Bar.LeftCap' Bar.StartCap='Bar.RightCap' EndCap='Background.RightCap' Name='style' StartCap='Background.LeftCap'/>
+<ImageStyle Name='Background.LeftCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='1,0,5,16'/>
+</ImageStyle>
+<ImageStyle Name='Background.Center'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='6,0,104,16'/>
+</ImageStyle>
+<ImageStyle Name='Background.RightCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='105,0,109,16'/>
+</ImageStyle>
+<ImageStyle Name='Bar.Center'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='5,17,104,33'/>
+</ImageStyle>
+<ImageStyle Name='Bar.LeftCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='1,17,5,33'/>
+</ImageStyle>
+<ImageStyle Name='Bar.RightCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='105,17,109,33'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='Stamina'>
+<ProgressbarStyle Background='Background.Center' Bar.Background='Bar.Center' Bar.EndCap='Bar.LeftCap' Bar.StartCap='Bar.RightCap' EndCap='Background.RightCap' Name='style' StartCap='Background.LeftCap'/>
+<ImageStyle Name='Background.LeftCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='1,34,5,50'/>
+</ImageStyle>
+<ImageStyle Name='Background.Center'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='5,34,105,50'/>
+</ImageStyle>
+<ImageStyle Name='Background.RightCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='105,34,109,50'/>
+</ImageStyle>
+<ImageStyle Name='Bar.Center'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='5,51,105,67'/>
+</ImageStyle>
+<ImageStyle Name='Bar.LeftCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='1,51,5,67'/>
+</ImageStyle>
+<ImageStyle Name='Bar.RightCap'>
+<ImageFrame Source='ps_HUD_barart' SourceRect='105,51,109,67'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='AttributeNoEndCap'>
+<ProgressbarStyle Bar.Background='Attribute.Bar.Center' Bar.EndCap='Attribute.Bar.RightCap' Bar.StartCap='Attribute.Bar.LeftCap' Name='style'/>
+</Namespace>
+</Namespace>
+<include>ui_sliderbars.inc</include>
+<Namespace Name='Icons'>
+<ImageStyle Name='Credits'>
+<ImageFrame Source='ui_icons' SourceRect='0,0,20,20'/>
+</ImageStyle>
+<Namespace Name='Inv'>
+<ImageStyle Name='IHC12'>
+<ImageFrame Source='ui_hudweapons' SourceRect='0,64,128,128'/>
+</ImageStyle>
+<ImageStyle Name='ILC9'>
+<ImageFrame Source='ui_hudweapons' SourceRect='64,0,128,64'/>
+</ImageStyle>
+<ImageStyle Name='Beamer'>
+<ImageFrame Source='ui_hudweapons' SourceRect='0,0,64,64'/>
+</ImageStyle>
+<ImageStyle Name='ISP'>
+<ImageFrame Source='ui_hudweapons' SourceRect='128,0,192,64'/>
+</ImageStyle>
+<ImageStyle Name='LaserRifle'>
+<ImageFrame Source='ui_hudweapons' SourceRect='128,64,256,128'/>
+</ImageStyle>
+<ImageStyle Name='MiniChaingun'>
+<ImageFrame Source='ui_hudweapons' SourceRect='0,128,128,192'/>
+</ImageStyle>
+<ImageStyle Name='RockletGun'>
+<ImageFrame Source='ui_hudweapons' SourceRect='128,128,256,192'/>
+</ImageStyle>
+</Namespace>
+<Namespace Name='HUD'>
+<ImageStyle Name='ihc12_rifle '>
+<ImageFrame Source='ps_HUD_ihc-12' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='ilc9_pistol '>
+<ImageFrame Source='ps_HUD_beamer' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='beamer'>
+<ImageFrame Source='ps_HUD_beamer' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='isp'>
+<ImageFrame Source='ps_HUD_isp' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='r_shotgun'>
+<ImageFrame Source='ps_HUD_rotary_shotgun' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='mini_chaingun'>
+<ImageFrame Source='ps_HUD_mini_chaingun' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='rocklet_gun'>
+<ImageFrame Source='ps_HUD_rocklet' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='Radar1_90'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='0,300,100,400'/>
+</ImageStyle>
+<ImageStyle Name='Radar1_45'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='100,300,200,400'/>
+</ImageStyle>
+<ImageStyle Name='Radar1_22'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='0,400,100,500'/>
+</ImageStyle>
+<ImageStyle Name='Radar1_11'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='100,400,200,500'/>
+</ImageStyle>
+<ImageStyle Name='Radar2_90'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='300,0,425,125'/>
+</ImageStyle>
+<ImageStyle Name='Radar2_45'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='300,125,425,250'/>
+</ImageStyle>
+<ImageStyle Name='Radar2_22'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='300,250,425,375'/>
+</ImageStyle>
+<ImageStyle Name='Radar2_11'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='300,375,425,500'/>
+</ImageStyle>
+<ImageStyle Name='Radar3_90'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='0,0,150,150'/>
+</ImageStyle>
+<ImageStyle Name='Radar3_45'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='150,0,300,150'/>
+</ImageStyle>
+<ImageStyle Name='Radar3_22'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='0,150,150,300'/>
+</ImageStyle>
+<ImageStyle Name='Radar3_11'>
+<ImageFrame Source='Ps_HUD_radar' SourceRect='150,150,300,300'/>
+</ImageStyle>
+<ImageStyle Name='bolt_driver'>
+<ImageFrame Source='ps_HUD_bolt_driver' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='flame_spitter'>
+<ImageFrame Source='ps_HUD_flame_spitter' SourceRect='0,0,210,100'/>
+</ImageStyle>
+<ImageStyle Name='assault_rifle '>
+<ImageFrame Source='ps_HUD_assault_rifle' SourceRect='0,0,210,100'/>
+</ImageStyle>
+</Namespace>
+</Namespace>
+<Namespace Name='Tooltips'>
+<TooltipStyle GridStyle='/DefaultGrid.style' MaxWidth='/DefaultGrid.style' Name='Default' TextPadding='2,2,1,1' TextStyle='/DefaultFont'/>
+</Namespace>
+<Namespace Name='Textboxes'>
+<TextboxStyle CaratColor='#0080FF' Name='Clear' NormalTextStyle='/DefaultFont' TextPadding='4,0,4,0'/>
+</Namespace>
+<Namespace Name='Effectors'>
+<OpacityEffector Name='FadeButtonIn' Speed='2.00' TargetOpacity='1.00'/>
+<OpacityEffector Name='FadeButtonOut' Speed='2.00' TargetOpacity='0.25'/>
+</Namespace>
+<Namespace Name='Fonts'>
+<include>ui_font_med.inc</include>
+<include>ui_font_med.inc</include>
+</Namespace>
+<Namespace Name='Icons'/>
+</Page>

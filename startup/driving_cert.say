@@ -1,0 +1,15 @@
+########################################################
+# Driving Area Certs Script
+########################################################
+
+# Start the event script.
+
+$begin DrivingAreaCerts
+	#-----------------------------------
+	$text @betty_driving_area_02
+	$play betty_driving_area_certs_01.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end

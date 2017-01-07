@@ -1,0 +1,12 @@
+pse_link vt_vehicle_1 vt_vehicle_1
+pse_link xx06_width_13_slope_0.06_offset_-2_blend_50 vt_vehicle_1
+pse_link xx08_width_13_slope_0.06_offset_-2_blend_50 vt_vehicle_1
+pse_link vt_vehicle_4 vt_vehicle_1
+pse_link vt_vehicle_5 vt_vehicle_1
+pse_link vt_vehicle_6 vt_vehicle_1
+pse_link vt_vehicle_7 vt_vehicle_1
+pse_link vt_vehicle_8 vt_vehicle_1
+pse_link vt_dropship_9 vt_dropship_1
+pse_link vt_air_vehicle_10 vt_air_vehicle_1
+pse_link vt_air_vehicle_11 vt_air_vehicle_1
+pse_link vt_air_vehicle_12 vt_air_vehicle_1

@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 4
+# Map Usage
+#=======================================================
+
+$begin OfflineTrainingMission4
+	$levelup
+	$quit
+$end

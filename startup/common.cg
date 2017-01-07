@@ -1,0 +1,16 @@
+#ifndef COMMON_CG
+#define COMMON_CG
+
+struct appdata {
+    float3 Position         : POSITION;
+    float4 Color0           : COLOR0;
+    float2 TexCoord0        : TEXCOORD0;
+};
+
+struct vertout {
+    float4 HPOS : POSITION;
+    float4 TEX0 : TEXCOORD0;
+    float4 COL0 : COLOR0;
+};
+
+#endif // COMMON_CG

@@ -1,0 +1,15 @@
+########################################################
+# Shooting Range Certs Script
+########################################################
+
+# Start the event script.
+
+$begin ShootingRangeCerts
+	#-----------------------------------
+	$text @betty_shooting_range_02
+	$play betty_shooting_range_certs_01.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end

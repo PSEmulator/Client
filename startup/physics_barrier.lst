@@ -1,0 +1,62 @@
+########### Record 'barrier' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction barrier
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.00001
+
+phys_model avatar_barrier
+################ Physics Primitive avatar_barrier_cdbox0 ###########
+phys_box root 10 0.5 5.0 5.0 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model avatar_barrier_orbital_building
+################ Physics Primitive avatar_barrier_orbital_building_cdbox0 ###########
+phys_box root 10 0.5 5.0 5.0 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model vehicle_barrier
+################ Physics Primitive vehicle_barrier_cdbox0 ###########
+phys_box root 10 1.0 10.0 7.0 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model avatar_barrier_virtual_training
+################ Physics Primitive avatar_barrier_virtual_training_cdbox0 ###########
+phys_box root 10 0.5 6.0 5.5 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model warpgate_barrier
+################ Physics Primitive warpgate_barrier_cdsph0 ###########
+phys_sphere root 5.0 0.3 0 0 0.3
+phys_cookie warp_gate_barrier 
+phys_collisionboneoffset 0 0 0
+phys_material barrier
+phys_com_offset 0 0 0
+
+phys_model pad_landing_barrier
+################ Physics Primitive pad_landing_barrier_cdbox0 ###########
+phys_box root 1.0 9.5 6.5 0.6 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0

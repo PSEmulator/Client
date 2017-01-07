@@ -1,0 +1,93 @@
+########################################################
+# Equipment Terminal Script
+########################################################
+
+# Start the event script.
+$begin Main
+	#-----------------------------------
+	$text @betty_equipment_01
+	$play betty_equip_terminal_01.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_02
+	$set_page EquipmentTerminal
+	$flash OrderPage.BuyButton
+	$play betty_equip_terminal_02.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_03
+	$play betty_equip_terminal_03.wav
+	$flash OrderPage.SellButton
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_04
+	$play betty_equip_terminal_04.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_05a
+	$play betty_equip_terminal_05a.wav
+	$flash WeaponTab
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_05b
+	$play betty_equip_terminal_05b.wav
+	$flash ArmorTab
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_05c
+	$play betty_equip_terminal_05c.wav
+	$flash EquipmentTab
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_05d
+	$play betty_equip_terminal_05d.wav
+	$flash VehicleAmmoTab
+	$sync
+
+	#-----------------------------------
+	$flash FavoritesTab
+	$click_item FavoritesTab
+	$text @betty_equipment_06
+	$play betty_equip_terminal_06.wav
+	$wait_click
+
+	#-----------------------------------
+	$flash FavoritesPage.SaveButton
+	$text @betty_equipment_07a
+	$play betty_equip_terminal_07a.wav
+	$sync
+
+	#-----------------------------------
+	$flash FavoritesPage.LoadButton
+	$text @betty_equipment_07b
+	$play betty_equip_terminal_07b.wav
+	$sync
+
+	#-----------------------------------
+	$flash FavoritesPage.DeleteButton
+	$text @betty_equipment_07c
+	$play betty_equip_terminal_07c.wav
+	$sync
+
+	#-----------------------------------
+	$flash FavoritesPage.FavoritesListbox
+	$text @betty_equipment_07d
+	$play betty_equip_terminal_07d.wav
+	$sync
+
+	#-----------------------------------
+	$text @betty_equipment_08
+	$play betty_equip_terminal_08.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end
+

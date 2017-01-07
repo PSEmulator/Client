@@ -1,0 +1,1105 @@
+#phys_carwheel
+
+##dropshiprr2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 3
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##landinggearrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.27
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.00001
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes true
+
+##landinggearrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.27
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.00001
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes true
+
+##landinggearfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.27
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.0001
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes true
+
+##wheel65fr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##wheelrl2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##test_wheel
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.4
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 1.2
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##treadrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##treadrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##dropshiprl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel65rr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##dropshipfront
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 3
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##landinggear
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.4
+phys_carwheel_suspension_travel 0.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.1
+phys_carwheel_suspension_softness 0.0001
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes true
+
+##wheelrr2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel65rl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel65fl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##dropshiprl2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 3
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheelfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##wheelfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##wheelrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheelrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.50
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##treadml
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##treadmr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel65rr2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##dropshiprr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##landinggearfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.27
+phys_carwheel_suspension_travel 0.25
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.3
+phys_carwheel_suspension_softness 0.0001
+phys_carwheel_steers false
+phys_carwheel_drives false
+phys_carwheel_brakes true
+
+##treadfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##treadfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 0.1
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel65rl2
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.15
+phys_carwheel_suspension_softness 0.009
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadml
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadmr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##vtreadrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.001
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverf
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.7
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping .5
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .25
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.7
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping .5
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.5
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.5
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.5
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanhoverrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.5
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanheavybuggyrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.68
+phys_carwheel_suspension_travel 1.25
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanheavybuggyrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.68
+phys_carwheel_suspension_travel 1.25
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanheavybuggyfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.68
+phys_carwheel_suspension_travel 1.25
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##twomanheavybuggyfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.68
+phys_carwheel_suspension_travel 1.25
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##two_man_assault_buggy_fr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.57
+phys_carwheel_suspension_travel 0.85
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##two_man_assault_buggy_rr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.57
+phys_carwheel_suspension_travel 0.85
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##two_man_assault_buggy_fl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.57
+phys_carwheel_suspension_travel 0.85
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##two_man_assault_buggy_rl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.57
+phys_carwheel_suspension_travel 0.85
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel3manrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.7
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel3manrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.7
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##wheel3manfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight .7
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##wheel3manfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight .7
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##quadrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.45
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##quadrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.45
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##quadfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.36
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##quadfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.36
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##ptreadmr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##ptreadfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##ptreadrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##ptreadrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##ptreadfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##ptreadml
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1
+phys_carwheel_suspension_travel 2.25
+phys_carwheel_suspension_damping 25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.00015
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##orbitalshuttle_rearright
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1.96
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##orbitalshuttle_rearleft
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1.96
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##orbitalshuttlefront
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 1.96
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##medrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##medrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##medfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##medfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.85
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##magriderf
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.75
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping .5
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .25
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##magriderr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.75
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping .5
+phys_carwheel_suspension_ztos .8
+phys_carwheel_suspension_softness .25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##magriderrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##magriderfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##magriderrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##magriderfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.25
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##lghttreadfr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.5
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##lghttreadrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.5
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##lghttreadfl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.5
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##lghttreadrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.5
+phys_carwheel_suspension_travel 2
+phys_carwheel_suspension_damping 2
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##apcrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.98
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##apcfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##apcrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.98
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##apcfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.9
+phys_carwheel_suspension_travel 1.2
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives true
+phys_carwheel_brakes false
+
+##amsfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 1.0
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##amsrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 1.0
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##amsrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 1.0
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##amsfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.8
+phys_carwheel_suspension_travel 1.0
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##antrr
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.55
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##antrl
+
+phys_carwheel_locksteering true
+phys_carwheel_suspension_chassisheight 0.55
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers false
+phys_carwheel_drives true
+phys_carwheel_brakes true
+
+##antfr
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.55
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false
+
+##antfl
+
+phys_carwheel_locksteering false
+phys_carwheel_suspension_chassisheight 0.55
+phys_carwheel_suspension_travel 0.7
+phys_carwheel_suspension_damping 1.25
+phys_carwheel_suspension_ztos 0.8
+phys_carwheel_suspension_softness 0.5
+phys_carwheel_steers true
+phys_carwheel_drives false
+phys_carwheel_brakes false

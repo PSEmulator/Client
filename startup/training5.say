@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 5
+# Drop Pods
+#=======================================================
+
+$begin OfflineTrainingMission5
+	$levelup
+	$quit
+$end

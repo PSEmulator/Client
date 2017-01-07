@@ -1,0 +1,1492 @@
+#ob_begin
+
+##vrrocks
+
+ob_mesh vrrocka
+ob_mesh vrrockb
+ob_mesh vrrockc
+ob_scalexy 1:0.4<0.6:2.2>
+ob_scalez 1:0.3<0.7:1.8>
+ob_zoffset 0.3:0.2<.4:1.1>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3
+ob_exclude_radius 8<0.5:2.5>
+ob_clump 20 2 100
+eb_end
+
+##vrtrees
+
+ob_mesh vrtreec
+ob_mesh vrtreeb
+ob_mesh vrtreea
+ob_scalexy 1:0.5<0.5:1.5>
+ob_scalez 1:0.2<0.4:1.6>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 18
+ob_count 6
+ob_exclude_radius 9<0.4:1.5>
+ob_clump 42 1 16
+ob_random_rotation
+ob_child vrrocks
+eb_end
+
+##earth_trees_clump3
+
+ob_mesh earthtreec
+ob_mesh earthtreed
+ob_mesh earthtreee
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.6:1.4>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 8
+ob_count 18
+ob_exclude_radius 8
+ob_clump 60 1 30
+ob_random_rotation
+eb_end
+
+##large_frond_map01
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy .8<0.8:1.2>
+ob_scalez 1<0.8:1.2>
+ob_zoffset 0.05
+ob_slope_limit 20
+ob_count 6
+ob_exclude_radius 6:0.5
+ob_clump 30 3 80
+ob_random_rotation
+ob_child desertrocks_map01
+eb_end
+
+##small_frond_map01
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy .3<0.8:1.2>
+ob_scalez 0.9<0.8:1.2>
+ob_zoffset 0.04<0.5:1.5>
+ob_slope_limit 20
+ob_count 8
+ob_exclude_radius 5:0.5
+ob_clump 30 3 80
+ob_random_rotation
+ob_child desertrocks_map01
+eb_end
+
+##desert_shrubA&B_tight_clump
+
+ob_mesh desertshruba
+ob_mesh desertshrubb
+ob_scalexy 1:1<.6:.9>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset .3:0.5<.3:.5>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 5
+ob_clump 20 1 10
+ob_random_rotation
+eb_end
+
+##artic_trees_clump2
+
+ob_mesh artictreea
+ob_mesh artictreeb
+ob_mesh artictreec
+ob_mesh artictreed
+ob_mesh artictreee
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<0.5:1.5>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 8:0.5
+ob_clump 30 3 100
+ob_child artic_shrubs_clump
+ob_random_rotation
+eb_end
+
+##desert_rocks_large_clump2
+
+ob_mesh desertrockk
+ob_mesh desertrockl
+ob_mesh desertrockm
+ob_mesh desertrockn
+ob_mesh desertrocko
+ob_mesh desertrockp
+ob_mesh desertrockq
+ob_scalexy 1<.6:2.5>
+ob_scalez 1<0.8:1.8>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 15:0.2
+ob_clump 100 1 100
+eb_end
+
+##map13_mask
+
+ob_mask earth_trees_clump2 0 100 0
+ob_mask earth_trees_clump3 0 150 0
+ob_mask earth_trees_clump4 0 200 0
+ob_mask alien_trees_clump2 0 0 100
+ob_mask alien_trees_clump3 0 0 200
+eb_end
+
+##grey_rocks_clump3
+
+ob_mesh earthrockl
+ob_mesh earthrockc
+ob_mesh earthrockb
+ob_mesh earthrocka
+ob_scalexy 1:0.4<1:2>
+ob_scalez 1:0.2<1:2>
+ob_zoffset 0.8<0:2>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3
+ob_exclude_radius 9<0.5:2>
+ob_clump 20 2 100
+eb_end
+
+##grey_rocks_clump4
+
+ob_mesh earthrockd
+ob_mesh earthrockj
+ob_scalexy 1:0.5<0.8:2.6>
+ob_scalez 1:0.4<0.8:1.9>
+ob_zoffset 0.3:0.2<.4:1.4>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3
+ob_exclude_radius 8<0.5:3>
+ob_clump 20 2 100
+eb_end
+
+##artic_rocks3
+
+ob_mesh articrockb
+ob_mesh articrockc
+ob_mesh articrocke
+ob_mesh articrockh
+ob_scalexy 1.5:0.4<0.8:2>
+ob_scalez 1:0.4<0.8:2>
+ob_zoffset 0.8<0.3:1>
+ob_slope_limit 14
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 9<0.8:1.2>
+ob_clump 38 1 50
+eb_end
+
+##swamp_trees_clump
+
+ob_mesh swamptreea
+ob_mesh swamptreeb
+ob_mesh swamptreec
+ob_mesh swamptreed
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.1:0.2<0:.1>
+ob_slope_limit 15
+ob_count 7
+ob_exclude_radius 10:0.5
+ob_clump 50 3 100
+ob_random_rotation
+ob_child earth_shrubs_clump
+eb_end
+
+##map01_mask
+
+ob_mask scatteredrocks_map01 100 50 100
+ob_mask rockclusters_map01 100 150 100
+ob_mask small_desert_trees_map01 200 100 100
+ob_mask large_desert_trees_map01 200 100 200
+ob_mask small_frond_map01 160 140 90
+ob_mask large_frond_map01 160 200 90
+eb_end
+
+##grey_rocks_clump2
+
+ob_mesh earthrocka
+ob_scalexy 2.2<1:2.5>
+ob_scalez 1.2<0.9:1.5>
+ob_zoffset 0.1:0.2<0.6:1>
+ob_slope_limit 36
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 11
+ob_clump 38 1 48
+eb_end
+
+##mask_red
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:0.5<1.4:2.0>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.1:0.1<0:1>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 5
+ob_clump 25 1 64
+ob_random_rotation
+ob_child desert_trees_clump1
+ob_child desert_rocks_tightsmall_clump
+ob_child desert_shrubA&B_tight_clump
+eb_end
+
+##mask_green
+
+ob_mesh deserttreea
+ob_mesh deserttreeb
+ob_mesh deserttreec
+ob_scalexy 2:2<2:3>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 5
+ob_exclude_radius 2:0.5
+ob_clump 25 2 150
+ob_random_rotation
+ob_child desert_trees_clump
+eb_end
+
+##alien_trees_clump4
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_mesh earthtreef
+ob_scalexy 1.1<0.6:1.2>
+ob_scalez 0.9<0.6:1.3>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 28
+ob_count 3<0.5:3.5>
+ob_exclude_radius 4<0.6:1.2>
+ob_clump 18 2 60
+ob_child desert_rocks_clump
+ob_random_rotation
+eb_end
+
+##artic_shrubs_clump
+
+ob_mesh articshrubg
+ob_mesh articshrubf
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset .1<0.2:.8>
+ob_slope_limit 15
+ob_count 1
+ob_exclude_radius 6
+ob_clump 100 3 100
+ob_random_rotation
+eb_end
+
+##alien_trees_clump
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_count 8
+ob_exclude_radius 5:0.5
+ob_clump 30 3 80
+ob_random_rotation
+ob_child alien_shrubs_clump
+eb_end
+
+##large_desert_trees_map01
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:1<1.5:3.5>
+ob_scalez 1.1:0.2<0.8:1.2>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 15
+ob_count 7
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 3 150
+ob_random_rotation
+ob_orient_to_terrain
+ob_child desertrocks_map01
+eb_end
+
+##scatteredrocks_map01
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 1<0.5:3>
+ob_scalez 1.2<0.3:2.6>
+ob_zoffset 0.4<0:3>
+ob_slope_limit 23
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3<0.5:4>
+ob_exclude_radius 5<0.5:2>
+ob_clump 35 1 60
+eb_end
+
+##earth_trees_clump
+
+ob_mesh earthtreec
+ob_mesh earthtreed
+ob_mesh earthtreee
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 7
+ob_exclude_radius 6:0.5
+ob_clump 25 3 100
+ob_random_rotation
+ob_child earth_shrubs_clump
+eb_end
+
+##alien_trees_clump2
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_mesh earthtreef
+ob_scalexy 1.1<0.6:1.2>
+ob_scalez 0.9<0.6:1.3>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 28
+ob_count 3<0.5:3.5>
+ob_exclude_radius 8<0.6:1.2>
+ob_clump 18 2 60
+ob_random_rotation
+eb_end
+
+##desert_cacti_tight_clump
+
+ob_mesh deserttreea
+ob_mesh deserttreeb
+ob_mesh deserttreec
+ob_scalexy 1:0.5<0.7:1.1>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 10
+ob_exclude_radius 2:0.5
+ob_clump 30 2 50
+ob_random_rotation
+eb_end
+
+##desert_rocks_tightsmall_clump
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrockd
+ob_mesh desertrocke
+ob_scalexy 1:0.5<.3:1>
+ob_scalez 1:0.5<0.9:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 5:<0.5:1.5>
+ob_clump 30 1 150
+eb_end
+
+##artic_stump1
+
+ob_mesh articshruba
+ob_scalexy 2
+ob_scalez 2
+ob_zoffset -1
+ob_slope_limit 15
+ob_count 1
+ob_exclude_radius 5
+ob_random_rotation
+eb_end
+
+##rock_formaion7
+
+ob_mesh rock_formation7
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_count 1
+eb_end
+
+##map15_mask
+
+ob_mask vrtrees 0 255 0
+ob_mask vrrocks 0 0 255
+eb_end
+
+##map08_mask
+
+ob_mask desert_trees_clump2 0 200 0
+eb_end
+
+##pc
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_child desert_rocks_tightsmall_clump
+ob_child desert_shrubA&B_tight_clump
+ob_scalexy 1.2:2<1.4:3>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.1:0.1<0:1>
+ob_slope_limit 20
+ob_count 8
+ob_exclude_radius 5
+ob_clump 30 1 90
+ob_random_rotation
+eb_end
+
+##desert_trees_clump2
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:2<1.4:3>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 18
+ob_count 16
+ob_exclude_radius 3
+ob_clump 42 1 16
+ob_random_rotation
+ob_child desert_rocks_tightsmall_clump
+ob_child desert_rocks_sparse_clump
+ob_child desert_shrubA&B_tight_clump
+eb_end
+
+##alien_trees_clump3
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy 1<0.8:1.6>
+ob_scalez 1.3<0.8:2.4>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 28
+ob_count 2<0:3>
+ob_exclude_radius 8<0.5:2.5>
+ob_clump 30 2 45
+ob_random_rotation
+eb_end
+
+##artic_rocks2
+
+ob_mesh articrockb
+ob_mesh articrockc
+ob_scalexy 1.8<0.8:2.5>
+ob_scalez 1<0.9:2.5>
+ob_zoffset 0.6<0.3:1>
+ob_slope_limit 26
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 4<0.8:1.2>
+ob_clump 38 1 50
+eb_end
+
+##earth_trees_clump4
+
+ob_mesh earthtreec
+ob_mesh earthtreed
+ob_mesh earthtreee
+ob_scalexy 1.5:0.5<0.9:1.4>
+ob_scalez 1:0.2<0.9:3>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 24
+ob_count 4
+ob_exclude_radius 12
+ob_clump 30 1 55
+ob_random_rotation
+eb_end
+
+##artic_rocks1
+
+ob_mesh articrockh
+ob_mesh articrockc
+ob_mesh articrockb
+ob_mesh articrocke
+ob_scalexy 1<0.8:1.8>
+ob_scalez 1.2<0.9:2.5>
+ob_zoffset 0.5<0.3:1>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 3<0.8:1.2>
+ob_clump 38 1 50
+eb_end
+
+##desert_cacti_clump
+
+ob_mesh deserttreea
+ob_mesh deserttreeb
+ob_mesh deserttreec
+ob_scalexy 1.2:0.5<0.8:1.6>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 15
+ob_exclude_radius 1:0.5
+ob_clump 25 4 150
+ob_random_rotation
+eb_end
+
+##desert_shrubC&D_loose_clump
+
+ob_mesh desertshrubc
+ob_mesh desertshrubd
+ob_scalexy 1:1.1<.8:2.1>
+ob_scalez 1:0.2<0.9:1.2>
+ob_zoffset 0.1:0.1<0:1>
+ob_slope_limit 10
+ob_count 100
+ob_exclude_radius 3:0.5
+ob_clump 40 2 40
+ob_random_rotation
+eb_end
+
+##test_script
+
+ob_mesh deserttreed
+ob_scalexy 1.2:0.5<0.8:1.4>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 15
+ob_exclude_radius 3
+ob_random_rotation
+ob_orient_to_terrain
+ob_child desert_shrubs_clump
+eb_end
+
+##earth_shrubs_clump
+
+ob_mesh earthshruba
+ob_mesh earthshrubb
+ob_scalexy 1:0.5<0.8:1.4>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_count 15
+ob_exclude_radius 3:0.5
+ob_clump 20 4 40
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##artic_trees_thin
+
+ob_mesh artictreed
+ob_mesh artictreee
+ob_child artic_rocks1
+ob_child artic_shrubs_clump
+ob_child big_artic_trees
+ob_scalexy 1:0.4<.4:1.6>
+ob_scalez 1:0.4<.4:1.6>
+ob_zoffset 1<0.5:1.5>
+ob_slope_limit 18
+ob_count 1
+ob_exclude_radius 6
+ob_clump 30 1 65
+ob_random_rotation
+eb_end
+
+##grey_rocks_clump
+
+ob_mesh earthrockd
+ob_mesh earthrocki
+ob_mesh earthrockj
+ob_mesh earthrockl
+ob_scalexy 1:0.5<0.6:2.2>
+ob_scalez 1:0.1<0.7:1.6>
+ob_zoffset 0.3:0.2<.4:1.1>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3
+ob_exclude_radius 8<0.5:2.5>
+ob_clump 20 2 100
+eb_end
+
+##small_frond_touchup
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy .3<0.7:1.6>
+ob_scalez 0.9<0.7:1.5>
+ob_zoffset 0.04<0.5:1.5>
+ob_slope_limit 20
+ob_count 4
+ob_exclude_radius 5:0.5
+ob_clump 30 1 80
+ob_random_rotation
+eb_end
+
+##map09_mask
+
+ob_mask earth_trees_clump3 0 150 0
+ob_mask earth_trees_clump4 0 50 0
+ob_mask grey_rocks_clump 255 0 0
+ob_mask volcanic_trees1 150 0 150
+ob_mask desert_rocks_clump 150 0 0
+ob_mask volc_geysers 150 150 0
+ob_mask desert_trees_clump1 0 0 255
+eb_end
+
+##alien_shrubs_clump2
+
+ob_mesh earthshrubc
+ob_mesh earthshrubd
+ob_scalexy 3<3:5>
+ob_scalez 1<1.2:1.6>
+ob_zoffset 0.2:0.2<0:0.5>
+ob_slope_limit 20
+ob_count 7<0:2>
+ob_exclude_radius 2<0:3>
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##earth_trees_clump2
+
+ob_mesh earthtreec
+ob_mesh earthtreed
+ob_mesh earthtreee
+ob_scalexy 1.5:0.5<0.8:2.2>
+ob_scalez 1:0.2<0.6:2.4>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 18
+ob_count 16
+ob_exclude_radius 3
+ob_clump 42 1 16
+ob_random_rotation
+ob_child grey_rocks_clump
+eb_end
+
+##artic_trees_clump
+
+ob_mesh artictreea
+ob_mesh artictreeb
+ob_mesh artictreec
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<0.5:1.5>
+ob_slope_limit 15
+ob_count 5
+ob_exclude_radius 8:0.5
+ob_clump 30 3 100
+ob_random_rotation
+eb_end
+
+##desert_trees_clump1
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:1<1.5:3.5>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.1<0:1>
+ob_slope_limit 23
+ob_count 5
+ob_exclude_radius 7
+ob_clump 40 1 18
+ob_child desert_rocks_clump
+ob_random_rotation
+eb_end
+
+##artic_trees_clump3
+
+ob_mesh artictreea
+ob_mesh artictreeb
+ob_mesh artictreec
+ob_child artic_rocks1
+ob_child artic_rocks2
+ob_child artic_trees_clump4
+ob_scalexy 1<0.8:2.2>
+ob_scalez 1<0.8:2..5>
+ob_zoffset 1.2<0.5:1.1>
+ob_slope_limit 6
+ob_count 5
+ob_exclude_radius 12<0.5:1.5>
+ob_clump 60 1 55
+ob_random_rotation
+eb_end
+
+##map11_mask
+
+ob_mask earth_trees_clump2 0 150 0
+ob_mask earth_trees_clump4 0 255 0
+ob_mask grey_rocks_clump 255 0 0
+eb_end
+
+##map07_mask
+
+ob_mask artic_trees_thin 0 0 150
+ob_mask artic_trees_thick 0 0 255
+ob_mask artic_rocks3 255 0 0
+eb_end
+
+##desert_cacti_clump1
+
+ob_mesh deserttreea
+ob_mesh deserttreeb
+ob_mesh deserttreec
+ob_scalexy 1:0.5<0.7:1.1>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 10
+ob_exclude_radius 2:0.5
+ob_clump 40 2 40
+ob_random_rotation
+eb_end
+
+##desert_rocks_clump
+
+ob_mesh desertrockc
+ob_mesh desertrockb
+ob_mesh desertrocke
+ob_scalexy 1:0.5<0.5:3>
+ob_scalez 1<0.3:2.6>
+ob_zoffset 0.2<0:0.9>
+ob_slope_limit 21
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 5<0.5:4>
+ob_exclude_radius 9
+ob_clump 35 1 46
+eb_end
+
+##artic_trees_clump4
+
+ob_mesh artictreed
+ob_mesh artictreee
+ob_child artic_rocks1
+ob_child artic_rocks2
+ob_scalexy 1<0.2:1.4>
+ob_scalez 1<0.2:1.4>
+ob_zoffset 0.9<0.7:1.5>
+ob_slope_limit 28
+ob_count 6<.5:2.5>
+ob_exclude_radius 8<0.8:1.2>
+ob_clump 30 3 60
+ob_random_rotation
+eb_end
+
+##volcanic_trees1
+
+ob_mesh volcanictreed
+ob_child volcanic_trees2
+ob_scalexy 1:0.5<0.6:1.5>
+ob_scalez 1:0.4<0.6:1.5>
+ob_zoffset 0.1<0:0.1>
+ob_slope_limit 18
+ob_count 3
+ob_exclude_radius 6
+ob_clump 20 2 35
+ob_random_rotation
+eb_end
+
+##volcanic_rocks2
+
+ob_mesh volcanicrockb
+ob_mesh volcanicrocka
+ob_scalexy 1<.4:4>
+ob_scalez 1<0.8:3>
+ob_zoffset 0.8<0:0.4>
+ob_slope_limit 18
+ob_random_rotation
+ob_count 4<0:2>
+ob_exclude_radius 18:0.2
+ob_clump 100 1 100
+eb_end
+
+##map12_mask
+
+ob_mask earth_trees_clump2 0 100 0
+ob_mask earth_trees_clump3 0 150 0
+ob_mask earth_trees_clump4 0 200 0
+eb_end
+
+##desert_rocks_large_clump
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 1<0.4:2.4>
+ob_scalez 1<0.5:1.8>
+ob_zoffset 0.3<0:1>
+ob_slope_limit 12
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 4
+ob_exclude_radius 14<.8:1.8>
+ob_child desert_rocks_tightsmall_clump
+ob_clump 16 2 52
+eb_end
+
+##rock_formation
+
+ob_mesh rock_formation1
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_count 1
+eb_end
+
+##map06_mask
+
+ob_mask artic_trees_clump2 0 200 0
+eb_end
+
+##map03_mask
+
+ob_mask alien_trees_clump2 0 150 0
+ob_mask earth_trees_clump4 0 255 0
+ob_mask earth_trees_clump2 0 200 0
+ob_mask grey_rocks_clump 255 0 0
+eb_end
+
+##old_earth_trees
+
+ob_mesh earth_tree4
+ob_mesh earth_tree5
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 90
+ob_count 100
+ob_exclude_radius 1:0.5
+ob_random_rotation
+eb_end
+
+##bigrock1
+
+ob_mesh earthrockc
+ob_scalexy 1:0.5<0.8:1.2>
+ob_scalez 1:0.1<0.6:1.2>
+ob_zoffset 0.2:0.2<1.2:1.8>
+ob_slope_limit 40
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 130
+eb_end
+
+##volcanic_trees2
+
+ob_mesh volcanictreeg
+ob_scalexy 1<0.6:2.6>
+ob_scalez 1.7<0.5:2.9>
+ob_zoffset 0.2<0:.5>
+ob_slope_limit 18
+ob_count 4
+ob_exclude_radius 6
+ob_clump 60 1 45
+ob_random_rotation
+eb_end
+
+##volcanic_rocks3
+
+ob_mesh earthrockd
+ob_mesh earthrocki
+ob_mesh earthrockj
+ob_scalexy 1.4<0.5:2.5>
+ob_scalez 1<0.8:2>
+ob_zoffset 0.2<0:2>
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 9:1<0:2>
+ob_clump 24 2 70
+eb_end
+
+##mask_purple
+
+ob_mesh desertrocka
+ob_mesh desertrockd
+ob_mesh desertrockc
+ob_scalexy 1:0.5<.6:1.3>
+ob_scalez 1:0.5<0.6:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+ob_exclude_radius 5:0.2
+ob_clump 35 1 200
+ob_child desert_shrubC&D_loose_clump
+eb_end
+
+##map02_mask
+
+ob_mask swamp_trees_clump 0 100 0
+ob_mask swamp_trees_clump3 0 150 0
+ob_mask earth_trees_clump4 0 200 0
+ob_mask grey_rocks_clump2 255 0 0
+ob_mask alien_trees_clump2 0 0 100
+ob_mask alien_trees_clump3 0 0 200
+ob_mask bigrock1 180 0 0
+eb_end
+
+##small_desert_trees_map01
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy .8<1.2:3>
+ob_scalez .8<0.8:2.5>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 15
+ob_count 7
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 3 150
+ob_random_rotation
+ob_orient_to_terrain
+ob_child desertrocks_map01
+eb_end
+
+##desertrocks_map01
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 1.2:0.5<0.5:3>
+ob_scalez 1.2<0.3:2.6>
+ob_zoffset 0.4<0:3>
+ob_slope_limit 21
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 5<0.5:4>
+ob_exclude_radius 4<0.5:2>
+ob_clump 35 1 46
+eb_end
+
+##rockclusters_map01
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 2.5<0.5:3>
+ob_scalez 1.5<0.3:2.5>
+ob_zoffset 0.8<0:3>
+ob_slope_limit 12
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3<0.5:4>
+ob_exclude_radius 8<0.5:2>
+ob_child desertrocks_map01
+ob_clump 35 1 60
+eb_end
+
+##alien_shrubs_clump
+
+ob_mesh earthshrubc
+ob_mesh earthshrubd
+ob_scalexy 1.2:0.5<0.8:1.4>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_count 15
+ob_exclude_radius 3:0.5
+ob_clump 20 4 40
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##artic_treeD&E_clump2
+
+ob_mesh artictreed
+ob_mesh artictreee
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<0.5:1.5>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 20:0.5
+ob_clump 60 3 100
+ob_random_rotation
+eb_end
+
+##desert_shrubs_clump
+
+ob_mesh desertshruba
+ob_mesh desertshrubb
+ob_mesh desertshrubc
+ob_mesh desertshrubd
+ob_scalexy 1.2:0.5<0.8:1.4>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 15
+ob_exclude_radius 5:0.5
+ob_clump 40 2 40
+ob_random_rotation
+eb_end
+
+##desert_rocks_sparse_clump
+
+ob_mesh desertrocka
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrockd
+ob_mesh desertrocke
+ob_scalexy 1:0.5<2:4>
+ob_scalez 1:0.1<0.9:1.5>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 15
+ob_exclude_radius 5:0.2
+ob_clump 20 6 100
+eb_end
+
+##artic_trees_thick
+
+ob_mesh artictreed
+ob_mesh artictreee
+ob_child artic_shrubs_clump
+ob_child artic_rocks1
+ob_child big_artic_trees
+ob_scalexy 1:0.4<.6:1.8>
+ob_scalez 1:0.4<.4:1.6>
+ob_zoffset 1<0.5:1.5>
+ob_slope_limit 14
+ob_count 6
+ob_exclude_radius 7
+ob_clump 40 3 100
+ob_random_rotation
+eb_end
+
+##map05_mask
+
+ob_mask earth_trees_clump4 0 200 0
+ob_mask earth_trees_clump3 0 150 0
+ob_mask earth_trees_clump2 0 100 0
+ob_mask alien_trees_clump2 0 255 0
+eb_end
+
+##artic_treeD&E_clump
+
+ob_mesh artictreed
+ob_mesh artictreee
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<.5:1.5>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 4:0.5
+ob_clump 50 3 100
+ob_random_rotation
+eb_end
+
+##volc_geysers2
+
+ob_mesh volcanicrockh
+ob_scalexy 1<0.5:1.8>
+ob_scalez 1<0.3:1.5>
+ob_zoffset 0.2<0:2>
+ob_slope_limit 24
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 5<0:2>
+eb_end
+
+##map04_mask
+
+ob_mask desert_trees_clump2 0 200 0
+eb_end
+
+##touchup_large_desert_trees
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:1<1.5:3.5>
+ob_scalez 1.1:0.2<0.8:1.2>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 15
+ob_count 4
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 1 150
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##touchup_small_desert_trees
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy .8<1.2:3>
+ob_scalez .8<0.8:2.5>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 15
+ob_count 4
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 1 150
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##touchup_small_frond
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy .3<0.7:1.6>
+ob_scalez 0.9<0.7:1.5>
+ob_zoffset 0.04<0.5:1.5>
+ob_slope_limit 20
+ob_count 4
+ob_exclude_radius 5:0.5
+ob_clump 30 1 80
+ob_random_rotation
+eb_end
+
+##touchup_large_frond
+
+ob_mesh earthtreea
+ob_mesh earthtreeb
+ob_scalexy .9<0.8:1.2>
+ob_scalez 1.1<0.8:1.2>
+ob_zoffset 0.05
+ob_slope_limit 20
+ob_count 3
+ob_exclude_radius 6:0.5
+ob_clump 30 3 80
+ob_random_rotation
+eb_end
+
+##touchup_scatteredrocks
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 1<0.5:3>
+ob_scalez 1.2<0.3:2.6>
+ob_zoffset 0.4<0:3>
+ob_slope_limit 23
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3<0.5:4>
+ob_exclude_radius 5<0.5:2>
+ob_clump 35 1 60
+eb_end
+
+##touchup_rockclusters
+
+ob_mesh desertrockb
+ob_mesh desertrocka
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 2.7<0.5:3>
+ob_scalez 1.6<0.3:2.5>
+ob_zoffset 0.8<0:3>
+ob_slope_limit 12
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 3<0.5:4>
+ob_exclude_radius 8<0.5:2>
+ob_child desertrocks_map01
+ob_clump 35 1 60
+eb_end
+
+##map10_mask
+
+ob_mask earth_trees_clump2 0 100 0
+ob_mask earth_trees_clump3 0 150 0
+ob_mask earth_trees_clump4 0 200 0
+ob_mask alien_trees_clump2 0 0 100
+ob_mask alien_trees_clump3 0 0 200
+eb_end
+
+##mask_blue
+
+ob_mesh desertrockb
+ob_mesh desertrockc
+ob_mesh desertrocke
+ob_scalexy 1:0.5<1:1.3>
+ob_scalez 1:0.5<0.9:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 15:0.2
+ob_clump 35 1 250
+ob_child desert_shrubA&B_tight_clump desert_shrubC&D_loose_clump
+eb_end
+
+##volcanic_rockx
+
+ob_child volcanic_rocks1
+ob_child volcanic_rocks2
+ob_child volcanic_rocks3
+eb_end
+
+##artic_treeABC_clump
+
+ob_mesh artictreea
+ob_mesh artictreeb
+ob_mesh artictreec
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<0.5:1.5>
+ob_slope_limit 10
+ob_count 5
+ob_exclude_radius 20:0.5
+ob_clump 60 3 100
+ob_random_rotation
+eb_end
+
+##desert_trees_clump
+
+ob_mesh deserttreed
+ob_mesh deserttreee
+ob_mesh deserttreef
+ob_scalexy 1.2:2<1.4:3>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 15
+ob_count 5
+ob_exclude_radius 4:0.5
+ob_clump 30 3 150
+ob_random_rotation
+ob_orient_to_terrain
+ob_child desert_rocks_tightsmall_clump
+ob_child desert_rocks_sparse_clump
+ob_child desert_shrubA&B_tight_clump
+eb_end
+
+##volc_geysers
+
+ob_mesh volcanicrocke
+ob_mesh volcanicrockf
+ob_mesh volcanicrockg
+ob_scalexy 1.8<1:2>
+ob_scalez 1<0.5:1.5>
+ob_zoffset 0.2<0:2>
+ob_slope_limit 24
+ob_random_rotation
+ob_orient_to_terrain
+ob_count 2
+ob_exclude_radius 7<0.8:1.4>
+ob_clump 40 1 22
+eb_end
+
+##big_artic_trees
+
+ob_mesh artictreea
+ob_mesh artictreeb
+ob_mesh artictreec
+ob_scalexy 1.5:0.3<1:1.5>
+ob_scalez 1.5:0.3<.9:1.4>
+ob_zoffset 3<0.5:1.5>
+ob_slope_limit 10
+ob_count 1
+ob_exclude_radius 8
+ob_random_rotation
+eb_end
+
+##rock_formation8
+
+ob_mesh rockformation8
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_exclude_radius 1000
+ob_count 1
+eb_end
+
+##volcanic_rocks1
+
+ob_mesh volcanicrockc
+ob_mesh earthrockd
+ob_mesh earthrocki
+ob_mesh earthrockj
+ob_child volcanic_rocks2
+ob_scalexy 1<0.5:2.5>
+ob_scalez 1<0.5:2.5>
+ob_zoffset 0.1:0.5
+ob_slope_limit 18
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 2
+ob_exclude_radius 8<0.5:2.5>
+ob_clump 24 2 70
+eb_end
+
+##swamp_trees_clump3
+
+ob_mesh swamptreea
+ob_mesh swamptreeb
+ob_mesh swamptreec
+ob_mesh swamptreed
+ob_scalexy 1.5:0.5<0.8:2>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:1>
+ob_slope_limit 8
+ob_count 15
+ob_exclude_radius 15
+ob_clump 60 1 30
+ob_random_rotation
+eb_end
+
+##volcanic_trees3
+
+ob_mesh volcanictreea
+ob_scalexy 1:0.5<0.6:1.5>
+ob_scalez 1:0.4<0.6:1.5>
+ob_zoffset 0.1<0:0.1>
+ob_slope_limit 18
+ob_count 1
+ob_exclude_radius 3
+ob_clump 20 1 35
+ob_random_rotation
+eb_end
+
+##touchup_large_desert_trees2
+
+ob_mesh deserttreeg
+ob_mesh deserttreeh
+ob_mesh deserttreei
+ob_scalexy 1.2:1<1.5:3.5>
+ob_scalez 1.1:0.2<0.8:1.2>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 15
+ob_count 4
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 1 150
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##touchup_small_desert_trees2
+
+ob_mesh deserttreeg
+ob_mesh deserttreeh
+ob_mesh deserttreei
+ob_scalexy .8<1.2:3>
+ob_scalez .8<0.8:2.5>
+ob_zoffset 0.2<0:1>
+ob_slope_limit 19
+ob_count 4
+ob_exclude_radius 4:0.5:2.5
+ob_clump 30 1 150
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##rock_formation7
+
+ob_mesh rock_formation7
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_orient_to_terrain
+ob_random_rotation
+ob_count 1
+eb_end
+
+##rock_formation17
+
+ob_mesh rock_formation17
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_exclude_radius 1000
+ob_count 1
+eb_end
+
+##rock_formation13
+
+ob_mesh rock_formation13
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_exclude_radius 1000
+ob_count 1
+eb_end
+
+##rock_formation15
+
+ob_mesh rock_formation15
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0.2
+ob_slope_limit 20
+ob_random_rotation
+ob_exclude_radius 1000
+ob_count 1
+eb_end
+
+##deserttreea
+
+ob_mesh deserttreea
+ob_scalexy 1:0.5<0.7:1.1>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:.2>
+ob_slope_limit 20
+ob_count 15
+ob_exclude_radius 3:0.5
+ob_clump 20 4 40
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##deserttreeb
+
+ob_mesh deserttreeb
+ob_scalexy 1:0.5<0.7:1.1>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:.2>
+ob_slope_limit 20
+ob_count 15
+ob_exclude_radius 3:0.5
+ob_clump 20 4 40
+ob_random_rotation
+ob_orient_to_terrain
+eb_end
+
+##deserttreec
+
+ob_mesh deserttreec
+ob_scalexy 1:0.5<0.7:1.1>
+ob_scalez 1:0.2<0.8:1.2>
+ob_zoffset 0.2:0.2<0:.2>
+ob_slope_limit 20
+ob_count 15
+ob_exclude_radius 3:0.5
+ob_clump 20 4 40
+ob_random_rotation
+ob_orient_to_terrain
+eb_end

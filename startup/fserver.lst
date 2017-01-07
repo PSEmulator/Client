@@ -1,0 +1,58 @@
+############### Player Id #10 ##########################
+# Create player's body and skin it
+
+ic_create avatar 410 409 100 15010
+
+# for NC lights
+ic_setempire 15010 nc
+ic_setgender 15010 m
+ic_setarmortype 15010 lite
+ic_setface 15010 1
+
+# for TR heavies
+#ic_setempire 15010 tr
+#ic_setarmortype 15010 hev
+#ic_setface 15010 1
+
+# Create default weapons
+
+# for NC lights
+ic_create repeater 0 0 0 15011
+ic_attach_holster 15011 15010 RightHip
+ic_create_attach 9mmbullet 16000 15011 99999
+
+ic_create beamer 0 0 0 15013
+ic_attach_holster 15013 15010 LeftHip
+ic_create_attach energy_cell 16004 15013 3500
+
+ic_create punisher 0 0 0 15012
+ic_attach_holster 15012 15010 LeftBack
+ic_create_attach 9mmbullet 16001 15012 3500 0
+ic_create_attach rocket 16002 15012 3500 1
+
+#ic_create jammer_grenade 0 0 0 15011
+#ic_attach_holster 15011 15010 RightHip
+#ic_create_attach jammer_grenade_ammo 16000 15011 3500
+
+#ic_create thumper 0 0 0 15014
+#ic_attach_holster 15014 15010 RightBack
+#ic_create_attach rocket 16003 15014 3500
+
+ic_create mag_cutter 0 0 0 15015
+ic_attach_holster 15015 15010 Knife
+ic_create_attach melee_ammo 16005 15015 1
+
+# for TR heavies
+#ic_create trhev_pounder 0 0 0 15011
+#ic_attach_holster 15011 15010 LeftHip
+#ic_create_attach trhev_pounder_grenade 16000 15011 3500
+#ic_setheldobject 15010 15011
+
+# Set the player's avatar
+psc_current 15010
+
+# create a squad
+ic_create squad 240 240 65.72 15014
+ic_setsquad 15014 15010
+
+psc_warp 410 409

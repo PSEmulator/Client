@@ -1,0 +1,16 @@
+########################################################
+# Vanu Sanctuary Script
+########################################################
+
+# Start the event script.
+
+$begin VanuSanctuary
+
+	#-----------------------------------
+	$text_dlg @betty_sanctuary_vs
+	$play betty_sanctuary.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end

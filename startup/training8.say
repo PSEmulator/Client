@@ -1,0 +1,9 @@
+#=======================================================
+# Offline Training Mission 8
+# Dying and Respawning
+#=======================================================
+
+$begin OfflineTrainingMission8
+	$levelup
+	$quit
+$end

@@ -1,0 +1,15 @@
+########################################################
+# Vehicle Terminal Script
+########################################################
+
+# Start the event script.
+$begin VehicleTermScript
+	#-----------------------------------
+	$text @betty_vehicle
+	$play betty_vehicle_terminal_01.wav
+	$sync
+
+	#-----------------------------------
+	$quit
+$end
+
