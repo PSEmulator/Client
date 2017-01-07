@@ -1,0 +1,7 @@
+*.fat
+*.ubr
+*.wav
+*.mp3
+*.bik
+*.pak
+./LaunchPad.libs/*
