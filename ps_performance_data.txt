@@ -1,0 +1,129 @@
+FRAME:    0 : CPU CLOCK SPEED: 868.63Mhz Cycles at 60fps: 14.48Mhz
+FRAME:    0 : PerformanceMonitor::SetLogThreshold(60)
+FRAME:    0 : PerformanceMonitor::SetLogDelay(1000)
+FRAME: 1000 : Monitoring started.
+FRAME: 1905 : PlanetsideEngine::LoadMap
+FRAME: 1905 : Freeing up previous map resources.
+FRAME: 1905 : Loading MAP uber mesh
+FRAME: 1905 : MAP UBER MESH LOADED
+FRAME: 1905 : Loading Map textures from flat file
+
+FRAME: 1951 : Loading SkyDome
+FRAME: 1951 : Map Load Complete
+FRAME: 8136 : PlanetsideEngine::LoadMap
+FRAME: 8136 : Releasing previously loaded map
+FRAME: 8136 : Freeing up previous map resources.
+FRAME: 8136 : Loading MAP uber mesh
+FRAME: 8136 : MAP UBER MESH LOADED
+FRAME: 8136 : Loading Map textures from flat file
+
+FRAME: 8147 : Loading SkyDome
+FRAME: 8147 : Map Load Complete
+FRAME: 18375 : PlanetsideEngine::LoadMap
+FRAME: 18375 : Releasing previously loaded map
+FRAME: 18375 : Freeing up previous map resources.
+FRAME: 18375 : Loading MAP uber mesh
+FRAME: 18375 : MAP UBER MESH LOADED
+FRAME: 18375 : Loading Map textures from flat file
+
+FRAME: 18386 : Loading SkyDome
+FRAME: 18386 : Map Load Complete
+FRAME: 30771 : PlanetsideEngine::LoadMap
+FRAME: 30771 : Releasing previously loaded map
+FRAME: 30771 : Freeing up previous map resources.
+FRAME: 30771 : Loading MAP uber mesh
+FRAME: 30771 : MAP UBER MESH LOADED
+FRAME: 30771 : Loading Map textures from flat file
+
+FRAME: 30791 : Loading SkyDome
+FRAME: 30791 : Map Load Complete
+FRAME: 47199 : PlanetsideEngine::LoadMap
+FRAME: 47199 : Releasing previously loaded map
+FRAME: 47199 : Freeing up previous map resources.
+FRAME: 47199 : Loading MAP uber mesh
+FRAME: 47199 : MAP UBER MESH LOADED
+FRAME: 47199 : Loading Map textures from flat file
+
+FRAME: 47228 : Loading SkyDome
+FRAME: 47228 : Map Load Complete
+FRAME: 50441 : PlanetsideEngine::LoadMap
+FRAME: 50441 : Releasing previously loaded map
+FRAME: 50441 : Freeing up previous map resources.
+FRAME: 50441 : Loading MAP uber mesh
+FRAME: 50441 : MAP UBER MESH LOADED
+FRAME: 50441 : Loading Map textures from flat file
+
+FRAME: 50452 : Loading SkyDome
+FRAME: 50452 : Map Load Complete
+FRAME: 51661 : ERROR: Bad Raytrace of 977.70 meters!??? From: (5871.99_3792.00_47.25) To:(5870_3793_1025)
+FRAME: 56384 : PlanetsideEngine::LoadMap
+FRAME: 56384 : Releasing previously loaded map
+FRAME: 56384 : Freeing up previous map resources.
+FRAME: 56384 : Loading MAP uber mesh
+FRAME: 56384 : MAP UBER MESH LOADED
+FRAME: 56384 : Loading Map textures from flat file
+
+FRAME: 56404 : Loading SkyDome
+FRAME: 56404 : Map Load Complete
+FRAME: 256954 : PlanetsideEngine::LoadMap
+FRAME: 256954 : Releasing previously loaded map
+FRAME: 256954 : Freeing up previous map resources.
+FRAME: 256954 : Loading MAP uber mesh
+FRAME: 256954 : MAP UBER MESH LOADED
+FRAME: 256954 : Loading Map textures from flat file
+
+FRAME: 256983 : Loading SkyDome
+FRAME: 256983 : Map Load Complete
+FRAME: 257988 : MEMWARN: 130 MB 130.21 0.00 (BLOCK: 149.97MB)
+FRAME: 257988 : MEMWARN: 130 MB 130.21 0.22 (BLOCK: 149.97MB)
+FRAME: 257988 : MEMWARN: 131 MB 130.27 0.42 (BLOCK: 149.97MB)
+FRAME: 257988 : MEMWARN: 131 MB 130.36 0.59 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 131 MB 130.50 0.67 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 131 MB 130.57 0.86 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 132 MB 130.66 1.00 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 132 MB 130.67 1.28 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 132 MB 130.71 1.45 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 132 MB 130.80 1.59 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 133 MB 130.83 1.93 (BLOCK: 150.00MB)
+FRAME: 257988 : MEMWARN: 133 MB 130.94 2.10 (BLOCK: 150.00MB)
+FRAME: 258201 : MEMWARN: 133 MB 131.03 2.21 (BLOCK: 150.00MB)
+FRAME: 258201 : MEMWARN: 133 MB 131.06 2.39 (BLOCK: 150.00MB)
+FRAME: 266054 : MEMWARN: 124 MB 123.71 0.00 (BLOCK: 149.97MB)
+FRAME: 266054 : MEMWARN: 124 MB 123.76 0.22 (BLOCK: 149.97MB)
+FRAME: 266054 : MEMWARN: 125 MB 124.26 0.30 (BLOCK: 149.97MB)
+FRAME: 266054 : MEMWARN: 125 MB 124.31 0.49 (BLOCK: 149.97MB)
+FRAME: 266054 : MEMWARN: 125 MB 124.34 0.71 (BLOCK: 149.97MB)
+FRAME: 266135 : MEMWARN: 126 MB 125.06 0.80 (BLOCK: 149.97MB)
+FRAME: 266135 : MEMWARN: 126 MB 125.19 0.92 (BLOCK: 149.97MB)
+FRAME: 266135 : MEMWARN: 126 MB 125.30 1.06 (BLOCK: 149.97MB)
+FRAME: 266135 : MEMWARN: 127 MB 125.46 1.17 (BLOCK: 149.97MB)
+FRAME: 266135 : MEMWARN: 127 MB 125.85 1.30 (BLOCK: 149.97MB)
+FRAME: 267961 : MEMWARN: 122 MB 122.10 0.00 (BLOCK: 149.91MB)
+FRAME: 267961 : MEMWARN: 122 MB 122.39 0.10 (BLOCK: 149.91MB)
+FRAME: 267961 : MEMWARN: 123 MB 122.88 0.30 (BLOCK: 149.99MB)
+FRAME: 267961 : MEMWARN: 123 MB 122.88 0.53 (BLOCK: 149.99MB)
+FRAME: 267961 : MEMWARN: 124 MB 122.93 0.75 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 125 MB 124.25 0.91 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 125 MB 124.31 1.08 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 126 MB 124.43 1.22 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 126 MB 124.68 1.28 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 126 MB 124.80 1.39 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 127 MB 125.36 1.58 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 127 MB 125.47 1.88 (BLOCK: 149.99MB)
+FRAME: 268105 : MEMWARN: 128 MB 125.49 2.10 (BLOCK: 149.99MB)
+FRAME: 268244 : MEMWARN: 128 MB 125.94 2.29 (BLOCK: 149.99MB)
+FRAME: 268244 : MEMWARN: 129 MB 126.20 2.34 (BLOCK: 149.99MB)
+FRAME: 268244 : MEMWARN: 129 MB 126.41 2.47 (BLOCK: 149.99MB)
+FRAME: 268244 : MEMWARN: 129 MB 126.58 2.58 (BLOCK: 149.99MB)
+FRAME: 268244 : MEMWARN: 130 MB 127.14 2.62 (BLOCK: 149.99MB)
+FRAME: 272965 : ERROR: Bad Raytrace of 941.87 meters!??? From: (5296.00_3664.00_53.01) To:(5294_3665_995)
+FRAME: 273012 : ERROR: Bad Raytrace of 970.80 meters!??? From: (5232.00_4016.00_47.24) To:(5230_4017_1018)
+FRAME: 284908 : PlanetsideEngine::LoadMap
+FRAME: 284908 : Releasing previously loaded map
+FRAME: 284908 : Freeing up previous map resources.
+FRAME: 284908 : Loading MAP uber mesh
+FRAME: 284908 : MAP UBER MESH LOADED
+FRAME: 284908 : Loading Map textures from flat file
+
+FRAME: 284919 : Loading SkyDome
+FRAME: 284919 : Map Load Complete

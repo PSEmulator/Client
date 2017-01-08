@@ -145,3 +145,55 @@ phys_cookie left_side_uppersmall
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+
+phys_model warpgate_cavern_barrier
+################ Physics Primitive warpgate_cavern_barrier_cdbox0 ###########
+phys_cylinder root 1.0 6.0 1.0 0 0 47.5
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive warpgate_cavern_barrier_cdbox1 ###########
+phys_cylinder cdbox1 1.0 8.5 1.0 0 0 46.5
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive warpgate_cavern_barrier_cdbox2 ###########
+phys_cylinder cdbox2 1.0 11.0 1.0 0 0 45.5
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model warpgate_cavern_aboveground_barrier
+################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox0 ###########
+phys_cylinder root 1.0 13.0 3.0 -0.792 1.386 94.5
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox1 ###########
+phys_cylinder cdbox1 1.0 18.0 3.0 -0.792 1.386 92.0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox2 ###########
+phys_cylinder cdbox2 1.0 20.5 3.0 -0.792 1.386 90.0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+

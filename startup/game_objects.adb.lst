@@ -1,21 +1,48 @@
 #add_resource
 
+##mattsmosq
+
+add_property mattsmosq type hovervehicle
+add_property mattsmosq radius 3.9940
+add_property mattsmosq sphere_offset -0.3757 -0.0000 1.1483
+
+##crystals_vehicle_recharge_terminal
+
+set_resource_parent crystals_vehicle_recharge_terminal game_objects ground_vehicle_recharge_terminal
+add_property crystals_vehicle_recharge_terminal type recharge_terminal
+add_property crystals_vehicle_recharge_terminal radius 3.1051
+add_property crystals_vehicle_recharge_terminal sphere_offset 0.6158 0.0574 -0.0795
+add_property crystals_vehicle_recharge_terminal is_crystal true
+add_property crystals_vehicle_recharge_terminal user_must_face_front false
+
+##test_change
+
+
+##lancestest
+
+add_property lancestest type building
+
 ##hst
 
 add_property hst type warpgate
 add_property hst radius 20.4810
 add_property hst sphere_offset 0.0000 -0.0000 -0.0000
 add_property hst ambient_sound warpgate_ambience.wav
-add_property hst ambient_sound_minrange 2.0
-add_property hst ambient_sound_maxrange 10.0
+add_property hst ambient_sound_minrange 4.0
+add_property hst ambient_sound_maxrange 80.0
 add_property hst ambient_sound_volume 0.8
+add_property hst ambient_sound_indoor_test false
 add_property hst expansion 1
-add_property hst spawn_radius_max 30
-add_property hst spawn_radius_min 15
+add_property hst soi_radius 90
+add_property hst spawn_radius_max 44
+add_property hst spawn_radius_min 12
+add_property hst warp_zone_height 86
 add_property hst wrp_barrier_aspect 1.5835
-add_property hst wrp_barrier_offset 0 0 18
+add_property hst wrp_barrier_offset 0 0 36
 add_property hst wrp_barrier_physics warpgate_barrier
-add_property hst wrp_barrier_radius 58
+add_property hst wrp_barrier_radius 85.324
+add_property hst wrp_square_barrier_physics warpgate_cavern_aboveground_barrier
+add_property hst no_warp_type1 galaxy
 
 ##radiator_sticky_projectile
 
@@ -23,7 +50,6 @@ set_resource_parent radiator_sticky_projectile game_objects radiator_grenade_pro
 add_property radiator_sticky_projectile type projectile
 add_property radiator_sticky_projectile radius 0.1366
 add_property radiator_sticky_projectile sphere_offset 0.0000 0.0000 -0.0000
-add_property radiator_sticky_projectile add_parent_velocity true
 add_property radiator_sticky_projectile bounce_count 1
 add_property radiator_sticky_projectile hasgravity false
 add_property radiator_sticky_projectile hiteffect detonate_radiator
@@ -39,6 +65,10 @@ add_property radiator_sticky_projectile on_life_expired Detonate
 add_property crystals_damage type medical_terminal
 add_property crystals_damage radius 0.1366
 add_property crystals_damage sphere_offset 0.0000 0.0000 -0.0000
+add_property crystals_damage ambient_sound energy_field.wav
+add_property crystals_damage ambient_sound_minrange 0.8
+add_property crystals_damage ambient_sound_maxrange 10.0
+add_property crystals_damage ambient_sound_volume 0.55
 add_property crystals_damage expansion 1
 add_property crystals_damage inflicts_damage true
 add_property crystals_damage is_crystal true
@@ -113,6 +143,10 @@ add_property crystals_repair_b sphere_offset -0.1082 0.0341 0.4588
 add_property vanu_air_vehicle_term type vehicle_terminal
 add_property vanu_air_vehicle_term radius 0.9865
 add_property vanu_air_vehicle_term sphere_offset 0.0000 0.0005 0.7067
+add_property vanu_air_vehicle_term ambient_sound modfact_inactive.wav
+add_property vanu_air_vehicle_term ambient_sound_minrange 0.6
+add_property vanu_air_vehicle_term ambient_sound_maxrange 10.0
+add_property vanu_air_vehicle_term ambient_sound_volume 0.65
 add_property vanu_air_vehicle_term damageable false
 add_property vanu_air_vehicle_term expansion 1
 add_property vanu_air_vehicle_term forsale_liberator
@@ -183,7 +217,12 @@ add_property vanu_vehicle_term xp_sound help_alert.wav
 add_property painbox type pain_terminal
 add_property painbox radius 0.6928
 add_property painbox sphere_offset 0.0000 0.0000 0.4000
+add_property painbox ambient_sound Pain_Node_Warning.wav
+add_property painbox ambient_sound_minrange 15.0
+add_property painbox ambient_sound_maxrange 15.0
+add_property painbox ambient_sound_volume 0.8
 add_property painbox render_in_debug_only true
+add_property painbox sound0 Pain_Node_damage.wav 0.8 10
 
 ##recharge_terminal_weapon_module
 
@@ -201,6 +240,7 @@ add_property medical_terminal_healing_module sphere_offset 0.0032 -0.0174 0.8984
 add_property medical_terminal_healing_module terminal_heal_amount 1
 add_property medical_terminal_healing_module terminal_heal_interval 2000
 add_property medical_terminal_healing_module useradius 300
+add_property medical_terminal_healing_module requires_module_for_activation true
 
 ##ground_vehicle_recharge_terminal
 
@@ -220,10 +260,16 @@ add_property avatar_recharge_terminal type recharge_terminal
 add_property painbox_radius type pain_terminal
 add_property painbox_radius radius 0.6928
 add_property painbox_radius sphere_offset 0.0000 0.0000 0.4000
+add_property painbox_radius ambient_sound Pain_Node_Warning.wav
+add_property painbox_radius ambient_sound_minrange 15.0
+add_property painbox_radius ambient_sound_maxrange 15.0
+add_property painbox_radius ambient_sound_volume 0.8
 add_property painbox_radius damage_radius_type_pain_terminal true
 add_property painbox_radius has_nearest_door_dependency true
-add_property painbox_radius useradius 10
 add_property painbox_radius render_in_debug_only true
+add_property painbox_radius useradius 15
+add_property painbox_radius damage_radius 10
+add_property painbox_radius sound0 Pain_Node_damage.wav 0.8 10
 
 ##75mm_cannon
 
@@ -290,36 +336,36 @@ add_property 12mm_chaingun zoomlevel1 2
 add_property vanu_sentry_turret_projectile type projectile
 add_property vanu_sentry_turret_projectile radius 0.2066
 add_property vanu_sentry_turret_projectile sphere_offset 0.0000 -0.0000 0.0000
+add_property vanu_sentry_turret_projectile #charge_effect_count 4
+add_property vanu_sentry_turret_projectile #damage0_min 15
+add_property vanu_sentry_turret_projectile #damage1_min 15
+add_property vanu_sentry_turret_projectile #damage_radius_min 1
 add_property vanu_sentry_turret_projectile avatar_hit_effect armor_hit_effect
 add_property vanu_sentry_turret_projectile bounce_count 0
-add_property vanu_sentry_turret_projectile charge_effect_count 4
-add_property vanu_sentry_turret_projectile damage0 50
-add_property vanu_sentry_turret_projectile damage0_min 15
-add_property vanu_sentry_turret_projectile damage1 50
-add_property vanu_sentry_turret_projectile damage1_min 15
+add_property vanu_sentry_turret_projectile damage0 25
+add_property vanu_sentry_turret_projectile damage1 35
+add_property vanu_sentry_turret_projectile damage2 100
 add_property vanu_sentry_turret_projectile damage_at_edge 0.1
-add_property vanu_sentry_turret_projectile damage_radius 5
-add_property vanu_sentry_turret_projectile damage_radius_min 1
+add_property vanu_sentry_turret_projectile damage_radius 3
 add_property vanu_sentry_turret_projectile damage_type 1
-add_property vanu_sentry_turret_projectile dud_effect impact_waterbullet_energy
 add_property vanu_sentry_turret_projectile getsspherepack false
 add_property vanu_sentry_turret_projectile hasgravity false
 add_property vanu_sentry_turret_projectile heavy_hit_effect armor_hit_effect
-add_property vanu_sentry_turret_projectile hiteffect vst_hit_effect
-add_property vanu_sentry_turret_projectile initial_velocity 60
-add_property vanu_sentry_turret_projectile lifespan 7
+add_property vanu_sentry_turret_projectile hiteffect vst_hit_effect_2
+add_property vanu_sentry_turret_projectile initial_velocity 240
+add_property vanu_sentry_turret_projectile lifespan 1.3
 add_property vanu_sentry_turret_projectile meshsequence none
 add_property vanu_sentry_turret_projectile on_impact_object Detonate
 add_property vanu_sentry_turret_projectile on_impact_terrain Detonate
-add_property vanu_sentry_turret_projectile on_impact_water dud
+add_property vanu_sentry_turret_projectile on_impact_water Detonate
 add_property vanu_sentry_turret_projectile on_life_expired Detonate
 add_property vanu_sentry_turret_projectile on_user_input Detonate
-add_property vanu_sentry_turret_projectile projectile_effect vst_projectileb
+add_property vanu_sentry_turret_projectile projectile_effect vst_projectileb_1
 add_property vanu_sentry_turret_projectile sound spiker_nearmiss.wav
 add_property vanu_sentry_turret_projectile sound_loop true
 add_property vanu_sentry_turret_projectile sound_range 30.0
 add_property vanu_sentry_turret_projectile sound_volume 1.0
-add_property vanu_sentry_turret_projectile spawnprojectileat muzzle_follow_eye
+add_property vanu_sentry_turret_projectile spawnprojectileat muzzle
 add_property vanu_sentry_turret_projectile vehicle_hit_effect vehicle_hit_effect
 
 ##vanu_spawn_room_pad
@@ -420,7 +466,7 @@ add_property vanu_equipment_term sphere_offset 0.0000 -0.1786 1.7534
 add_property vanu_equipment_term ambient_sound modfact_inactive.wav
 add_property vanu_equipment_term ambient_sound_minrange 0.6
 add_property vanu_equipment_term ambient_sound_maxrange 10.0
-add_property vanu_equipment_term ambient_sound_volume 0.6
+add_property vanu_equipment_term ambient_sound_volume 0.65
 add_property vanu_equipment_term damageable false
 add_property vanu_equipment_term expansion 1
 add_property vanu_equipment_term forsale_maelstrom ordertype_weapon
@@ -448,19 +494,25 @@ add_property flail_projectile hasgravity true
 add_property flail_projectile hiteffect detonate_flail_projectile
 add_property flail_projectile initial_velocity 75
 add_property flail_projectile lifespan 40
+add_property flail_projectile long_range_projectile true
 add_property flail_projectile meshsequence none
 add_property flail_projectile on_impact_object Detonate
 add_property flail_projectile on_impact_terrain Detonate
+add_property flail_projectile on_impact_water Detonate
 add_property flail_projectile on_life_expired nothing
 add_property flail_projectile on_user_input nothing
 add_property flail_projectile projectile_effect flail_projectile
 add_property flail_projectile resource game_objects
+add_property flail_projectile server_side_splash true
 add_property flail_projectile sound flail_projectile_ambient.wav
 add_property flail_projectile sound_loop true
-add_property flail_projectile sound_range 30.0
-add_property flail_projectile sound_volume 1.0
+add_property flail_projectile sound_min 3.0
+add_property flail_projectile sound_range 200.0
+add_property flail_projectile sound_volume 0.9
 add_property flail_projectile spawnprojectileat muzzle
 add_property flail_projectile splash_occluded_by_avatar false
+add_property flail_projectile on_impact_avatar damage
+add_property flail_projectile on_impact_vehicle damage
 
 ##vanu_vehicle_creation_pad
 
@@ -472,13 +524,19 @@ add_property vanu_vehicle_creation_pad ambient_sound_minrange 1.2
 add_property vanu_vehicle_creation_pad ambient_sound_maxrange 25.0
 add_property vanu_vehicle_creation_pad ambient_sound_volume 0.7
 add_property vanu_vehicle_creation_pad ambient_sound_indoor_test false
+add_property vanu_vehicle_creation_pad active_effect vcp_active
+add_property vanu_vehicle_creation_pad activeanim_length 4.0
+add_property vanu_vehicle_creation_pad activeanim_name active
 add_property vanu_vehicle_creation_pad animattachbonename hp_vehicle
-add_property vanu_vehicle_creation_pad animname_close close
-add_property vanu_vehicle_creation_pad animname_open open
-add_property vanu_vehicle_creation_pad desired_anim_close_duration 2.0
-add_property vanu_vehicle_creation_pad desired_anim_open_duration 2.0
+add_property vanu_vehicle_creation_pad animname_close open
+add_property vanu_vehicle_creation_pad animname_open close
+add_property vanu_vehicle_creation_pad child_fadein_rate 0.2
+add_property vanu_vehicle_creation_pad child_visible_onadd false
+add_property vanu_vehicle_creation_pad desired_anim_close_duration 0.5
+add_property vanu_vehicle_creation_pad desired_anim_open_duration 0.5
 add_property vanu_vehicle_creation_pad kill_extents_x 15.6
 add_property vanu_vehicle_creation_pad kill_extents_y 11.5
+add_property vanu_vehicle_creation_pad server_triggers_close_anim false
 add_property vanu_vehicle_creation_pad vehiclecreationzoffset 0
 add_property vanu_vehicle_creation_pad vehiclecreationzorientoffset 0
 add_property vanu_vehicle_creation_pad vehiclepadavatarqueuedistance 30.0
@@ -526,7 +584,7 @@ add_property flail_weapon radius 2
 add_property flail_weapon sphere_offset 0 0 0
 add_property flail_weapon clientfiremode0_crosshair DefaultCrosshair
 add_property flail_weapon clientfiremode0_dryfire_sound flail_dryfire.wav
-add_property flail_weapon clientfiremode0_fire_sound flail_fire.wav 0.8 225
+add_property flail_weapon clientfiremode0_fire_sound flail_fire.wav 0.9 300
 add_property flail_weapon clientfiremode0_muzzle ef_muzzle
 add_property flail_weapon expansion 1
 add_property flail_weapon firemode0_COFrecovery 150
@@ -536,7 +594,7 @@ add_property flail_weapon firemode0_defaultCOF .7
 add_property flail_weapon firemode0_maxCOF 20
 add_property flail_weapon firemode0_projectile_index 5
 add_property flail_weapon firemode0_recoil 1
-add_property flail_weapon firemode0_refiretime 2500
+add_property flail_weapon firemode0_refiretime 4000
 add_property flail_weapon firemode0_reloadtime 2.000
 add_property flail_weapon meshsequence flail_weapon
 add_property flail_weapon weaponattachbonenames flail_weapon
@@ -563,6 +621,7 @@ add_property scythe_projectile damage1 20
 add_property scythe_projectile damage_type 0
 add_property scythe_projectile degrade_delay .015
 add_property scythe_projectile degrade_multiplier 0.35
+add_property scythe_projectile dud_effect impact_waterbullet_energy
 add_property scythe_projectile getsspherepack false
 add_property scythe_projectile hasgravity false
 add_property scythe_projectile hiteffect detonate_scythe
@@ -607,6 +666,13 @@ add_property scythe_projectile_slave spawnprojectileat muzzle_follow_eye
 add_property defender_forcefield_mesh type barrier
 add_property defender_forcefield_mesh radius 21.0330
 add_property defender_forcefield_mesh sphere_offset 0.8476 0.0000 5.6131
+add_property defender_forcefield_mesh ambient_sound ffield_hum.wav
+add_property defender_forcefield_mesh ambient_sound_minrange 3.0
+add_property defender_forcefield_mesh ambient_sound_maxrange 50.0
+add_property defender_forcefield_mesh ambient_sound_volume 0.65
+add_property defender_forcefield_mesh ambient_sound_indoor_test false
+add_property defender_forcefield_mesh sound0 ffield_activated.wav 0.8 60
+add_property defender_forcefield_mesh sound1 ffield_deactivated.wav 0.8 60
 
 ##crystals_vehicle_a
 
@@ -940,18 +1006,6 @@ add_property ceiling_bldg_a basetype cavern_bldg_a_ceiling
 add_property ceiling_bldg_a getsspherepack false
 add_property ceiling_bldg_a resource game_objects
 
-##vanu_module_node
-
-add_property vanu_module_node type vanu_receptacle_class
-add_property vanu_module_node radius 1.6879
-add_property vanu_module_node sphere_offset 0.0000 -0.0000 1.1239
-add_property vanu_module_node ambient_sound droppod_retro_loop.wav
-add_property vanu_module_node ambient_sound_minrange 2.0
-add_property vanu_module_node ambient_sound_maxrange 10.0
-add_property vanu_module_node ambient_sound_volume 0.8
-add_property vanu_module_node meshsequence vanu_module_node
-add_property vanu_module_node vanu_module bind
-
 ##scythe
 
 add_property scythe type weapon
@@ -964,7 +1018,8 @@ add_property scythe clientfiremode0_fire_sound scythe_fire1.wav 0.8 225
 add_property scythe clientfiremode0_muzzle muzzlea
 add_property scythe clientfiremode1_crosshair VanuCrosshair
 add_property scythe clientfiremode1_dryfire_sound scythe_dryfire.wav
-add_property scythe clientfiremode1_fire_sound scythe_fire2.wav 0.8 225
+add_property scythe clientfiremode1_fire_sound scythe_fire2_loop.wav 0.8 225
+add_property scythe clientfiremode1_looping_fire_sound true
 add_property scythe clientfiremode1_muzzle muzzlea
 add_property scythe expansion 1
 add_property scythe firemode0_COFrecovery 150
@@ -1010,7 +1065,7 @@ add_property teleportpad_terminal forsale_router_telepad
 add_property radiator_grenade_projectile type projectile
 add_property radiator_grenade_projectile radius 0.0879
 add_property radiator_grenade_projectile sphere_offset 0.0 0.0000 0.0
-add_property radiator_grenade_projectile add_parent_velocity true
+add_property radiator_grenade_projectile add_parent_velocity false
 add_property radiator_grenade_projectile bounce_count 3
 add_property radiator_grenade_projectile bounce_effect grenade_bounce
 add_property radiator_grenade_projectile bounce_restitution 0.3
@@ -1033,18 +1088,22 @@ add_property radiator_grenade_projectile sound radiator_grenade_ambient.wav
 add_property radiator_grenade_projectile sound_loop true
 add_property radiator_grenade_projectile sound_min 1.5
 add_property radiator_grenade_projectile sound_range 30
+add_property radiator_grenade_projectile sound_volume 0.75
 add_property radiator_grenade_projectile spawnprojectileat muzzle_follow_eye
+add_property radiator_grenade_projectile splash_effect impact_water_big
+add_property radiator_grenade_projectile water_effect radiator_projectile_in_water
 
 ##maelstrom_grenade_projectile
 
 add_property maelstrom_grenade_projectile type projectile
 add_property maelstrom_grenade_projectile radius 0.5242
 add_property maelstrom_grenade_projectile sphere_offset 0.0418 0.0000 -0.0000
-add_property maelstrom_grenade_projectile add_parent_velocity true
+add_property maelstrom_grenade_projectile add_parent_velocity false
 add_property maelstrom_grenade_projectile bounce_count 3
 add_property maelstrom_grenade_projectile bounce_effect maelstrom_grenade_bounce
 add_property maelstrom_grenade_projectile bounce_restitution 0.3
-add_property maelstrom_grenade_projectile damage 40
+add_property maelstrom_grenade_projectile damage0 40
+add_property maelstrom_grenade_projectile damage1 75
 add_property maelstrom_grenade_projectile damage_radius 20.0
 add_property maelstrom_grenade_projectile damage_type 0
 add_property maelstrom_grenade_projectile exists_on_remote_clients false
@@ -1062,14 +1121,16 @@ add_property maelstrom_grenade_projectile on_impact_object Detonate
 add_property maelstrom_grenade_projectile on_impact_terrain bounce
 add_property maelstrom_grenade_projectile on_life_expired Detonate
 add_property maelstrom_grenade_projectile on_user_input nothing
-add_property maelstrom_grenade_projectile projectile_effect maelstrom_chain_projectile
+add_property maelstrom_grenade_projectile projectile_effect meg_projectile
 add_property maelstrom_grenade_projectile secondary_damager maelstrom_grenade_damager
 add_property maelstrom_grenade_projectile sound maelstrom_grenade_ambient.wav
 add_property maelstrom_grenade_projectile sound_lash maelstrom_grenade_lash.wav 0.85 40
 add_property maelstrom_grenade_projectile sound_loop true
-add_property maelstrom_grenade_projectile sound_min 1.5
+add_property maelstrom_grenade_projectile sound_min 1.25
 add_property maelstrom_grenade_projectile sound_range 25.0
 add_property maelstrom_grenade_projectile spawnprojectileat muzzle_follow_eye
+add_property maelstrom_grenade_projectile splash_effect impact_water_big
+add_property maelstrom_grenade_projectile water_effect meg_projectile_in_water
 
 ##maelstrom_stream_projectile
 
@@ -1080,6 +1141,8 @@ add_property maelstrom_stream_projectile bounce_count 0
 add_property maelstrom_stream_projectile damage0 15
 add_property maelstrom_stream_projectile damage1 6
 add_property maelstrom_stream_projectile damage_type 0
+add_property maelstrom_stream_projectile degrade_delay .075
+add_property maelstrom_stream_projectile degrade_multiplier 0.5
 add_property maelstrom_stream_projectile getsspherepack false
 add_property maelstrom_stream_projectile hasgravity false
 add_property maelstrom_stream_projectile hiteffect maelstrom_pulse_hit_effect
@@ -1109,7 +1172,7 @@ add_property vanu_ammo stack_size_max 10
 
 add_property radiator type weapon
 add_property radiator radius 0.4060
-add_property radiator sphere_offset 0.0511 -0.0011 0.2110
+add_property radiator sphere_offset 0.18 -0.0011 0.2110
 add_property radiator ancient_weapon true
 add_property radiator animationtype low
 add_property radiator certification special_assault
@@ -1269,6 +1332,18 @@ add_property c6 has_tfdb false
 add_property ugd04 type map
 add_property ugd04 radius 1.1657
 add_property ugd04 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd04 building_link_1 N_Redoubt N_ATPlant
+add_property ugd04 building_link_10 GW_Cavern4_W N_ATPlant
+add_property ugd04 building_link_11 N_Stasis Core
+add_property ugd04 building_link_12 S_Stasis Core
+add_property ugd04 building_link_2 S_Redoubt S_ATPlant
+add_property ugd04 building_link_3 N_Redoubt N_Stasis
+add_property ugd04 building_link_4 S_Redoubt S_Stasis
+add_property ugd04 building_link_5 S_Stasis N_ATPlant
+add_property ugd04 building_link_6 N_Stasis S_ATPlant
+add_property ugd04 building_link_7 GW_Cavern4_N N_Redoubt
+add_property ugd04 building_link_8 GW_Cavern4_S S_Redoubt
+add_property ugd04 building_link_9 GW_Cavern4_E S_ATPlant
 add_property ugd04 camera1 575 963 121
 add_property ugd04 kill_plane 51.414
 add_property ugd04 mapHeight 3072
@@ -1279,29 +1354,41 @@ add_property ugd04 spawn_nc 575 963 121
 add_property ugd04 spawn_tr 575 963 121
 add_property ugd04 spawn_vs 575 963 121
 add_property ugd04 timeofday ugd04
-add_property ugd04 warpgate1 GW_Cavern4_N c1 GW_Cavern1_E
-add_property ugd04 warpgate2 GW_Cavern4_S c6 GW_Cavern6_S
-add_property ugd04 warpgate3 GW_Cavern4_E z1 GW_Solsar_2
-add_property ugd04 warpgate4 GW_Cavern4_W z1 GW_Solsar_1
+add_property ugd04 warpgate1 GW_Cavern4_W c1 GW_Cavern1_E
+add_property ugd04 warpgate2 GW_Cavern4_E c6 GW_Cavern6_W
+add_property ugd04 warpgate3 GW_Cavern4_N z1 GW_Solsar_N
+add_property ugd04 warpgate4 GW_Cavern4_S z1 GW_Solsar_S
 
 ##ugd03
 
 add_property ugd03 type map
 add_property ugd03 radius 1.1657
 add_property ugd03 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd03 building_link_1 NW_Redoubt NW_ATPlant
+add_property ugd03 building_link_10 GW_Cavern3_W NW_ATPlant
+add_property ugd03 building_link_11 NE_Stasis Core
+add_property ugd03 building_link_12 SW_Stasis Core
+add_property ugd03 building_link_2 SE_Redoubt SE_ATPlant
+add_property ugd03 building_link_3 NW_Redoubt NE_Stasis
+add_property ugd03 building_link_4 SE_Redoubt SW_Stasis
+add_property ugd03 building_link_5 SW_Stasis NW_ATPlant
+add_property ugd03 building_link_6 NE_Stasis SE_ATPlant
+add_property ugd03 building_link_7 GW_Cavern3_N NW_Redoubt
+add_property ugd03 building_link_8 GW_Cavern3_S SE_Redoubt
+add_property ugd03 building_link_9 GW_Cavern3_E SE_ATPlant
 add_property ugd03 camera1 1000 1000 50
 add_property ugd03 mapHeight 3072
 add_property ugd03 mapMediumResScaleFactor 4
 add_property ugd03 mapPositionsWrap false
 add_property ugd03 mapWidth 3072
-add_property ugd03 spawn_nc 1000 1000 50
-add_property ugd03 spawn_tr 1000 1000 50
-add_property ugd03 spawn_vs 1000 1000 50
+add_property ugd03 spawn_nc 1281 1457 42.1
+add_property ugd03 spawn_tr 1281 1457 42.1
+add_property ugd03 spawn_vs 1281 1457 42.1
 add_property ugd03 timeofday ugd03
-add_property ugd03 warpgate1 GW_Cavern3_N c2 GW_Cavern2_E
-add_property ugd03 warpgate2 GW_Cavern3_S c1 GW_Cavern1_W
-add_property ugd03 warpgate3 GW_Cavern3_E z6 GW_Ceryshen_1
-add_property ugd03 warpgate4 GW_Cavern3_W z6 GW_Ceryshen_2
+add_property ugd03 warpgate1 GW_Cavern3_E c2 GW_Cavern2_W
+add_property ugd03 warpgate2 GW_Cavern3_W c1 GW_Cavern1_E
+add_property ugd03 warpgate3 GW_Cavern3_N z6 GW_Ceryshen_N
+add_property ugd03 warpgate4 GW_Cavern3_S z6 GW_Ceryshen_S
 
 ##ugd19
 
@@ -1869,6 +1956,7 @@ add_property game_properties cert_cost_max_anti_personnel 3
 add_property game_properties cert_cost_max_anti_vehicular 3
 add_property game_properties cert_cost_mechanized_assault_suit 3
 add_property game_properties cert_cost_medium_assault 2
+add_property game_properties cert_cost_mobile_artillery 3
 add_property game_properties cert_cost_mobile_respawn 2
 add_property game_properties cert_cost_quad_all 2
 add_property game_properties cert_cost_reinforced_armor 3
@@ -1973,7 +2061,7 @@ add_property game_properties vanu_module_vehicle_timer_multiplier 0.5
 add_property game_properties zip_line_player_enter_height_m 3.2
 add_property game_properties zip_line_player_enter_radius_xy_m 1.0
 add_property game_properties zip_line_player_leave_radius_xy_m 3.0
-add_property game_properties zip_line_speed_mps 120.0
+add_property game_properties zip_line_speed_mps 20.0
 add_property game_properties zip_line_teleporters_bidirectional false
 add_property game_properties zip_line_vehicle_collision true
 add_property game_properties zip_line_vehicle_damage_health 2.5
@@ -2387,10 +2475,10 @@ add_property map11 xp_active true
 add_property map11 xp_battle_points 100
 add_property map11 xp_checklist_description @xp_map11_label
 add_property map11 xp_description @xp_map11_descrip
-add_property map11 xp_event visited_map11
+add_property map11 xp_empire nc
+add_property map11 xp_event map11
 add_property map11 xp_help_active true
 add_property map11 xp_message @xp_map11_message
-add_property map11 xp_empire nc
 add_property map11 xp_repeat 1
 add_property map11 xp_sound help_alert.wav
 
@@ -2534,11 +2622,11 @@ add_property map12 xp_active true
 add_property map12 xp_battle_points 100
 add_property map12 xp_checklist_description @xp_map12_label
 add_property map12 xp_description @xp_map12_descrip
-add_property map12 xp_event visited_map12
+add_property map12 xp_empire tr
+add_property map12 xp_event map12
 add_property map12 xp_help_active true
 add_property map12 xp_message @xp_map12_message
 add_property map12 xp_repeat 1
-add_property map12 xp_empire tr
 add_property map12 xp_sound help_alert.wav
 
 ##mine_sweeper_ammo
@@ -2834,7 +2922,7 @@ add_property lancer clientfiremode0_reloadcliphidetime 400
 add_property lancer clientfiremode0_reloadclipshowtime 1600
 add_property lancer equip_sound fp_lancer_equip.wav
 add_property lancer experience_bonus 130
-add_property lancer firemode0_COFrecovery 275
+add_property lancer firemode0_COFrecovery 250
 add_property lancer firemode0_ammo_max 6
 add_property lancer firemode0_ammo_types lancer_cartridge
 add_property lancer firemode0_crouchCOF .25
@@ -3114,8 +3202,8 @@ add_property mini_chaingun firemode0_ammo_max 100
 add_property mini_chaingun firemode0_ammo_types 9mmbullet 9mmbullet_AP
 add_property mini_chaingun firemode0_burst_refire_slop 700
 add_property mini_chaingun firemode0_crouchCOF 1.5
-add_property mini_chaingun firemode0_defaultCOF 1.5
-add_property mini_chaingun firemode0_maxCOF 6
+add_property mini_chaingun firemode0_defaultCOF 1.65
+add_property mini_chaingun firemode0_maxCOF 5
 add_property mini_chaingun firemode0_max_shots_per_burst_before_cof_penalty 12
 add_property mini_chaingun firemode0_recoil 1.6
 add_property mini_chaingun firemode0_refiretime 115
@@ -3372,8 +3460,10 @@ add_property orbital_building_tr useterrainformountzonez false
 add_property cryo_tubes type generic
 add_property cryo_tubes radius 3.2620
 add_property cryo_tubes sphere_offset 0.0000 0.0000 1.6343
-add_property cryo_tubes ambient_noise respawn_tube_ambient.wav
-add_property cryo_tubes ambient_noise_rad 1
+add_property cryo_tubes ambient_sound respawn_tube_ambient.wav
+add_property cryo_tubes ambient_sound_minrange 2.0
+add_property cryo_tubes ambient_sound_maxrange 10
+add_property cryo_tubes ambient_sound_volume 0.9
 
 ##75mm_lightning
 
@@ -4431,9 +4521,6 @@ add_property command_detonater radius 0.1672
 add_property command_detonater sphere_offset 0.0417 -0.0150 -0.0174
 add_property command_detonater HUD_hide_ammo true
 add_property command_detonater animationtype pistol
-add_property command_detonater basepose pistol
-add_property command_detonater category pistol
-add_property command_detonater class LightAssaultWeapon
 add_property command_detonater clientfiremode0_crosshair DefaultCrosshair
 add_property command_detonater clientfiremode0_fire_sound equipment_ace_deploy.wav 0.8 15
 add_property command_detonater command_rank_required 2
@@ -4551,6 +4638,8 @@ add_property map06 building_link_14 Igaluk WG_Ceryshen_to_Forseral
 add_property map06 building_link_15 Tarqaq WG_Ceryshen_to_Amerish
 add_property map06 building_link_16 Keelut Tootega
 add_property map06 building_link_17 Nerrivik Akna
+add_property map06 building_link_18 Keelut GW_Ceryshen_S
+add_property map06 building_link_19 Nerrivik GW_Ceryshen_N
 add_property map06 building_link_2 Sedna Anguta
 add_property map06 building_link_3 Anguta Nerrivik
 add_property map06 building_link_4 Nerrivik Tarqaq
@@ -4572,13 +4661,13 @@ add_property map06 warpgate1 WG_Ceryshen_to_Amerish z8 WG_Oshur_to_Forseral
 add_property map06 warpgate2 WG_Ceryshen_to_Ishundar z3 WG_Cyssor_to_NCSanc
 add_property map06 warpgate3 WG_Ceryshen_to_Hossin home2 WG_TRSanc_to_Ishundar tr
 add_property map06 warpgate4 WG_Ceryshen_to_Forseral z1 WG_Solsar_to_Hossin
-add_property map06 warpgate5 GW_Ceryshen_1 c3 GW_Cavern3_E
-add_property map06 warpgate6 GW_Ceryshen_2 c3 GW_Cavern3_W
+add_property map06 warpgate5 GW_Ceryshen_N c3 GW_Cavern3_N
+add_property map06 warpgate6 GW_Ceryshen_S c3 GW_Cavern3_S
 add_property map06 xp_active true
 add_property map06 xp_battle_points 100
 add_property map06 xp_checklist_description @xp_map06_label
 add_property map06 xp_description @xp_map06_descrip
-add_property map06 xp_event visited_map06
+add_property map06 xp_event map06
 add_property map06 xp_help_active true
 add_property map06 xp_message @xp_map06_message
 add_property map06 xp_repeat 1
@@ -4807,7 +4896,15 @@ add_property comm_station_dsp type building
 add_property comm_station_dsp radius 118.4325
 add_property comm_station_dsp sphere_offset 0.1982 0.0869 14.2267
 add_property comm_station_dsp anglebarrier1 90
+add_property comm_station_dsp anglebarrier2 135
+add_property comm_station_dsp anglebarrier3 -45
 add_property comm_station_dsp barrier1 68.38 70.18 2.5
+add_property comm_station_dsp barrier2 50.7490 -58.8019 4.00
+add_property comm_station_dsp barrier3 -50.8020 93.4222 4.00
+add_property comm_station_dsp barriermeshseq2 50.7490 -58.8019 -0.3569
+add_property comm_station_dsp barriermeshseq3 -50.8020 93.4222 -0.3569
+add_property comm_station_dsp barriername2 defender_forcefield_mesh
+add_property comm_station_dsp barriername3 defender_forcefield_mesh
 add_property comm_station_dsp base_capture_experience 2250
 add_property comm_station_dsp basetype comm_station_dsp
 add_property comm_station_dsp building
@@ -4823,6 +4920,8 @@ add_property comm_station_dsp num_respawn_points 3
 add_property comm_station_dsp numpaths 1
 add_property comm_station_dsp path1 17.91 87.0 1.5 17.91 76.0 0.0 30.5 63.0 0.0
 add_property comm_station_dsp physicsbarrier1 vehicle_barrier
+add_property comm_station_dsp physicsbarrier2 expansion_barrier_force_field
+add_property comm_station_dsp physicsbarrier3 expansion_barrier_force_field
 add_property comm_station_dsp resource game_objects
 add_property comm_station_dsp resource_respawn_penalty 0
 add_property comm_station_dsp respawn_amp .5
@@ -4970,9 +5069,17 @@ add_property tech_plant radius 1.1657
 add_property tech_plant sphere_offset 5.0705 -3.5675 2.8388
 add_property tech_plant anglebarrier1 90
 add_property tech_plant anglebarrier2 90
+add_property tech_plant anglebarrier3 -90
+add_property tech_plant anglebarrier4 180
 add_property tech_plant animattachbonename hp_vehicle
 add_property tech_plant barrier1 -48.22 -16.00 -16.45
 add_property tech_plant barrier2 -48.00 40.45 3.50
+add_property tech_plant barrier3 -47.2541 98.2494 4.00
+add_property tech_plant barrier4 91.0608 -62.5724 4.00
+add_property tech_plant barriermeshseq3 -47.2541 98.2494 -0.4659
+add_property tech_plant barriermeshseq4 91.0608 -62.5724 -0.4660
+add_property tech_plant barriername3 defender_forcefield_mesh
+add_property tech_plant barriername4 defender_forcefield_mesh
 add_property tech_plant base_capture_experience 2250
 add_property tech_plant basetype tech_plant
 add_property tech_plant building
@@ -4992,6 +5099,8 @@ add_property tech_plant numpaths 1
 add_property tech_plant path1 -48.00 -20.0 -18.90 -48.00 -17.3 -19.42 -48.00 -13.64 -19.48 -48.00 13.00 -9.25 -48.00 39.0 0.60 -48.00 52.0 1.6
 add_property tech_plant physicsbarrier1 vehicle_barrier
 add_property tech_plant physicsbarrier2 vehicle_barrier
+add_property tech_plant physicsbarrier3 expansion_barrier_force_field
+add_property tech_plant physicsbarrier4 expansion_barrier_force_field
 add_property tech_plant physicshinge1 false
 add_property tech_plant physicshinge2 false
 add_property tech_plant resource game_objects
@@ -5406,6 +5515,14 @@ add_property door_nc_rotating open_sound facility_garage_door_sm_open.wav 1.0 40
 add_property comm_station type building
 add_property comm_station radius 118.4325
 add_property comm_station sphere_offset 0.1982 0.0869 14.2267
+add_property comm_station anglebarrier1 135
+add_property comm_station anglebarrier2 315
+add_property comm_station barrier1 51.1976 -58.7994 4.00
+add_property comm_station barrier2 -50.8027 58.9783 4.00
+add_property comm_station barriermeshseq1 51.1976 -58.7994 -0.2574
+add_property comm_station barriermeshseq2 -50.8027 58.9783 -0.2574
+add_property comm_station barriername1 defender_forcefield_mesh
+add_property comm_station barriername2 defender_forcefield_mesh
 add_property comm_station base_capture_experience 2250
 add_property comm_station basetype comm_station
 add_property comm_station building
@@ -5421,6 +5538,8 @@ add_property comm_station maxbindablewithoutrespawndelaypenalty 20
 add_property comm_station num_respawn_points 3
 add_property comm_station numpaths 1
 add_property comm_station path1 32.0 54.58 1.8 19.0 54.58 0.4 11.0 54.58 0.4
+add_property comm_station physicsbarrier1 expansion_barrier_force_field
+add_property comm_station physicsbarrier2 expansion_barrier_force_field
 add_property comm_station resource game_objects
 add_property comm_station resource_respawn_penalty 0
 add_property comm_station respawn_amp .5
@@ -5440,6 +5559,14 @@ add_property comm_station turret_firing_rate_amp 0.7
 add_property cryo_facility type building
 add_property cryo_facility radius 119.0390
 add_property cryo_facility sphere_offset -3.3588 -8.0182 5.4277
+add_property cryo_facility anglebarrier1 0
+add_property cryo_facility anglebarrier2 225
+add_property cryo_facility barrier1 -71.0180 -51.9993 4.00
+add_property cryo_facility barrier2 41.9809 58.8025 4.00
+add_property cryo_facility barriermeshseq1 -71.0180 -51.9993 -0.4566
+add_property cryo_facility barriermeshseq2 41.9809 58.8025 -0.4566
+add_property cryo_facility barriername1 defender_forcefield_mesh
+add_property cryo_facility barriername2 defender_forcefield_mesh
 add_property cryo_facility base_capture_experience 2250
 add_property cryo_facility basetype cryo_facility
 add_property cryo_facility building
@@ -5455,6 +5582,8 @@ add_property cryo_facility maxbindablewithoutrespawndelaypenalty 20
 add_property cryo_facility num_respawn_points 4
 add_property cryo_facility numpaths 1
 add_property cryo_facility path1 16.0 -63.27 1.5 6.0 -63.27 0.0 -2.0 -65.6 0.0
+add_property cryo_facility physicsbarrier1 expansion_barrier_force_field
+add_property cryo_facility physicsbarrier2 expansion_barrier_force_field
 add_property cryo_facility resource game_objects
 add_property cryo_facility resource_respawn_penalty 0
 add_property cryo_facility respawn_amp .5
@@ -5535,9 +5664,6 @@ add_property map07 type map
 add_property map07 radius 16.2365
 add_property map07 sphere_offset -5.5590 0.0000 4.2682
 add_property map07 TerrainType arctic
-add_property map07 building_ctf_1 Mani
-add_property map07 building_ctf_2 Vidar
-add_property map07 building_ctf_3 ymir
 add_property map07 building1 Nott nc
 add_property map07 building10 SW_Mani_Tower nc
 add_property map07 building11 NE_VSSanc_Warpgate_Tower nc
@@ -5566,6 +5692,9 @@ add_property map07 building6 SE_Dagur_Tower vs
 add_property map07 building7 E_Dagur_Tower nc
 add_property map07 building8 E_Oshur_Warpgate_Tower nc
 add_property map07 building9 SW_Oshur_Warpgate_Tower nc
+add_property map07 building_ctf_1 Mani
+add_property map07 building_ctf_2 Vidar
+add_property map07 building_ctf_3 ymir
 add_property map07 building_link_1 Nott Helhiem
 add_property map07 building_link_10 Mani Nott
 add_property map07 building_link_11 Mani Eisa
@@ -5580,6 +5709,8 @@ add_property map07 building_link_19 Andvari WG_Esamir_to_NCSanc
 add_property map07 building_link_2 Jarl Dagur
 add_property map07 building_link_20 Gjallar WG_Esamir_to_Searhus
 add_property map07 building_link_21 Kvasir WG_Esamir_to_VSSanc
+add_property map07 building_link_22 Mani GW_Esamir_N
+add_property map07 building_link_23 Ran GW_Esamir_S
 add_property map07 building_link_3 Kvasir Ran
 add_property map07 building_link_4 Ran Gjallar
 add_property map07 building_link_5 Gjallar ymir
@@ -5604,7 +5735,7 @@ add_property map07 xp_active true
 add_property map07 xp_battle_points 100
 add_property map07 xp_checklist_description @xp_map07_label
 add_property map07 xp_description @xp_map07_descrip
-add_property map07 xp_event visited_map07
+add_property map07 xp_event map07
 add_property map07 xp_help_active true
 add_property map07 xp_message @xp_map07_message
 add_property map07 xp_repeat 1
@@ -5626,7 +5757,7 @@ add_property map14 xp_active true
 add_property map14 xp_battle_points 100
 add_property map14 xp_checklist_description @xp_map14_label
 add_property map14 xp_description @xp_map14_descrip
-add_property map14 xp_event visited_map14
+add_property map14 xp_event map14
 add_property map14 xp_help_active true
 add_property map14 xp_message @xp_map14_message
 
@@ -5823,7 +5954,7 @@ add_property heavy_rail_beam_projectile avatar_hit_effect armor_hit_effect
 add_property heavy_rail_beam_projectile bounce_count 0
 add_property heavy_rail_beam_projectile damage0 75
 add_property heavy_rail_beam_projectile damage1 215
-add_property heavy_rail_beam_projectile damage_at_edge 0.10
+add_property heavy_rail_beam_projectile damage_at_edge 0.30
 add_property heavy_rail_beam_projectile damage_radius 5
 add_property heavy_rail_beam_projectile damage_type 1
 add_property heavy_rail_beam_projectile dud_effect impact_water_big_energy
@@ -5979,6 +6110,7 @@ add_property map16 radius 3.8377
 add_property map16 sphere_offset 0.1330 0.0000 1.4256
 add_property map16 TerrainType forest
 add_property map16 mapHeight 1024
+add_property map16 mapMediumResScaleFactor 4
 add_property map16 mapPositionsWrap true
 add_property map16 mapWidth 1024
 add_property map16 skydome vr_sky
@@ -5987,9 +6119,8 @@ add_property map16 xp_active true
 add_property map16 xp_battle_points 100
 add_property map16 xp_checklist_description @xp_map16_label
 add_property map16 xp_description @xp_map16_descrip
-add_property map16 xp_event visited_map16
+add_property map16 xp_event map16
 add_property map16 xp_help_active true
-add_property map16 mapMediumResScaleFactor 4
 
 ##dropship_pad_doors
 
@@ -6255,6 +6386,8 @@ add_property map01 building_link_14 Horus WG_Solsar_to_Amerish
 add_property map01 building_link_15 Mont WG_Solsar_to_Forseral
 add_property map01 building_link_16 Seth WG_Solsar_to_Hossin
 add_property map01 building_link_17 Thoth WG_Solsar_to_Cyssor
+add_property map01 building_link_18 Bastet GW_Solsar_N
+add_property map01 building_link_19 Sobek GW_Solsar_S
 add_property map01 building_link_2 Seth Aton
 add_property map01 building_link_3 Aton Mont
 add_property map01 building_link_4 Aton Hapi
@@ -6279,14 +6412,14 @@ add_property map01 warpgate1 WG_Solsar_to_Amerish home1 WG_NCSanc_to_Amerish nc
 add_property map01 warpgate2 WG_Solsar_to_Cyssor z5 WG_Forseral_to_Ceryshen
 add_property map01 warpgate3 WG_Solsar_to_Hossin z6 WG_Ceryshen_to_Forseral
 add_property map01 warpgate4 WG_Solsar_to_Forseral z10 WG_Amerish_to_Oshur
-add_property map01 warpgate5 GW_Solsar_1 c4 GW_Cavern4_W
-add_property map01 warpgate6 GW_Solsar_2 c4 GW_Cavern4_E
+add_property map01 warpgate5 GW_Solsar_N c4 GW_Cavern4_N
+add_property map01 warpgate6 GW_Solsar_S c4 GW_Cavern4_S
 add_property map01 water_level 2
 add_property map01 xp_active true
 add_property map01 xp_battle_points 100
 add_property map01 xp_checklist_description @xp_map01_label
 add_property map01 xp_description @xp_map01_descrip
-add_property map01 xp_event visited_map01
+add_property map01 xp_event map01
 add_property map01 xp_help_active true
 add_property map01 xp_message @xp_map01_message
 add_property map01 xp_repeat 1
@@ -6510,9 +6643,6 @@ add_property map04 building16 N_Ceryshen_Warpgate_Tower vs
 add_property map04 building17 S_Irkalla_Tower vs
 add_property map04 building18 NE_Neti_Tower nc
 add_property map04 building19 E_Zaqar_Tower nc
-add_property map04 building_ctf_1 Enkidu
-add_property map04 building_ctf_2 Irkalla
-add_property map04 building_ctf_3 Neti
 add_property map04 building2 Baal tr
 add_property map04 building20 W_Zaqar_Tower nc
 add_property map04 building21 S_Marduk_Tower nc
@@ -6538,6 +6668,9 @@ add_property map04 building6 S_Dagon_Tower tr
 add_property map04 building7 SE_Baal_Tower tr
 add_property map04 building8 SW_Hanish_Tower vs
 add_property map04 building9 W_Girru_Tower vs
+add_property map04 building_ctf_1 Enkidu
+add_property map04 building_ctf_2 Irkalla
+add_property map04 building_ctf_3 Neti
 add_property map04 building_link_1 Girru Hanish
 add_property map04 building_link_10 Lahar Kusag
 add_property map04 building_link_11 Baal Akkan
@@ -6550,6 +6683,8 @@ add_property map04 building_link_17 Marduk WG_Ishundar_to_TRSanc
 add_property map04 building_link_18 Kusag WG_Ishundar_to_Ceryshen
 add_property map04 building_link_19 Enkidu Kusag
 add_property map04 building_link_2 Girru Irkalla
+add_property map04 building_link_20 Marduk GW_Ishundar_S
+add_property map04 building_link_21 Hanish GW_Ishundar_N
 add_property map04 building_link_3 Hanish Dagon
 add_property map04 building_link_4 Irkalla Hanish
 add_property map04 building_link_5 Zaqar Enkidu
@@ -6574,7 +6709,7 @@ add_property map04 xp_active true
 add_property map04 xp_battle_points 100
 add_property map04 xp_checklist_description @xp_map04_label
 add_property map04 xp_description @xp_map04_descrip
-add_property map04 xp_event visited_map04
+add_property map04 xp_event map04
 add_property map04 xp_help_active true
 add_property map04 xp_message @xp_map04_message
 add_property map04 xp_repeat 1
@@ -6671,7 +6806,7 @@ add_property 105mmbullet_projectile type projectile
 add_property 105mmbullet_projectile radius 0.2796
 add_property 105mmbullet_projectile sphere_offset -0.0166 -0.0000 0.0026
 add_property 105mmbullet_projectile bounce_count 0
-add_property 105mmbullet_projectile damage0 100
+add_property 105mmbullet_projectile damage0 150
 add_property 105mmbullet_projectile damage1 300
 add_property 105mmbullet_projectile damage_at_edge 0.1
 add_property 105mmbullet_projectile damage_radius 7
@@ -7113,6 +7248,8 @@ add_property map08 building_link_12 Zal WG_Oshur_to_Esamir
 add_property map08 building_link_13 Dahaka WG_Oshur_to_Hossin
 add_property map08 building_link_14 Mithra WG_Oshur_to_Forseral
 add_property map08 building_link_15 Atar WG_Oshur_to_Amerish
+add_property map08 building_link_16 Hvar GW_Oshur_N
+add_property map08 building_link_17 Izha GW_Oshur_S
 add_property map08 building_link_2 Yazata Dahaka
 add_property map08 building_link_3 Atar Zal
 add_property map08 building_link_4 Zal Izha
@@ -7133,14 +7270,14 @@ add_property map08 warpgate1 WG_Oshur_to_Amerish z3 WG_Cyssor_to_TRSanc
 add_property map08 warpgate2 WG_Oshur_to_Esamir z2 WG_Hossin_to_Oshur
 add_property map08 warpgate3 WG_Oshur_to_Hossin home3 WG_VSSanc_to_Esamir vs
 add_property map08 warpgate4 WG_Oshur_to_Forseral z6 WG_Ceryshen_to_Amerish
-add_property map08 warpgate5 GW_Oshur_1 c6 GW_Cavern6_N
-add_property map08 warpgate6 GW_Oshur_2 c6 GW_Cavern6_E
+add_property map08 warpgate5 GW_Oshur_N c6 GW_Cavern6_N
+add_property map08 warpgate6 GW_Oshur_S c6 GW_Cavern6_S
 add_property map08 water_level 30
 add_property map08 xp_active true
 add_property map08 xp_battle_points 100
 add_property map08 xp_checklist_description @xp_map08_label
 add_property map08 xp_description @xp_map08_descrip
-add_property map08 xp_event visited_map08
+add_property map08 xp_event map08
 add_property map08 xp_help_active true
 add_property map08 xp_message @xp_map08_message
 add_property map08 xp_repeat 1
@@ -7153,9 +7290,6 @@ add_property map09 radius 1.6268
 add_property map09 sphere_offset -0.0607 -0.0000 0.6657
 add_property map09 TerrainType volcanic
 add_property map09 building1 Laka nc
-add_property map09 building_ctf_1 Laka
-add_property map09 building_ctf_2 Ngaru
-add_property map09 building_ctf_3 Sina
 add_property map09 building10 E_Esamir_Warpgate_Tower tr
 add_property map09 building11 W_Sina_Tower tr
 add_property map09 building12 NE_Sina_Tower tr
@@ -7181,6 +7315,9 @@ add_property map09 building6 SE_Tara_Tower vs
 add_property map09 building7 NE_Esamir_Warpgate_Tower vs
 add_property map09 building8 W_Ngaru_Tower vs
 add_property map09 building9 NE_Pele_Tower tr
+add_property map09 building_ctf_1 Laka
+add_property map09 building_ctf_2 Ngaru
+add_property map09 building_ctf_3 Sina
 add_property map09 building_link_1 Laka Iva
 add_property map09 building_link_10 Akua Iva
 add_property map09 building_link_11 Matagi Hiro
@@ -7197,6 +7334,8 @@ add_property map09 building_link_20 Iva WG_Searhus_to_Cyssor
 add_property map09 building_link_21 Rehua WG_Searhus_to_Esamir
 add_property map09 building_link_22 Drakulu Sina
 add_property map09 building_link_23 Pele Oro
+add_property map09 building_link_24 Iva GW_Searhus_N
+add_property map09 building_link_25 Rehua GW_Searhus_S
 add_property map09 building_link_3 Sina Rehua
 add_property map09 building_link_4 Rehua Tara
 add_property map09 building_link_5 Tara Wakea
@@ -7223,7 +7362,7 @@ add_property map09 xp_active true
 add_property map09 xp_battle_points 100
 add_property map09 xp_checklist_description @xp_map09_label
 add_property map09 xp_description @xp_map09_descrip
-add_property map09 xp_event visited_map09
+add_property map09 xp_event map09
 add_property map09 xp_help_active true
 add_property map09 xp_message @xp_map09_message
 add_property map09 xp_repeat 1
@@ -7269,10 +7408,7 @@ add_property remote_electronics_kit radius 0.1817
 add_property remote_electronics_kit sphere_offset 0.0000 -0.1103 -0.0022
 add_property remote_electronics_kit HUD_hide_ammo true
 add_property remote_electronics_kit animationtype pistol
-add_property remote_electronics_kit basepose pistol
-add_property remote_electronics_kit category pistol
 add_property remote_electronics_kit certification none
-add_property remote_electronics_kit class LightAssaultWeapon
 add_property remote_electronics_kit clientfiremode0_crosshair REKCrosshair
 add_property remote_electronics_kit clientfiremode0_fire_sound equipment_rek_in_use.wav 0.4 15
 add_property remote_electronics_kit clientfiremode0_looping_fire_anim true
@@ -7481,8 +7617,10 @@ add_property nchev sphere_offset 0.0159 -0.0449 0.9659
 add_property nchev armor_effects glow1 glow2
 add_property nchev autorun_acceltime_ms 6000
 add_property nchev autorun_deceltime_ms 3500
+add_property nchev capacitor_max 400
 add_property nchev capacitor_shield_depletion_per_sec 4
 add_property nchev capacitor_shield_override_time 2000
+add_property nchev capacitor_recharge_per_second 4
 add_property nchev firemodefireratemultipliers_nchev_scattercannon 2 2 2
 add_property nchev has_shield true
 add_property nchev sound_activate nchev_turn_on_shield.wav 0.75 35
@@ -7490,7 +7628,6 @@ add_property nchev sound_active_loop nchev_shield_ambient.wav 0.75 30
 add_property nchev sound_ambient nchev_mech_suit_hum_ambient.wav
 add_property nchev sound_deactivate nchev_turn_off_shield.wav 0.75 35
 add_property nchev sound_extra nchev_shield_depleted_damage.wav 0.75 35
-add_property nchev capacitor_max 400
 
 ##flux_cannon_thresher
 
@@ -7624,7 +7761,7 @@ add_property map15 xp_active true
 add_property map15 xp_battle_points 100
 add_property map15 xp_checklist_description @xp_map15_label
 add_property map15 xp_description @xp_map15_descrip
-add_property map15 xp_event visited_map15
+add_property map15 xp_event map15
 add_property map15 xp_help_active true
 add_property map15 xp_message @xp_map15_message
 
@@ -7918,6 +8055,14 @@ add_property cryo_med_door resource game_objects
 add_property amp_station type building
 add_property amp_station radius 139.7326
 add_property amp_station sphere_offset -12.6733 2.6935 1.7564
+add_property amp_station anglebarrier1 90
+add_property amp_station anglebarrier2 180
+add_property amp_station barrier1 -49.0011 -96.2475 4.00
+add_property amp_station barrier2 72.2429 68.5377 4.00
+add_property amp_station barriermeshseq1 -49.0011 -96.2475 -0.2566
+add_property amp_station barriermeshseq2 72.2429 68.5377 -0.2566
+add_property amp_station barriername1 defender_forcefield_mesh
+add_property amp_station barriername2 defender_forcefield_mesh
 add_property amp_station base_capture_experience 2250
 add_property amp_station basetype amp_station
 add_property amp_station building
@@ -7933,6 +8078,8 @@ add_property amp_station maxbindablewithoutrespawndelaypenalty 20
 add_property amp_station num_respawn_points 3
 add_property amp_station numpaths 1
 add_property amp_station path1 -48.0 62.0 0.4 -48.0 46.0 0.2
+add_property amp_station physicsbarrier1 expansion_barrier_force_field
+add_property amp_station physicsbarrier2 expansion_barrier_force_field
 add_property amp_station resource game_objects
 add_property amp_station resource_respawn_penalty 0
 add_property amp_station respawn_amp .5
@@ -7999,6 +8146,8 @@ add_property map02 building_link_17 Mulac WG_Hossin_to_VSSanc
 add_property map02 building_link_18 Naum Zotz
 add_property map02 building_link_19 Chac Voltan
 add_property map02 building_link_2 Kisin Acan
+add_property map02 building_link_20 Naum GW_Hossin_N
+add_property map02 building_link_21 Bitol GW_Hossin_S
 add_property map02 building_link_3 Acan Ghanon
 add_property map02 building_link_4 Acan Ixtab
 add_property map02 building_link_5 Acan Voltan
@@ -8020,14 +8169,14 @@ add_property map02 warpgate1 WG_Hossin_to_Oshur z8 WG_Oshur_to_Esamir
 add_property map02 warpgate2 WG_Hossin_to_VSSanc home1 WG_NCSanc_to_Esamir nc
 add_property map02 warpgate3 WG_Hossin_to_Solsar z7 WG_Esamir_to_Oshur
 add_property map02 warpgate4 WG_Hossin_to_Ceryshen z4 WG_Ishundar_to_TRSanc
-add_property map02 warpgate5 GW_Hossin_1 c2 GW_Cavern2_N
-add_property map02 warpgate6 GW_Hossin_2 c2 GW_Cavern2_S
+add_property map02 warpgate5 GW_Hossin_N c2 GW_Cavern2_N
+add_property map02 warpgate6 GW_Hossin_S c2 GW_Cavern2_S
 add_property map02 water_level 2
 add_property map02 xp_active true
 add_property map02 xp_battle_points 100
 add_property map02 xp_checklist_description @xp_map02_label
 add_property map02 xp_description @xp_map02_descrip
-add_property map02 xp_event visited_map02
+add_property map02 xp_event map02
 add_property map02 xp_help_active true
 add_property map02 xp_message @xp_map02_message
 add_property map02 xp_repeat 1
@@ -8119,7 +8268,7 @@ add_property striker_missile_targeting_projectile sphere_offset 0.3716 -0.0200 -
 add_property striker_missile_targeting_projectile autolock true
 add_property striker_missile_targeting_projectile autolock_activate_duration .4
 add_property striker_missile_targeting_projectile autolock_angle 8
-add_property striker_missile_targeting_projectile autolock_deactivate_duration .15
+add_property striker_missile_targeting_projectile autolock_deactivate_duration .25
 add_property striker_missile_targeting_projectile autolock_fire_after_lock true
 add_property striker_missile_targeting_projectile autolock_flightvehicle true
 add_property striker_missile_targeting_projectile autolock_heavy true
@@ -8461,6 +8610,8 @@ add_property map03 building_link_24 Ekera WG_Cyssor_to_Solsar
 add_property map03 building_link_25 Leza WG_Cyssor_to_Searhus
 add_property map03 building_link_26 Orisha WG_Cyssor_to_TRSanc
 add_property map03 building_link_27 Chuku Honsi
+add_property map03 building_link_28 Tore GW_Cyssor_S
+add_property map03 building_link_29 Bomazi GW_Cyssor_N
 add_property map03 building_link_3 Aja Bomazi
 add_property map03 building_link_4 Chuku Ekera
 add_property map03 building_link_5 Bomazi Nzame
@@ -8508,7 +8659,7 @@ add_property map03 xp_active true
 add_property map03 xp_battle_points 100
 add_property map03 xp_checklist_description @xp_map03_label
 add_property map03 xp_description @xp_map03_descrip
-add_property map03 xp_event visited_map03
+add_property map03 xp_event map03
 add_property map03 xp_help_active true
 add_property map03 xp_message @xp_map03_message
 add_property map03 xp_repeat 1
@@ -9554,8 +9705,8 @@ add_property scattercannon_projectile radius 0.2796
 add_property scattercannon_projectile sphere_offset -0.0166 -0.0000 0.0026
 add_property scattercannon_projectile avatar_hit_effect impact_bloodybullet
 add_property scattercannon_projectile bounce_count 0
-add_property scattercannon_projectile damage0 10
-add_property scattercannon_projectile damage1 7
+add_property scattercannon_projectile damage0 11
+add_property scattercannon_projectile damage1 5
 add_property scattercannon_projectile damage_type 0
 add_property scattercannon_projectile getsspherepack false
 add_property scattercannon_projectile hasgravity true
@@ -9737,14 +9888,14 @@ add_property trhev_pounder firemode0_defaultCOF 2
 add_property trhev_pounder firemode0_maxCOF 6
 add_property trhev_pounder firemode0_recoil 1
 add_property trhev_pounder firemode0_refiretime 300
-add_property trhev_pounder firemode0_reloadtime 2.000
+add_property trhev_pounder firemode0_reloadtime 4.000
 add_property trhev_pounder firemode1_COFrecovery 150
 add_property trhev_pounder firemode1_defaultCOF 2
 add_property trhev_pounder firemode1_is_special true
 add_property trhev_pounder firemode1_maxCOF 6
 add_property trhev_pounder firemode1_recoil 1
 add_property trhev_pounder firemode1_refiretime 150
-add_property trhev_pounder firemode1_reloadtime 2.000
+add_property trhev_pounder firemode1_reloadtime 4.000
 add_property trhev_pounder firemode1_use_common_ammo true
 add_property trhev_pounder firemode2_COFrecovery 150
 add_property trhev_pounder firemode2_defaultCOF 2
@@ -9752,7 +9903,7 @@ add_property trhev_pounder firemode2_maxCOF 6
 add_property trhev_pounder firemode2_projectile_index 1
 add_property trhev_pounder firemode2_recoil 1
 add_property trhev_pounder firemode2_refiretime 300
-add_property trhev_pounder firemode2_reloadtime 2.000
+add_property trhev_pounder firemode2_reloadtime 4.000
 add_property trhev_pounder firemode2_use_common_ammo true
 add_property trhev_pounder firemode3_COFrecovery 150
 add_property trhev_pounder firemode3_defaultCOF 2
@@ -9761,7 +9912,7 @@ add_property trhev_pounder firemode3_maxCOF 6
 add_property trhev_pounder firemode3_projectile_index 1
 add_property trhev_pounder firemode3_recoil 1
 add_property trhev_pounder firemode3_refiretime 150
-add_property trhev_pounder firemode3_reloadtime 2.000
+add_property trhev_pounder firemode3_reloadtime 4.000
 add_property trhev_pounder firemode3_use_common_ammo true
 add_property trhev_pounder icon_height 5
 add_property trhev_pounder icon_width 11
@@ -9946,7 +10097,7 @@ add_property map13 xp_battle_points 100
 add_property map13 xp_checklist_description @xp_map13_label
 add_property map13 xp_description @xp_map13_descrip
 add_property map13 xp_empire vs
-add_property map13 xp_event visited_map13
+add_property map13 xp_event map13
 add_property map13 xp_help_active true
 add_property map13 xp_message @xp_map13_message
 add_property map13 xp_repeat 1
@@ -10322,6 +10473,8 @@ add_property map05 building_link_13 Pwyll WG_Forseral_to_Ceryshen
 add_property map05 building_link_14 Gwydion WG_Forseral_to_Oshur
 add_property map05 building_link_15 Anu WG_Forseral_to_TRSanc
 add_property map05 building_link_16 Pwyll Bel
+add_property map05 building_link_17 Lugh GW_Forseral_N
+add_property map05 building_link_18 Caer GW_Forseral_S
 add_property map05 building_link_2 Lugh Dagda
 add_property map05 building_link_3 Dagda Gwydion
 add_property map05 building_link_4 Gwydion Caer
@@ -10355,14 +10508,14 @@ add_property map05 warpgate1 WG_Forseral_to_TRSanc z9 WG_Searhus_to_Cyssor
 add_property map05 warpgate2 WG_Forseral_to_Solsar home2 WG_TRSanc_to_Cyssor tr
 add_property map05 warpgate3 WG_Forseral_to_Oshur z10 WG_Amerish_to_Ceryshen
 add_property map05 warpgate4 WG_Forseral_to_Ceryshen z1 WG_Solsar_to_Cyssor
-add_property map05 warpgate5 GW_Forseral_1 c5 GW_Cavern5_N
-add_property map05 warpgate6 GW_Forseral_2 c5 GW_Cavern5_S
+add_property map05 warpgate5 GW_Forseral_N c5 GW_Cavern5_N
+add_property map05 warpgate6 GW_Forseral_S c5 GW_Cavern5_S
 add_property map05 water_level 7
 add_property map05 xp_active true
 add_property map05 xp_battle_points 100
 add_property map05 xp_checklist_description @xp_map05_label
 add_property map05 xp_description @xp_map05_descrip
-add_property map05 xp_event visited_map05
+add_property map05 xp_event map05
 add_property map05 xp_help_active true
 add_property map05 xp_message @xp_map05_message
 add_property map05 xp_repeat 1
@@ -10381,7 +10534,7 @@ add_property shifter_base HealingRate 0.25
 add_property shifter_base Maturity Infant
 add_property shifter_base MaxSize 3.0
 add_property shifter_base MaxSlope 45
-add_property shifter_base maxspeed 5.0
+add_property shifter_base MaxSpeed 5.0
 add_property shifter_base MinSize 0.2
 add_property shifter_base SightFOV 120
 add_property shifter_base SightMinAngularSize 0.5
@@ -10481,7 +10634,6 @@ add_property nchev_scattercannon firemode0_refiretime 500
 add_property nchev_scattercannon firemode0_reloadtime 2.0
 add_property nchev_scattercannon firemode0_shotsperround 10
 add_property nchev_scattercannon firemode0_shotspread 12
-add_property nchev_scattercannon firemode0_zoomlevel0 1
 add_property nchev_scattercannon firemode1_COFrecovery 150
 add_property nchev_scattercannon firemode1_defaultCOF 1
 add_property nchev_scattercannon firemode1_maxCOF 20
@@ -10491,7 +10643,6 @@ add_property nchev_scattercannon firemode1_reloadtime 2.0
 add_property nchev_scattercannon firemode1_shotsperround 10
 add_property nchev_scattercannon firemode1_shotspread 5
 add_property nchev_scattercannon firemode1_use_common_ammo true
-add_property nchev_scattercannon firemode1_zoomlevel0 2
 add_property nchev_scattercannon firemode2_COFrecovery 150
 add_property nchev_scattercannon firemode2_defaultCOF 1
 add_property nchev_scattercannon firemode2_maxCOF 20
@@ -10501,7 +10652,6 @@ add_property nchev_scattercannon firemode2_reloadtime 2.000
 add_property nchev_scattercannon firemode2_shotsperround 10
 add_property nchev_scattercannon firemode2_shotspread 2
 add_property nchev_scattercannon firemode2_use_common_ammo true
-add_property nchev_scattercannon firemode2_zoomlevel0 4
 add_property nchev_scattercannon fp_rotate_amount 5406
 add_property nchev_scattercannon fp_rotate_bone nc_hev_scattercannon
 add_property nchev_scattercannon icon_height 5
@@ -10514,12 +10664,13 @@ add_property nchev_scattercannon xp_active true
 add_property nchev_scattercannon xp_battle_points 100
 add_property nchev_scattercannon xp_checklist_description @xp_nc_hev_scattercannon_label
 add_property nchev_scattercannon xp_description @xp_nc_hev_scattercannon_descrip
+add_property nchev_scattercannon xp_empire nc
 add_property nchev_scattercannon xp_event used_nc_hev_scattercannon
 add_property nchev_scattercannon xp_help_active true
 add_property nchev_scattercannon xp_message @xp_nc_hev_scattercannon_message
 add_property nchev_scattercannon xp_repeat 1
 add_property nchev_scattercannon xp_sound help_alert.wav
-add_property nchev_scattercannon xp_empire nc
+add_property nchev_scattercannon zoomlevel1 2
 
 ##dualcycler_projectile
 
@@ -11039,7 +11190,9 @@ add_property map10 building_link_15 Azeban WG_Amerish_to_Ceryshen
 add_property map10 building_link_16 Ikanam WG_Amerish_to_Solsar
 add_property map10 building_link_17 Onatha WG_Amerish_to_NCSanc
 add_property map10 building_link_18 Verica WG_Amerish_to_Oshur
+add_property map10 building_link_19 Cetan GW_Amerish_S
 add_property map10 building_link_2 Ikanam Qumu
+add_property map10 building_link_20 Tumas GW_Amerish_N
 add_property map10 building_link_3 Azeban Xelas
 add_property map10 building_link_4 Xelas Mekala
 add_property map10 building_link_5 Mekala Kyoi
@@ -11059,13 +11212,13 @@ add_property map10 warpgate1 WG_Amerish_to_Solsar home3 WG_VSSanc_to_Ishundar vs
 add_property map10 warpgate2 WG_Amerish_to_NCSanc z4 WG_Ishundar_to_VSSanc
 add_property map10 warpgate3 WG_Amerish_to_Oshur z1 WG_Solsar_to_Forseral
 add_property map10 warpgate4 WG_Amerish_to_Ceryshen z5 WG_Forseral_to_Oshur
-add_property map10 warpgate5 GW_Amerish_1 c1 GW_Cavern1_S
-add_property map10 warpgate6 GW_Amerish_2 c1 GW_Cavern1_N
+add_property map10 warpgate5 GW_Amerish_S c1 GW_Cavern1_S
+add_property map10 warpgate6 GW_Amerish_N c1 GW_Cavern1_N
 add_property map10 xp_active true
 add_property map10 xp_battle_points 100
 add_property map10 xp_checklist_description @xp_map10_label
 add_property map10 xp_description @xp_map10_descrip
-add_property map10 xp_event visited_map10
+add_property map10 xp_event map10
 add_property map10 xp_help_active true
 add_property map10 xp_message @xp_map10_message
 add_property map10 xp_repeat 1
@@ -11914,6 +12067,18 @@ add_property liberator_bomb_cluster_bomblet_projectile spawnprojectileat muzzle_
 add_property ugd01 type map
 add_property ugd01 radius 1.1657
 add_property ugd01 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd01 building_link_1 N_Redoubt N_ATPlant
+add_property ugd01 building_link_10 GW_Cavern1_W N_ATPlant
+add_property ugd01 building_link_11 N_Stasis Core
+add_property ugd01 building_link_12 S_Stasis Core
+add_property ugd01 building_link_2 S_Redoubt S_ATPlant
+add_property ugd01 building_link_3 N_Redoubt N_Stasis
+add_property ugd01 building_link_4 S_Redoubt S_Stasis
+add_property ugd01 building_link_5 S_Stasis N_ATPlant
+add_property ugd01 building_link_6 N_Stasis S_ATPlant
+add_property ugd01 building_link_7 GW_Cavern1_N N_Redoubt
+add_property ugd01 building_link_8 GW_Cavern1_S S_Redoubt
+add_property ugd01 building_link_9 GW_Cavern1_E S_ATPlant
 add_property ugd01 camera1 975 825 90
 add_property ugd01 mapHeight 3072
 add_property ugd01 mapMediumResScaleFactor 4
@@ -11923,16 +12088,28 @@ add_property ugd01 spawn_nc 975 825 90
 add_property ugd01 spawn_tr 975 825 90
 add_property ugd01 spawn_vs 975 825 90
 add_property ugd01 timeofday ugd01
-add_property ugd01 warpgate1 GW_Cavern1_N z10 GW_Amerish_2
-add_property ugd01 warpgate2 GW_Cavern1_S z10 GW_Amerish_1
-add_property ugd01 warpgate3 GW_Cavern1_E c4 GW_Cavern4_N
-add_property ugd01 warpgate4 GW_Cavern1_W c3 GW_Cavern3_S
+add_property ugd01 warpgate1 GW_Cavern1_N z10 GW_Amerish_N
+add_property ugd01 warpgate2 GW_Cavern1_S z10 GW_Amerish_S
+add_property ugd01 warpgate3 GW_Cavern1_E c4 GW_Cavern4_W
+add_property ugd01 warpgate4 GW_Cavern1_W c3 GW_Cavern3_E
 
 ##ugd02
 
 add_property ugd02 type map
 add_property ugd02 radius 1.1657
 add_property ugd02 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd02 building_link_1 N_Redoubt N_ATPlant
+add_property ugd02 building_link_10 GW_Cavern2_W N_ATPlant
+add_property ugd02 building_link_11 N_Stasis Core
+add_property ugd02 building_link_12 S_Stasis Core
+add_property ugd02 building_link_2 S_Redoubt S_ATPlant
+add_property ugd02 building_link_3 N_Redoubt N_Stasis
+add_property ugd02 building_link_4 S_Redoubt S_Stasis
+add_property ugd02 building_link_5 S_Stasis N_ATPlant
+add_property ugd02 building_link_6 N_Stasis S_ATPlant
+add_property ugd02 building_link_7 GW_Cavern2_N N_Redoubt
+add_property ugd02 building_link_8 GW_Cavern2_S S_Redoubt
+add_property ugd02 building_link_9 GW_Cavern2_E S_ATPlant
 add_property ugd02 camera1 1070 875 199
 add_property ugd02 mapHeight 3072
 add_property ugd02 mapMediumResScaleFactor 4
@@ -11942,9 +12119,9 @@ add_property ugd02 spawn_nc 1070 875 199
 add_property ugd02 spawn_tr 1070 875 199
 add_property ugd02 spawn_vs 1070 875 199
 add_property ugd02 timeofday ugd02
-add_property ugd02 warpgate1 GW_Cavern2_N z2 GW_Hossin_1
-add_property ugd02 warpgate2 GW_Cavern2_S z2 GW_Hossin_2
-add_property ugd02 warpgate3 GW_Cavern2_E c3 GW_Cavern3_N
+add_property ugd02 warpgate1 GW_Cavern2_N z2 GW_Hossin_N
+add_property ugd02 warpgate2 GW_Cavern2_S z2 GW_Hossin_S
+add_property ugd02 warpgate3 GW_Cavern2_E c3 GW_Cavern3_W
 add_property ugd02 warpgate4 GW_Cavern2_W c5 GW_Cavern5_E
 
 ##isp_dispenser
@@ -11959,6 +12136,18 @@ add_property isp_dispenser forsale_isp
 add_property ugd05 type map
 add_property ugd05 radius 1.1657
 add_property ugd05 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd05 building_link_1 NW_Redoubt NW_ATPlant
+add_property ugd05 building_link_10 GW_Cavern5_W NW_ATPlant
+add_property ugd05 building_link_11 NW_Stasis Core
+add_property ugd05 building_link_12 SE_Stasis Core
+add_property ugd05 building_link_2 SE_Redoubt SE_ATPlant
+add_property ugd05 building_link_3 NW_Redoubt NW_Stasis
+add_property ugd05 building_link_4 SE_Redoubt SE_Stasis
+add_property ugd05 building_link_5 SE_Stasis NW_ATPlant
+add_property ugd05 building_link_6 NW_Stasis SE_ATPlant
+add_property ugd05 building_link_7 GW_Cavern5_N NW_Redoubt
+add_property ugd05 building_link_8 GW_Cavern5_S SE_Redoubt
+add_property ugd05 building_link_9 GW_Cavern5_E SE_ATPlant
 add_property ugd05 camera1 1070 875 199
 add_property ugd05 mapHeight 3072
 add_property ugd05 mapMediumResScaleFactor 4
@@ -11968,16 +12157,28 @@ add_property ugd05 spawn_nc 1070 875 199
 add_property ugd05 spawn_tr 1070 875 199
 add_property ugd05 spawn_vs 1070 875 199
 add_property ugd05 timeofday ugd05
-add_property ugd05 warpgate1 GW_Cavern5_N z5 GW_Forseral_1
-add_property ugd05 warpgate2 GW_Cavern5_S z5 GW_Forseral_2
+add_property ugd05 warpgate1 GW_Cavern5_N z5 GW_Forseral_N
+add_property ugd05 warpgate2 GW_Cavern5_S z5 GW_Forseral_S
 add_property ugd05 warpgate3 GW_Cavern5_E c2 GW_Cavern2_W
-add_property ugd05 warpgate4 GW_Cavern5_W c6 GW_Cavern6_W
+add_property ugd05 warpgate4 GW_Cavern5_W c6 GW_Cavern6_E
 
 ##ugd06
 
 add_property ugd06 type map
 add_property ugd06 radius 1.1657
 add_property ugd06 sphere_offset 0.0032 -0.0174 0.8984
+add_property ugd06 building_link_1 N_Redoubt N_ATPlant
+add_property ugd06 building_link_10 GW_Cavern6_W N_ATPlant
+add_property ugd06 building_link_11 N_Stasis Core
+add_property ugd06 building_link_12 S_Stasis Core
+add_property ugd06 building_link_2 S_Redoubt S_ATPlant
+add_property ugd06 building_link_3 N_Redoubt N_Stasis
+add_property ugd06 building_link_4 S_Redoubt S_Stasis
+add_property ugd06 building_link_5 S_Stasis N_ATPlant
+add_property ugd06 building_link_6 N_Stasis S_ATPlant
+add_property ugd06 building_link_7 GW_Cavern6_N N_Redoubt
+add_property ugd06 building_link_8 GW_Cavern6_E S_Redoubt
+add_property ugd06 building_link_9 GW_Cavern6_S S_ATPlant
 add_property ugd06 camera1 775 1445 75
 add_property ugd06 mapHeight 3072
 add_property ugd06 mapMediumResScaleFactor 4
@@ -11987,10 +12188,10 @@ add_property ugd06 spawn_nc 775 1445 75
 add_property ugd06 spawn_tr 775 1445 75
 add_property ugd06 spawn_vs 775 1445 75
 add_property ugd06 timeofday ugd06
-add_property ugd06 warpgate1 GW_Cavern6_N z8 GW_Oshur_1
-add_property ugd06 warpgate2 GW_Cavern6_S c4 GW_Cavern4_S
-add_property ugd06 warpgate3 GW_Cavern6_E z8 GW_Oshur_2
-add_property ugd06 warpgate4 GW_Cavern6_W c5 GW_Cavern5_W
+add_property ugd06 warpgate1 GW_Cavern6_N z8 GW_Oshur_N
+add_property ugd06 warpgate2 GW_Cavern6_E c4 GW_Cavern4_W
+add_property ugd06 warpgate3 GW_Cavern6_S z8 GW_Oshur_S
+add_property ugd06 warpgate4 GW_Cavern6_W c5 GW_Cavern5_E
 
 ##ugd07
 
@@ -12082,15 +12283,15 @@ add_property ugd20 camera1 1070 875 199
 ##maelstrom
 
 add_property maelstrom type weapon
-add_property maelstrom radius 0.3153
-add_property maelstrom sphere_offset 0.2472 -0.0000 -0.0320
+add_property maelstrom radius 0.32
+add_property maelstrom sphere_offset 0.0 -0.0000 -0.0320
 add_property maelstrom ancient_weapon true
 add_property maelstrom animationtype low
 add_property maelstrom certification heavy_assault
 add_property maelstrom clientfiremode0_changefiremode_sound maelstrom_changefiremode.wav
 add_property maelstrom clientfiremode0_crosshair VanuCrosshair
 add_property maelstrom clientfiremode0_dryfire_sound maelstrom_dryfire1.wav
-add_property maelstrom clientfiremode0_fire_sound maelstrom_fire1_loop.wav 0.8 225
+add_property maelstrom clientfiremode0_fire_sound maelstrom_fire1_loop.wav 0.75 225
 add_property maelstrom clientfiremode0_fire_spindown_sound maelstrom_fire1_tailoff.wav
 add_property maelstrom clientfiremode0_infinite_fire_effect true
 add_property maelstrom clientfiremode0_looping_fire_anim true
@@ -12116,6 +12317,7 @@ add_property maelstrom firemode0_refiretime 110
 add_property maelstrom firemode0_reloadtime 1.000
 add_property maelstrom firemode0_use_effect_raytrace true
 add_property maelstrom firemode1_COFrecovery 150
+add_property maelstrom firemode1_ammopershot 5
 add_property maelstrom firemode1_crouchCOF .35
 add_property maelstrom firemode1_defaultCOF .7
 add_property maelstrom firemode1_maxCOF 6
@@ -12148,6 +12350,11 @@ add_property maelstrom zoomlevel1 2
 add_property repair_silo type repair_terminal
 add_property repair_silo radius 4.5677
 add_property repair_silo sphere_offset 0.0000 0.6383 3.7397
+add_property repair_silo ambient_sound silo_ambient_hum.wav
+add_property repair_silo ambient_sound_minrange 1.3
+add_property repair_silo ambient_sound_maxrange 25.0
+add_property repair_silo ambient_sound_volume 0.7
+add_property repair_silo ambient_sound_indoor_test false
 add_property repair_silo can_repair_ancient_vanu_ground_vehicles true
 add_property repair_silo can_repair_ground_vehicles true
 add_property repair_silo canberepairedbynanodispenser true
@@ -12155,6 +12362,7 @@ add_property repair_silo has_aggregate_rearm_terminal true
 add_property repair_silo has_aggregate_recharge_terminal true
 add_property repair_silo terminal_heal_amount 60
 add_property repair_silo terminal_heal_interval 1000
+add_property repair_silo user_must_face_front true
 add_property repair_silo useradius 20
 add_property repair_silo xp_active true
 add_property repair_silo xp_battle_points 100
@@ -12172,7 +12380,6 @@ add_property repair_silo xp_line_of_sight true
 add_property repair_silo xp_message @xp_repair_silo_message
 add_property repair_silo xp_repeat 1
 add_property repair_silo xp_sound help_alert.wav
-add_property repair_silo user_must_face_front true
 
 ##controlpoint
 
@@ -12245,7 +12452,6 @@ add_property spiker_projectile damage_at_edge 0.1
 add_property spiker_projectile damage_radius 5
 add_property spiker_projectile damage_radius_min 1
 add_property spiker_projectile damage_type 1
-add_property spiker_projectile dud_effect impact_waterbullet_energy
 add_property spiker_projectile getsspherepack false
 add_property spiker_projectile hasgravity false
 add_property spiker_projectile heavy_hit_effect armor_hit_effect
@@ -12255,7 +12461,7 @@ add_property spiker_projectile lifespan 5
 add_property spiker_projectile meshsequence none
 add_property spiker_projectile on_impact_object Detonate
 add_property spiker_projectile on_impact_terrain Detonate
-add_property spiker_projectile on_impact_water dud
+add_property spiker_projectile on_impact_water Detonate
 add_property spiker_projectile on_life_expired Detonate
 add_property spiker_projectile on_user_input Detonate
 add_property spiker_projectile projectile_effect spiker_projectile
@@ -12271,12 +12477,16 @@ add_property spiker_projectile vehicle_hit_effect vehicle_hit_effect
 add_property radiator_cloud type radiation_cloud
 add_property radiator_cloud radius 0.3657
 add_property radiator_cloud sphere_offset 0.0722 -0.0000 0.0000
-add_property radiator_cloud damage0 4
+add_property radiator_cloud ambient_sound vshev_quasar_nearmiss.wav
+add_property radiator_cloud ambient_sound_minrange 1.0
+add_property radiator_cloud ambient_sound_maxrange 5.0
+add_property radiator_cloud ambient_sound_volume 0.55
+add_property radiator_cloud damage0 2
 add_property radiator_cloud damage_at_edge 1.0
 add_property radiator_cloud damage_radius 5
 add_property radiator_cloud damage_type 3
-add_property radiator_cloud hasserversidesplash true
 add_property radiator_cloud lifespan 5000
+add_property radiator_cloud meshsequence none
 add_property radiator_cloud pulse_interval 225
 
 ##vanu_sentry_turret_weapon
@@ -12284,25 +12494,27 @@ add_property radiator_cloud pulse_interval 225
 add_property vanu_sentry_turret_weapon type weapon
 add_property vanu_sentry_turret_weapon radius 3.1494
 add_property vanu_sentry_turret_weapon sphere_offset -0.0758 -0.1003 0.1228
-add_property vanu_sentry_turret_weapon clientfiremode0_chargeup_fire_effect true
+add_property vanu_sentry_turret_weapon #firemode0_chargetime 4000
+add_property vanu_sentry_turret_weapon clientfiremode0_chargeup_fire_effect false
 add_property vanu_sentry_turret_weapon clientfiremode0_crosshair DefaultCrosshair
 add_property vanu_sentry_turret_weapon clientfiremode0_dryfire_sound ancient_turret_dryfire.wav
-add_property vanu_sentry_turret_weapon clientfiremode0_fire_sound ancient_turret_charge.wav 0.8 225
-add_property vanu_sentry_turret_weapon clientfiremode0_fire_spindown_sound ancient_turret_fire.wav
-add_property vanu_sentry_turret_weapon clientfiremode0_looping_fire_sound true
-add_property vanu_sentry_turret_weapon clientfiremode0_muzzle ef_muzzle_a
+add_property vanu_sentry_turret_weapon #clientfiremode0_fire_sound ancient_turret_charge.wav 0.8 225
+add_property vanu_sentry_turret_weapon #clientfiremode0_fire_spindown_sound ancient_turret_fire.wav
+add_property vanu_sentry_turret_weapon clientfiremode0_fire_sound ancient_turret_fire.wav 0.8 225
+add_property vanu_sentry_turret_weapon #clientfiremode0_looping_fire_sound true
+add_property vanu_sentry_turret_weapon clientfiremode0_muzzle ef_muzzle_a_adjusted
 add_property vanu_sentry_turret_weapon expansion 1
 add_property vanu_sentry_turret_weapon firemode0_COFrecovery 150
-add_property vanu_sentry_turret_weapon firemode0_ammo_max 25
+add_property vanu_sentry_turret_weapon firemode0_ammo_max 100
 add_property vanu_sentry_turret_weapon firemode0_ammo_types vanu_ammo
-add_property vanu_sentry_turret_weapon firemode0_chargetime 4000
 add_property vanu_sentry_turret_weapon firemode0_defaultCOF .7
 add_property vanu_sentry_turret_weapon firemode0_maxCOF 6
 add_property vanu_sentry_turret_weapon firemode0_projectile_index 6
 add_property vanu_sentry_turret_weapon firemode0_recoil 1
 add_property vanu_sentry_turret_weapon firemode0_refiretime 175
 add_property vanu_sentry_turret_weapon recharge_amount 1
-add_property vanu_sentry_turret_weapon recharge_interval 400
+add_property vanu_sentry_turret_weapon recharge_delay_ms 3000
+add_property vanu_sentry_turret_weapon recharge_interval_ms 200
 add_property vanu_sentry_turret_weapon weaponattachbonenames hp_turretb
 add_property vanu_sentry_turret_weapon xp_activate_on_use true
 add_property vanu_sentry_turret_weapon xp_active true
@@ -12327,6 +12539,7 @@ add_property zipline ambient_sound_minrange 0.45
 add_property zipline ambient_sound_maxrange 9.0
 add_property zipline ambient_sound_volume 0.3
 add_property zipline deployable_interference_range 5.5
+add_property zipline projectile_impact true
 
 ##stationaryteleportpad
 
@@ -12396,10 +12609,10 @@ add_property vehicle_terminal_combined forsale_mosquito
 add_property vanu_control_console type vanu_cradle_class
 add_property vanu_control_console radius 2.3750
 add_property vanu_control_console sphere_offset 0.1689 0.0018 1.3181
-add_property vanu_control_console ambient_sound alien_vehpad1_ambient.wav
+add_property vanu_control_console ambient_sound modfact_active.wav
 add_property vanu_control_console ambient_sound_minrange 0.7
 add_property vanu_control_console ambient_sound_maxrange 14.0
-add_property vanu_control_console ambient_sound_volume 0.6
+add_property vanu_control_console ambient_sound_volume 0.65
 add_property vanu_control_console expansion 1
 add_property vanu_control_console forsale_vanu_module
 add_property vanu_control_console hackable true
@@ -12426,16 +12639,20 @@ add_property warpgate_cavern type warpgate
 add_property warpgate_cavern radius 51.0522
 add_property warpgate_cavern sphere_offset -9.3463 0.0000 32.1923
 add_property warpgate_cavern ambient_sound warpgate_ambience.wav
-add_property warpgate_cavern ambient_sound_minrange 2.0
+add_property warpgate_cavern ambient_sound_minrange 3.0
 add_property warpgate_cavern ambient_sound_maxrange 60.0
 add_property warpgate_cavern ambient_sound_volume 0.8
+add_property warpgate_cavern ambient_sound_indoor_test false
 add_property warpgate_cavern expansion 1
-add_property warpgate_cavern spawn_radius_max 20
-add_property warpgate_cavern spawn_radius_min 7.5
+add_property warpgate_cavern soi_radius 200
+add_property warpgate_cavern spawn_radius_max 22
+add_property warpgate_cavern spawn_radius_min 12
+add_property warpgate_cavern warp_zone_height 43
 add_property warpgate_cavern wrp_barrier_aspect 1.5835
 add_property warpgate_cavern wrp_barrier_offset 0 0 18
 add_property warpgate_cavern wrp_barrier_physics warpgate_barrier
 add_property warpgate_cavern wrp_barrier_radius 42.662
+add_property warpgate_cavern wrp_square_barrier_physics warpgate_cavern_barrier
 
 ##crystals_damage_b
 
@@ -12454,8 +12671,10 @@ set_resource_parent hunter_seeker_missile_dumbfire game_objects hunter_seeker_mi
 add_property hunter_seeker_missile_dumbfire type projectile
 add_property hunter_seeker_missile_dumbfire radius 1.1657
 add_property hunter_seeker_missile_dumbfire sphere_offset 0.0032 -0.0174 0.8984
+add_property hunter_seeker_missile_dumbfire dud_effect dud_hunterseeker
 add_property hunter_seeker_missile_dumbfire exists_on_remote_clients false
 add_property hunter_seeker_missile_dumbfire getsspherepack false
+add_property hunter_seeker_missile_dumbfire minimum_detonation_distance 0
 add_property hunter_seeker_missile_dumbfire on_user_input nothing
 add_property hunter_seeker_missile_dumbfire player_guided false
 
@@ -12464,6 +12683,10 @@ add_property hunter_seeker_missile_dumbfire player_guided false
 add_property vanumodulebeam type vanu_module_factory
 add_property vanumodulebeam radius 1.8115
 add_property vanumodulebeam sphere_offset -0.1581 0.0415 0.6929
+add_property vanumodulebeam ambient_sound vortex_core_loop.wav
+add_property vanumodulebeam ambient_sound_minrange 3.0
+add_property vanumodulebeam ambient_sound_maxrange 60.0
+add_property vanumodulebeam ambient_sound_volume 0.5
 add_property vanumodulebeam damage_radius 2
 add_property vanumodulebeam terminal_charge_time 60000
 add_property vanumodulebeam useradius 1.6
@@ -12506,7 +12729,7 @@ add_property crystals_vehicle_b sphere_offset -0.1082 0.0341 0.4588
 ##vanu_module_canister
 
 add_property vanu_module_canister type vanu_module_class
-add_property vanu_module_canister radius 0.1366
+add_property vanu_module_canister radius 0.3
 add_property vanu_module_canister sphere_offset 0.0000 0.0000 -0.0000
 add_property vanu_module_canister ambient_sound module_ambient.wav
 add_property vanu_module_canister ambient_sound_minrange 1.25
@@ -12528,20 +12751,123 @@ add_property vanu_module_canister isadeployableobject false
 add_property vanu_module_canister maxhealth 100
 add_property vanu_module_canister namefloatposition 0 0 0.15
 add_property vanu_module_canister namevisiblebynamedisplaymanager true
+add_property vanu_module_canister useradius 3
 add_property vanu_module_canister uses_coarse_crep false
 add_property vanu_module_canister usesphysics true
 add_property vanu_module_canister vanu_module_lifespan 172800000
+add_property vanu_module_canister xp_active true
+add_property vanu_module_canister xp_battle_points 1000
+add_property vanu_module_canister xp_checklist_description @xp_vanu_module_label
+add_property vanu_module_canister xp_description @xp_vanu_module_descrip
+add_property vanu_module_canister xp_distance 50
+add_property vanu_module_canister xp_event visited_vanu_module
+add_property vanu_module_canister xp_help_active true
+add_property vanu_module_canister xp_help_distance 4
+add_property vanu_module_canister xp_help_xoffset 0
+add_property vanu_module_canister xp_help_yoffset 0
+add_property vanu_module_canister xp_help_zoffset 1
+add_property vanu_module_canister xp_icon_name bug_glow
+add_property vanu_module_canister xp_line_of_sight true
+add_property vanu_module_canister xp_message @xp_vanu_module_message
+add_property vanu_module_canister xp_repeat 1
+add_property vanu_module_canister xp_sound help_alert.wav
 
 ##vanu_center_beam
 
 add_property vanu_center_beam type generic
 add_property vanu_center_beam radius 16.9593
 add_property vanu_center_beam sphere_offset 0.0000 0.0000 -2.1691
-add_property vanu_center_beam ambient_sound warpgate_ambience.wav
+add_property vanu_center_beam ambient_sound vortex_core_loop.wav
 add_property vanu_center_beam ambient_sound_minrange 1.5
 add_property vanu_center_beam ambient_sound_maxrange 30.0
-add_property vanu_center_beam ambient_sound_volume 0.7
+add_property vanu_center_beam ambient_sound_volume 0.4
 add_property vanu_center_beam ambient_sound_indoor_test false
+
+##flail_targeting_laser
+
+add_property flail_targeting_laser type lazer
+add_property flail_targeting_laser radius 0.1660
+add_property flail_targeting_laser sphere_offset -0.0000 -0.0000 -0.0000
+add_property flail_targeting_laser #clientfiremode0_fire_spindown_sound flail_lazer_fire_tailoff.wav
+add_property flail_targeting_laser HUD_hide_ammo true
+add_property flail_targeting_laser animationtype pistol
+add_property flail_targeting_laser certification none
+add_property flail_targeting_laser clientfiremode0_crosshair VanuCrosshair
+add_property flail_targeting_laser clientfiremode0_fire_sound flail_lazer_fire_loop.wav 0.55 50
+add_property flail_targeting_laser clientfiremode0_infinite_fire_effect true
+add_property flail_targeting_laser clientfiremode0_infinite_fire_effect true
+add_property flail_targeting_laser clientfiremode0_looping_fire_anim true
+add_property flail_targeting_laser clientfiremode0_looping_fire_anim true
+add_property flail_targeting_laser clientfiremode0_looping_fire_sound true
+add_property flail_targeting_laser clientfiremode0_looping_fire_sound true
+add_property flail_targeting_laser clientfiremode0_muzzle muzzlea
+add_property flail_targeting_laser equip_sound flail_lazer_equip.wav
+add_property flail_targeting_laser equiptime 1000
+add_property flail_targeting_laser expansion 1
+add_property flail_targeting_laser experience_bonus 104
+add_property flail_targeting_laser firemode0_COFrecovery 200
+add_property flail_targeting_laser firemode0_ammo_types rek_ammo
+add_property flail_targeting_laser firemode0_crouchCOF 1
+add_property flail_targeting_laser firemode0_defaultCOF 1
+add_property flail_targeting_laser firemode0_maxCOF 1
+add_property flail_targeting_laser firemode0_recoil 0
+add_property flail_targeting_laser firemode0_refiretime 100
+add_property flail_targeting_laser firemode0_use_effect_raytrace true
+add_property flail_targeting_laser holster_sound flail_lazer_holster.wav
+add_property flail_targeting_laser holstertime 1000
+add_property flail_targeting_laser icon_height 3
+add_property flail_targeting_laser icon_width 3
+add_property flail_targeting_laser size_class small
+add_property flail_targeting_laser stack_size_max 1
+add_property flail_targeting_laser works_nopvp true
+add_property flail_targeting_laser xp_activate_on_use true
+add_property flail_targeting_laser xp_active true
+add_property flail_targeting_laser xp_battle_points 100
+add_property flail_targeting_laser xp_checklist_description @xp_laze_pointer_label
+add_property flail_targeting_laser xp_description @xp_laze_pointer_descrip
+add_property flail_targeting_laser xp_event used_laze_pointer
+add_property flail_targeting_laser xp_help_active true
+add_property flail_targeting_laser xp_icon_name null
+add_property flail_targeting_laser xp_message @xp_laze_pointer_message
+add_property flail_targeting_laser xp_repeat 1
+add_property flail_targeting_laser xp_sound help_alert.wav
+add_property flail_targeting_laser zoomlevel1 2
+add_property flail_targeting_laser zoomlevel2 4
+
+##redoubt
+
+add_property redoubt type building
+add_property redoubt radius 42.4481
+add_property redoubt sphere_offset 0.4955 3.5985 6.8570
+add_property redoubt basetype redoubt
+add_property redoubt getsspherepack false
+add_property redoubt resource game_objects
+
+##redoubt_floor
+
+add_property redoubt_floor type respawn_tube
+add_property redoubt_floor radius 14.7875
+add_property redoubt_floor sphere_offset -0.0341 0.0000 0.0000
+add_property redoubt_floor ambient_sound alien_respawn_ambient.wav
+add_property redoubt_floor ambient_sound_minrange 1.8
+add_property redoubt_floor ambient_sound_maxrange 16.0
+add_property redoubt_floor ambient_sound_volume 0.45
+add_property redoubt_floor damageable false
+
+##vanu_module_node
+
+add_property vanu_module_node type vanu_receptacle_class
+add_property vanu_module_node radius 1.6879
+add_property vanu_module_node sphere_offset 0.0000 -0.0000 1.1239
+add_property vanu_module_node meshsequence vanu_module_node
+add_property vanu_module_node vanu_module bind
+
+##targeting_laser_dispenser
+
+add_property targeting_laser_dispenser type dispenser
+add_property targeting_laser_dispenser radius 0.001
+add_property targeting_laser_dispenser sphere_offset 0 0 0
+add_property targeting_laser_dispenser forsale_flail_targeting_laser
 
 ##grenade_projectile
 
@@ -12930,7 +13256,7 @@ add_property vanu_sentry_turret radius 5
 add_property vanu_sentry_turret sphere_offset 0.0467 -0.0000 1.8865
 add_property vanu_sentry_turret ambient_sound ancient_turret_ambient.wav
 add_property vanu_sentry_turret ambient_sound_minrange 1.25
-add_property vanu_sentry_turret ambient_sound_maxrange 25.0
+add_property vanu_sentry_turret ambient_sound_maxrange 28.0
 add_property vanu_sentry_turret ambient_sound_volume 0.45
 add_property vanu_sentry_turret autorepairamount 3
 add_property vanu_sentry_turret autorepairrepeatinterval 1000
@@ -12996,6 +13322,7 @@ add_property vanu_sentry_turret resource game_objects
 add_property vanu_sentry_turret secondstomaxwheel 0
 add_property vanu_sentry_turret statistic_type_hack manned_turret
 add_property vanu_sentry_turret statistic_type_kill manned_turret
+add_property vanu_sentry_turret use_low_res_swap_package false
 add_property vanu_sentry_turret vehicle_can_block_creation_pad false
 add_property vanu_sentry_turret viewusingbones true
 add_property vanu_sentry_turret water_check false
@@ -13374,8 +13701,8 @@ add_property order_terminal autorepairrepeatinterval 3500
 add_property order_terminal autorepairresourcedecayfactor .05
 add_property order_terminal autorepairstarttime 5000
 add_property order_terminal canberepairedbynanodispenser true
-add_property order_terminal damageable true
 add_property order_terminal damage1_subtract 8
+add_property order_terminal damageable true
 add_property order_terminal forsale_105mmbullet ordertype_vehicle_ammo empire_tr
 add_property order_terminal forsale_12mmbullet ordertype_vehicle_ammo
 add_property order_terminal forsale_150mmbullet ordertype_vehicle_ammo empire_nc
@@ -13458,6 +13785,7 @@ add_property order_terminal xp_line_of_sight true
 add_property order_terminal xp_message @xp_order_terminal_message
 add_property order_terminal xp_repeat 1
 add_property order_terminal xp_sound help_alert.wav
+add_property order_terminal forsale_flail_targeting_laser ordertype_equipment
 
 ##nano_dispenser
 
@@ -13598,6 +13926,10 @@ add_property medical_terminal xp_sound help_alert.wav
 add_property main_terminal type main_terminal
 add_property main_terminal radius 2.4984
 add_property main_terminal sphere_offset 0.0000 0.0000 0.0000
+add_property main_terminal ambient_sound order_terminal.wav
+add_property main_terminal ambient_sound_minrange 0.6
+add_property main_terminal ambient_sound_maxrange 12.0
+add_property main_terminal ambient_sound_volume 0.8
 add_property main_terminal canberepairedbynanodispenser true
 add_property main_terminal use_time 1
 
@@ -14289,14 +14621,13 @@ add_property router_telepad sphere_offset 0.0000 0.0000 0.0385
 add_property router_telepad HUD_hide_ammo true
 add_property router_telepad animationtype base
 add_property router_telepad certification none
-add_property router_telepad clientfiremode0_changefiremode_sound equipment_ace_changefiremode.wav
 add_property router_telepad clientfiremode0_crosshair AceCrosshair
 add_property router_telepad clientfiremode0_play_fire_animation true
 add_property router_telepad delete_after_use true
 add_property router_telepad deployable_delete_after_deployed true
 add_property router_telepad deployable_is_active true
 add_property router_telepad doesnotdecay true
-add_property router_telepad equip_sound equipment_ace_equip.wav
+add_property router_telepad equip_sound telepad_equip.wav
 add_property router_telepad equiptime 200
 add_property router_telepad expansion 1
 add_property router_telepad firemode0_ammo_types rek_ammo
@@ -14308,12 +14639,13 @@ add_property router_telepad firemode0_deploy_on_terrain true
 add_property router_telepad firemode0_deploy_on_wall true
 add_property router_telepad firemode0_deployed_weapon router_telepad_deployable
 add_property router_telepad fitsinhipholster true
-add_property router_telepad holster_sound equipment_ace_holster.wav
+add_property router_telepad holster_sound telepad_holster.wav
 add_property router_telepad holstertime 200
 add_property router_telepad icon_height 3
 add_property router_telepad icon_width 3
 add_property router_telepad is_a_knife false
 add_property router_telepad meshsequence router_telepad
+add_property router_telepad no_trunk true
 add_property router_telepad nodrop true
 add_property router_telepad size_class small
 add_property router_telepad transport_time 8000
@@ -14336,38 +14668,24 @@ add_property router_telepad xp_sound help_alert.wav
 add_property router_telepad_deployable type teleport_pad
 add_property router_telepad_deployable radius 0.2956
 add_property router_telepad_deployable sphere_offset 0.0000 0.0000 0.0385
-add_property router_telepad_deployable HUD_hide_ammo true
-add_property router_telepad_deployable animationtype base
+add_property router_telepad_deployable ambient_sound telepad_ambient.wav
+add_property router_telepad_deployable ambient_sound_minrange 0.5
+add_property router_telepad_deployable ambient_sound_maxrange 10.0
+add_property router_telepad_deployable ambient_sound_volume 0.6
 add_property router_telepad_deployable certification none
-add_property router_telepad_deployable clientfiremode0_changefiremode_sound equipment_ace_changefiremode.wav
-add_property router_telepad_deployable clientfiremode0_crosshair AceCrosshair
-add_property router_telepad_deployable clientfiremode0_play_fire_animation true
-add_property router_telepad_deployable delete_after_use true
-add_property router_telepad_deployable deployable_delete_after_deployed true
-add_property router_telepad_deployable deployable_is_active true
 add_property router_telepad_deployable doesnotdecay true
-add_property router_telepad_deployable equip_sound equipment_ace_equip.wav
-add_property router_telepad_deployable equiptime 200
+add_property router_telepad_deployable effect_teleport router_teleportation
 add_property router_telepad_deployable expansion 1
-add_property router_telepad_deployable firemode0_ammo_types rek_ammo
-add_property router_telepad_deployable firemode0_crouchCOF 3
-add_property router_telepad_deployable firemode0_defaultCOF 3
-add_property router_telepad_deployable firemode0_deploy_on_building false
-add_property router_telepad_deployable firemode0_deploy_on_ceiling false
-add_property router_telepad_deployable firemode0_deploy_on_terrain true
-add_property router_telepad_deployable firemode0_deploy_on_wall true
-add_property router_telepad_deployable firemode0_deployed_weapon router_telepad_deployable
-add_property router_telepad_deployable fitsinhipholster true
-add_property router_telepad_deployable holster_sound equipment_ace_holster.wav
-add_property router_telepad_deployable holstertime 200
-add_property router_telepad_deployable icon_height 3
-add_property router_telepad_deployable icon_width 3
-add_property router_telepad_deployable is_a_knife false
 add_property router_telepad_deployable meshsequence router_telepad
 add_property router_telepad_deployable namevisiblebynamedisplaymanager true
-add_property router_telepad_deployable size_class small
+add_property router_telepad_deployable no_trunk true
+add_property router_telepad_deployable sound_activate telepad_activating.wav 0.8 25
+add_property router_telepad_deployable sound_deactivate telepad_deactivation.wav 0.8 25
+add_property router_telepad_deployable sound_deployed equipment_large_deploy.wav 0.8 25.0
+add_property router_telepad_deployable sound_teleport_away telepad_out.wav 0.8 25
+add_property router_telepad_deployable sound_teleport_in telepad_in.wav 0.8 25
 add_property router_telepad_deployable transport_time 8000
-add_property router_telepad_deployable works_nopvp true
+add_property router_telepad_deployable useradius 2
 add_property router_telepad_deployable xp_activate_on_use true
 add_property router_telepad_deployable xp_active true
 add_property router_telepad_deployable xp_battle_points 75
@@ -14462,6 +14780,11 @@ add_property flail_destroyed throttletorque 0
 add_property switchblade type hovervehicle
 add_property switchblade radius 5
 add_property switchblade sphere_offset -0.1307 -0.0000 1.6791
+add_property switchblade #collision_z_hp1 1
+add_property switchblade #collision_z_hp2 35
+add_property switchblade #collision_z_hp3 100
+add_property switchblade #collision_z_hp4 175
+add_property switchblade #collision_z_hp5 350
 add_property switchblade additionalgravityforcepercentage .75
 add_property switchblade aggregateinertiafactors 0.16667 0.16667 0.16667
 add_property switchblade animattachbonename switchblade
@@ -14476,7 +14799,7 @@ add_property switchblade can_dismount_vehicle_when_deployed false
 add_property switchblade canberepairedbynanodispenser true
 add_property switchblade canvehiclebedeployed true
 add_property switchblade canvehiclebedeployed_fromdriverseat true
-add_property switchblade certification buggy_assault
+add_property switchblade certification quad_all
 add_property switchblade collision_xy_hp1 1
 add_property switchblade collision_xy_hp2 13
 add_property switchblade collision_xy_hp3 35
@@ -14496,7 +14819,7 @@ add_property switchblade collision_z_hp1 1
 add_property switchblade collision_z_hp2 50
 add_property switchblade collision_z_hp3 150
 add_property switchblade collision_z_hp4 350
-add_property switchblade collision_z_hp5 900
+add_property switchblade collision_z_hp5 800
 add_property switchblade comoffset -0.3 0 -.275
 add_property switchblade criticalhealthvalue1 675
 add_property switchblade criticalhealthvalue2 475
@@ -14509,6 +14832,7 @@ add_property switchblade criticalhealthvalue_randomvariance2 1.0
 add_property switchblade criticalhealthvalue_randomvariance3 0.75
 add_property switchblade damage0 200
 add_property switchblade damage1 300
+add_property switchblade damage1_subtract 5
 add_property switchblade damage1_subtract 5
 add_property switchblade damage_at_edge 0.2
 add_property switchblade damage_radiation_shielding 0.5
@@ -14582,8 +14906,7 @@ add_property switchblade jolt_damage_turbulence_duration 0.23
 add_property switchblade mass 63.9
 add_property switchblade maxbrake 2
 add_property switchblade maxforward 80
-add_property switchblade maxhealth 500
-add_property switchblade maxinclineangle 55
+add_property switchblade maxhealth 800
 add_property switchblade maxreverse 55
 add_property switchblade maxwheelatfullspeed 40
 add_property switchblade maxwheelwhenstopped 60
@@ -14652,6 +14975,8 @@ add_property switchblade secondstozerostrafe 0.5
 add_property switchblade sound_deploy switchblade_deploy.wav
 add_property switchblade sound_undeploy switchblade_undeploy.wav
 add_property switchblade statistic_type_hack switchblade
+add_property switchblade statistic_type_hack switchblade
+add_property switchblade statistic_type_kill switchblade
 add_property switchblade statistic_type_kill switchblade
 add_property switchblade strafefractionatmaxspeed .9
 add_property switchblade strafesoundfile twomanhoverbuggy_strafe.wav
@@ -14691,19 +15016,19 @@ add_property switchblade weaponpoint1_YawBone sb_move
 add_property switchblade wheel1_bonename wheel_fl
 add_property switchblade wheel1_constraint switchbladefl
 add_property switchblade wheel1_model cdsph0
-add_property switchblade wheel1_radius 0.8
+add_property switchblade wheel1_radius 0.56
 add_property switchblade wheel2_bonename wheel_fr
 add_property switchblade wheel2_constraint switchbladefr
 add_property switchblade wheel2_model cdsph3
-add_property switchblade wheel2_radius 0.8
+add_property switchblade wheel2_radius 0.56
 add_property switchblade wheel3_bonename wheel_rl
 add_property switchblade wheel3_constraint switchbladerl
 add_property switchblade wheel3_model cdsph1
-add_property switchblade wheel3_radius 0.8
+add_property switchblade wheel3_radius 0.56
 add_property switchblade wheel4_bonename wheel_rr
 add_property switchblade wheel4_constraint switchbladerr
 add_property switchblade wheel4_model cdsph2
-add_property switchblade wheel4_radius 0.8
+add_property switchblade wheel4_radius 0.56
 add_property switchblade xp_active true
 add_property switchblade xp_battle_points 150
 add_property switchblade xp_checklist_description @xp_switchblade_label
@@ -14721,7 +15046,7 @@ add_property switchblade xp_sound help_alert.wav
 ##router
 
 add_property router type hovervehicle
-add_property router radius 3.1489
+add_property router radius 5
 add_property router sphere_offset 0.0467 -0.0000 1.8865
 add_property router additionalgravityforcepercentage .75
 add_property router aggregateinertiafactors 0.16667 0.16667 0.16667
@@ -14733,7 +15058,7 @@ add_property router braketorque 20
 add_property router canberepairedbynanodispenser true
 add_property router canvehiclebedeployed true
 add_property router canvehiclebedeployed_fromdriverseat true
-add_property router certification buggy_assault
+add_property router certification mobile_respawn
 add_property router collision_damage_max_force_factor 50.0
 add_property router collision_damage_max_hit_points 10.0
 add_property router collision_damage_min_force_factor 15.0
@@ -14781,7 +15106,6 @@ add_property router deploy1_transbonename router_orb
 add_property router deploy1_transmaxdist 0 0 -.25
 add_property router deploy1_transrate 0 0 -0.2
 add_property router destroyedphysics router_destroyed
-add_property router effectname_deploy router_teleport
 add_property router enginehirpmname router_throttle_high.wav
 add_property router enginehirpmpitchatcross 0.5
 add_property router enginehirpmpitchatmax 0.8
@@ -14815,20 +15139,20 @@ add_property router equipmentmountpoint1_location -2.25 0.0 0.00
 add_property router equipmentmountpoint1_name terminaluseA
 add_property router equipmentmountpoint1_type teleportpad_terminal
 add_property router equipmentmountpoint2_createwhenneeded true
-add_property router equipmentmountpoint2_location 0.0 0.0 0.0
+add_property router equipmentmountpoint2_location 0.0 0.0 0.15
 add_property router equipmentmountpoint2_name teleportation
 add_property router equipmentmountpoint2_type router_telepad_deployable
 add_property router equipmentmountpoint2_usercanaccess false
 add_property router equipmentmountzone1_effect terminaluseA
 add_property router equipmentmountzone1_effect_na terminalnouseA
 add_property router equipmentmountzone1_effectbone ordermount
-add_property router equipmentmountzone1_equipmentmountpointindexes 2
+add_property router equipmentmountzone1_equipmentmountpointindexes 1
 add_property router equipmentmountzone1_location -2.25 0.0 0.00
 add_property router equipmentmountzone1_mountstring @TelepadTerminalUseInfo
 add_property router equipmentmountzone1_requiresdeployment true
 add_property router equipmentmountzone1_requiresownerpermission true
 add_property router equipmentmountzone1_zorientation 0
-add_property router equipmentmountzone2_equipmentmountpointindexes 1
+add_property router equipmentmountzone2_equipmentmountpointindexes 2
 add_property router equipmentmountzone2_location 0.0 0.0 0.00
 add_property router equipmentmountzone2_mountstring @TeleportPadUseInfo
 add_property router equipmentmountzone2_requiresownerpermission true
@@ -14862,7 +15186,6 @@ add_property router mass 60
 add_property router maxbrake 10
 add_property router maxforward 60
 add_property router maxhealth 4000
-add_property router maxinclineangle 55
 add_property router maxreverse 50
 add_property router maxsteeringwheel_left -40 0 0
 add_property router maxsteeringwheel_right 40 0 0
@@ -14918,7 +15241,9 @@ add_property router secondstothrottle4 4.90
 add_property router secondstozerostrafe 1.5
 add_property router sound_deploy router_deploy.wav
 add_property router sound_undeploy router_undeploy.wav
+add_property router statistic_type_hack router
 add_property router statistic_type_hack twomanhoverbuggy
+add_property router statistic_type_kill router
 add_property router statistic_type_kill twomanhoverbuggy
 add_property router steeringwheelbone router
 add_property router strafefractionatmaxspeed .9
@@ -14985,20 +15310,38 @@ add_property router xp_sound help_alert.wav
 add_property flail type hovervehicle
 add_property flail radius 4.6281
 add_property flail sphere_offset -0.6638 0.0000 1.3995
-add_property flail #mountpoint1_viewpoint 0 0 0
-add_property flail #mountpoint1_viewpointbone viewpoint_bone
+add_property flail #child_attach_sequence_child_bone_name flaileye_pivot flailfina_pivot flailfinb_pivot
+add_property flail #child_attach_sequence_mesh_name flaileye_pivot flailfina_pivot flailfinb_pivot
+add_property flail #child_attach_sequence_parent_bone_name flaileye_pivot flailfina_pivot flailfinb_pivot
+add_property flail #child_attach_sequence_parent_mesh_name flail_body flail_body flail_body
+add_property flail #collision_z_hp1 1
+add_property flail #collision_z_hp2 50
+add_property flail #collision_z_hp3 100
+add_property flail #collision_z_hp4 250
+add_property flail #collision_z_hp5 600
+add_property flail #deploy1_childname flail_body
+add_property flail #deploy1_transmaxdist 0.64 -0.72 0.40
+add_property flail #deploy1_transrate 0.128 -0.144 0.08
+add_property flail #deploy2_childname flail_body
+add_property flail #deploy3_childname flail_body
+add_property flail #weaponpoint1_AttachBones hp_guna_real
+add_property flail #weaponpoint1_PitchBone hp_guna_real
 add_property flail additionalgravityforcepercentage .75
 add_property flail aggregateinertiafactors 0.16667 0.16667 0.16667
 add_property flail animattachbonename flail
+add_property flail attach_sequence_child_bone_name flail_body flaileye_pivot flailfina_pivot flailfinb_pivot
+add_property flail attach_sequence_mesh_name flail_body flaileye_pivot flailfina_pivot flailfinb_pivot
+add_property flail attach_sequence_my_bone_name flail_attach_bone flaileye_pivot_real flailfina_pivot_real flailfinb_pivot_real
 add_property flail bouncesoundmaxvolume 0.80
 add_property flail bouncesoundminvolume 0.60
 add_property flail bouncesoundname vehicle_land_medium_firm
 add_property flail braketorque 20
+add_property flail can_dismount_vehicle_when_deployed false
 add_property flail can_use_weapons_when_undeployed false
 add_property flail canberepairedbynanodispenser true
 add_property flail canvehiclebedeployed true
 add_property flail canvehiclebedeployed_fromdriverseat true
-add_property flail certification buggy_assault
+add_property flail certification mobile_artillery
 add_property flail collision_damage_max_force_factor 50.0
 add_property flail collision_damage_max_hit_points 10.0
 add_property flail collision_damage_min_force_factor 15.0
@@ -15042,21 +15385,24 @@ add_property flail damage_radius 10
 add_property flail damage_to_avatar_modifier_percentage 0.50
 add_property flail damage_to_avatar_speed_percentage 0.30
 add_property flail damage_type 1
-add_property flail deploy1_transbonename flailfina_pivot
+add_property flail deploy1_ischildobject true
+add_property flail deploy1_transbonename flailfina_pivot_real
 add_property flail deploy1_transmaxdist 0.64 -0.72 0.40
 add_property flail deploy1_transrate 0.128 -0.144 0.08
-add_property flail deploy2_transbonename flailfinb_pivot
+add_property flail deploy2_ischildobject true
+add_property flail deploy2_transbonename flailfinb_pivot_real
 add_property flail deploy2_transmaxdist 0.64 0.72 0.40
 add_property flail deploy2_transrate 0.128 0.144 0.08
-add_property flail deploy3_rotbonename flail_turret
+add_property flail deploy3_ischildobject true
+add_property flail deploy3_rotbonename flaileye_pivot_real
 add_property flail deploy3_rotmaxangle 0 0 180
 add_property flail deploy3_rotrate 0 0 36
-add_property flail deploy3_transbonename flail_turret
-add_property flail deploy3_transmaxdist -1.8 0 0
-add_property flail deploy3_transrate -0.36 0 0
+add_property flail deploy3_transbonename flaileye_pivot_real
+add_property flail deploy3_transmaxdist -1.8 0 0.0
+add_property flail deploy3_transrate -0.36 0 0.0
 add_property flail deploy4_rotdynamicbodyname cigar_shape
 add_property flail deploy4_rotrproname cdbox3_rpro
-add_property flail deploy4_transbonename flail_body
+add_property flail deploy4_transbonename flail_attach_bone
 add_property flail deploy4_transdynamicbodyname cigar_shape
 add_property flail deploy4_transmaxdist 0 0 1.5
 add_property flail deploy4_transrate 0 0 0.3
@@ -15066,6 +15412,9 @@ add_property flail deploy5_ischildobject true
 add_property flail deploy5_rotbonename ef_muzzle
 add_property flail deploy5_rotmaxangle 0 0 180
 add_property flail deploy5_rotrate 0 0 360
+add_property flail deploy6_rotbonename viewpoint_bone
+add_property flail deploy6_rotmaxangle 0 0 180
+add_property flail deploy6_rotrate 0 0 36
 add_property flail destroyedphysics flail_destroyed
 add_property flail enginehirpmname flail_throttle_high.wav
 add_property flail enginehirpmpitchatcross 0.5
@@ -15096,6 +15445,18 @@ add_property flail enginelorpmvolumeatmin 0.0
 add_property flail enginelorpmvolumecrossover 0.7
 add_property flail enginemaxdistance 130
 add_property flail enginemindistance 10
+add_property flail equipmentmountpoint1_location 3.0 3.0 0.00
+add_property flail equipmentmountpoint1_name terminaluseA
+add_property flail equipmentmountpoint1_type targeting_laser_dispenser
+add_property flail equipmentmountzone1_effect terminaluseA
+add_property flail equipmentmountzone1_effect_na terminalnouseA
+add_property flail equipmentmountzone1_effectbone flail_targeting_lazer_mz
+add_property flail equipmentmountzone1_equipmentmountpointindexes 1
+add_property flail equipmentmountzone1_location 3.0 3.0 0.00
+add_property flail equipmentmountzone1_mountstring @FlailLaserObtain
+add_property flail equipmentmountzone1_requiresdeployment false
+add_property flail equipmentmountzone1_requiresownerpermission true
+add_property flail equipmentmountzone1_zorientation 45
 add_property flail expansion 1
 add_property flail experience_multiplier 2.5
 add_property flail generic_destruction vehicle_destruction
@@ -15121,7 +15482,6 @@ add_property flail mass 73.5
 add_property flail maxbrake 10
 add_property flail maxforward 55
 add_property flail maxhealth 4000
-add_property flail maxinclineangle 55
 add_property flail maxreverse 50
 add_property flail maxsteeringwheel_left -40 0 0
 add_property flail maxsteeringwheel_right 40 0 0
@@ -15134,7 +15494,7 @@ add_property flail mountpoint1_fade_mounter_out true
 add_property flail mountpoint1_hideavatar true
 add_property flail mountpoint1_hideback true
 add_property flail mountpoint1_lefthandbone lefthand
-add_property flail mountpoint1_lookdownlimit 5 45
+add_property flail mountpoint1_lookdownlimit 5 1
 add_property flail mountpoint1_lookleftlimit 0 360
 add_property flail mountpoint1_lookrightlimit 0 360
 add_property flail mountpoint1_lookuplimit 5 45
@@ -15147,7 +15507,7 @@ add_property flail mountpoint1_sound_mount flail_driver_mount.wav
 add_property flail mountpoint1_splashdamagepercentage 0
 add_property flail mountpoint1_validarmortypes std+ stl+ lit+ med+ hev-
 add_property flail mountpoint1_viewpoint 0 0 1
-add_property flail mountpoint1_viewpointbone flail_turret
+add_property flail mountpoint1_viewpointbone viewpoint_bone
 add_property flail mountpoint1_viewpointtype viewpoint_use_bone_rot_only
 add_property flail mountpoint1_weaponmountpointindexes 1
 add_property flail mountzone1_effect driverentry
@@ -15182,7 +15542,9 @@ add_property flail secondstothrottle4 4.20
 add_property flail secondstozerostrafe 1.25
 add_property flail sound_deploy flail_deploy.wav
 add_property flail sound_undeploy flail_undeploy.wav
+add_property flail statistic_type_hack flail
 add_property flail statistic_type_hack twomanhoverbuggy
+add_property flail statistic_type_kill flail
 add_property flail statistic_type_kill twomanhoverbuggy
 add_property flail steeringwheelbone router
 add_property flail strafefractionatmaxspeed .9
@@ -15216,17 +15578,17 @@ add_property flail water_underwaterlifespan 45.0
 add_property flail water_underwaterlifespanrecovery 5.0
 add_property flail weapon1 flail_weapon
 add_property flail weaponorient1 0
-add_property flail weaponpoint1_AttachBones hp_guna
+add_property flail weaponpoint1_AttachBones hp_guna_real
 add_property flail weaponpoint1_DeployYawRotCookieName cigar_shape
 add_property flail weaponpoint1_DeployYawRotRproName cdbox3_rpro
 add_property flail weaponpoint1_DownAOF 0 45
-add_property flail weaponpoint1_InvertUpDown true
+add_property flail weaponpoint1_InvertUpDown false true
 add_property flail weaponpoint1_LeftAOF 0 360
-add_property flail weaponpoint1_PitchBone hp_guna
+add_property flail weaponpoint1_PitchBone hp_guna_real
 add_property flail weaponpoint1_RightAOF 0 360
 add_property flail weaponpoint1_TrackingSpeed 135
-add_property flail weaponpoint1_UpAOF 0 45
-add_property flail weaponpoint1_YawBone flail_body
+add_property flail weaponpoint1_UpAOF 0 1
+add_property flail weaponpoint1_YawBone flail_attach_bone
 add_property flail wheel1_bonename wheel_fl
 add_property flail wheel1_constraint flailfl
 add_property flail wheel1_model cdsph0
@@ -16136,7 +16498,7 @@ add_property vanguard mountpoint2_IsGunner true
 add_property vanguard mountpoint2_alternatesfiring 0
 add_property vanguard mountpoint2_hideavatar true
 add_property vanguard mountpoint2_lefthandbone gunleft
-add_property vanguard mountpoint2_lookdownlimit 5
+add_property vanguard mountpoint2_lookdownlimit 6
 add_property vanguard mountpoint2_lookleftlimit 360
 add_property vanguard mountpoint2_lookrightlimit 360
 add_property vanguard mountpoint2_lookuplimit 45
@@ -16203,7 +16565,7 @@ add_property vanguard water_underwaterlifespanrecovery 6
 add_property vanguard weapon1 vanguard_weapon_system
 add_property vanguard weaponorient1 0
 add_property vanguard weaponpoint1_AttachBones hp_guna hp_gunb hp_gunc
-add_property vanguard weaponpoint1_DownAOF 5
+add_property vanguard weaponpoint1_DownAOF 6
 add_property vanguard weaponpoint1_IsIndependentTurret true
 add_property vanguard weaponpoint1_LeftAOF 360
 add_property vanguard weaponpoint1_PitchBone hp_guna hp_gunb hp_gunc
@@ -16275,6 +16637,11 @@ set_resource_parent twomanhoverbuggy game_objects generic_vehicle
 add_property twomanhoverbuggy type hovervehicle
 add_property twomanhoverbuggy radius 4.75
 add_property twomanhoverbuggy sphere_offset 0.1152 -0.0211 1.0281
+add_property twomanhoverbuggy collision_z_hp1 1
+add_property twomanhoverbuggy collision_z_hp2 50
+add_property twomanhoverbuggy collision_z_hp3 150
+add_property twomanhoverbuggy collision_z_hp4 350
+add_property twomanhoverbuggy collision_z_hp5 900
 add_property twomanhoverbuggy additionalgravityforcepercentage .75
 add_property twomanhoverbuggy aggregateinertiafactors 0.16667 0.16667 0.16667
 add_property twomanhoverbuggy animattachbonename thresher_body
@@ -16303,11 +16670,11 @@ add_property twomanhoverbuggy collision_z_height2 18
 add_property twomanhoverbuggy collision_z_height3 30
 add_property twomanhoverbuggy collision_z_height4 36
 add_property twomanhoverbuggy collision_z_height5 39
-add_property twomanhoverbuggy collision_z_hp1 1
-add_property twomanhoverbuggy collision_z_hp2 50
-add_property twomanhoverbuggy collision_z_hp3 150
-add_property twomanhoverbuggy collision_z_hp4 350
-add_property twomanhoverbuggy collision_z_hp5 900
+add_property twomanhoverbuggy #collision_z_hp1 1
+add_property twomanhoverbuggy #collision_z_hp2 50
+add_property twomanhoverbuggy #collision_z_hp3 150
+add_property twomanhoverbuggy #collision_z_hp4 300
+add_property twomanhoverbuggy #collision_z_hp5 600
 add_property twomanhoverbuggy comoffset -0.3 0 -.275
 add_property twomanhoverbuggy criticalhealthvalue1 675
 add_property twomanhoverbuggy criticalhealthvalue2 475
@@ -16381,7 +16748,6 @@ add_property twomanhoverbuggy mass 55.5
 add_property twomanhoverbuggy maxbrake 2
 add_property twomanhoverbuggy maxforward 80
 add_property twomanhoverbuggy maxhealth 1200
-add_property twomanhoverbuggy maxinclineangle 55
 add_property twomanhoverbuggy maxreverse 65
 add_property twomanhoverbuggy maxsteeringwheel_left -50 0 0
 add_property twomanhoverbuggy maxsteeringwheel_right 50 0 0
@@ -16410,7 +16776,7 @@ add_property twomanhoverbuggy mountpoint2_lefthandbone gunleft
 add_property twomanhoverbuggy mountpoint2_lookdownlimit 5
 add_property twomanhoverbuggy mountpoint2_lookleftlimit 360
 add_property twomanhoverbuggy mountpoint2_lookrightlimit 360
-add_property twomanhoverbuggy mountpoint2_lookuplimit 50
+add_property twomanhoverbuggy mountpoint2_lookuplimit 85
 add_property twomanhoverbuggy mountpoint2_mountdismountradius 5
 add_property twomanhoverbuggy mountpoint2_mountdismountsector 6
 add_property twomanhoverbuggy mountpoint2_name gunnera
@@ -16502,7 +16868,7 @@ add_property twomanhoverbuggy weaponpoint1_IsIndependentTurret true
 add_property twomanhoverbuggy weaponpoint1_LeftAOF 360
 add_property twomanhoverbuggy weaponpoint1_RightAOF 360
 add_property twomanhoverbuggy weaponpoint1_TrackingSpeed 135
-add_property twomanhoverbuggy weaponpoint1_UpAOF 50
+add_property twomanhoverbuggy weaponpoint1_UpAOF 85
 add_property twomanhoverbuggy wheel1_bonename wheel_fl
 add_property twomanhoverbuggy wheel1_constraint twomanhoverfl
 add_property twomanhoverbuggy wheel1_model cdsph1
@@ -16668,10 +17034,10 @@ add_property twomanheavybuggy mountpoint2_hasdelayeddismount true
 add_property twomanheavybuggy mountpoint2_hideback true
 add_property twomanheavybuggy mountpoint2_hidehip true
 add_property twomanheavybuggy mountpoint2_lefthandbone gunleft
-add_property twomanheavybuggy mountpoint2_lookdownlimit 10
+add_property twomanheavybuggy mountpoint2_lookdownlimit 7
 add_property twomanheavybuggy mountpoint2_lookleftlimit 360
 add_property twomanheavybuggy mountpoint2_lookrightlimit 360
-add_property twomanheavybuggy mountpoint2_lookuplimit 60
+add_property twomanheavybuggy mountpoint2_lookuplimit 45
 add_property twomanheavybuggy mountpoint2_mountdismountradius 7
 add_property twomanheavybuggy mountpoint2_mountdismountsector 4
 add_property twomanheavybuggy mountpoint2_name gunnera
@@ -16744,14 +17110,14 @@ add_property twomanheavybuggy weapon1 advanced_missile_launcher_t
 add_property twomanheavybuggy weaponorient1 0
 add_property twomanheavybuggy weaponpoint1_AttachBones hp_guna
 add_property twomanheavybuggy weaponpoint1_BoneAvatarRotatesAbout enforcer_turret
-add_property twomanheavybuggy weaponpoint1_DownAOF 5
+add_property twomanheavybuggy weaponpoint1_DownAOF 7
 add_property twomanheavybuggy weaponpoint1_IsIndependentTurret true
 add_property twomanheavybuggy weaponpoint1_LeftAOF 360
 add_property twomanheavybuggy weaponpoint1_PitchBone hp_guna
 add_property twomanheavybuggy weaponpoint1_RightAOF 360
 add_property twomanheavybuggy weaponpoint1_RotateAvatarWithPoint true
 add_property twomanheavybuggy weaponpoint1_TrackingSpeed 135
-add_property twomanheavybuggy weaponpoint1_UpAOF 30
+add_property twomanheavybuggy weaponpoint1_UpAOF 45
 add_property twomanheavybuggy weaponpoint1_YawBone enforcer_turret
 add_property twomanheavybuggy wheel1_bonename enforcer_tire_fl
 add_property twomanheavybuggy wheel1_constraint twomanheavybuggyfl
@@ -18359,6 +18725,7 @@ set_resource_parent mosquito game_objects generic_vehicle
 add_property mosquito type flightvehicle
 add_property mosquito radius 5.25
 add_property mosquito sphere_offset -0.75 0.0490 1.3091
+add_property mosquito MaxSpeed 120
 add_property mosquito aggregateinertiafactors 0.02777 0.08333 0.08333
 add_property mosquito animattachbonename mosquito_body
 add_property mosquito bouncesoundmaxvolume 0.80
@@ -18475,9 +18842,11 @@ add_property mosquito flightmaxheight 400
 add_property mosquito flightmaxpitchatmaxspeed 40
 add_property mosquito flightmaxpitchatminspeed 55
 add_property mosquito flightmaxroll 80
+add_property mosquito flightmaxspeed 120
 add_property mosquito flightmaxyawmaxpitchpenaltypercentage 0
 add_property mosquito flightminacceleration -25.0
 add_property mosquito flightminheight 12
+add_property mosquito flightminspeed 30
 add_property mosquito flightmomentumfactors 1 1 0.5
 add_property mosquito flightmomentumturncutoff 1
 add_property mosquito flightrateofascent 60
@@ -18511,7 +18880,6 @@ add_property mosquito jolt_damage_turbulence 0.23
 add_property mosquito jolt_damage_turbulence_duration 0.23
 add_property mosquito mass 53.6
 add_property mosquito maxhealth 700
-add_property mosquito maxspeed 120
 add_property mosquito maxyawspeed 100
 add_property mosquito mincamdist 7.3
 add_property mosquito minspeed 30
@@ -19070,10 +19438,10 @@ add_property magrider mountpoint1_IsDriver true
 add_property magrider mountpoint1_IsGunner true
 add_property magrider mountpoint1_hideavatar true
 add_property magrider mountpoint1_lefthandbone lefthand
-add_property magrider mountpoint1_lookdownlimit 10
+add_property magrider mountpoint1_lookdownlimit 5
 add_property magrider mountpoint1_lookleftlimit 0
 add_property magrider mountpoint1_lookrightlimit 0
-add_property magrider mountpoint1_lookuplimit 30
+add_property magrider mountpoint1_lookuplimit 45
 add_property magrider mountpoint1_mountdismountradius 6.5
 add_property magrider mountpoint1_mountdismountsector 2
 add_property magrider mountpoint1_name driver_mount
@@ -19087,10 +19455,10 @@ add_property magrider mountpoint1_weaponmountpointindexes 1
 add_property magrider mountpoint2_IsGunner true
 add_property magrider mountpoint2_hideavatar true
 add_property magrider mountpoint2_lefthandbone gunleft
-add_property magrider mountpoint2_lookdownlimit 5
+add_property magrider mountpoint2_lookdownlimit 8
 add_property magrider mountpoint2_lookleftlimit 360
 add_property magrider mountpoint2_lookrightlimit 360
-add_property magrider mountpoint2_lookuplimit 35
+add_property magrider mountpoint2_lookuplimit 45
 add_property magrider mountpoint2_mountdismountradius 6.5
 add_property magrider mountpoint2_mountdismountsector 4
 add_property magrider mountpoint2_name gunnera
@@ -19131,12 +19499,12 @@ add_property magrider price 2000
 add_property magrider secondstilinclinepenaltykicksin 2.5
 add_property magrider secondstofullreversethrottle 9.0
 add_property magrider secondstofullthrottle 9.8
-add_property magrider secondstomaxstrafe 2.3
+add_property magrider secondstomaxstrafe 1.0
 add_property magrider secondstomaxwheel 0.5
-add_property magrider secondstothrottle1 1.23
-add_property magrider secondstothrottle2 2.21
-add_property magrider secondstothrottle3 2.94
-add_property magrider secondstothrottle4 3.43
+add_property magrider secondstothrottle1 0.49
+add_property magrider secondstothrottle2 1.27
+add_property magrider secondstothrottle3 2.30
+add_property magrider secondstothrottle4 3.92
 add_property magrider secondstozerostrafe 1.25
 add_property magrider statistic_type_hack magrider
 add_property magrider statistic_type_kill magrider
@@ -19169,19 +19537,19 @@ add_property magrider weapon2 heavy_rail_beam_magrider
 add_property magrider weaponorient1 0
 add_property magrider weaponorient2 0
 add_property magrider weaponpoint1_AttachBones hp_guna
-add_property magrider weaponpoint1_DownAOF 10
+add_property magrider weaponpoint1_DownAOF 5
 add_property magrider weaponpoint1_LeftAOF 0
 add_property magrider weaponpoint1_RightAOF 0
 add_property magrider weaponpoint1_TrackingSpeed 90
-add_property magrider weaponpoint1_UpAOF 30
+add_property magrider weaponpoint1_UpAOF 45
 add_property magrider weaponpoint2_AttachBones hp_gunb
-add_property magrider weaponpoint2_DownAOF 5
+add_property magrider weaponpoint2_DownAOF 8
 add_property magrider weaponpoint2_IsIndependentTurret true
 add_property magrider weaponpoint2_LeftAOF 360
 add_property magrider weaponpoint2_PitchBone hp_gunb
 add_property magrider weaponpoint2_RightAOF 360
 add_property magrider weaponpoint2_TrackingSpeed 110
-add_property magrider weaponpoint2_UpAOF 35
+add_property magrider weaponpoint2_UpAOF 45
 add_property magrider weaponpoint2_YawBone magrider_turret
 add_property magrider wheel1_bonename wheel_fl
 add_property magrider wheel1_constraint magriderfl
@@ -19329,7 +19697,7 @@ add_property lightning mincamdist 6.8
 add_property lightning mountpoint1_IsDriver true
 add_property lightning mountpoint1_hideavatar true
 add_property lightning mountpoint1_lefthandbone lefthand
-add_property lightning mountpoint1_lookdownlimit 3
+add_property lightning mountpoint1_lookdownlimit 5
 add_property lightning mountpoint1_lookleftlimit 360
 add_property lightning mountpoint1_lookrightlimit 360
 add_property lightning mountpoint1_lookuplimit 50
@@ -19373,10 +19741,10 @@ add_property lightning secondstilinclinepenaltykicksin 3.0
 add_property lightning secondstofullreversethrottle 5.0
 add_property lightning secondstofullthrottle 10.0
 add_property lightning secondstomaxwheel 0.5
-add_property lightning secondstothrottle1 1.25
-add_property lightning secondstothrottle2 2.25
-add_property lightning secondstothrottle3 3.0
-add_property lightning secondstothrottle4 3.5
+add_property lightning secondstothrottle1 0.50
+add_property lightning secondstothrottle2 1.25
+add_property lightning secondstothrottle3 2.75
+add_property lightning secondstothrottle4 5.50
 add_property lightning statistic_type_hack lightning
 add_property lightning statistic_type_kill lightning
 add_property lightning throttletorque 1500
@@ -19395,7 +19763,7 @@ add_property lightning water_underwaterlifespanrecovery 6
 add_property lightning weapon1 lightning_weapon_system
 add_property lightning weaponorient1 0
 add_property lightning weaponpoint1_AttachBones hp_guna hp_gunb
-add_property lightning weaponpoint1_DownAOF 3
+add_property lightning weaponpoint1_DownAOF 5
 add_property lightning weaponpoint1_IsIndependentTurret false
 add_property lightning weaponpoint1_LeftAOF 360
 add_property lightning weaponpoint1_PitchBone hp_guna hp_gunb
@@ -19462,6 +19830,7 @@ set_resource_parent lightgunship game_objects generic_vehicle
 add_property lightgunship type flightvehicle
 add_property lightgunship radius 5.25
 add_property lightgunship sphere_offset -0.75 0.0490 1.3091
+add_property lightgunship MaxSpeed 105
 add_property lightgunship aggregateinertiafactors 0.02777 0.08333 0.08333
 add_property lightgunship animattachbonename lightgunship_body
 add_property lightgunship bouncesoundmaxvolume 0.80
@@ -19580,9 +19949,11 @@ add_property lightgunship flightmaxheight 400
 add_property lightgunship flightmaxpitchatmaxspeed 40
 add_property lightgunship flightmaxpitchatminspeed 55
 add_property lightgunship flightmaxroll 50
+add_property lightgunship flightmaxspeed 105
 add_property lightgunship flightmaxyawmaxpitchpenaltypercentage 0
 add_property lightgunship flightminacceleration -20.0
 add_property lightgunship flightminheight 11
+add_property lightgunship flightminspeed 20
 add_property lightgunship flightmomentumfactors 1 1 0.5
 add_property lightgunship flightmomentumturncutoff 1
 add_property lightgunship flightrateofascent 50
@@ -19615,7 +19986,6 @@ add_property lightgunship jolt_damage_turbulence 0.25
 add_property lightgunship jolt_damage_turbulence_duration 0.25
 add_property lightgunship mass 51.1
 add_property lightgunship maxhealth 900
-add_property lightgunship maxspeed 105
 add_property lightgunship maxyawspeed 80
 add_property lightgunship mincamdist 8.9
 add_property lightgunship minspeed 20
@@ -19722,6 +20092,7 @@ add_property liberator type flightvehicle
 add_property liberator radius 6.2617
 add_property liberator sphere_offset -1.3224 0.0000 1.8313
 add_property liberator #weaponpoint2_rotates false
+add_property liberator MaxSpeed 90
 add_property liberator aggregateinertiafactors 0.02777 0.08333 0.08333
 add_property liberator animattachbonename liberator_body
 add_property liberator bouncesoundmaxvolume 0.80
@@ -19834,9 +20205,11 @@ add_property liberator flightmaxheight 400
 add_property liberator flightmaxpitchatmaxspeed 30
 add_property liberator flightmaxpitchatminspeed 45
 add_property liberator flightmaxroll 30
+add_property liberator flightmaxspeed 90
 add_property liberator flightmaxyawmaxpitchpenaltypercentage 0
 add_property liberator flightminacceleration -15.0
 add_property liberator flightminheight 11
+add_property liberator flightminspeed 15
 add_property liberator flightmomentumfactors 1 1 0.5
 add_property liberator flightmomentumturncutoff 1
 add_property liberator flightrateofascent 40
@@ -19869,7 +20242,6 @@ add_property liberator jolt_damage_turbulence 0.25
 add_property liberator jolt_damage_turbulence_duration 0.25
 add_property liberator mass 82.0
 add_property liberator maxhealth 2500
-add_property liberator maxspeed 90
 add_property liberator maxyawspeed 40
 add_property liberator mincamdist 11.0
 add_property liberator minspeed 15
@@ -20179,8 +20551,10 @@ add_property dropship flightmaxheight 400
 add_property dropship flightmaxpitchatmaxspeed 50
 add_property dropship flightmaxpitchatminspeed 40
 add_property dropship flightmaxroll 35
+add_property dropship flightmaxspeed 80
 add_property dropship flightmaxyawmaxpitchpenaltypercentage 0
 add_property dropship flightminacceleration -15.0
+add_property dropship flightminspeed 20
 add_property dropship flightmomentumfactors 1 1 0.5
 add_property dropship flightmomentumturncutoff 1
 add_property dropship flightrateofascent 40
@@ -20212,7 +20586,7 @@ add_property dropship jolt_damage_turbulence_duration 0.2
 add_property dropship mass 131.5
 add_property dropship maxcamdist 37.3
 add_property dropship maxhealth 5000
-add_property dropship maxspeed 80
+add_property dropship MaxSpeed 80
 add_property dropship maxyawspeed 40
 add_property dropship mincamdist 27.3
 add_property dropship minspeed 20
@@ -20259,7 +20633,7 @@ add_property dropship mountpoint12_lefthandbone lefthand
 add_property dropship mountpoint12_lookdownlimit 90
 add_property dropship mountpoint12_lookleftlimit 133
 add_property dropship mountpoint12_lookrightlimit 133
-add_property dropship mountpoint12_lookuplimit 2
+add_property dropship mountpoint12_lookuplimit 10
 add_property dropship mountpoint12_mountdismountradius 11
 add_property dropship mountpoint12_mountdismountsector 0
 add_property dropship mountpoint12_name gunnerc
@@ -20291,10 +20665,10 @@ add_property dropship mountpoint2_IsDriver false
 add_property dropship mountpoint2_IsGunner true
 add_property dropship mountpoint2_hideavatar true
 add_property dropship mountpoint2_lefthandbone lefthand
-add_property dropship mountpoint2_lookdownlimit 45
+add_property dropship mountpoint2_lookdownlimit 70
 add_property dropship mountpoint2_lookleftlimit 68
 add_property dropship mountpoint2_lookrightlimit 68
-add_property dropship mountpoint2_lookuplimit 45
+add_property dropship mountpoint2_lookuplimit 70
 add_property dropship mountpoint2_mountdismountradius 11
 add_property dropship mountpoint2_mountdismountsector 1
 add_property dropship mountpoint2_name gunnera
@@ -20310,10 +20684,10 @@ add_property dropship mountpoint3_IsDriver false
 add_property dropship mountpoint3_IsGunner true
 add_property dropship mountpoint3_hideavatar true
 add_property dropship mountpoint3_lefthandbone gunleft
-add_property dropship mountpoint3_lookdownlimit 45
+add_property dropship mountpoint3_lookdownlimit 70
 add_property dropship mountpoint3_lookleftlimit 68
 add_property dropship mountpoint3_lookrightlimit 68
-add_property dropship mountpoint3_lookuplimit 45
+add_property dropship mountpoint3_lookuplimit 70
 add_property dropship mountpoint3_mountdismountradius 11
 add_property dropship mountpoint3_mountdismountsector 7
 add_property dropship mountpoint3_name gunnerb
@@ -20563,7 +20937,7 @@ add_property dropship weapon1 20mm_cannon_dropship
 add_property dropship weapon2 20mm_cannon_dropship
 add_property dropship weapon3 dropship_rear_turret
 add_property dropship weaponpoint1_AttachBones hp_gunb
-add_property dropship weaponpoint1_DownAOF 45
+add_property dropship weaponpoint1_DownAOF 70
 add_property dropship weaponpoint1_LeftAOF 68
 add_property dropship weaponpoint1_RecoilBone 20mm_cannon_dropship
 add_property dropship weaponpoint1_RecoilDistance 2.0
@@ -20571,11 +20945,11 @@ add_property dropship weaponpoint1_RecoilTime 0.6
 add_property dropship weaponpoint1_Recoils 1
 add_property dropship weaponpoint1_RightAOF 68
 add_property dropship weaponpoint1_TrackingSpeed 135
-add_property dropship weaponpoint1_UpAOF 45
+add_property dropship weaponpoint1_UpAOF 70
 add_property dropship weaponpoint1_UpDownUsesY false
 add_property dropship weaponpoint1_defaultorientation 0 0 0
 add_property dropship weaponpoint2_AttachBones hp_guna
-add_property dropship weaponpoint2_DownAOF 45
+add_property dropship weaponpoint2_DownAOF 70
 add_property dropship weaponpoint2_InvertUpDown true
 add_property dropship weaponpoint2_LeftAOF 68
 add_property dropship weaponpoint2_RecoilBone 20mm_cannon_dropship
@@ -20584,7 +20958,7 @@ add_property dropship weaponpoint2_RecoilTime 0.6
 add_property dropship weaponpoint2_Recoils 1
 add_property dropship weaponpoint2_RightAOF 68
 add_property dropship weaponpoint2_TrackingSpeed 135
-add_property dropship weaponpoint2_UpAOF 45
+add_property dropship weaponpoint2_UpAOF 70
 add_property dropship weaponpoint2_UpDownUsesY false
 add_property dropship weaponpoint2_defaultorientation 0 0 0
 add_property dropship weaponpoint3_AttachBones hp_gunc
@@ -20593,7 +20967,7 @@ add_property dropship weaponpoint3_LeftAOF 133
 add_property dropship weaponpoint3_PitchBone hp_gunc
 add_property dropship weaponpoint3_RightAOF 133
 add_property dropship weaponpoint3_TrackingSpeed 135
-add_property dropship weaponpoint3_UpAOF 2
+add_property dropship weaponpoint3_UpAOF 10
 add_property dropship weaponpoint3_YawBone dropship_turret_rear
 add_property dropship weaponpoint3_defaultorientation 0 0 0
 add_property dropship xoffsets 6.9 -18.5
@@ -20657,7 +21031,9 @@ add_property droppod flightmaxheight 4000
 add_property droppod flightmaxpitchatmaxspeed 8
 add_property droppod flightmaxpitchatminspeed 15
 add_property droppod flightmaxroll 18
+add_property droppod flightmaxspeed 80
 add_property droppod flightminacceleration -15.0
+add_property droppod flightminspeed 20
 add_property droppod flightmomentumfactors 1 1 0.5
 add_property droppod flightmomentumturncutoff 0.1
 add_property droppod flightrateofascent 6
@@ -20674,13 +21050,14 @@ add_property droppod inventory_x_dim 0
 add_property droppod inventory_y_dim 0
 add_property droppod mass 2500
 add_property droppod maxhealth 1500
-add_property droppod maxspeed 80
+add_property droppod MaxSpeed 80
 add_property droppod maxyawspeed 15
 add_property droppod minspeed 20
 add_property droppod minyawspeed 12
 add_property droppod mountpoint1_IsDriver true
 add_property droppod mountpoint1_IsGunner false
 add_property droppod mountpoint1_hasdelayeddismount true
+add_property droppod mountpoint1_hideavatar true
 add_property droppod mountpoint1_lookdownlimit 50
 add_property droppod mountpoint1_lookleftlimit 90
 add_property droppod mountpoint1_lookrightlimit 90
@@ -20719,7 +21096,6 @@ add_property droppod statistic_type_hack droppod
 add_property droppod statistic_type_kill droppod
 add_property droppod throttletorque 50
 add_property droppod useradius 5
-add_property droppod mountpoint1_hideavatar true
 
 ##apc
 
@@ -21835,6 +22211,10 @@ add_property ams xp_icon_name bug_glow
 add_property ams xp_message @xp_ams_message
 add_property ams xp_repeat 1
 add_property ams xp_sound help_alert.wav
+add_property ams physicsdeploy1_fixedphysicsname ams_fixed_moving
+add_property ams physicsdeploy1_transrate 0.0 -2.5 0.0
+add_property ams physicsdeploy1_transstartval 3.0 4.0 2.5
+add_property ams physicsdeploy1_transendval 3.0 0.5 2.5
 
 ##avatar
 
@@ -21875,8 +22255,21 @@ add_property avatar respawn_nc respawn_nc
 add_property avatar respawn_tr respawn_tr
 add_property avatar respawn_vs respawn_vs
 add_property avatar sound_bailing kinetic_dampener_loop.wav 0.7 25
+add_property avatar sound_death_cry_range 40
+add_property avatar sound_death_cry_volume 0.9
+add_property avatar sound_fatigue_range 10
+add_property avatar sound_fatigue_volume 0.5
+add_property avatar sound_jump_grunt_range 20
+add_property avatar sound_jump_grunt_volume 0.5
+add_property avatar sound_module_charge_success modfact_create.wav 0.9 40
+add_property avatar sound_pain_grunt_range 20
+add_property avatar sound_pain_grunt_volume 0.8
+add_property avatar sound_shield_phase ffield_phase.wav 0.7 15
 add_property avatar sound_teleport_arrive teleport_receive.wav 0.5 20
 add_property avatar sound_teleport_depart teleport_send.wav 0.5 20
+add_property avatar sound_zipline_dismount zip_receive.wav 0.4 15
+add_property avatar sound_zipline_mount zip_send.wav 0.4 15
+add_property avatar sound_zipline_travel zip_ambient.wav 0.3 10
 add_property avatar stamina_jumping_penalty_class1 5
 add_property avatar stamina_jumping_penalty_class2 5
 add_property avatar stamina_jumping_penalty_class3 5
@@ -22074,9 +22467,6 @@ add_property avatar xpe_warp_gate_checklist_description @xp_warp_gate_label
 add_property avatar xpe_warp_gate_description @xp_warp_gate_descrip
 add_property avatar xpe_warp_gate_event used_warp_gate_interface
 add_property avatar xpe_warp_gate_message @xp_warp_gate_message
-add_property avatar zipline_sound_dismount zip_receive.wav 0.4 15
-add_property avatar zipline_sound_mount zip_send.wav 0.4 15
-add_property avatar zipline_sound_travel zip_ambient.wav 0.3 10
 
 ##orbital_shuttle
 
@@ -22094,7 +22484,7 @@ add_property orbital_shuttle chasecameraviewpoint -28 0 29
 add_property orbital_shuttle cockpitview true
 add_property orbital_shuttle damagepervelocity 2.25
 add_property orbital_shuttle destroyedphysics dropship_destroyed
-add_property orbital_shuttle dock_duration 90
+add_property orbital_shuttle dock_duration 15
 add_property orbital_shuttle doesnotdecay true
 add_property orbital_shuttle engineidlename orbital_shuttle_idle.wav
 add_property orbital_shuttle experience_multiplier 1.5
@@ -22185,15 +22575,15 @@ add_property orbital_shuttle generic_destruction vehicle_destruction
 add_property orbital_shuttle hasattachedmountzones false
 add_property orbital_shuttle idletorque 2500
 add_property orbital_shuttle initialcriticalpoints 0
-add_property orbital_shuttle land_anim_duration 25.0
+add_property orbital_shuttle land_anim_duration 11.67
 add_property orbital_shuttle land_anim_name land
 add_property orbital_shuttle land_anim_speed 1
-add_property orbital_shuttle liftoff_anim_duration 25.0
+add_property orbital_shuttle liftoff_anim_duration 9.33
 add_property orbital_shuttle liftoff_anim_name liftoff
 add_property orbital_shuttle liftoff_anim_speed 1
 add_property orbital_shuttle mass 25000
 add_property orbital_shuttle maxhealth 1500
-add_property orbital_shuttle maxspeed 80
+add_property orbital_shuttle MaxSpeed 80
 add_property orbital_shuttle maxyawspeed 15
 add_property orbital_shuttle meshsequence orbital_shuttle
 add_property orbital_shuttle minspeed 20
@@ -22275,7 +22665,7 @@ add_property orbital_shuttle mountzone8_name PassengerH
 add_property orbital_shuttle mountzone8_zorientation 270
 add_property orbital_shuttle namefloatposition 0 0 8.0
 add_property orbital_shuttle namevisiblebynamedisplaymanager false
-add_property orbital_shuttle orbit_duration 514
+add_property orbital_shuttle orbit_duration 24
 add_property orbital_shuttle passengerfloatyoffset -0.5
 add_property orbital_shuttle physics orbital_shuttle
 add_property orbital_shuttle physicsusescallback true
@@ -22541,11 +22931,17 @@ add_property spitfire_turret collision_z_hp3 60
 add_property spitfire_turret collision_z_hp4 80
 add_property spitfire_turret collision_z_hp5 100
 add_property spitfire_turret damage0 200
+add_property spitfire_turret damage0 200
+add_property spitfire_turret damage1 300
 add_property spitfire_turret damage1 300
 add_property spitfire_turret damage_at_edge 0.2
+add_property spitfire_turret damage_at_edge 0.2
+add_property spitfire_turret damage_radiation_shielding 0.5
 add_property spitfire_turret damage_radiation_shielding 0.5
 add_property spitfire_turret damage_radius 8
+add_property spitfire_turret damage_radius 8
 add_property spitfire_turret damage_type 0
+add_property spitfire_turret damage_type 1
 add_property spitfire_turret damage_type 1
 add_property spitfire_turret destroy_on_contact true
 add_property spitfire_turret destroyedphysics spitfire_turret_destroyed
@@ -22583,19 +22979,19 @@ add_property spitfire_turret weaponpoint1_PitchBone spitfire_body
 add_property spitfire_turret weaponpoint1_RightAOF 360
 add_property spitfire_turret weaponpoint1_UpAOF 360
 add_property spitfire_turret weaponpoint1_YawBone spitfire_piston
-add_property spitfire_turret xp_active true
-add_property spitfire_turret xp_description @xp_description_spitfire
-add_property spitfire_turret xp_distance 30
+add_property spitfire_turret xp_active false
+add_property spitfire_turret xp_battle_points 100
+add_property spitfire_turret xp_checklist_description @xp_spitfire_turret_label
+add_property spitfire_turret xp_description @xp_spitfire_turret_descrip
+add_property spitfire_turret xp_distance 50
+add_property spitfire_turret xp_event visited_spitfire_turret
 add_property spitfire_turret xp_help_active true
-add_property spitfire_turret xp_help_distance 5
+add_property spitfire_turret xp_help_distance 4
+add_property spitfire_turret xp_help_xoffset 0
+add_property spitfire_turret xp_help_yoffset 0
 add_property spitfire_turret xp_help_zoffset 2
 add_property spitfire_turret xp_icon_name bug_glow
 add_property spitfire_turret xp_line_of_sight true
-add_property spitfire_turret xp_message @xp_message_spitfire
-add_property spitfire_turret xp_repeat 2
-add_property spitfire_turret damage0 200
-add_property spitfire_turret damage1 300
-add_property spitfire_turret damage_at_edge 0.2
-add_property spitfire_turret damage_radiation_shielding 0.5
-add_property spitfire_turret damage_radius 8
-add_property spitfire_turret damage_type 1
+add_property spitfire_turret xp_message @xp_spitfire_turret_message
+add_property spitfire_turret xp_repeat 1
+add_property spitfire_turret xp_sound help_alert.wav

@@ -1,6 +1,6 @@
 <Page movable='true' Name='VideoOptions' navbar.visible='false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='800,600' Size='800,600' Visible='false'>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@OptionsTitle]' Location='91,7' Name='TitleText' ScrollExtent='607,20' Size='607,20' TextAlignment='Center' TextAlignmentVertical='Center'>@OptionsTitle</Text>
-<Page Location='22,69' Name='SoundOptionsPage' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = true' PackLocation='Center,Center' PackLocationProp='-378/0001,-231/0001' ScrollExtent='758,468' Size='758,468'>
+<Page Location='22,69' Name='SoundOptionsPage' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = true' PackLocation='Center,Center' PackLocationProp='-378/0001,-231/0001' ScrollExtent='758,468' Size='758,468' Visible='false'>
 <Text Font='/Fonts.HudFont3' LocalText='[@VoiceInVolume]' Location='395,98' Name='SoundVoiceInText' ScrollExtent='158,25' Size='158,25' TextAlignment='Right' TextAlignmentVertical='Center'>@VoiceInVolume</Text>
 <Sliderbar LocalTooltip='[@VoiceInVolumeTooltip]' Location='566,98' Name='SoundVoiceIn' ScrollExtent='126,25' Size='126,25' Style='/Sliderbars.Options.Style' Tooltip='@VoiceInVolumeTooltip' UpperLimit='300' Value='25' ValueUpdateContinuous='false'/>
 <Text Font='/Fonts.HudFont3' LocalText='[@VoiceOutVolume]' Location='381,66' Name='SoundVoiceOutText' ScrollExtent='175,25' Size='175,25' TextAlignment='Right' TextAlignmentVertical='Center'>@VoiceOutVolume</Text>
@@ -539,7 +539,7 @@ $key1$
 <Data actionname='@GA_UseLeftBackHolster' color='#ffffff' key1='3' Localactionname='[@GA_UseLeftBackHolster]' Name='Use Left Back Holster'/>
 <Data actionname='@GA_UseLeftHipHolster' color='#ffffff' key1='4' Localactionname='[@GA_UseLeftHipHolster]' Name='Use Left Hip Holster'/>
 <Data actionname='@GA_UseKnifeHolster' color='#ffffff' key1='5' Localactionname='[@GA_UseKnifeHolster]' Name='Use Knife Holster'/>
-<Data actionname='@GA_DropFlag' color='#ffffff' key1='Shift + G' Localactionname='[@GA_DropFlag]' Name='Drop Lattice Logic Unit'/>
+<Data actionname='@GA_DropSpecialItem' color='#ffffff' key1='Shift + G' Localactionname='[@GA_DropSpecialItem]' Name='Drop Special Item'/>
 </DataSource>
 <Listbox DataSource='PageData' Location='1,79' Name='CommandList' RowTemplate='CommandListTemplate' ScrollExtent='146,400' Size='146,345' Style='/Listboxes.Clear.style'/>
 <Listbox DataSource='PageData' Location='155,79' Name='KeyList1' RowTemplate='KeyList1Template' ScrollExtent='120,400' Size='120,345' Style='/Listboxes.Keymap.style'/>
@@ -705,6 +705,58 @@ $Name$
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ShowEjectedCasingsTooltip]' Location='46,84' Name='ShowEjectedCasingsCheck' ScrollExtent='320,23' Size='320,23' Style='/Buttons.OptionsCheckbox.style' Tooltip='@ShowEjectedCasingsTooltip' Visible='false'>@ShowEjectedCasings</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@RadarAutoTooltip]' Location='46,95' Name='RadarAutoCheck' ScrollExtent='320,23' Size='320,23' Style='/Buttons.OptionsCheckbox.style' Tooltip='@RadarAutoTooltip'>@RadarAuto</Checkbox>
 </Page>
+<Page ContextCapable='true' ContextToParent='true' Location='22,69' Name='ColorOptionsPage' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = true' PackLocation='Center,Center' PackLocationProp='-378/0001,-231/0001' ScrollExtent='758,468' Size='758,468'>
+<DataSource Name='PageData'>
+<Data actionname='@ColorChatDefault' color='#ffffff' index='0' Localactionname='[@ColorChatDefault]' Name='ChatDefault'/>
+<Data actionname='@ColorChatOpen' color='#ff0000' index='1' Localactionname='[@ColorChatOpen]' Name='ChatOpen'/>
+<Data actionname='@ColorChatBroadcast' color='#ffffff' index='2' Localactionname='[@ColorChatBroadcast]' Name='ChatBroadcast'/>
+<Data actionname='@ColorChatTell' color='#ffffff' index='3' Localactionname='[@ColorChatTell]' Name='ChatTell'/>
+<Data actionname='@ColorChatSquad' color='#ffffff' index='4' key2='Left Arrow' Localactionname='[@ColorChatSquad]' Name='ChatSquad'/>
+<Data actionname='@ColorChatOutfit' color='#ffffff' index='5' key2='Right Arrow' Localactionname='[@ColorChatOutfit]' Name='ChatOutfit'/>
+<Data actionname='@ColorChatCommand' color='#ffffff' index='6' Localactionname='[@ColorChatCommand]' Name='ChatCommand'/>
+<Data actionname='@ColorChatPlatoon' color='#ffffff' index='7' Localactionname='[@ColorChatPlatoon]' Name='ChatPlatoon'/>
+<Data actionname='@ColorChatPlatoonLeader' color='#ffffff' index='8' Localactionname='[@ColorChatPlatoonLeader]' Name='ChatPlatoonLeader'/>
+</DataSource>
+<Page Location='391,81' Name='PalettePage' ScrollExtent='292,195' Size='292,195'>
+<Page BackgroundColor='#0000FF' BackgroundOpacity='1.000' Location='194,95' Name='ColorOutput' ScrollExtent='90,90' Size='90,90'/>
+<Textbox BackgroundColor='#FF0000' BackgroundOpacity='0.475' Location='143,95' MaxLength='2' Name='RedInput' NumericInteger='true' ScrollExtent='43,28' ScrollLocation='-1,0' Size='43,28' Style='/ConsoleTextbox.Style'>2</Textbox>
+<Sliderbar BackgroundColor='#FF0000' LocalTooltip='[@ColorRedTooltip]' Location='7,98' Name='RedSlider' ScrollExtent='126,25' Size='126,25' Style='/Sliderbars.Options.Style' Tooltip='@ColorRedTooltip' UpperLimit='255' ValueUpdateContinuous='false'/>
+<Textbox BackgroundColor='#00FF00' BackgroundOpacity='0.475' Location='143,127' MaxLength='2' Name='GreenInput' NumericInteger='true' ScrollExtent='43,28' ScrollLocation='-1,0' Size='43,28' Style='/ConsoleTextbox.Style'>2</Textbox>
+<Sliderbar LocalTooltip='[@ColorGreenTooltip]' Location='7,129' Name='GreenSlider' ScrollExtent='126,25' Size='126,25' Style='/Sliderbars.Options.Style' Tooltip='@ColorGreenTooltip' UpperLimit='255' Value='100' ValueUpdateContinuous='false'/>
+<Textbox BackgroundColor='#0000FF' BackgroundOpacity='0.475' Location='143,159' MaxLength='2' Name='BlueInput' NumericInteger='true' ScrollExtent='43,28' ScrollLocation='-1,0' Size='43,28' Style='/ConsoleTextbox.Style'>2</Textbox>
+<Sliderbar LocalTooltip='[@ColorBlueTooltip]' Location='7,161' Name='BlueSlider' ScrollExtent='126,25' Size='126,25' Style='/Sliderbars.Options.Style' Tooltip='@ColorBlueTooltip' UpperLimit='255' ValueUpdateContinuous='false'/>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Color='#FFFF00' LocalTooltip='[@ColorTooltip]' Location='9,2' Name='Color0Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ColorTooltip]' Location='77,2' Name='Color1Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='9,24' Name='Color2Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='77,24' Name='Color3Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='9,46' Name='Color4Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='77,46' Name='Color5Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='9,68' Name='Color6Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='77,68' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='145,2' Name='Color8Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='213,2' Name='Color9Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='145,24' Name='Color10Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='213,24' Name='Color11Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='145,46' Name='Color12Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='213,46' Name='Color13Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='145,68' Name='Color14Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ColorTooltip]' Location='213,68' Name='Color15Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ColorTooltip'></Checkbox>
+</Page>
+<Text Font='/Fonts.HudFont1' LocalText='[@ColorNameTitle]' Location='13,8' Name='ColorNameTitle' ScrollExtent='141,25' Size='141,25' TextAlignment='Center' TextAlignmentVertical='Center'>@ColorNameTitle</Text>
+<Text Font='/Fonts.HudFont1' LocalText='[@ColorTitle]' Location='159,8' Name='ColorTitle' ScrollExtent='121,25' Size='121,25' TextAlignment='Center' TextAlignmentVertical='Center'>@ColorTitle</Text>
+<Listbox DataSource='PageData' Location='1,31' Name='ColorNameList' RowTemplate='ColorNameTemplate' ScrollExtent='146,433' SelectedItemIndex='0' Size='146,433' Style='/Listboxes.Clear.style'/>
+<Listbox DataSource='PageData' Location='155,31' Name='ColorList' RowTemplate='ColorTemplate' ScrollExtent='120,433' SelectedItemIndex='0' Size='120,433' Style='/Listboxes.Keymap.style'/>
+<Scrollbar Control='ColorNameList' Location='281,30' Name='Scroll' ScrollExtent='9,433' Size='9,433' Style='/ScrollBars.vertical.style'/>
+<Template Name='ColorNameTemplate' Size='145,25'>\<text font = \'/Fonts.HUDFont2\' location = \'5,0\' size = \'145,25\' textalignment = \'left\' textalignmentvertical = \'center\'\>
+$actionname$
+\</text\></Template>
+<Template Name='ColorTemplate' Size='119,25'>\<text font = \'/Fonts.HUDFont2\' location = \'0,2\' size = \'120,23\' textalignment = \'center\' textalignmentvertical = \'center\' textcolor = \'$color$\'\>
+$actionname$
+\</text\></Template>
+<Button LocalText='[@ColorAccept]' LocalTooltip='[@ColorAcceptTooltip]' Location='393,434' Name='AcceptColor' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@ColorAcceptTooltip'>@ColorAccept</Button>
+<Button LocalText='[@ColorCancel]' LocalTooltip='[@ColorCancelTooltip]' Location='576,434' Name='CancelColor' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@ColorCancelTooltip'>@ColorCancel</Button>
+<Image BackgroundOpacity='1.000' Location='303,429' Name='StatusBorder' PackLocation='left,bottom' PackLocationProp='0303/0001,-039/0001' PackSize='absolute,fixed' PackSizeProp='0319/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='439,31' Size='439,31'/>
+</Page>
 <Page Location='19,539' Name='LoadSave' ScrollExtent='759,37' Size='759,37'>
 <Button LocalText='[@Default]' LocalTooltip='[@KeymapDefaultTooltip]' Location='264,9' Name='DefaultButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KeymapDefaultTooltip'>@Default</Button>
 <Button LocalText='[@Delete]' LocalTooltip='[@KeymapDeleteTooltip]' Location='178,9' Name='DeleteButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KeymapDeleteTooltip'>@Delete</Button>
@@ -720,6 +772,7 @@ $Name$
 <Checkbox BackgroundOpacity='1.000' Cursor='s' LocalTooltip='[@KeymapOptionTooltip]' Location='25,41' Name='KeymapCheckbox' Radio='true' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.checkstyle' Tooltip='@KeymapOptionTooltip'>@KeymapOptionTab</Checkbox>
 <Checkbox BackgroundOpacity='1.000' Cursor='s' LocalTooltip='[@SoundOptionTooltip]' Location='185,41' Name='SoundCheckbox' Radio='true' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.checkstyle' Tooltip='@SoundOptionTooltip'>@SoundOptionTab</Checkbox>
 <Checkbox BackgroundOpacity='1.000' Cursor='s' LocalTooltip='[@OtherOptionTooltip]' Location='266,41' Name='OptionsCheckbox' Radio='true' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.checkstyle' Tooltip='@OtherOptionTooltip'>@GameOptionTab</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Cursor='s' LocalTooltip='[@ColorOptionTooltip]' Location='346,41' Name='ColorCheckbox' Radio='true' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.checkstyle' Tooltip='@ColorOptionTooltip'>@ColorOptionTab</Checkbox>
 <CheckboxStyle CheckboxSize='100,100' Name='checkstyle' NormalTextStyle='/Fonts.HudFont1'/>
 <Image Name='Border' ScrollExtent='1035,771' Size='1035,771' Stretch='false' Style='ShellOptionsBackground' Visible='false'/>
 <Button IsCancelButton='true' LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='708,9' Name='CancelButton' PackLocation='right,top' PackLocationProp='-092/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>

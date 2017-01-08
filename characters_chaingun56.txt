@@ -1,0 +1,10 @@
+Emerald,Captain1nsaneo,2,0,ablpls-01
+Konried,Captian1nsaneo,1,0,ablpls-02
+Werner,Captain1nsaneo,1,0,amspls-01
+Markov,Captain1nsaneo,0,0,sdkpls-01
+Johari,Captain1nsaneo,2,0,sdkpls-02
+Johari,hopethatwasntahuman,2,0,sdkpls-02
+Johari,CaptInsaneo,2,0,sdkpls-02
+Core Combat Beta,Captain1nsaneo,2,0,sdtpls-04
+Core Combat Beta,Chaingun56,2,0,sdtpls-04
+Core Combat Beta,CaptInsaneo,2,1,sdtpls-04

@@ -4,7 +4,7 @@
 </ImageStyle>
 <Image Location='879,666' Name='Intel' PackLocation='right,bottom' PackLocationProp='-145/0001,-102/0001' ScrollExtent='143,98' Size='143,98' Style='IntelLogo'/>
 <Page BackgroundOpacity='0.475' Location='259,330' Name='Status' PackLocation='center,center' PackLocationProp='-253/0001,-054/0001' ScrollExtent='500,31' Size='500,31'>
-<Rectangle Color='#000000' ScrollExtent='500,33' Size='500,33'/>
+<Rectangle Color='#000000' ScrollExtent='500,31' Size='500,31'/>
 <Text Font='/SmallFont' Location='10,36' Name='Text' PackSize='Absolute, Absolute' PackSizeProp='0020/0001,xxxx/xxxx' ScrollExtent='480,200' Size='480,200' Visible='false'></Text>
 <Progressbar BackgroundColor='#000000' BackgroundOpacity='1.000' Color='#777777' Location='12,9' Name='Progress' Progress='0.500' ScrollExtent='480,14' Size='480,14' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
 </Page>

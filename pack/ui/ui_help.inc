@@ -39,6 +39,7 @@ $Internationalize$
 <Data internationalize='@HelpOptions' isexpanded='false' isheading='true' isitem1='false' isitem2='false' Localinternationalize='[@HelpGameOptions]' Name='Options'/>
 </DataSource>
 <DataSource Name='Options'>
+<Data internationalize='@HelpOptionColor' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpOptionColor]' Name='OptionsColor'/>
 <Data internationalize='@HelpOptionKeymap' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHelpContext]' Name='OptionsKeymap'/>
 <Data internationalize='@HelpOptionSound' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='OptionsSound'/>
 <Data internationalize='@HelpOptionOther' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='OptionsOther'/>

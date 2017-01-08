@@ -1,1174 +1,38 @@
 #lod_begin
 
-##105mm_cannon_dropship
+##flailfinb_pivot
 
-lod_curve 10 35 55 70 200 600 700
+lod_curve 15 30 45 60 100
 
-##ancient_garage_frame
+##flailfina_pivot
 
-lod_curve 75 130
+lod_curve 15 30 45 60 100
 
-##ancient_door_frame
+##flail_body
 
-lod_curve 50 90
+lod_curve 15 30 45 60 100
 
-##sb_root
+##flaileye_pivot
 
-lod_curve 30 45 60 100
+lod_curve 15 30 45 60 100
 
-##vanu_sentry_turret_cabin
+##zipline_end
 
-lod_curve 15 30 40 50 60
+lod_curve 15 45 60 80 100
 
-##hologram_mosquito
+##maelstrom_projectile_mesh
 
-lod_curve 1000
+lod_curve 15 30 75
 
-##meeting_sign
+##35mm_chaincannon
 
-lod_curve 1000
+lod_curve 65 100 150
 
-##hologram_base
-
-lod_curve 1000
-
-##meetingfour_sign
+##vrtb_sign
 
 lod_curve 1000
 
-##meetingthree_sign
-
-lod_curve 1000
-
-##meetingtwo_sign
-
-lod_curve 1000
-
-##meetingone_sign
-
-lod_curve 1000
-
-##ap_ammo_pack
-
-lod_curve 1 3
-
-##ap_shell_pack
-
-lod_curve 2 4 6 8 10 12 14
-
-##banner_mount
-
-lod_curve 1000
-
-##volcanictreec
-
-lod_curve 50 450 600
-
-##volcanictreeb
-
-lod_curve 50 450 600
-
-##game_table_effect
-
-lod_curve 500
-
-##rock_formationg
-
-lod_curve 200 500 700 1000
-
-##frame_mb_inside
-
-lod_curve 500
-
-##trlite_m_head_c
-
-lod_curve 15 30 59
-
-##nclite_m_head_c
-
-lod_curve 15 30 59
-
-##trhev_m_head_b
-
-lod_curve 15 30 59
-
-##light_gunship
-
-lod_curve 15 80 150 250
-
-##ncmed_m_head_a
-
-lod_curve 15 35 59
-
-##rock_formation7
-
-lod_curve 200 500 700 1000
-
-##nclite_m_head_a
-
-lod_curve 15 30 59
-
-##ncfsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##desertrockha
-
-lod_curve 40 90 125 400 500
-
-##NCMliteh
-
-lod_curve 20 35 45 60 30 40
-
-##vsfmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##rock_formation1
-
-lod_curve 200 500 700 1000
-
-##trmed_m_head_c
-
-lod_curve 15 30 59
-
-##quad_assault_destroyed
-
-lod_curve 10 50 100 175
-
-##chaingun_lightning
-
-lod_curve 20 75 150
-
-##boomer_he_mine_trigger
-
-lod_curve 2 4 6 8 10 12 14
-
-##volcanicshrub_c
-
-lod_curve 10 25 50
-
-##mb_ramp_lights
-
-lod_curve 400
-
-##mbht_wndw
-
-lod_curve 300
-
-##mbnc_e2
-
-lod_curve 100 200 300 400
-
-##rock_formationp
-
-lod_curve 200 500 700 1000
-
-##rock_formation5
-
-lod_curve 200 500 700 1000
-
-##mbnc_q4
-
-lod_curve 200 300 400 500
-
-##rockform_m
-
-lod_curve 400 750 1000 1250
-
-##rockform_k
-
-lod_curve 400 750 1000 1250
-
-##rockform_l
-
-lod_curve 400 750 1000 1250
-
-##threemanbuggy
-
-lod_curve 10 20 30 45 100 300 700
-
-##mbvs_r4
-
-lod_curve 100 200 300 400
-
-##mbtr_d3
-
-lod_curve 100 200 300 400
-
-##rockform_h
-
-lod_curve 400 750 1000 1250
-
-##rock_formation14
-
-lod_curve 200 500 700 1000
-
-##rockform_s
-
-lod_curve 400 750 1000 1250
-
-##vslite_m_head_b
-
-lod_curve 15 30 59
-
-##bommer_he_mine
-
-lod_curve 25 45 60 40 50 60 70
-
-##vslite_m_head_d
-
-lod_curve 15 30 59
-
-##trmsthh
-
-lod_curve 20 35 45 60 50 60 70
-
-##trsth_m_head_a
-
-lod_curve 15 30 59
-
-##domea
-
-lod_curve 600 2000
-
-##rock_formationc
-
-lod_curve 500 650 800 1000
-
-##rock_formatione
-
-lod_curve 500 650 800 1000
-
-##trmed_m_head_a
-
-lod_curve 15 30 59
-
-##rock_formationa
-
-lod_curve 200 500 700 1000
-
-##trsth_m_head_e
-
-lod_curve 15 30 59 40
-
-##trmed_m_head_b
-
-lod_curve 15 30 59
-
-##nchev_f_head_a
-
-lod_curve 10 30 59
-
-##trhev_m_head_a
-
-lod_curve 15 30 59
-
-##earth_tree4
-
-lod_curve 100 600
-
-##rockform_c
-
-lod_curve 400 750 1000 1250
-
-##trhev_m_head_c
-
-lod_curve 15 30 59
-
-##earthshrubi
-
-lod_curve 10 25 50
-
-##trlite_m_head_d
-
-lod_curve 15 30 59
-
-##ncmsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbnc_r1
-
-lod_curve 100 200 300 400
-
-##desertshrubj
-
-lod_curve 5 15 50
-
-##trhev_m_head_d
-
-lod_curve 15 30 59
-
-##rock_formation6
-
-lod_curve 200 500 700 1000
-
-##rock_formationq
-
-lod_curve 500 650 800 1000
-
-##rock_formationm
-
-lod_curve 200 500 700 1000
-
-##desertshrubc
-
-lod_curve 20 60
-
-##trhev_burster_l
-
-lod_curve 20 40 60
-
-##vsfsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##rock_formation3
-
-lod_curve 200 500 700 1000
-
-##vslite_m_head_a
-
-lod_curve 15 30 59
-
-##trlite_m_head_a
-
-lod_curve 15 30 59
-
-##rock_formation4
-
-lod_curve 200 500 700 1000
-
-##force_blade
-
-lod_curve 2 8 10
-
-##mbnc_r2
-
-lod_curve 100 200 300 400
-
-##desertrockp
-
-lod_curve 70 310 550
-
-##mbvs_p2
-
-lod_curve 100 200 300 400
-
-##earthshrubc
-
-lod_curve 20 30 60
-
-##trfliteh
-
-lod_curve 20 35 45 60 50 60 70
-
-##ncfsthh
-
-lod_curve 20 35 45 60 50 60 70
-
-##desertrockfa
-
-lod_curve 20 50 75 100
-
-##rock_formationb
-
-lod_curve 200 500 700 1000
-
-##rock_formationd
-
-lod_curve 200 500 700 1000
-
-##rock_formationf
-
-lod_curve 200 500 700 1000 50 60 70
-
-##mbtr_q3
-
-lod_curve 200 300 400 500
-
-##desertrocko
-
-lod_curve 80 320 550
-
-##trmmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##desertrockr
-
-lod_curve 70 210 350
-
-##nchev_m_head_d
-
-lod_curve 15 30 59
-
-##desertshrubb
-
-lod_curve 29 60 300
-
-##trmed_f_head_d
-
-lod_curve 15 30 59
-
-##trsth_f_head_d
-
-lod_curve 15 30 59
-
-##desertrockfc
-
-lod_curve 40 70 110 300 500
-
-##nc_light_base
-
-lod_curve 300
-
-##trmhevh
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbtr_r2
-
-lod_curve 100 200 300 400
-
-##rockformation9
-
-lod_curve 200 400 700 1000
-
-##earthshrubd
-
-lod_curve 20 30 60
-
-##mbvs_e2
-
-lod_curve 100 200 300 400
-
-##desertrockq
-
-lod_curve 60 250 450
-
-##mbtr_r1
-
-lod_curve 100 200 300 400
-
-##mbnc_r3
-
-lod_curve 100 200 300 400
-
-##desertrockk
-
-lod_curve 80 250 360
-
-##trhev_m_head_e
-
-lod_curve 15 30 59
-
-##mbnc_r4
-
-lod_curve 100 200 300 400
-
-##mbvs_d4
-
-lod_curve 100 200 300 400
-
-##mbtr_q1
-
-lod_curve 200 300 400 500
-
-##dropship_des
-
-lod_curve 20 40 60 80 100 120 140
-
-##mbnc_p2
-
-lod_curve 100 200 300 400
-
-##desertshruba
-
-lod_curve 25 125 200
-
-##ef_torus
-
-lod_curve 200 20 30 40 50 60 70
-
-##trmsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##desertrockhc
-
-lod_curve 40 90 125 400 500
-
-##mbnc_d1
-
-lod_curve 100 200 300 400
-
-##nclite_f_head_a
-
-lod_curve 15 30 59
-
-##nc_magdisk
-
-lod_curve 600
-
-##mbnc_d2
-
-lod_curve 100 200 300 400
-
-##trsth_m_head_c
-
-lod_curve 15 30 59
-
-##trsth_f_head_a
-
-lod_curve 15 30 59
-
-##mbvs_d3
-
-lod_curve 100 200 300 400
-
-##nclite_m_head_e
-
-lod_curve 15 30 59
-
-##earthshrubh
-
-lod_curve 10 25 50
-
-##mbncdoor
-
-lod_curve 35 75 100 200 300 400 500
-
-##repair_bay
-
-lod_curve 200 300 400 500 600
-
-##volcanicshrub_b
-
-lod_curve 10 25 50
-
-##rockformation10
-
-lod_curve 200 400 700 1000
-
-##earthshrubb
-
-lod_curve 10 25 50
-
-##mbnc_q1
-
-lod_curve 200 300 400 500
-
-##rockformation8
-
-lod_curve 200 400 700 1000
-
-##volcanicshrub_a
-
-lod_curve 10 25 50
-
-##tech_banner_flag
-
-lod_curve 1000
-
-##rock_formation16
-
-lod_curve 200 500 700 1000
-
-##rock_formation17
-
-lod_curve 200 500 700 1000
-
-##male_head_a
-
-lod_curve 10 15 59
-
-##trlite_m_head_e
-
-lod_curve 15 30 59
-
-##trfsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##male_head_c
-
-lod_curve 15 30 59
-
-##20mm_cannon_vanguard
-
-lod_curve 10 20 30
-
-##ncmed_m_head_c
-
-lod_curve 15 30 59
-
-##trhev_burster_r
-
-lod_curve 20 40 60
-
-##trhev_f_head_a
-
-lod_curve 15 30 59
-
-##nclite_m_head_b
-
-lod_curve 15 30 59
-
-##nchev_f_head_d
-
-lod_curve 15 30 59
-
-##vslite_m_head_c
-
-lod_curve 15 30 59
-
-##nclite_f_head_d
-
-lod_curve 15 30 59
-
-##female_head_d
-
-lod_curve 15 30 59
-
-##mbvs_d2
-
-lod_curve 100 200 300 400
-
-##desertshrubf
-
-lod_curve 10 25 50
-
-##trsth_m_head_b
-
-lod_curve 15 30 59
-
-##vslite_f_head_a
-
-lod_curve 15 30 59
-
-##trlite_f_head_a
-
-lod_curve 15 30 59
-
-##glaciertestb
-
-lod_curve 500
-
-##rocket_launcher_reaver
-
-lod_curve 10 20 30
-
-##nchev_m_head_b
-
-lod_curve 15 30 59
-
-##vslite_m_head_e
-
-lod_curve 15 30 59
-
-##trmed_m_head_d
-
-lod_curve 15 30 59
-
-##mbvs_q3
-
-lod_curve 200 300 400 500
-
-##rockformation_h
-
-lod_curve 400 750 1000 1250
-
-##earthshrube
-
-lod_curve 10 25 50
-
-##mbvs_q4
-
-lod_curve 200 300 400 500
-
-##mbtr_e1
-
-lod_curve 100 200 300 400
-
-##nchev_m_head_c
-
-lod_curve 15 30 59
-
-##mbvs_r2
-
-lod_curve 100 200 300 400
-
-##rock_formation2
-
-lod_curve 200 500 700 1000
-
-##earthshruba
-
-lod_curve 10 25 50
-
-##desertshrubh
-
-lod_curve 10 25 50
-
-##trmliteh
-
-lod_curve 20 35 45 60 25 30
-
-##desertshrubd
-
-lod_curve 20 30 300
-
-##trlite_m_head_b
-
-lod_curve 15 30 59
-
-##nchev_m_head_e
-
-lod_curve 15 30 59
-
-##trmed_m_head_e
-
-lod_curve 15 30 59
-
-##tide_out_test
-
-lod_curve 1000
-
-##mbvs_d1
-
-lod_curve 100 200 300 400
-
-##rockform_r
-
-lod_curve 400 750 1000 1250
-
-##rockform_p
-
-lod_curve 400 750 1000 1250
-
-##trmed_f_head_a
-
-lod_curve 15 30 59
-
-##hunterseeker_c
-
-lod_curve 15 50
-
-##glaciertest
-
-lod_curve 500
-
-##trhev_pounder_l
-
-lod_curve 20 40 60
-
-##arena2
-
-lod_curve 2048 5000
-
-##mbnc_q3
-
-lod_curve 200 300 400 500
-
-##mbnc_p1
-
-lod_curve 100 200 300 400
-
-##ncmed_f_head_a
-
-lod_curve 15 45 59
-
-##dome4
-
-lod_curve 2000 200 300 400 500 600 700
-
-##vsmmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##arena3
-
-lod_curve 2048 5000
-
-##trhev_pounder_r
-
-lod_curve 20 40 60
-
-##desertrockfb
-
-lod_curve 20 50 100 400 500
-
-##arena1
-
-lod_curve 2048 5000
-
-##mbvs_r1
-
-lod_curve 100 200 300 400
-
-##ncmmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbvs_r3
-
-lod_curve 100 200 300 400
-
-##ob_doors
-
-lod_curve 1000
-
-##frame_mb_garage
-
-lod_curve 300
-
-##mbnc_d3
-
-lod_curve 100 200 300 400
-
-##rockform_f
-
-lod_curve 400 750 1000 1250
-
-##desertrockl
-
-lod_curve 80 300 500
-
-##frame_mb_rotating2
-
-lod_curve 500
-
-##frame_mb_rotating1
-
-lod_curve 500
-
-##desertrockn
-
-lod_curve 110 380 550
-
-##orb_hangar_shudders
-
-lod_curve 500
-
-##frame_mb_side
-
-lod_curve 500
-
-##rockform_o
-
-lod_curve 400 750 1000 1250
-
-##ncmed_m_head_d
-
-lod_curve 15 30 59
-
-##trfmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbtr_e2
-
-lod_curve 100 200 300 400
-
-##rockform_n
-
-lod_curve 400 750 1000 1250
-
-##female_head_a
-
-lod_curve 15 30 59
-
-##vsmliteh
-
-lod_curve 20 35 45 60 25 30
-
-##desertrockhb
-
-lod_curve 35 85 120 500 500
-
-##earth_tree5
-
-lod_curve 100 600
-
-##trhev_dualcycler_r
-
-lod_curve 20 40 60
-
-##trhev_dualcycler_l
-
-lod_curve 20 40 60
-
-##mb_ramp_lights_sm
-
-lod_curve 400
-
-##frame_mb_garage_cstm
-
-lod_curve 300
-
-##vs_clmn_sm_corner
-
-lod_curve 300
-
-##ncmsthh
-
-lod_curve 20 35 45 60 50 60 70
-
-##ncfliteh
-
-lod_curve 20 35 45 60 50 60 70
-
-##105mm_cannon_t
-
-lod_curve 50 150 300
-
-##mbtr_q4
-
-lod_curve 200 300 400 500
-
-##nchev_m_head_a
-
-lod_curve 15 30 59
-
-##rockformation11
-
-lod_curve 200 400 700 1000
-
-##rockform_g
-
-lod_curve 400 750 1000 1250
-
-##mbvs_p1
-
-lod_curve 100 200 300 400
-
-##tide_in_test
-
-lod_curve 1000
-
-##bunker_test
-
-lod_curve 1000
-
-##rockform_i
-
-lod_curve 400 750 1000 1250
-
-##rockform_e
-
-lod_curve 400 750 1000 1250
-
-##rockform_d
-
-lod_curve 400 750 1000 1250
-
-##rockform_a
-
-lod_curve 400 750 1000 1250
-
-##trhev_f_head_d
-
-lod_curve 15 30 59
-
-##ncmed_m_head_b
-
-lod_curve 15 30 59
-
-##ncmed_m_head_e
-
-lod_curve 15 30 59
-
-##ncmhevh
-
-lod_curve 20 35 45 60 50 60 70
-
-##nclite_m_head_d
-
-lod_curve 15 30 59
-
-##ncfmedh
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbcreation
-
-lod_curve 600
-
-##rockform_b
-
-lod_curve 400 750 1000 1250
-
-##orb_hangar_shudders_mesh
-
-lod_curve 600
-
-##Lightning_tread_debris
-
-lod_curve 250 20 30 40 50 60 70
-
-##male_head_b
-
-lod_curve 15 30 59
-
-##vsmsih
-
-lod_curve 20 35 45 60 50 60 70
-
-##mbvs_q1
-
-lod_curve 200 300 400 500
-
-##trlite_f_head_d
-
-lod_curve 15 30 59
-
-##mbvs_e1
-
-lod_curve 100 200 300 400
-
-##nc_clmn_sm_corner
-
-lod_curve 300
-
-##tr_clmn_sm_corner
-
-lod_curve 300
-
-##rockformation12
-
-lod_curve 200 400 700 1000
-
-##mbtr_p1
-
-lod_curve 100 200 300 400
-
-##trfsthh
-
-lod_curve 20 35 45 60 50 60 70
-
-##vsfliteh
-
-lod_curve 20 35 45 60 50 60 70
-
-##rock_formationr
-
-lod_curve 200 500 700 1000
-
-##earthshrubf
-
-lod_curve 10 25 50
-
-##mbnc_d4
-
-lod_curve 100 200 300 400
-
-##striker_missle
-
-lod_curve 40
-
-##twomanassaultbuggy
-
-lod_curve 20 45 90 125 200 350 700
-
-##rock_formation19
-
-lod_curve 200 500 700 1000
-
-##rock_formation13
-
-lod_curve 200 500 700 1000
-
-##rock_formation15
-
-lod_curve 200 500 700 1000
-
-##rock_formation18
-
-lod_curve 200 500 700 1000
-
-##20mm_cannon_harasser
-
-lod_curve 10 20 30
-
-##mbtr_r3
-
-lod_curve 100 200 300 400
-
-##mbtr_p2
-
-lod_curve 100 200 300 400
-
-##mbnc_e1
-
-lod_curve 100 200 300 400
-
-##bridge_pillar
-
-lod_curve 50 250 500
-
-##mbnc_q2
-
-lod_curve 500 600 700 800
-
-##desertrockm
-
-lod_curve 80 330 500
-
-##rock_formationn
-
-lod_curve 200 500 700 1000
-
-##test_scene
-
-lod_curve 2048 5000
-
-##mbtr_r4
-
-lod_curve 100 200 300 400
-
-##rock_formationo
-
-lod_curve 500 650 800 1000
-
-##rockform_q
-
-lod_curve 100 110 120 130
-
-##ncmed_f_head_d
-
-lod_curve 15 30 59
-
-##mbtr_d2
-
-lod_curve 100 200 300 400
-
-##mbtr_d1
-
-lod_curve 100 200 300 400
-
-##mbtr_d4
-
-lod_curve 100 200 300 400
-
-##trsth_m_head_d
-
-lod_curve 15 30 59
-
-##vslite_f_head_d
-
-lod_curve 15 30 59
-
-##willow1test
-
-lod_curve 10
-
-##vshevh
-
-lod_curve 20 35 45 60 50 60 70
-
-##banner_mount_small
+##ods_sign
 
 lod_curve 1000
 
@@ -1176,25 +40,1177 @@ lod_curve 1000
 
 lod_curve 10 30 50 70
 
-##ods_sign
+##banner_mount_small
 
 lod_curve 1000
 
-##vrtb_sign
+##vshevh
+
+lod_curve 20 35 45 60 50 60 70
+
+##willow1test
+
+lod_curve 10
+
+##vslite_f_head_d
+
+lod_curve 15 30 59
+
+##trsth_m_head_d
+
+lod_curve 15 30 59
+
+##mbtr_d4
+
+lod_curve 100 200 300 400
+
+##mbtr_d1
+
+lod_curve 100 200 300 400
+
+##mbtr_d2
+
+lod_curve 100 200 300 400
+
+##ncmed_f_head_d
+
+lod_curve 15 30 59
+
+##rockform_q
+
+lod_curve 100 110 120 130
+
+##rock_formationo
+
+lod_curve 500 650 800 1000
+
+##mbtr_r4
+
+lod_curve 100 200 300 400
+
+##test_scene
+
+lod_curve 2048 5000
+
+##rock_formationn
+
+lod_curve 200 500 700 1000
+
+##desertrockm
+
+lod_curve 80 330 500
+
+##mbnc_q2
+
+lod_curve 500 600 700 800
+
+##bridge_pillar
+
+lod_curve 50 250 500
+
+##mbnc_e1
+
+lod_curve 100 200 300 400
+
+##mbtr_p2
+
+lod_curve 100 200 300 400
+
+##mbtr_r3
+
+lod_curve 100 200 300 400
+
+##20mm_cannon_harasser
+
+lod_curve 10 20 30
+
+##rock_formation18
+
+lod_curve 200 500 700 1000
+
+##rock_formation15
+
+lod_curve 200 500 700 1000
+
+##rock_formation13
+
+lod_curve 200 500 700 1000
+
+##rock_formation19
+
+lod_curve 200 500 700 1000
+
+##twomanassaultbuggy
+
+lod_curve 20 45 90 125 200 350 700
+
+##striker_missle
+
+lod_curve 40
+
+##mbnc_d4
+
+lod_curve 100 200 300 400
+
+##earthshrubf
+
+lod_curve 10 25 50
+
+##rock_formationr
+
+lod_curve 200 500 700 1000
+
+##vsfliteh
+
+lod_curve 20 35 45 60 50 60 70
+
+##trfsthh
+
+lod_curve 20 35 45 60 50 60 70
+
+##mbtr_p1
+
+lod_curve 100 200 300 400
+
+##rockformation12
+
+lod_curve 200 400 700 1000
+
+##tr_clmn_sm_corner
+
+lod_curve 300
+
+##nc_clmn_sm_corner
+
+lod_curve 300
+
+##mbvs_e1
+
+lod_curve 100 200 300 400
+
+##trlite_f_head_d
+
+lod_curve 15 30 59
+
+##mbvs_q1
+
+lod_curve 200 300 400 500
+
+##vsmsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##male_head_b
+
+lod_curve 15 30 59
+
+##Lightning_tread_debris
+
+lod_curve 250 20 30 40 50 60 70
+
+##orb_hangar_shudders_mesh
+
+lod_curve 600
+
+##rockform_b
+
+lod_curve 400 750 1000 1250
+
+##mbcreation
+
+lod_curve 600
+
+##ncfmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##nclite_m_head_d
+
+lod_curve 15 30 59
+
+##ncmhevh
+
+lod_curve 20 35 45 60 50 60 70
+
+##ncmed_m_head_e
+
+lod_curve 15 30 59
+
+##ncmed_m_head_b
+
+lod_curve 15 30 59
+
+##trhev_f_head_d
+
+lod_curve 15 30 59
+
+##rockform_a
+
+lod_curve 400 750 1000 1250
+
+##rockform_d
+
+lod_curve 400 750 1000 1250
+
+##rockform_e
+
+lod_curve 400 750 1000 1250
+
+##rockform_i
+
+lod_curve 400 750 1000 1250
+
+##bunker_test
 
 lod_curve 1000
 
-##35mm_chaincannon
+##tide_in_test
 
-lod_curve 65 100 150
+lod_curve 1000
 
-##maelstrom_projectile_mesh
+##mbvs_p1
 
-lod_curve 15 30 75
+lod_curve 100 200 300 400
 
-##zipline_end
+##rockform_g
 
-lod_curve 15 45 60 80 100
+lod_curve 400 750 1000 1250
+
+##rockformation11
+
+lod_curve 200 400 700 1000
+
+##nchev_m_head_a
+
+lod_curve 15 30 59
+
+##mbtr_q4
+
+lod_curve 200 300 400 500
+
+##105mm_cannon_t
+
+lod_curve 50 150 300
+
+##ncfliteh
+
+lod_curve 20 35 45 60 50 60 70
+
+##ncmsthh
+
+lod_curve 20 35 45 60 50 60 70
+
+##vs_clmn_sm_corner
+
+lod_curve 300
+
+##frame_mb_garage_cstm
+
+lod_curve 300
+
+##mb_ramp_lights_sm
+
+lod_curve 400
+
+##trhev_dualcycler_l
+
+lod_curve 20 40 60
+
+##trhev_dualcycler_r
+
+lod_curve 20 40 60
+
+##earth_tree5
+
+lod_curve 100 600
+
+##desertrockhb
+
+lod_curve 35 85 120 500 500
+
+##vsmliteh
+
+lod_curve 20 35 45 60 25 30
+
+##female_head_a
+
+lod_curve 15 30 59
+
+##rockform_n
+
+lod_curve 400 750 1000 1250
+
+##mbtr_e2
+
+lod_curve 100 200 300 400
+
+##trfmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##ncmed_m_head_d
+
+lod_curve 15 30 59
+
+##rockform_o
+
+lod_curve 400 750 1000 1250
+
+##frame_mb_side
+
+lod_curve 500
+
+##orb_hangar_shudders
+
+lod_curve 500
+
+##desertrockn
+
+lod_curve 110 380 550
+
+##frame_mb_rotating1
+
+lod_curve 500
+
+##frame_mb_rotating2
+
+lod_curve 500
+
+##desertrockl
+
+lod_curve 80 300 500
+
+##rockform_f
+
+lod_curve 400 750 1000 1250
+
+##mbnc_d3
+
+lod_curve 100 200 300 400
+
+##frame_mb_garage
+
+lod_curve 300
+
+##ob_doors
+
+lod_curve 1000
+
+##mbvs_r3
+
+lod_curve 100 200 300 400
+
+##ncmmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##mbvs_r1
+
+lod_curve 100 200 300 400
+
+##arena1
+
+lod_curve 2048 5000
+
+##desertrockfb
+
+lod_curve 20 50 100 400 500
+
+##trhev_pounder_r
+
+lod_curve 20 40 60
+
+##arena3
+
+lod_curve 2048 5000
+
+##vsmmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##dome4
+
+lod_curve 2000 200 300 400 500 600 700
+
+##ncmed_f_head_a
+
+lod_curve 15 45 59
+
+##mbnc_p1
+
+lod_curve 100 200 300 400
+
+##mbnc_q3
+
+lod_curve 200 300 400 500
+
+##arena2
+
+lod_curve 2048 5000
+
+##trhev_pounder_l
+
+lod_curve 20 40 60
+
+##glaciertest
+
+lod_curve 500
+
+##hunterseeker_c
+
+lod_curve 15 50
+
+##trmed_f_head_a
+
+lod_curve 15 30 59
+
+##rockform_p
+
+lod_curve 400 750 1000 1250
+
+##rockform_r
+
+lod_curve 400 750 1000 1250
+
+##mbvs_d1
+
+lod_curve 100 200 300 400
+
+##tide_out_test
+
+lod_curve 1000
+
+##trmed_m_head_e
+
+lod_curve 15 30 59
+
+##nchev_m_head_e
+
+lod_curve 15 30 59
+
+##trlite_m_head_b
+
+lod_curve 15 30 59
+
+##desertshrubd
+
+lod_curve 20 30 300
+
+##trmliteh
+
+lod_curve 20 35 45 60 25 30
+
+##desertshrubh
+
+lod_curve 10 25 50
+
+##earthshruba
+
+lod_curve 10 25 50
+
+##rock_formation2
+
+lod_curve 200 500 700 1000
+
+##mbvs_r2
+
+lod_curve 100 200 300 400
+
+##nchev_m_head_c
+
+lod_curve 15 30 59
+
+##mbtr_e1
+
+lod_curve 100 200 300 400
+
+##mbvs_q4
+
+lod_curve 200 300 400 500
+
+##earthshrube
+
+lod_curve 10 25 50
+
+##rockformation_h
+
+lod_curve 400 750 1000 1250
+
+##mbvs_q3
+
+lod_curve 200 300 400 500
+
+##trmed_m_head_d
+
+lod_curve 15 30 59
+
+##vslite_m_head_e
+
+lod_curve 15 30 59
+
+##nchev_m_head_b
+
+lod_curve 15 30 59
+
+##rocket_launcher_reaver
+
+lod_curve 10 20 30
+
+##glaciertestb
+
+lod_curve 500
+
+##trlite_f_head_a
+
+lod_curve 15 30 59
+
+##vslite_f_head_a
+
+lod_curve 15 30 59
+
+##trsth_m_head_b
+
+lod_curve 15 30 59
+
+##desertshrubf
+
+lod_curve 10 25 50
+
+##mbvs_d2
+
+lod_curve 100 200 300 400
+
+##female_head_d
+
+lod_curve 15 30 59
+
+##nclite_f_head_d
+
+lod_curve 15 30 59
+
+##vslite_m_head_c
+
+lod_curve 15 30 59
+
+##nchev_f_head_d
+
+lod_curve 15 30 59
+
+##nclite_m_head_b
+
+lod_curve 15 30 59
+
+##trhev_f_head_a
+
+lod_curve 15 30 59
+
+##trhev_burster_r
+
+lod_curve 20 40 60
+
+##ncmed_m_head_c
+
+lod_curve 15 30 59
+
+##20mm_cannon_vanguard
+
+lod_curve 10 20 30
+
+##male_head_c
+
+lod_curve 15 30 59
+
+##trfsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##trlite_m_head_e
+
+lod_curve 15 30 59
+
+##male_head_a
+
+lod_curve 10 15 59
+
+##rock_formation17
+
+lod_curve 200 500 700 1000
+
+##rock_formation16
+
+lod_curve 200 500 700 1000
+
+##tech_banner_flag
+
+lod_curve 1000
+
+##volcanicshrub_a
+
+lod_curve 10 25 50
+
+##rockformation8
+
+lod_curve 200 400 700 1000
+
+##mbnc_q1
+
+lod_curve 200 300 400 500
+
+##earthshrubb
+
+lod_curve 10 25 50
+
+##rockformation10
+
+lod_curve 200 400 700 1000
+
+##volcanicshrub_b
+
+lod_curve 10 25 50
+
+##repair_bay
+
+lod_curve 200 300 400 500 600
+
+##mbncdoor
+
+lod_curve 35 75 100 200 300 400 500
+
+##earthshrubh
+
+lod_curve 10 25 50
+
+##nclite_m_head_e
+
+lod_curve 15 30 59
+
+##mbvs_d3
+
+lod_curve 100 200 300 400
+
+##trsth_f_head_a
+
+lod_curve 15 30 59
+
+##trsth_m_head_c
+
+lod_curve 15 30 59
+
+##mbnc_d2
+
+lod_curve 100 200 300 400
+
+##nc_magdisk
+
+lod_curve 600
+
+##nclite_f_head_a
+
+lod_curve 15 30 59
+
+##mbnc_d1
+
+lod_curve 100 200 300 400
+
+##desertrockhc
+
+lod_curve 40 90 125 400 500
+
+##trmsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##ef_torus
+
+lod_curve 200 20 30 40 50 60 70
+
+##desertshruba
+
+lod_curve 25 125 200
+
+##mbnc_p2
+
+lod_curve 100 200 300 400
+
+##dropship_des
+
+lod_curve 20 40 60 80 100 120 140
+
+##mbtr_q1
+
+lod_curve 200 300 400 500
+
+##mbvs_d4
+
+lod_curve 100 200 300 400
+
+##mbnc_r4
+
+lod_curve 100 200 300 400
+
+##trhev_m_head_e
+
+lod_curve 15 30 59
+
+##desertrockk
+
+lod_curve 80 250 360
+
+##mbnc_r3
+
+lod_curve 100 200 300 400
+
+##mbtr_r1
+
+lod_curve 100 200 300 400
+
+##desertrockq
+
+lod_curve 60 250 450
+
+##mbvs_e2
+
+lod_curve 100 200 300 400
+
+##earthshrubd
+
+lod_curve 20 30 60
+
+##rockformation9
+
+lod_curve 200 400 700 1000
+
+##mbtr_r2
+
+lod_curve 100 200 300 400
+
+##trmhevh
+
+lod_curve 20 35 45 60 50 60 70
+
+##nc_light_base
+
+lod_curve 300
+
+##desertrockfc
+
+lod_curve 40 70 110 300 500
+
+##trsth_f_head_d
+
+lod_curve 15 30 59
+
+##trmed_f_head_d
+
+lod_curve 15 30 59
+
+##desertshrubb
+
+lod_curve 29 60 300
+
+##nchev_m_head_d
+
+lod_curve 15 30 59
+
+##desertrockr
+
+lod_curve 70 210 350
+
+##trmmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##desertrocko
+
+lod_curve 80 320 550
+
+##mbtr_q3
+
+lod_curve 200 300 400 500
+
+##rock_formationf
+
+lod_curve 200 500 700 1000 50 60 70
+
+##rock_formationd
+
+lod_curve 200 500 700 1000
+
+##rock_formationb
+
+lod_curve 200 500 700 1000
+
+##desertrockfa
+
+lod_curve 20 50 75 100
+
+##ncfsthh
+
+lod_curve 20 35 45 60 50 60 70
+
+##trfliteh
+
+lod_curve 20 35 45 60 50 60 70
+
+##earthshrubc
+
+lod_curve 20 30 60
+
+##mbvs_p2
+
+lod_curve 100 200 300 400
+
+##desertrockp
+
+lod_curve 70 310 550
+
+##mbnc_r2
+
+lod_curve 100 200 300 400
+
+##force_blade
+
+lod_curve 2 8 10
+
+##rock_formation4
+
+lod_curve 200 500 700 1000
+
+##trlite_m_head_a
+
+lod_curve 15 30 59
+
+##vslite_m_head_a
+
+lod_curve 15 30 59
+
+##rock_formation3
+
+lod_curve 200 500 700 1000
+
+##vsfsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##trhev_burster_l
+
+lod_curve 20 40 60
+
+##desertshrubc
+
+lod_curve 20 60
+
+##rock_formationm
+
+lod_curve 200 500 700 1000
+
+##rock_formationq
+
+lod_curve 500 650 800 1000
+
+##rock_formation6
+
+lod_curve 200 500 700 1000
+
+##trhev_m_head_d
+
+lod_curve 15 30 59
+
+##desertshrubj
+
+lod_curve 5 15 50
+
+##mbnc_r1
+
+lod_curve 100 200 300 400
+
+##ncmsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##trlite_m_head_d
+
+lod_curve 15 30 59
+
+##earthshrubi
+
+lod_curve 10 25 50
+
+##trhev_m_head_c
+
+lod_curve 15 30 59
+
+##rockform_c
+
+lod_curve 400 750 1000 1250
+
+##earth_tree4
+
+lod_curve 100 600
+
+##trhev_m_head_a
+
+lod_curve 15 30 59
+
+##nchev_f_head_a
+
+lod_curve 10 30 59
+
+##trmed_m_head_b
+
+lod_curve 15 30 59
+
+##trsth_m_head_e
+
+lod_curve 15 30 59 40
+
+##rock_formationa
+
+lod_curve 200 500 700 1000
+
+##trmed_m_head_a
+
+lod_curve 15 30 59
+
+##rock_formatione
+
+lod_curve 500 650 800 1000
+
+##rock_formationc
+
+lod_curve 500 650 800 1000
+
+##domea
+
+lod_curve 600 2000
+
+##trsth_m_head_a
+
+lod_curve 15 30 59
+
+##trmsthh
+
+lod_curve 20 35 45 60 50 60 70
+
+##vslite_m_head_d
+
+lod_curve 15 30 59
+
+##bommer_he_mine
+
+lod_curve 25 45 60 40 50 60 70
+
+##vslite_m_head_b
+
+lod_curve 15 30 59
+
+##rockform_s
+
+lod_curve 400 750 1000 1250
+
+##rock_formation14
+
+lod_curve 200 500 700 1000
+
+##rockform_h
+
+lod_curve 400 750 1000 1250
+
+##mbtr_d3
+
+lod_curve 100 200 300 400
+
+##mbvs_r4
+
+lod_curve 100 200 300 400
+
+##threemanbuggy
+
+lod_curve 10 20 30 45 100 300 700
+
+##rockform_l
+
+lod_curve 400 750 1000 1250
+
+##rockform_k
+
+lod_curve 400 750 1000 1250
+
+##rockform_m
+
+lod_curve 400 750 1000 1250
+
+##mbnc_q4
+
+lod_curve 200 300 400 500
+
+##rock_formation5
+
+lod_curve 200 500 700 1000
+
+##rock_formationp
+
+lod_curve 200 500 700 1000
+
+##mbnc_e2
+
+lod_curve 100 200 300 400
+
+##mbht_wndw
+
+lod_curve 300
+
+##mb_ramp_lights
+
+lod_curve 400
+
+##volcanicshrub_c
+
+lod_curve 10 25 50
+
+##boomer_he_mine_trigger
+
+lod_curve 2 4 6 8 10 12 14
+
+##chaingun_lightning
+
+lod_curve 20 75 150
+
+##quad_assault_destroyed
+
+lod_curve 10 50 100 175
+
+##trmed_m_head_c
+
+lod_curve 15 30 59
+
+##rock_formation1
+
+lod_curve 200 500 700 1000
+
+##vsfmedh
+
+lod_curve 20 35 45 60 50 60 70
+
+##NCMliteh
+
+lod_curve 20 35 45 60 30 40
+
+##desertrockha
+
+lod_curve 40 90 125 400 500
+
+##ncfsih
+
+lod_curve 20 35 45 60 50 60 70
+
+##nclite_m_head_a
+
+lod_curve 15 30 59
+
+##rock_formation7
+
+lod_curve 200 500 700 1000
+
+##ncmed_m_head_a
+
+lod_curve 15 35 59
+
+##light_gunship
+
+lod_curve 15 80 150 250
+
+##trhev_m_head_b
+
+lod_curve 15 30 59
+
+##nclite_m_head_c
+
+lod_curve 15 30 59
+
+##trlite_m_head_c
+
+lod_curve 15 30 59
+
+##frame_mb_inside
+
+lod_curve 500
+
+##rock_formationg
+
+lod_curve 200 500 700 1000
+
+##game_table_effect
+
+lod_curve 500
+
+##volcanictreeb
+
+lod_curve 50 450 600
+
+##volcanictreec
+
+lod_curve 50 450 600
+
+##banner_mount
+
+lod_curve 1000
+
+##ap_shell_pack
+
+lod_curve 2 4 6 8 10 12 14
+
+##ap_ammo_pack
+
+lod_curve 1 3
+
+##meetingone_sign
+
+lod_curve 1000
+
+##meetingtwo_sign
+
+lod_curve 1000
+
+##meetingthree_sign
+
+lod_curve 1000
+
+##meetingfour_sign
+
+lod_curve 1000
+
+##hologram_base
+
+lod_curve 1000
+
+##meeting_sign
+
+lod_curve 1000
+
+##hologram_mosquito
+
+lod_curve 1000
+
+##vanu_sentry_turret_cabin
+
+lod_curve 15 30 40 50 60
+
+##sb_root
+
+lod_curve 15 30 45 60 100
+
+##ancient_door_frame
+
+lod_curve 50 90
+
+##ancient_garage_frame
+
+lod_curve 75 130
+
+##105mm_cannon_dropship
+
+lod_curve 10 35 55 70 200 600 700
 
 ##dome3
 
@@ -1652,9 +1668,25 @@ lod_curve 10 25 50
 
 lod_curve 5 15 50
 
+##crystals_vehicle_b
+
+lod_curve 24 75 300 350
+
+##crystals_energy_b
+
+lod_curve 24 74 300
+
+##crystals_health_b
+
+lod_curve 24 74 300
+
+##crystals_damage_b
+
+lod_curve 24 75 300
+
 ##stationaryteleportpad
 
-lod_curve 4 10 15 25 35 55 80
+lod_curve 6 16 30 42 100 160
 
 ##zipline
 
@@ -2192,6 +2224,34 @@ lod_curve 10 20 30 100
 
 lod_curve 800
 
+##scythe
+
+lod_curve 15 30 45
+
+##crystals_health_a
+
+lod_curve 12 30 300
+
+##crystals_damage_a
+
+lod_curve 12 30 300
+
+##crystals_energy_a
+
+lod_curve 12 30 300
+
+##crystals_repair_a
+
+lod_curve 12 30 300
+
+##crystals_vehicle_a
+
+lod_curve 12 30 300
+
+##flail_weapon
+
+lod_curve 10 20 30
+
 ##vanu_vehicle_creation_pad
 
 lod_curve 50 75 100 175 200
@@ -2203,6 +2263,10 @@ lod_curve 45 100
 ##ancient_door
 
 lod_curve 65 100 155
+
+##crystals_repair_b
+
+lod_curve 24 75 300
 
 ##rock_formations
 
@@ -2254,7 +2318,15 @@ lod_curve 10 20 30
 
 ##switchblade
 
-lod_curve 30 45 60 100
+lod_curve 15 30 45 60 100
+
+##router
+
+lod_curve 15 30 45 60 100
+
+##flail
+
+lod_curve 15 30 45 60 100
 
 ##vanguard_destroyed
 

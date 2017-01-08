@@ -25,7 +25,7 @@ km_addbinding "ctrl" "@GA_Crouch"
 
 km_addbinding "space" "@GA_Jump"
 
-km_addbinding "shift+g" "@GA_DropFlag"
+km_addbinding "shift+g" "@GA_DropSpecialItem"
 
 # Weapon Controls
 #----------------------------

@@ -1,0 +1,9 @@
+Markov,Dudenumber123142,0,0,sdkpls-01
+
+Markov,MrMonkey,0,0,sdkpls-01
+
+Markov,GothmogDoom,0,0,sdkpls-01
+
+Johari,TurinTurambar,2,0,sdkpls-02
+Johari,WildManoftheWoods,2,1,sdkpls-02
+Johari,clone56,2,0,sdkpls-02

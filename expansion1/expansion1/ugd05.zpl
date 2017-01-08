@@ -51,8 +51,10 @@ zip_end_path
 ################# ZIP PATH 6 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point    938.361    988.199    311.482
-zip_path_point    898.879    982.961    333.289
+zip_path_point    938.361    988.199    311.461
+zip_path_point    923.020    985.780    329.386
+zip_path_point    915.349    984.570    332.477
+zip_path_point    907.679    983.361    333.268
 zip_end_path
 ################# END ZIP PATH 6 #################
 
@@ -110,9 +112,9 @@ zip_end_path
 ################# ZIP PATH 13 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point    977.059    975.908    243.601
+zip_path_point    977.059    975.908    243.604
 zip_path_point    955.688    987.508    259.673
-zip_path_point    934.317    999.109    266.752
+zip_path_point    934.317    999.109    266.755
 zip_end_path
 ################# END ZIP PATH 13 #################
 
@@ -245,9 +247,11 @@ zip_end_path
 ################# ZIP PATH 27 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1029.812    887.350    314.680
-zip_path_point   1002.656    926.842    297.724
-zip_path_point    995.734    936.909    290.111
+zip_path_point   1022.812    888.350    314.687
+zip_path_point   1017.773    897.973    313.941
+zip_path_point   1012.734    907.596    309.402
+zip_path_point   1002.656    926.842    298.124
+zip_path_point    995.734    936.909    290.118
 zip_end_path
 ################# END ZIP PATH 27 #################
 
@@ -274,15 +278,15 @@ zip_end_path
 zip_begin_path
 zip_is_teleporter false
 zip_path_point   1046.508   1118.947    329.469
-zip_path_point   1073.270   1100.700    352.924
-zip_path_point   1074.608   1099.788    353.751
+zip_path_point   1060.289   1101.823    351.796
+zip_path_point   1072.008   1099.988    353.750
 zip_end_path
 ################# END ZIP PATH 30 #################
 
 ################# ZIP PATH 31 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1047.269    876.831    258.896
+zip_path_point   1048.769    877.431    258.896
 zip_path_point   1025.900    919.197    256.184
 zip_path_point   1004.233    963.463    243.606
 zip_end_path
@@ -313,10 +317,10 @@ zip_end_path
 ################# ZIP PATH 34 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1055.905   1160.678    276.091
+zip_path_point   1055.905   1160.678    276.084
 zip_path_point   1045.246   1178.080    272.165
 zip_path_point   1034.588   1195.482    249.548
-zip_path_point   1026.775   1204.718    247.271
+zip_path_point   1026.775   1204.718    247.264
 zip_end_path
 ################# END ZIP PATH 34 #################
 
@@ -350,7 +354,7 @@ zip_end_path
 ################# ZIP PATH 38 #################
 zip_begin_path
 zip_is_teleporter true
-zip_path_point   1074.568    852.858    246.044
+zip_path_point   1070.568    856.858    246.887
 zip_path_point   1082.745    845.000    253.590
 zip_end_path
 ################# END ZIP PATH 38 #################
@@ -358,18 +362,18 @@ zip_end_path
 ################# ZIP PATH 39 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1079.844    944.446    298.533
+zip_path_point   1079.844    944.446    298.545
 zip_path_point   1067.854    930.974    296.428
 zip_path_point   1058.565    910.402    271.726
-zip_path_point   1047.418    885.716    258.738
+zip_path_point   1053.718    878.816    258.909
 zip_end_path
 ################# END ZIP PATH 39 #################
 
 ################# ZIP PATH 40 #################
 zip_begin_path
-zip_is_teleporter false
-zip_path_point   1079.369    865.469    314.642
-zip_path_point   1080.588    868.474    346.814
+zip_is_teleporter true
+zip_path_point   1079.369    865.469    314.138
+zip_path_point   1080.588    868.474    346.320
 zip_end_path
 ################# END ZIP PATH 40 #################
 
@@ -405,10 +409,10 @@ zip_end_path
 ################# ZIP PATH 44 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1105.737    792.054    198.811
+zip_path_point   1105.737    792.054    198.812
 zip_path_point   1070.649    827.286    214.800
 zip_path_point   1054.607    839.119    226.703
-zip_path_point   1038.566    850.953    230.211
+zip_path_point   1038.566    850.953    230.212
 zip_end_path
 ################# END ZIP PATH 44 #################
 
@@ -416,7 +420,7 @@ zip_end_path
 zip_begin_path
 zip_is_teleporter true
 zip_path_point   1116.130   1100.883    144.660
-zip_path_point   1110.411   1100.113    158.852
+zip_path_point   1110.411   1100.113    158.152
 zip_end_path
 ################# END ZIP PATH 45 #################
 
@@ -521,9 +525,10 @@ zip_end_path
 ################# ZIP PATH 56 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1146.091   1104.100    226.954
-zip_path_point   1154.821   1054.661    232.050
-zip_path_point   1155.672   1045.725    235.574
+zip_path_point   1146.091   1104.100    226.955
+zip_path_point   1153.881   1075.162    231.716
+zip_path_point   1157.777   1060.694    233.893
+zip_path_point   1161.672   1046.225    235.775
 zip_end_path
 ################# END ZIP PATH 56 #################
 
@@ -589,9 +594,11 @@ zip_end_path
 ################# ZIP PATH 63 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1217.729    984.917    320.691
+zip_path_point   1218.329    982.117    321.931
 zip_path_point   1167.462   1031.490    333.463
-zip_path_point   1104.513   1089.519    353.761
+zip_path_point   1135.987   1060.504    343.613
+zip_path_point   1120.250   1075.012    352.689
+zip_path_point   1107.313   1084.519    353.252
 zip_end_path
 ################# END ZIP PATH 63 #################
 
@@ -728,9 +735,9 @@ zip_end_path
 ################# ZIP PATH 77 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1101.112   1092.318    159.280
+zip_path_point   1101.112   1092.318    158.580
 zip_path_point   1043.900   1067.370    165.921
-zip_path_point    986.689   1042.422    164.510
+zip_path_point    986.689   1042.422    164.511
 zip_end_path
 ################# END ZIP PATH 77 #################
 
@@ -1001,8 +1008,8 @@ zip_end_path
 ################# ZIP PATH 106 #################
 zip_begin_path
 zip_is_teleporter true
-zip_path_point   1194.756    855.428    163.293
-zip_path_point   1186.752    855.411    180.733
+zip_path_point   1194.756    855.428    162.800
+zip_path_point   1186.752    855.411    180.226
 zip_end_path
 ################# END ZIP PATH 106 #################
 
@@ -1017,10 +1024,10 @@ zip_end_path
 ################# ZIP PATH 108 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1022.699   1016.759    175.791
+zip_path_point   1022.699   1016.759    176.297
 zip_path_point   1059.517    982.522    168.496
 zip_path_point   1096.335    948.284    159.955
-zip_path_point   1133.154    914.047    149.961
+zip_path_point   1133.154    914.047    150.466
 zip_end_path
 ################# END ZIP PATH 108 #################
 
@@ -1043,20 +1050,20 @@ zip_end_path
 ################# ZIP PATH 111 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1195.134   1025.819    223.810
-zip_path_point   1196.763   1005.379    221.128
+zip_path_point   1195.134   1025.819    224.313
+zip_path_point   1196.763   1005.379    221.528
 zip_path_point   1198.393    984.938    196.447
 zip_path_point   1201.652    944.057    167.843
-zip_path_point   1202.630    931.792    157.180
+zip_path_point   1202.630    931.792    157.677
 zip_end_path
 ################# END ZIP PATH 111 #################
 
 ################# ZIP PATH 112 #################
 zip_begin_path
 zip_is_teleporter false
-zip_path_point   1195.142   1055.611    223.810
+zip_path_point   1195.142   1055.611    224.310
 zip_path_point   1176.148   1102.906    226.827
-zip_path_point   1167.582   1124.236    226.448
+zip_path_point   1167.582   1124.236    226.950
 zip_end_path
 ################# END ZIP PATH 112 #################
 
@@ -1067,5 +1074,482 @@ zip_path_point   1187.101   1041.722    223.810
 zip_path_point   1187.004   1030.267    230.470
 zip_end_path
 ################# END ZIP PATH 113 #################
+
+################# ZIP PATH 114 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1007.547    268.934    243.110
+zip_path_point   1007.527    292.646    244.644
+zip_path_point   1018.508    316.357    244.279
+zip_path_point   1024.908    330.770    243.857
+zip_path_point   1035.909    347.383    243.140
+zip_end_path
+################# END ZIP PATH 114 #################
+
+################# ZIP PATH 115 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1068.890    344.904    243.152
+zip_path_point   1070.937    349.779    243.278
+zip_path_point   1072.784    354.654    243.921
+zip_path_point   1077.728    380.002    237.944
+zip_path_point   1076.673    405.351    231.766
+zip_path_point   1073.449    444.349    228.360
+zip_path_point   1075.437    463.847    225.656
+zip_path_point   1075.625    483.346    225.553
+zip_path_point   1076.013    534.043    210.998
+zip_path_point   1075.593    583.763    198.865
+zip_path_point   1072.743    599.762    185.092
+zip_end_path
+################# END ZIP PATH 115 #################
+
+################# ZIP PATH 116 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1049.463    621.931    183.141
+zip_path_point   1053.439    640.477    184.404
+zip_path_point   1058.226    649.750    184.889
+zip_path_point   1063.214    659.024    185.773
+zip_path_point   1070.682    677.638    184.480
+zip_path_point   1070.351    696.253    182.787
+zip_path_point   1075.419    712.467    181.094
+zip_path_point   1072.688    730.282    177.101
+zip_end_path
+################# END ZIP PATH 116 #################
+
+################# ZIP PATH 117 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    993.254    456.810    223.200
+zip_path_point   1005.741    456.241    223.700
+zip_path_point   1011.984    455.957    223.700
+zip_path_point   1018.228    455.673    223.200
+zip_end_path
+################# END ZIP PATH 117 #################
+
+################# ZIP PATH 118 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    960.308    504.697    218.191
+zip_path_point    938.836    502.633    219.836
+zip_path_point    929.464    487.568    219.381
+zip_path_point    919.607    494.021    219.521
+zip_path_point    919.542    520.634    222.656
+zip_path_point    919.478    547.248    223.790
+zip_path_point    938.214    551.461    223.725
+zip_path_point    967.915    554.863    223.617
+zip_path_point    967.766    571.564    223.363
+zip_path_point    966.692    580.615    223.236
+zip_path_point    952.817    588.865    223.201
+zip_end_path
+################# END ZIP PATH 118 #################
+
+################# ZIP PATH 119 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    941.828    613.476    223.235
+zip_path_point    925.918    616.335    223.995
+zip_path_point    920.563    629.564    227.029
+zip_path_point    921.008    642.794    228.864
+zip_path_point    934.830    647.518    228.225
+zip_end_path
+################# END ZIP PATH 119 #################
+
+################# ZIP PATH 120 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    948.435    649.569    228.260
+zip_path_point    952.455    664.020    228.749
+zip_path_point    956.475    678.470    228.240
+zip_end_path
+################# END ZIP PATH 120 #################
+
+################# ZIP PATH 121 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    942.908    710.963    233.184
+zip_path_point    936.267    720.101    235.096
+zip_path_point    936.451    734.912    237.896
+zip_path_point    922.235    750.819    238.936
+zip_path_point    922.627    767.772    243.356
+zip_path_point    922.219    784.725    243.576
+zip_path_point    921.702    787.641    243.204
+zip_end_path
+################# END ZIP PATH 121 #################
+
+################# ZIP PATH 122 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1111.150    207.047    243.140
+zip_path_point   1157.929    227.358    243.888
+zip_path_point   1204.708    247.669    243.885
+zip_path_point   1209.294    249.660    243.140
+zip_end_path
+################# END ZIP PATH 122 #################
+
+################# ZIP PATH 123 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1198.789    297.547    243.150
+zip_path_point   1197.337    322.502    247.098
+zip_path_point   1197.485    347.457    249.860
+zip_path_point   1197.781    397.368    264.825
+zip_path_point   1197.277    447.279    277.090
+zip_path_point   1197.109    463.915    281.276
+zip_path_point   1197.370    477.616    283.749
+zip_path_point   1196.881    486.424    283.142
+zip_end_path
+################# END ZIP PATH 123 #################
+
+################# ZIP PATH 124 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1202.583    536.019    283.140
+zip_path_point   1204.130    561.193    285.171
+zip_path_point   1204.677    586.368    286.707
+zip_path_point   1202.824    611.543    287.818
+zip_path_point   1191.372    636.718    288.528
+zip_path_point   1179.116    659.424    288.253
+zip_path_point   1170.564    676.207    286.677
+zip_path_point   1170.612    692.990    284.700
+zip_path_point   1173.108    726.557    282.450
+zip_end_path
+################# END ZIP PATH 124 #################
+
+################# ZIP PATH 125 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1769.642    876.984    243.130
+zip_path_point   1724.537    898.566    244.689
+zip_path_point   1701.985    909.357    243.140
+zip_end_path
+################# END ZIP PATH 125 #################
+
+################# ZIP PATH 126 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1687.120    945.911    241.987
+zip_path_point   1635.308    946.216    231.890
+zip_path_point   1583.497    970.921    230.900
+zip_path_point   1575.821    972.773    223.147
+zip_end_path
+################# END ZIP PATH 126 #################
+
+################# ZIP PATH 127 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1574.066    944.007    223.149
+zip_path_point   1564.260    943.102    223.317
+zip_path_point   1539.255    938.254    217.963
+zip_path_point   1514.250    939.205    212.809
+zip_path_point   1489.735    940.042    206.053
+zip_path_point   1464.820    941.279    198.696
+zip_path_point   1416.191    944.553    190.383
+zip_path_point   1367.161    943.427    184.270
+zip_path_point   1349.510    950.758    178.700
+zip_end_path
+################# END ZIP PATH 127 #################
+
+################# ZIP PATH 128 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1844.368    962.199    243.290
+zip_path_point   1843.209    986.147    246.165
+zip_path_point   1826.049   1030.095    248.742
+zip_path_point   1813.796   1045.782    243.140
+zip_end_path
+################# END ZIP PATH 128 #################
+
+################# ZIP PATH 129 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1770.828   1066.209    243.140
+zip_path_point   1726.199   1088.756    243.877
+zip_path_point   1703.885   1100.029    243.140
+zip_end_path
+################# END ZIP PATH 129 #################
+
+################# ZIP PATH 130 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1706.104   1133.887    243.158
+zip_path_point   1681.993   1139.631    252.471
+zip_path_point   1657.881   1141.375    259.707
+zip_path_point   1609.657   1138.862    279.520
+zip_path_point   1593.980   1137.995    283.415
+zip_path_point   1577.906   1137.772    284.225
+zip_path_point   1561.433   1132.349    283.158
+zip_end_path
+################# END ZIP PATH 130 #################
+
+################# ZIP PATH 131 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1551.103   1093.186    283.144
+zip_path_point   1526.704   1077.822    287.951
+zip_path_point   1502.305   1068.658    289.866
+zip_path_point   1480.834   1067.718    294.486
+zip_path_point   1459.363   1067.777    299.906
+zip_path_point   1443.772   1069.810    303.887
+zip_path_point   1399.830   1066.129    303.654
+zip_end_path
+################# END ZIP PATH 131 #################
+
+################# ZIP PATH 132 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1222.883   1155.354    310.379
+zip_path_point   1233.227   1169.735    309.998
+zip_path_point   1229.371   1162.916    262.124
+zip_path_point   1235.989   1170.630    212.147
+zip_path_point   1240.919   1176.377    172.496
+zip_end_path
+################# END ZIP PATH 132 #################
+
+################# ZIP PATH 133 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1175.587   1239.146    173.633
+zip_path_point   1171.886   1262.498    181.983
+zip_path_point   1171.393   1276.120    185.559
+zip_path_point   1170.751   1301.419    189.130
+zip_path_point   1171.108   1326.718    195.702
+zip_path_point   1171.043   1376.342    206.614
+zip_path_point   1172.179   1425.966    221.727
+zip_path_point   1170.049   1436.669    223.181
+zip_path_point   1171.120   1447.372    223.154
+zip_end_path
+################# END ZIP PATH 133 #################
+
+################# ZIP PATH 134 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1166.209   1497.571    223.142
+zip_path_point   1162.570   1547.911    228.443
+zip_path_point   1165.472   1588.874    235.421
+zip_path_point   1165.974   1629.837    243.799
+zip_path_point   1189.267   1681.165    247.254
+zip_path_point   1198.153   1698.932    244.947
+zip_path_point   1193.839   1716.699    243.142
+zip_end_path
+################# END ZIP PATH 134 #################
+
+################# ZIP PATH 135 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1158.399   1784.486    243.840
+zip_path_point   1111.506   1772.128    245.649
+zip_path_point   1065.550   1750.117    243.140
+zip_end_path
+################# END ZIP PATH 135 #################
+
+################# ZIP PATH 136 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1045.720   1705.070    243.140
+zip_path_point   1022.973   1660.539    243.887
+zip_path_point   1014.330   1643.617    243.140
+zip_end_path
+################# END ZIP PATH 136 #################
+
+################# ZIP PATH 137 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    978.861   1641.870    243.158
+zip_path_point    970.657   1593.573    258.040
+zip_path_point    971.092   1584.880    260.944
+zip_path_point    973.550   1521.127    280.863
+zip_path_point    973.104   1507.604    283.349
+zip_path_point    979.459   1494.081    283.158
+zip_end_path
+################# END ZIP PATH 137 #################
+
+################# ZIP PATH 138 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1027.608   1471.856    283.140
+zip_path_point   1044.922   1421.966    285.242
+zip_path_point   1042.036   1372.076    292.602
+zip_path_point   1042.750   1322.185    291.763
+zip_path_point   1040.202   1282.273    281.510
+zip_end_path
+################# END ZIP PATH 138 #################
+
+################# ZIP PATH 139 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1140.673    973.599    176.311
+zip_path_point   1138.394   1020.478    196.964
+zip_path_point   1136.116   1067.357    216.913
+zip_path_point   1135.446   1081.145    225.280
+zip_path_point   1134.776   1094.932    226.993
+zip_end_path
+################# END ZIP PATH 139 #################
+
+################# ZIP PATH 140 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1150.479    968.340    176.290
+zip_path_point   1170.472    984.147    176.490
+zip_path_point   1190.466    999.954    176.390
+zip_path_point   1230.453   1031.568    174.132
+zip_path_point   1253.974   1050.164    172.500
+zip_end_path
+################# END ZIP PATH 140 #################
+
+################# ZIP PATH 141 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1106.342   1106.197    226.953
+zip_path_point   1054.565   1048.430    236.347
+zip_path_point   1002.788    990.663    243.553
+zip_end_path
+################# END ZIP PATH 141 #################
+
+################# ZIP PATH 142 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    984.255   1002.808    243.548
+zip_path_point    985.338   1010.520    242.265
+zip_path_point    986.422   1018.232    227.484
+zip_path_point    988.588   1033.656    203.920
+zip_path_point    992.666   1062.689    163.678
+zip_end_path
+################# END ZIP PATH 142 #################
+
+################# ZIP PATH 143 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1116.114   1046.375    177.272
+zip_path_point   1147.410   1042.571    218.111
+zip_path_point   1153.853   1041.788    233.890
+zip_path_point   1160.296   1041.005    235.778
+zip_end_path
+################# END ZIP PATH 143 #################
+
+################# ZIP PATH 144 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    991.811    888.539    243.479
+zip_path_point   1039.377    875.966    257.645
+zip_path_point   1046.137    873.294    258.907
+zip_end_path
+################# END ZIP PATH 144 #################
+
+################# ZIP PATH 145 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1098.527    830.352    258.884
+zip_path_point   1102.497    826.527    258.518
+zip_path_point   1106.468    822.701    238.747
+zip_end_path
+################# END ZIP PATH 145 #################
+
+################# ZIP PATH 146 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1094.341    828.580    258.888
+zip_path_point   1089.367    823.039    258.018
+zip_path_point   1085.594    827.098    235.645
+zip_path_point   1076.848    825.616    212.900
+zip_path_point   1059.355    822.653    166.153
+zip_path_point   1055.157    821.942    152.605
+zip_end_path
+################# END ZIP PATH 146 #################
+
+################# ZIP PATH 147 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1101.107    835.443    258.890
+zip_path_point   1105.861    841.292    255.843
+zip_path_point   1108.616    842.741    235.297
+zip_path_point   1115.326    847.639    212.204
+zip_path_point   1129.545    859.835    164.770
+zip_path_point   1130.939    861.031    157.680
+zip_end_path
+################# END ZIP PATH 147 #################
+
+################# ZIP PATH 148 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1118.348    875.124    150.477
+zip_path_point   1118.914    870.112    157.173
+zip_path_point   1119.479    865.099    157.678
+zip_end_path
+################# END ZIP PATH 148 #################
+
+################# ZIP PATH 149 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1205.550   1041.130    224.344
+zip_path_point   1229.145   1037.313    224.954
+zip_path_point   1252.740   1033.497    207.297
+zip_path_point   1299.930   1025.864    189.531
+zip_path_point   1336.016   1020.029    174.386
+zip_end_path
+################# END ZIP PATH 149 #################
+
+################# ZIP PATH 150 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1122.960   1201.699    226.949
+zip_path_point   1121.853   1205.357    226.351
+zip_path_point   1120.746   1209.015    223.454
+zip_path_point   1118.532   1215.130    206.461
+zip_path_point   1114.104   1228.561    186.473
+zip_path_point   1111.624   1236.082    172.922
+zip_end_path
+################# END ZIP PATH 150 #################
+
+################# ZIP PATH 151 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1058.953   1136.079    226.999
+zip_path_point   1036.782   1130.339    224.438
+zip_path_point   1014.612   1124.599    207.629
+zip_path_point    999.536   1120.695    199.386
+zip_end_path
+################# END ZIP PATH 151 #################
+
+################# ZIP PATH 152 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    980.433   1115.376    198.363
+zip_path_point    969.648   1109.169    197.774
+zip_path_point    958.864   1102.962    195.793
+zip_end_path
+################# END ZIP PATH 152 #################
+
+################# ZIP PATH 153 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point    904.040   1103.835    185.728
+zip_path_point    892.316   1095.630    184.780
+zip_path_point    886.454   1091.528    183.762
+zip_path_point    883.524   1089.477    183.053
+zip_path_point    880.593   1087.427    182.544
+zip_path_point    876.550   1084.598    182.144
+zip_path_point    835.315   1055.742    171.248
+zip_end_path
+################# END ZIP PATH 153 #################
+
+################# ZIP PATH 154 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1133.265    778.345    198.774
+zip_path_point   1129.872    764.779    194.804
+zip_path_point   1126.478    751.214    169.034
+zip_end_path
+################# END ZIP PATH 154 #################
+
+################# ZIP PATH 155 #################
+zip_begin_path
+zip_is_teleporter false
+zip_path_point   1108.775    811.315    198.781
+zip_path_point   1106.722    813.770    198.054
+zip_path_point   1104.669    816.226    175.432
+zip_path_point   1102.963    817.937    153.083
+zip_end_path
+################# END ZIP PATH 155 #################
 
 ################################################

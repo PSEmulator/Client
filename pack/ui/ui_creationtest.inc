@@ -4,7 +4,7 @@
 <Scrollbar Control='ObjectList' Location='230,90' ScrollExtent='30,370' Size='30,370' Style='/VScrollbar.style'/>
 <Button LocalText='[@Create]' Location='50,470' Name='Create' OnPress='fs_create Parent.ObjectList.SelectedItem.Name
 ui_popstate' ScrollExtent='200,32' Size='200,32' Style='/Buttons.Default.style'>@Create</Button>
-<Listbox DataSource='WorldObjects' Location='50,90' Name='ObjectList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,1125' Size='180,370' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='WorldObjects' Location='50,90' Name='ObjectList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,1110' Size='180,370' Style='/Listboxes.Generic.style'/>
 <Text Color='#FFFF00' Font='/Fonts.DefaultFont' LocalText='Go To UI Screen' Location='260,70' Name='Screens' ScrollExtent='180,20' Size='180,20'>Go To UI Screen</Text>
 <Scrollbar Control='ScreenList' Location='440,90' ScrollExtent='30,370' Size='30,370' Style='/VScrollbar.style'/>
 <Listbox DataSource='UIScreens' Location='260,90' Name='ScreenList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,370' Size='180,370' Style='/Listboxes.Generic.style'/>

@@ -1,5 +1,31 @@
 #ap_begin
 
+##fp_flail_targeting_laser
+
+ap_add fp_flail_targeting_laser_equip equip false none play_once 0
+ap_audio fp_flail_targeting_laser_equip 64 30 0
+ap_add fp_flail_targeting_laser_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_flail_targeting_laser_fire1_end 64 30 0
+ap_add fp_flail_targeting_laser_fire1_idle fire1_idle false none loop 0
+ap_audio fp_flail_targeting_laser_fire1_idle 64 30 0
+ap_add fp_flail_targeting_laser_fire1_start fire1_start false none play_once_hold 0
+ap_audio fp_flail_targeting_laser_fire1_start 64 30 0
+ap_add fp_flail_targeting_laser_fire_end fire_end false none play_once 0
+ap_audio fp_flail_targeting_laser_fire_end 64 30 0
+ap_add fp_flail_targeting_laser_fire_idle fire_idle false none loop 0
+ap_audio fp_flail_targeting_laser_fire_idle 64 30 0
+ap_add fp_flail_targeting_laser_fire_start fire_start false none play_once 0
+ap_audio fp_flail_targeting_laser_fire_start 64 30 0
+ap_add fp_flail_targeting_laser_holster holster false none play_once 0
+ap_audio fp_flail_targeting_laser_holster 64 30 0
+ap_add fp_flail_targeting_laser_idle idle false none loop 0
+ap_audio fp_flail_targeting_laser_idle 64 30 0
+ap_add fp_flail_targeting_laser_run run false none loop 0
+ap_audio fp_flail_targeting_laser_run 64 30 0
+ap_add fp_flail_targeting_laser_walk walk false none loop 0
+ap_audio fp_flail_targeting_laser_walk 64 30 0
+ap_end
+
 ##vanu_spawn_room_mechanism
 
 ap_add vanu_spawn_room_mechanism_idle idle false none loop 0
@@ -785,9 +811,10 @@ ap_add gen_rigging_running running false none play_once_hold 0
 ap_audio gen_rigging_running 64 30 0
 ap_end
 
-##spitfire
+##150mm_cannon_vanguard
 
-ap_add spitfire_deploy deploy false none play_once_hold 0
+ap_add 150mm_cannon_vanguard_fire01 fire01 false none play_once 0
+ap_audio 150mm_cannon_vanguard_fire01 64 30 0
 ap_end
 
 ##nc_hev_sparrow
@@ -796,10 +823,9 @@ ap_add nc_hev_sparrow_fire01 fire01 false none play_once 0
 ap_audio nc_hev_sparrow_fire01 64 30 0
 ap_end
 
-##150mm_cannon_vanguard
+##spitfire
 
-ap_add 150mm_cannon_vanguard_fire01 fire01 false none play_once 0
-ap_audio 150mm_cannon_vanguard_fire01 64 30 0
+ap_add spitfire_deploy deploy false none play_once_hold 0
 ap_end
 
 ##warpgate_cavern
@@ -1505,37 +1531,37 @@ ap_add ncflite_death03_rifle death03_rifle false none play_once_hold 0
 ap_audio ncflite_death03_rifle 64 30 0
 ap_add ncflite_death03_rifle_crouch death03_rifle_crouch false none play_once_hold 0
 ap_audio ncflite_death03_rifle_crouch 64 30 0
-ap_add ncflite_death04_base death04_base false none play_once 0
+ap_add ncflite_death04_base death04_base false none play_once_hold 0
 ap_audio ncflite_death04_base 64 30 0
-ap_add ncflite_death04_base_crouch death04_base_crouch false none play_once 0
+ap_add ncflite_death04_base_crouch death04_base_crouch false none play_once_hold 0
 ap_audio ncflite_death04_base_crouch 64 30 0
 ap_add ncflite_death04_low death04_low false none play_once_hold 0
 ap_audio ncflite_death04_low 64 30 0
 ap_add ncflite_death04_low_crouch death04_low_crouch false none play_once_hold 0
 ap_audio ncflite_death04_low_crouch 64 30 0
-ap_add ncflite_death04_pistol death04_pistol false none play_once 0
+ap_add ncflite_death04_pistol death04_pistol false none play_once_hold 0
 ap_audio ncflite_death04_pistol 64 30 0
-ap_add ncflite_death04_pistol_crouch death04_pistol_crouch false none play_once 0
+ap_add ncflite_death04_pistol_crouch death04_pistol_crouch false none play_once_hold 0
 ap_audio ncflite_death04_pistol_crouch 64 30 0
-ap_add ncflite_death04_rifle death04_rifle false none play_once 0
+ap_add ncflite_death04_rifle death04_rifle false none play_once_hold 0
 ap_audio ncflite_death04_rifle 64 30 0
-ap_add ncflite_death04_rifle_crouch death04_rifle_crouch false none play_once 0
+ap_add ncflite_death04_rifle_crouch death04_rifle_crouch false none play_once_hold 0
 ap_audio ncflite_death04_rifle_crouch 64 30 0
-ap_add ncflite_death05_base death05_base false none play_once 0
+ap_add ncflite_death05_base death05_base false none play_once_hold 0
 ap_audio ncflite_death05_base 64 30 0
-ap_add ncflite_death05_base_crouch death05_base_crouch false none play_once 0
+ap_add ncflite_death05_base_crouch death05_base_crouch false none play_once_hold 0
 ap_audio ncflite_death05_base_crouch 64 30 0
 ap_add ncflite_death05_low death05_low false none play_once_hold 0
 ap_audio ncflite_death05_low 64 30 0
 ap_add ncflite_death05_low_crouch death05_low_crouch false none play_once_hold 0
 ap_audio ncflite_death05_low_crouch 64 30 0
-ap_add ncflite_death05_pistol death05_pistol false none play_once 0
+ap_add ncflite_death05_pistol death05_pistol false none play_once_hold 0
 ap_audio ncflite_death05_pistol 64 30 0
-ap_add ncflite_death05_pistol_crouch death05_pistol_crouch false none play_once 0
+ap_add ncflite_death05_pistol_crouch death05_pistol_crouch false none play_once_hold 0
 ap_audio ncflite_death05_pistol_crouch 64 30 0
-ap_add ncflite_death05_rifle death05_rifle false none play_once 0
+ap_add ncflite_death05_rifle death05_rifle false none play_once_hold 0
 ap_audio ncflite_death05_rifle 64 30 0
-ap_add ncflite_death05_rifle_crouch death05_rifle_crouch false none play_once 0
+ap_add ncflite_death05_rifle_crouch death05_rifle_crouch false none play_once_hold 0
 ap_audio ncflite_death05_rifle_crouch 64 30 0
 ap_add ncflite_emote_base_bow emote_base_bow false none play_once 0
 ap_audio ncflite_emote_base_bow 64 30 0
@@ -1747,9 +1773,9 @@ ap_add ncflite_equip_rifle_right equip_rifle_right false none play_once 0.50
 ap_audio ncflite_equip_rifle_right 64 30 0
 ap_add ncflite_equip_rifle_right_crouch equip_rifle_right_crouch false none play_once 0.50
 ap_audio ncflite_equip_rifle_right_crouch 64 30 0
-ap_add ncflite_gettinghit_back gettinghit_back false none play_once 0
+ap_add ncflite_gettinghit_back gettinghit_back false none play_once_hold 0
 ap_audio ncflite_gettinghit_back 64 30 0
-ap_add ncflite_gettinghit_front gettinghit_front false none play_once 0
+ap_add ncflite_gettinghit_front gettinghit_front false none play_once_hold 0
 ap_audio ncflite_gettinghit_front 64 30 0
 ap_add ncflite_grenade_crouch_fire1 grenade_crouch_fire1 false none play_once 1.00
 ap_audio ncflite_grenade_crouch_fire1 64 30 0
@@ -1833,10 +1859,11 @@ ap_add ncflite_knife_fire3 knife_fire3 false none play_once 0
 ap_audio ncflite_knife_fire3 64 30 0
 ap_add ncflite_knife_holster knife_holster false none play_once 0
 ap_audio ncflite_knife_holster 64 30 0
-ap_add ncflite_l_bail_idle l_bail_idle false none play_once 0
+ap_add ncflite_l_bail_idle l_bail_idle false none loop 0
 ap_audio ncflite_l_bail_idle 64 30 0
-ap_add ncflite_l_bail_land l_bail_land false none play_once 0
+ap_add ncflite_l_bail_land l_bail_land false none play_once_hold 0
 ap_audio ncflite_l_bail_land 64 30 0
+ap_audio_callback ncflite_l_bail_land land
 ap_add ncflite_low low true none refpose9 0
 ap_audio ncflite_low 64 30 0
 ap_add ncflite_low_crouch low_crouch true none refpose9 0
@@ -1847,6 +1874,12 @@ ap_add ncflite_low_fire_crouch low_fire_crouch true none refpose9 0
 ap_audio ncflite_low_fire_crouch 64 30 0
 ap_add ncflite_mini_chaingun mini_chaingun true none refpose9 0
 ap_audio ncflite_mini_chaingun 64 30 0
+ap_add ncflite_module_charge_soldier_end module_charge_soldier_end false none play_once_hold 1.00
+ap_audio ncflite_module_charge_soldier_end 64 30 0
+ap_add ncflite_module_charge_soldier_idle module_charge_soldier_idle false none loop 0
+ap_audio ncflite_module_charge_soldier_idle 64 30 0
+ap_add ncflite_module_charge_soldier_start module_charge_soldier_start false none play_once_hold 1.00
+ap_audio ncflite_module_charge_soldier_start 64 30 0
 ap_add ncflite_pain01_base pain01_base true none refpose9 0
 ap_audio ncflite_pain01_base 64 30 0
 ap_add ncflite_pain01_base_crouch pain01_base_crouch true none play_once 0
@@ -1859,13 +1892,13 @@ ap_add ncflite_pain01_pistol pain01_pistol true none refpose9 0
 ap_audio ncflite_pain01_pistol 64 30 0
 ap_add ncflite_pain01_pistol_crouch pain01_pistol_crouch true none refpose9 0
 ap_audio ncflite_pain01_pistol_crouch 64 30 0
-ap_add ncflite_pain01_rifle pain01_rifle true none play_once 0
+ap_add ncflite_pain01_rifle pain01_rifle true none refpose9 0
 ap_audio ncflite_pain01_rifle 64 30 0
-ap_add ncflite_pain01_rifle_crouch pain01_rifle_crouch true none play_once 0
+ap_add ncflite_pain01_rifle_crouch pain01_rifle_crouch true none refpose9 0
 ap_audio ncflite_pain01_rifle_crouch 64 30 0
-ap_add ncflite_pain02_base pain02_base true none play_once 0
+ap_add ncflite_pain02_base pain02_base true none refpose9 0
 ap_audio ncflite_pain02_base 64 30 0
-ap_add ncflite_pain02_base_crouch pain02_base_crouch true none play_once 0
+ap_add ncflite_pain02_base_crouch pain02_base_crouch true none refpose9 0
 ap_audio ncflite_pain02_base_crouch 64 30 0
 ap_add ncflite_pain02_low pain02_low true none refpose9 0
 ap_audio ncflite_pain02_low 64 30 0
@@ -1875,13 +1908,13 @@ ap_add ncflite_pain02_pistol pain02_pistol true none refpose9 0
 ap_audio ncflite_pain02_pistol 64 30 0
 ap_add ncflite_pain02_pistol_crouch pain02_pistol_crouch true none refpose9 0
 ap_audio ncflite_pain02_pistol_crouch 64 30 0
-ap_add ncflite_pain02_rifle pain02_rifle true none play_once 0
+ap_add ncflite_pain02_rifle pain02_rifle true none refpose9 0
 ap_audio ncflite_pain02_rifle 64 30 0
-ap_add ncflite_pain02_rifle_crouch pain02_rifle_crouch true none play_once 0
+ap_add ncflite_pain02_rifle_crouch pain02_rifle_crouch true none refpose9 0
 ap_audio ncflite_pain02_rifle_crouch 64 30 0
-ap_add ncflite_pain03_base pain03_base true none play_once 0
+ap_add ncflite_pain03_base pain03_base true none refpose9 0
 ap_audio ncflite_pain03_base 64 30 0
-ap_add ncflite_pain03_base_crouch pain03_base_crouch true none play_once 0
+ap_add ncflite_pain03_base_crouch pain03_base_crouch true none refpose9 0
 ap_audio ncflite_pain03_base_crouch 64 30 0
 ap_add ncflite_pain03_low pain03_low true none refpose9 0
 ap_audio ncflite_pain03_low 64 30 0
@@ -1891,9 +1924,9 @@ ap_add ncflite_pain03_pistol pain03_pistol true none refpose9 0
 ap_audio ncflite_pain03_pistol 64 30 0
 ap_add ncflite_pain03_pistol_crouch pain03_pistol_crouch true none refpose9 0
 ap_audio ncflite_pain03_pistol_crouch 64 30 0
-ap_add ncflite_pain03_rifle pain03_rifle true none play_once 0
+ap_add ncflite_pain03_rifle pain03_rifle true none refpose9 0
 ap_audio ncflite_pain03_rifle 64 30 0
-ap_add ncflite_pain03_rifle_crouch pain03_rifle_crouch true none play_once 0
+ap_add ncflite_pain03_rifle_crouch pain03_rifle_crouch true none refpose9 0
 ap_audio ncflite_pain03_rifle_crouch 64 30 0
 ap_add ncflite_pistol pistol true none refpose9 0
 ap_audio ncflite_pistol 64 30 0
@@ -1907,6 +1940,7 @@ ap_add ncflite_r_bail_idle r_bail_idle false none loop 0
 ap_audio ncflite_r_bail_idle 64 30 0
 ap_add ncflite_r_bail_land r_bail_land false none play_once_hold 0
 ap_audio ncflite_r_bail_land 64 30 0
+ap_audio_callback ncflite_r_bail_land land
 ap_add ncflite_reload_low reload_low false none play_once 0
 ap_audio ncflite_reload_low 64 30 0
 ap_add ncflite_reload_low_crouch reload_low_crouch false none play_once 0
@@ -1980,21 +2014,25 @@ ap_audio ncflite_runforwardleft_base 40 32 0
 ap_audio_callback ncflite_runforwardleft_base run
 ap_add ncflite_runforwardleft_low runforwardleft_low true none refpose3 0
 ap_audio ncflite_runforwardleft_low 64 30 0
+ap_audio_callback ncflite_runforwardleft_low run
 ap_add ncflite_runforwardleft_pistol runforwardleft_pistol true none refpose3 0
 ap_audio ncflite_runforwardleft_pistol 40 32 0
 ap_audio_callback ncflite_runforwardleft_pistol run
 ap_add ncflite_runforwardleft_rifle runforwardleft_rifle true none refpose3 0
 ap_audio ncflite_runforwardleft_rifle 64 30 0
+ap_audio_callback ncflite_runforwardleft_rifle run
 ap_add ncflite_runforwardright_base runforwardright_base true none refpose3 0
 ap_audio ncflite_runforwardright_base 40 32 0
 ap_audio_callback ncflite_runforwardright_base run
 ap_add ncflite_runforwardright_low runforwardright_low true none refpose3 0
 ap_audio ncflite_runforwardright_low 64 30 0
+ap_audio_callback ncflite_runforwardright_low run
 ap_add ncflite_runforwardright_pistol runforwardright_pistol true none refpose3 0
 ap_audio ncflite_runforwardright_pistol 40 32 0
 ap_audio_callback ncflite_runforwardright_pistol run
 ap_add ncflite_runforwardright_rifle runforwardright_rifle true none refpose3 0
 ap_audio ncflite_runforwardright_rifle 64 30 0
+ap_audio_callback ncflite_runforwardright_rifle run
 ap_add ncflite_strafeleft_crouch_base strafeleft_crouch_base true none refpose3 0
 ap_audio ncflite_strafeleft_crouch_base 40 20 0
 ap_audio_callback ncflite_strafeleft_crouch_base walk
@@ -2139,6 +2177,50 @@ ap_audio_callback ncflite_walkforwardright_pistol walk
 ap_add ncflite_walkforwardright_rifle walkforwardright_rifle true none refpose1 0
 ap_audio ncflite_walkforwardright_rifle 64 30 0
 ap_audio_callback ncflite_walkforwardright_rifle walk
+ap_add ncflite_zip_death_idle01_base zip_death_idle01_base false none loop 0
+ap_audio ncflite_zip_death_idle01_base 64 30 0
+ap_add ncflite_zip_death_idle01_low zip_death_idle01_low false none loop 0
+ap_audio ncflite_zip_death_idle01_low 64 30 0
+ap_add ncflite_zip_death_idle01_pistol zip_death_idle01_pistol false none loop 0
+ap_audio ncflite_zip_death_idle01_pistol 64 30 0
+ap_add ncflite_zip_death_idle01_rifle zip_death_idle01_rifle false none loop 0
+ap_audio ncflite_zip_death_idle01_rifle 64 30 0
+ap_add ncflite_zip_death_idle02_base zip_death_idle02_base false none loop 0
+ap_audio ncflite_zip_death_idle02_base 64 30 0
+ap_add ncflite_zip_death_land01_base zip_death_land01_base false none play_once_hold 0
+ap_audio ncflite_zip_death_land01_base 64 30 0
+ap_audio_callback ncflite_zip_death_land01_base land
+ap_add ncflite_zip_death_land01_low zip_death_land01_low false none play_once_hold 0
+ap_audio ncflite_zip_death_land01_low 64 30 0
+ap_audio_callback ncflite_zip_death_land01_low land
+ap_add ncflite_zip_death_land01_pistol zip_death_land01_pistol false none play_once_hold 0
+ap_audio ncflite_zip_death_land01_pistol 64 30 0
+ap_audio_callback ncflite_zip_death_land01_pistol land
+ap_add ncflite_zip_death_land01_rifle zip_death_land01_rifle false none play_once_hold 0
+ap_audio ncflite_zip_death_land01_rifle 64 30 0
+ap_audio_callback ncflite_zip_death_land01_rifle land
+ap_add ncflite_zip_death_land02_base zip_death_land02_base false none play_once_hold 0
+ap_audio ncflite_zip_death_land02_base 64 30 0
+ap_audio_callback ncflite_zip_death_land02_base land
+ap_add ncflite_zip_death_land02_low zip_death_land02_low false none play_once_hold 0
+ap_audio ncflite_zip_death_land02_low 64 30 0
+ap_audio_callback ncflite_zip_death_land02_low land
+ap_add ncflite_zip_death_land02_pistol zip_death_land02_pistol false none play_once_hold 0
+ap_audio ncflite_zip_death_land02_pistol 64 30 0
+ap_audio_callback ncflite_zip_death_land02_pistol land
+ap_add ncflite_zip_death_land02_rifle zip_death_land02_rifle false none play_once_hold 0
+ap_audio ncflite_zip_death_land02_rifle 64 30 0
+ap_audio_callback ncflite_zip_death_land02_rifle land
+ap_add ncflite_zip_death_start01_base zip_death_start01_base false none play_once 0
+ap_audio ncflite_zip_death_start01_base 64 30 0
+ap_add ncflite_zip_death_start01_low zip_death_start01_low false none play_once 0
+ap_audio ncflite_zip_death_start01_low 64 30 0
+ap_add ncflite_zip_death_start01_pistol zip_death_start01_pistol false none play_once 0
+ap_audio ncflite_zip_death_start01_pistol 64 30 0
+ap_add ncflite_zip_death_start01_rifle zip_death_start01_rifle false none play_once 0
+ap_audio ncflite_zip_death_start01_rifle 64 30 0
+ap_add ncflite_zip_death_start02_base zip_death_start02_base false none play_once 0
+ap_audio ncflite_zip_death_start02_base 64 30 0
 ap_end
 
 ##fp_r_shotgun
@@ -2204,16 +2286,16 @@ ap_add ncmlite_base_wave base_wave false none play_once 0 wave
 ap_audio ncmlite_base_wave 64 32 0
 ap_add ncmlite_charsel_vs charsel_vs false none play_once 0
 ap_audio ncmlite_charsel_vs 255 32 0
-ap_add ncmlite_crouchbackward_base crouchbackward_base true none loop 0 none
+ap_add ncmlite_crouchbackward_base crouchbackward_base true none refpose3 0 none
 ap_audio ncmlite_crouchbackward_base 40 20 0
 ap_audio_callback ncmlite_crouchbackward_base walk
-ap_add ncmlite_crouchbackward_low crouchbackward_low true none loop 0 none
+ap_add ncmlite_crouchbackward_low crouchbackward_low true none refpose3 0 none
 ap_audio ncmlite_crouchbackward_low 40 20 0
 ap_audio_callback ncmlite_crouchbackward_low walk
-ap_add ncmlite_crouchbackward_pistol crouchbackward_pistol true none play_once 0 none
+ap_add ncmlite_crouchbackward_pistol crouchbackward_pistol true none refpose3 0 none
 ap_audio ncmlite_crouchbackward_pistol 40 20 0
 ap_audio_callback ncmlite_crouchbackward_pistol walk
-ap_add ncmlite_crouchbackward_rifle crouchbackward_rifle true none play_once 0 none
+ap_add ncmlite_crouchbackward_rifle crouchbackward_rifle true none refpose3 0 none
 ap_audio ncmlite_crouchbackward_rifle 40 20 0
 ap_audio_callback ncmlite_crouchbackward_rifle walk
 ap_add ncmlite_crouchbackwardleft_base crouchbackwardleft_base true none refpose1 0
@@ -2240,16 +2322,16 @@ ap_audio_callback ncmlite_crouchbackwardright_pistol walk
 ap_add ncmlite_crouchbackwardright_rifle crouchbackwardright_rifle true none refpose1 0
 ap_audio ncmlite_crouchbackwardright_rifle 64 30 0
 ap_audio_callback ncmlite_crouchbackwardright_rifle walk
-ap_add ncmlite_crouchforward_base crouchforward_base true none play_once 0 none
+ap_add ncmlite_crouchforward_base crouchforward_base true none refpose3 0 none
 ap_audio ncmlite_crouchforward_base 40 20 0
 ap_audio_callback ncmlite_crouchforward_base walk
-ap_add ncmlite_crouchforward_low crouchforward_low true none play_once 0 none
+ap_add ncmlite_crouchforward_low crouchforward_low true none refpose3 0 none
 ap_audio ncmlite_crouchforward_low 40 20 0
 ap_audio_callback ncmlite_crouchforward_low walk
-ap_add ncmlite_crouchforward_pistol crouchforward_pistol true none play_once 0 none
+ap_add ncmlite_crouchforward_pistol crouchforward_pistol true none refpose3 0 none
 ap_audio ncmlite_crouchforward_pistol 40 20 0
 ap_audio_callback ncmlite_crouchforward_pistol walk
-ap_add ncmlite_crouchforward_rifle crouchforward_rifle true none play_once 0 none
+ap_add ncmlite_crouchforward_rifle crouchforward_rifle true none refpose3 0 none
 ap_audio ncmlite_crouchforward_rifle 40 20 0
 ap_audio_callback ncmlite_crouchforward_rifle walk
 ap_add ncmlite_crouchforwardleft_base crouchforwardleft_base true none refpose1 0
@@ -3768,7 +3850,7 @@ ap_end
 
 ##vanu_vehicle_creation_pad
 
-ap_add vanu_vehicle_creation_pad_active active false none play_once 0
+ap_add vanu_vehicle_creation_pad_active active false none play_once_hold 0
 ap_audio vanu_vehicle_creation_pad_active 64 30 0
 ap_add vanu_vehicle_creation_pad_close close false none play_once_hold 0
 ap_audio vanu_vehicle_creation_pad_close 64 30 0
@@ -3788,6 +3870,12 @@ ap_end
 
 ##ancient_door
 
+ap_end
+
+##hst
+
+ap_add hst_idle idle false none loop 0
+ap_audio hst_idle 64 30 0
 ap_end
 
 ##vanu_sentry_turret
@@ -3862,6 +3950,12 @@ ap_add obbasemesh_open open false none play_once_hold 0
 ap_audio obbasemesh_open 64 30 0
 ap_add obbasemesh_openb openb false none play_once_hold 0
 ap_audio obbasemesh_openb 64 30 0
+ap_end
+
+##router_telepad
+
+ap_add router_telepad_deploy deploy false none play_once 0
+ap_audio router_telepad_deploy 64 30 0
 ap_end
 
 ##switchblade

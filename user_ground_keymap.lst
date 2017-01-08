@@ -1,0 +1,7 @@
+km_addbinding "W" "Forward"
+km_addbinding "A" "Turn Left"
+km_addbinding "S" "Backward"
+km_addbinding "D" "Turn Right"
+km_addbinding "Space" "Brake"
+km_addbinding "Left Arrow" "Turn Left"
+km_addbinding "Right Arrow" "Turn Right"

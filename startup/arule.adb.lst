@@ -1,5 +1,15 @@
 #ar_begin
 
+##default+hp_hip_right+router_telepad+hp_hip_right
+
+ar_rot 00001000 00003F1D 00000000
+ar_end
+
+##default+hp_hip_left+router_telepad+hp_hip_left
+
+ar_rot 00003000 000000E3 00000000
+ar_end
+
 ##default+hp_shoulder_right+maelstrom+hp_shoulder_right
 
 ar_rot 00000000 00002000 00003DB1
@@ -1683,4 +1693,9 @@ ar_end
 ##ncmmed+hp_shoulder_right+radiator+hp_shoulder_right
 
 ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+flail_targeting_laser+hp_hand
+
+ar_rot 00000000 00002FD3 00001000
 ar_end

@@ -47,6 +47,7 @@ coarse ground_bldg_z       ground_bldg_z_crp
 coarse Vanu_core              Vanu_core_crp
 coarse vanu_control_point     vanu_control_point_crp
 coarse vanu_vehicle_station   vanu_vehicle_station_crp
+coarse redoubt		   redoubt_crp
 
 coarse rockformationa      rockformationa_crp
 coarse rockformationb      rockformationb_crp

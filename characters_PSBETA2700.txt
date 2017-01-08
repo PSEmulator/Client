@@ -1,0 +1,11 @@
+Emerald (East),CaptainInsaneo,2,0,ablpls-01
+
+Markov (West),chaingun57,2,0,sdkpls-01
+
+Konried (East),MrMonkey,0,0,ablpls-02
+
+Konried (East),Trogdortheburninator,0,0,ablpls-02
+
+Johari (West),CaptainInsaneo,2,1,sdkpls-02
+Johari (West),lecow,2,0,sdkpls-02
+Johari (West),SARSman,2,0,sdkpls-02

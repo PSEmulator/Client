@@ -85,24 +85,17 @@ addendum_embedded_effect generator_room 4.4331 -22.9393 13.4936 0000 09FB 07FF
 #####################################################################################
 
 #####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'llm_socket'
+#####ADDENDUM PACKAGE FOR DATA ASSET 'vanu_sentry_turret_weapon'
 #####################################################################################
-addendum_package llm_socket
-addendum_material cryo_tubes llm_socket_material
-#####################################################################################
-
-#####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'jammer_grenade'
-#####################################################################################
-addendum_package jammer_grenade
-addendum_bone hp_hand jammer_grenade 0.0000 0.0000 0.0000 0000 3E14 0000
+addendum_package vanu_sentry_turret_weapon
+addendum_bone ef_muzzle_a_adjusted vanu_sentry_turret_weapon 2.4000 0.9600 -0.0400 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'dropship_pad_doors'
+#####ADDENDUM PACKAGE FOR DATA ASSET 'plasma_grenade'
 #####################################################################################
-addendum_package dropship_pad_doors
-addendum_bone hp_vehicle_alt hp_vehicle -5.5367 0.0000 0.0000 0000 0000 0000
+addendum_package plasma_grenade
+addendum_bone hp_hand plasma_grenade 0.0000 0.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
@@ -114,10 +107,24 @@ addendum_bone custom_head bip01_head 0.0400 0.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'plasma_grenade'
+#####ADDENDUM PACKAGE FOR DATA ASSET 'dropship_pad_doors'
 #####################################################################################
-addendum_package plasma_grenade
-addendum_bone hp_hand plasma_grenade 0.0000 0.0000 0.0000 0000 0000 0000
+addendum_package dropship_pad_doors
+addendum_bone hp_vehicle_alt hp_vehicle -5.5367 0.0000 0.0000 0000 0000 0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'jammer_grenade'
+#####################################################################################
+addendum_package jammer_grenade
+addendum_bone hp_hand jammer_grenade 0.0000 0.0000 0.0000 0000 3E14 0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'llm_socket'
+#####################################################################################
+addendum_package llm_socket
+addendum_material cryo_tubes llm_socket_material
 #####################################################################################
 
 #####################################################################################
@@ -229,6 +236,23 @@ addendum_outline_point 0.8181 -0.8181 0.0000
 addendum_outline_point 1.5368 -0.8690 0.0000
 addendum_outline_point 1.8767 -0.4739 0.0000
 addendum_outline_point 2.0067 -0.1565 0.0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'flail'
+#####################################################################################
+addendum_package flail
+addendum_bone flail_attach_bone flail 0.0000 0.0000 0.0000 0000 0000 0000
+addendum_bone hp_guna_real flail_attach_bone -1.9200 0.0000 2.5000 0000 0000 0000
+addendum_bone flaileye_pivot_real flail_attach_bone 1.6800 0.0000 2.4750 0000 0000 0000
+addendum_bone flailfina_pivot_real flail_attach_bone -3.2000 1.4750 2.0000 0000 0000 0000
+addendum_bone flailfinb_pivot_real flail_attach_bone -3.2000 -1.4750 2.0000 0000 0000 0000
+addendum_bone viewpoint_bone hp_guna_real 0.0000 0.0000 0.0000 0000 0000 0000
+addendum_bone ef_damage1 flail_attach_bone -1.4000 -2.0000 1.1200 0000 0000 0000
+addendum_bone ef_damage4 flail_attach_bone -1.4000 2.0000 1.1200 0000 0000 0000
+addendum_bone ef_damage2 flail_attach_bone 2.0000 -1.5600 0.8800 0000 0000 0000
+addendum_bone ef_damage3 flail_attach_bone 2.0000 1.5600 0.8800 0000 0000 0000
+addendum_bone flail_targeting_lazer_mz flail 3.0000 3.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
@@ -1571,15 +1595,15 @@ alias map09_3 lava09_3
 alias map09_7 lava09_7
 alias door_mb_ramp gr_unknown
 alias mb_flight_win_frame gr_unknown
-alias door_mb_orb gr_door_mb_orb
-alias main_door gr_door_main
-alias door_mb_garage gr_unknown
-alias door_mb gr_door_mb_int
-alias door_mb_side gr_door_mb_lrg
-alias cryo_med_door gr_door_med
-alias door_garage gr_door_garage_int
-alias garage_door gr_door_garage_ext
 alias door_airlock gr_door_airlock
+alias garage_door gr_door_garage_ext
+alias door_garage gr_door_garage_int
+alias cryo_med_door gr_door_med
+alias door_mb_side gr_door_mb_lrg
+alias door_mb gr_door_mb_int
+alias door_mb_garage gr_unknown
+alias main_door gr_door_main
+alias door_mb_orb gr_door_mb_orb
 alias door gr_door_int
 
 
@@ -1684,7 +1708,7 @@ nudge map03             49           0.45
 nudge map03             71           0.40
 nudge map03             12           0.35
 
-nudge map05             16           0.90
+nudge map05             16           1.70
 nudge map05             30           0.40
 nudge map05             40           1.00
 nudge map05             21           0.30

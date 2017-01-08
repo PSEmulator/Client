@@ -1,0 +1,58 @@
+Sun Oct 26 22:38:28 2003
+
+Planetside Platform Information
+
+This information may be useful to include if there is a question of compatability of your system
+with regard to Planetside.
+This file is written out every time Planetside is run, therefore it will reflect any system changes.
+
+[Planetside]
+Version                 : 2.0 : Oct 26 2003
+
+[Computer]
+
+[Operating System]
+Version                 : Windows XP or .Net Server 5.1 Build 2600(Service Pack 1)
+
+[Direct X]
+Version                 : 9.0.902
+
+[CPU]
+Type                    : Unknown
+Frequency               : 868Mhz
+Number Of Processors    : 1
+MMX Instructions        : Yes
+SSE1 Instructions       : Yes
+SSE2 Instructions       : Yes
+Supports Multi-Processor: No
+3DNow Instructions      : No
+3DNowPlus Instructions  : No
+MMXPlus Instructions    : No
+SSEMMX Instructions     : No
+Thermal Shutdown Ability: No
+Voltage Regulation      : No
+Temperature Sensor      : No
+CPU Speed Regulation    : Yes
+Battery Power Scheme    : Ok
+AC Power Scheme         : Ok
+
+[Memory]
+Total Physical 536.33 MB (536330240 bytes)
+Avail Physical 400.196 MB (400195584 bytes)
+Total PageFile 1311.99 MB (1311989760 bytes)
+Avail PageFile 1168.4 MB (1168396288 bytes)
+Total Virtual  2147.35 MB (2147352576 bytes)
+Avail Virtual  2108.87 MB (2108874752 bytes)
+
+[Video]
+Device : NVIDIA GeForce4 Ti 4200 with AGP8X (Omega KX 1.4523) : Driver: nv4_disp.dll : Version 6.14.10.4523 : VertexShader 1.1 PixelShader 1.3
+Primary Device Video Memory : 130.417 MB (130416640 bytes)
+
+[Sound]
+Device: Primary Sound Driver(Driver: )
+Device: SB PCI512 Wave Device(Driver: emu10k1m.sys)
+
+[Input]
+Device: Mouse
+Device: Keyboard
+Device: Nostromo n50 Speedpad

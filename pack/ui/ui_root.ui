@@ -5536,6 +5536,9 @@ $qty$
 <ImageStyle Name='amp_station'>
 <ImageFrame Source='ui_bld_amp_station' SourceRect='0,0,256,256'/>
 </ImageStyle>
+<ImageStyle Name='redoubt'>
+<ImageFrame Source='ui_building_redoubt_exterior_00' SourceRect='0,0,256,256'/>
+</ImageStyle>
 <ImageStyle Name='bridge_end'>
 <ImageFrame Source='ui_bld_bridge_end' SourceRect='0,0,32,32'/>
 </ImageStyle>
@@ -5856,6 +5859,9 @@ $qty$
 </ImageStyle>
 </Namespace>
 <Namespace Name='Floorplans'>
+<ImageStyle Name='redoubt_0'>
+<ImageFrame Source='ui_building_redoubt_0_00' SourceRect='0,0,68,88'/>
+</ImageStyle>
 <ImageStyle Name='amp_station_0'>
 <ImageFrame>
 <ImageFragment Source='ui_building_amp_0_00' SourceRect='0,0,256,256'/>
@@ -5907,6 +5913,9 @@ $qty$
 <ImageFragment Offset='256,256' Source='ui_building_amp_3_07' SourceRect='0,0,32,64'/>
 <ImageFragment Offset='256,320' Source='ui_building_amp_3_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
+</ImageStyle>
+<ImageStyle Name='redoubt_1'>
+<ImageFrame Source='ui_building_redoubt_1_00' SourceRect='0,0,68,88'/>
 </ImageStyle>
 <ImageStyle Name='amp_station_4'>
 <ImageFrame>
@@ -6912,7 +6921,7 @@ $qty$
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Radar_vanu_module_blip'>
-<ImageFrame SourceRect='0,21,9,27'>
+<ImageFrame SourceRect='0,22,9,28'>
 <ImageFragment Source='ui_module_overhead_map_icon_00' SourceRect='0,0,32,32'/>
 <ImageFragment Offset='32,0' Source='ui_module_overhead_map_icon_01' SourceRect='0,0,32,32'/>
 </ImageFrame>
@@ -6923,6 +6932,9 @@ $qty$
 </Namespace>
 </Namespace>
 <Namespace Name='ItemIcons1GridHigh'>
+<ImageStyle Name='scythe'>
+<ImageFrame Source='ui_inhand_gunner_00' SourceRect='68,106,135,118'/>
+</ImageStyle>
 <ImageStyle Name='flail_nc'>
 <ImageFrame SourceRect='335,0,442,50'>
 <ImageFragment Source='ui_HUD_vehicle_2_00' SourceRect='0,0,256,256'/>
@@ -7001,8 +7013,8 @@ $qty$
 <ImageStyle Name='dropship_rear_turret'>
 <ImageFrame Source='ui_inhand_gunner_00' SourceRect='0,89,67,105'/>
 </ImageStyle>
-<ImageStyle Name='scythe'>
-<ImageFrame Source='ui_inhand_gunner_00' SourceRect='68,106,135,118'/>
+<ImageStyle Name='flail_weapon'>
+<ImageFrame Source='ui_inhand_gunner_00' SourceRect='136,0,181,17'/>
 </ImageStyle>
 <ImageStyle Name='maelstrom'>
 <ImageFrame Source='ui_inv_weapons_objects_00' SourceRect='0,0,152,49'/>
@@ -7013,7 +7025,7 @@ $qty$
 <ImageStyle Name='radiator'>
 <ImageFrame Source='ui_inv_weapons_objects_00' SourceRect='0,50,101,100'/>
 </ImageStyle>
-<ImageStyle Name='flail_targetting'>
+<ImageStyle Name='flail_targeting_laser'>
 <ImageFrame Source='ui_inv_weapons_objects_00' SourceRect='1,101,51,151'/>
 </ImageStyle>
 <ImageStyle Name='router_telepad'>
@@ -9912,6 +9924,9 @@ $qty$
 </Namespace>
 <include>ui_sliderbars.inc</include>
 <Namespace Name='SupportIcons'>
+<ImageStyle Name='lazer_reticule'>
+<ImageFrame Source='ui_lazer_reticule_00' SourceRect='0,0,64,64'/>
+</ImageStyle>
 <ImageStyle Name='armor_repair'>
 <ImageFrame Source='ui_soldier_support_icons_00' SourceRect='0,0,35,16'/>
 </ImageStyle>

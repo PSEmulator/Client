@@ -1,5 +1,25 @@
 #rsc_begin
 
+##cs9_vanu_module_swatch_weapon
+
+rsc_tfactor FF007FFF
+rsc_end
+
+##cs9_vanu_module_swatch_vehicle
+
+rsc_tfactor FF500ADC
+rsc_end
+
+##cs9_vanu_module_swatch_defender
+
+rsc_tfactor FF00FFFF
+rsc_end
+
+##cs9_vanu_module_swatch_fortifier
+
+rsc_tfactor FFE5C3A1
+rsc_end
+
 ##cs9_ef_vanu_tunnel_beam_core_gf3
 
 rsc_zbias 16
@@ -1499,6 +1519,56 @@ rsc_end
 ##cs9_vanu_equip_term_effect
 
 rsc_tfactor FF962DFF
+rsc_end
+
+##cs9_vanu_module_swatch_bind
+
+rsc_tfactor FFFF7F00
+rsc_end
+
+##cs9_vanu_module_swatch_energy
+
+rsc_tfactor FFFFFF00
+rsc_end
+
+##cs9_vanu_module_swatch_nc
+
+rsc_tfactor FF0000FF
+rsc_end
+
+##cs9_vanu_module_swatch_tr
+
+rsc_tfactor FFFF0000
+rsc_end
+
+##cs9_vanu_module_swatch_vs
+
+rsc_tfactor FF8000FF
+rsc_end
+
+##cs9_vanu_module_swatch_equipment
+
+rsc_tfactor FF007FFF
+rsc_end
+
+##cs9_vanu_module_swatch_shield
+
+rsc_tfactor FF00FFFF
+rsc_end
+
+##cs9_vanu_module_swatch_healing
+
+rsc_tfactor FFFFFF00
+rsc_end
+
+##cs9_vanu_module_swatch_pain
+
+rsc_tfactor FFE5C3A1
+rsc_end
+
+##cs9_vanu_module_swatch_speed
+
+rsc_tfactor FFFF7F00
 rsc_end
 
 ##alpha_one

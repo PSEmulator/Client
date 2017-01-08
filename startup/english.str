@@ -31,6 +31,7 @@
 @NoZone_Full=Target continent is full
 @NoZone_Down=Target continent is not available
 @reset_sanctuary=You have been returned to the sanctuary because you played another character.
+@reset_sanctuary_inactive=You have been returned to the sanctuary because the location you logged out is not available.
 
 # GM messages - these do not need to be internationalized
 #---------------------------------------------------------
@@ -75,6 +76,7 @@
 @norecall_deconstructing=You can't recall while you're deconstructing
 @norecall_sanctuary_full=Sanctuary is full. Please try again later.
 @norecall_sanctuary_unavailable=Sanctuary is unavailable. Please try again later.
+@norecall_hasvanumodule=You may not recall to sanctuary while in possession of a Module or Stasis Box.
 @recall_enemy=You are in an enemy facility's sphere of influence, you will recall in 30 seconds
 @recall_neutral=You are in a neutral facility's sphere of influence, you will recall in 20 seconds
 @recall_none=You are not in any sphere of influence, you will recall in 20 seconds
@@ -158,9 +160,6 @@
 @LoginPasswordTooltip=Enter your password
 @LoginEnterButtonTooltip=Press to enter the world
 @LoginExitButtonTooltip=Press to exit the game
-
-
-
 
 
 # Server Selection Headings
@@ -258,8 +257,8 @@
 
 @dneufeld=Don Neufeld
 @bheinz=Dawg Pound
-@rfleck=Roy Fleck
-@swang=Steve Wang
+@rfleck=Roy's Happy Fun House
+@swang=Got Wang?
 @smusler=Scott Musler
 @stmartin=Scott Martin
 @bmitchell=Bob Mitchell
@@ -289,7 +288,7 @@
 #---------------------------------------------------------
 @CreditsTitle=PLANETSIDE CREW
 
-# Instsant Action strings
+# Instant Action strings
 #---------------------------------------------------------
 @IASanctuaryAction=GO TO SANCTUARY
 @IASanctuaryTooltip=Select this button to transfer to the safety of your Sanctuary.
@@ -577,8 +576,8 @@
 @NW_Cyssor_Warpgate_Tower=NW Forseral Gate
 @NE_Horus_Tower=NE Horus
 @E_Bastet_Tower=East Bastet
-@GW_Solsar_1=West Byblos
-@GW_Solsar_2=East Byblos
+@GW_Solsar_S=South
+@GW_Solsar_N=North
 
 #MAP02 (HOSSIN)
 @WG_Hossin_to_Ceryshen=Ishundar
@@ -620,8 +619,8 @@
 @E_Naum_Tower=East Outpost
 @Voltan_Tower=East Voltan
 @Ixtab_Tower=East Ixtab
-@GW_Hossin_1=North Hunhau
-@GW_Hossin_2=South Hunhau
+@GW_Hossin_S=South
+@GW_Hossin_N=North
 
 #MAP03 (CYSSOR)
 @WG_Cyssor_to_TRSanc=Oshur
@@ -679,7 +678,8 @@
 @S_Bomazi_Tower=South Bomazi
 @NE_Wele_Tower=NE Wele
 @S_Chuku_Tower=South Chuku
-
+@GW_Cyssor_S=South
+@GW_Cyssor_N=North
 
 #MAP04 (ISHUNDAR)
 @WG_Ishundar_to_VSSanc=Amerish
@@ -733,6 +733,8 @@
 @Lahar_Tower=SW Lahar
 @TRSanc_Warpgate_Tower=East Hossin Gate
 @VSSanc_Warpgate_Tower=South Amerish Gate
+@GW_Ishundar_N=North
+@GW_Ishundar_S=South
 
 #MAP05 (FORSERAL)
 @WG_Forseral_to_TRSanc=Searhus
@@ -768,8 +770,8 @@
 @S_Neit_Tower=South Neit
 @W_Pwyll_Tower=West Pwyll
 @N_Pwyll_Tower=North Pwyll
-@GW_Forseral_1=North Annwn
-@GW_Forseral_2=South Annwn
+@GW_Forseral_N=North
+@GW_Forseral_S=South
 
 #MAP06 (CERYSHEN)
 @WG_Ceryshen_to_Forseral=Solsar
@@ -814,8 +816,8 @@
 @Sedna_Tower=NE Sedna
 @Igaluk_Tower=North Igaluk
 @Hossin_Warpgate_Tower=East TR Sanctuary Gate
-@GW_Ceryshen_1=East Adlivun
-@GW_Ceryshen_2=West Adlivun
+@GW_Ceryshen_N=North
+@GW_Ceryshen_S=South
 
 #MAP07 (ESAMIR)
 @WG_Esamir_to_NCSanc=VS Sanctuary
@@ -861,6 +863,8 @@
 @E_Jarl_Tower=NE Jarl
 @S_NCSanc_Tower=South VS Sanctuary Gate
 @NE_Andvari_Tower=NE Andvari
+@GW_Esamir_N=North
+@GW_Esamir_S=South
 
 #MAP08 (OSHUR)
 @WG_Oshur_to_Forseral=Ceryshen
@@ -897,8 +901,8 @@
 @Rashnu_Tower=SE Rashnu
 @Mithra_Tower=East Mithra
 @Hossin_Warpgate_Tower=Gate Outpost
-@GW_Oshur_1=North Drugaskan
-@GW_Oshur_2=East Drugaskan
+@GW_Oshur_N=North
+@GW_Oshur_S=South
 
 
 #MAP09 (SEARHUS)
@@ -942,11 +946,12 @@
 @NW_Karihi_Tower=NW Karihi
 @S_Laka_Tower=South Laka
 @S_Ishundar_Warpgate_Tower=South Cyssor Gate
+@GW_Searhus_N=North
+@GW_Searhus_S=South
 
 #MAP10 (AMERISH)
 @WG_Amerish_to_Ceryshen=Forseral
 @WG_Amerish_to_Solsar=VS Sanctuary
-
 @WG_Amerish_to_NCSanc=Ishundar
 @WG_Amerish_to_Oshur=Solsar
 @Tumas=Tumas
@@ -984,8 +989,8 @@
 @Cetan_Tower=NE Cetan
 @Mekala_Tower=NE Mekala
 @Azeban_Tower=North Azeban
-@GW_Amerish_1=South Supai
-@GW_Amerish_2=North Supai
+@GW_Amerish_S=South
+@GW_Amerish_N=North
 
 #MAP11 HOME1 (NEW CONGLOMERATE SANCTUARY)
 @WG_NCSanc_to_Cyssor=Cyssor
@@ -1037,41 +1042,76 @@
 @SE_Hossin_WG_tower=SE Esamir Gate
 
 #UGD01 CAVERN 1 (SUPAI)
-@GW_Cavern1_N=North Amerish
-@GW_Cavern1_S=South Amerish
-@GW_Cavern1_E=North Byblos
-@GW_Cavern1_W=South Adlivun
+@GW_Cavern1_N=North Continent
+@GW_Cavern1_S=South Continent
+@GW_Cavern1_E=East Cavern
+@GW_Cavern1_W=West Cavern
+@N_Stasis=North
+@S_Stasis=South
+@N_Redoubt=North
+@S_Redoubt=South
+@N_ATPlant=North
+@S_ATPlant=South
 
 #UGD02 CAVERN 2 (HUNHAU)
-@GW_Cavern2_N=North Hossin
-@GW_Cavern2_S=South Hossin
-@GW_Cavern2_E=North Adlivun
-@GW_Cavern2_W=East Annwn
+@GW_Cavern2_N=North Continent
+@GW_Cavern2_S=South Continent
+@GW_Cavern2_E=East Cavern
+@GW_Cavern2_W=West Cavern
+@N_Stasis=North
+@S_Stasis=South
+@N_Redoubt=North
+@S_Redoubt=South
+@N_ATPlant=North
+@S_ATPlant=South
 
 #UGD03 CAVERN 3 (ADLIVUN)
-@GW_Cavern3_N=East Hunhau
-@GW_Cavern3_S=West Supai
-@GW_Cavern3_E=East Ceryshen
-@GW_Cavern3_W=West Ceryshen
+@GW_Cavern3_N=North Continent
+@GW_Cavern3_S=South Continent
+@GW_Cavern3_E=East Cavern
+@GW_Cavern3_W=West Cavern
+@SW_Stasis=Southwest
+@SE_ATPlant=Southeast
+@NW_ATPlant=Northwest
+@NE_Stasis=Northeast
+@NW_Redoubt=Northwest
+@SE_Redoubt=Southeast
 
 #UGD04 CAVERN 4 (BYBLOS)
-@GW_Cavern4_N=East Supai
-@GW_Cavern4_S=South Drugaskan
-@GW_Cavern4_E=East Solsar
-@GW_Cavern4_W=West Solsar
+@GW_Cavern4_N=North Continent
+@GW_Cavern4_S=South Continent
+@GW_Cavern4_E=East Cavern
+@GW_Cavern4_W=West Cavern
+@N_Stasis=North
+@S_Stasis=South
+@N_Redoubt=North
+@S_Redoubt=South
+@N_ATPlant=North
+@S_ATPlant=South
 
 #UGD05 CAVERN 5 (ANNWN)
-@GW_Cavern5_N=North Forseral
-@GW_Cavern5_S=South Forseral
-@GW_Cavern5_E=West Hunhau
-@GW_Cavern5_W=West Drugaskan
+@GW_Cavern5_N=North Continent
+@GW_Cavern5_S=South Continent
+@GW_Cavern5_E=East Cavern
+@GW_Cavern5_W=West Cavern
+@SE_Stasis=Southeast
+@NW_Stasis=Northwest
+@NW_ATPlant=Northwest
+@SE_ATPlant=Southeast
+@NW_Redoubt=Northwest
+@SE_Redoubt=Southeast
 
 #UGD06 CAVERN 6 (DRUGASKAN)
-@GW_Cavern6_N=North Oshur
-@GW_Cavern6_S=South Byblos
-@GW_Cavern6_E=East Oshur
-@GW_Cavern6_W=West Annwyn
-
+@GW_Cavern6_N=North Continent
+@GW_Cavern6_S=South Continent
+@GW_Cavern6_E=East Cavern
+@GW_Cavern6_W=West Cavern
+@N_Stasis=North
+@S_Stasis=South
+@N_Redoubt=North
+@S_Redoubt=South
+@N_ATPlant=North
+@S_ATPlant=South
 
 # Window Titles
 #---------------------------------------------------------
@@ -1162,6 +1202,8 @@
 
 @command_detonater=Command Uplink Device
 @command_detonaters=Command Uplink Devices
+
+@flail_targeting_laser=Laze Pointer
 
 
 # World Object Names
@@ -1353,8 +1395,8 @@
 @comm_station_dsp=Dropship Center
 @main_base=Sanctuary
 @warpgate=Warpgate
-@warpgate_cavern=Cavern Warpgate
-@hst=Cavern Warpgate
+@warpgate_cavern=Geowarp
+@hst=Geowarp
 
 @cryo_facility_short=Bio Lab
 @comm_station_short=Interlink Facility
@@ -1379,13 +1421,28 @@
 @llm_socket=Lattice Logic Socket
 
 @vanu_core=Core Complex
-@vanu_control_point=Stasis Building
-@vanu_vehicle_station=Ancient-Tech Plant
+@vanu_control_console=Ancient Control Console
+@vanu_control_point=Stasis
+@vanu_vehicle_station=AT Plant
+@redoubt=Redoubt
 @vanu_vehicle_creation_pad=Ancient Vehicle Creation Pad
 @vanu_vehicle_term=Ancient Ground Vehicle Terminal
 @vanu_air_vehicle_term=Ancient Air Vehicle Terminal
 @vanu_equipment_term=Ancient Equipment Terminal
 @vanu_spawn_room_pad=Ancient Respawn Pad
+@south=South
+@north=North
+@west=West
+@east=East
+@northeast=NorthEast
+@southeast=SouthEast
+@northwest=NorthWest
+@southwest=SouthWest
+@inactive=Inactive
+
+@cavern_closing_warning=%1 cavern will close in %2 minutes
+@cavern_switched=%1 cavern closed, %2 cavern now available
+
 
 # Armor Names
 #---------------------------------------------------------
@@ -1430,51 +1487,45 @@
 
 # Fire Mode descriptors
 #---------------------------------------------------------
-@beamer_firemode1=Standard Bolt
-@beamer_firemode2=Armor-Piercing Bolt
-@bolt_driver_firemode1=Single Shot
-@chainblade_firemode1=Slash
-@chainblade_firemode2=Chainblade Attack
-@cycler_firemode1=Full Auto
-@forceblade_firemode1=Slash
-@forceblade_firemode2=Force Attack
-@flechette_firemode1=Single Blast
-@gauss_firemode1=Full Auto
-@hunterseeker_firemode1=Camera-Guided
-@ilc9_firemode1=Full Auto
-@isp_firemode1=Single Blast
-@lancer_firemode1=Single Beam
-@lasher_firemode1=Lashing Projectile
-@maelstrom_firemode1=Vortex Whip
-@maelstrom_firemode2=Chain-lash Grenade
-@magcutter_firemode1=Slash
-@magcutter_firemode2=Magnetic Attack
-@mini_chaingun_firemode1=Full Auto
-@phoenix_firemode1=Dumb-Fire
-@phoenix_firemode2=Missile-Cam
-@pulsar_firemode1=Standard Bolt
-@pulsar_firemode2=Armor-Piercing Bolt
-@punisher_firemode1=Full Auto
-@punisher_firemode2=Single Fire
-@radiator_firemode1=Irradiation Burst
-@r_shotgun_firemode1=Single Blast
-@r_shotgun_firemode2=All Barrels
-@repeater_firemode1=Full Auto
-@rocklet_firemode1=Single Shot
-@rocklet_firemode2=Fire All Remaining
-@spiker_firemode1=Charged Blast
-@striker_firemode1=Homing Missile
-@striker_firemode2=Dumb-Fire
-@suppressor_firemode1=Full Auto
-@thumper_firemode1=Explode on Contact
-@thumper_firemode2=Two Second Fuse
-@frag_grenade_firemode1=Explode on Contact
-@frag_grenade_firemode2=Three Second Fuse
-@jammer_grenade_firemode1=Explode on Contact
-@jammer_grenade_firemode2=Three Second Fuse
+@WeaponFireMode=Fire Mode: %1
 
-@plasma_grenade_firemode1=Explode on Contact
-@plasma_grenade_firemode2=Three Second Fuse
+@beamer_firemode1=Standard bolt
+@beamer_firemode2=Armor-piercing bolt
+@chainblade_firemode1=Slash
+@chainblade_firemode2=Chainblade attack
+@forceblade_firemode1=Slash
+@forceblade_firemode2=Force attack
+@hunterseeker_firemode1=Camera guided
+@hunterseeker_firemode2=Dumb-fire
+@magcutter_firemode1=Slash
+@magcutter_firemode2=Magnetic attack
+@phoenix_firemode1=Dumb-fire
+@phoenix_firemode2=Missile-cam
+@plasma_grenade_firemode1=Explode on contact
+@plasma_grenade_firemode2=Three second fuse
+@pulsar_firemode1=Standard bolt
+@pulsar_firemode2=Armor-piercing bolt
+@punisher_firemode1=Full auto
+@punisher_firemode2=Single rocket/grenade
+@r_shotgun_firemode1=Single blast
+@r_shotgun_firemode2=Fire all barrels
+@rocklet_firemode1=Single rocket
+@rocklet_firemode2=Fire all remaining
+@striker_firemode1=Homing missile
+@striker_firemode2=Dumb-fire
+@thumper_firemode1=Explode on Contact
+@thumper_firemode2=Two second Fuse
+@frag_grenade_firemode1=Explode on contact
+@frag_grenade_firemode2=Three second fuse
+@jammer_grenade_firemode1=Explode on contact
+@jammer_grenade_firemode2=Three second fuse
+
+# Core Combat weapon fire mode descriptors:
+#---------------------------------------------------------
+@maelstrom_firemode1=Vortex whip
+@maelstrom_firemode2=Chain-lash grenade
+@radiator_firemode1=Three second fuse grenade
+@radiator_firemode2=Sticky propelled grenade
 
 # Equipment Terminal Descriptions
 #---------------------------------------------------------
@@ -1512,11 +1563,14 @@
 @phoenix_info=The Decimator is an extremely powerful missile launcher utilizing a disposable design; once all three of its pre-loaded shots are fired, the Decimator launcher is useless and discarded. In standard mode, the Decimator is a dumbfire missile launcher.\n\nIf you want to get a closer view of your target, you can also fire this weapon in a secondary firing mode that allows a dumb-fire projectile with you attached in camera view. Use this tactically to spy out a remote position.\n\nAmmo: Built-in (fire and forget after three shots)
 
 # <Core Combat>
-@maelstrom_info=The Maelstrom weapon is made out of cheese.
-@radiator_info=The Radiator weapon should never be taunted.
-@spiker_info=The Spiker weapon also plays polka music.
+@maelstrom_info=The Maelstrom is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Equipment Module installed.\n\nThe primary mode of the weapon fires a Vortex Whip. This beam causes constant damage over time as you keep the left-mouse button depressed and the reticule over the target.\n\nThe secondary firing mode is a Chain-Lash grenade. This grenade explodes when impacting any vehicle or soldier, and immediately tries to 'lash' to other objects in the area, causing additional damage to targets (in much the same fashion that the VS Lasher does already).
+@radiator_info=The Radiator is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Equipment Module installed.\n\nThe primary fire mode of the Radiator launches a small grenade that detonates in a moderate-sized explosion. However, the explosion itself causes no damage.\n\nInstead, the area affected becomes irradiated for a short period of time. Any objects within that area, or any objects passing through that area while the area is irradiated, will take damage over time.\n\nObviously, the weapon has a great number of tactical oppotunities other than straight damage.
+@spiker_info=The Spiker is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Equipment Module installed.\n\nThe pistol is a Medium Assault weapon and does comparable damage, but only fits in a pistol slot. Thus it is very popular with the lighter armors.\n\nAdditionally, the Spiker shot can be either fired immediately (by merely tapping the left-mouse button) or charged for greater damage (by pressing the left-mouse button until max charge is reached and then releasing that mouse button to fire the weapon).\n\nNOTE: The Spiker energy charge drops back to zero if not fired at the moment when it reaches its peak. Thus, this weapon requires a certain element of skill to time the shots for absolute maximum damage.
 
 # AMMUNITION
+#---------------------------------------------------------
+@WeaponAmmunitionType=Ammunition Type: %1
+
 # <hand-held ammo>
 @9mmbullet_info=The standard bullet used in most projectile weapons, this ammunition is best against 'soft' targets.
 @9mmbullet_AP_info=This armor-piercing ammunition penetrates the heavier armor of vehicles, MAXs, and equipment such as terminals, generators, and deployables.
@@ -1594,61 +1648,45 @@
 @mine_sweeper_info=The Mine Sweeper is a small electrical device that emits a specialized magnetic field that will trigger and instantly destroy any enemy mines within its radius. The Mine Sweeper is actually treated like a grenade in usage - the player literally throws it into an area at which point it explodes, destroying any enemy mines within its radius.
 @nano_dispenser_info=The NanoDispenser is a large repair device that is held similarly to a two-handed assault rifle. A soldier can repair any damaged object or vehicle using the NanoDispenser, and uses reservoir points for fuel when repairing. The NanoDispenser requires a Engineering certification in order to utilize its functionality. It uses a replaceable Armor Canister for fuel.
 @plasma_grenade_info=The Plasma grenade contains highly-compressed plasma which sprays an area and any unfortunate nearby soldiers, objects, or vehicles with burning plasma when exploding. Any soldiers, objects, or vehicles hit by the scathing plasma will continue to receive aggravated damage until the plasma's heat naturally subsides (or the recipient perishes). It can be thrown to detonate either on impact, or with a three-second fuse.
-@remote_electronics_kit_info=The Remote Electronics Kit (REK) is a hand-held hacking device that interfaces with enemy terminals at close range. Most REK functions require either Hacking or Advanced Hacking certifications, but there are also standard functions that don't require any hacking certifications such as hacking enemy door IFFs and control consoles.\n\nSoldiers with a Hacking certification can hack some of the basic enemy terminals for use by friendly troops, including implant terminals, medical terminals, certification terminals, and lockers. They also hack doors and control consoles faster than soldiers without a Hacking certification.\n\nAn Advanced Hacker does everything a Hacker can do, but does it at very fast speeds, thus minimizing risk to the hacker.\n\nAdditionally, Advanced Hackers can also 'jack' enemy vehicles, switching them from the enemy empire's control to your own. They are also able to temporarily hack enemy Equipment and Vehicle terminals (in addition to those listed for basic Hacking) so that other friendlies can use them.
+@remote_electronics_kit_info=The Remote Electronics Kit (REK) is a hand-held hacking device that interfaces with enemy terminals at close range. Most REK functions require either Hacking or Advanced Hacking certifications, but there are also standard functions that don't require any hacking certifications such as hacking enemy door IFFs and control consoles.\n\nSoldiers with a Hacking certification can hack some of the basic enemy terminals for use by friendly troops, including implant terminals, medical terminals, certification terminals, and lockers. They also hack doors and control consoles faster than soldiers without a Hacking certification and can 'jack' vehicles, switching them to your own Empire.\n\nAn Advanced Hacker does everything a Hacker can do, but does it at very fast speeds, thus minimizing risk to the hacker. They are also able to temporarily hack enemy Equipment and Vehicle terminals (in addition to those listed for basic Hacking) so that other friendlies can use them, as well as 'jack' vehicles at an even faster speed than regular Hackers.
 @command_detonater_info=This uplink device is only available to Rank 2 Commanders and above.\n\nThis mechanism is used to communicate with automatic systems high above Auraxis in the Orbital Station.\n\nMost timed command abilities require the equipping of this item before they will function.
+@flail_targeting_laser_info=This laze pointer is used to generate targets of interest for your squadmates. By using this device, you can create a temporary waypoint that your entire squad/platoon can see for a brief duration.\n\nThis laze pointer is also highly useful as a tool for forward observers to use in designating targets for Liberators or Flails.
 #---------------------------------------------------------
 
-@bank_firemode1=Repair
-@bank_firemode2=Self Repair
-@boomer_trigger_firemode1=Detonate
-@medicalapplicator_firemode1=Heal/Revive
-@medicalapplicator_firemode2=Self Heal
 @Avatar_SomeoneAttemptingHeal=Someone is attempting to Heal you
 @Avatar_SomeoneAttemptingRepair=Someone is attempting to Repair you
-@nano_dispenser_firemode1=Repair
-@remote_electronics_kit_firemode1=Hack
-@command_detonater_firemode1=Use Command Abilities
+
+@bank_firemode1=Repair
+@bank_firemode2=Self repair
+@medicalapplicator_firemode1=Heal/revive
+@medicalapplicator_firemode2=Self heal
 
 # Heavy Weapon Fire Mode descriptors
 #---------------------------------------------------------
-@nchev_falcon_firemode1=Dumb-Fire
 @nchev_scattercannon_firemode1=Wide Spread
 @nchev_scattercannon_firemode2=Average Spread
 @nchev_scattercannon_firemode3=Tight Spread
 @nchev_scattercannon_firemode4=Wide Spread
 @nchev_scattercannon_firemode5=Average Spread
 @nchev_scattercannon_firemode6=Tight Spread
-@nchev_sparrow_firemode1=Homing Mini Missiles
 @trhev_burster_firemode1=Dual Bursters
 @trhev_burster_firemode2=Anchored
 @trhev_dualcycler_firemode1=Dual-Cycler
 @trhev_dualcycler_firemode2=Anchored
-@trhev_pounder_firemode1=Explode on Contact
-@trhev_pounder_firemode2=Anchored (Contact)
-@trhev_pounder_firemode3=Three-Second Delay Fuse
-@trhev_pounder_firemode4=Anchored (Three-Second)
-@vshev_comet_firemode1=Explosive Plasma Charge
-@vshev_quasar_firemode1=Energy Bolt
-@vshev_quasar_firemode2=Armor-Piercing Bolt
-@vshev_starfire_firemode1=Homing Plasma Bolt
+@trhev_pounder_firemode1=Explode on contact
+@trhev_pounder_firemode2=Anchored (Explode on contact)
+@trhev_pounder_firemode3=Three second fuse
+@trhev_pounder_firemode4=Anchored (Three second fuse)
+@vshev_quasar_firemode1=Energy bolt
+@vshev_quasar_firemode2=Armor-piercing bolt
 
 # Vehicle Weapon Fire Mode descriptors
 #---------------------------------------------------------
-@apc_weapon_systemA_firemode1=Tank Cannon
-@apc_weapon_systemB_firemode1=Tank Cannon
-@105mm_cannon_dropship_firemode1=100mm Cannon
-@105mm_cannon_dropship_l_firemode1=100mm Cannon
-@20mm_cannon_dropship_firemode1=20mm Cannon
-@20mm_cannon_dropship_l_firemode1=20mm Cannon
-@dropship_rear_turret_firemode1=20mm Canon
-@advanced_missile_launcher_t_firemode1=Launch Missile
-@chaingun_p_firemode1=Chaingun
-@flux_cannon_thresher_firemode1=Flux Cannon
-@grenade_launcher_marauder_firemode1=GroundPounder
-@heavy_rail_beam_magrider_firemode1=Heavy Rail Beam
-@lightgunship_weapon_system_firemode1=Rotary Chaingun
-@lightgunship_weapon_system_firemode2=Rocket Launcher
-@lightning_weapon_system_firemode1=Tank Cannon
+@liberator_bomb_bay_firemode1=Tankbuster bomb
+@liberator_bomb_bay_firemode2=Cluster bomb
+@lightgunship_weapon_system_firemode1=Rotary chaingun
+@lightgunship_weapon_system_firemode2=Rocket launcher
+@lightning_weapon_system_firemode1=Tank cannon
 @lightning_weapon_system_firemode2=Chaingun
 @mediumtransport_weapon_systemA_firemode1=Recoilless Cannon
 @mediumtransport_weapon_systemB_firemode1=Recoilless Cannon
@@ -1658,8 +1696,10 @@
 @particle_beam_magrider_firemode1=Particle Beam
 @quadassault_weapon_system_firemode1=Twin Chainguns
 @rotarychaingun_mosquito_firemode1=Rotary Chaingun
-@vanguard_weapon_system_firemode1=Heavy Tank Cannon
-@vanguard_weapon_system_firemode2=Dual Recoilless Cannons
+@skyguard_weapon_system_firemode1=Flak cannon
+@skyguard_weapon_system_firemode2=Rotary chaingun
+@vanguard_weapon_system_firemode1=Heavy tank cannon
+@vanguard_weapon_system_firemode2=Dual recoilless cannons
 
 # Inventory Object use descriptors
 #---------------------------------------------------------
@@ -1877,27 +1917,27 @@
 @flail=Flail
 @flaild=Destroyed Flail
 @flails=Flails
-@flailinfo=The Flail is an Ancient Vanu hover-type craft.  It can only carry a single person (driver).  Please fill in the rest of my description.
+@flailinfo=The Flail is an Ancient-Tech (AT) Artillery Platform. This single-person vehicle is driven to a location and then deployed from within (by hitting "B" to deploy). The vehicle then becomes a stationary turret that fires incredibly long-ranged projectiles (they fire up to a kilometer away!) that create devastating damage at their impact location.\n\nTo fire a ranging shot, use the secondary fire mode and then fire. The shot thus created does no damage, and consumes no capacitor energy (ammo), but lets the driver travel along with the projectile in camera mode so you can easily see the exact impact point for that projectile.\n\nOnce a target is ranged in appropriately, switch back to primary mode and begin barraging that area with firepower.
 @flail_destroyed=Your Flail has been destroyed.
 
 @router=Router
 @routerd=Destroyed Router
 @routers=Routers
-@routerinfo=The Router is an Ancient Vanu hover-type craft.  It can only carry a single person (driver).  Please fill in the rest of my description.
+@routerinfo=The Router is an Ancient-Tech (AT) mobile point-to-point teleport system.\n\nThis single-person vehicle is driven to a location and then deployed from within (by hitting "B" to deploy). An access point then becomes available from inside the craft allowing you to grab a 'telepad' object.\n\nThe telepad requires inventory space, so you'll need to clear space in your inventory to grab it.\n\nTo deploy the telepad, equip it and then click the left-mouse button while looking at the ground (much like deploying a mine or Spitfire turret).\n\nOnce the Telepad is deployed, you can instantly move between Router and Telepad by moving into the glowing energy column.\n\nNOTE: This device is *not* IFF. Enemies can use it just as well as friendlies.
 @router_destroyed=Your Router has been destroyed.
 
 @switchblade=Switchblade
 @switchbladed=Destroyed Switchblade
 @switchblades=Switchblades
-@switchbladeinfo=The Switchblade is an Ancient Vanu hover-type craft.  It can only carry a single person (driver).  Please fill in the rest of my description.
+@switchbladeinfo=The Switchblade is an Ancient-Tech (AT) hovercycle that converts to a steady field turret with devastating firepower.\n\nThis single-person vehicle can be driven like a hovercycle. It's exceedingly mobile and has a forward-firing Scythe energy cannon.\n\nHowever, the Switchblade's flexibility comes in the design allowing it to deploy (from within, press 'B' to deploy) and convert into a field turret.\n\nWhen deployed, the Switchblade's Scythe cannon rate of fire increases dramatically and can be rotated 360-degrees for maximum fire coverage.
 @switchblade_destroyed=Your Switchblade has been destroyed.
 
 @vanu_sentry_turret=Ancient Sentry Turret
 @vanu_sentry_turretd=Destroyed Ancient Sentry Turret
 @vanu_sentry_turrets=Ancient Sentry Turrets
-@vanu_sentry_turretinfo=The Ancient Sentry Turret is an Ancient Vanu offensive weapon.  Please fill in the rest of my description.
+@vanu_sentry_turretinfo=The Ancient Sentry Turret draws power directly from the sources flowing through the structures and the very walls of the caverns themselves.\n\nThe turret can be manned by any Empire, regardless of whether any nearby buildings are captured or not.\n\nWhen a turret is manned, the name above it will be red or green, signifying whether an enemy or friendly is in the turret.\n\nThe AST's shots are rapid and are particularly effective against infantry and air targets.
 @vanu_sentry_turret_destroyed=Your Ancient Sentry Turret has been destroyed.
-@vanu_sentry_turret_firemode1=DAVE G
+@vanu_sentry_turret_firemode1=Ionic Burst
 
 # Dialog Box messages
 #---------------------------------------------------------
@@ -1984,6 +2024,8 @@
 @InventoryFavoriteName=Name
 @InventoryPickupNoRoom=You do not have enough room in your inventory to pick up that item.
 @NoDropItem=You can't drop this item.
+@TerminalHacked=The equipment terminal was Hacked!
+@TerminalJacked=The vehicle was Jacked!
 
 # Shop Messages
 #---------------------------------------------------------
@@ -2025,11 +2067,12 @@
 @nodeploy_scoop=You cannot deploy this vehicle while you are this near a cargo hold - move vehicle away from target vehicle.
 @nodeploy_vehiclepad=You are too close or on a vehicle creation pad - cannot deploy vehicle.
 @nodeploy_permission=You do not have permission to deploy this vehicle.
-@nodeploy_water=You cannot deploy this vehicle while it is submerged in water.
+@nodeploy_water=You cannot deploy this vehicle over water.
 @nodeploy_warpgate=You cannot deploy this vehicle in a warpgate envelope.
 @nodeploy_ams=You cannot deploy this vehicle as you are too close to another deployed AMS of your own empire.
 @nodeploy_router=You cannot deploy this vehicle as you are too close to another deployed Router of your own empire.
 @nodeploy_notclear=You must move to a clearer area to deploy this vehicle.
+@nodeploy_toosteep=You cannot deploy this vehicle with this steep an incline.
 
 @FlyingCannotLand=You cannot land at specified point
 @FlyingCannotLandPossibleDamage=Warning: You may take damage if you continue to descend, as that is an invalid point to land.
@@ -2045,6 +2088,7 @@
 @CargoCannotBailUnlessFlying=You cannot bail if the vehicle is not flying - try dismounting.
 @EnableCloak=Press %s to toggle cloak on or off.
 @CloakDisabledByCaptureFlag=You can't cloak while carrying a LLU
+@CloakDisabledByVanuModule=You can't cloak while carrying a Module or Stasis Box.
 @TrainingGriefWarning=Warning: You hit a friendly. Since this is virtual training, damage against friendlies is disabled.\n\nHowever, out in the battlefield, damage against friendlies is real and is not tolerated.\n\nAll acts of aggression against friendly soldiers are recorded into your permanent record, resulting in heightened punitive measures.\n\nThis dialog box can be closed in five seconds. Wait for the red 'X' to appear to close.
 @FlyingAboveFlightCeiling=Your have hit the flight ceiling of %1 (height is %2) - Reducing Height.
 @FlyingNowBelowFlightCeiling=You have now gone below the flight ceiling of %1 (height is %2) - You Now Have Full Control.
@@ -2083,6 +2127,13 @@
 @ZipDeconstruct_Warning=Your vehicle is too close to a zip line terminus.  It will deconstruct in %1 seconds.
 @ZipDeconstruct_Done=Your vehicle is too close to a zip line terminus.  It has been deconstructed.
 
+@FlailLaserObtain=Press the %s key to obtain a Targeting Laser
+
+# Facility Info Page Strings
+#---------------------------------------------------------
+@NoModulesInstalled=No Installed Modules
+
+
 # Outfit Ownership Of Bases Strings
 #---------------------------------------------------------
 @NoClaim_Error=Unable to claim facility.
@@ -2104,6 +2155,8 @@
 
 @Claim_Success=You have claimed this facility in the name of your Outfit.
 @Unclaim_Success=You have relinquished your Outfit's claim on this facility.
+@TeleportPadUseInfo=Step into the beam to transport to the remote telepad.
+
 
 # General Weapon Strings
 #---------------------------------------------------------
@@ -2136,7 +2189,8 @@
 @BindKicked=Control of a respawn point that you manually bound to has been lost.
 @BindAvailable=One of your manually bound respawn points has become available.
 @BindUnavailable=One of your manually bound respawn points has become unavailable.
-@RespawnZoneUnavailable=Respawning zone unavailable, recreating you in current zone.
+@RespawnZoneUnavailable=Desired respawn zone unavailable, you have been respawned in your current zone.
+@RespawnZoneInactive=Desired respawn location inactive, you have been respawned at your sanctuary.
 @RespawnAtSanctuaryDueToRespawnPointDestruction=The Respawn Point you selected was destroyed before you could Respawn!!!
 @BindWrongEmpire=You cannot bind at a vehicle or station that is not currently owned by your Empire.
 @RespawnDelayMessage=The frequency of your deaths has slowed your respawn by %d seconds
@@ -2365,9 +2419,10 @@
 @CMT_GMBROADCAST_VS_cmd=/vsbroadcast
 
 @CMT_GMBROADCASTWORLD=World Broadcast
-@CMT_GMBROADCASTWORLD_usage=usage: /worldbroadcast <message>
+@CMT_GMBROADCASTWORLD_usage=usage: /worldbroadcast <message> OR /wb <message>
 @CMT_GMBROADCASTWORLD_help=Send message to everyone in world
 @CMT_GMBROADCASTWORLD_cmd=/worldbroadcast
+@CMT_GMBROADCASTWORLD_cmd2=/wb
 
 @CMT_GMOPEN=GM Local Chat
 @CMT_GMOPEN_usage=usage: /gmlocal <message>
@@ -2551,6 +2606,7 @@
 @CMT_DESTROY_usage=usage: /destroy
 @CMT_DESTROY_help=Destroy target object.
 @CMT_DESTROY_cmd=/destroy
+@CMT_DESTROY_success=Object destroyed
 
 @CMT_HACK_DOORS=Hack Door
 @CMT_HACK_DOORS_usage=usage: /hackdoors
@@ -2586,7 +2642,7 @@
 
 @CMT_ADDCERTIFICATION=Add Certification
 @CMT_ADDCERTIFICATION_usage=usage: /certadd [certification]
-@CMT_ADDCERTIFICATION_help=Add certification (all if none given).\n\nWeapons:\nstandard_assault\nmeduium_assault\nheavy_assault\nspecial_assault\nanti_vehicular\nSniper\n\nVehicles:\nquad_all\nbuggy_light\nbuggy_assault\ntank_light\ntank_assault\nairship_light\nairship_assault\nairship_transport\nmobile_respawn\ntransport_light\ntransport_heavy\nLiberator\nSkyguard\n\nArmor:\nempire_issue\nagile_armor\nreinforced_armor\ninfiltration_suit\nmax_anti_aircraft\nmax_anti_personnel\nmax_anit_vehicular\n\nSkills:\nMedical\nadvanced_medical\nHacking\nadvanced_hacking\nRepair\ncombat_engineering\n
+@CMT_ADDCERTIFICATION_help=Add certification (all if none given).\n\nWeapons:\nstandard_assault\nmeduium_assault\nheavy_assault\nspecial_assault\nanti_vehicular\nSniper\n\nVehicles:\nquad_all\nbuggy_light\nbuggy_assault\ntank_light\ntank_assault\nairship_light\nairship_assault\nairship_transport\nmobile_artillery\nmobile_respawn\ntransport_light\ntransport_heavy\nLiberator\nSkyguard\n\nArmor:\nempire_issue\nagile_armor\nreinforced_armor\ninfiltration_suit\nmax_anti_aircraft\nmax_anti_personnel\nmax_anit_vehicular\n\nSkills:\nMedical\nadvanced_medical\nHacking\nadvanced_hacking\nRepair\ncombat_engineering\n
 @CMT_ADDCERTIFICATION_cmd=/certadd
 @AckSuccessCertifications=Processed Certifications Successfully
 
@@ -2904,6 +2960,24 @@
 @CMT_SETPOPULATIONCAP_help=Set population limit
 @CMT_SETPOPULATIONCAP_cmd=/popcap
 
+@CMT_MODULE_FACTORY_ROTATE=Rotate Module Factory Type
+@CMT_MODULE_FACTORY_ROTATE_usage=usage: /rotatemoduletype
+@CMT_MODULE_FACTORY_ROTATE_help=Rotate the module types created in the cavern module factories
+@CMT_MODULE_FACTORY_ROTATE_cmd=/rotatemoduletype
+@CMT_MODULE_FACTORY_LOCK=Lock Module Factory Type
+@CMT_MODULE_FACTORY_LOCK_usage=usage: /lockmoduletype
+@CMT_MODULE_FACTORY_LOCK_help=Stop the automatic rotation of module types created in the cavern module factories
+@CMT_MODULE_FACTORY_LOCK_cmd=/lockmoduletype
+@CMT_MODULE_FACTORY_UNLOCK=Unlock Module Factory Type
+@CMT_MODULE_FACTORY_UNLOCK_usage=usage: /unlockmoduletype
+@CMT_MODULE_FACTORY_UNLOCK_help=Resume the automatic rotation of module types created in the cavern module factories
+@CMT_MODULE_FACTORY_UNLOCK_cmd=/unlockmoduletype
+@AckModuleFactoryRotated=Module factory types rotated.
+@AckModuleFactoryLocked=Module factory types locked.
+@AckModuleFactoryAlreadyLocked=Module factory types are already locked.
+@AckModuleFactoryUnlocked=Module factory types unlocked.
+@AckModuleFactoryAlreadyUnlocked=Module factory types are already unlocked.
+
 
 # SEC_ZONE
 #---------------------------------------------------------
@@ -2916,6 +2990,7 @@
 @CMT_ZONE_usage=usage: /zone <zone> [gatename]
 @CMT_ZONE_help=Load a continent. Zonenames are used: z1, z2, ... c1, c2, home1, home2, ...
 @CMT_ZONE_cmd=/zone
+@CMT_ZONE_failure=Unable to zone while inside a map object or if transfer is in progress.
 
 
 # SEC_DEBUG
@@ -2973,11 +3048,16 @@
 @CMT_TEST_BLDG_MODULES_help=Test Ancient Vanu Modules\nff=turn force fields on/off
 @CMT_TEST_BLDG_MODULES_cmd=/testmodule
 
+@CMT_SQUAD_TEST=Test Squads
+@CMT_SQUAD_TEST_usage=usage: /squadtest <cmd>
+@CMT_SQUAD_TEST_help=Test squads -- for dev use only
+@CMT_SQUAD_TEST_cmd=/squadtest
+
 
 # vanu module
 @CMT_ADD_VANUMODULE=Ancient Module Add 
 @CMT_ADD_VANUMODULE_usage=usage: /moduleadd [bind|defender|energy|fortifier|vehicle|weapon]
-@CMT_ADD_VANUMODULE_help=Add an Anciennt Vanu Module
+@CMT_ADD_VANUMODULE_help=Add an Ancient Vanu Module
 @CMT_ADD_VANUMODULE_cmd=/moduleadd
 
 @CMT_REMOVE_VANUMODULE=Ancient Module Remove
@@ -2986,6 +3066,14 @@
 @CMT_REMOVE_VANUMODULE_cmd=/moduleremove
 @CMT_REMOVE_VANUMODULE_cmd2=/modulerm
 
+# more module stuff
+@CMT_VORTEX_MODULE=Vortex Module Manipulation
+@CMT_VORTEX_MODULE_usage=usage: /vortex [ create [bind|defender|energy|fortifier|vehicle|weapon] | drop [all | player] | destroy [all | player] | detonate [all | player] | reset [all | player] ]
+@CMT_VORTEX_MODULE_help=Control the Vortex Modules.
+@CMT_VORTEX_MODULE_cmd=/vortex
+@CMT_VORTEX_MODULE_cmd2=/vtx
+@AckProcessModuleSuccess=Module Request Processed.
+@AckProcessModuleError=Module Request Failed.
 
 
 
@@ -3097,6 +3185,12 @@
 @CMT_TOGGLE_STATS_usage=usage: /stats
 @CMT_TOGGLE_STATS_help=Toggle the performance stats window
 @CMT_TOGGLE_STATS_cmd=/stats
+
+@CMT_VERSION=Show Version
+@CMT_VERSION_usage=usage: /version
+@CMT_VERSION_help=Shows the current PlanetSide version
+@CMT_VERSION_cmd=/version
+@ShowVersion=PlanetSide version %d.%d.%d
 
 
 # squad
@@ -3334,6 +3428,13 @@
 @CMT_SETWARPGATEEMPIRE_help=Set the warpgate empire
 @CMT_SETWARPGATEEMPIRE_cmd=/swe
 
+@CMT_SPEEDHACK=Set SpeedHack Level
+@CMT_SPEEDHACK_usage=usage: /speedhack [level]
+@CMT_SPEEDHACK_help=Sets speedhack multiplier (reset to normal if none given)
+@CMT_SPEEDHACK_cmd=/speedhack
+@SpeedHackEnabled=SpeedHack Enabled
+@SpeedHackDisabled=SpeedHack Disabled
+
 # uplink
 @CMT_UPLINKFRIENDLY=Uplink Friendly
 @CMT_UPLINKFRIENDLY_usage=usage: /showfriendly
@@ -3388,11 +3489,13 @@
 @OverheadLegendSoiNC=New Conglomerate SOI
 @OverheadLegendSoiTR=Terran Republic SOI
 @OverheadLegendSoiVS=Vanu Sovereignty SOI
+@OverheadLegendVanuModule=Vortex Module
 @OverheadLegendWarpgate=Warpgate
 
 @OverheadMapPopulationAvailableNC=NC Positions Available: %d%c
 @OverheadMapPopulationAvailableTR=TR Positions Available: %d%c
 @OverheadMapPopulationAvailableVS=VS Positions Available: %d%c
+@OverheadMapInactive=Inactive
 @OverheadMapPopulationCap=Population Lock
 @OverheadMapPopulationEmpireCap=Empire Population Lock
 
@@ -4020,6 +4123,7 @@
 @NoMount_Error=Unable to mount, unknown error.
 @NoTrunk_Deconstructing=That vehicle is being deconstructed and the trunk cannot be opened.
 @NoTrunk_Permission=This vehicle's trunk has been locked by the owner.
+@NoTrunk_Blocked=You can't place this object in the trunk.
 @PadDeconstruct_30sec=Your vehicle is too close to the vehicle pad.  It will deconstruct in 30 seconds.
 @PadDeconstruct_15sec=Your vehicle is too close to the vehicle pad.  It will deconstruct in 15 seconds.
 @PadDeconstruct_Done=Your vehicle is too close to the vehicle pad.  It has been deconstructed.
@@ -4056,6 +4160,10 @@
 @CaptureTerminalHacked=<<The %1 has hacked into %2 %3>>
 @CaptureTerminalUnhackedHUD=The %1 has resecured %2 %3
 @CaptureTerminalUnhacked=<<The %1 has resecured %2 %3>>
+@CaptureTerminalHackedHUD2=The %1 has hacked into the %2
+@CaptureTerminalHacked2=<<The %1 has hacked into the %2>>
+@CaptureTerminalUnhackedHUD2=The %1 has resecured the %2
+@CaptureTerminalUnhacked2=<<The %1 has resecured the %2>>
 @NewConglomerate=New Conglomerate
 @VanuSovereigncy=Vanu Sovereignty
 @TerranRepublic=Terran Republic
@@ -4105,7 +4213,7 @@
 @LootUnavailable=This avatar cannot be looted yet
 @AvatarInteraction=Press the %s to interact with the target avatar
 @AvatarWrongEmpire=The targeted avatar is of the wrong empire... traitor...
-@PickupObject=Press the %s key to pickup the target object
+@PickupObject=Press the %s key to pick up the target object
 @DeconstructAvatarMessage=Press the %s key to Deconstruct your Avatar
 @NoDeconstructWithFlag=You may not deconstruct while carrying a LLU
 @CaptureFailedDueToLackOfResources=The capture attempt has failed due to the lack of energy in the Silo. Use an ANT to bring energy from the warpgate.
@@ -4124,7 +4232,12 @@
 @nofavorite_noarmorcertification=You can't use that favorite because you are not certified to use that armor type.
 @UsingWarpGate=Warping...
 @WarpGateNotOwnedByPlayersEmpire=This warpgate is secured by another empire, you can't use it.
+@NoWarp_InvalidType=Your current vehicle is unable to pass through the warpgate.
+@NoWarp_InvalidType_Passenger=A vehicle in the cargo hold is unable to pass through the warpgate.
 @NoWarp_HasCaptureFlag=You cannot use the warpgate while carrying the LLU.
+@NoWarp_Expansion1=You cannot use the warpgate because you have not purchased the CORE COMBAT expansion.
+@NoWarp_Passenger_Expansion1=You cannot use the warpgate unless all passengers have purchased the CORE COMBAT expansion.
+@NoWarp_WarpgateInactive=Warpgate is currently inactive.
 @Enter_Warpgate=You have entered the protective shield around the warpgate, your weapons can't be used here.
 @Exit_Warpgate=You have left the protective shield around the warpgate, your weapons can be used now.
 @nouse_equipmentlock=Your ability to use equipment has been suspended.
@@ -4135,6 +4248,8 @@
 @nouse_invalidposition=You can't fire weapons this close to the AMS spawn tube area.
 @AlreadyHacked=This object is already hacked.
 @InformationAboutProgress=Information about progress
+@ChargingVanuModuleMessage=You and your Stasis Box are locked into the Core Beam. Charging Stasis Box now.
+@VanuModuleChargeProgress=Time until your Stasis Box becomes a Vortex Module.
 
 # Grief Messages
 #---------------------------------------------------------
@@ -4403,6 +4518,8 @@
 # Option Screen Strings
 #---------------------------------------------------------
 @OptionsTitle=Options
+@OptionsFilenameDefault=userdefault
+@OptionsFilenameUser=user
 
 @KeymapOption=Keymap Options
 @KeymapOptionTab=Keymap
@@ -4412,6 +4529,7 @@
 @SoundOption=Sound
 @GameOptionTab=Game
 @MiscOption=Game Options
+@ColorOptionTab=Color
 
 @KeymapConfiguration=Current Configuration: 
 @KeymapCurrentCommand=Current Key:
@@ -4616,6 +4734,26 @@
 @RadarAuto=Automatic Ranges
 @RadarAutoTooltip=Automatically change the current range of the proximity map
 
+@ColorChatDefault=General Message
+@ColorChatOpen=Open Chat
+@ColorChatBroadcast=Broadcast Chat
+@ColorChatTell=Tell
+@ColorChatSquad=Squad Chat
+@ColorChatOutfit=Outfit Chat
+@ColorChatCommand=Command Chat
+@ColorChatPlatoon=Platoon Chat
+@ColorChatPlatoonLeader=Pl Leader Chat
+@ColorRedTooltip=Red (0-255)
+@ColorBlueTooltip=Blue (0-255)
+@ColorGreenTooltip=Green (0-255)
+@ColorTooltip=Select this color
+@ColorAccept=Use
+@ColorAcceptTooltip=Use this color
+@ColorCancel=Cancel
+@ColorCancelTooltip=Reset the color
+@ColorNameTitle=Color Description
+@ColorTitle=Color
+
 
 #Option Screen Tooltips
 #---------------------------------------------------------
@@ -4625,6 +4763,7 @@
 @VideoOptionTooltip=Video Options
 @OptionsNameTooltip=Configuration Name
 @SoundOptionTooltip=Sound Options
+@ColorOptionTooltip=Color Options
 @SoundSanctuaryTooltip=The music played when you visit your Empire's Sanctuary
 @SoundShuttleTooltip=The music played when you visit your Empire's Orbital Station
 @SoundSOITooltip=When you enter the Sphere of Influence around a facility, you will hear music that is specific to the Empire controlling that facility
@@ -4641,9 +4780,9 @@
 @SoundDesertCombatTooltip=The more dramatic music you hear when entering combat on a dry, arid continent.
 @SoundArcticCombatTooltip=The more dramatic music you hear when entering combat on a arctic continent.
 @SoundVolcanicCombatTooltip=The more dramatic music you hear when entering combat on a hot volcanic continent.
-@SoundCavernGeneralTooltip=DAVE G
-@SoundCavernCombatTooltip=DAVE G
-@SoundCavernModuleTooltip=DAVE G
+@SoundCavernGeneralTooltip=This is the non-combat music you hear when exploring a cavern.
+@SoundCavernCombatTooltip=This is the music you hear when in combat in a cavern.
+@SoundCavernModuleTooltip=This is the music you hear when you're near a Module Runner, or you are the Module Runner yourself.
 @SoundVolumeTooltip=Set the volume for 2D sounds
 @SoundVolume3dTooltip=Set the volume for 3D sounds
 @SoundMusicTooltip=Set the volume for music
@@ -4720,7 +4859,7 @@
 @GA_ToggleInventory=Toggle Inventory
 @GA_Zoom=Zoom
 @GA_SmoothZoom=Smooth Zoom
-@GA_DropFlag=Drop LLU
+@GA_DropSpecialItem=Drop Special Item
 @GA_RadarIncrease=Radar Increase
 @GA_RadarDecrease=Radar Decrease
 @GA_ToggleMouseLook=Toggle Mouse Look
@@ -4736,7 +4875,7 @@
 @GA_ToggleHelp=Toggle Help
 @GA_Screenshot=Screenshot
 @GA_CycleCharacterNames=Cycle Character Names
-@GA_ToggleStealthSuit=Toggle Stealth Suit
+@GA_ToggleStealthSuit=Toggle Special Ability
 @GA_UseQuickslot1=Use Quickslot 1
 @GA_UseQuickslot2=Use Quickslot 2
 @GA_UseQuickslot3=Use Quickslot 3
@@ -4802,7 +4941,7 @@
 ## @GA_Backward - taken care of in general area
 ## @GA_StrafeLeft - taken care of in general area
 ## @GA_StrafeRight - taken care of in general area
-@GA_FlighAfterburners=Flight Afterburners
+@GA_FlightAfterburners=Flight Afterburners
 ## @GA_10PercentPower - taken care of in ground vehicle area
 ## @GA_20PercentPower - taken care of in ground vehicle area
 ## @GA_30PercentPower - taken care of in ground vehicle area
@@ -4947,6 +5086,8 @@
 @TerminalErrorDifferingEmpires=You are not of the same empire as this building
 @TerminalErrorNoPower=This terminal is currently unpowered
 @TerminalErrorBuildingHacked=The building this terminal belongs to has been hacked
+@TerminalErrorUndeployed=The vehicle providing the terminal is not deployed
+@TerminalErrorOutOfRange=The terminal is too far away
 @TerminalErrorInvalidVehicle=You specified an invalid vehicle name
 @TerminalErrorVehicleNotInGarage=The vehicle must be in the garage to do this
 @TerminalErrorAllVehiclesInactive=To retrieve a vehicle all your other vehicles must be inactive
@@ -4969,6 +5110,10 @@
 @TerminalErrorAlreadyHaveParent=You cannot obtain this vehicle, as you are currently inside a vehicle.
 @TerminalErrorHasCaptureFlag=You cannot obtain this vehicle while carrying a LLU.
 @TerminalErrorHasVanuModule=You cannot obtain this vehicle while carrying a Vortex Module.
+@TerminalErrorTooManyInTransit=There are too many Vortex Modules in transit.
+@TerminalErrorTooManyStasisBoxesInZone=There are too many Stasis Boxes in the Continent.
+@TerminalErrorTooManyStasisBoxesInWorld=Your Empire has too many Vortex Modules installed in Auraxis.
+
 
 #-----Respawn messages
 @ReleaseCountdownText=Countdown before auto-respawn at Sanctuary
@@ -5024,10 +5169,10 @@
 @DeployingMessage=Vehicle has entered deployed state
 @UndeployingMessage=Vehicle has entered undeploy state
 @DifferingDeployVehicleEmpire=Cannot deploy a vehicle controlled by a differing empire
-@DeployVehicleToUseEquipment=Deploy this vehicle to use its equipment
+@DeployVehicleToUseEquipment=The driver must deploy this vehicle before this item is available.
 
 #-----Misc. vehicle messages
-@AutoDrivingOutOfBldg=Auto-driving out of vehicle bay
+@AutoDrivingOutOfBldg=Auto-driving away from the vehicle bay
 @DriverNowHasControl=Driver now has full control of vehicle
 @driver=Driver
 @passenger=Passenger
@@ -5204,7 +5349,8 @@
 @Cert_airship_light=Mosquito
 @Cert_airship_assault=Reaver
 @Cert_airship_transport=Galaxy
-@Cert_mobile_respawn=Advanced Mobile Station
+@Cert_mobile_artillery=Mobile Artillery
+@Cert_mobile_respawn=Tactical Support
 @Cert_transport_light=Deliverer
 @Cert_transport_heavy=Sunderer
 @Cert_advanced_nanite_transporter=Advanced Nanite Transporter
@@ -5247,13 +5393,13 @@
 # Certification descriptions
 #---------------------------------------------------------
 @CertDescription_standard_assault=Allows a soldier to utilize the AMP and Suppressor. Empire-specific weaponry available through this certification includes the Beamer (VS), Repeater (TR), and Scatter-Pistol (NC)
-@CertDescription_medium_assault=The Sweeper and Punisher are available through this certification. Empire-specific weaponry available includes the Pulsar (VS), Cycler (TR), and Gauss Rifle (NC)
-@CertDescription_heavy_assault=Heavy assault weapons for each empire are the Lasher (VS), Mini-Chaingun (TR), and Jackhammer (NC)
-@CertDescription_special_assault=These weapons include the Decimator, Rocklet Rifle, and Thumper (all common pool)
+@CertDescription_medium_assault=The Sweeper and Punisher are available through this certification. Empire-specific weaponry available includes the Pulsar (VS), Cycler (TR), and Gauss Rifle (NC).  With the Core Combat expansion, this certification also grants access to the Spiker ancient technology pistol.
+@CertDescription_heavy_assault=Heavy assault weapons for each empire are the Lasher (VS), Mini-Chaingun (TR), and Jackhammer (NC).  With the Core Combat expansion, this certification also grants access to the Maelstrom ancient technology assault weapon.
+@CertDescription_special_assault=These weapons include the Decimator, Rocklet Rifle, and Thumper (all common pool).  With the Core Combat expansion, this certification also grants access to the Radiator ancient technology radiation grenade launcher.
 @CertDescription_anti_vehicular=Empire-specific weaponry includes the Lancer (VS), Striker (TR), and Phoenix (NC)
 @CertDescription_sniper=This certification allows a soldier to use the Bolt Driver sniper rifle.
 @CertDescription_advanced_nanite_transport=The Advanced Nanite Transport (ANT) is the vehicle used to collect energy at warp gates and transport it to a Silo for use as an energy source for the facility.\n\nThe ANT itself is a machine designed to generate billions of nanites (of a pattern extrapolated from old Vanu records). Those nanites are able to extract energy from the dimensional flux inside a warp bubble and act like tiny batteries.\n\nWhen an ANT deploys near a Silo, the carrier beam from the ANT forces the nanites to move to the Silo.\n\nThe Silo closely, but not exactly, emulates the environment found in the warp bubbles. (Silos are human tech and Humanity isn't close to understanding all the inter-dimensional physics techniques.) Because the Silo is imperfect, the nanites can't generate new power from the faux-warp environment and eventually die out, requiring them to be resupplied.\n\nIn the act of dissolution, the nanite's expiration releases the stored energy within them to the collectors within the Silo. The Silo harnesses that energy for use by the facilities and the ANT makes another round trip to keep the facility supplied.
-@CertDescription_quad_all=Allows access to two cycles: the Wraith, a four-wheeled cycle with stealth capabilities (if you are wearing an Infiltration Suit), and the Assault Basilisk, a fast four-wheel cycle with weaponry.
+@CertDescription_quad_all=Allows access to the following all-terrain vehicles: the Wraith, a four-wheeled cycle with stealth capabilities (if you are wearing an Infiltration Suit), the Assault Basilisk, a fast four-wheel cycle with weaponry, and, with the Core Combat expansion, the Switchblade hovercycle.
 @CertDescription_buggy_light=Allows access to the Harasser, a two-man buggy with a formidable machine gun on the passenger side. The Harasser is also concealed from an Interlink Facility's radar, providing it with enhanced scouting capabilities in enemy territory.
 @CertDescription_buggy_assault_nc=This certification allows soldiers to purchase and use the Enforcer two-man assault vehicle.
 @CertDescription_buggy_assault_tr=This certification allows soldiers to purchase and use the Marauder three-man assault vehicle.
@@ -5265,7 +5411,8 @@
 @CertDescription_airship_light=The scout craft, Mosquito, is available to all with this certification.
 @CertDescription_airship_assault=The gunship, Reaver, is available to all with this certification.
 @CertDescription_airship_transport=The giant airborne Galaxy transport ship becomes available with this certification.
-@CertDescription_mobile_respawn=The tactical vehicle, Advanced Mobile Station (AMS) is available to all with this certification.
+@CertDescription_mobile_artillery=The Flail mobile artillery platform is available to all players with this certification.
+@CertDescription_mobile_respawn=This certification gives players access to the Advanced Mobile Station (AMS) and, with the Core Combat expansion, the Router mobile teleport station.
 @CertDescription_transport_light=The Deliverer transport vehicle is available to all with this certification.
 @CertDescription_transport_heavy=The Sunderer armored personnel transport is available with this certification.
 @CertDescription_empire_issue=This is your standard Empire Body Armor. This certification cannot be removed. When you are respawned after death, this is the armor you'll be wearing.
@@ -5284,8 +5431,8 @@
 @CertDescription_max_anti_vehicular_vs=This exo-armor carries weaponry designed to best fight heavily armored and/or vehicular opponents.
 @CertDescription_medical=Allows use of the medical applicator for healing other soldiers and yourself. When used by an Advanced Medic, the applicator can also Revive a soldier from the dead. This can be invaluable in many battlefield situations. 
 @CertDescription_advanced_medical=Enhances your knowledge of the medical applicator to allow total revival of soldiers presumed dead.
-@CertDescription_hacking=Soldiers with a Hacking certification can hack some of the basic enemy terminals for use by friendly troops, including implant terminals, medical terminals, certification terminals, and lockers. They also hack doors and control consoles faster than soldiers without a Hacking certification.
-@CertDescription_advanced_hacking=An Advanced Hacker does everything a Hacker can do, but does it at very fast speeds, thus minimizing risk to the hacker. Additionally, Advanced Hackers can also 'jack' enemy vehicles, switching them from the enemy empire's control to your own. They are also able to temporarily hack enemy Equipment and Vehicle terminals (in addition to those listed for basic Hacking) so that other friendlies can use them.
+@CertDescription_hacking=Soldiers with a Hacking certification can hack some of the basic enemy terminals for use by friendly troops, including implant terminals, medical terminals, certification terminals, and lockers. They also hack doors and control consoles faster than soldiers without a Hacking certification.\n\nAdditionally, Hackers can also 'jack' enemy vehicles, switching them from the enemy empire's control to your own. 
+@CertDescription_advanced_hacking=An Advanced Hacker does everything a Hacker can do, but does it at very fast speeds, thus minimizing risk to the hacker. They are also able to temporarily hack enemy Equipment and Vehicle terminals (in addition to those listed for basic Hacking) so that other friendlies can use them. Additionally, Advanced Hackers can also 'jack' enemy vehicles, switching them from the enemy empire's control to your own. 
 @CertDescription_repair=Allows use of the BANK and Nano Dispenser, letting you repair body armor on other soldiers as well as yourself, and letting you repair the damage done to vehicles. This is also the prerequisite for Combat Engineering.
 @CertDescription_combat_engineering=Allows use of the ACE combat device. The ACE is used to generate nanite construction of the following objects: HE Mine, Motion Alarm Sensor, Spitfire deployable turret, and the Boomer HE.
 @CertDescription_liberator=The Liberator bomber is available with this certification.
@@ -5298,6 +5445,7 @@
 @CertificationIsPrerequisite=\\#FF8080Certification is a prerequisite for the %s certification and cannot be sold.
 @CertificationHasPrerequisite=\\#FF8080Certification requires the %s certification, which you have not yet purchased.
 @CertificationNotEnoughPoints=\\#FF8080You do not have enough certification points to afford this certification.
+@CertificationNoExpansionAccess1=\\#FF8080This certification requires the Core Combat expansion.
 @CertificationPrerequisiteMessage=This certification is a prerequisite for the following certifications:
 @CertificationUnlearnTimeRemaining=Time remaining to unlearn certification: %s
 
@@ -5357,11 +5505,13 @@
 #---------------------------------------------------------
 @router_telepad=Router Telepad
 @router_telepad_deployable=Router Telepad
+@router_telepad_deployabled=Destroyed Router Telepad
 @TelepadTerminalUseInfo=Press the %s key to obtain a telepad.
 @Telepad_NoDeploy_RouterLost=This Telepad no longer has a link to its Router.
 @Telepad_NoDeploy_RouterOutOfRange=The Router linked to the Telepad is too far away.
 @Telepad_NoDeploy_Router_TooClose=You are too close to a deployed Router.
 @Telepad_NoDeploy_Telepad=You are too close to a friendly Telepad.
+@Telepad_NoDeploy_ChargeBeam=You are too close to the charge beam.
 
 # Inventory favorites
 #---------------------------------------------------------
@@ -5394,6 +5544,7 @@
 @EscapeSound=&Sound Options
 @EscapeGame=&Game Options
 @EscapeKeymapping=&Keymapping
+@EscapeColor=Co&lor Options
 @EscapeHelp=&Help
 @EscapeQuit=&Quit
 @EscapeCancel=&Cancel
@@ -5612,6 +5763,7 @@
 @PlayerSquad=Squad
 @PlayerFriend=Friends
 @PlayerFind=Find Squad
+@PainModuleDamage=You are in a pain field!\nMove away or you will continue to take damage!
 
 
 ########################################
@@ -5692,38 +5844,52 @@
 @xp_warpgate_label=Warpgate
 @xp_warpgate_descrip=You are inside a Warp Bubble.
 @xp_warpgate_message=WARP GATE\n\nYou are within the perimeter of a warp bubble.\n\nTo warp to another continent, move directly into the central column of light on top of the warp pad itself.\n\nWhile you, or anyone else, is in the warp bubble, their matrix is shifted slightly between dimensions to avoid contact with other objects during phasing. Passing through other objects or vehicles will not harm you.\n\nYour weapons will not fire while dimensionally phased. They will return to normal when you exit the warp bubble.
+@xp_spitfire_turret_label=Spitfire Turret
+@xp_spitfire_turret_descrip=You are facing a Spitfire Turret.
+@xp_spitfire_turret_message=SPITFIRE TURRET\n\n<Insert Text Here>
+
 
 # Core Combat cavern object messages
 @xp_ancient_equipment_terminal_label=Ancient Equipment Terminal
 @xp_ancient_equipment_terminal_descrip=You are facing an Ancient Technology Equipment Terminal
-@xp_ancient_equipment_terminal_message=ANCIENT EQUIPMENT TERMINAL\n\n<Insert Description Here>
+@xp_ancient_equipment_terminal_message=ANCIENT EQUIPMENT TERMINAL\n\nBoth human-tech and ancient-tech equipment can be acquired here.
 @xp_ancient_air_vehicle_terminal_label=Ancient Air Vehicle Terminal
 @xp_ancient_air_vehicle_terminal_descrip=You are facing an Ancient Technology Air Vehicle Terminal
-@xp_ancient_air_vehicle_terminal_message=ANCIENT AIR VEHICLE TERMINAL\n\n<Insert Description Here>
-@xp_ancient_ground_vehicle_terminal_label=Ancient Ground Vehicle Terminal
-@xp_ancient_ground_vehicle_terminal_descrip=You are facing an Ancient Technology Ground Vehicle Terminal
-@xp_ancient_ground_vehicle_terminal_message=ANCIENT GROUND VEHICLE TERMINAL\n\n<Insert Description Here>
+@xp_ancient_air_vehicle_terminal_message=ANCIENT AIR VEHICLE TERMINAL\n\nAlthough this vehicle is composed of ancient-tech components, no ancient-tech patterns for air vehicles have been found at this time. Therefore, this terminal supplieds only human-tech vehicles at the moment.
+@xp_ancient_ground_vehicle_terminal_label=Ancient-Tech (AT) Vehicle Terminal
+@xp_ancient_ground_vehicle_terminal_descrip=You are facing an Ancient Technology Vehicle Terminal
+@xp_ancient_ground_vehicle_terminal_message=AT VEHICLE TERMINAL\n\nThis terminal creates both human-tech and ancient-tech vehicles.\n\nNot all such terminals will construct all air or ground vehicles. Usually, ground-level terminals create ground vehicles, and terminals on top of structures create air vehicles.
 @xp_ancient_turret_label=Ancient Sentry Turret
 @xp_ancient_turret_descrip=You are facing an Ancient Technology Sentry Turret
-@xp_ancient_turret_message=ANCIENT SENTRY TURRET\n\n<Insert Description Here>
+@xp_ancient_turret_message=ANCIENT SENTRY TURRET\n\nThis turret can be used by any Empire. If no name exists overhead, then the turret is unoccupied. If the name above the turret is red, it is occupied by an enemy. If the name is green, then it is occupied by a friendly soldier.\n\nTo fire the weapon, tap the left-mouse button. To charge up the weapon, allowing those shots to have a much greater impact and explosion area upon detonation, hold the left-mouse button until the sound you hear reaches its peak. Then release the button to fire at max charge.\n\nNOTE: If you wait until the sound recycles, the shot is at low power again. This requires some practice and skill to perfect.
+@xp_ancient_turret_weapon_label=Ancient Sentry Turret
+@xp_ancient_turret_weapon_descrip=You are facing an Ancient Technology Sentry Turret
+@xp_ancient_turret_weapon_message=ANCIENT SENTRY TURRET\n\nThis turret can be used by any Empire. If no name exists overhead, then the turret is unoccupied. If the name above the turret is red, it is occupied by an enemy. If the name is green, then it is occupied by a friendly soldier.\n\nTo fire the weapon, tap the left-mouse button. To charge up the weapon, allowing those shots to have a much greater impact and explosion area upon detonation, hold the left-mouse button until the sound you hear reaches its peak. Then release the button to fire at max charge.\n\nNOTE: If you wait until the sound recycles, the shot is at low power again. This requires some practice and skill to perfect.
 @xp_vanu_control_console_label=Ancient Control Console
 @xp_vanu_control_console_descrip=You are facing an Ancient Control Console
 @xp_vanu_control_console_message=ANCIENT CONTROL CONSOLE\n\n<Insert Description Here>
 @xp_damage_crystal_label=Damage Crystal
 @xp_damage_crystal_descrip=You are facing a Damage Crystal
-@xp_damage_crystal_message=DAMAGE CRYSTAL\n\n<Insert Description Here>
+@xp_damage_crystal_message=DAMAGE CRYSTAL\n\nLook out! If you stand too close to this crystal, your structural integrity is damaged and you'll take damage over time, eventually resulting in death.
 @xp_energy_crystal_label=Energy Crystal
 @xp_energy_crystal_descrip=You are facing an Energy Crystal
-@xp_energy_crystal_message=ENERGY CRYSTAL\n\n<Insert Description Here>
+@xp_energy_crystal_message=ENERGY CRYSTAL\n\nBy standing near this crystal, any AT weaponry you hold in your inventory will have its capacitor recharged over time, allowing you to fire the weapon again.
 @xp_health_crystal_label=Healing Crystal
 @xp_health_crystal_descrip=You are facing a Healing Crystal
-@xp_health_crystal_message=HEALING CRYSTAL\n\n<Insert Description Here>
+@xp_health_crystal_message=HEALING CRYSTAL\n\nBy standing near this crystal, your soldier's health will regenerate automatically over time.
 @xp_repair_crystal_label=Repair Crystal
 @xp_repair_crystal_descrip=You are facing a Repair Crystal
-@xp_repair_crystal_message=REPAIR CRYSTAL\n\n<Insert Description Here>
+@xp_repair_crystal_message=REPAIR CRYSTAL\n\nBy standing near this crystal, your soldier's armor will be repaired automatically over time. This includes MAX suits.
 @xp_vehicle_crystal_label=Vehicle Crystal
 @xp_vehicle_crystal_descrip=You are facing a Vehicle Crystal
-@xp_vehicle_crystal_message=VEHICLE_CRYSTAL\n\n<Insert Description Here>
+@xp_vehicle_crystal_message=VEHICLE_CRYSTAL\n\nBy parking or hovering your vehicle nearby, its armor will be repaired automatically over time.\n\nAdditionally, if you have an AT vehicle, its weapon capacitors will also be recharged over time.
+@xp_vanu_module_label=Vortex Module
+@xp_vanu_module_descrip=You are facing a Vortex Module.
+@xp_vanu_module_message=VORTEX MODULE\n\nTo activate this Module's benefit, you must install it in a facility.\n\nThere are six kinds of Modules:\n\nHEALING: Soldier health is increased beyond normal maximums if you spawn here *and* all friendlies in this SOI autoregenerate health over time.\n\nSHIELD: This raises a force wall in the wall gates of the facility. Bullets and damage can't penetrate it, nor can enemy vehicles. Infantry can move through it, but are slowed.\n\nSPEED: Soldier footspeed is increased *and* respawn timers are reduced also. (The Bio Lab FLB *does* stack with this, so a combination of the two is quite powerful.)\n\nPAIN: Areas around the facility generate pain fields that damage enemies when they enter those areas. Barracks areas (respawn areas) and Generator rooms are among the protected areas.\n\nVEHICLE: Ancient-tech (AT) vehicles can be acquired at this facility. Also, vehicle reacquisition timers are reduced.\n\nEQUIPMENT: AT hand-held weapons (such as the Maelstrom) can be acquired at this facility. Also, the reacquisition timer for MAX armors is reduced.
+@xp_laze_pointer_label=Laze Pointer
+@xp_laze_pointer_descrip=You are using a Laze Pointer for the first time.
+@xp_laze_pointer_message=LAZE POINTER\n\nEquip this pointer, aim it somewhere and press the fire button. That starts a five-second process of 'painting' an area. Once that five seconds has elapsed, a temporary waypoint (visible to your squad/platoon) is created.\n\nThe waypoint can be used to point out items of interest, meeting points, or even to be used as a forward observer method to indicate targets for Liberators or Flails.
+
 
 # Weapon Help Messages
 @xp_beamer_label=Beamer
@@ -5771,9 +5937,6 @@
 @xp_lasher_label=Lasher
 @xp_lasher_descrip=You have equipped the Lasher heavy energy rifle.
 @xp_lasher_message=LASHER\n\nThe Lasher's energy projectile is slow, however, if it impacts a target, it does impressive damage.\n\nThe Lasher 'orb' also seeks nearby targets and lashes out energy tendrils toward that target, so that even a near-miss can still do damage.\n\nThis results in a particularly lethal weapon when used against squads in close formation.
-@xp_maelstrom_label=Maelstrom
-@xp_maelstrom_descrip=You have equipped the Maelstrom assault weapon.
-@xp_maelstrom_message=MAELSTROM\n\n<Insert Maelstrom description here>
 @xp_magcutter_label=MAG-cutter
 @xp_magcutter_descrip=You have equipped the MAG-cutter, the fall-back weapon of the New Conglomerate.
 @xp_magcutter_message=MAG-CUTTER\n\nThe primary attack of the MAG-Cutter is as a standard knife. The main advantage to this is that the attack is very quiet and can be used to stealthily dispose of wounded foes.\n\nThe secondary mode activates a magnetic vibrating field around the blade. This attack is much more powerful, but the hum is quite distinctive and easily heard in the area it is used.
@@ -5792,18 +5955,12 @@
 @xp_r_shotgun_label=Jackhammer
 @xp_r_shotgun_descrip=You have equipped the Jackhammer rotary shotgun.
 @xp_r_shotgun_message=JACKHAMMER\n\nThe Jackhammer is a heavy assault shotgun with a unique secondary fire mode.\n\nWhen firing in secondary mode, all three barrels are fired in rapid succession, faster than would occur if you pulled the trigger normally. This results in incredible carnage in a short period of time.
-@xp_radiator_label=Radiator
-@xp_radiator_descrip=You have equipped the Radiator special assault weapon.
-@xp_radiator_message=RADIATOR\n\n<Insert Radiator description here>
 @xp_repeater_label=Repeater
 @xp_repeater_descrip=You have equipped the Repeater assault pistol.
 @xp_repeater_message=REPEATER\n\nThe standard sidearm of the Terran Republic, the Repeater has a large-caliber round, fired from an accurate barrel (for a pistol).\n\nThis results in good accuracy and hard hitting power, packaged into a smaller form than a rifle would take.
 @xp_rocklet_label=Rocklet Rifle
 @xp_rocklet_descrip=You have equipped the Rocklet projectile rifle.
 @xp_rocklet_message=ROCKLET RIFLE\n\nThe Rocklet Rifle is a special assault weapon with a unique secondary fire mode.\n\nWhen fired in primary mode, a single rocket streaks forward, impacting in a small explosion.\n\nBut when firing in secondary mode, all shots remaining in the magazine are fired in rapid succession, faster than would occur if you pulled the trigger normally.  This results in incredible carnage in a short period of time.  However, its disadvantage is that the weapon must be fully reloaded before it is capable of firing again.
-@xp_spiker_label=Spiker Pistol
-@xp_spiker_descrip=You have equipped the Spiker pistol.
-@xp_spiker_message=SPIKER\n\n<Insert Spiker description here>
 @xp_striker_label=Striker Missile Launcher
 @xp_striker_descrip=You have equipped the Striker missile launcher.
 @xp_striker_message=STRIKER\n\nThe Striker is an anti-vehicular weapon.\n\nWhen the reticule is laid over an enemy vehicle, MAX, or turret, the Striker will attempt to lock onto that target.\n\nWhen lock is achieved, an audible tone will be heard, and the missile warhead will be guided to the target when fired.\n\nTo maintain lock on a target, the operator must hold the reticule over the target, even AFTER the warhead was fired. Failure to keep the reticule over the target will result in the warhead losing lock and becoming a dumb-fire, straight-line missile.\n\nThe Striker can intentionally be fired in dumb-fire mode by switching to its secondary firing mode.
@@ -5813,6 +5970,17 @@
 @xp_thumper_label=Thumper
 @xp_thumper_descrip=You have equipped the Thumper grenade launcher rifle.
 @xp_thumper_message=THUMPER\n\nThe Thumper is an extremely versatile grenade launcher since it can launch all three existing types of grenade ammo; fragmentation, jammer, and plasma.\n\nThus, if an operator keeps many grenade rounds in their inventory, the weapon can quickly be swapped to meet almost any situational need.  The presence of a Thumper expert on a squad should always be appreciated.
+
+# Core Combat Weapon Messages
+@xp_maelstrom_label=Maelstrom
+@xp_maelstrom_descrip=You have equipped the Maelstrom assault weapon.
+@xp_maelstrom_message=MAELSTROM\n\nThe Maelstrom is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Energy Module installed.\n\nThe primary mode of the weapon fires a Vortex Whip. This beam causes constant damage over time as you keep the left-mouse button depressed and the reticule over the target.\n\nThe secondary firing mode is a Chain-Lash grenade. This grenade explodes when impacting any vehicle or soldier, and immediately tries to 'lash' to other objects in the area, causing additional damage to targets (in much the same fashion that the VS Lasher does already).
+@xp_radiator_label=Radiator
+@xp_radiator_descrip=You have equipped the Radiator special assault weapon.
+@xp_radiator_message=RADIATOR\n\nThe Radiator is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Energy Module installed.\n\nThe primary fire mode of the Radiator launches a small grenade that detonates in a moderate-sized explosion. However, the explosion itself causes no damage.\n\nInstead, the area affected becomes irradiated for a short period of time. Any objects within that area, or any objects passing through that area while the area is irradiated, will take damage over time.\n\nObviously, the weapon has a great number of tactical oppotunities other than straight damage.\n\nNOTE: The area of effects of Radiator shots do *not* stack. In otherwords, if you fire two shots in the same area, the targets in that area will only be damaged as if you fired one shot. So place your shots and resist the urge to oversaturate.
+@xp_spiker_label=Spiker Pistol
+@xp_spiker_descrip=You have equipped the Spiker pistol.
+@xp_spiker_message=SPIKER\n\nThe Spiker is an Ancient-Tech (AT) weapon powered by an energy capacitor. This energy capacitor can only be resupplied by proximity to an Energy Crystal (within the caverns) or proximity to a repair silo at a facility that has the Energy Module installed.\n\nThe pistol is a Medium Assault weapon and does comparable damage, but fits in only a pistol slot. Thus it is very popular with the lighter armors.\n\nAdditionally, the Spiker shot can be either fired immediately (by merely tapping the left-mouse button) or charged for greater damage (by pressing the left-mouse button until max charge is reached and then releasing that mouse button to fire the weapon).\n\nNOTE: The Spiker energy charge drops back to zero if not fired at the moment when it reaches its peak. Thus, this weapon requires a certain element of skill to time the shots for absolute maximum damage.
 
 # MAX Weapon Messages
 @xp_nc_hev_falcon_label=Falcon
@@ -5896,6 +6064,11 @@
 @xp_vanguard_weapons_descrip=You are manning the gunner position on a Vanguard heavy tank.
 @xp_vanguard_weapons_message=VANGUARD WEAPON SYSTEMS\n\nThe Vanguard heavy tank has two weapons available from its gunnery position.\n\nThe gunner can cycle between a 20mm Recoilless Chaingun and a 150mm Cannon.\n\nThe 150mm Cannon is the largest weapon available on the battlefield and makes short work of almost anything it hits, but the chaingun still has its uses against faster-moving targets and for suppression fire.
 
+# Core Combat Vehicle Weapon Help Messages
+@xp_scythe_label=Scythe
+@xp_scythe_descrip=You are driving the Switchblade and have access to the Scythe weapon.
+@xp_scythe_message=SCYTHE\n\nThe Scythe cannon fires v-shaped wedges of energy. These wide projectiles make it easier to hit objects in that they will detonate as soon as any part of their wedge brushes against a target.\n\nAdditionally, when the Switchblade is properly deployed, the Scythe's rate of fire increases dramatically enabling the driver to inundate an area with projectiles, suppressing or destroying enemies to draw fire and protect other elements on the move.
+
 # Vehicle Help Messages
 @xp_ams_label=Advanced Mobile Station
 @xp_ams_descrip=You are facing an Advanced Mobile Station (AMS).
@@ -5954,6 +6127,17 @@
 @xp_vanguard_label=Vanguard
 @xp_vanguard_descrip=You are facing the Vanguard heavy armor assault vehicle.
 @xp_vanguard_message=VANGUARD\n\nThis heavy tank is the largest in the arsenal of the New Conglomerate.\n\nIts speed is decent despite its heavy armor plating and it's two weapons platforms make it formidable on the field.\n\nThe 20mm Chaingun prevents infantry from being able to close with the vehicle easily, while the 150mm Cannon, the largest weapon available anywhere, decimates enemy armor targets.
+
+# Core Combat Vehicle Help Messages
+@xp_flail_label=Flail
+@xp_flail_descrip=You are facing the Flail.
+@xp_flail_message=FLAIL\n\nThe Flail is an Ancient-Tech (AT) Artillery Platform. This single-person vehicle is driven to a location and then deployed from within (by hitting "B" to deploy). The vehicle then becomes a stationary turret that fires incredibly long-ranged projectiles (they fire up to a kilometer away!) that create devastating damage at their impact location.\n\nTo fire a ranging shot, use the secondary fire mode and then fire. The shot thus created does no damage, and consumes no capacitor energy (ammo), but lets the driver travel along with the projectile in camera mode so you can easily see the exact impact point for that projectile.\n\nOnce a target is ranged in appropriately, switch back to primary mode and begin barraging that area with firepower.
+@xp_router_label=Router
+@xp_router_descrip=You are facing the Router.
+@xp_router_message=ROUTER\n\nThe Router is an Ancient-Tech (AT) mobile point-to-point teleport system.\n\nThis single-person vehicle is driven to a location and then deployed from within (by hitting "B" to deploy). An access point then becomes available from inside the craft allowing you to grab a 'telepad' object.\n\nThe telepad requires inventory space, so you'll need to clear space in your inventory to grab it.\n\nTo deploy the telepad, equip it and then click the left-mouse button while looking at the ground (much like deploying a mine or Spitfire turret).\n\nOnce the Telepad is deployed, you can instantly move between Router and Telepad by moving into the glowing energy column.\n\nNOTE: This device is *not* IFF. Enemies can use it just as well as friendlies.
+@xp_switchblade_label=Switchblade
+@xp_switchblade_descrip=You are facing the Switchblade.
+@xp_switchblade_message=SWITCHBLADE\n\nThe Switchblade is an Ancient-Tech (AT) hovercycle that converts to a steady field turret with devastating firepower.\n\nThis single-person vehicle can be driven like a hovercycle. It's exceedingly mobile and has a forward-firing Scythe energy cannon.\n\nHowever, the Switchblade's flexibility comes in the design allowing it to deploy (from within, press 'B' to deploy) and convert into a field turret.\n\nWhen deployed, the Switchblade's Scythe cannon rate of fire increases dramatically and can be rotated 360-degrees for maximum fire coverage.
 
 # Equipment Help Messages
 @xp_ace_label=Adaptive Construction Engine (ACE)
@@ -6399,6 +6583,7 @@
 @OutfitErrorNotEnoughSquadMembers=You do not have enough squad members to form an outfit.
 @OutfitErrorNotInvited=Not invited to an outfit.
 @OutfitErrorInvalidTitle=One or more of the titles you entered are not valid.  They have been reset.
+@OutfitErrorDatabaseError=Temporarily unable to create outfit.  Please try again later.
 
 @OutfitLeader_Changed=Outfit leader has been changed.
 @OutfitPoints_Changed=Outfit points updated.
@@ -6468,6 +6653,8 @@
 @HelpOptionVideoAdvancedText=If you want to see PlanetSide with maximum detail, go to the ADVANCED tab. RECOMMENDATION: DO NOT USE THIS unless you have more than 512MB of system RAM and at least 128MB of video card memory. By toggling these textures on, you will see the game in its highest texture precision...but they take a lot of memory. You can achieve great effect by upping the resolution on specific categories of objects also, without turning them ALL on. This allows some improvements even if you can't afford the RAM glut for all high-res textures.
 @HelpOptionSound=Sound Options
 @HelpOptionSoundText=You can customize your sound driver, volumes, and music tracks in this area.\n\nSound Driver: Choose the appropriate sound driver from the list provided. If you do not have a hardware sound accelerator, you should stick with DirectSound3D Software Emulation. If you have a hardware sound accelerator, then you should try at least straight DirectSound3D Hardware Support so that your soundcard does the work of manipulating sounds instead of your system CPU.\n\n2D Sound Effects Volume: This adjusts interface sounds (clicks of buttons, mouseover sounds, etc.) as well as some larger-scale sounds, like weather.\n\n3D Sound Effects Volume: This adjusts all the other sounds in the world that require 3D-positioning so that you can get a feel for where they are in the world from your speakers.\n\nMusic volume: Adjusts the volume of the various music tracks.\n\nSound Tracks: Some folks have particular tastes in music. If you wish to turn off any particular music track, you can do so here.
+@HelpOptionColor=Color Options
+@HelpOptionColorText=You can customize your chat colors. The channels each have a color value that you can pick.
 @HelpOptionOther=Game Options
 @HelpOptionOtherText=A few miscellaneous controls are listed here.\n\nAlways Run: If you toggle this option off, you will walk by default instead of run by default.\n\nShow Help Stars: If you turn this feature off, then you will no longer see the Help Stars over terminals, vehicles, etc. when you go into the game with a new character.\n\nRender Names: The 'All' setting means that you see everyone's names. The 'Outfit' setting means that you see everyone's names AND Outfits. The 'None' setting makes it so you don't see any names at any time. NOTE: You can also toggle through these states while in the world by hitting ALT+N repeatedly.
 @HelpHUDView=HUD Elements
@@ -6766,6 +6953,11 @@
 @CTF_NoPickup_MAXArmor=You cannot pick up this LLU while you are in MAX armor
 @CTF_NoPickup_AlreadyHaveFlag=You cannot pick up this LLU because you are already carrying one
 
+# Teleport Pad Messages
+#------------------------------------------------------------------------------
+@NoTeleport_LLU=You can't use deployable teleport pads while carrying a LLU
+@NoTeleport_StasisBox=You can't use deployable teleport pads while carrying a Stasis Box
+@NoTeleport_Module=You can't use deployable teleport pads while carrying a Vortex Module
 
 # Training Zone Select HUD & Kick Messages
 #------------------------------------------------------------------------------
@@ -7328,25 +7520,40 @@
 # Vanu Module Types
 #-------------------------------------------------------------------------------------------------
 @VanuModuleEmpty=Stasis Box
-@VanuModuleBind=Bind Module
-@VanuModuleEnergy=Energy Module
-@VanuModuleFortifier=Fortifier Module
-@VanuModuleDefender=Defender Module
+@VanuModuleBind=Speed Module
+@VanuModulePain=Pain Module
+@VanuModuleDefender=Shield Module
 @VanuModuleVehicle=Vehicle Module
-@VanuModuleWeapon=Weapon Module
+@VanuModuleWeapon=Equipment Module
+@VanuModuleHealing=Healing Module
 
 # Vanu Module Messages
 #------------------------------------------------------------------------------
 
-@VMDroppedModule=%1 of the %2 has dropped a %3 Module nearby!
-@VMPickedUpModule=%1 of the %2 has picked up a %3 Module nearby!
+@VMModuleCharged=%1 of the %2 has charged a %3!
+@VMDroppedModule=%1 of the %2 has dropped a %3 nearby!
+@VMPickedUpModule=%1 of the %2 has picked up a %3 nearby!
 @VMDroppedStasis=%1 of the %2 has dropped a Stasis Box nearby!
 @VMPickedUpStasis=%1 of the %2 has picked up a Stasis Box nearby!
 @VMRunnerPickupMessageEmpty=You have %1 minute(s) to fill and place this module.
 @VMRunnerPickupMessage=You have %1 minute(s) to place this module.
-@VMDestroyedMessage=A %1 Module has been destroyed nearby!
+@VMDestroyedMessage=A %1 has been destroyed nearby!
 @VMDestroyedMessageEmpty=A Stasis Box has been destroyed nearby!
 @VMEmpireChanged=The %1 took a %2 from the %3!
+@VMNoPickupHaveCaptureFlag=You must drop the LLU to pick up the Vortex Module.
+@VMNoPickupHaveVortexModule=You already have a Vortex Module.
+@VMNoPickupHeavyArmor=You can't pick up a Vortex Module in Max Armor.
+@VMModuleInstalled=%1 has installed a %2 at %3 for the %4!
+@VMModuleStolen=%1 of the %2 has stolen a %3 from %4!
+@VMDetonateWaterMessage=A %1 Module detonated after contacting Water!
+@VMDetonateLavaMessage=A %1 Module detonated after contacting Lava!
+@VMDetonateMessage=A %1 Module detonated because the timer expired!
+@VMDetonateWaterMessageEmpty=A Stasis Box detonated after contacting Water!
+@VMDetonateLavaMessageEmpty=A Stasis Box detonated after contacting Lava!
+@VMDetonateMessageEmpty=A Stasis Box detonated because the timer expired!
+@NoUse_Expansion1=You cannot use this item without purchasing the CORE COMBAT expansion.
+@NoUse_Expansion=You cannot use this item without purchasing an expansion.
+
 
 # Vanu Receptacle
 #------------------------------------------------------------------------------
@@ -7355,14 +7562,26 @@
 
 # Vanu Receptacle Messages
 #------------------------------------------------------------------------------
-@ReceptacleInfo=Generic information about the installed module.
-@ReceptaclePlaceModule=Press 'G' to insert Vortex Module in this receptacle.
-@ReceptacleReplaceModule=Press 'G' to replace the currently installed Vortex Module with your Vortex Module.
+@ReceptacleInfoEmpty=This Vortex Receptacle is Empty.
+@ReceptacleInfo=The %1 is installed in this Vortex Receptacle.
+@ReceptaclePlaceModule=Press %s to insert Vortex Module in this receptacle.
+@ReceptacleReplaceModule=Press %s to replace the currently installed Vortex Module with your Vortex Module.
 @ReceptacleWrongModuleType=You are carrying the wrong Vortex Module type for this Receptacle.
-@ReceptacleRemoveModule=Press 'G' to remove the installed Module.
-@ReceptacleStealModule=Press 'G' to steal this Module!
-@ReceptacleWrongEmpire=This receptacle is owned by a different empire.  You can't install the module here.
+@ReceptacleRemoveModule=Press %s to remove the installed Module.
+@ReceptacleStealModule=Press %s to steal this Module!
+@ReceptacleWrongEmpire=This receptacle is not owned by your empire.  You can't install the module here.
+@ReceptacleModuleAlreadyInstalled=You can't install your Vortex Module Here. A module of that type is already installed at this base.
+@ReceptacleModuleNotCharged=The Stasis Box you are carrying is not charged.
 
-@CradleUse=Press 'G' to create a Stasis Box.
-@CradleTooManyInZone=There are too many Vortex Modules in the Zone.
-@CradleTooManyInWorld=There are too many Vortex Modules in the World.
+
+# Vanu Cradle / Control Console Messages
+#------------------------------------------------------------------------------
+@CradleUse=Press the %s key to create a Stasis Box.
+@CradleTooManyInZone=There are too many Vortex Modules on this Continent.
+@CradleTooManyInWorld=There are too many Vortex Modules in Auraxis.
+@CradleAlreadyHaveModule=You already have a Stasis Box or Vortex Module in your possession.
+@CradleHasCaptureFlag=You have an LLU and can't use this object.
+@CradleBusyConstructingStasisBox=Busy creating a Stasis Box.
+@CradleStasisBoxCreated=You created a Stasis Box.
+@CradleUserInHeavyArmor=You can't purchase a Stasis Box in your armor type.
+@CradleTooManyInTransit=There are too many Vortex Modules in transit.  Please try again later.

@@ -1,22 +1,204 @@
 #sc_begin
 
-##cs2_cavern_wall_ul02__ugd_ceryshen_lm_gf3
+##cs2_ef_router_dome
 
-sc_colorop modulate
+sc_colorop selectarg1
 sc_colorarg1 current
 sc_colorarg2 texture
-sc_alphaop selectarg1
+sc_alphaop modulate
 sc_alphaarg1 current
 sc_alphaarg2 texture
 sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
+sc_addressw wrap
 sc_bumpenvlscale 0
 sc_bumpenvloffset 0
 sc_bumpenvmat00 0
 sc_bumpenvmat01 0
 sc_bumpenvmat10 0
 sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_ef_module_node_active
+
+sc_colorop modulate
+sc_colorarg1 tfactor
+sc_colorarg2 texture
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 diffuse
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_texgen 1 0 1 1 0 0
+sc_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs0_ef_tracer
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_ceryshenicetexture__ceiling_int_a_lm
+
+sc_colorop modulate2x
+sc_colorarg1 current
+sc_colorarg2 texture
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_ceryshenicetexture__ceiling_int_a_lm
+
+sc_colorop modulate2x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_ef_radiator_sphere_gf3
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate2x
+sc_alphaarg1 texture
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_texgen -.25 0 1 1 0 0
+sc_transform 1 0 0 0 0 3 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs1_ef_radiator_sphere_gf3
+
+sc_colorop modulate
+sc_colorarg1 current
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
 sc_bordercolor FF000000
 sc_magfilter linear
 sc_minfilter linear
@@ -24,7 +206,158 @@ sc_mipfilter linear
 sc_mipmaplodbias 0
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_transform 10 0 0 0 0 10 0 0 0 0 1 0 0 0 0 1
+sc_texgen -.1 .2 1 1 0 0
+sc_transform 1 0 0 0 0 2 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs0_vanu_module_swatch_vs
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_tr
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_energy
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_nc
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
 sc_end
 
 ##cs1_ef_amerish_river_cloudy_null
@@ -650,8 +983,8 @@ sc_mipfilter linear
 sc_mipmaplodbias 0
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_texgen .01 -.5 1 1 0 0
-sc_transform 3 0 0 0 0 2 0 0 0 0 1 0 0 0 0 1
+sc_texgen .1 -.65 1 1 0 0
+sc_transform 2 0 0 0 0 -1 0 0 0 0 1 0 0 0 0 1
 sc_end
 
 ##cs0_ef_amerish_water_crest_null
@@ -1714,19 +2047,18 @@ sc_mipfilter linear
 sc_mipmaplodbias 0.00
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_texgen -2.5 0 1 1 0 0
-sc_transform 1 0 0 0 0 .3 0 0 0 0 1 0 0 0 0 1
+sc_texgen -5 0 1 1 0 0
 sc_end
 
 ##cs1_ef_vanu_tunnel_beam_core
 
-sc_colorop modulate2x
+sc_colorop modulate4x
 sc_colorarg1 texture
 sc_colorarg2 current
 sc_alphaop modulate
 sc_alphaarg1 current
 sc_alphaarg2 tfactor
-sc_texcoordindex uv2
+sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
 sc_addressw wrap
@@ -5831,9 +6163,9 @@ sc_end
 sc_colorop modulate
 sc_colorarg1 texture
 sc_colorarg2 tfactor
-sc_alphaop selectarg1
+sc_alphaop modulate2x
 sc_alphaarg1 texture
-sc_alphaarg2 diffuse
+sc_alphaarg2 tfactor
 sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
@@ -11668,7 +12000,7 @@ sc_end
 
 ##cs0_new_barrier_effect
 
-sc_colorop bumpenvmap
+sc_colorop modulate
 sc_colorarg1 texture
 sc_colorarg2 current
 sc_alphaop modulate
@@ -11678,20 +12010,23 @@ sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
 sc_addressw wrap
-sc_bumpenvlscale 4.0
-sc_bumpenvloffset 0.0
-sc_bumpenvmat00 0.5
-sc_bumpenvmat01 0.0
-sc_bumpenvmat10 0.0
-sc_bumpenvmat11 0.5
-sc_bordercolor FF000000
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
 sc_magfilter linear
 sc_minfilter linear
 sc_mipfilter linear
-sc_mipmaplodbias 0
+sc_mipmaplodbias 0.00
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_transform .25 0 0 0 0 5 0 0 0 0 1 0 0 0 0 1
+sc_rotate 20 0.5 0.5
 sc_end
 
 ##cs0_map10
@@ -28005,9 +28340,7 @@ sc_mipfilter linear
 sc_mipmaplodbias 0
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_texgen 0.5 0.5 1 1 0 0
-sc_rotate 33 0.5 0.5
-sc_transform .6 0 0 0 0 .9 0 0 0 0 1 0 0 0 0 1
+sc_texgen -.2 0 1 1 0 0
 sc_end
 
 ##cs2_skydeserta_null_gf3
@@ -35513,7 +35846,7 @@ sc_end
 sc_colorop modulate
 sc_colorarg1 texture
 sc_colorarg2 tfactor
-sc_alphaop modulate
+sc_alphaop modulate2x
 sc_alphaarg1 texture
 sc_alphaarg2 texture
 sc_texcoordindex passthru
@@ -35544,10 +35877,10 @@ sc_end
 
 sc_colorop modulate
 sc_colorarg1 current
-sc_colorarg2 tfactor
+sc_colorarg2 texture
 sc_alphaop modulate
 sc_alphaarg1 current
-sc_alphaarg2 texture
+sc_alphaarg2 tfactor
 sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
@@ -35566,9 +35899,8 @@ sc_mipfilter linear
 sc_mipmaplodbias 0
 sc_maxmiplevel 0
 sc_texturetransformflags count2
-sc_texgen .025 .01 1 1 0 0
-sc_rotate 10 0.5 0.5
-sc_transform 2.5 0 0 0 0 2.5 0 0 0 0 1 0 0 0 0 1
+sc_texgen -.1 .2 1 1 0 0
+sc_transform 1 0 0 0 0 2 0 0 0 0 1 0 0 0 0 1
 sc_end
 
 ##cs0_ef_zipline
@@ -36007,10 +36339,10 @@ sc_addressv wrap
 sc_addressw wrap
 sc_bumpenvlscale .25
 sc_bumpenvloffset 0.0
-sc_bumpenvmat00 0.5
-sc_bumpenvmat01 0.0
+sc_bumpenvmat00 -.6
+sc_bumpenvmat01 0
 sc_bumpenvmat10 0.0
-sc_bumpenvmat11 .25.5
+sc_bumpenvmat11 .5
 sc_bordercolor FF000000
 sc_magfilter linear
 sc_minfilter linear
@@ -36026,10 +36358,10 @@ sc_end
 
 sc_colorop modulate
 sc_colorarg1 texture
-sc_colorarg2 tfactor
+sc_colorarg2 texture
 sc_alphaop modulate
 sc_alphaarg1 texture
-sc_alphaarg2 current
+sc_alphaarg2 texture
 sc_texcoordindex uv2
 sc_addressu wrap
 sc_addressv wrap
@@ -36053,12 +36385,12 @@ sc_end
 
 ##cs2_warpgate_cavern_dome_null_gf3
 
-sc_colorop blendtexturealpha
-sc_colorarg1 current
+sc_colorop modulate
+sc_colorarg1 texture
 sc_colorarg2 tfactor
-sc_alphaop blendtexturealpha
+sc_alphaop modulate
 sc_alphaarg1 current
-sc_alphaarg2 texture
+sc_alphaarg2 tfactor
 sc_texcoordindex passthru
 sc_addressu wrap
 sc_addressv wrap
@@ -37323,7 +37655,7 @@ sc_end
 sc_colorop modulate
 sc_colorarg1 texture
 sc_colorarg2 current
-sc_alphaop modulate2x
+sc_alphaop modulate4x
 sc_alphaarg1 texture
 sc_alphaarg2 current
 sc_texcoordindex passthru
@@ -37344,7 +37676,7 @@ sc_mipmaplodbias 0
 sc_maxmiplevel 0
 sc_texturetransformflags count2
 sc_texgen .2 -.7 1 1 0 0
-sc_transform 3 0 0 0 0 -1 0 0 0 0 1 0 0 0 0 1
+sc_transform 2.5 0 0 0 0 -1 0 0 0 0 1 0 0 0 0 1
 sc_end
 
 ##cs2_ef_amerish_water_crest_null_gf3
@@ -37644,6 +37976,60 @@ sc_texgen -.2 .5 1 1 0 0
 sc_transform 5 0 0 0 0 .5 0 0 0 0 1 0 0 0 0 1
 sc_end
 
+##cs0_cavern_wall_ul02__ugd_ceryshen_lm_gf3
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 diffuse
+sc_alphaop selectarg1
+sc_alphaarg1 diffuse
+sc_alphaarg2 diffuse
+sc_texcoordindex uv2
+sc_addressu clamp
+sc_addressv clamp
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_cavern_wall_ul02__ugd_ceryshen_lm
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
 ##cs0_ancient_glass_ext_null
 
 sc_colorop modulate
@@ -37674,6 +38060,580 @@ sc_maxmiplevel 0
 sc_texturetransformflags count2
 sc_texgen 0 -0.4 1 1 0 0
 sc_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs2_cavern_wall_ul02__ugd_ceryshen_lm_gf3
+
+sc_colorop modulate2x
+sc_colorarg1 current
+sc_colorarg2 texture
+sc_alphaop selectarg1
+sc_alphaarg1 current
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_transform 12 0 0 0 0 12 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs0_ef_vanu_tunnel_beam_core_gf3
+
+sc_colorop addsigned
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_texgen -5 .2 1 1 0 0
+sc_end
+
+##cs1_ef_vanu_tunnel_beam_core_gf3
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_null
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_bind
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_defender
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_fortifier
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_vehicle
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs2_ef_radiator_sphere_gf3
+
+sc_colorop selectarg1
+sc_colorarg1 current
+sc_colorarg2 texture
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 tfactor
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_vanu_module_swatch_weapon
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_cavern_wall_ul02__ugd_solsar_b_lm_gf3
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_cavern_floor_ul02__ugd_solsar_lm_gf3
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_cavern_floor_ul02_ugd04_mesas_floor
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_cavern_ripped_ul02__ugd_solsar_lm
+
+sc_colorop modulate4x
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs1_ef_tracer_faded
+
+sc_colorop modulate
+sc_colorarg1 current
+sc_colorarg2 texture
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_transform -.95 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs1_ef_router_dome
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_ef_router_dome
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 tfactor
+sc_alphaop modulate4x
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0.00
+sc_bumpenvloffset 0.00
+sc_bumpenvmat00 0.00
+sc_bumpenvmat01 0.00
+sc_bumpenvmat10 0.00
+sc_bumpenvmat11 0.00
+sc_colorarg0 current
+sc_alphaarg0 current
+sc_resultarg current
+sc_bordercolor 00000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0.00
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_transform 1 0 0 0 0 -6 0 0 0 0 1 0 0 0 0 1
+sc_end
+
+##cs1_ef_router_dome_gf3
+
+sc_colorop modulate
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 texture
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs2_ef_router_dome_gf3
+
+sc_colorop selectarg1
+sc_colorarg1 current
+sc_colorarg2 texture
+sc_alphaop modulate
+sc_alphaarg1 current
+sc_alphaarg2 tfactor
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 0
+sc_bumpenvloffset 0
+sc_bumpenvmat00 0
+sc_bumpenvmat01 0
+sc_bumpenvmat10 0
+sc_bumpenvmat11 0
+sc_resultarg current
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags disable
+sc_end
+
+##cs0_ef_router_dome_gf3
+
+sc_colorop bumpenvmap
+sc_colorarg1 texture
+sc_colorarg2 current
+sc_alphaop modulate
+sc_alphaarg1 texture
+sc_alphaarg2 current
+sc_texcoordindex passthru
+sc_addressu wrap
+sc_addressv wrap
+sc_addressw wrap
+sc_bumpenvlscale 4.0
+sc_bumpenvloffset 0.0
+sc_bumpenvmat00 0.5
+sc_bumpenvmat01 0.0
+sc_bumpenvmat10 0.0
+sc_bumpenvmat11 0.5
+sc_bordercolor FF000000
+sc_magfilter linear
+sc_minfilter linear
+sc_mipfilter linear
+sc_mipmaplodbias 0
+sc_maxmiplevel 0
+sc_texturetransformflags count2
+sc_texgen 0 -.15 1 1 0 0
+sc_transform 2 0 0 0 0 5 0 0 0 0 1 0 0 0 0 1
 sc_end
 
 ##hive_stage1

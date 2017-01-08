@@ -1,5 +1,110 @@
 #lc_begin
 
+##ul06
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FFFFFFFF
+lc_ambient 585858
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 32.40 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
+##ul05
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FFFFFFFF
+lc_ambient 585858
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 39.60 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
+##ul04
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FFFFFFFF
+lc_ambient 988989
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 32.40 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
+##ul03
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FF000000
+lc_ambient 999999
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 36.00 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
+##ul01
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FFFFFFFF
+lc_ambient 585858
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 32.40 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
 ##ugd_20
 
 lc_type directional
@@ -318,7 +423,7 @@ lc_end
 ##ugd_05
 
 lc_type directional
-lc_fogcolor 777E9F
+lc_fogcolor 737A9B
 lc_yon 286.72
 lc_fogstart 0.340
 lc_fogend 1.000
@@ -364,8 +469,8 @@ lc_fogcolor A0A6A7
 lc_yon 245.76
 lc_fogstart 0.000
 lc_fogend 1.000
-lc_diffuse FF4F5457
-lc_ambient 333537
+lc_diffuse FFDFFFFF
+lc_ambient C0C0C0
 lc_specular FFCBE0E4
 lc_position 0.0 0.0 0.0
 lc_direction -28.80 100.80 46.80
@@ -381,9 +486,9 @@ lc_end
 ##ugd_02
 
 lc_type directional
-lc_fogcolor 152D20
-lc_yon 307.20
-lc_fogstart 0.420
+lc_fogcolor 163223
+lc_yon 266.24
+lc_fogstart 0.410
 lc_fogend 1.000
 lc_diffuse FFEDF4F8
 lc_ambient D1D5C6
@@ -509,27 +614,6 @@ lc_specular FFFFFFFF
 lc_position 0.00 0.00 0.00
 lc_direction 0.0 0.0 0.0
 lc_range 3.00
-lc_falloff 1.0
-lc_theta 0.0
-lc_phi 0.0
-lc_attenuation0 1.0
-lc_attenuation1 0.0
-lc_attenuation2 0.0
-lc_end
-
-##power_down
-
-lc_type directional
-lc_fogcolor 404040
-lc_yon 600
-lc_fogstart 0.2
-lc_fogend 0.8
-lc_diffuse FF000000
-lc_ambient 683E3E
-lc_specular FFFFFFFF
-lc_position 0.0 0.0 0.0
-lc_direction 0.0 0.0 0.0
-lc_range 0.0
 lc_falloff 1.0
 lc_theta 0.0
 lc_phi 0.0
@@ -1640,6 +1724,27 @@ lc_attenuation1 0.0
 lc_attenuation2 0.0
 lc_end
 
+##ul02
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FFFFFFFF
+lc_ambient 585858
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 36.00 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
+lc_end
+
 ##asmr_power
 
 lc_type point
@@ -1712,23 +1817,6 @@ lc_attenuation1 0.0
 lc_attenuation2 0.0
 lc_end
 
-##forceblade
-
-lc_type point
-lc_diffuse FF48D1FF
-lc_ambient 0
-lc_specular FFFFFFFF
-lc_position 0.00 0.00 0.00
-lc_direction 0.0 0.0 0.0
-lc_range 1.70
-lc_falloff 1.00
-lc_theta 0.00
-lc_phi 0.00
-lc_attenuation0 1.00
-lc_attenuation1 1.00
-lc_attenuation2 0.75
-lc_end
-
 ##vr_training
 
 lc_type directional
@@ -1748,6 +1836,23 @@ lc_phi 0.0
 lc_attenuation0 1.0
 lc_attenuation1 0.0
 lc_attenuation2 0.0
+lc_end
+
+##forceblade
+
+lc_type point
+lc_diffuse FF48D1FF
+lc_ambient 0
+lc_specular FFFFFFFF
+lc_position 0.00 0.00 0.00
+lc_direction 0.0 0.0 0.0
+lc_range 1.70
+lc_falloff 1.00
+lc_theta 0.00
+lc_phi 0.00
+lc_attenuation0 1.00
+lc_attenuation1 1.00
+lc_attenuation2 0.75
 lc_end
 
 ##character_view
@@ -1786,6 +1891,27 @@ lc_phi 0.0
 lc_attenuation0 0.40
 lc_attenuation1 0.56
 lc_attenuation2 0.16
+lc_end
+
+##power_down
+
+lc_type directional
+lc_fogcolor 404040
+lc_yon 600
+lc_fogstart 0.2
+lc_fogend 0.8
+lc_diffuse FF000000
+lc_ambient 683E3E
+lc_specular FFFFFFFF
+lc_position 0.0 0.0 0.0
+lc_direction 0.0 0.0 0.0
+lc_range 0.0
+lc_falloff 1.0
+lc_theta 0.0
+lc_phi 0.0
+lc_attenuation0 1.0
+lc_attenuation1 0.0
+lc_attenuation2 0.0
 lc_end
 
 ##teleportation

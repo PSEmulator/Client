@@ -64,12 +64,12 @@ $Name$
 <Image Location='27,11' Name='Flag' PackLocation='left,top' PackLocationProp='0027/0001,0011/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='46,32' Size='46,32' Stretch='false' Style='/Icons.Map.Facility.Hack_icon'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='180,84' Size='180,84' Stretch='false' Style=' '/>
 </Page>
-<Page Location='426,290' MinimumSize='145,58' movable='false' Name='EscapeMenu' PackLocation='center,center' PackLocationProp='-086/0001,-094/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,231' Size='213,231' Visible='false'>
-<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,231' Size='213,231'>
+<Page Location='426,290' MinimumSize='145,58' movable='false' Name='EscapeMenu' PackLocation='center,center' PackLocationProp='-086/0001,-094/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,248' Size='213,248' Visible='false'>
+<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,248' Size='213,248'>
 <Text AbsorbsInput='false' BackgroundColor='#00F2C9' BackgroundOpacity='0.224' Enabled='false' Font='/Fonts.DefaultFont' LocalText='[@OptionMenu]' Location='12,18' Name='MenuTitle' PackLocation='left,top' PackLocationProp='0012/0001,0018/0001' PackSize='absolute,fixed' PackSizeProp='0024/0001,0002/0003' ScrollExtent='189,21' Size='189,21' SizeIncrement='0,0' TextAlignment='Center'>@OptionMenu</Text>
-<PopupMenu DataSource='EscapeData' Location='16,42' MaximumSize='161,170' MinimumSize='161,170' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='absolute,fixed' PackSizeProp='0052/0001,0002/0003' ScrollExtent='161,170' Size='161,170' Style='PopupMenuStyle'>
+<PopupMenu DataSource='EscapeData' Location='16,42' MaximumSize='161,187' MinimumSize='161,187' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='absolute,fixed' PackSizeProp='0052/0001,0002/0003' ScrollExtent='161,187' Size='161,187' Style='PopupMenuStyle'>
 </PopupMenu>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='213,231' Size='213,231' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='213,248' Size='213,248' Stretch='false'/>
 </Page>
 <DataSource Name='EscapeData'>
 <Data localtext='[@EscapeRecall]' menuindex='0' Name='Recall' text='@EscapeRecall'/>
@@ -78,10 +78,11 @@ $Name$
 <Data localtext='[@EscapeVideo]' menuindex='3' Name='VideoOptions' text='@EscapeVideo'/>
 <Data localtext='[@EscapeSound]' menuindex='4' Name='SoundOptions' text='@EscapeSound'/>
 <Data localtext='[@EscapeGame]' menuindex='5' Name='GameOptions' text='@EscapeGame'/>
-<Data localtext='[@EscapeKeymapping]' menuindex='6' Name='Keymapping' text='@EscapeKeymapping'/>
-<Data localtext='[@EscapeHelp]' menuindex='7' Name='Help' text='@EscapeHelp'/>
-<Data localtext='[@EscapeQuit]' menuindex='8' Name='Quit' text='@EscapeQuit'/>
-<Data localtext='[@EscapeCancel]' menuindex='9' Name='Cancel' text='@EscapeCancel'/>
+<Data localtext='[@EscapeColor]' menuindex='6' Name='ColorOptions' text='@EscapeColor'/>
+<Data localtext='[@EscapeKeymapping]' menuindex='7' Name='Keymapping' text='@EscapeKeymapping'/>
+<Data localtext='[@EscapeHelp]' menuindex='8' Name='Help' text='@EscapeHelp'/>
+<Data localtext='[@EscapeQuit]' menuindex='9' Name='Quit' text='@EscapeQuit'/>
+<Data localtext='[@EscapeCancel]' menuindex='10' Name='Cancel' text='@EscapeCancel'/>
 </DataSource>
 <PopupMenuStyle ButtonStyle='/Buttons.HUD_VoiceMacro.style' ItemHeight='17' Name='PopupMenuStyle'/>
 </Page>
@@ -173,7 +174,8 @@ $Name$
 </ImageStyle>
 <Page Name='OverheadMap' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='false' ScrollExtent='1024,768' Size='1024,768' Visible='false' wantsinput='Shared'>
 <Textbox Location='460,400' MinimumSize='32,16' Name='EditTextbox' ScrollExtent='128,20' Size='128,20' Style='/Textboxes.Clear' TooltipStyle='/Tooltips.Default' Visible='false'>Test Text</Textbox>
-<Page BackgroundOpacity='1.000' Name='Buildings' ScrollExtent='640,512' Size='640,512' Visible='false'>
+<Page BackgroundOpacity='1.000' Name='Buildings' ScrollExtent='640,640' Size='640,640' Visible='false'>
+<Image Location='9,480' Name='redoubt' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.redoubt'/>
 <Image Name='amp_station' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.amp_station'/>
 <Image Location='68,0' Name='bunker_lg' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_lg'/>
 <Image Location='142,0' Name='bunker_sm' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_sm'/>
@@ -224,6 +226,8 @@ $Name$
 <Image Location='9,411' Name='bunker_gauntlet' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_gauntlet'/>
 </Page>
 <Page BackgroundOpacity='1.000' Name='Floorplans' ScrollExtent='640,680' Size='640,680' Visible='false'>
+<Image Location='484,408' Name='redoubt_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.redoubt_1'/>
+<Image Location='557,340' Name='redoubt_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.redoubt_0'/>
 <Image Name='amp_station_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_0'/>
 <Image Location='68,0' Name='amp_station_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_1'/>
 <Image Location='136,0' Name='amp_station_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_2'/>
@@ -394,8 +398,8 @@ $Name$
 <Image Location='327,194' Name='CaptureFlag' ScrollExtent='30,32' Size='30,32' Stretch='false' Style='/Icons.Map.Misc.Capture_flag_icon'/>
 <Image Location='207,240' Name='BuildingClock' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Building_clock_icon'/>
 <Image Location='248,239' Name='BuildingFlag' ScrollExtent='24,32' Size='24,32' Stretch='false' Style='/Icons.Map.Misc.Building_flag_icon'/>
-<Image Location='291,239' Name='VanuModule' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_icon'/>
-<Image Location='326,239' Name='VanuModuleEmpty' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_empty_icon'/>
+<Image Location='291,239' Name='VanuModule' ScrollExtent='32,21' Size='32,21' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image Location='326,239' Name='VanuModuleEmpty' ScrollExtent='32,21' Size='32,21' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_empty_icon'/>
 </Page>
 <Page BackgroundColor='#FFFF00' Location='451,35' movable='true' Name='DroppodToolbar' PackLocation='proportional,proportional' PackLocationProp='0547/1024,0075/0768' ScrollExtent='193,81' Size='193,81'>
 <Button BackgroundColor='#FFFFFF' LocalText='[@LaunchDroppod]' LocalTooltip='[@LaunchDroppodTooltip]' Location='31,25' Name='DroppodLaunchButton' OnPress='psc_launchdroppod
@@ -540,13 +544,13 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-145/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,135' Size='177,135' Stretch='false'/>
 </Page>
 </Page>
-<Page Location='2,391' movable='true' Name='MapLegend' PackLocation='proportional,proportional' PackLocationProp='0137/1024,0581/0768' ScrollExtent='270,380' Size='270,380'>
-<Page Location='0,348' Name='Title' ScrollExtent='270,32' Size='270,32'>
+<Page Location='2,351' movable='true' Name='MapLegend' PackLocation='proportional,proportional' PackLocationProp='0137/1024,0561/0768' ScrollExtent='270,420' Size='270,420'>
+<Page Location='0,388' Name='Title' ScrollExtent='270,32' Size='270,32'>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='207,5' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-063/0001,0005/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapLegend]' Location='51,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0051/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0117/0001,0002/0003' ScrollExtent='153,32' Size='153,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapLegend</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='24,0' Name='Title' PackLocation='left,top' PackLocationProp='0024/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0048/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='222,32' Size='222,32'/>
 </Page>
-<Page Name='MainPage' ScrollExtent='270,380' Size='270,380' Visible='false'>
+<Page Name='MainPage' ScrollExtent='270,420' Size='270,420' Visible='false'>
 <Image Color='#FFFF00' Location='21,38' Name='Hotspot' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Hotspot_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendHotSpot]' Location='66,38' MaxLines='1' Name='HotSpotLabel' PackLocation='left,top' PackLocationProp='0066/0001,0038/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendHotSpot</Text>
 <Image Color='#00FFFF' Location='21,78' Name='Respawn' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Respawn.Respawn_icon'/>
@@ -564,9 +568,13 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgate]' Location='66,278' MaxLines='1' Name='WarpgateLabel' PackLocation='left,top' PackLocationProp='0066/0001,0278/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgate</Text>
 <Image Color='#FFFF00' Location='21,318' Name='CaptureFlag' PackLocation='left,top' PackLocationProp='0021/0001,0318/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Capture_flag_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendCaptureFlag]' Location='66,318' MaxLines='1' Name='CaptureFlagLabel' PackLocation='left,top' PackLocationProp='0066/0001,0318/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendCaptureFlag</Text>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='270,364' Size='270,364' Stretch='false'/>
+<Image Location='21,364' Name='VanuModule' PackLocation='left,top' PackLocationProp='0021/0001,0364/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='32,21' Size='32,21' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendVanuModule]' Location='66,358' MaxLines='1' Name='VanuModuleLabel' PackLocation='left,top' PackLocationProp='0066/0001,0358/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendVanuModule</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='270,404' Size='270,404' Stretch='false'/>
 </Page>
-<Page Name='FlippedPage' ScrollExtent='270,380' Size='270,380'>
+<Page Name='FlippedPage' ScrollExtent='270,420' Size='270,420'>
+<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendVanuModule]' Location='66,345' MaxLines='1' Name='VanuModuleLabel' PackLocation='left,top' PackLocationProp='0066/0001,0345/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendVanuModule</Text>
+<Image Location='21,353' Name='VanuModule' PackLocation='left,top' PackLocationProp='0021/0001,0353/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='32,21' Size='32,21' Style='/Icons.Map.Misc.Vanu_module_icon'/>
 <Image Color='#FFFF00' Location='21,25' Name='Hotspot' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Hotspot_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendHotSpot]' Location='66,25' MaxLines='1' Name='HotSpotLabel' PackLocation='left,top' PackLocationProp='0066/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendHotSpot</Text>
 <Image Color='#00FFFF' Location='21,65' Name='Respawn' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Respawn.Respawn_icon'/>
@@ -584,7 +592,7 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgate]' Location='66,265' MaxLines='1' Name='WarpgateLabel' PackLocation='left,top' PackLocationProp='0066/0001,0265/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgate</Text>
 <Image Color='#FFFF00' Location='21,305' Name='CaptureFlag' PackLocation='left,top' PackLocationProp='0021/0001,0305/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Capture_flag_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendCaptureFlag]' Location='66,305' MaxLines='1' Name='CaptureFlagLabel' PackLocation='left,top' PackLocationProp='0066/0001,0305/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendCaptureFlag</Text>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-380/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='270,370' Size='270,370' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-420/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='270,410' Size='270,410' Stretch='false'/>
 </Page>
 </Page>
 <Page BackgroundColor='#FFFF00' Location='239,35' movable='true' Name='MapViewToolbar' PackLocation='proportional,proportional' PackLocationProp='0327/1024,0085/0768' ScrollExtent='177,101' Size='177,101'>
@@ -609,6 +617,32 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='40,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0040/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='964,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-060/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Image BackgroundOpacity='1.000' Name='Title' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' RStyleDefault='/WindowPanes.TitleBarFocus.style' ScrollExtent='1024,32' Size='1024,32'/>
+</Page>
+<Page Location='443,211' movable='true' Name='FacilityInfo' PackLocation='left,bottom' PackLocationProp='0443/0001,-557/0001' ScrollExtent='250,200' ShowSound='interface_feedback_rollover.wav' Size='250,200' Visible='false'>
+<Page Location='15,0' Name='Title' ScrollExtent='220,32' Size='220,32'>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@FacilityInfoTitle]' Location='70,8' Name='TitleText' PackLocation='left,top' PackLocationProp='0070/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0139/0001,0002/0003' ScrollExtent='81,34' Size='81,20' TextAlignment='Center' TextAlignmentVertical='Center'>@FacilityInfoTitle</Text>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='40,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0040/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='160,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-060/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Image BackgroundOpacity='1.000' Name='Title' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' RStyleDefault='/WindowPanes.TitleBarFocus.style' ScrollExtent='220,32' Size='220,32'/>
+</Page>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NoModulesInstalled]' Location='19,35' MaxLines='1' Name='NoModulesText' PackLocation='left,top' PackLocationProp='0019/0001,0035/0001' ScrollExtent='211,143' Size='211,143' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@NoModulesInstalled</Text>
+<Listbox AbsorbsInput='false' DataSource='VanuModuleDataSource' GetsInput='false' Location='19,35' Name='ModulesListbox' PackLocation='left,top' PackLocationProp='0019/0001,0035/0001' RowTemplate='VanuModuleTemplate' ScrollExtent='211,144' Size='211,143' Style='/Listboxes.Clear.style'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='250,183' Size='250,183' Stretch='false' Style=' '/>
+<DataSource Name='VanuModuleDataSource'>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Bind Module' Name='ModuleInfo6'/>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Vehicle Module' Name='ModuleInfo5'/>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Equipment Module' Name='ModuleInfo4'/>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Healing Module' Name='ModuleInfo3'/>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Pain Module' Name='ModuleInfo2'/>
+<Data lifespan='00:00' modulecolor='#C0C0C0' modulename='Defender Module' Name='ModuleInfo1'/>
+</DataSource>
+<Template Name='VanuModuleTemplate' Size='210,24'>\<Image absorbsinput = \'false\' backgroundopacity = \'0.000\' color = \'$ModuleColor$\' location = \'1,0\' name = \'ModuleIcon\' scrollextent = \'32,21\' size = \'32,21\' style = \'/Icons.Map.Misc.Vanu_Module_Icon\'/\>
+\<text font = \'/Fonts.HudFont2\' location = \'37,5\' size = \'125,15\'\>
+$ModuleName$
+\</text\>
+\<text font = \'/Fonts.HudFont3\' location = \'165,3\' size = \'65,30\'\>
+$Lifespan$
+\</text\></Template>
 </Page>
 <WeatherOverlay AbsorbsInput='false' Name='WeatherOverlay' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='1024,768' Size='1024,768'/>
 <Page BackgroundColor='#182142' BackgroundOpacity='1.000' Name='GlobalMap' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='1024,768' Size='1024,768'>
