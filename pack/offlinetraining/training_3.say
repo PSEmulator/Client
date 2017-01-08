@@ -18,14 +18,14 @@ $begin OfflineTrainingMission3
     $sync
 
     # Allow the user user to use the vehicle terminal and mount a vehicle as a driver
-    $change_action_lock "DAT" 1 1
-    $change_action_lock "GOT" 16 1
-    $change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
+    $change_action_lock DAT DAT_USE_VEHICLEPURCHASETERMINAL 1
+    $change_action_lock GOT GOT_VehiclePurchaseTerminal 1
+    $change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
 
-    $change_action_lock "DAT" 0 1
+    $change_action_lock DAT DAT_ALL 1
 
-    $wait_on_use 16 1
+    $wait_on_use GOT_VehiclePurchaseTerminal DAT_USE_VEHICLEPURCHASETERMINAL
 
     # 2nd dialogue
     $text_dlg @OfflineMission3_02 25
@@ -44,8 +44,8 @@ $begin OfflineTrainingMission3
     $mount two_man_assault_buggy
 
     # Don't let the user muck with the vehicle terminal anymore...
-    $change_action_lock "DAT" 1 0
-    $change_action_lock "GOT" 16 0
+    $change_action_lock DAT DAT_USE_VEHICLEPURCHASETERMINAL 0
+    $change_action_lock GOT GOT_VehiclePurchaseTerminal 0
 
     # 4th dialogue
     $text_dlg @OfflineMission3_04 25
@@ -129,8 +129,8 @@ $begin OfflineTrainingMission3
     $freeze
     
     # Allow the user access to the trunk
-    $change_action_lock "DAT" 12 1
-    $change_action_lock "GOT" 3 1
+    $change_action_lock DAT DAT_USE_TRUNK 1
+    $change_action_lock GOT GOT_Vehicle 1
 
     # 9th dialogue
     $text_dlg @OfflineMission3_09 25
@@ -139,7 +139,7 @@ $begin OfflineTrainingMission3
 
     # Wait for the user to get out of the harasser
     $thaw
-    $mount ""
+    $mount "null"
 
     # 10th dialogue
     $text_dlg @OfflineMission3_10 25
@@ -147,7 +147,7 @@ $begin OfflineTrainingMission3
     $sync
 
     # Wait for them to open the trunk   
-    $wait_on_use 3 12
+    $wait_on_use GOT_Vehicle DAT_USE_TRUNK
 
     # 11th dialogue
     $text_dlg @OfflineMission3_11 25

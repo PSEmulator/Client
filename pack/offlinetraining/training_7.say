@@ -41,14 +41,14 @@ $begin OfflineTrainingMission7
 	$play Silo_03.mp3
 	$set_waypoint 2810 2935 5
 	$wait_waypoint 1
-	$change_action_lock "DAT" 1 1
-    $change_action_lock "GOT" 16 1
-    $wait_on_use 16 1
+	$change_action_lock DAT DAT_USE_VEHICLEPURCHASETERMINAL 1
+    $change_action_lock GOT GOT_VehiclePurchaseTerminal 1
+    $wait_on_use GOT_VehiclePurchaseTerminal DAT_USE_VEHICLEPURCHASETERMINAL
 	$freeze
-	$change_action_lock "DAT" 1 0
-    $change_action_lock "GOT" 16 0
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
+	$change_action_lock DAT DAT_USE_VEHICLEPURCHASETERMINAL 0
+    $change_action_lock GOT GOT_VehiclePurchaseTerminal 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
 	$sync
 
 	#-----------------------------------------
@@ -58,8 +58,8 @@ $begin OfflineTrainingMission7
 	$play Silo_04.mp3
 	$sync
 	$thaw
-	$wait_on_use 3 13
-	$change_action_lock "DAT" 13 0
+	$wait_on_use GOT_Vehicle DAT_USE_MOUNT_ZONE
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
 	$move_from_location 30.0
 	$freeze
 	$building_info Eadon -1 0
@@ -73,13 +73,13 @@ $begin OfflineTrainingMission7
 	$play Silo_05.mp3
 	$sync
 	$thaw
-	$change_action_lock "GOT" 3 1
-	$change_action_lock "DAT" 13 1
-	$change_action_lock "DAT" 0 1
-	$mount ""
-	$change_action_lock "GOT" 3 0
-	$change_action_lock "DAT" 13 0
-	$change_action_lock "DAT" 0 0
+	$change_action_lock GOT GOT_Vehicle 1
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+	$change_action_lock DAT DAT_ALL 1
+	$mount "null"
+	$change_action_lock GOT GOT_Vehicle 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+	$change_action_lock DAT DAT_ALL 0
 	$set_waypoint 2790 2981 5
 	$wait_waypoint 2
 	$set_waypoint 2816 2967 5
@@ -106,11 +106,11 @@ $begin OfflineTrainingMission7
 	#-----------------------------------------
 	$text_dlg @OfflineMission7_07 25
 	$play Silo_07.mp3
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
 	$mount ant
-	$change_action_lock "DAT" 13 0
-    $change_action_lock "GOT" 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+    $change_action_lock GOT GOT_Vehicle 0
 	$sync
 
 	#-----------------------------------------
@@ -138,12 +138,12 @@ $begin OfflineTrainingMission7
 	$text_dlg @OfflineMission7_09 25
 	$play Silo_09.mp3
 	$sync
-	$change_action_lock "GOT" 3 1
-	$change_action_lock "DAT" 0 1
+	$change_action_lock GOT GOT_Vehicle 1
+	$change_action_lock DAT DAT_ALL 1
 	$thaw
-	$mount ""
-	$change_action_lock "GOT" 3 0
-	$change_action_lock "DAT" 0 0
+	$mount "null"
+	$change_action_lock GOT GOT_Vehicle 0
+	$change_action_lock DAT DAT_ALL 0
 	$freeze
 	
 
@@ -154,11 +154,11 @@ $begin OfflineTrainingMission7
 	$play Silo_10.mp3
 	$sync
 	$thaw
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
-	$wait_on_use 3 13
-	$change_action_lock "DAT" 13 0
-    $change_action_lock "GOT" 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
+	$wait_on_use GOT_Vehicle DAT_USE_MOUNT_ZONE
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+    $change_action_lock GOT GOT_Vehicle 0
 	$freeze false
 	
 
@@ -176,11 +176,11 @@ $begin OfflineTrainingMission7
 	$text_dlg @OfflineMission7_12 25
 	$play Silo_12.mp3
 	$thaw
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
 	$mount ant
-	$change_action_lock "DAT" 13 0
-    $change_action_lock "GOT" 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+    $change_action_lock GOT GOT_Vehicle 0
 	$freeze
 	$sync
 	#-----------------------------------------
@@ -224,14 +224,14 @@ $begin OfflineTrainingMission7
 	#-----------------------------------------
 	$text_dlg @OfflineMission7_16 25
 	$play Silo_16.mp3
-	$change_action_lock "GOT" 3 1
-	$change_action_lock "DAT" 0 1
+	$change_action_lock GOT GOT_Vehicle 1
+	$change_action_lock DAT DAT_ALL 1
 	$sync
 	$thaw
-	$mount ""
+	$mount "null"
 	$freeze false
-	$change_action_lock "GOT" 3 0
-	$change_action_lock "DAT" 0 0
+	$change_action_lock GOT GOT_Vehicle 0
+	$change_action_lock DAT DAT_ALL 0
 
 	#-----------------------------------------
 	# Deploy ANT
@@ -239,11 +239,11 @@ $begin OfflineTrainingMission7
 	$text_dlg @OfflineMission7_17 25
 	$play Silo_17.mp3
 	$thaw
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
-	$wait_on_use 3 13
-	$change_action_lock "DAT" 13 0
-    $change_action_lock "GOT" 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
+	$wait_on_use GOT_Vehicle DAT_USE_MOUNT_ZONE
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+    $change_action_lock GOT GOT_Vehicle 0
 	$freeze false
 	$sync
 
@@ -271,11 +271,11 @@ $begin OfflineTrainingMission7
 	$play Silo_20.mp3
 	$sync
 	$thaw
-	$change_action_lock "DAT" 13 1
-    $change_action_lock "GOT" 3 1
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+    $change_action_lock GOT GOT_Vehicle 1
 	$mount ant
-	$change_action_lock "DAT" 13 0
-    $change_action_lock "GOT" 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+    $change_action_lock GOT GOT_Vehicle 0
 	$freeze false
 
 	#-----------------------------------------

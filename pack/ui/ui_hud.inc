@@ -1,4 +1,36 @@
-<Page BackgroundColor='#00FFFF' DragAccepts='Item,Shortcut' Name='HUD' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='true' ScrollExtent='1024,768' showcursor='false' Size='1024,768' Visible='false' wantsinput='shared'>
+<Page BackgroundColor='#00FFFF' DragAccepts='Item,Shortcut' Name='HUD' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='true' ScrollExtent='1024,768' showcursor='false' Size='1024,768' wantsinput='shared'>
+<Page Location='647,187' MinimumSize='367,200' movable='true' Name='Snoop' PackLocation='center,center' PackLocationProp='0135/0001,-197/0001' resizable='true' ScrollExtent='367,200' Size='367,200' Visible='false'>
+<Scrollbar Control='Text' Location='342,35' Name='TextScroll' PackLocation='right,top' PackLocationProp='-025/0001,0035/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0050/0001' ScrollExtent='9,150' Size='9,150' Style='/ScrollBars.vertical.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' LocalText='Bob
+Two' Location='18,35' Name='Text' PackSize='absolute,absolute' PackSizeProp='0047/0001,0050/0001' ScrollExtent='320,150' Size='320,150'>Bob
+Two</Text>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@SnoopTitle]' Location='39,7' Name='TitleText' PackLocation='center,fixed' PackLocationProp='-144/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='278,20' Size='278,20' TextAlignment='Center' TextAlignmentVertical='Center'>@SnoopTitle</Text>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='278,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-089/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='31,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0071/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='296,32' Size='296,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='367,188' Size='367,188' Stretch='false'/>
+</Page>
+<Page Location='297,206' movable='true' Name='VoiceHost' PackLocation='Center,Center' PackLocationProp='-215/0001,-178/0001' popup='True' ScrollExtent='466,375' Size='466,375' Visible='false'>
+<Template Name='Row Template' Size='250,20'>\<text font = \'/Fonts.DefaultFont\' location = \'5,-1\' size = \'250,20\'\>
+$Name$
+\</text\></Template>
+<Text duplicate='true' Font='/Fonts.HudFont3' LocalText='[@VoiceHostConfirm]' Location='26,35' Name='Text' PackLocation='left,top' PackLocationProp='0026/0001,0035/0001' PackSize='absolute,absolute' PackSizeProp='0055/0001,0263/0001' ScrollExtent='411,112' Size='411,112' TextAlignment='Center' TextAlignmentVertical='Center'>@VoiceHostConfirm</Text>
+<Text Font='/Fonts.HudFont3' LocalText='[@VoiceCodec]' LocalTooltip='[@VoiceCodecTooltip]' Location='51,161' Name='VoiceCodecText' ScrollExtent='162,25' Size='162,25' TextAlignment='Right' TextAlignmentVertical='Center' Tooltip='@VoiceCodecTooltip'>@VoiceCodec</Text>
+<Dropdownbox DataSource='/DataSources.VoiceCodecDataSource' LocalTooltip='[@VoiceCodecTooltip]' Location='222,158' Name='VoiceCodec' RowTemplate='Row Template' ScrollExtent='204,29' Size='204,29' Style='/Dropdowns.HudPane.style' Tooltip='@VoiceCodecTooltip'/>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@VoiceHostRemoteTooltip]' Location='222,231' Name='RemoteCheck' ScrollExtent='184,25' Size='184,25' Style='/Buttons.OptionsCheckbox.style' Tooltip='@VoiceHostRemoteTooltip'>@VoiceHostRemote</Checkbox>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' LocalTooltip='[@VoiceHostPortTooltip]' Location='222,195' MaxLength='5' Name='PortInput' NumericInteger='true' PackLocation='left,bottom' PackLocationProp='0222/0001,-180/0001' PackSize='absolute,fixed' PackSizeProp='0401/0001,0002/0003' ScrollExtent='65,28' Size='65,28' Style='/ConsoleTextbox.Style' Tooltip='@VoiceHostPortTooltip'>2</Textbox>
+<Text Font='/Fonts.HudFont3' LocalText='[@VoiceHostPort]' Location='66,198' Name='PortText' ScrollExtent='147,25' Size='147,25' TextAlignment='Right' TextAlignmentVertical='Center'>@VoiceHostPort</Text>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' LocalTooltip='[@VoiceHostIPTooltip]' Location='222,263' MaxLength='36' Name='IPInput' PackLocation='left,bottom' PackLocationProp='0222/0001,-112/0001' PackSize='absolute,fixed' PackSizeProp='0302/0001,0002/0003' ScrollExtent='164,28' Size='164,28' Style='/ConsoleTextbox.Style' Tooltip='@VoiceHostIPTooltip'>255.255.255.255</Textbox>
+<Text Font='/Fonts.HudFont3' LocalText='[@VoiceHostIP]' Location='66,266' Name='IPText' ScrollExtent='147,25' Size='147,25' TextAlignment='Right' TextAlignmentVertical='Center'>@VoiceHostIP</Text>
+<Button LocalText='[@Cancel]' LocalTooltip='[@VoiceHostCancelTooltip]' Location='368,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-098/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@VoiceHostCancelTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='82,8' Name='HelpButton' PackLocation='right,top' PackLocationProp='-384/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@VoiceHostCancel]' LocalTooltip='[@VoiceHostCancelTooltip]' Location='353,312' Name='Cancel' PackLocation='center, bottom' PackLocationProp='0120/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@VoiceHostCancelTooltip'>@VoiceHostCancel</Button>
+<Button LocalText='[@VoiceHostOK]' LocalTooltip='[@VoiceHostOKTooltip]' Location='32,312' Name='OK' PackLocation='center, bottom' PackLocationProp='-201/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@VoiceHostOKTooltip'>@VoiceHostOK</Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@VoiceHostTitle]' Location='101,5' Name='TitleText' ScrollExtent='265,20' Size='265,20' TextAlignment='Center' TextAlignmentVertical='Center'>@VoiceHostTitle</Text>
+<Rectangle Color='#385E61' GetsInput='false' Location='26,34' PackSize='absolute,absolute' PackSizeProp='0055/0001,0262/0001' ScrollExtent='411,113' Size='411,113'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='53,-1' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='362,32' Size='362,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='20,307' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='420,31' Size='420,31'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='466,358' Size='466,358' Stretch='false'/>
+</Page>
 <Page Location='298,160' movable='true' Name='Alarm' PackLocation='Center,Center' PackLocationProp='-214/0001,-224/0001' popup='True' ScrollExtent='466,406' Size='466,406' Visible='false'>
 <Text Font='/Fonts.HudFont3' LocalText='22:22' Location='331,236' Name='CurrentTime' ScrollExtent='79,25' Size='79,25' TextAlignment='Center' TextAlignmentVertical='Center'>22:22</Text>
 <Text Font='/Fonts.HudFont1' LocalText='[@AlarmCurrentTime]' Location='207,236' Name='CurrentTimeText' ScrollExtent='121,25' Size='121,25' TextAlignment='Right' TextAlignmentVertical='Center'>@AlarmCurrentTime</Text>
@@ -7,10 +39,10 @@
 <Text duplicate='true' Font='/Fonts.HudFont3' LocalText='[@AlarmText]' Location='24,35' Name='Text' PackLocation='left,top' PackLocationProp='0024/0001,0035/0001' PackSize='absolute,absolute' PackSizeProp='0055/0001,0342/0001' ScrollExtent='411,64' Size='411,64' TextAlignment='Center' TextAlignmentVertical='Center'>@AlarmText</Text>
 <Text Font='/Fonts.HudFont1' LocalText='[@AlarmMinutes]' LocalTooltip='[@AlarmMinutesTooltip]' Location='57,121' Name='MinText' ScrollExtent='108,25' Size='108,25' TextAlignment='Right' TextAlignmentVertical='Center' Tooltip='@AlarmMinutesTooltip'>@AlarmMinutes</Text>
 <Sliderbar LocalTooltip='[@AlarmMinutesTooltip]' Location='173,118' Name='MinSlider' ScrollExtent='173,25' Size='173,25' Style='/Sliderbars.Options.Style' Tooltip='@AlarmMinutesTooltip' UpperLimit='60'/>
-<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,118' MaxLength='2' Name='MinuteInput' PackLocation='left,bottom' PackLocationProp='0378/0001,-288/0001' PackSize='absolute,fixed' PackSizeProp='0436/0001,0002/0003' ScrollExtent='30,28' Size='30,28' Style='/ConsoleTextbox.Style'>0</Textbox>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,118' MaxLength='2' Name='MinuteInput' NumericInteger='true' PackLocation='left,bottom' PackLocationProp='0378/0001,-288/0001' PackSize='absolute,fixed' PackSizeProp='0436/0001,0002/0003' ScrollExtent='30,28' Size='30,28' Style='/ConsoleTextbox.Style'>0</Textbox>
 <Text Font='/Fonts.HudFont1' LocalText='[@AlarmHours]' LocalTooltip='[@AlarmHoursTooltip]' Location='66,167' Name='HourText' ScrollExtent='99,25' Size='99,25' TextAlignment='Right' TextAlignmentVertical='Center' Tooltip='@AlarmHoursTooltip'>@AlarmHours</Text>
 <Sliderbar LocalTooltip='[@AlarmHoursTooltip]' Location='173,164' Name='HourSlider' ScrollExtent='173,25' Size='173,25' Style='/Sliderbars.Options.Style' Tooltip='@AlarmHoursTooltip' UpperLimit='24' Value='2'/>
-<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,163' MaxLength='2' Name='HourInput' PackLocation='left,bottom' PackLocationProp='0378/0001,-243/0001' PackSize='absolute,fixed' PackSizeProp='0434/0001,0002/0003' ScrollExtent='32,28' Size='32,28' Style='/ConsoleTextbox.Style'>2</Textbox>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,163' MaxLength='2' Name='HourInput' NumericInteger='true' PackLocation='left,bottom' PackLocationProp='0378/0001,-243/0001' PackSize='absolute,fixed' PackSizeProp='0434/0001,0002/0003' ScrollExtent='32,28' Size='32,28' Style='/ConsoleTextbox.Style'>2</Textbox>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@AlarmUseTimeTooltip]' Location='51,208' Name='TimeCheck' ScrollExtent='198,25' Size='198,25' Style='/Buttons.OptionsCheckbox.style' Tooltip='@AlarmUseTimeTooltip'>@AlarmUseTime</Checkbox>
 <Text Font='/Fonts.HudFont1' LocalText='[@AlarmTime]' Location='216,207' Name='TimeText' ScrollExtent='108,25' Size='108,25' TextAlignment='Right' TextAlignmentVertical='Center'>@AlarmTime</Text>
 <Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='332,205' MaxLength='36' Name='TimeInput' PackLocation='left,bottom' PackLocationProp='0332/0001,-201/0001' PackSize='absolute,fixed' PackSizeProp='0386/0001,0002/0003' ScrollExtent='80,28' Size='80,28' Style='/ConsoleTextbox.Style'></Textbox>
@@ -26,96 +58,255 @@
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='20,342' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='420,31' Size='420,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='466,389' Size='466,389' Stretch='false'/>
 </Page>
-<Page Location='426,290' MinimumSize='145,58' movable='false' Name='EscapeMenu' PackLocation='center,center' PackLocationProp='-086/0001,-094/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,216' Size='213,216' Visible='false'>
-<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,216' Size='213,216'>
+<Page Location='5,243' movable='true' Name='CaptureFlagStatus' PackLocation='left,bottom' PackLocationProp='0005/0001,-525/0001' ScrollExtent='180,84' ShowSound='interface_feedback_rollover.wav' Size='180,84' Visible='false'>
+<Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.Agency24' LocalText='99:60.9' Location='81,14' MaxLines='1' Name='CountdownText' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' PackSize='absolute,fixed' PackSizeProp='0099/0001,0002/0003' ScrollExtent='81,30' Size='81,30' TextAlignment='Center' TextAlignmentVertical='Center'>99:60.9</Text>
+<Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='Destination' Location='21,48' MaxLines='1' Name='DestinationText' PackLocation='left,top' PackLocationProp='0021/0001,0048/0001' PackSize='absolute,fixed' PackSizeProp='0037/0001,0002/0003' ScrollExtent='143,19' Size='143,19' TextAlignment='Center' TextAlignmentVertical='Center'>Destination</Text>
+<Image Location='27,11' Name='Flag' PackLocation='left,top' PackLocationProp='0027/0001,0011/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='46,32' Size='46,32' Stretch='false' Style='/Icons.Map.Facility.Hack_icon'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='180,84' Size='180,84' Stretch='false' Style=' '/>
+</Page>
+<Page Location='426,290' MinimumSize='145,58' movable='false' Name='EscapeMenu' PackLocation='center,center' PackLocationProp='-086/0001,-094/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,231' Size='213,231' Visible='false'>
+<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,231' Size='213,231'>
 <Text AbsorbsInput='false' BackgroundColor='#00F2C9' BackgroundOpacity='0.224' Enabled='false' Font='/Fonts.DefaultFont' LocalText='[@OptionMenu]' Location='12,18' Name='MenuTitle' PackLocation='left,top' PackLocationProp='0012/0001,0018/0001' PackSize='absolute,fixed' PackSizeProp='0024/0001,0002/0003' ScrollExtent='189,21' Size='189,21' SizeIncrement='0,0' TextAlignment='Center'>@OptionMenu</Text>
-<PopupMenu DataSource='EscapeData' Location='16,42' MaximumSize='161,153' MinimumSize='161,153' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='absolute,fixed' PackSizeProp='0052/0001,0002/0003' ScrollExtent='161,153' Size='161,153' Style='PopupMenuStyle'>
+<PopupMenu DataSource='EscapeData' Location='16,42' MaximumSize='161,170' MinimumSize='161,170' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='absolute,fixed' PackSizeProp='0052/0001,0002/0003' ScrollExtent='161,170' Size='161,170' Style='PopupMenuStyle'>
 </PopupMenu>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='213,216' Size='213,216' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='213,231' Size='213,231' Stretch='false'/>
 </Page>
 <DataSource Name='EscapeData'>
 <Data localtext='[@EscapeRecall]' menuindex='0' Name='Recall' text='@EscapeRecall'/>
-<Data localtext='[@EscapeInstantAction]' menuindex='1' Name='InstantAction' text='@EscapeInstantAction'/>
-<Data localtext='[@EscapeVideo]' menuindex='2' Name='VideoOptions' text='@EscapeVideo'/>
-<Data localtext='[@EscapeSound]' menuindex='3' Name='SoundOptions' text='@EscapeSound'/>
-<Data localtext='[@EscapeGame]' menuindex='4' Name='GameOptions' text='@EscapeGame'/>
-<Data localtext='[@EscapeKeymapping]' menuindex='5' Name='Keymapping' text='@EscapeKeymapping'/>
-<Data localtext='[@EscapeHelp]' menuindex='6' Name='Help' text='@EscapeHelp'/>
-<Data localtext='[@EscapeQuit]' menuindex='7' Name='Quit' text='@EscapeQuit'/>
-<Data localtext='[@EscapeCancel]' menuindex='8' Name='Cancel' text='@EscapeCancel'/>
+<Data localtext='[@EscapeOutfitRecall]' menuindex='1' Name='OutfitRecall' text='@EscapeOutfitRecall'/>
+<Data localtext='[@EscapeInstantAction]' menuindex='2' Name='InstantAction' text='@EscapeInstantAction'/>
+<Data localtext='[@EscapeVideo]' menuindex='3' Name='VideoOptions' text='@EscapeVideo'/>
+<Data localtext='[@EscapeSound]' menuindex='4' Name='SoundOptions' text='@EscapeSound'/>
+<Data localtext='[@EscapeGame]' menuindex='5' Name='GameOptions' text='@EscapeGame'/>
+<Data localtext='[@EscapeKeymapping]' menuindex='6' Name='Keymapping' text='@EscapeKeymapping'/>
+<Data localtext='[@EscapeHelp]' menuindex='7' Name='Help' text='@EscapeHelp'/>
+<Data localtext='[@EscapeQuit]' menuindex='8' Name='Quit' text='@EscapeQuit'/>
+<Data localtext='[@EscapeCancel]' menuindex='9' Name='Cancel' text='@EscapeCancel'/>
 </DataSource>
 <PopupMenuStyle ButtonStyle='/Buttons.HUD_VoiceMacro.style' ItemHeight='17' Name='PopupMenuStyle'/>
 </Page>
-<Page BackgroundColor='#FFFFFF' Location='228,204' MinimumSize='400,240' minsize='400,240' movable='true' Name='CSManagement' PackLocation='center,center' PackLocationProp='-284/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='false' ScrollExtent='483,386' Size='483,386' Visible='false'>
-<Button Location='413,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'></Button>
-<Button Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'></Button>
+<Page BackgroundColor='#FFFFFF' Location='271,204' MinimumSize='483,386' minsize='483,386' movable='true' Name='CSManagement' PackLocation='center,center' PackLocationProp='-241/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='true' ScrollExtent='483,386' Size='483,386' Visible='false'>
+<Button LocalTooltip='[@HelpTooltip]' Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'></Button>
+<Button LocalTooltip='[@CloseTooltip]' Location='413,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'></Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='275,20' Size='275,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_title</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='434,32' Size='434,32'/>
-<Text Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@cs_help]' Location='32,46' PackLocation='left,bottom' PackLocationProp='0032/0001,-340/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' ScrollExtent='420,50' Size='420,50' TextAlignment='Center'>@cs_help</Text>
-<Scrollbar Control='ItemInfoText' Location='293,126' Name='ItemInfoScrollbar' PackLocation='right,top' PackLocationProp='-190/0001,0126/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0166/0001' ScrollExtent='10,220' Size='10,220' Style='/ScrollBars.vertical.style'/>
-<Listbox DataSource='AppealsData' Location='33,126' Name='AppealsListbox' PackLocation='left,top' PackLocationProp='0033/0001,0126/0001' PackSize='absolute,absolute' PackSizeProp='0223/0001,0166/0001' RowTemplate='AppealsTemplate' ScrollExtent='2000,220' Size='260,220' Style='/Listboxes.Clear.style'/>
-<Button LocalText='[@cs_new]' Location='324,115' Name='NewAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0115/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@cs_new</Button>
-<Button LocalText='[@cs_bug]' Location='323,145' Name='NewBug' PackLocation='right,top' PackLocationProp='-160/0001,0145/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@cs_bug</Button>
-<Button LocalText='[@cs_view]' Location='324,176' Name='ViewAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0176/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@cs_view</Button>
-<Button LocalText='[@cs_cancel]' Location='324,205' Name='CancelAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0205/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@cs_cancel</Button>
-<Button IsCancelButton='true' LocalText='[@Cancel]' Location='324,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@Cancel</Button>
-<Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,absolute' PackSizeProp='0043/0001,0316/0001' ScrollExtent='440,70' Size='440,70'/>
-<Rectangle Color='#385E61' GetsInput='false' Location='23,116' PackSize='absolute,absolute' PackSizeProp='0193/0001,0146/0001' ScrollExtent='290,240' Size='290,240'/>
+<Text Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@cs_help]' Location='32,46' Name='HelpText' PackLocation='left,top' PackLocationProp='0032/0001,0046/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' ScrollExtent='420,50' Size='420,50' TextAlignment='Center'>@cs_help</Text>
+<Scrollbar Control='AppealsListbox' Location='298,122' Name='AppealsListboxScrollbar' PackLocation='right,top' PackLocationProp='-185/0001,0122/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0158/0001' ScrollExtent='10,228' Size='10,228' Style='/ScrollBars.vertical.style'/>
+<Listbox DataSource='AppealsData' LocalTooltip='[@cs_appeals_listbox_tooltip]' Location='24,122' Name='AppealsListbox' PackLocation='left,top' PackLocationProp='0024/0001,0122/0001' PackSize='absolute,absolute' PackSizeProp='0213/0001,0158/0001' RowTemplate='AppealsTemplate' ScrollExtent='2000,252' Size='270,228' Style='/Listboxes.Clear.style' Tooltip='@cs_appeals_listbox_tooltip'/>
+<Button LocalText='[@cs_new]' LocalTooltip='[@cs_new_tooltip]' Location='324,115' Name='NewAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0115/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_new_tooltip'>@cs_new</Button>
+<Button LocalText='[@cs_view]' LocalTooltip='[@cs_view_tooltip]' Location='324,145' Name='ViewAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0145/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_view_tooltip'>@cs_view</Button>
+<Button LocalText='[@cs_cancel]' LocalTooltip='[@cs_cancel_tooltip]' Location='324,174' Name='CancelAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0174/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_cancel_tooltip'>@cs_cancel</Button>
+<Button LocalText='[@cs_bug]' LocalTooltip='[@cs_bug_tooltip]' Location='323,232' Name='NewBug' PackLocation='right,top' PackLocationProp='-160/0001,0232/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_bug_tooltip'>@cs_bug</Button>
+<Button IsCancelButton='true' LocalText='[@Cancel]' LocalTooltip='[@cs_cancel_button_tooltip]' Location='324,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_cancel_button_tooltip'>@Cancel</Button>
+<Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackLocation='left,top' PackLocationProp='0022/0001,0036/0001' PackSize='absolute,fixed' PackSizeProp='0043/0001,0002/0003' ScrollExtent='440,70' Size='440,70'/>
+<Rectangle Color='#385E61' GetsInput='false' Location='23,116' PackLocation='left,top' PackLocationProp='0023/0001,0116/0001' PackSize='absolute,absolute' PackSizeProp='0193/0001,0146/0001' ScrollExtent='290,240' Size='290,240'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='483,369' Size='483,369' Stretch='false'/>
-<Template Name='AppealsTemplate' Size='2000,16'>\<text font = \'/Fonts.HudFont2\' location = \'3,1\' size = \'2000,18\'\>
-$Name$
+<Template Name='AppealsTemplate' Size='2000,36'>\<text font = \'/Fonts.HudFont2\' location = \'2,2\' size = \'10,16\'\>
+$StatusSymbol$
+\</text\>
+\<text font = \'/Fonts.HudFont2\' location = \'12,2\' size = \'200,16\'\>
+$TicketID$
+\</text\>
+\<text font = \'/Fonts.HudFont2\' location = \'20,18\' size = \'2000,16\'\>
+$Category$
 \</text\></Template>
 <DataSource Name='AppealsData'>
-<Data Name='Title of an appeal - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'/>
+<Data category='Personal, Address' Name='Appeal #1' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #2' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #3' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #4' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #5' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #6' statussymbol='*' ticketid='25678'/>
+<Data category='Personal, Address' Name='Appeal #7' statussymbol='*' ticketid='25678'/>
 </DataSource>
 </Page>
-<Page BackgroundColor='#FFFFFF' Location='228,204' MinimumSize='400,240' minsize='400,240' movable='true' Name='CSNewRequest' PackLocation='center,center' PackLocationProp='-284/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='false' ScrollExtent='482,386' Size='482,386' Visible='false'>
-<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category0Data' Location='32,46' Name='Category0' PackLocation='left,top' PackLocationProp='0032/0001,0046/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='419,32' SelectedItemIndex='5' Size='419,32' Style='/Dropdowns.HudPane.style'/>
-<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category1Data' Location='32,86' Name='Category1' PackLocation='left,top' PackLocationProp='0032/0001,0086/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='419,32' SelectedItemIndex='5' Size='419,32' Style='/Dropdowns.HudPane.style'/>
-<Button Location='412,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'></Button>
-<Button Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'></Button>
-<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_new_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='274,20' Size='274,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_new_title</Text>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='433,32' Size='433,32'/>
-<Textbox Activated='true' BackgroundColor='#385E61' BackgroundOpacity='1.000' Location='33,146' MaxLength='3800' MaxLines='Unlimited' Name='Body' PackLocation='left,top' PackLocationProp='0033/0001,0146/0001' PackSize='absolute,absolute' PackSizeProp='0074/0001,0216/0001' ScrollExtent='408,170' Size='408,170' Style='/Textboxes.Bordered' WrapWidth='404'></Textbox>
-<Scrollbar Control='ItemInfoText' Location='442,146' Name='ItemInfoScrollbar' PackLocation='right,top' PackLocationProp='-040/0001,0146/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0216/0001' ScrollExtent='10,170' Size='10,170' Style='/ScrollBars.vertical.style'/>
+<Page BackgroundColor='#FFFFFF' Location='271,204' MinimumSize='483,386' minsize='483,386' movable='true' Name='CSNewRequest' PackLocation='center,center' PackLocationProp='-241/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='true' ScrollExtent='483,386' Size='483,386' Visible='false'>
+<Button LocalTooltip='[@HelpTooltip]' Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'></Button>
+<Button LocalTooltip='[@CloseTooltip]' Location='413,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'></Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_new_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='275,20' Size='275,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_new_title</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='434,32' Size='434,32'/>
+<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category0Data' LocalTooltip='[@cs_category_tooltip]' Location='32,46' Name='Category0' PackLocation='left,top' PackLocationProp='0032/0001,0046/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='420,32' Size='420,32' Style='/Dropdowns.HudPane.style' Tooltip='@cs_category_tooltip'/>
+<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category1Data' LocalTooltip='[@cs_subcategory_tooltip]' Location='32,86' Name='Category1' PackLocation='left,top' PackLocationProp='0032/0001,0086/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='420,32' Size='420,32' Style='/Dropdowns.HudPane.style' Tooltip='@cs_subcategory_tooltip'/>
+<Textbox Activated='true' BackgroundColor='#385E61' BackgroundOpacity='1.000' LocalTooltip='[@cs_new_request_body_tooltip]' Location='33,146' MaxLength='3800' MaxLines='Unlimited' Name='Body' PackLocation='left,top' PackLocationProp='0033/0001,0146/0001' PackSize='absolute,absolute' PackSizeProp='0074/0001,0216/0001' ScrollExtent='409,170' Size='409,170' Style='/Textboxes.Bordered' Tooltip='@cs_new_request_body_tooltip' WrapWidth='404'></Textbox>
+<Scrollbar Control='Body' Location='446,146' Name='BodyScrollbar' PackLocation='right,top' PackLocationProp='-037/0001,0146/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0216/0001' ScrollExtent='10,170' Size='10,170' Style='/ScrollBars.vertical.style'/>
 <Button LocalText='[@OK]' Location='23,335' Name='OkButton' PackLocation='left,bottom' PackLocationProp='0023/0001,-051/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@OK</Button>
-<Button IsCancelButton='true' LocalText='[@Cancel]' Location='323,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@Cancel</Button>
-<Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,fixed' PackSizeProp='0043/0001,0002/0003' ScrollExtent='439,90' Size='439,90'/>
-<Rectangle Color='#385E61' GetsInput='false' Location='23,136' PackLocation='top,left' PackLocationProp='0023/0001,0136/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0196/0001' ScrollExtent='438,190' Size='438,190'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='482,369' Size='482,369' Stretch='false'/>
-<DataSource Name='Category0Data'/>
-<DataSource Name='Category1Data'/>
+<Button IsCancelButton='true' LocalText='[@Cancel]' Location='324,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@Cancel</Button>
+<Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,fixed' PackSizeProp='0043/0001,0002/0003' ScrollExtent='440,90' Size='440,90'/>
+<Rectangle Color='#385E61' GetsInput='false' Location='23,136' PackLocation='top,left' PackLocationProp='0023/0001,0136/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0196/0001' ScrollExtent='439,190' Size='439,190'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='483,369' Size='483,369' Stretch='false'/>
+<Template Name='BugReportTemplate' Size='390,18'>\<text font = \'/Fonts.HudFont2\' location = \'5,2\' size = \'380,18\'\>
+$Name$
+\</text\></Template>
+<DataSource Name='Category0Data'>
+<Data Name='New Data'/>
+</DataSource>
+<DataSource Name='Category1Data'>
+<Data Name='New Data'/>
+</DataSource>
+</Page>
+<Page BackgroundColor='#FFFFFF' Location='271,204' MinimumSize='483,386' minsize='483,386' movable='true' Name='CSViewTicket' PackLocation='center,center' PackLocationProp='-241/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='true' ScrollExtent='483,386' Size='483,386' Visible='false'>
+<Button LocalTooltip='[@HelpTooltip]' Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'></Button>
+<Button LocalTooltip='[@CloseTooltip]' Location='413,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'></Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_view_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='275,20' Size='275,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_view_title</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='434,32' Size='434,32'/>
+<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category0Data' Enabled='false' GetsInput='false' LocalTooltip='[@cs_category_tooltip]' Location='32,46' Name='Category0' PackLocation='left,top' PackLocationProp='0032/0001,0046/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='420,32' Size='420,32' Style='/Dropdowns.HudPane.style' Tooltip='@cs_category_tooltip'/>
+<Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category1Data' Enabled='false' GetsInput='false' LocalTooltip='[@cs_subcategory_tooltip]' Location='32,86' Name='Category1' PackLocation='left,top' PackLocationProp='0032/0001,0086/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='420,32' Size='420,32' Style='/Dropdowns.HudPane.style' Tooltip='@cs_subcategory_tooltip'/>
+<Text Font='/Fonts.HudFont2' LocalTooltip='[@cs_view_request_body_tooltip]' Location='33,146' Name='Body' PackLocation='left,top' PackLocationProp='0033/0001,0146/0001' PackSize='absolute,absolute' PackSizeProp='0074/0001,0216/0001' ScrollExtent='409,170' Size='409,170' Tooltip='@cs_view_request_body_tooltip'></Text>
+<Scrollbar Control='Body' Location='446,146' Name='BodyScrollbar' PackLocation='right,top' PackLocationProp='-037/0001,0146/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0216/0001' ScrollExtent='10,170' Size='10,170' Style='/ScrollBars.vertical.style'/>
+<Button LocalText='[@OK]' Location='23,335' Name='OkButton' PackLocation='left,bottom' PackLocationProp='0023/0001,-051/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@OK</Button>
+<Button LocalText='[@cs_add_comment]' LocalTooltip='[@cs_add_comment_tooltip]' Location='324,335' Name='CommentButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-051/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style' Tooltip='@cs_add_comment_tooltip'>@cs_add_comment</Button>
+<Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,fixed' PackSizeProp='0043/0001,0002/0003' ScrollExtent='440,90' Size='440,90'/>
+<Rectangle Color='#385E61' GetsInput='false' Location='23,136' PackLocation='top,left' PackLocationProp='0023/0001,0136/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0196/0001' ScrollExtent='439,190' Size='439,190'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='483,369' Size='483,369' Stretch='false'/>
+<Template Name='BugReportTemplate' Size='390,18'>\<text font = \'/Fonts.HudFont2\' location = \'5,2\' size = \'380,18\'\>
+$Name$
+\</text\></Template>
+<DataSource Name='Category0Data'>
+<Data Name='New Data'/>
+</DataSource>
+<DataSource Name='Category1Data'>
+<Data Name='New Data'/>
+</DataSource>
 </Page>
 <ImageStyle Name='TabBorderTopStyle'>
 <ImageFrame Source='ui_window_map_tab_border_00' SourceRect='8,0,24,2'/>
 </ImageStyle>
 <Page Name='OverheadMap' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='false' ScrollExtent='1024,768' Size='1024,768' Visible='false' wantsinput='Shared'>
 <Textbox Location='460,400' MinimumSize='32,16' Name='EditTextbox' ScrollExtent='128,20' Size='128,20' Style='/Textboxes.Clear' TooltipStyle='/Tooltips.Default' Visible='false'>Test Text</Textbox>
-<Page BackgroundOpacity='1.000' Name='Buildings' ScrollExtent='512,512' Size='512,512' Visible='false'>
+<Page BackgroundOpacity='1.000' Name='Buildings' ScrollExtent='640,512' Size='640,512' Visible='false'>
 <Image Name='amp_station' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.amp_station'/>
 <Image Location='68,0' Name='bunker_lg' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_lg'/>
 <Image Location='142,0' Name='bunker_sm' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_sm'/>
+<Image Location='526,265' Name='cavern_a_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_a_ceiling'/>
+<Image Location='454,265' Name='cavern_a_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_a_ground'/>
+<Image Location='526,182' Name='cavern_b_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_b_ceiling'/>
+<Image Location='454,182' Name='cavern_b_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_b_ground'/>
+<Image Location='526,89' Name='cavern_c_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_c_ceiling'/>
+<Image Location='454,89' Name='cavern_c_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_c_ground'/>
+<Image Location='526,0' Name='cavern_d_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_d_ceiling'/>
+<Image Location='454,0' Name='cavern_d_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_d_ground'/>
+<Image Location='383,0' Name='cavern_e_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_e_ceiling'/>
+<Image Location='308,0' Name='cavern_e_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_e_ground'/>
+<Image Location='383,89' Name='cavern_f_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_f_ceiling'/>
+<Image Location='308,89' Name='cavern_f_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_f_ground'/>
+<Image Location='383,182' Name='cavern_g_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_g_ceiling'/>
+<Image Location='308,182' Name='cavern_g_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_g_ground'/>
+<Image Location='383,265' Name='cavern_h_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_h_ceiling'/>
+<Image Location='308,265' Name='cavern_h_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_h_ground'/>
+<Image Location='383,342' Name='cavern_i_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_i_ceiling'/>
+<Image Location='308,342' Name='cavern_i_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_i_ground'/>
+<Image Location='383,411' Name='cavern_j_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_j_ceiling'/>
+<Image Location='308,411' Name='cavern_j_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_j_ground'/>
+<Image Location='235,411' Name='cavern_z_ceiling' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_z_ceiling'/>
+<Image Location='160,411' Name='cavern_z_ground' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cavern_z_ground'/>
 <Image Location='220,0' Name='comm_station' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.comm_station'/>
 <Image Location='7,88' Name='comm_station_dsp' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.comm_station_dsp'/>
 <Image Location='75,89' Name='cryo_facility' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.cryo_facility'/>
+<Image Location='526,411' Name='geo_warpgate' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.geo_warpgate'/>
 <Image Location='148,89' Name='meeting_building' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.meeting_building'/>
 <Image Location='225,89' Name='orbital_building' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.orbital_building'/>
 <Image Location='12,180' Name='tech_plant' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.tech_plant'/>
 <Image Location='83,182' Name='tower_a' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.tower_a'/>
 <Image Location='154,182' Name='tower_b' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.tower_b'/>
 <Image Location='230,182' Name='tower_c' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.tower_c'/>
+<Image Location='454,342' Name='vanu_core' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vanu_core'/>
+<Image Location='526,342' Name='vanu_stasis' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vanu_stasis'/>
+<Image Location='454,411' Name='vanu_vehicle' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vanu_vehicle'/>
 <Image Location='9,265' Name='vt_building' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_building'/>
 <Image Location='88,265' Name='vt_dropship' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_dropship'/>
+<Image Location='88,411' Name='vt_spawn' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_spawn'/>
+<Image Location='235,342' Name='vr_training' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vr_training'/>
 <Image Location='160,265' Name='vt_vehicle' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_vehicle'/>
 <Image Location='235,265' Name='warpgate' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.warpgate'/>
 <Image Location='9,342' Name='bridge_start' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bridge_start'/>
 <Image Location='88,342' Name='bridge_mid' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bridge_mid'/>
 <Image Location='160,342' Name='bridge_end' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bridge_end'/>
-<Image Location='235,342' Name='vr_training' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vr_training'/>
 <Image Location='9,411' Name='bunker_gauntlet' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_gauntlet'/>
-<Image Location='88,411' Name='vt_spawn' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_spawn'/>
 </Page>
-<Page BackgroundOpacity='1.000' maxsize='500,500' minsize='100,100' movable='true' Name='Templates' preserveaspectratio='true' resizable='true' ScrollExtent='377,387' Size='377,387' Visible='false'>
+<Page BackgroundOpacity='1.000' Name='Floorplans' ScrollExtent='640,680' Size='640,680' Visible='false'>
+<Image Name='amp_station_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_0'/>
+<Image Location='68,0' Name='amp_station_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_1'/>
+<Image Location='136,0' Name='amp_station_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_2'/>
+<Image Location='204,0' Name='amp_station_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_3'/>
+<Image Location='272,0' Name='amp_station_4' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.amp_station_4'/>
+<Image Location='0,68' Name='bunker_gauntlet_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.bunker_gauntlet_0'/>
+<Image Location='68,68' Name='bunker_gauntlet_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.bunker_gauntlet_1'/>
+<Image Location='132,68' Name='bunker_lg_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.bunker_lg_0'/>
+<Image Location='204,68' Name='bunker_sm_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.bunker_sm_0'/>
+<Image Location='345,0' Name='cavern_a_ceiling_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_a_ceiling_0'/>
+<Image Location='416,0' Name='cavern_a_ceiling_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_a_ceiling_1'/>
+<Image Location='273,68' Name='cavern_a_ground_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_a_ground_0'/>
+<Image Location='342,68' Name='cavern_a_ground_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_a_ground_1'/>
+<Image Location='340,136' Name='cavern_b_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_b_0'/>
+<Image Location='409,68' Name='cavern_b_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_b_1'/>
+<Image Location='411,136' Name='cavern_c_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_c_0'/>
+<Image Location='341,204' Name='cavern_d_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_d_0'/>
+<Image Location='410,204' Name='cavern_e_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_e_0'/>
+<Image Location='343,272' Name='cavern_e_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_e_1'/>
+<Image Location='555,0' Name='cavern_f_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_f_0'/>
+<Image Location='484,0' Name='cavern_f_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_f_1'/>
+<Image Location='272,340' Name='cavern_g_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_g_0'/>
+<Image Location='342,340' Name='cavern_g_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_g_1'/>
+<Image Location='270,408' Name='cavern_h_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_h_0'/>
+<Image Location='337,408' Name='cavern_h_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_h_1'/>
+<Image Location='416,272' Name='cavern_i_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_i_0'/>
+<Image Location='416,340' Name='cavern_j_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_j_0'/>
+<Image Location='417,408' Name='cavern_z_ceiling_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ceiling_0'/>
+<Image Location='339,476' Name='cavern_z_ceiling_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ceiling_1'/>
+<Image Location='409,476' Name='cavern_z_ceiling_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ceiling_2'/>
+<Image Location='273,544' Name='cavern_z_ground_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ground_0'/>
+<Image Location='343,544' Name='cavern_z_ground_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ground_1'/>
+<Image Location='412,544' Name='cavern_z_ground_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ground_2'/>
+<Image Location='271,612' Name='cavern_z_ground_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ground_3'/>
+<Image Location='340,612' Name='cavern_z_ground_4' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cavern_z_ground_4'/>
+<Image Location='0,136' Name='comm_station_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_0'/>
+<Image Location='68,136' Name='comm_station_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_1'/>
+<Image Location='136,136' Name='comm_station_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_2'/>
+<Image Location='204,136' Name='comm_station_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_3'/>
+<Image Location='272,136' Name='comm_station_4' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_4'/>
+<Image Location='0,204' Name='comm_station_dsp_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_dsp_0'/>
+<Image Location='68,204' Name='comm_station_dsp_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_dsp_1'/>
+<Image Location='136,204' Name='comm_station_dsp_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_dsp_2'/>
+<Image Location='204,204' Name='comm_station_dsp_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_dsp_3'/>
+<Image Location='272,204' Name='comm_station_dsp_4' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.comm_station_dsp_4'/>
+<Image Location='0,272' Name='cryo_facility_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cryo_facility_0'/>
+<Image Location='68,272' Name='cryo_facility_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cryo_facility_1'/>
+<Image Location='136,272' Name='cryo_facility_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cryo_facility_2'/>
+<Image Location='204,272' Name='cryo_facility_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.cryo_facility_3'/>
+<Image Location='272,272' Name='meeting_building_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.meeting_building_0'/>
+<Image Location='136,612' Name='orbital_building_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.orbital_building_0'/>
+<Image Location='204,612' Name='orbital_building_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.orbital_building_1'/>
+<Image Location='0,340' Name='tech_plant_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tech_plant_0'/>
+<Image Location='68,340' Name='tech_plant_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tech_plant_1'/>
+<Image Location='136,340' Name='tech_plant_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tech_plant_2'/>
+<Image Location='204,340' Name='tech_plant_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tech_plant_3'/>
+<Image Location='0,408' Name='tower_a_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_a_0'/>
+<Image Location='68,408' Name='tower_a_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_a_1'/>
+<Image Location='136,408' Name='tower_a_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_a_2'/>
+<Image Location='204,408' Name='tower_a_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_a_3'/>
+<Image Location='0,476' Name='tower_b_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_b_0'/>
+<Image Location='68,476' Name='tower_b_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_b_1'/>
+<Image Location='136,476' Name='tower_b_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_b_2'/>
+<Image Location='204,476' Name='tower_b_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_b_3'/>
+<Image Location='272,476' Name='tower_b_4' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_b_4'/>
+<Image Location='0,544' Name='tower_c_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_c_0'/>
+<Image Location='68,544' Name='tower_c_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_c_1'/>
+<Image Location='136,544' Name='tower_c_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_c_2'/>
+<Image Location='204,544' Name='tower_c_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.tower_c_3'/>
+<Image Location='484,68' Name='vanu_core_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_core_0'/>
+<Image Location='557,68' Name='vanu_core_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_core_1'/>
+<Image Location='484,136' Name='vanu_core_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_core_2'/>
+<Image Location='557,136' Name='vanu_core_3' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_core_3'/>
+<Image Location='484,204' Name='vanu_stasis_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_stasis_0'/>
+<Image Location='557,204' Name='vanu_stasis_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_stasis_1'/>
+<Image Location='484,272' Name='vanu_vehicle_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_vehicle_0'/>
+<Image Location='557,272' Name='vanu_vehicle_1' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_vehicle_1'/>
+<Image Location='484,340' Name='vanu_vehicle_2' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vanu_vehicle_2'/>
+<Image Location='0,612' Name='vr_training_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vr_training_0'/>
+<Image Location='68,612' Name='vt_building_0' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Floorplans.vt_building_0'/>
+</Page>
+<Page BackgroundOpacity='1.000' maxsize='500,500' minsize='100,100' movable='true' Name='RadarBlips' preserveaspectratio='true' resizable='true' ScrollExtent='377,387' Size='377,387' Visible='false'>
+<Image Location='75,281' Name='RouterTeleporterBlip' ScrollExtent='32,23' Size='32,23' Stretch='false' Style='/Icons.HUD.Radar_router_teleporter_blip'/>
 <Image Location='131,32' Name='SquadBlip0' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_0'/>
 <Image Location='6,32' Name='SquadBlip1' ScrollExtent='7,14' Size='7,14' Stretch='false' Style='/Icons.HUD.Radar_digit_1'/>
 <Image Location='20,32' Name='SquadBlip2' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_2'/>
@@ -147,20 +338,37 @@ $Name$
 <Image Location='82,145' Name='ReaverBlip' ScrollExtent='22,30' Size='22,30' Stretch='false' Style='/Icons.HUD.Radar_reaver_blip'/>
 <Image Location='111,147' Name='MaxBlip' ScrollExtent='20,10' Size='20,10' Stretch='false' Style='/Icons.HUD.Radar_max_blip'/>
 <Image Location='142,147' Name='MissileBlip' ScrollExtent='4,11' Size='4,11' Stretch='false' Style='/Icons.HUD.Radar_missile_blip'/>
-<Image Location='8,197' Name='Hack' ScrollExtent='46,32' Size='46,32' Stretch='false' Style='/Icons.Map.Facility.Hack_icon'/>
-<Image Location='63,197' Name='Generator' ScrollExtent='12,32' Size='12,32' Stretch='false' Style='/Icons.Map.Facility.Generator_icon'/>
-<Image Location='85,197' Name='Boomer' ScrollExtent='30,32' Size='30,32' Stretch='false' Style='/Icons.Map.Equipment.Boomer_icon'/>
-<Image Location='122,197' Name='HEMine' ScrollExtent='34,32' Size='34,32' Stretch='false' Style='/Icons.Map.Equipment.Hemine_icon'/>
-<Image Location='7,235' Name='Spitfire' ScrollExtent='25,32' Size='25,32' Stretch='false' Style='/Icons.Map.Equipment.Spitfire_icon'/>
-<Image Location='38,235' Name='MotionSensor' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Equipment.Motion_sensor_icon'/>
-<Image Location='80,235' Name='SpawnTube' ScrollExtent='11,32' Size='11,32' Stretch='false' Style='/Icons.Map.Facility.SpawnTube_icon'/>
-<Image Location='99,235' Name='Repair' ScrollExtent='15,21' Size='15,21' Stretch='false' Style='/Icons.Map.Facility.Benefit_Repair_icon'/>
-<Image Location='122,235' Name='ShieldedVehicle' ScrollExtent='37,12' Size='37,12' Stretch='false' Style='/Icons.Map.Facility.Benefit_ShieldedVehicle_icon'/>
-<Image Location='122,252' Name='AssaultVehicle' ScrollExtent='40,16' Size='40,16' Stretch='false' Style='/Icons.Map.Facility.Benefit_AssaultVehicle_icon'/>
-<Image Location='6,277' Name='SquareImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Square_icon'/>
-<Image Location='29,277' Name='TriangleImage' ScrollExtent='19,20' Size='19,20' Style='/Icons.Map.Misc.Triangle_icon'/>
-<Image Location='52,277' Name='CircleImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Circle_icon'/>
-<Image Location='78,277' Name='DeadAvatarBlip' ScrollExtent='27,17' Size='27,17' Style='/Icons.Map.Respawn.Dead_avatar_icon'/>
+<Image Location='191,14' Name='HartBlip' PackLocation='Top,Left' PackLocationProp='0191/0001,0014/0001' ScrollExtent='60,128' Size='60,128' Stretch='false' Style='/Icons.HUD.Radar_hart_blip'/>
+<Image Location='7,197' Name='DeadAvatarBlip' ScrollExtent='27,17' Size='27,17' Stretch='false' Style='/Icons.Map.Respawn.Dead_avatar_icon'/>
+<Image Location='40,197' Name='LiberatorBlip' ScrollExtent='24,34' Size='24,34' Stretch='false' Style='/Icons.HUD.Radar_liberator_blip'/>
+<Image Location='71,197' Name='SkyguardBlip' ScrollExtent='16,29' Size='16,29' Stretch='false' Style='/Icons.HUD.Radar_skyguard_blip'/>
+<Image Location='97,197' Name='AdvancedMedicBlip' ScrollExtent='16,16' Size='16,16' Stretch='false' Style='/SupportIcons.medical'/>
+<Image Location='118,197' Name='AvatarReviveBlip' ScrollExtent='19,20' Size='19,20' Stretch='false' Style='/Icons.Map.Misc.Triangle_icon'/>
+<Image Location='142,197' Name='CaptureFlagBlip' ScrollExtent='12,12' Size='12,12' Stretch='false' Style='/Icons.HUD.Radar_capture_flag_blip'/>
+<Image Location='40,281' Name='TeleporterIcon' ScrollExtent='30,30' Size='30,30' Stretch='false' Style='/Icons.HUD.Radar_teleporter_blip'/>
+<Image Location='4,240' Name='ZiplineIcon' ScrollExtent='42,32' Size='42,32' Stretch='false' Style='/Icons.HUD.Radar_zipline'/>
+<Image Location='54,240' Name='VanuModuleBlip' ScrollExtent='9,6' Size='9,6' Stretch='false' Style='/Icons.HUD.Radar_vanu_module_blip'/>
+<Image Location='73,240' Name='FlailBlip' ScrollExtent='25,28' Size='25,28' Stretch='false' Style='/Icons.HUD.Radar_flail_blip'/>
+<Image Location='107,240' Name='SwitchbladeBlip' ScrollExtent='14,28' Size='14,28' Stretch='false' Style='/Icons.HUD.Radar_switchblade_blip'/>
+<Image Location='131,240' Name='RouterBlip' ScrollExtent='32,21' Size='32,21' Stretch='false' Style='/Icons.HUD.Radar_router_blip'/>
+<Image Location='4,281' Name='MotionSensorBlip' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Equipment.Motion_sensor_icon'/>
+</Page>
+<Page BackgroundOpacity='1.000' maxsize='500,500' minsize='100,100' movable='true' Name='MiscImages' preserveaspectratio='true' resizable='true' ScrollExtent='377,387' Size='377,387' UserResizable='true' Visible='false'>
+<Image Location='8,11' Name='Hack' ScrollExtent='46,32' Size='46,32' Stretch='false' Style='/Icons.Map.Facility.Hack_icon'/>
+<Image Location='63,11' Name='Generator' ScrollExtent='12,32' Size='12,32' Stretch='false' Style='/Icons.Map.Facility.Generator_icon'/>
+<Image Location='85,11' Name='Boomer' ScrollExtent='30,32' Size='30,32' Stretch='false' Style='/Icons.Map.Equipment.Boomer_icon'/>
+<Image Location='122,11' Name='HEMine' ScrollExtent='34,32' Size='34,32' Stretch='false' Style='/Icons.Map.Equipment.Hemine_icon'/>
+<Image Location='7,49' Name='Spitfire' ScrollExtent='25,32' Size='25,32' Stretch='false' Style='/Icons.Map.Equipment.Spitfire_icon'/>
+<Image Location='38,49' Name='MotionSensor' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Equipment.Motion_sensor_icon'/>
+<Image Location='88,80' Name='SpawnTubeState' ScrollExtent='33,32' Size='33,32' Stretch='false' Style='/Icons.Map.Facility.SpawnTube_icon'/>
+<Image Location='75,80' Name='SpawnTube' ScrollExtent='11,32' Size='11,32' Stretch='false' Style='/Icons.Map.Facility.Benefit_SpawnTube_icon'/>
+<Image Location='99,52' Name='Repair' ScrollExtent='15,21' Size='15,21' Stretch='false' Style='/Icons.Map.Facility.Benefit_Repair_icon'/>
+<Image Location='122,49' Name='AssaultVehicle' ScrollExtent='37,12' Size='37,12' Stretch='false' Style='/Icons.Map.Facility.Benefit_AssaultVehicle_icon'/>
+<Image Location='119,62' Name='ShieldedVehicle' ScrollExtent='40,16' Size='40,16' Stretch='false' Style='/Icons.Map.Facility.Benefit_ShieldedVehicle_icon'/>
+<Image Location='74,54' Name='Radar' ScrollExtent='20,20' Size='20,20' Stretch='false' Style='/Icons.Map.Facility.Benefit_Radar_icon'/>
+<Image Location='6,91' Name='SquareImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Square_icon'/>
+<Image Location='29,91' Name='TriangleImage' ScrollExtent='19,20' Size='19,20' Style='/Icons.Map.Misc.Triangle_icon'/>
+<Image Location='52,91' Name='CircleImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Circle_icon'/>
 <Text continentid='1' Font='/Fonts.HudFont1' GetsInput='false' LocalText='Example map text small' Location='78,307' Name='MapTextSmall' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>Example map text small</Text>
 <Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' LocalText='Example map text medium' Location='78,328' Name='MapTextMedium' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>Example map text medium</Text>
 <Text continentid='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='Example map text large' Location='78,351' Name='MapTextLarge' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>Example map text large</Text>
@@ -183,12 +391,23 @@ $Name$
 <Image Location='201,194' Name='WarpgateSelection' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.Selection'/>
 <Image Location='245,194' Name='WarpgateSelectionEffect' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.SelectionEffect'/>
 <Image Location='289,194' Name='SelectionBrackets' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Brackets_icon'/>
+<Image Location='327,194' Name='CaptureFlag' ScrollExtent='30,32' Size='30,32' Stretch='false' Style='/Icons.Map.Misc.Capture_flag_icon'/>
+<Image Location='207,240' Name='BuildingClock' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Building_clock_icon'/>
+<Image Location='248,239' Name='BuildingFlag' ScrollExtent='24,32' Size='24,32' Stretch='false' Style='/Icons.Map.Misc.Building_flag_icon'/>
+<Image Location='291,239' Name='VanuModule' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image Location='326,239' Name='VanuModuleEmpty' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Misc.Vanu_module_empty_icon'/>
 </Page>
 <Page BackgroundColor='#FFFF00' Location='451,35' movable='true' Name='DroppodToolbar' PackLocation='proportional,proportional' PackLocationProp='0547/1024,0075/0768' ScrollExtent='193,81' Size='193,81'>
 <Button BackgroundColor='#FFFFFF' LocalText='[@LaunchDroppod]' LocalTooltip='[@LaunchDroppodTooltip]' Location='31,25' Name='DroppodLaunchButton' OnPress='psc_launchdroppod
 psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@LaunchDroppodTooltip'>@LaunchDroppod</Button>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,81' Size='193,81' Stretch='false'/>
 <Image AbsorbsInput='false' BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' Name='Flash' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,81' Size='193,81' Stretch='false' Visible='false'/>
+</Page>
+<Page BackgroundColor='#FFFF00' Location='2,35' movable='true' Name='OrbitalStrikeToolbar' PackLocation='proportional,proportional' PackLocationProp='0098/1024,0099/0768' ScrollExtent='193,129' Size='193,129'>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OrbitalStrikeMapInstructions]' Location='19,14' Name='TitleText' PackLocation='left,top' PackLocationProp='0019/0001,0014/0001' PackSize='absolute,fixed' PackSizeProp='0037/0001,0002/0003' ScrollExtent='156,57' Size='156,57' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OrbitalStrikeMapInstructions</Text>
+<Button BackgroundColor='#FFFFFF' LocalText='[@OrbitalStrikeMapButton]' LocalTooltip='[@OrbitalStrikeMapButtonTooltip]' Location='31,80' Name='UploadCoordsButton' PackLocation='center,bottom' PackLocationProp='-065/0001,-049/0001' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@OrbitalStrikeMapButtonTooltip'>@OrbitalStrikeMapButton</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,129' Size='193,129' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' Name='Flash' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,129' Size='193,129' Stretch='false' Visible='false'/>
 </Page>
 <Page BackgroundColor='#FFFF00' Location='446,648' movable='true' Name='CommanderToolbar' PackLocation='proportional,proportional' PackLocationProp='0534/1024,0709/0768' ScrollExtent='177,123' Size='177,123'>
 <Page Location='0,91' Name='Title' ScrollExtent='177,32' Size='177,32'>
@@ -197,13 +416,13 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='17,0' Name='Title' PackLocation='left,top' PackLocationProp='0017/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='143,32' Size='143,32'/>
 </Page>
 <Page Name='MainPage' ScrollExtent='177,123' Size='177,123' Visible='false'>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendliesTooltip]' Location='21,37' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendliesTooltip'>@ToggleFriendlies</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendsTooltip]' Location='21,37' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendsTooltip'>@ToggleFriendlies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEnemiesTooltip]' Location='21,59' Name='EnemyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEnemiesTooltip'>@ToggleEnemies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@AddWaypointTooltip]' Location='21,81' Name='AddWaypointToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@AddWaypointTooltip'>@AddWaypoint</Checkbox>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,107' Size='177,107' Stretch='false'/>
 </Page>
 <Page Name='FlippedPage' ScrollExtent='177,123' Size='177,123'>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendliesTooltip]' Location='21,22' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendliesTooltip'>@ToggleFriendlies</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendsTooltip]' Location='21,22' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendsTooltip'>@ToggleFriendlies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEnemiesTooltip]' Location='21,44' Name='EnemyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEnemiesTooltip'>@ToggleEnemies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@AddWaypointTooltip]' Location='21,66' Name='AddWaypointToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@AddWaypointTooltip'>@AddWaypoint</Checkbox>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-123/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,113' Size='177,113' Stretch='false'/>
@@ -223,7 +442,7 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor4Tooltip]' Location='21,81' Name='Color4Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor4Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor5Tooltip]' Location='89,81' Name='Color5Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor5Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor6Tooltip]' Location='21,103' Name='Color6Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor6Tooltip'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='90,103' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='89,103' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleDrawTooltip]' Location='21,129' Name='DrawToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleDrawTooltip'>@ToggleDraw</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEraseTooltip]' Location='21,151' Name='EraseToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEraseTooltip'>@ToggleErase</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEditTextTooltip]' Location='21,173' Name='EditTextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEditTextTooltip'>@ToggleEditText</Checkbox>
@@ -238,7 +457,7 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor4Tooltip]' Location='21,66' Name='Color4Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor4Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor5Tooltip]' Location='89,66' Name='Color5Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor5Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor6Tooltip]' Location='21,88' Name='Color6Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor6Tooltip'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='90,88' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='89,88' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleDrawTooltip]' Location='21,114' Name='DrawToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleDrawTooltip'>@ToggleDraw</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEraseTooltip]' Location='21,136' Name='EraseToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEraseTooltip'>@ToggleErase</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEditTextTooltip]' Location='21,158' Name='EditTextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEditTextTooltip'>@ToggleEditText</Checkbox>
@@ -294,12 +513,31 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleResourcesTooltip]' Location='21,44' Name='ResourceToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleResourcesTooltip'>@OverheadToggleResources</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEquipmentTooltip]' Location='21,66' Name='EquipmentToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEquipmentTooltip'>@OverheadToggleEquipment</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSOITooltip]' Location='21,88' Name='BuildingSOIToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSOITooltip'>@OverheadToggleBuildingSOI</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSOITooltip]' Location='21,110' Name='BuildingStateToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSOITooltip'>@OverheadToggleFacilityInfo</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFacilityInfoTooltip]' Location='21,110' Name='BuildingStateToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFacilityInfoTooltip'>@OverheadToggleFacilityInfo</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSquadTooltip]' Location='21,132' Name='SquadToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSquadTooltip'>@OverheadToggleSquad</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleHotSpotsTooltip]' Location='21,154' Name='HotSpotToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleHotSpotsTooltip'>@OverheadToggleHotSpots</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleWeatherTooltip]' Location='21,176' Name='WeatherToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleWeatherTooltip'>@OverheadToggleWeather</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleBattleplanTooltip]' Location='21,198' Name='BattleplanToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleBattleplanTooltip'>@OverheadToggleBattleplan</Checkbox>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,245' Size='177,245' Stretch='false'/>
+</Page>
+</Page>
+<Page BackgroundColor='#FFFF00' Location='16,180' movable='true' Name='CavernFilterToolbar' PackLocation='proportional,proportional' PackLocationProp='0104/1024,0252/0768' ScrollExtent='177,145' Size='177,145'>
+<Page Location='0,113' Name='Title' ScrollExtent='177,32' Size='177,32'>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='121,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-056/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapCavernFilters]' Location='44,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0044/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0097/0001,0002/0003' ScrollExtent='80,42' Size='80,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapCavernFilters</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='17,0' Name='Title' PackLocation='left,top' PackLocationProp='0017/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='143,32' Size='143,32'/>
+</Page>
+<Page Name='MainPage' ScrollExtent='177,123' Size='177,123' Visible='false'>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernCeilingToggleTooltip]' Location='21,37' Name='CeilingToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernCeilingToggleTooltip'>@CavernCeilingToggle</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernGroundToggleTooltip]' Location='21,59' Name='GroundToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernGroundToggleTooltip'>@CavernGroundToggle</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernZiplineToggleTooltip]' Location='21,81' Name='ZiplineToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernZiplineToggleTooltip'>@CavernZiplineToggle</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,107' Size='177,107' Stretch='false'/>
+</Page>
+<Page Name='FlippedPage' ScrollExtent='177,145' Size='177,145'>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernCeilingToggleTooltip]' Location='21,22' Name='CeilingToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernCeilingToggleTooltip'>@CavernCeilingToggle</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernGroundToggleTooltip]' Location='21,44' Name='GroundToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernGroundToggleTooltip'>@CavernGroundToggle</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CavernZiplineToggleTooltip]' Location='21,66' Name='ZiplineToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@CavernZiplineToggleTooltip'>@CavernZiplineToggle</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-145/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,135' Size='177,135' Stretch='false'/>
 </Page>
 </Page>
 <Page Location='2,391' movable='true' Name='MapLegend' PackLocation='proportional,proportional' PackLocationProp='0137/1024,0581/0768' ScrollExtent='270,380' Size='270,380'>
@@ -324,9 +562,8 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendSoiVS]' Location='66,238' MaxLines='1' Name='SoiVSLabel' PackLocation='left,top' PackLocationProp='0066/0001,0238/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendSoiVS</Text>
 <Image Color='#000000' Location='21,278' Name='Warpgate' PackLocation='left,top' PackLocationProp='0021/0001,0278/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Legend.Warpgate_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgate]' Location='66,278' MaxLines='1' Name='WarpgateLabel' PackLocation='left,top' PackLocationProp='0066/0001,0278/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgate</Text>
-<Image Color='#00FFFF' Location='21,318' Name='WarpgateSelectionEffect' PackLocation='left,top' PackLocationProp='0021/0001,0318/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.SelectionEffect'/>
-<Image Color='#00FFFF' Location='21,318' Name='WarpgateSelection' PackLocation='left,top' PackLocationProp='0021/0001,0318/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.Selection'/>
-<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgateSelection]' Location='66,318' MaxLines='1' Name='WarpgateSelectionLabel' PackLocation='left,top' PackLocationProp='0066/0001,0318/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgateSelection</Text>
+<Image Color='#FFFF00' Location='21,318' Name='CaptureFlag' PackLocation='left,top' PackLocationProp='0021/0001,0318/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Capture_flag_icon'/>
+<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendCaptureFlag]' Location='66,318' MaxLines='1' Name='CaptureFlagLabel' PackLocation='left,top' PackLocationProp='0066/0001,0318/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendCaptureFlag</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='270,364' Size='270,364' Stretch='false'/>
 </Page>
 <Page Name='FlippedPage' ScrollExtent='270,380' Size='270,380'>
@@ -345,10 +582,26 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendSoiVS]' Location='66,225' MaxLines='1' Name='SoiVSLabel' PackLocation='left,top' PackLocationProp='0066/0001,0225/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendSoiVS</Text>
 <Image Color='#000000' Location='21,265' Name='Warpgate' PackLocation='left,top' PackLocationProp='0021/0001,0265/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Legend.Warpgate_icon'/>
 <Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgate]' Location='66,265' MaxLines='1' Name='WarpgateLabel' PackLocation='left,top' PackLocationProp='0066/0001,0265/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgate</Text>
-<Image Color='#00FFFF' Location='21,305' Name='WarpgateSelectionEffect' PackLocation='left,top' PackLocationProp='0021/0001,0305/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.SelectionEffect'/>
-<Image Color='#00FFFF' Location='21,305' Name='WarpgateSelection' PackLocation='left,top' PackLocationProp='0021/0001,0305/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Warp.Selection'/>
-<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendWarpgateSelection]' Location='66,305' MaxLines='1' Name='WarpgateSelectionLabel' PackLocation='left,top' PackLocationProp='0066/0001,0305/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendWarpgateSelection</Text>
+<Image Color='#FFFF00' Location='21,305' Name='CaptureFlag' PackLocation='left,top' PackLocationProp='0021/0001,0305/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='36,36' Size='36,36' Style='/Icons.Map.Misc.Capture_flag_icon'/>
+<Text Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadLegendCaptureFlag]' Location='66,305' MaxLines='1' Name='CaptureFlagLabel' PackLocation='left,top' PackLocationProp='0066/0001,0305/0001' PackSize='absolute,fixed' PackSizeProp='0089/0001,0002/0003' ScrollExtent='181,36' Size='181,36' TextAlignmentVertical='Center'>@OverheadLegendCaptureFlag</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-380/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='270,370' Size='270,370' Stretch='false'/>
+</Page>
+</Page>
+<Page BackgroundColor='#FFFF00' Location='239,35' movable='true' Name='MapViewToolbar' PackLocation='proportional,proportional' PackLocationProp='0327/1024,0085/0768' ScrollExtent='177,101' Size='177,101'>
+<Page Location='0,69' Name='Title' ScrollExtent='177,32' Size='177,32'>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='121,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-056/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapMapView]' Location='44,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0044/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0097/0001,0002/0003' ScrollExtent='80,32' Size='80,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapMapView</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='17,0' Name='Title' PackLocation='left,top' PackLocationProp='0017/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='143,32' Size='143,32'/>
+</Page>
+<Page Name='MainPage' ScrollExtent='177,101' Size='177,101' Visible='false'>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@MapViewContinentTooltip]' Location='21,37' Name='ContinentToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@MapViewContinentTooltip'>@MapViewContinent</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@MapViewCavernTooltip]' Location='21,59' Name='CavernToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@MapViewCavernTooltip'>@MapViewCavern</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,85' Size='177,85' Stretch='false'/>
+</Page>
+<Page Name='FlippedPage' ScrollExtent='177,101' Size='177,101'>
+<Checkbox BackgroundOpacity='1.000' Color='#FFFF80' LocalTooltip='[@MapViewContinentTooltip]' Location='21,22' Name='ContinentToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@MapViewContinentTooltip'>@MapViewContinent</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Color='#FFFF80' LocalTooltip='[@MapViewCavernTooltip]' Location='21,44' Name='CavernToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@MapViewCavernTooltip'>@MapViewCavern</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-101/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,91' Size='177,91' Stretch='false'/>
 </Page>
 </Page>
 <Page Name='TitleBar' PackSize='1,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,32' Size='1024,32'>
@@ -359,22 +612,64 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 </Page>
 <WeatherOverlay AbsorbsInput='false' Name='WeatherOverlay' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='1024,768' Size='1024,768'/>
 <Page BackgroundColor='#182142' BackgroundOpacity='1.000' Name='GlobalMap' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='1024,768' Size='1024,768'>
-<Page AbsorbsInput='false' Name='Text' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
-<Text continentid='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z1]' Location='178,456' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0467/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z1</Text>
-<Text continentid='2' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z2]' Location='774,401' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0412/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z2</Text>
-<Text continentid='3' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z3]' Location='0,632' Name='Cyssor' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0643/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z3</Text>
-<Text continentid='4' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z4]' Location='365,129' Name='Ishundar' PackLocation='proportional,proportional' PackLocationProp='0490/1024,0140/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z4</Text>
-<Text continentid='5' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z5]' Location='608,269' Name='Forseral' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0280/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z5</Text>
-<Text continentid='6' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z6]' Location='0,108' Name='Ceryshen' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0119/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z6</Text>
-<Text continentid='7' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z7]' Location='774,630' Name='Esamir' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0641/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z7</Text>
-<Text continentid='8' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z8]' Location='461,604' Name='Oshur' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0615/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z8</Text>
-<Text continentid='9' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z9]' Location='385,377' Name='Searhus' PackLocation='proportional,proportional' PackLocationProp='0510/1024,0388/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z9</Text>
-<Text continentid='10' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z10]' Location='36,325' Name='Amerish' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0336/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z10</Text>
-<Text continentid='11' empire='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home1]' Location='257,658' Name='SanctuaryNC' PackLocation='proportional,proportional' PackLocationProp='0382/1024,0669/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home1</Text>
-<Text continentid='12' empire='0' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home2]' Location='215,221' Name='SanctuaryTR' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0232/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home2</Text>
-<Text continentid='13' empire='2' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home3]' Location='588,482' Name='SanctuaryVS' PackLocation='proportional,proportional' PackLocationProp='0713/1024,0493/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home3</Text>
+<Page Name='Continents' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Page AbsorbsInput='false' Enabled='false' Name='Text' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Text continentid='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z1]' Location='178,445' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z1</Text>
+<Text continentid='101' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='288,441' Name='SolsarLock1' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='201' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='288,441' Name='SolsarLock2' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='301' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z1]' Location='178,468' Name='SolsarLockText' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0479/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z1</Text>
+<Text continentid='2' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z2]' Location='774,390' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z2</Text>
+<Text continentid='102' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,386' Name='HossinLock1' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='202' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,386' Name='HossinLock2' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='302' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z2]' Location='774,413' Name='HossinLockText' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0424/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z2</Text>
+<Text continentid='3' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z3]' Location='0,621' Name='Cyssor' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0632/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z3</Text>
+<Text continentid='103' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,617' Name='CyssorLock1' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0632/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='203' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,617' Name='CyssorLock2' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0632/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='303' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z3]' Location='0,644' Name='CyssorLockText' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0655/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z3</Text>
+<Text continentid='4' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z4]' Location='365,118' Name='Ishundar' PackLocation='proportional,proportional' PackLocationProp='0490/1024,0129/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z4</Text>
+<Text continentid='104' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='475,114' Name='IshundarLock1' PackLocation='proportional,proportional' PackLocationProp='0490/1024,0129/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='204' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='475,114' Name='IshundarLock2' PackLocation='proportional,proportional' PackLocationProp='0490/1024,0129/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='304' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z4]' Location='365,141' Name='IshundarLockText' PackLocation='proportional,proportional' PackLocationProp='0490/1024,0152/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z4</Text>
+<Text continentid='5' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z5]' Location='608,258' Name='Forseral' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z5</Text>
+<Text continentid='105' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='718,254' Name='ForseralLock1' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='205' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='718,254' Name='ForseralLock2' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='305' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z5]' Location='608,281' Name='ForseralLockText' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0292/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z5</Text>
+<Text continentid='6' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z6]' Location='0,97' Name='Ceryshen' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z6</Text>
+<Text continentid='106' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,93' Name='CeryshenLock1' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='206' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,93' Name='CeryshenLock2' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='306' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z6]' Location='0,120' Name='CeryshenLockText' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0131/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z6</Text>
+<Text AbsorbsInput='false' continentid='7' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z7]' Location='774,619' Name='Esamir' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0630/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z7</Text>
+<Text AbsorbsInput='false' continentid='107' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,615' Name='EsamirLock1' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0630/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text AbsorbsInput='false' continentid='207' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,615' Name='EsamirLock2' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0630/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text AbsorbsInput='false' continentid='307' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z7]' Location='774,642' Name='EsamirLockText' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0653/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z7</Text>
+<Text continentid='8' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z8]' Location='461,593' Name='Oshur' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z8</Text>
+<Text continentid='108' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='571,589' Name='OshurLock1' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='208' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='571,589' Name='OshurLock2' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='308' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z8]' Location='461,616' Name='OshurLockText' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0627/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z8</Text>
+<Text continentid='9' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z9]' Location='385,366' Name='Searhus' PackLocation='proportional,proportional' PackLocationProp='0510/1024,0377/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z9</Text>
+<Text continentid='109' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='495,362' Name='SearhusLock1' PackLocation='proportional,proportional' PackLocationProp='0510/1024,0377/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='209' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='495,362' Name='SearhusLock2' PackLocation='proportional,proportional' PackLocationProp='0510/1024,0377/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='309' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z9]' Location='385,389' Name='SearhusLockText' PackLocation='proportional,proportional' PackLocationProp='0510/1024,0400/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z9</Text>
+<Text continentid='10' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z10]' Location='36,314' Name='Amerish' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@z10</Text>
+<Text continentid='110' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='146,310' Name='AmerishLock1' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='210' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='146,310' Name='AmerishLock2' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='310' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@z10]' Location='36,337' Name='AmerishLockText' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0348/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@z10</Text>
+<Text continentid='11' empire='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home1]' Location='257,647' Name='SanctuaryNC' PackLocation='proportional,proportional' PackLocationProp='0382/1024,0658/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home1</Text>
+<Text continentid='111' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='367,643' Name='SanctuaryNCLock1' PackLocation='proportional,proportional' PackLocationProp='0382/1024,0658/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='211' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='367,643' Name='SanctuaryNCLock2' PackLocation='proportional,proportional' PackLocationProp='0382/1024,0658/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='311' empire='1' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home1]' Location='257,670' Name='SanctuaryNCLockText' PackLocation='proportional,proportional' PackLocationProp='0382/1024,0681/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@home1</Text>
+<Text continentid='12' empire='0' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home2]' Location='215,210' Name='SanctuaryTR' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0221/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home2</Text>
+<Text continentid='112' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='325,206' Name='SanctuaryTRLock1' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0221/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='212' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='325,206' Name='SanctuaryTRLock2' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0221/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='312' empire='0' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home2]' Location='215,233' Name='SanctuaryTRLockText' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0244/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@home2</Text>
+<Text continentid='13' empire='2' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home3]' Location='588,471' Name='SanctuaryVS' PackLocation='proportional,proportional' PackLocationProp='0713/1024,0482/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@home3</Text>
+<Text continentid='113' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='698,467' Name='SanctuaryVSLock1' PackLocation='proportional,proportional' PackLocationProp='0713/1024,0482/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='213' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='698,467' Name='SanctuaryVSLock2' PackLocation='proportional,proportional' PackLocationProp='0713/1024,0482/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='313' empire='2' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@home3]' Location='588,494' Name='SanctuaryVSLockText' PackLocation='proportional,proportional' PackLocationProp='0713/1024,0505/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@home3</Text>
 </Page>
-<Page Name='MapImages' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Image AbsorbsInput='false' Enabled='false' Name='Lines' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='/Plates.GlobalMapLinework'/>
+<Page Name='Maps' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Page AbsorbsInput='false' Name='MapImages - for testing' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
 <Image BoundaryPolygon='38.000,80.000,87.000,40.000,97.000,4.000,130.000,3.000,156.000,37.000,177.000,57.000,176.000,104.000,185.000,138.000,161.000,188.000,88.000,222.000,56.000,186.000' Location='191,355' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0467/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_map01g'/>
 <Image BoundaryPolygon='111.000,25.000,171.000,52.000,161.000,96.000,208.000,132.000,213.000,174.000,158.000,204.000,96.000,204.000,36.000,178.000,21.000,79.000' Location='803,300' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0915/1024,0412/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_map02g'/>
 <Image BoundaryPolygon='2.000,11.000,157.000,24.000,211.000,56.000,217.000,129.000,212.000,205.000,36.000,220.000,1.000,166.000' Location='9,531' Name='Cyssor' PackLocation='proportional,proportional' PackLocationProp='0121/1024,0643/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_map03g'/>
@@ -389,7 +684,6 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image BoundaryPolygon='60.000,56.000,105.000,55.000,158.000,74.000,168.000,136.000,147.000,164.000,61.000,164.000' Location='228,120' Name='SanctuaryTR' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0232/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_map12g'/>
 <Image BoundaryPolygon='38.000,59.000,87.000,42.000,189.000,37.000,194.000,90.000,177.000,151.000,122.000,188.000,72.000,190.000,42.000,156.000' Location='594,369' Name='SanctuaryVS' PackLocation='proportional,proportional' PackLocationProp='0706/1024,0481/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_map13g'/>
 </Page>
-<Image Name='Lines' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='/Plates.GlobalMapLinework'/>
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='38.000,80.000,87.000,40.000,97.000,4.000,130.000,3.000,156.000,37.000,177.000,57.000,176.000,104.000,185.000,138.000,161.000,188.000,88.000,222.000,56.000,186.000' continentid='1' Location='191,355' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0467/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='z1'/>
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='111.000,25.000,171.000,52.000,161.000,96.000,208.000,132.000,213.000,174.000,158.000,204.000,96.000,204.000,36.000,178.000,21.000,79.000' continentid='2' Location='803,300' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0915/1024,0412/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='z2'/>
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='2.000,11.000,157.000,24.000,211.000,56.000,217.000,129.000,212.000,205.000,36.000,220.000,1.000,166.000' continentid='3' Location='9,531' Name='Cyssor' PackLocation='proportional,proportional' PackLocationProp='0121/1024,0643/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='z3'/>
@@ -403,7 +697,74 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='51.000,11.000,90.000,10.000,167.000,43.000,177.000,117.000,156.000,165.000,97.000,163.000,19.000,128.000,19.000,70.000' continentid='11' Location='291,580' Name='SanctuaryNC' PackLocation='proportional,proportional' PackLocationProp='0403/1024,0692/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='home1'/>
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='60.000,56.000,105.000,55.000,158.000,74.000,168.000,136.000,147.000,164.000,61.000,164.000' continentid='12' Location='228,120' Name='SanctuaryTR' PackLocation='proportional,proportional' PackLocationProp='0340/1024,0232/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='home2'/>
 <OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='38.000,59.000,87.000,42.000,189.000,37.000,194.000,90.000,177.000,151.000,122.000,188.000,72.000,190.000,42.000,156.000' continentid='13' Location='594,369' Name='SanctuaryVS' PackLocation='proportional,proportional' PackLocationProp='0706/1024,0481/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='home3'/>
-<Image Name='Water' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='/Plates.GlobalMapWater'/>
+</Page>
+<Image Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='/Plates.GlobalMapWater'/>
+</Page>
+<Page BackgroundOpacity='1.000' Name='Caverns' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Page AbsorbsInput='false' Enabled='false' Name='Text' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Text continentid='23' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c1]' Location='36,314' Name='Amerish' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c1</Text>
+<Text continentid='123' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='146,310' Name='AmerishLock1' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='223' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='146,310' Name='AmerishLock2' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0325/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='323' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c1]' Location='36,360' Name='AmerishLockText' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0371/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c1</Text>
+<Image continentid='423' Location='36,340' Name='AmerishModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='523' Location='256,340' Name='AmerishModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='623' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='36,337' Name='AmerishModuleText' PackLocation='proportional,proportional' PackLocationProp='0161/1024,0348/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+<Text continentid='24' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c2]' Location='774,390' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c2</Text>
+<Text continentid='124' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,386' Name='HossinLock1' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='224' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='884,386' Name='HossinLock2' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0401/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='324' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c2]' Location='774,436' Name='HossinLockText' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0447/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c2</Text>
+<Image continentid='424' Location='774,416' Name='HossinModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='524' Location='994,416' Name='HossinModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='624' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='774,413' Name='HossinModuleText' PackLocation='proportional,proportional' PackLocationProp='0899/1024,0424/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+<Text continentid='25' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c3]' Location='0,97' Name='Ceryshen' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c3</Text>
+<Text continentid='125' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,93' Name='CeryshenLock1' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='225' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='110,93' Name='CeryshenLock2' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0108/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='325' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c3]' Location='0,143' Name='CeryshenLockText' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0154/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c3</Text>
+<Image continentid='425' Location='0,123' Name='CeryshenModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='525' Location='220,123' Name='CeryshenModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='625' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='0,120' Name='CeryshenModuleText' PackLocation='proportional,proportional' PackLocationProp='0125/1024,0131/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+<Text continentid='26' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c4]' Location='178,445' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c4</Text>
+<Text continentid='126' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='288,441' Name='SolsarLock1' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='226' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='288,441' Name='SolsarLock2' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0456/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='326' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c4]' Location='178,491' Name='SolsarLockText' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0502/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c4</Text>
+<Image continentid='426' Location='178,471' Name='SolsarModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='526' Location='398,471' Name='SolsarModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='626' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='178,468' Name='SolsarModuleText' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0479/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+<Text continentid='27' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c5]' Location='608,258' Name='Forseral' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c5</Text>
+<Text continentid='127' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='718,254' Name='ForseralLock1' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='227' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='718,254' Name='ForseralLock2' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0269/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='327' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c5]' Location='608,304' Name='ForseralLockText' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0315/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c5</Text>
+<Image continentid='427' Location='608,284' Name='ForseralModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='527' Location='828,284' Name='ForseralModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='627' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='608,281' Name='ForseralModuleText' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0292/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+<Text continentid='28' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c6]' Location='461,593' Name='Oshur' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@c6</Text>
+<Text continentid='128' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='571,589' Name='OshurLock1' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='228' Font='/Fonts.MiscIcons' GetsInput='false' LocalText='D' Location='571,589' Name='OshurLock2' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0604/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='34,30' ShadowStyle='/Shadows.Default' Size='30,30' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>D</Text>
+<Text continentid='328' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@c6]' Location='461,639' Name='OshurLockText' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0650/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@c6</Text>
+<Image continentid='428' Location='461,619' Name='OshurModule1' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Image continentid='528' Location='681,619' Name='OshurModule2' ScrollExtent='24,16' Size='24,16' Style='/Icons.Map.Misc.Vanu_module_icon'/>
+<Text continentid='628' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VanuModuleEmpty]' Location='461,616' Name='OshurModuleText' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0627/0768' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='250,22' ShadowStyle='/Shadows.Default' Size='250,22' TextAlignment='Center' TextAlignmentVertical='Center'>@VanuModuleEmpty</Text>
+</Page>
+<Image AbsorbsInput='false' Enabled='false' Name='Lines' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='/Plates.GlobalMapLinework' Visible='false'/>
+<Page Name='Maps' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Page AbsorbsInput='false' Name='MapImages - for testing' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Image BoundaryPolygon='74.000,26.000,155.000,12.000,188.000,26.000,204.000,111.000,187.000,180.000,34.000,209.000,26.000,152.000,68.000,100.000' Location='29,228' Name='Amerish' PackLocation='proportional,proportional' PackLocationProp='0141/1024,0340/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd01g'/>
+<Image BoundaryPolygon='111.000,25.000,171.000,52.000,161.000,96.000,208.000,132.000,213.000,174.000,158.000,204.000,96.000,204.000,36.000,178.000,21.000,79.000' Location='803,300' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0915/1024,0412/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd02g'/>
+<Image BoundaryPolygon='39.000,39.000,102.000,28.000,202.000,97.000,187.000,179.000,166.000,201.000,27.000,202.000' Location='-10,7' Name='Ceryshen' PackLocation='proportional,proportional' PackLocationProp='0102/1024,0119/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd03g'/>
+<Image BoundaryPolygon='38.000,80.000,87.000,40.000,97.000,4.000,130.000,3.000,156.000,37.000,177.000,57.000,176.000,104.000,185.000,138.000,161.000,188.000,88.000,222.000,56.000,186.000' Location='191,355' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0467/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd04g'/>
+<Image BoundaryPolygon='86.000,27.000,107.000,27.000,161.000,51.000,224.000,120.000,193.000,152.000,159.000,190.000,103.000,210.000,68.000,198.000,21.000,130.000' Location='621,168' Name='Forseral' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0280/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd05g'/>
+<Image BoundaryPolygon='69.000,29.000,158.000,35.000,182.000,62.000,178.000,100.000,205.000,129.000,172.000,182.000,51.000,207.000,18.000,112.000' Location='474,503' Name='Oshur' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0615/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' SourceResource='ui_ugd06g'/>
+</Page>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='74.000,26.000,155.000,12.000,188.000,26.000,204.000,111.000,187.000,180.000,34.000,209.000,26.000,152.000,68.000,100.000' continentid='23' Location='29,228' Name='Amerish' PackLocation='proportional,proportional' PackLocationProp='0141/1024,0340/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c1'/>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='111.000,25.000,171.000,52.000,161.000,96.000,208.000,132.000,213.000,174.000,158.000,204.000,96.000,204.000,36.000,178.000,21.000,79.000' continentid='24' Location='803,300' Name='Hossin' PackLocation='proportional,proportional' PackLocationProp='0915/1024,0412/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c2'/>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='39.000,39.000,102.000,28.000,202.000,97.000,187.000,179.000,166.000,201.000,27.000,202.000' continentid='25' Location='-10,7' Name='Ceryshen' PackLocation='proportional,proportional' PackLocationProp='0102/1024,0119/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c3'/>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='38.000,80.000,87.000,40.000,97.000,4.000,130.000,3.000,156.000,37.000,177.000,57.000,176.000,104.000,185.000,138.000,161.000,188.000,88.000,222.000,56.000,186.000' continentid='26' Location='191,355' Name='Solsar' PackLocation='proportional,proportional' PackLocationProp='0303/1024,0467/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c4'/>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='86.000,27.000,107.000,27.000,161.000,51.000,224.000,120.000,193.000,152.000,159.000,190.000,103.000,210.000,68.000,198.000,21.000,130.000' continentid='27' Location='621,168' Name='Forseral' PackLocation='proportional,proportional' PackLocationProp='0733/1024,0280/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c5'/>
+<OverheadMap BackgroundOpacity='1.000' BoundaryPolygon='69.000,29.000,158.000,35.000,182.000,62.000,178.000,100.000,205.000,129.000,172.000,182.000,51.000,207.000,18.000,112.000' continentid='28' Location='474,503' Name='Oshur' PackLocation='proportional,proportional' PackLocationProp='0586/1024,0615/0768' PackSize='proportional,proportional' PackSizeProp='0224/1024,0224/0768' ScrollExtent='224,224' Size='224,224' zonename='c6'/>
+</Page>
+<Image BackgroundOpacity='1.000' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='BackgroundStyle' ScrollExtent='1024,768' Size='1024,768' Stretch='false'/>
+<RectangleStyle Center='/Plates.GlobalMapCavern' Name='BackgroundStyle'/>
+</Page>
 </Page>
 <Page BackgroundColor='#182142' BackgroundOpacity='1.000' Name='MapWindow' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
 <Page Activated='true' Location='285,37' movable='true' Name='RespawnProgress' PackLocation='center,top' PackLocationProp='-227/0001,0037/0001' ScrollExtent='455,66' Size='455,66'>
@@ -418,13 +779,19 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='455,66' Size='455,66' Stretch='false'/>
 </Page>
 </Page>
-<Page Activated='true' BackgroundColor='#FFFF00' Location='831,566' movable='true' Name='RespawnSanctuary' PackLocation='right,bottom' PackLocationProp='-193/0001,-202/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
+<Page Activated='true' BackgroundColor='#FFFF00' Location='831,358' movable='true' Name='RespawnMap0' PackLocation='right,bottom' PackLocationProp='-193/0001,-410/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
+<Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' Location='12,8' Name='MapText' PackLocation='left,top' PackLocationProp='0012/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0025/0001,0002/0003' ScrollExtent='160,18' ShadowStyle='/Shadows.Default' Size='160,18' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
+<OverheadMap AbsorbsInput='false' Location='32,30' Name='Map' PackLocation='center,center' PackLocationProp='-060/0001,-060/0001' ScrollExtent='120,120' Size='120,120'/>
+<Page AbsorbsInput='false' BackgroundColor='#64719B' BackgroundOpacity='0.475' Enabled='false' GetsInput='false' Location='32,26' Name='Water' ScrollExtent='120,120' Size='120,120'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='185,180' Size='185,180' Stretch='false'/>
+</Page>
+<Page Activated='true' BackgroundColor='#FFFF00' Location='831,566' movable='true' Name='RespawnMap1' PackLocation='right,bottom' PackLocationProp='-193/0001,-202/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
 <Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' Location='12,8' Name='MapText' PackLocation='left,top' PackLocationProp='0012/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0025/0001,0002/0003' ScrollExtent='160,18' ShadowStyle='/Shadows.Default' Size='160,18' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
 <OverheadMap AbsorbsInput='false' Location='32,25' Name='Map' PackLocation='center,center' PackLocationProp='-060/0001,-065/0001' ScrollExtent='120,120' Size='120,120'/>
 <Page AbsorbsInput='false' BackgroundColor='#64719B' BackgroundOpacity='0.475' Enabled='false' GetsInput='false' Location='32,26' Name='Water' ScrollExtent='120,120' Size='120,120'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='185,180' Size='185,180' Stretch='false'/>
 </Page>
-<Page Activated='true' BackgroundColor='#FFFF00' Location='831,358' movable='true' Name='RespawnOther' PackLocation='right,bottom' PackLocationProp='-193/0001,-410/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
+<Page Activated='true' BackgroundColor='#FFFF00' Location='830,150' movable='true' Name='RespawnMap2' PackLocation='right,bottom' PackLocationProp='-194/0001,-618/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
 <Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' Location='12,8' Name='MapText' PackLocation='left,top' PackLocationProp='0012/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0025/0001,0002/0003' ScrollExtent='160,18' ShadowStyle='/Shadows.Default' Size='160,18' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
 <OverheadMap AbsorbsInput='false' Location='32,30' Name='Map' PackLocation='center,center' PackLocationProp='-060/0001,-060/0001' ScrollExtent='120,120' Size='120,120'/>
 <Page AbsorbsInput='false' BackgroundColor='#64719B' BackgroundOpacity='0.475' Enabled='false' GetsInput='false' Location='32,26' Name='Water' ScrollExtent='120,120' Size='120,120'/>
@@ -461,7 +828,7 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' Opacity='0.700' PackSize='1,absolute' PackSizeProp='0002/0003,0018/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='241,312' Size='241,312' Stretch='false'/>
 </Page>
 <Page AbsorbsInput='false' Location='284,319' Name='ProgressView' Opacity='0.800' PackLocation='center,center' PackLocationProp='-228/0001,-065/0001' ScrollExtent='455,93' Size='455,93' Visible='false'>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='Information about progress' Location='32,27' Name='InfoText' ScrollExtent='400,21' Size='400,21' TextAlignment='Center'>Information about progress</Text>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='[@InformationAboutProgress]' Location='32,27' Name='InfoText' ScrollExtent='400,21' Size='400,21' TextAlignment='Center'>@InformationAboutProgress</Text>
 <Progressbar AbsorbsInput='false' Color='#777777' colorhack='#FFFFFF' colorheal='#FF0000' colorrepair='#0099C5' colorrevive='#FF0000' Location='29,54' Name='Progress' Progress='0.330' ScrollExtent='400,13' Size='400,13' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='455,93' Size='455,93' Stretch='false'/>
 </Page>
@@ -584,52 +951,46 @@ u
 <Data localtext='[@VoiceL3_SelfRepair]' menu='Level3.2Data' Name='SelfRepair' text='@VoiceL3_SelfRepair'/>
 </DataSource>
 <DataSource Name='Level3.8Data'>
+<Data localtext='[@VoiceL3_TactRequest]' Name='TactRequest' text='@VoiceL3_TactRequest'/>
 <Data localtext='[@VoiceL3_TactFallback]' Name='TactFallBack' text='@VoiceL3_TactFallback'/>
 <Data localtext='[@VoiceL3_TactCover]' Name='TactCover' text='@VoiceL3_TactCover'/>
 <Data localtext='[@VoiceL3_TactDeploy]' Name='TactDeploy' text='@VoiceL3_TactDeploy'/>
 <Data localtext='[@VoiceL3_TactEnemy]' Name='TactEnemy' text='@VoiceL3_TactEnemy'/>
 <Data localtext='[@VoiceL3_TactFollow]' Name='TactFollow' text='@VoiceL3_TactFollow'/>
 <Data localtext='[@VoiceL3_TactRetreat]' Name='TactRetreat' text='@VoiceL3_TactRetreat'/>
-<Data localtext='[@VoiceL3_TactRequest]' Name='TactRequest' text='@VoiceL3_TactRequest'/>
 <Data localtext='[@VoiceL3_TactSpreadOut]' Name='TactSpreadOut' text='@VoiceL3_TactSpreadOut'/>
 <Data localtext='[@VoiceL3_TactTurret]' Name='TactTurret' text='@VoiceL3_TactTurret'/>
 <Data localtext='[@VoiceL3_TactWaypoint]' Name='TactWaypoint' text='@VoiceL3_TactWaypoint'/>
 <Data localtext='[@VoiceL3_TactDecline]' Name='TactDecline' text='@VoiceL3_TactDecline'/>
 </DataSource>
 </Page>
-<Page Location='8,283' MinimumSize='145,58' movable='true' Name='PlayerInterfaceMenu' ScrollExtent='189,146' Size='189,146' Visible='false'>
-<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='189,146' Size='189,146'>
+<Page Location='8,283' MinimumSize='145,58' movable='true' Name='PlayerInterfaceMenu' ScrollExtent='189,113' Size='189,113' Visible='false'>
+<Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='189,113' Size='189,113'>
 <Text AbsorbsInput='false' BackgroundColor='#00F2C9' BackgroundOpacity='0.224' Enabled='false' Font='/Fonts.DefaultFont' LocalText='[@PlayerMenu]' Location='12,18' Name='MenuTitle' PackLocation='left,top' PackLocationProp='0012/0001,0018/0001' PackSize='absolute,fixed' PackSizeProp='0024/0001,0002/0003' ScrollExtent='165,21' Size='165,21' SizeIncrement='0,0' TextAlignment='Center'>@PlayerMenu</Text>
-<PopupMenu DataSource='SquadLeaderInviteData' Location='16,42' MaximumSize='156,85' MinimumSize='156,85' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='proportional,fixed' PackSizeProp='0156/0189,0002/0003' ScrollExtent='156,85' Size='156,85' Style='PopupMenuStyle'>
+<PopupMenu DataSource='SquadLeaderInviteData' Location='16,42' MaximumSize='156,51' MinimumSize='156,51' Name='Menu' PackLocation='left,top' PackLocationProp='0016/0001,0042/0001' PackSize='proportional,fixed' PackSizeProp='0156/0189,0002/0003' ScrollExtent='156,51' Size='156,51' Style='PopupMenuStyle'>
 </PopupMenu>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='189,146' Size='189,146' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='189,113' Size='189,113' Stretch='false'/>
 </Page>
 <DataSource Name='SquadMemberData'>
-<Data localtext='[@PlayerMenuTrade]' menuindex='0' Name='Trade' text='@PlayerMenuTrade'/>
 <Data localtext='[@PlayerMenuFriends]' menuindex='3' Name='AddToFriends' text='@PlayerMenuFriends'/>
-<Data localtext='[@PlayerMenuStats]' menuindex='4' Name='ViewStats' text='@PlayerMenuStats'/>
 <Data localtext='[@PlayerMenuCancel]' menuindex='5' Name='Cancel' text='@PlayerMenuCancel'/>
 </DataSource>
 <DataSource Name='SquadLeaderInviteData'>
-<Data localtext='[@PlayerMenuTrade]' menuindex='0' Name='Trade' text='@PlayerMenuTrade'/>
 <Data localtext='[@PlayerMenuInvite]' menuindex='1' Name='Invite' text='@PlayerMenuInvite'/>
 <Data localtext='[@PlayerMenuFriends]' menuindex='3' Name='AddToFriends' text='@PlayerMenuFriends'/>
-<Data localtext='[@PlayerMenuStats]' menuindex='4' Name='ViewStats' text='@PlayerMenuStats'/>
 <Data localtext='[@PlayerMenuCancel]' menuindex='5' Name='Cancel' text='@PlayerMenuCancel'/>
 </DataSource>
 <DataSource Name='SquadLeaderKickData'>
-<Data localtext='[@PlayerMenuTrade]' menuindex='0' Name='Trade' text='@PlayerMenuTrade'/>
 <Data localtext='[@PlayerMenuKick]' menuindex='2' Name='Kick' text='@PlayerMenuKick'/>
 <Data localtext='[@PlayerMenuFriends]' menuindex='3' Name='AddToFriends' text='@PlayerMenuFriends'/>
-<Data localtext='[@PlayerMenuStats]' menuindex='4' Name='ViewStats' text='@PlayerMenuStats'/>
 <Data localtext='[@PlayerMenuCancel]' menuindex='5' Name='Cancel' text='@PlayerMenuCancel'/>
 </DataSource>
 <PopupMenuStyle ButtonStyle='/Buttons.HUD_VoiceMacro.style' ItemHeight='17' Name='PopupMenuStyle'/>
 </Page>
 <Page BackgroundColor='#FFFFFF' Location='292,107' minsize='404,344' movable='true' Name='BugReportPane' PackLocation='center,center' PackLocationProp='-220/0001,-277/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='false' ScrollExtent='440,463' Size='440,463' Visible='false'>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='[@BugReportTitle]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='232,20' Size='232,20' TextAlignment='Center' TextAlignmentVertical='Center'>@BugReportTitle</Text>
-<Button LocalText='[@Cancel]' Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
-<Button LocalText='[@Cancel]' Location='370,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@BugReportTitle]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='232,20' Size='232,20' TextAlignment='Center' TextAlignmentVertical='Center'>@BugReportTitle</Text>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='370,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='BugTypeData' Location='16,33' Name='BugTypeDropdown' PackLocation='left,top' PackLocationProp='0016/0001,0033/0001' PackSize='absolute,fixed' PackSizeProp='0032/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='408,32' SelectedItemIndex='5' Size='408,32' Style='/Dropdowns.HudPane.style'/>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' LocalText='[@BugRepeatableTitle]' Location='16,74' MaxLines='1' Name='RepeatableTitle' PackLocation='left,top' PackLocationProp='0016/0001,0074/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='158,21' Size='158,21' TextAlignment='Right' TextAlignmentVertical='Center'>@BugRepeatableTitle</Text>
 <Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='BugRepeatableData' Location='175,68' Name='RepeatableDropdown' PackLocation='left,top' PackLocationProp='0175/0001,0068/0001' PackSize='absolute,fixed' PackSizeProp='0191/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='249,32' SelectedItemIndex='1' Size='249,32' Style='/Dropdowns.HudPane.style'/>
@@ -720,6 +1081,13 @@ $Name$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='391,32' Size='391,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='440,446' Size='440,446' Stretch='false'/>
 </Page>
+<Page Location='3,384' movable='true' Name='AcceptPlatoonInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-384/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
+<Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
+<Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
+<Button LocalText='[@No]' Location='116,53' Name='DeclineButton' PackLocation='center,bottom' PackLocationProp='0011/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@No</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,47' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0019/0001,-050/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='177,32' Size='177,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='211,97' Size='211,97' Stretch='false' Style=' '/>
+</Page>
 <Page Location='3,384' movable='true' Name='AcceptOutfitInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-384/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
 <Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
 <Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
@@ -734,6 +1102,13 @@ $Name$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,47' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0019/0001,-050/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='177,32' Size='177,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='211,97' Size='211,97' Stretch='false' Style=' '/>
 </Page>
+<Page AbsorbsInput='false' Location='-1,-1' Name='AcceptTradeInvitation' ScrollExtent='228,148' Size='228,148' Visible='false'>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@TradeInviteText]' Location='15,20' Name='Text' PackLocation='left,top' PackLocationProp='0015/0001,0020/0001' PackSize='absolute,absolute' PackSizeProp='0031/0001,0074/0001' ScrollExtent='197,74' Size='197,74' TextAlignment='Center' TextAlignmentVertical='Center'>@TradeInviteText</Text>
+<Button LocalText='[@Yes]' Location='19,103' Name='Yes' PackLocation='left,bottom' PackLocationProp='0019/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
+<Button IsCancelButton='true' IsDefaultButton='true' LocalText='[@No]' Location='133,103' Name='No' PackLocation='right,bottom' PackLocationProp='-095/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@No</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='14,97' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0014/0001,-051/0001' PackSize='absolute,fixed' PackSizeProp='0029/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='199,32' Size='199,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='228,148' Size='228,148' Stretch='false'/>
+</Page>
 <Page Location='3,482' movable='true' Name='AcceptVoiceInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-286/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
 <Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
 <Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
@@ -745,19 +1120,7 @@ $Name$
 <Text AbsorbsInput='false' Font='/Fonts.OverheadFont' LocalText='+50' Location='46,0' Name='Text' ScrollExtent='84,40' Size='84,40' TextAlignmentVertical='Center'>+50</Text>
 <Image AbsorbsInput='false' Name='GriefIcon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,32,32' SourceResource='grief_weapons_lock_icon' Style=' '/>
 </Page>
-<Page Location='224,42' movable='true' Name='SoldierStatus' PackLocation='right,top' PackLocationProp='-800/0001,0042/0001' ScrollExtent='147,72' Size='147,72' Visible='false'>
-<Text AbsorbsInput='false' Enabled='false' Font='/SmallFont' LocalText='100/100' Location='57,10' Name='HealthText' ScrollExtent='39,12' Size='39,12' TextAlignment='Center'>100/100</Text>
-<Text AbsorbsInput='false' Enabled='false' Font='/SmallFont' LocalText='100/100' Location='57,25' Name='StaminaText' ScrollExtent='39,12' Size='39,12' TextAlignment='Center'>100/100</Text>
-<Text AbsorbsInput='false' Enabled='false' Font='/SmallFont' LocalText='100/100' Location='57,40' Name='ArmorText' ScrollExtent='39,12' Size='39,12' TextAlignment='Center'>100/100</Text>
-<Image AbsorbsInput='false' Color='#FF0000' Location='17,10' Name='HealthIcon' ScrollExtent='12,12' Size='12,12' Stretch='false' Style='/Icons.HUD.Health'/>
-<Image AbsorbsInput='false' Color='#00F2C9' Location='17,25' Name='StaminaIcon' ScrollExtent='12,12' Size='12,12' Stretch='false' Style='/Icons.HUD.Stamina'/>
-<Image AbsorbsInput='false' Color='#0099C5' Location='17,40' Name='ArmorIcon' ScrollExtent='12,12' Size='12,12' Stretch='false' Style='/Icons.HUD.Armor'/>
-<Progressbar BackgroundColor='#858585' BarBackgroundColor='#FF0000' LocalTooltip='[@HeatlhTooltip]' Location='31,10' Name='Health' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
-<Progressbar BackgroundColor='#858585' BarBackgroundColor='#00F2C9' LocalTooltip='[@StaminaTooltip]' Location='32,25' Name='Stamina' Progress='0.400' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@StaminaTooltip'/>
-<Progressbar BackgroundColor='#858585' BarBackgroundColor='#0099C5' LocalTooltip='[@ArmorTooltip]' Location='32,40' Name='Armor' Progress='0.600' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@ArmorTooltip'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='147,72' Size='147,72' Stretch='false' Style=' '/>
-</Page>
-<Page Activated='true' Location='9,589' movable='true' Name='VehicleIcons' Opacity='0.800' PackLocation='left,bottom' PackLocationProp='0009/0001,-179/0001' ScrollExtent='104,100' Size='104,100' Visible='false'>
+<Page Activated='true' Location='8,513' movable='true' Name='VehicleIcons' Opacity='0.800' PackLocation='left,bottom' PackLocationProp='0008/0001,-255/0001' ScrollExtent='190,140' Size='190,140' Visible='false'>
 <ImageStyle Name='FullOccupant'>
 <ImageFrame Source='ui_vehicle_occupant_00' SourceRect='0,0,8,8'/>
 </ImageStyle>
@@ -766,149 +1129,200 @@ $Name$
 </ImageStyle>
 <RectangleStyle Center='FullOccupant' Name='ROccupant'/>
 <ButtonStyle MouseOverSound='interface_feedback_rollover.wav' Name='Occupant' RStyleDefault='ROccupant'/>
-<Page isvehiclepage='true' Name='ams' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='38,100' Size='38,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='38,100' Size='38,100' Style='/ProgressBars.ams.style'/>
+<Page isvehiclepage='true' Location='23,0' Name='ams' PackLocation='center,center' PackLocationProp='-072/0001,-070/0001' ScrollExtent='78,140' Size='78,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='18,20' Name='Progress' Progress='0.800' ScrollExtent='38,100' Size='38,100' Style='/ProgressBars.ams.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='78,140' Size='78,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='ant' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='56,100' Size='56,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='56,100' Size='56,100' Style='/ProgressBars.ant.style'/>
+<Page isvehiclepage='true' Location='43,20' Name='ant' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='96,140' Size='96,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='56,100' Size='56,100' Style='/ProgressBars.ant.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='96,140' Size='96,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='apc' ScrollExtent='45,100' Size='45,100' Visible='false'>
-<Button Color='#F3E138' LocalTooltip='Bob' Location='19,12' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Tooltip='Bob'></Button>
-<Button Color='#F3E138' Location='9,24' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='29,25' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='9,40' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='29,40' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='9,53' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='29,54' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='10,72' mountpointname='PassengerE' Name='PassengerE' RStyleDefault='OccupantStyle' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='28,73' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='9,87' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='28,88' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' LocalTooltip='Bob' Location='19,12' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant' Tooltip='Bob'/>
-<Image Color='#F3E138' Location='9,24' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='29,25' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='9,40' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='29,40' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='9,53' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='29,54' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='10,72' mountpointname='PassengerE' Name='PassengerE' RStyleDefault='OccupantStyle' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='28,73' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='9,87' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='28,88' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.600' ScrollExtent='45,100' Size='45,100' Style='/ProgressBars.apc.style'/>
+<Page isvehiclepage='true' Name='apc' ScrollExtent='85,140' Size='85,140' Visible='false'>
+<Button Color='#F3E138' LocalTooltip='Bob' Location='38,33' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Tooltip='Bob'></Button>
+<Button Color='#F3E138' Location='27,56' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='49,56' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='29,70' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,70' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='29,83' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,83' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='29,96' mountpointname='PassengerE' Name='PassengerE' RStyleDefault='OccupantStyle' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,96' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='29,109' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,109' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' LocalTooltip='Bob' Location='38,33' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant' Tooltip='Bob'/>
+<Image Color='#F3E138' Location='27,56' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='49,56' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='29,70' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,70' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='29,83' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,83' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='29,96' mountpointname='PassengerE' Name='PassengerE' RStyleDefault='OccupantStyle' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,96' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='29,109' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,109' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.600' ScrollExtent='45,100' Size='45,100' Style='/ProgressBars.apc.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='85,140' Size='85,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='dropship' ScrollExtent='104,100' Size='104,100' Visible='false'>
-<Button Color='#F3E138' Location='48,6' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='43,16' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='53,16' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='42,28' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='54,28' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='42,39' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='54,39' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='42,48' mountpointname='PassengerE' Name='PassengerE' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='54,49' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='42,59' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='54,59' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='48,72' mountpointname='Vehicle' Name='Vehicle' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='48,88' mountpointname='gunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='48,6' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='43,16' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='53,16' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='42,28' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='54,28' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='42,39' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='54,39' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='42,48' mountpointname='PassengerE' Name='PassengerE' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='54,49' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='42,59' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='54,59' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='48,72' mountpointname='Vehicle' Name='Vehicle' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='48,88' mountpointname='gunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.600' ScrollExtent='104,100' Size='104,100' Style='/ProgressBars.dropship.style'/>
+<Page isvehiclepage='true' Name='dropship' ScrollExtent='144,140' Size='144,140' Visible='false'>
+<Button Color='#F3E138' Location='68,26' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='62,37' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='74,37' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='62,49' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='74,49' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='62,59' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='74,59' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='62,69' mountpointname='PassengerE' Name='PassengerE' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='74,69' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='62,80' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='74,80' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='68,93' mountpointname='Vehicle' Name='Vehicle' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Button Color='#F3E138' Location='68,108' mountpointname='gunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Visible='false'></Button>
+<Image Color='#F3E138' Location='68,26' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='62,37' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='74,37' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='62,49' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='74,49' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='62,59' mountpointname='PassengerC' Name='PassengerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='74,59' mountpointname='PassengerD' Name='PassengerD' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='62,69' mountpointname='PassengerE' Name='PassengerE' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='74,69' mountpointname='PassengerF' Name='PassengerF' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='62,80' mountpointname='PassengerG' Name='HeavyA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='74,80' mountpointname='PassengerH' Name='HeavyB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='68,93' mountpointname='Vehicle' Name='Vehicle' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='68,108' mountpointname='gunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.600' ScrollExtent='104,100' Size='104,100' Style='/ProgressBars.dropship.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='144,140' Size='144,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='lightgunship' ScrollExtent='70,100' Size='70,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='70,100' Size='70,100' Style='/ProgressBars.lightgunship.style'/>
+<Page isvehiclepage='true' Location='43,20' Name='flail' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='132,140' Size='132,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='92,100' Size='92,100' Style='/ProgressBars.flail.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='132,140' Size='132,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='lightning' ScrollExtent='62,100' Size='62,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='62,100' Size='62,100' Style='/ProgressBars.lightning.style'/>
+<Page isvehiclepage='true' Location='50,0' Name='liberator' ScrollExtent='114,140' Size='114,140' Visible='false'>
+<Button Color='#F3E138' Location='53,35' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='53,53' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='53,69' mountpointname='GunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='53,35' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='53,53' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='53,69' mountpointname='GunnerC' Name='GunnerC' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='74,100' Size='74,100' Style='/ProgressBars.liberator.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='114,140' Size='114,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='magrider' ScrollExtent='50,100' Size='50,100' Visible='false'>
-<Button Color='#F3E138' Location='22,36' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='22,64' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='22,36' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='22,64' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='50,100' Size='50,100' Style='/ProgressBars.magrider.style'/>
+<Page isvehiclepage='true' Name='lightgunship' ScrollExtent='110,140' Size='110,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='70,100' Size='70,100' Style='/ProgressBars.lightgunship.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='110,140' Size='110,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Name='lightning' ScrollExtent='102,140' Size='102,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='62,100' Size='62,100' Style='/ProgressBars.lightning.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='102,140' Size='102,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Name='magrider' ScrollExtent='90,140' Size='90,140' Visible='false'>
+<Button Color='#F3E138' Location='41,56' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='41,85' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='41,56' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='41,85' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='50,100' Size='50,100' Style='/ProgressBars.magrider.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='90,140' Size='90,140' Thickness='50.000'/>
 </Page>
 <Page isvehiclepage='true' Name='manned_turret' ScrollExtent='96,100' Size='96,100' Visible='false'>
 <Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.700' ScrollExtent='96,100' Size='96,100' Style='/ProgressBars.manned_turret.style'/>
 </Page>
-<Page isvehiclepage='true' Name='mediumtransport' ScrollExtent='50,100' Size='50,100' Visible='false'>
-<Button Color='#F3E138' Location='15,28' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='27,28' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='16,70' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='15,49' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='27,49' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='15,28' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='27,28' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='16,70' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='15,49' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='27,49' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='50,100' Size='50,100' Style='/ProgressBars.mediumtransport.style'/>
+<Page isvehiclepage='true' Name='mediumtransport' ScrollExtent='90,140' Size='90,140' Visible='false'>
+<Button Color='#F3E138' Location='35,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='36,90' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='35,69' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='47,69' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='35,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='36,90' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='35,69' mountpointname='PassengerA' Name='PassengerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='47,69' mountpointname='PassengerB' Name='PassengerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='50,100' Size='50,100' Style='/ProgressBars.mediumtransport.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='90,140' Size='90,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='mosquito' ScrollExtent='54,100' Size='54,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.mosquito.style'/>
+<Page isvehiclepage='true' Name='mosquito' ScrollExtent='94,140' Size='94,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.mosquito.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='94,140' Size='94,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='prowler' ScrollExtent='76,100' Size='76,100' Visible='false'>
-<Button Color='#F3E138' Location='34,19' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='6,64' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='63,64' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='34,19' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='6,64' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='63,64' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='76,100' Size='76,100' Style='/ProgressBars.prowler.style'/>
+<Page isvehiclepage='true' Name='prowler' ScrollExtent='116,140' Size='116,140' Visible='false'>
+<Button Color='#F3E138' Location='54,39' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='26,82' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='82,82' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='54,39' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='26,82' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='82,82' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='76,100' Size='76,100' Style='/ProgressBars.prowler.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='116,140' Size='116,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='quadassault' ScrollExtent='64,100' Size='64,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.750' ScrollExtent='64,100' Size='64,100' Style='/ProgressBars.quadassault.style'/>
+<Page isvehiclepage='true' Name='quadassault' ScrollExtent='104,140' Size='104,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.750' ScrollExtent='64,100' Size='64,100' Style='/ProgressBars.quadassault.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='104,140' Size='104,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='quadstealth' ScrollExtent='64,100' Size='64,100' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.750' ScrollExtent='64,100' Size='64,100' Style='/ProgressBars.quadassault.style'/>
+<Page isvehiclepage='true' Name='quadstealth' ScrollExtent='104,140' Size='104,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.750' ScrollExtent='64,100' Size='64,100' Style='/ProgressBars.quadassault.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='104,140' Size='104,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='threemanheavybuggy' ScrollExtent='53,100' Size='53,100' Visible='false'>
-<Button Color='#F3E138' Location='12,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='32,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='22,72' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='12,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
-<Image Color='#F3E138' Location='32,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
-<Image Color='#F3E138' Location='22,72' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='1.000' ScrollExtent='53,100' Size='53,100' Style='/ProgressBars.threemanheavybuggy.style'/>
+<Page isvehiclepage='true' Name='router' PackLocation='center,center' PackLocationProp='-095/0001,-070/0001' ScrollExtent='190,140' Size='190,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='150,100' Size='150,100' Style='/ProgressBars.router.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='190,140' Size='190,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='two_man_assault_buggy' ScrollExtent='60,100' Size='60,100' Visible='false'>
-<Button Color='#F3E138' Location='18,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='35,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='18,48' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='35,48' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='60,100' Size='60,100' Style='/ProgressBars.two_man_assault_buggy.style'/>
+<Page isvehiclepage='true' Name='skyguard' ScrollExtent='95,140' Size='95,140' Visible='false'>
+<Button Color='#F3E138' Location='43,63' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='43,96' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='43,63' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='43,96' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='55,100' Size='55,100' Style='/ProgressBars.skyguard.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='95,140' Size='95,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='twomanheavybuggy' ScrollExtent='54,100' Size='54,100' Visible='false'>
-<Button Color='#F3E138' Location='23,44' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='23,76' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='23,44' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='23,76' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.600' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.twomanheavybuggy.style'/>
+<Page isvehiclepage='true' Location='43,20' Name='switchblade' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='84,140' Size='84,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='44,100' Size='44,100' Style='/ProgressBars.switchblade.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='84,140' Size='84,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='twomanhoverbuggy' ScrollExtent='54,100' Size='54,100' Visible='false'>
-<Button Color='#F3E138' Location='18,56' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='29,56' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='18,56' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='29,56' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.600' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.twomanhoverbuggy.style'/>
+<Page isvehiclepage='true' Name='threemanheavybuggy' ScrollExtent='93,140' Size='93,140' Visible='false'>
+<Button Color='#F3E138' Location='32,68' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='52,68' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='42,92' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='32,68' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
+<Image Color='#F3E138' Location='52,68' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
+<Image Color='#F3E138' Location='42,92' mountpointname='GunnerB' Name='GunnerB' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyEmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='1.000' ScrollExtent='53,100' Size='53,100' Style='/ProgressBars.threemanheavybuggy.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='93,140' Size='93,140' Thickness='50.000'/>
 </Page>
-<Page isvehiclepage='true' Name='vanguard' ScrollExtent='64,100' Size='64,100' Visible='false'>
-<Button Color='#F3E138' Location='37,34' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='40,61' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Image Color='#F3E138' Location='37,34' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Image Color='#F3E138' Location='40,61' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='65,100' Size='65,100' Style='/ProgressBars.vanguard.style'/>
+<Page isvehiclepage='true' Name='two_man_assault_buggy' ScrollExtent='100,140' Size='100,140' Visible='false'>
+<Button Color='#F3E138' Location='39,67' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='53,67' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='39,67' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='53,67' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='60,100' Size='60,100' Style='/ProgressBars.two_man_assault_buggy.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='100,140' Size='100,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Name='twomanheavybuggy' ScrollExtent='94,140' Size='94,140' Visible='false'>
+<Button Color='#F3E138' Location='43,65' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='43,96' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='43,65' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='43,96' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.600' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.twomanheavybuggy.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='94,140' Size='94,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Name='twomanhoverbuggy' ScrollExtent='94,140' Size='94,140' Visible='false'>
+<Button Color='#F3E138' Location='38,76' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='49,76' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='38,76' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='49,76' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.600' ScrollExtent='54,100' Size='54,100' Style='/ProgressBars.twomanhoverbuggy.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='94,140' Size='94,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Name='vanguard' ScrollExtent='104,140' Size='104,140' Visible='false'>
+<Button Color='#F3E138' Location='57,54' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='60,81' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Image Color='#F3E138' Location='57,54' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Image Color='#F3E138' Location='60,81' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='65,100' Size='65,100' Style='/ProgressBars.vanguard.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='104,140' Size='104,140' Thickness='50.000'/>
+</Page>
+<Page isvehiclepage='true' Location='43,20' Name='vanu_sentry_turret' PackLocation='center,center' PackLocationProp='-052/0001,-050/0001' ScrollExtent='122,140' Size='122,140' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Location='20,20' Name='Progress' Progress='0.800' ScrollExtent='82,100' Size='82,100' Style='/ProgressBars.vanu_sentry_turret.style'/>
+<Ellipse AbsorbsInput='false' BackgroundOpacity='1.000' Color='#0099C5' Enabled='false' InnerRadiusColor='#0099C5' InnerRadiusOpacity='0.000' maxthickness='50.0' Name='Shield' Opacity='0.750' ScrollExtent='122,140' Size='122,140' Thickness='50.000'/>
 </Page>
 </Page>
 <Page BackgroundColor='#0000FF' Location='930,212' movable='true' Name='Minimize' PackLocation='left,top' PackLocationProp='0930/0001,0212/0001' ScrollExtent='92,270' Size='92,270' Visible='false'>
@@ -933,24 +1347,7 @@ $Name$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='3,0' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0003/0001' RStyleDefault='/WindowPanes.MiniBackground.style' ScrollExtent='72,189' Size='72,189' Stretch='false'/>
 </Page>
 <Page movable='true' Name='SquadList' PackLocation='Left,Top' PackLocationProp='0000/0001,0000/0001' PackSize='1,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,36' Size='1024,36' Visible='false'>
-<Template Name='ListboxTemplate' Size='100,36'>\<text color = \'#FFDC00\' font = \'/Fonts.HudFont1\' location = \'6,3\' maxlines = \'1\' size = \'10,16\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$speaking$\'\>
-$MemberID$
-\</text\>
-\<text color = \'#FFDC00\' font = \'/Fonts.HudFont1\' location = \'20,3\' maxlines = \'1\' size = \'$namesize$\' visible = \'$speaking$\'\>
-$Internationalize$
-\</text\>
-\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'6,3\' maxlines = \'1\' size = \'10,16\' textalignment = \'right\' truncateelipsis = \'false\'\>
-$MemberID$
-\</text\>
-\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'20,3\' maxlines = \'1\' size = \'$namesize$\'\>
-$Internationalize$
-\</text\>
-\<Progressbar barbackgroundcolor = \'#ff0000\' localtooltip = \'[@HeatlhTooltip]\' location = \'4,3\' progress = \'$health$\' size = \'$progresssize$,12\' style = \'/ProgressBars.Health.style\' tooltip = \'@HeatlhTooltip\'/\>
-\<Progressbar barbackgroundcolor = \'#0099C5\' localtooltip = \'[@HeatlhTooltip]\' location = \'4,16\' progress = \'$armor$\' size = \'$progresssize$,12\' style = \'/ProgressBars.Health.style\' tooltip = \'@ArmorTooltip\'/\>
-\<Image backgroundopacity = \'1.000\' color = \'#FFDC00\' location = \'2,0\' opacity = \'0.75\' packsize = \'1,1\' rstyledefault = \'SquadBorderRect\' size = \'$bordersize$\' visible = \'$speaking$\'/\>
-\<Image backgroundopacity = \'1.000\' color = \'#00F2C9\' location = \'2,0\' opacity = \'0.75\' packsize = \'1,1\' rstyledefault = \'SquadBorderRect\' size = \'$bordersize$\'/\></Template>
-<Listbox AbsorbsInput='false' DataSource='/DataSources.SquadList' GetsInput='false' Location='56,0' Name='SquadListbox' PackLocation='left,top' PackLocationProp='0056/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RowTemplate='ListboxTemplate' ScrollExtent='1024,36' Size='1024,36' Style='/Listboxes.ClearHorizontal.style'/>
-<Button BackgroundColor='#FFFFFF' Enabled='false' LocalText='v' LocalTooltip='[@MaximizeRadarTooltip]' Name='Maximize' RStyleDefault=' ' ScrollExtent='57,32' Size='57,32' Style='/Buttons.MinimizedButton.style' Tooltip='@MaximizeRadarTooltip'>v</Button>
+<Button BackgroundColor='#FFFFFF' LocalText='v' LocalTooltip='[@ToggleSquadTooltip]' Name='Maximize' RStyleDefault=' ' ScrollExtent='57,32' Size='57,32' Style='/Buttons.MinimizedButton.style' Tooltip='@ToggleSquadTooltip'>v</Button>
 <ImageStyle Name='nw'>
 <ImageFrame Source='ui_HUD_border_00' SourceRect='0,0,6,6'/>
 </ImageStyle>
@@ -980,13 +1377,14 @@ $Internationalize$
 </ImageStyle>
 <RectangleStyle Center='center' CenterShrinkH='true' CenterShrinkV='true' CenterStretchH='true' CenterStretchV='true' East='east' EastShrink='true' EastStretch='true' Name='SquadBorderRect' North='north' NorthEast='ne' NorthShrink='true' NorthStretch='true' NorthWest='nw' South='south' SouthEast='se' SouthShrink='true' SouthStretch='true' SouthWest='sw' West='west' WestShrink='true' WestStretch='true'/>
 </Page>
-<Page Location='9,280' movable='true' Name='FriendsList' PackLocation='Left,Bottom' PackLocationProp='0009/0001,-488/0001' PackSize='Fixed,Fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='186,224' Size='186,224' Visible='false'>
-<Listbox DataSource='/DataSources.FriendsList' GetsInput='false' Location='17,32' Name='FriendsListbox' PackLocation='left,top' PackLocationProp='0017/0001,0032/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0044/0001' RowTemplate='ListboxTemplate' ScrollExtent='142,180' Size='142,180' Style='/Listboxes.Clear.style'/>
-<Scrollbar Control='FriendsListbox' Location='162,32' Name='ScrollFriendsList' PackLocation='right,top' PackLocationProp='-024/0001,0032/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0044/0001' ScrollExtent='9,180' Size='9,180' Style='/ScrollBars.vertical.style'/>
-<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='111,9' Name='CancelButton' PackLocation='right,top' PackLocationProp='-075/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='58,10' Name='HelpButton' PackLocation='right,top' PackLocationProp='-128/0001,0010/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='29,0' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='130,32' Size='130,32'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0007/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='186,217' Size='186,217' Stretch='false'/>
+<Page Location='9,280' MinimumSize='160,85' movable='true' Name='FriendsList' PackLocation='Left,Bottom' PackLocationProp='0009/0001,-488/0001' PackSize='Fixed,Fixed' PackSizeProp='0002/0003,0002/0003' resizable='true' ScrollExtent='186,219' Size='186,219' Visible='false'>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NoFriends]' Location='17,36' MaxLines='1' Name='NoFriendsText' PackLocation='left,top' PackLocationProp='0017/0001,0036/0001' PackSize='absolute,absolute' PackSizeProp='0047/0001,0056/0001' ScrollExtent='139,163' Size='139,163' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>@NoFriends</Text>
+<Listbox DataSource='/DataSources.FriendsList' GetsInput='false' Location='17,32' Name='FriendsListbox' PackLocation='left,top' PackLocationProp='0017/0001,0032/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0049/0001' RowTemplate='ListboxTemplate' ScrollExtent='142,170' Size='142,170' Style='/Listboxes.Clear.style'/>
+<Scrollbar Control='FriendsListbox' Location='162,32' Name='ScrollFriendsList' PackLocation='right,top' PackLocationProp='-024/0001,0032/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0049/0001' ScrollExtent='9,170' Size='9,170' Style='/ScrollBars.vertical.style'/>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='113,9' Name='CancelButton' PackLocation='right,top' PackLocationProp='-073/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='58,9' Name='HelpButton' PackLocation='left,top' PackLocationProp='0058/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='29,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0056/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='130,32' Size='130,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0014/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='186,205' Size='186,205' Stretch='false'/>
 <Template Name='ListboxTemplate' Size='142,18'>\<text color = \'#FFFF00\' font = \'/Fonts.HudFont1\' location = \'5,1\' maxlines = \'1\' size = \'132,16\' visible = \'$IsOnline$\'\>
 $Internationalize$
 \</text\>
@@ -994,13 +1392,15 @@ $Internationalize$
 $Internationalize$
 \</text\></Template>
 </Page>
-<Page BackgroundColor='#FFFFFF' Location='124,213' movable='true' Name='ContainerView' PackLocation='center,center' PackLocationProp='-388/0001,-171/0001' ScrollExtent='303,236' Size='303,236' Visible='false'>
+<Page BackgroundColor='#FFFFFF' Location='124,213' movable='true' Name='ContainerView' PackLocation='center,center' PackLocationProp='-388/0001,-171/0001' ScrollExtent='303,256' Size='303,256' Visible='false'>
+<Button LocalText='[@ClearInventory]' LocalTooltip='[@ClearInventoryTooltip]' Location='68,211' Name='ClearButton' PackLocation='center,bottom' PackLocationProp='-083/0001,-045/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@ClearInventoryTooltip'>@ClearInventory</Button>
+<Button LocalText='[@DestroyItem]' LocalTooltip='[@DestroyItemTooltip]' Location='146,211' Name='DestroyButton' PackLocation='center,bottom' PackLocationProp='-005/0001,-045/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DestroyItemTooltip'>@DestroyItem</Button>
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='62,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0062/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Button LocalTooltip='[@CloseTooltip]' Location='225,8' Name='Close' PackLocation='right,top' PackLocationProp='-078/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'></Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@Trunk]' Location='79,4' Name='TitleText' PackLocation='Left,Top' PackLocationProp='0079/0001,0004/0001' PackSize='Absolute,fixed' PackSizeProp='0159/0001,0002/0003' ScrollExtent='144,23' Size='144,23' TextAlignment='Center' TextAlignmentVertical='Center'>@Trunk</Text>
 <Grid CellCount='15,10' CellSize='17,17' DataSource='/DataSources.TargetInventory' DragAccepts='Item' Location='23,33' Name='Inventory' PackLocation='left,top' PackLocationProp='0023/0001,0033/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='255,170' Size='256,171' Style='/DefaultGrid.style'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,-1' Name='Title' PackLocation='left,top' PackLocationProp='0033/0001,-001/0001' PackSize='absolute,fixed' PackSizeProp='0062/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='241,32' Size='241,32'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,12' Name='Background' PackSize='absolute,absolute' PackSizeProp='0000/0001,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='303,222' Size='303,222' Stretch='false' Style=' '/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,12' Name='Background' PackSize='absolute,absolute' PackSizeProp='0000/0001,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='303,242' Size='303,242' Stretch='false' Style=' '/>
 </Page>
 <Page HideSound='interface_pane_close2.wav' Location='537,235' movable='true' Name='AvatarView' PackLocation='center,center' PackLocationProp='0025/0001,-149/0001' ScrollExtent='455,280' ShowSound='interface_pane_open.wav' Size='455,280' Visible='false'>
 <Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='StealthArmor' ScrollExtent='281,171' Size='281,171' Visible='false'>
@@ -1010,17 +1410,17 @@ $Internationalize$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='21,0' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='232,32' Size='232,32'/>
 <Rectangle Color='#81C9D4' Location='25,36' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='133,36' Name='BackpackRect' ScrollExtent='103,103' Size='103,103' UserMovable='true'/>
-<Grid CellCount='6,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='133,36' Name='Backpack' ScrollExtent='102,102' Size='103,103' Style='/DefaultGrid.style' UserMovable='true'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='25,36' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='6,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='133,36' Name='Backpack' ScrollExtent='102,102' Size='103,103' Style='/DefaultGrid.style' UserMovable='true' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='25,36' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-2,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='281,157' Size='281,157' Stretch='false'/>
 </Page>
-<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='HeavyArmor' ScrollExtent='325,282' Size='325,282'>
+<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='HeavyArmor' ScrollExtent='325,282' Size='325,282' Visible='false'>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='254,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-071/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='64,9' Name='HelpButton' PackLocation='left,top' PackLocationProp='0064/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@InventoryTitle]' Location='52,6' Name='TitleText' ScrollExtent='224,20' Size='224,20' TextAlignment='Center' TextAlignmentVertical='Center'>@InventoryTitle</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0058/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='267,32' Size='267,32'/>
 <Rectangle Color='#81C9D4' Location='27,36' Name='BackpackRect' PackSize='absolute,absolute' PackSizeProp='0052/0001,0076/0001' ScrollExtent='273,206' Size='273,206'/>
-<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='27,36' Name='Backpack' ScrollExtent='272,204' Size='275,213' Style='/DefaultGrid.style'/>
+<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='27,36' Name='Backpack' ScrollExtent='272,204' Size='275,213' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='2,14' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='325,262' Size='325,262' Stretch='false'/>
 </Page>
 <Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='MediumArmor' ScrollExtent='405,232' Size='405,232' Visible='false'>
@@ -1033,11 +1433,11 @@ $Internationalize$
 <Rectangle Color='#81C9D4' Location='23,37' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='125,37' Name='LeftHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='178,37' Name='BackpackRect' ScrollExtent='205,154' Size='205,154'/>
-<Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,37' Name='Backpack' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,143' Name='LeftBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,37' Name='Backpack' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,143' Name='LeftBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='405,212' Size='405,212' Stretch='false'/>
 </Page>
 <Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='LightArmor' ScrollExtent='359,221' Size='359,221' Visible='false'>
@@ -1049,10 +1449,10 @@ $Internationalize$
 <Rectangle Color='#81C9D4' Location='23,37' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='125,37' Name='LeftHipHolsterRect' OnShowEffector='Effectors.ShowInventory' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='179,36' Name='BackpackRect' ScrollExtent='154,154' Size='154,154'/>
-<Grid CellCount='9,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='179,36' Name='Backpack' ScrollExtent='153,153' Size='154,154' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='9,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='179,36' Name='Backpack' ScrollExtent='153,153' Size='154,154' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0008/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='359,213' Size='359,213' Stretch='false'/>
 </Page>
 <Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='2,0' Name='StandardArmor' ScrollExtent='357,175' Size='357,175' Visible='false'>
@@ -1063,9 +1463,9 @@ $Internationalize$
 <Rectangle Color='#81C9D4' Location='23,92' Name='RightBackHolsterRect' Opacity='0.750' ScrollExtent='154,52' Size='154,52'/>
 <Rectangle Color='#81C9D4' Location='23,39' Name='RightHipHolsterRect' Opacity='0.750' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle BackgroundOpacity='1.000' Color='#81C9D4' Location='178,41' Name='BackpackRect' Opacity='0.750' ScrollExtent='154,103' Size='154,103'/>
-<Grid BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' CellCount='9,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,41' Name='Backpack' ScrollExtent='153,102' Size='154,103' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,92' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,39' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' CellCount='9,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,41' Name='Backpack' ScrollExtent='153,102' Size='154,103' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,92' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,39' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,9' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0010/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='357,165' Size='357,165' SizeIncrement='1,0' Stretch='false'/>
 </Page>
 </Page>
@@ -1100,12 +1500,12 @@ $Internationalize$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='68,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0115/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='382,32' Size='382,32'/>
 <Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='265,72' Name='MyGrid' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style'/>
 <Rectangle AbsorbsInput='false' Color='#81C9D4' Enabled='false' GetsInput='false' Location='265,72' Name='MyRect' ScrollExtent='205,154' Size='205,154'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='235,82' Name='MyReadyImage' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='left_arrow_bold'/>
+<Image AbsorbsInput='false' Location='235,82' Name='MyReadyImage' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='left_arrow_bold'/>
 <Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='24,72' Name='OtherGrid' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style'/>
 <Rectangle AbsorbsInput='false' Color='#81C9D4' Enabled='false' GetsInput='false' Location='24,72' Name='OtherRect' ScrollExtent='205,154' Size='205,154'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='235,139' Name='OtherReadyImage' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='right_arrow_bold'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='235,82' Name='MyArrow' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='left_arrow'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='235,139' Name='OtherArrow' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='right_arrow'/>
+<Image AbsorbsInput='false' Location='235,139' Name='OtherReadyImage' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='right_arrow_bold'/>
+<Image AbsorbsInput='false' Location='235,82' Name='MyArrow' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='left_arrow'/>
+<Image AbsorbsInput='false' Location='235,139' Name='OtherArrow' PackSize='absolute,fixed' PackSizeProp='0472/0001,0002/0003' RStyleDefault=' ' ScrollExtent='25,50' Size='25,50' Style='right_arrow'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='26,232' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0026/0001,-068/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='442,31' Size='442,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,13' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='497,280' Size='497,280' Stretch='false'/>
 </Page>
@@ -1131,9 +1531,9 @@ $Continent$
 <Rectangle Color='#81C9D4' Location='23,92' Name='RightBackHolsterRect' Opacity='0.750' ScrollExtent='154,52' Size='154,52'/>
 <Rectangle Color='#81C9D4' Location='23,39' Name='RightHipHolsterRect' Opacity='0.750' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle BackgroundOpacity='1.000' Color='#81C9D4' Location='178,41' Name='BackpackRect' Opacity='0.750' ScrollExtent='154,103' Size='154,103'/>
-<Grid BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' CellCount='9,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,41' Name='Backpack' ScrollExtent='153,102' Size='154,103' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,92' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,39' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' CellCount='9,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,41' Name='Backpack' ScrollExtent='153,102' Size='154,103' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,92' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,39' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='18,149' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='317,31' Size='317,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,9' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0010/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='357,201' Size='357,201' SizeIncrement='1,0' Stretch='false'/>
 </Page>
@@ -1153,10 +1553,10 @@ $Continent$
 <Rectangle Color='#81C9D4' Location='23,37' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='125,37' Name='LeftHipHolsterRect' OnShowEffector='Effectors.ShowInventory' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='179,36' Name='BackpackRect' ScrollExtent='154,154' Size='154,154'/>
-<Grid CellCount='9,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='179,36' Name='Backpack' ScrollExtent='153,153' Size='154,154' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='9,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='179,36' Name='Backpack' ScrollExtent='153,153' Size='154,154' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,195' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='317,31' Size='317,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0011/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='359,242' Size='359,242' Stretch='false'/>
 </Page>
@@ -1178,15 +1578,15 @@ $Continent$
 <Rectangle Color='#81C9D4' Location='23,37' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='125,37' Name='LeftHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='178,37' Name='BackpackRect' ScrollExtent='205,154' Size='205,154'/>
-<Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,37' Name='Backpack' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,143' Name='LeftBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='12,9' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='178,37' Name='Backpack' ScrollExtent='204,153' Size='205,154' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,143' Name='LeftBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='9,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,90' Name='RightBackHolster' ScrollExtent='153,765' Size='154,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='23,37' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='125,37' Name='LeftHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='22,199' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='362,31' Size='362,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='405,246' Size='405,246' Stretch='false'/>
 </Page>
-<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='SoldierHeavyArmor' ScrollExtent='355,395' Size='355,395'>
+<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='SoldierHeavyArmor' ScrollExtent='355,395' Size='355,395' Visible='false'>
 <Button LocalText='[@UseItem]' LocalTooltip='[@UseItemTooltip]' Location='25,340' Name='btn_use' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@UseItemTooltip'>@UseItem</Button>
 <Button LocalText='[@DropItem]' LocalTooltip='[@DropItemTooltip]' Location='103,340' Name='btn_drop' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DropItemTooltip'>@DropItem</Button>
 <Button LocalText='[@DestroyItem]' LocalTooltip='[@DestroyItemTooltip]' Location='180,340' Name='btn_destroy' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DestroyItemTooltip'>@DestroyItem</Button>
@@ -1198,25 +1598,25 @@ $Continent$
 <Image AbsorbsInput='false' BackgroundColor='#FFFFFF' BackgroundOpacity='0.200' Location='83,34' Name='BlockLeftHipHolster' ScrollExtent='188,86' Size='188,86'/>
 <Rectangle AbsorbsInput='false' Color='#81C9D4' Location='83,34' Name='RightHipHolsterRect' ScrollExtent='188,86' Size='188,86'/>
 <Rectangle Color='#81C9D4' Location='40,124' Name='BackpackRect' ScrollExtent='275,205' Size='275,205'/>
-<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='40,124' Name='Backpack' ScrollExtent='272,204' Size='275,205' Style='/DefaultGrid.style'/>
-<Grid AbsorbsInput='false' CellCount='11,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' GetsInput='false' Location='83,34' Name='RightHipHolster' ScrollExtent='187,765' Size='188,86' Style='/DefaultGrid.style'/>
+<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='40,124' Name='Backpack' ScrollExtent='272,204' Size='275,205' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid AbsorbsInput='false' CellCount='11,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' GetsInput='false' Location='83,34' Name='RightHipHolster' ScrollExtent='187,765' Size='188,86' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='21,334' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='315,31' Size='315,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='2,14' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0013/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='355,382' Size='355,382' Stretch='false'/>
 </Page>
-<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='SoldierStealthArmor' ScrollExtent='357,207' Size='357,207'>
+<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='SoldierStealthArmor' ScrollExtent='357,207' Size='357,207' Visible='false'>
 <Button LocalText='[@UseItem]' LocalTooltip='[@UseItemTooltip]' Location='22,149' Name='btn_use' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@UseItemTooltip'>@UseItem</Button>
 <Button LocalText='[@DropItem]' LocalTooltip='[@DropItemTooltip]' Location='100,149' Name='btn_drop' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DropItemTooltip'>@DropItem</Button>
 <Button LocalText='[@DestroyItem]' LocalTooltip='[@DestroyItemTooltip]' Location='177,149' Name='btn_destroy' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DestroyItemTooltip'>@DestroyItem</Button>
 <Button LocalText='[@ClearInventory]' LocalTooltip='[@ClearInventoryTooltip]' Location='254,149' Name='btn_clear' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@ClearInventoryTooltip'>@ClearInventory</Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='276,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-081/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='89,9' Name='HelpButton' PackLocation='right,top' PackLocationProp='-268/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='260,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-097/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='73,9' Name='HelpButton' PackLocation='right,top' PackLocationProp='-284/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@InventoryTitle]' Location='91,6' Name='TitleText' ScrollExtent='162,20' Size='162,20' TextAlignment='Center' TextAlignmentVertical='Center'>@InventoryTitle</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='44,0' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='262,32' Size='262,32'/>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='[@InventoryTitle]' Location='27,67' Name='RightHipText' ScrollExtent='48,51' Size='48,20' TextAlignmentVertical='Center'>@InventoryTitle</Text>
 <Rectangle Color='#81C9D4' Location='25,36' Name='RightHipHolsterRect' ScrollExtent='52,52' Size='52,52'/>
 <Rectangle Color='#81C9D4' Location='191,35' Name='BackpackRect' ScrollExtent='103,103' Size='103,103'/>
-<Grid CellCount='6,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='191,35' Name='Backpack' ScrollExtent='102,102' Size='103,103' Style='/DefaultGrid.style'/>
-<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='25,36' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
+<Grid CellCount='6,6' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='191,35' Name='Backpack' ScrollExtent='102,102' Size='103,103' Style='/DefaultGrid.style' UserScrollable='false'/>
+<Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='25,36' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style' UserScrollable='false'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,144' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='314,31' Size='314,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-2,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='357,193' Size='357,193' Stretch='false'/>
 </Page>
@@ -1232,7 +1632,7 @@ $Continent$
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ArmorTabTooltip]' Location='93,35' Name='ArmorTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@ArmorTabTooltip'>@ArmorTab</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@EquipmentTabTooltip]' Location='165,35' Name='EquipmentTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@EquipmentTabTooltip'>@EquipmentTab</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@VehicleTabTooltip]' Location='237,35' Name='VehicleAmmoTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@VehicleTabTooltip'>@VehicleTab</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FavotiresTabTooltip]' Location='309,35' Name='FavoritesTab' ScrollExtent='85,24' Size='85,24' Style='/Buttons.WindowIconTab.style' Tooltip='@FavotiresTabTooltip'>@FavoritesTab</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FavoritesTabTooltip]' Location='309,35' Name='FavoritesTab' ScrollExtent='85,24' Size='85,24' Style='/Buttons.WindowIconTab.style' Tooltip='@FavoritesTabTooltip'>@FavoritesTab</Checkbox>
 <Page AbsorbsInput='false' Location='24,62' Name='OrderPage' PackSize='absolute,absolute' PackSizeProp='0053/0001,0094/0001' ScrollExtent='374,315' Size='374,315'>
 <Page Name='ListPage' PackSize='absolute,absolute' PackSizeProp='0000/0001,0131/0001' ScrollExtent='374,184' Size='374,184'>
 <Image BackgroundOpacity='1.000' Location='289,155' Name='Selection' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='57,29' Size='57,29' Style='S'/>
@@ -1319,21 +1719,24 @@ $time$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='53,-1' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='362,32' Size='362,32'/>
 <Rectangle AbsorbsInput='false' Color='#00F2C9' GetsInput='false' Location='20,31' Name='VehicleListboxRect' Opacity='0.750' ScrollExtent='420,204' Size='420,204'/>
 <Scrollbar Control='VehicleListbox' Location='429,34' Name='VehicleListboxScroll' ScrollExtent='9,198' Size='9,198' Style='/ScrollBars.vertical.style'/>
-<Listbox DataSource='VehicleDataSource' Location='25,34' Name='VehicleListbox' RowTemplate='VehicleNameTemplate' ScrollExtent='400,810' Size='394,198' Style='/Listboxes.Clear.style'/>
+<Listbox DataSource='VehicleDataSource' Location='25,34' Name='VehicleListbox' RowTemplate='VehicleNameTemplate' ScrollExtent='400,864' Size='394,198' Style='/Listboxes.Clear.style'/>
 <Rectangle AbsorbsInput='false' Color='#00F2C9' GetsInput='false' Location='20,238' Name='VehicleInfoRect' Opacity='0.750' ScrollExtent='420,100' Size='420,100'/>
 <Scrollbar Control='VehicleInfoText' Location='429,241' Name='VehicleTextScroll' ScrollExtent='9,95' Size='9,95' Style='/ScrollBars.vertical.style'/>
 <Text AbsorbsInput='false' Font='/SmallFont' LocalText='Blah, Blah, Blah' Location='25,241' Name='VehicleInfoText' ScrollExtent='402,94' Size='402,94'>Blah, Blah, Blah</Text>
 <Template Name='VehicleNameTemplate' Size='400,54'>\<text color = \'$color\' font = \'/SmallFont\' location = \'4,2\' size = \'250,50\' textalignmentvertical = \'center\'\>
 $Internationalize$
 \</text\>
-\<text color = \'$timecolor\' font = \'/SmallFont\' location = \'150,2\' size = \'150,50\' textalignmentvertical = \'center\'\>
+\<text color = \'$timecolor\' font = \'/SmallFont\' location = \'150,2\' size = \'50,50\' textalignmentvertical = \'center\'\>
 $Time$
+\</text\>
+\<text color = \'#FF0000\' font = \'/SmallFont\' location = \'200,2\' size = \'100,50\' textalignmentvertical = \'center\'\>
+$ValidArmor$
 \</text\>
 \<image location = \'$item.x$,2\' name = \'Image\' opacity = \'$item.opacity$\' scrollextent = \'$item.w$,50\' size = \'$item.w$,50\' style = \'$item.icon\' visible = \'$HasIcon$\'/\></Template>
 <DataSource Name='VehicleDataSource'>
-<Data color='0xffffff' hasicon='true' internationalize='@ams' item.icon='/ItemIcons1GridHigh.punisher' item.opacity='0.5' item.w='100' item.x='275' Localinternationalize='[@ams]' Name='AMS' price='1000' timecolor='#FF0000'/>
+<Data color='0xffffff' hasicon='true' internationalize='@ams' item.icon='/ItemIcons1GridHigh.punisher' item.opacity='0.5' item.w='100' item.x='275' Localinternationalize='[@ams]' Name='AMS' price='1000' timecolor='#FF0000' validarmor='Invalid Armor'/>
 <Data color='0xffffff' hasicon='true' internationalize='@ant' item.icon='/ItemIcons1GridHigh.punisher' item.opacity='0.5' item.w='100' item.x='275' Localinternationalize='[@ant]' Name='ANT' price='1000' timecolor='#FF0000'/>
-<Data color='0xffffff' internationalize='@apc' item.icon='/ItemIcons1GridHigh.thumper' item.w='100' item.x='250' Localinternationalize='[@apc]' Name='APC' price='1000' timecolor='#FF0000'/>
+<Data color='0xffffff' internationalize='@apc' item.icon='/ItemIcons1GridHigh.thumper' item.w='100' item.x='250' Localinternationalize='[@apc]' Name='APC' price='1000' time='12:00' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@dropship' Localinternationalize='[@dropship]' Name='Dropship' price='1000' time='12:00' timecolor='#ff0000'/>
 <Data color='0xffffff' internationalize='@lightgunship' Localinternationalize='[@lightgunship]' Name='Lightgunship' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@lightning' Localinternationalize='[@lightning]' Name='Lightning' price='1000' timecolor='#FF0000'/>
@@ -1341,6 +1744,7 @@ $Time$
 <Data color='0xffffff' internationalize='@mosquito' Localinternationalize='[@mosquito]' Name='Mosquito' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@prowler' Localinternationalize='[@prowler]' Name='Prowler' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@quadassault' Localinternationalize='[@quadassault]' Name='Quadassault' price='1000' timecolor='#FF0000'/>
+<Data color='0xffffff' internationalize='@skyguard' Localinternationalize='[@skyguard]' Name='Skyguard' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@threemanheavybuggy' Localinternationalize='[@threemanheavybuggy]' Name='ThreeManHeavyBuggy' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@two_man_assault_buggy' Localinternationalize='[@two_man_assault_buggy]' Name='Two_Man_Assault_Buggy' price='1000' timecolor='#FF0000'/>
 <Data color='0xffffff' internationalize='@twomanheavybuggy' Localinternationalize='[@twomanheavybuggy]' Name='TwoManHeavyBuggy' price='1000' timecolor='#FF0000'/>
@@ -1534,8 +1938,8 @@ $Internationalize$
 <Data color='#FFFFFF' internationalize='Jimmy the Greek' isheading='false' isnotheading='true' Name='Event1' width='384'/>
 </DataSource>
 </Page>
-<Button LocalText='[@Cancel]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
-<Button LocalText='[@Cancel]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-102/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-102/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' PackLocation='left,top' PackLocationProp='0051/0001,0006/0001' PackSize='absolute,fixed' PackSizeProp='0104/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='338,32' Size='338,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,20' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0021/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='442,365' Size='442,365' Stretch='false'/>
 </Page>
@@ -1642,7 +2046,7 @@ $totalnew$
 <Button LocalText='[@OutfitLeave]' LocalTooltip='[@OutfitLeaveTooltip]' Location='265,383' Name='LeaveButton' PackLocation='left,bottom' PackLocationProp='0265/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitLeaveTooltip'>@OutfitLeave</Button>
 <Button LocalText='[@OutfitDecal]' LocalTooltip='[@OutfitDecalTooltip]' Location='347,383' Name='DecalButton' PackLocation='left,bottom' PackLocationProp='0347/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitDecalTooltip'>@OutfitDecal</Button>
 <Button LocalText='[@OutfitTitle]' LocalTooltip='[@OutfitTitleTooltip]' Location='429,383' Name='TitleButton' PackLocation='left,bottom' PackLocationProp='0429/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitTitleTooltip'>@OutfitTitle</Button>
-<Button LocalText='[@OutfitMessage]' LocalTooltip='[@OutfitMessageTooltip]' Location='511,115' Name='MessageButton' PackLocation='left,bottom' PackLocationProp='0511/0001,-313/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitMessageTooltip'>@OutfitMessage</Button>
+<Button LocalText='[@OutfitMessage]' LocalTooltip='[@OutfitMessageTooltip]' Location='511,115' Name='MessageButton' PackLocation='right,top' PackLocationProp='-096/0001,0115/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitMessageTooltip'>@OutfitMessage</Button>
 <Button LocalText='[@OutfitList]' LocalTooltip='[@OutfitListTooltip]' Location='511,383' Name='OutfitListButton' PackLocation='left,bottom' PackLocationProp='0511/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OutfitListTooltip'>@OutfitList</Button>
 <Button LocalText='[@OutfitHeadingName]' LocalTooltip='[@OutfitHeadingNameTooltip]' Location='16,147' Name='NameHeading' PackLocation='left,top' PackLocationProp='0016/0001,0147/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='285,20' Size='285,20' Style='/Buttons.ListboxHeading.style' Tooltip='@OutfitHeadingNameTooltip'>@OutfitHeadingName</Button>
 <Button LocalText='[@OutfitHeadingTitle]' LocalTooltip='[@OutfitHeadingTitleTooltip]' Location='311,147' Name='TitleHeading' PackLocation='left,top' PackLocationProp='0311/0001,0147/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='120,20' Size='120,20' Style='/Buttons.ListboxHeading.style' Tooltip='@OutfitHeadingTitleTooltip'>@OutfitHeadingTitle</Button>
@@ -1722,35 +2126,48 @@ G
 \</text\></Template>
 </Page>
 <Page Location='296,188' MinimumSize='440,340' minsize='440,340' movable='true' Name='PlayerPane' resizable='true' ScrollExtent='440,370' Size='440,370' Visible='false'>
-<Button LocalText='[@Cancel]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-100/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
-<Button LocalText='[@Cancel]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-100/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@PlayerPane]' Location='101,14' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0014/0001' PackSize='absolute,fixed' PackSizeProp='0204/0001,0002/0003' ScrollExtent='236,17' Size='236,17' TextAlignment='Center'>@PlayerPane</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' PackLocation='left,top' PackLocationProp='0051/0001,0006/0001' PackSize='absolute,fixed' PackSizeProp='0103/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='337,32' Size='337,32'/>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@PlayerSquadTooltip]' Location='20,49' Name='SquadTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerSquadTooltip'>@PlayerSquad</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@PlayerFriendTooltip]' Location='102,49' Name='FriendTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerFriendTooltip'>@PlayerFriend</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@PlayerFindTooltip]' Location='186,49' Name='FindTab' ScrollExtent='90,24' Size='90,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerFindTooltip'>@PlayerFind</Checkbox>
-<Page Location='18,70' Name='SquadInfoPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280'>
+<Page Location='18,70' Name='SquadInfoPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280' Visible='false'>
+<Scrollbar Control='SquadListbox' Location='390,5' Name='ItemInfoScrollbar' PackLocation='right,bottom' PackLocationProp='-014/0001,-275/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='9,200' Size='9,200' Style='/ScrollBars.vertical.style'/>
 <Rectangle Color='#385E61' Location='2,2' Name='SquadListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0074/0001' ScrollExtent='400,206' Size='400,206'/>
-<Listbox DataSource='/DataSources.SquadList' Location='4,4' Name='SquadListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0008/0001,0078/0001' RowTemplate='ListboxTemplate' ScrollExtent='396,202' Size='396,202' Style='/Listboxes.Clear.style'/>
+<Listbox DataSource='/DataSources.SquadList' Location='4,4' Name='SquadListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0023/0001,0078/0001' RowTemplate='ListboxTemplate' ScrollExtent='381,220' Size='381,202' Style='/Listboxes.Clear.style'/>
 <Image BackgroundOpacity='1.000' Location='1,212' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-068/0001' PackSize='absolute,fixed' PackSizeProp='0004/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='400,31' Size='400,31'/>
+<Button LocalText='[@PlatoonKick]' LocalTooltip='[@PlatoonKickTooltip]' Location='84,217' Name='PlatoonKickButton' PackLocation='center,bottom' PackLocationProp='-118/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@PlatoonKickTooltip' Visible='false'>@PlatoonKick</Button>
 <Button LocalText='[@SquadPromote]' LocalTooltip='[@PromoteTooltip]' Location='6,217' Name='PromoteButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@PromoteTooltip'>@SquadPromote</Button>
-<Button LocalText='[@SquadKick]' LocalTooltip='[@KickTooltip]' Location='111,217' Name='KickButton' PackLocation='center,bottom' PackLocationProp='-091/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KickTooltip'>@SquadKick</Button>
-<Button LocalText='[@SquadLeave]' LocalTooltip='[@LeaveTooltip]' Location='216,217' Name='LeaveButton' PackLocation='center,bottom' PackLocationProp='0014/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@LeaveTooltip'>@SquadLeave</Button>
+<Button LocalText='[@SquadKick]' LocalTooltip='[@KickTooltip]' Location='85,217' Name='KickButton' PackLocation='center,bottom' PackLocationProp='-117/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KickTooltip'>@SquadKick</Button>
+<Button LocalText='[@SquadLeave]' LocalTooltip='[@LeaveTooltip]' Location='164,217' Name='LeaveButton' PackLocation='center,bottom' PackLocationProp='-038/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@LeaveTooltip'>@SquadLeave</Button>
 <Button LocalText='[@SquadOpen]' LocalTooltip='[@OpenSquadTooltip]' Location='322,217' Name='MiniButton' PackLocation='center,bottom' PackLocationProp='0120/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OpenSquadTooltip'>@SquadOpen</Button>
+<Button LocalText='[@PlatoonLeave]' LocalTooltip='[@PlatoonLeaveTooltip]' Location='243,217' Name='PlatoonLeaveButton' PackLocation='center,bottom' PackLocationProp='0041/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@PlatoonLeaveTooltip' Visible='false'>@PlatoonLeave</Button>
 <Image BackgroundOpacity='1.000' Location='1,246' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0004/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='400,31' Size='400,31'/>
 <Button Enabled='false' LocalText='[@SquadVoiceHostStart]' LocalTooltip='[@SquadVoiceHostStartTooltip]' Location='34,251' Name='VoiceHostStartButton' PackLocation='center,bottom' PackLocationProp='-168/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceHostStartTooltip'>@SquadVoiceHostStart</Button>
 <Button Enabled='false' LocalText='[@SquadVoiceHostStop]' LocalTooltip='[@SquadVoiceHostStopTooltip]' Location='34,251' Name='VoiceHostStopButton' PackLocation='center,bottom' PackLocationProp='-168/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceHostStopTooltip' Visible='false'>@SquadVoiceHostStop</Button>
 <Button Enabled='false' LocalText='[@SquadVoiceJoinStart]' LocalTooltip='[@SquadVoiceJoinStartTooltip]' Location='218,251' Name='VoiceJoinStartButton' PackLocation='center,bottom' PackLocationProp='0016/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceJoinStartTooltip'>@SquadVoiceJoinStart</Button>
 <Button Enabled='false' LocalText='[@SquadVoiceJoinStop]' LocalTooltip='[@SquadVoiceJoinStopTooltip]' Location='218,251' Name='VoiceJoinStopButton' PackLocation='center,bottom' PackLocationProp='0016/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceJoinStopTooltip' Visible='false'>@SquadVoiceJoinStop</Button>
-<Template Name='ListboxTemplate' Size='396,20'>\<text color = \'$VoiceStatusColor$\' font = \'/Fonts.MiscIcons\' location = \'5,0\' maxlines = \'1\' size = \'20,18\' textalignment = \'center\' truncateelipsis = \'false\'\>
+<Template Name='ListboxTemplate' Size='381,20'>\<text color = \'$VoiceStatusColor$\' font = \'/Fonts.MiscIcons\' location = \'5,0\' maxlines = \'1\' size = \'20,18\' textalignment = \'center\' truncateelipsis = \'false\'\>
 $VoiceStatus$
 \</text\>
 \<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'30,4\' maxlines = \'1\' size = \'20,18\' textalignment = \'right\' truncateelipsis = \'false\'\>
 $MemberID$
 \</text\>
-\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'60,4\' maxlines = \'1\' size = \'$width$,18\'\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'60,4\' maxlines = \'1\' size = \'311,18\' visible = \'$IsItem$\'\>
 $Internationalize$
-\</text\></Template>
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'60,3\' maxlines = \'1\' size = \'280,18\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$IsHeading$\'\>
+$Internationalize$
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'60,3\' maxlines = \'1\' size = \'305,18\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$IsPlatoonLeader$\'\>
+@PlatoonLeader
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'60,3\' maxlines = \'1\' size = \'305,18\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$IsSquadLeader$\'\>
+@SquadLeader
+\</text\>
+\<Image backgroundopacity = \'1.000\' location = \'5,10\' name = \'UnderlineTemplate\' rstyledefault = \'/Listboxes.ListboxContentHeader.style\' scrollextent = \'371,8\' size = \'371,8\' visible = \'$IsHeading$\'/\></Template>
 </Page>
 <Page Location='18,70' Name='FriendsPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280' Visible='false'>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NoFriends]' Location='52,111' MaxLines='1' Name='NoFriendsText' PackLocation='center,center' PackLocationProp='-150/0001,-029/0001' ScrollExtent='291,17' Size='291,17' TextAlignment='Center'>@NoFriends</Text>
@@ -1776,7 +2193,7 @@ $Internationalize$
 @FriendsList_Offline
 \</text\></Template>
 </Page>
-<Page Location='18,70' Name='FindPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280' Visible='false'>
+<Page Location='18,70' Name='FindPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280'>
 <Rectangle Color='#385E61' Location='2,2' Name='FindListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0044/0001' ScrollExtent='400,236' Size='400,236'/>
 <Listbox DataSource='FindList' Location='4,4' Name='FindListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0020/0001,0048/0001' RowTemplate='ListboxTemplate' ScrollExtent='384,232' Size='384,232' Style='/Listboxes.Clear.style' Visible='false'/>
 <Scrollbar Control='FindListbox' Location='391,4' Name='ScrollFindList' PackLocation='right,top' PackLocationProp='-013/0001,0004/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0048/0001' ScrollExtent='9,232' Size='9,232' Style='/ScrollBars.vertical.style'/>
@@ -1802,17 +2219,21 @@ $Internationalize$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,20' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='440,350' Size='440,350' Stretch='false'/>
 </Page>
 <Page Location='313,167' movable='true' Name='KeyCard' ScrollExtent='376,446' Size='376,446' Visible='false'>
+<Page Location='35,48' Name='VehicleView' ScrollExtent='309,120' Size='309,120'>
+<Image AbsorbsInput='false' Name='Image' ScrollExtent='309,120' Size='309,120' Visible='false'/>
+</Page>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='198,208' Name='AccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='157,8' Size='157,8'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='198,324' Name='AccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='157,8' Size='157,8'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='198,324' Name='TrunkAccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='157,8' Size='157,8'/>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VehicleAccess]' Location='213,189' MaxLines='1' Name='VehicleTitle' PackLocation='left,top' PackLocationProp='0213/0001,0189/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='129,26' Size='129,26' TextAlignment='Center'>@VehicleAccess</Text>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@SquadAccessTooltip]' Location='200,217' Name='SquadAccess' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@SquadAccessTooltip'>@SquadAccess</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@EmpireAccessTooltip]' Location='200,242' Name='EmpireAccess' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@EmpireAccessTooltip'>@EmpireAccess</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@NoAccessTooltip]' Location='200,269' Name='NoAccess' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@NoAccessTooltip'>@NoAccess</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@OutfitAccessTooltip]' Location='200,269' Name='OutfitAccess' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@OutfitAccessTooltip' Visible='false'>@OutfitAccess</Checkbox>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@TrunkAccess]' Location='211,305' MaxLines='1' Name='TrunkTitle' PackLocation='left,top' PackLocationProp='0211/0001,0305/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='129,26' Size='129,26' TextAlignment='Center'>@TrunkAccess</Text>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@TrunkAccessTooltip]' Location='200,334' Name='TrunkOpen' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@TrunkAccessTooltip'>@TrunkAccess</Checkbox>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@TrunkLockedTooltip]' Location='200,360' Name='TrunkLocked' ScrollExtent='144,26' Size='144,26' Style='/Buttons.Radiobox.style' Tooltip='@TrunkLockedTooltip'>@TrunkLocked</Checkbox>
-<Button LocalText='[@Cancel]' Location='294,9' Name='Close' PackLocation='right,top' PackLocationProp='-082/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
-<Button LocalText='[@Cancel]' Location='68,10' Name='HelpButton' PackLocation='right,top' PackLocationProp='-308/0001,0010/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='294,9' Name='Close' PackLocation='right,top' PackLocationProp='-082/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='68,10' Name='HelpButton' PackLocation='right,top' PackLocationProp='-308/0001,0010/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@VehicleAccessTitle]' Location='90,9' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0090/0001,0009/0001' PackSize='absolute,fixed' PackSizeProp='0175/0001,0002/0003' ScrollExtent='201,17' Size='201,17' TextAlignment='Center'>@VehicleAccessTitle</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='38,0' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='304,32' Size='304,32'/>
 <DataSource Name='Foo'>
@@ -1847,598 +2268,43 @@ $displayname$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,399' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='341,31' Size='341,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='376,434' Size='376,434' Stretch='false'/>
 </Page>
-<Page Location='5,4' maxsize='500,500' minsize='193,216' movable='true' Name='Radar' preserveaspectratio='true' resizable='true' ScrollExtent='212,233' Size='212,233'>
+<Page Location='5,4' MaximumSize='500,547' maxsize='500,547' minsize='193,211' movable='true' Name='Radar' preserveaspectratio='true' resizable='true' ScrollExtent='213,233' Size='213,233'>
 <Page Location='64,7' Name='HeadingPage' ScrollExtent='80,18' Size='80,18' Visible='false'>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='-60,0' Name='Heading' RStyleActivated=' ' ScrollExtent='662,18' Size='662,18' Stretch='false' Style='/Icons.HUD.Radar_directions'/>
 </Page>
-<Page Location='0,-1' Name='Control' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='212,30' Size='212,30'>
-<Page Location='58,2' Name='MainControl' ScrollExtent='97,27' Size='97,27'>
-<Button LocalTooltip='[@IncreaseRangeTooltip]' Location='31,3' Name='Up' PackLocation='right,top' PackLocationProp='-066/0001,0003/0001' ScrollExtent='41,12' Size='41,12' Style='/Buttons.Radar_Up.style' Tooltip='@IncreaseRangeTooltip'></Button>
-<Button LocalTooltip='[@DecreaseRangeTooltip]' Location='36,15' Name='Down' PackLocation='right,top' PackLocationProp='-061/0001,0015/0001' ScrollExtent='33,12' Size='33,12' Style='/Buttons.Radar_Down.style' Tooltip='@DecreaseRangeTooltip'></Button>
-<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='200' Location='-5,7' Name='Distance' PackLocation='right,top' PackLocationProp='-102/0001,0007/0001' ScrollExtent='46,17' Size='46,17' TextAlignment='Center' TextAlignmentVertical='Center'>200</Text>
+<Page Location='0,-1' Name='Control' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='213,30' Size='213,30'>
+<Page Location='58,2' Name='MainControl' ScrollExtent='69,27' Size='69,27'>
+<Button LocalTooltip='[@IncreaseRangeTooltip]' Location='29,3' Name='Up' PackLocation='right,top' PackLocationProp='-040/0001,0003/0001' ScrollExtent='41,12' Size='41,12' Style='/Buttons.Radar_Up.style' Tooltip='@IncreaseRangeTooltip'></Button>
+<Button LocalTooltip='[@DecreaseRangeTooltip]' Location='34,15' Name='Down' PackLocation='right,top' PackLocationProp='-035/0001,0015/0001' ScrollExtent='33,12' Size='33,12' Style='/Buttons.Radar_Down.style' Tooltip='@DecreaseRangeTooltip'></Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='200' Location='-7,7' Name='Distance' PackLocation='right,top' PackLocationProp='-076/0001,0007/0001' ScrollExtent='46,17' Size='46,17' TextAlignment='Center' TextAlignmentVertical='Center'>200</Text>
 </Page>
 <Button LocalTooltip='[@MinimizeTooltip]' Location='19,1' Name='Minimize' ScrollExtent='37,30' Size='37,30' Style='/Buttons.HUD_Minimize.style' Tooltip='@MinimizeTooltip'></Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='151,7' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-061/0001,0007/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='32,0' Name='Title' PackLocation='left,top' PackLocationProp='0032/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='157,32' Size='157,32'/>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='152,7' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-061/0001,0007/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='32,0' Name='Title' PackLocation='left,top' PackLocationProp='0032/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='158,32' Size='158,32'/>
 </Page>
-<Page BackgroundColor='#FFFFFF' Location='12,32' MinimumSize='100,100' Name='MapPage' PackSize='absolute,absolute' PackSizeProp='0024/0001,0045/0001' ScrollExtent='188,188' Size='188,188'>
+<Page BackgroundColor='#FFFFFF' Location='12,32' MinimumSize='100,100' Name='MapPage' PackSize='absolute,absolute' PackSizeProp='0024/0001,0044/0001' ScrollExtent='189,189' Size='189,189'>
 <Image Enabled='false' Location='87,86' Name='PlayerBlip' PackLocation='center,center' PackLocationProp='-007/0001,-008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='14,16' Size='14,16' Stretch='false' Style='/Icons.HUD.Radar_avatar_blip'/>
-<Image AbsorbsInput='false' Enabled='false' Location='0,1' Name='Compass' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187' Style='/Icons.HUD.Radar_compass'/>
-<Ellipse AbsorbsInput='false' ArcBegin='0.740' ArcEnd='0.760' Color='#FFFF00' Enabled='false' GetsInput='false' InnerRadiusColor='#FFFF00' Location='0,1' Name='VehicleFinder' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187' Thickness='5.000'/>
-<Ellipse AbsorbsInput='false' ArcBegin='0.600' ArcEnd='0.900' Color='#7AAACB' Enabled='false' GetsInput='false' InnerRadiusColor='#7AAACB' Location='0,1' Name='FOV' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' Rotation='0.750' ScrollExtent='188,187' Size='188,187' Thickness='600.000' Visible='false'/>
-<Image Color='#FFDC00' Location='135,170' Name='SquadBlip0' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_0' Visible='false'/>
-<Image Color='#FF0000' Location='45,170' Name='SquadBlip1' ScrollExtent='7,14' Size='7,14' Stretch='false' Style='/Icons.HUD.Radar_digit_1' Visible='false'/>
-<Image Color='#FF0000' Location='55,170' Name='SquadBlip2' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_2' Visible='false'/>
-<Image Color='#FF0000' Location='65,170' Name='SquadBlip3' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_3' Visible='false'/>
-<Image Color='#FF0000' Location='75,170' Name='SquadBlip4' ScrollExtent='11,14' Size='11,14' Stretch='false' Style='/Icons.HUD.Radar_digit_4' Visible='false'/>
-<Image Color='#FF0000' Location='85,170' Name='SquadBlip5' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_5' Visible='false'/>
-<Image Color='#FF0000' Location='95,170' Name='SquadBlip6' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_6' Visible='false'/>
-<Image Color='#FF0000' Location='105,170' Name='SquadBlip7' ScrollExtent='11,14' Size='11,14' Stretch='false' Style='/Icons.HUD.Radar_digit_7' Visible='false'/>
-<Image Color='#FF0000' Location='115,170' Name='SquadBlip8' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_8' Visible='false'/>
-<Image Color='#FF0000' Location='125,170' Name='SquadBlip9' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_9' Visible='false'/>
-<Image Color='#FF0000' Location='125,170' Name='SoldierBlip' ScrollExtent='10,10' Size='10,10' Stretch='false' Style='/Icons.HUD.Radar_soldier_blip' UserResizable='true' Visible='false'/>
-<Image Location='20,170' Name='LineBlip' PackLocation='Top,Left' PackLocationProp='0020/0001,0170/0001' ScrollExtent='12,3' Size='12,3' Stretch='false' Style='/Icons.HUD.Radar_line_blip' Visible='false'/>
-<Image Location='35,170' Name='AvatarBlip' PackLocation='Top,Left' PackLocationProp='0035/0001,0170/0001' ScrollExtent='14,16' Size='14,16' Style='/Icons.HUD.Radar_avatar_blip' Visible='false'/>
-<Image Location='75,150' Name='QuadBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='15,24' Size='15,24' Style='/Icons.HUD.Radar_quad_blip' Visible='false'/>
-<Image Location='75,150' Name='HarasserBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='17,28' Size='17,28' Style='/Icons.HUD.Radar_harasser_blip' Visible='false'/>
-<Image Location='75,150' Name='EnforcerBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='16,28' Size='16,28' Style='/Icons.HUD.Radar_enforcer_blip' Visible='false'/>
-<Image Location='75,150' Name='MarauderBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='15,28' Size='15,28' Style='/Icons.HUD.Radar_marauder_blip' Visible='false'/>
-<Image Location='75,150' Name='ThresherBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='15,28' Size='15,28' Style='/Icons.HUD.Radar_thresher_blip' Visible='false'/>
-<Image Location='75,150' Name='LightningBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='16,28' Size='16,28' Style='/Icons.HUD.Radar_lightning_blip' Visible='false'/>
-<Image Location='75,150' Name='VanguardBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='18,28' Size='18,28' Style='/Icons.HUD.Radar_vanguard_blip' Visible='false'/>
-<Image Location='75,150' Name='ProwlerBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='18,28' Size='18,28' Style='/Icons.HUD.Radar_prowler_blip' Visible='false'/>
-<Image Location='75,150' Name='MagriderBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='15,29' Size='15,29' Style='/Icons.HUD.Radar_magrider_blip' Visible='false'/>
-<Image Location='75,150' Name='DelivererBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='16,33' Size='16,33' Style='/Icons.HUD.Radar_deliverer_blip' Visible='false'/>
-<Image Location='75,150' Name='SunderBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='19,37' Size='19,37' Style='/Icons.HUD.Radar_sunder_blip' Visible='false'/>
-<Image Location='75,150' Name='AntBlip' PackLocation='Top,Left' PackLocationProp='0075/0001,0150/0001' ScrollExtent='18,32' Size='18,32' Style='/Icons.HUD.Radar_ant_blip' Visible='false'/>
-<Image Location='35,150' Name='AmsBlip' PackLocation='Top,Left' PackLocationProp='0035/0001,0150/0001' ScrollExtent='15,40' Size='15,40' Style='/Icons.HUD.Radar_ams_blip' Visible='false'/>
-<Image Location='31,120' Name='GalaxyBlip' PackLocation='Top,Left' PackLocationProp='0031/0001,0120/0001' ScrollExtent='47,43' Size='47,43' Style='/Icons.HUD.Radar_galaxy_blip' Visible='false'/>
-<Image Location='50,150' Name='MosquitoBlip' PackLocation='Top,Left' PackLocationProp='0050/0001,0150/0001' ScrollExtent='15,28' Size='15,28' Style='/Icons.HUD.Radar_mosquito_blip' Visible='false'/>
-<Image Location='50,150' Name='ReaverBlip' PackLocation='Top,Left' PackLocationProp='0050/0001,0150/0001' ScrollExtent='22,30' Size='22,30' Style='/Icons.HUD.Radar_reaver_blip' Visible='false'/>
-<Image Location='50,150' Name='MaxBlip' PackLocation='Top,Left' PackLocationProp='0050/0001,0150/0001' ScrollExtent='20,10' Size='20,10' Style='/Icons.HUD.Radar_max_blip' Visible='false'/>
-<Image Location='35,170' Name='MissileBlip' PackLocation='Top,Left' PackLocationProp='0035/0001,0170/0001' ScrollExtent='4,11' Size='4,11' Style='/Icons.HUD.Radar_missile_blip' Visible='false'/>
-<Image Location='58,38' Name='HartBlip' PackLocation='Top,Left' PackLocationProp='0058/0001,0038/0001' ScrollExtent='60,128' Size='60,128' Style='/Icons.HUD.Radar_hart_blip' Visible='false'/>
-<Image AbsorbsInput='false' Enabled='false' Location='0,1' Name='Building' Opacity='0.750' PackLocation='left,top' PackLocationProp='0000/0001,0001/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='193,192' Size='193,192' Style='BuildingMaps.Map_4_0'/>
-<OverheadMap AbsorbsInput='false' Enabled='false' GetsInput='false' Location='0,1' Name='OverheadMap' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187'/>
-<Namespace Name='BuildingMaps'>
-<ImageStyle Name='Map_bunker_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_bunker_gauntlet_0_00' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,0' Source='ui_building_bunker_gauntlet_0_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,0' Source='ui_building_bunker_gauntlet_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_bunker_gauntlet_0_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,0' Source='ui_building_bunker_gauntlet_0_04' SourceRect='0,0,16,64'/>
-<ImageFragment Offset='0,64' Source='ui_building_bunker_gauntlet_0_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,64' Source='ui_building_bunker_gauntlet_0_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,64' Source='ui_building_bunker_gauntlet_0_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,64' Source='ui_building_bunker_gauntlet_0_08' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_bunker_gauntlet_0_09' SourceRect='0,0,16,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bunker_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_bunker_gauntlet_1_00' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,0' Source='ui_building_bunker_gauntlet_1_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,0' Source='ui_building_bunker_gauntlet_1_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_bunker_gauntlet_1_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,0' Source='ui_building_bunker_gauntlet_1_04' SourceRect='0,0,16,64'/>
-<ImageFragment Offset='0,64' Source='ui_building_bunker_gauntlet_1_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,64' Source='ui_building_bunker_gauntlet_1_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,64' Source='ui_building_bunker_gauntlet_1_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,64' Source='ui_building_bunker_gauntlet_1_08' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_bunker_gauntlet_1_09' SourceRect='0,0,16,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bunker_sm_0'>
-<ImageFrame Source='ui_building_bunker_sm_0_00' SourceRect='0,0,32,32'/>
-</ImageStyle>
-<ImageStyle Name='Map_bunker_lg_0'>
-<ImageFrame Source='ui_building_bunker_lg_0_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_shooting_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_vr_shooting_0_00' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,0' Source='ui_building_vr_shooting_0_01' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,32' Source='ui_building_vr_shooting_0_02' SourceRect='0,0,32,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_training_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_vr_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_vr_0_01' SourceRect='0,0,60,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_vr_0_02' SourceRect='0,0,60,64'/>
-<ImageFragment Offset='0,128' Source='ui_building_vr_0_03' SourceRect='0,0,64,61'/>
-<ImageFragment Offset='64,128' Source='ui_building_vr_0_04' SourceRect='0,0,64,61'/>
-<ImageFragment Offset='128,128' Source='ui_building_vr_0_05' SourceRect='0,0,60,61'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_meeting_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_meeting_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_meeting_0_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_meeting_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,128' Source='ui_building_meeting_0_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,128' Source='ui_building_meeting_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,128' Source='ui_building_meeting_0_05' SourceRect='0,0,64,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_towerc_0'>
-<ImageFrame Source='ui_building_tower_c_0_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerc_1'>
-<ImageFrame Source='ui_building_tower_c_1_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerc_2'>
-<ImageFrame Source='ui_building_tower_c_2_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerc_3'>
-<ImageFrame Source='ui_building_tower_c_3_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerb_0'>
-<ImageFrame Source='ui_building_tower_b_0_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerb_1'>
-<ImageFrame Source='ui_building_tower_b_1_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerb_2'>
-<ImageFrame Source='ui_building_tower_b_2_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerb_3'>
-<ImageFrame Source='ui_building_tower_b_3_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towerb_4'>
-<ImageFrame Source='ui_building_tower_b_4_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towera_0'>
-<ImageFrame Source='ui_building_tower_a_0_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towera_1'>
-<ImageFrame Source='ui_building_tower_a_1_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towera_2'>
-<ImageFrame Source='ui_building_tower_a_2_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_towera_3'>
-<ImageFrame Source='ui_building_tower_a_3_00' SourceRect='0,0,64,64'/>
-</ImageStyle>
-<ImageStyle Name='Map_station_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_station_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_station_0_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_building_station_0_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_building_station_0_03' SourceRect='0,0,160,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_station_0_04' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='256,256' Source='ui_building_station_0_05' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='512,256' Source='ui_building_station_0_06' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='768,256' Source='ui_building_station_0_07' SourceRect='0,0,160,192'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_station_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_station_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_station_1_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_building_station_1_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_building_station_1_03' SourceRect='0,0,160,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_station_1_04' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='256,256' Source='ui_building_station_1_05' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='512,256' Source='ui_building_station_1_06' SourceRect='0,0,256,192'/>
-<ImageFragment Offset='768,256' Source='ui_building_station_1_07' SourceRect='0,0,160,192'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_orbital_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_orbital_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_orbital_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_orbital_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_orbital_0_03' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_orbital_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,64' Source='ui_building_orbital_0_05' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,128' Source='ui_building_orbital_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,128' Source='ui_building_orbital_0_07' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,192' Source='ui_building_orbital_0_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,192' Source='ui_building_orbital_0_09' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_orbital_0_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_orbital_0_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_orbital_0_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_orbital_0_13' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_orbital_0_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_orbital_0_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_orbital_0_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_orbital_0_17' SourceRect='0,0,48,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_orbital_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_orbital_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_orbital_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_orbital_1_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_orbital_1_03' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_orbital_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,64' Source='ui_building_orbital_1_05' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,128' Source='ui_building_orbital_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,128' Source='ui_building_orbital_1_07' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='128,192' Source='ui_building_orbital_1_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,192' Source='ui_building_orbital_1_09' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_orbital_1_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_orbital_1_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_orbital_1_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_orbital_1_13' SourceRect='0,0,48,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_orbital_1_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_orbital_1_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_orbital_1_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_orbital_1_17' SourceRect='0,0,48,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_drop_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_dropship_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_0_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_0_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_0_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_0_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_0_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_0_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_0_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_0_12' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_0_13' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_0_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_0_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_0_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_0_17' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_drop_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_dropship_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_1_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_1_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_1_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_1_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_1_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_1_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_1_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_1_12' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_1_13' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_1_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_1_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_1_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_1_17' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_drop_2'>
-<ImageFrame>
-<ImageFragment Source='ui_building_dropship_2_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_2_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_2_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_2_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_2_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_2_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_2_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_2_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_2_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_2_12' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_2_13' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_2_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_2_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_2_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_2_17' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_drop_3'>
-<ImageFrame>
-<ImageFragment Source='ui_building_dropship_3_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_3_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_3_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_3_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_3_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_3_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_3_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_3_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_3_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_3_12' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_3_13' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_3_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_3_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_3_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_3_17' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_drop_4'>
-<ImageFrame>
-<ImageFragment Source='ui_building_dropship_4_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_4_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_4_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_4_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_4_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_4_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_4_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_4_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_4_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_4_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_4_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_4_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_4_12' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_4_13' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_4_14' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_4_15' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_4_16' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_4_17' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_tech_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_0_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_0_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_0_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_0_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_0_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_0_09' SourceRect='0,0,64,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_tech_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_1_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_1_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_1_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_1_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_1_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_1_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_1_09' SourceRect='0,0,64,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_tech_2'>
-<ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_2_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_2_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_2_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_2_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_2_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_2_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_2_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_2_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_2_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_2_09' SourceRect='0,0,64,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_tech_3'>
-<ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_3_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_3_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_3_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_3_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_3_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_3_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_3_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_3_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_3_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_3_09' SourceRect='0,0,64,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bio_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_cyro_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_0_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_0_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_0_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_0_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_0_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_0_08' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bio_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_cyro_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_1_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_1_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_1_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_1_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_1_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_1_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_1_08' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bio_2'>
-<ImageFrame>
-<ImageFragment Source='ui_building_cyro_2_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_2_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_2_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_2_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_2_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_2_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_2_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_2_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_2_08' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_bio_3'>
-<ImageFrame>
-<ImageFragment Source='ui_building_cyro_3_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_3_01' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_3_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_3_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_3_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_3_05' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_3_06' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_3_07' SourceRect='0,0,64,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_3_08' SourceRect='0,0,64,32'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_comm_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_comm_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_0_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_0_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_0_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_0_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_0_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_0_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_0_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_0_09' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_comm_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_comm_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_1_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_1_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_1_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_1_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_1_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_1_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_1_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_1_09' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_comm_2'>
-<ImageFrame>
-<ImageFragment Source='ui_building_comm_2_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_2_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_2_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_2_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_2_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_2_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_2_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_2_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_2_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_2_09' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_comm_3'>
-<ImageFrame>
-<ImageFragment Source='ui_building_comm_3_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_3_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_3_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_3_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_3_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_3_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_3_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_3_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_3_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_3_09' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_comm_4'>
-<ImageFrame>
-<ImageFragment Source='ui_building_comm_4_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_4_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_4_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_4_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_4_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_4_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_4_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_4_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_4_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_4_09' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_amp_0'>
-<ImageFrame>
-<ImageFragment Source='ui_building_amp_0_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_0_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_0_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_0_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_0_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_0_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_0_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_0_07' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_0_08' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_amp_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_amp_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_1_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_1_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_1_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_1_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_1_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_1_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_1_07' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_1_08' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_amp_2'>
-<ImageFrame>
-<ImageFragment Source='ui_building_amp_2_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_2_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_2_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_2_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_2_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_2_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_2_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_2_07' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_2_08' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_amp_3'>
-<ImageFrame>
-<ImageFragment Source='ui_building_amp_3_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_3_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_3_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_3_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_3_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_3_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_3_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_3_07' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_3_08' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map_amp_4'>
-<ImageFrame>
-<ImageFragment Source='ui_building_amp_4_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_4_01' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_4_02' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_4_03' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_4_04' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_4_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_4_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_4_07' SourceRect='0,0,32,64'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_4_08' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
-</Namespace>
+<Image AbsorbsInput='false' Enabled='false' Name='Compass' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='189,189' Size='189,189' Style='/Icons.HUD.Radar_compass'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.740' ArcEnd='0.760' Color='#FFFF00' Enabled='false' GetsInput='false' InnerRadiusColor='#FFFF00' Name='VehicleFinder' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='189,188' Size='189,188' Thickness='5.000'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.600' ArcEnd='0.900' Color='#7AAACB' Enabled='false' GetsInput='false' InnerRadiusColor='#7AAACB' Name='FOV' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' Rotation='0.750' ScrollExtent='189,189' Size='189,189' Thickness='600.000' Visible='false'/>
+<OverheadMap AbsorbsInput='false' Enabled='false' GetsInput='false' Name='OverheadMap' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='189,188' Size='189,188'/>
 </Page>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Enabled='false' Location='0,9' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0009/0001' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.RadarBackground.style' ScrollExtent='212,221' Size='212,221' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Enabled='false' Location='0,9' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0009/0001' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.RadarBackground.style' ScrollExtent='213,221' Size='213,221' Stretch='false'/>
 </Page>
 <Page DragAccepts='Divider' DragBadCursor='/Cursors.DividerBad' DragGoodCursor='/Cursors.DividerGood' Location='639,4' MinimumSize='383,180' minsize='383,180' movable='true' Name='Chat' PackLocation='right,top' PackLocationProp='-385/0001,0004/0001' resizable='true' ScrollExtent='383,180' Size='383,180'>
 <DataSource Name='Channels'>
 <Data id='0' in='true' localtext='[@ChatChannelOpen]' Name='TypeOpen' text='@ChatChannelOpen'/>
+<Data id='5' in='true' localtext='[@ChatChannelBroadcast]' Name='TypeBroadcast' text='@ChatChannelBroadcast'/>
 <Data id='1' in='true' localtext='[@ChatChannelSquad]' Name='TypeSquad' text='@ChatChannelSquad'/>
+<Data id='4' in='true' localtext='[@ChatChannelPlatoon]' Name='TypePlatoon' text='@ChatChannelPlatoon'/>
 <Data id='2' in='true' localtext='[@ChatChannelOutfit]' Name='TypeOutfit' text='@ChatChannelOutfit'/>
 <Data id='3' in='true' localtext='[@ChatChannelCommand]' Name='TypeCommand' text='@ChatChannelCommand'/>
-<Data id='4' in='true' localtext='[@ChatChannelAlliance]' Name='TypeAlliance' text='@ChatChannelAlliance'/>
 </DataSource>
-<Page Location='72,29' Name='SendPage' ScrollExtent='100,100' Size='100,100' Visible='false'>
-<Listbox DataSource='Channels' Name='SendList' RowTemplate='SendTemplate' ScrollExtent='100,100' Size='100,100' Style='/Listboxes.Pulldown.style'/>
+<Page Location='72,29' Name='SendPage' ScrollExtent='100,121' Size='100,121' Visible='false'>
+<Listbox DataSource='Channels' Name='SendList' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RowTemplate='SendTemplate' ScrollExtent='100,121' Size='100,121' Style='/Listboxes.Pulldown.style'/>
 </Page>
-<Page Location='152,29' Name='ReceivePage' ScrollExtent='100,100' Size='100,100' Visible='false'>
-<Listbox DataSource='Channels' Name='ReceiveList' RowTemplate='ReceiveTemplate' ScrollExtent='120,100' Size='100,100' Style='/Listboxes.Pulldown.style'/>
+<Page Location='152,29' Name='ReceivePage' ScrollExtent='100,121' Size='100,121' Visible='false'>
+<Listbox DataSource='Channels' Name='ReceiveList' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RowTemplate='ReceiveTemplate' ScrollExtent='120,121' Size='100,121' Style='/Listboxes.Pulldown.style'/>
 </Page>
 <Template Name='SendTemplate' Size='100,20'>\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'5,2\' maxlines = \'1\' size = \'90,20\'\>
 $Text$
@@ -2466,6 +2332,20 @@ $Text$
 <Text AbsorbsInput='false' DragAccepts='Divider' DragBadCursor='/Cursors.DividerBad' DragGoodCursor='/Cursors.DividerGood' Font='/Fonts.ChatFont' GetsInput='false' Location='17,90' minheight='32' Name='OutputChat' PackLocation='left,top' PackLocationProp='0017/0001,0090/0001' PackSize='absolute,absolute' PackSizeProp='0047/0001,0124/0001' ScrollExtent='336,56' Size='336,56'></Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,17' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0017/0001' PackSize='1,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='383,160' Size='383,160' Stretch='false'/>
 </Page>
+<Page BackgroundOpacity='0.502' Location='1,653' movable='true' Name='Performance' PackLocation='left,bottom' PackLocationProp='0001/0001,-115/0001' ScrollExtent='106,63' Size='106,63'>
+<Rectangle Color='#000000' GetsInput='false' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='106,63' Size='106,63'/>
+<Text Font='/SmallFont' GetsInput='false' LocalText='[@PerformancePing]' Location='3,2' Name='PingLabel' ScrollExtent='30,48' Size='30,14'>@PerformancePing</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='88888 ms' Location='25,2' Name='Ping' ScrollExtent='44,14' Size='44,14' TextAlignment='Right'>88888 ms</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='[@PerformanceLoss]' Location='3,13' Name='LossLabel' ScrollExtent='34,36' Size='34,14'>@PerformanceLoss</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='100.0%' Location='26,13' Name='Loss' ScrollExtent='34,14' Size='34,14' TextAlignment='Right'>100.0%</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='[@PerformanceFPS]' Location='3,24' Name='FramerateLabel' ScrollExtent='28,48' Size='28,14'>@PerformanceFPS</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='XXX.X ' Location='29,24' Name='Framerate' ScrollExtent='32,14' Size='32,14' TextAlignment='Right'>XXX.X </Text>
+<Rectangle Color='#000000' GetsInput='false' Location='0,36' Name='AdvancedDivider' PackSize='1' PackSizeProp='0002/0003,xxxx/xxxx' ScrollExtent='106,1' Size='106,1'/>
+<Text Font='/SmallFont' GetsInput='false' LocalText='[@PerformanceUpstream]' Location='3,39' Name='UpstreamLabel' ScrollExtent='60,24' Size='60,14'>@PerformanceUpstream</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='1046 b/s' Location='54,39' Name='Upstream' ScrollExtent='47,14' Size='47,14' TextAlignment='Right'>1046 b/s</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='[@PerformanceDownstream]' Location='3,49' Name='DownstreamLabel' ScrollExtent='60,36' Size='60,14'>@PerformanceDownstream</Text>
+<Text Font='/SmallFont' GetsInput='false' LocalText='1446 b/s' Location='54,49' Name='Downstream' ScrollExtent='47,14' Size='47,14' TextAlignment='Right'>1446 b/s</Text>
+</Page>
 <Text BackgroundColor='#C0C0C0' Font='/Fonts.DefaultFont' LocalText='Info box' Location='346,212' Name='Info' PackLocation='Proportional, Proportional' PackLocationProp='0512/1024,xxxx/xxxx' ScrollExtent='333,71' ShadowStyle='/Shadows.HudInfo' Size='333,71' TextAlignment='Center' TextColor='#00F2C9'>Info box</Text>
 <Page BackgroundColor='#FF0000' BackgroundOpacity='1.000' GetsInput='false' Name='DamageFeedback' Opacity='0.000' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'/>
 <Page BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' GetsInput='false' Name='GriefFeedback' Opacity='0.000' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'/>
@@ -2482,7 +2362,7 @@ $Text$
 <Image Location='266,234' Name='COF_Right' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='68,34,100,66' SourceResource='ui_pistol_crosshair' Visible='false'/>
 <Image Location='234,265' Name='COF_Bottom' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='34,66,66,100' SourceResource='ui_pistol_crosshair' Visible='false'/>
 </Page>
-<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='264,134' Name='BaseCrosshair' PackLocation='Center,Center' PackLocationProp='-248/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
+<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='264,134' Name='BaseCrosshair' PackLocation='Center,Center' PackLocationProp='-248/0001,-250/0001' ScrollExtent='500,500' Size='500,500' visualeditlock='true'>
 <Text Font='/SmallFont' LocalText='Base Crosshair' Location='100,100' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Base Crosshair</Text>
 <Text Color='#FFFF00' Font='/SmallFont' LocalText='Targeted Object Name
 
@@ -2632,6 +2512,15 @@ Targeted Object Name
 <Progressbar Location='150,339' Name='TaskProgress' Progress='0.400' ScrollExtent='200,16' Size='200,16' Style='/ProgressBars.ActionProgress.style' Visible='false'/>
 <Text Font='/SmallFont' LocalText='Zoom 4x' Location='237,289' Name='Zoom' Opacity='0.000' ScrollExtent='73,12' Size='73,12' TextAlignment='Right'>Zoom 4x</Text>
 </Page>
+<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='262,134' Name='ClusterBombCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
+<Text Font='/SmallFont' LocalText='Default Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Default Crosshair</Text>
+<Page Location='233,234' Name='Reticle' ScrollExtent='32,32' Size='32,32'>
+<Ellipse Location='2,2' Name='RingInner' Opacity='0.800' PackLocation='center,center' PackLocationProp='-014/0001,-014/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='28,28' Size='28,28' Thickness='2.000'/>
+<Ellipse Color='#000000' Name='BackgroundInner' Opacity='0.800' PackLocation='center,center' PackLocationProp='-016/0001,-016/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='32,32' Size='32,32' Thickness='12.000'/>
+<Ellipse Location='2,2' Name='RingOuter' Opacity='0.800' PackSize='absolute,absolute' PackSizeProp='0004/0001,0004/0001' ScrollExtent='28,28' Size='28,28' Thickness='2.000'/>
+<Ellipse Color='#000000' Name='BackgroundOuter' Opacity='0.800' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='32,32' Size='32,32' Thickness='12.000'/>
+</Page>
+</Page>
 <Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='262,134' Name='DefaultCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
 <Text Font='/SmallFont' LocalText='Default Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Default Crosshair</Text>
 <Ellipse Color='#00FF00' Location='233,234' Name='COF' Opacity='0.400' ScrollExtent='32,32' Size='32,32'/>
@@ -2661,6 +2550,19 @@ Targeted Object Name
 <Ellipse ArcBegin='0.290' ArcEnd='0.460' GetsInput='false' Location='240,240' Name='COF_BottomLeft' ScrollExtent='25,25' Size='25,25' Thickness='10.000'/>
 <Ellipse ArcBegin='0.540' ArcEnd='0.710' GetsInput='false' Location='240,240' Name='COF_TopLeft' ScrollExtent='25,25' Size='25,25' Thickness='10.000'/>
 </Page>
+<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='362,234' Name='MiniGunCrosshair' PackLocation='Center,Center' PackLocationProp='-150/0001,-150/0001' ScrollExtent='300,300' Size='300,300' Visible='false'>
+<Text Font='/SmallFont' LocalText='Minigun Crosshair' Location='0,24' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Minigun Crosshair</Text>
+<Ellipse Color='#00FF00' Location='133,134' Name='COF' Opacity='0.400' ScrollExtent='32,32' Size='32,32'/>
+<Image LocalTooltip='0,0,32,32' Location='102,102' Name='COF_TopLeft' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='0,0,32,32' SourceResource='ui_pistol_crosshair' Stretch='false' Tooltip='0,0,32,32' TooltipStyle='ui_pistolcrosshair'/>
+<Image Location='134,102' Name='COF_Top' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='34,0,66,32' SourceResource='ui_pistol_crosshair'/>
+<Image Location='166,102' Name='COF_TopRight' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='68,0,100,32' SourceResource='ui_pistol_crosshair' Stretch='false'/>
+<Image Location='102,134' Name='COF_Left' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_LeftGraphic'/>
+<Image Location='134,134' Name='Reticle' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_ReticuleGraphic' Visible='false'/>
+<Image Location='166,134' Name='COF_Right' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_RightGraphic'/>
+<Image Location='102,165' Name='COF_BottomLeft' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomLeftGraphic'/>
+<Image Location='134,165' Name='COF_Bottom' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomGraphic'/>
+<Image Location='166,165' Name='COF_BottomRight' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomRightGraphic'/>
+</Page>
 <Page BackgroundColor='#FFFFFF' crosshairtype='pistol' defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='262,134' Name='PistolCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
 <Ellipse InnerRadiusOpacity='0.500' Location='240,240' MinimumSize='25,25' Name='Reticle' Opacity='0.500' ScrollExtent='25,25' Size='25,25' Thickness='3.000'/>
 <Ellipse ArcBegin='0.438' ArcEnd='0.563' InnerRadiusOpacity='0.500' Location='240,240' MinimumSize='25,25' Name='ReticleLeft' Opacity='0.500' ScrollExtent='25,25' Size='25,25' Thickness='7.000'/>
@@ -2684,12 +2586,10 @@ Targeted Object Name
 <Ellipse ArcBegin='0.065' ArcEnd='0.195' Color='#00FF00' InnerRadiusColor='#00FF00' Location='236,235' Name='COFd' Rotation='0.500' ScrollExtent='32,32' Size='32,32' Thickness='7.000'/>
 </Page>
 <Page crosshairtype='pistol_vanu' defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='261,135' Name='PistolVanuCrosshair' PackLocation='Center,Center' PackLocationProp='-251/0001,-249/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
-<Image Location='235,235' Name='COF_TopLeft' ScrollExtent='8,8' Size='8,8' SourceResource='ui_crosshair_vanu_pistol_tick'/>
-<Image Location='259,235' Name='COF_TopRight' Rotation='0.500' ScrollExtent='8,8' Size='8,8' SourceRect='0,32,32,0' SourceResource='ui_crosshair_vanu_pistol_tick'/>
-<Image Location='235,258' Name='COF_BottomLeft' ScrollExtent='8,8' Size='8,8' SourceRect='0,32,32,0' SourceResource='ui_crosshair_vanu_pistol_tick'/>
-<Image Location='259,258' Name='COF_BottomRight' Rotation='0.500' ScrollExtent='8,8' Size='8,8' SourceResource='ui_crosshair_vanu_pistol_tick'/>
-<Image Location='219,218' Name='Reticle' Opacity='0.750' ScrollExtent='64,64' Size='64,64' SourceResource='ui_crosshair_vanu_pistol'/>
-<Text Font='/SmallFont' LocalText='Rifle Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Rifle Crosshair</Text>
+<Image Location='249,248' Name='COF_BottomRight' Rotation='0.375' ScrollExtent='32,32' Size='32,32' SourceResource='ui_hud_crosshair_vanu'/>
+<Image Location='219,248' Name='COF_BottomLeft' Rotation='0.625' ScrollExtent='32,32' Size='32,32' SourceResource='ui_hud_crosshair_vanu'/>
+<Image Location='234,219' Name='COF_Top' ScrollExtent='32,32' Size='32,32' SourceResource='ui_hud_crosshair_vanu'/>
+<Text Font='/SmallFont' LocalText='Ancient Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Ancient Crosshair</Text>
 </Page>
 <Page BackgroundColor='#FFFFFF' crosshairtype='rek' defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='262,134' Name='REKCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
 <Ellipse InnerRadiusOpacity='0.500' Location='240,240' MinimumSize='25,25' Name='Reticle' Opacity='0.500' ScrollExtent='25,25' Size='25,25' Thickness='4.000'/>
@@ -2714,18 +2614,15 @@ Targeted Object Name
 <Image Location='218,218' Name='Reticle' Opacity='0.500' ScrollExtent='64,64' Size='64,64' SourceResource='ui_crosshair_vanu_rifle'/>
 <Text Font='/SmallFont' LocalText='Rifle Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Rifle Crosshair</Text>
 </Page>
-<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='362,234' Name='MiniGunCrosshair' PackLocation='Center,Center' PackLocationProp='-150/0001,-150/0001' ScrollExtent='300,300' Size='300,300' Visible='false'>
-<Text Font='/SmallFont' LocalText='Minigun Crosshair' Location='0,24' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Minigun Crosshair</Text>
-<Ellipse Color='#00FF00' Location='133,134' Name='COF' Opacity='0.400' ScrollExtent='32,32' Size='32,32'/>
-<Image LocalTooltip='0,0,32,32' Location='102,102' Name='COF_TopLeft' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='0,0,32,32' SourceResource='ui_pistol_crosshair' Stretch='false' Tooltip='0,0,32,32' TooltipStyle='ui_pistolcrosshair'/>
-<Image Location='134,102' Name='COF_Top' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='34,0,66,32' SourceResource='ui_pistol_crosshair'/>
-<Image Location='166,102' Name='COF_TopRight' Opacity='0.500' ScrollExtent='32,32' Size='32,32' SourceRect='68,0,100,32' SourceResource='ui_pistol_crosshair' Stretch='false'/>
-<Image Location='102,134' Name='COF_Left' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_LeftGraphic'/>
-<Image Location='134,134' Name='Reticle' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_ReticuleGraphic' Visible='false'/>
-<Image Location='166,134' Name='COF_Right' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_RightGraphic'/>
-<Image Location='102,165' Name='COF_BottomLeft' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomLeftGraphic'/>
-<Image Location='134,165' Name='COF_Bottom' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomGraphic'/>
-<Image Location='166,165' Name='COF_BottomRight' Opacity='0.500' ScrollExtent='32,32' Size='32,32' Style='DefaultCrosshair.COF_BottomRightGraphic'/>
+<Page defaultcolor='#FFFFFF' enemycolor='#FF0000' friendlycolor='#00FF00' GetsInput='false' Location='262,134' Name='SingleBombCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false' visualeditlock='true'>
+<Text Font='/SmallFont' LocalText='Default Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Default Crosshair</Text>
+<Page Location='233,234' Name='Reticle' ScrollExtent='32,32' Size='32,32'>
+<Rectangle Location='15,8' Name='VerticalLine' Opacity='0.800' PackLocation='center,center' PackLocationProp='-001/0001,-008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='2,16' Size='2,16'/>
+<Rectangle Location='8,15' Name='HorizontalLine' Opacity='0.800' PackLocation='center,center' PackLocationProp='-008/0001,-001/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,2' Size='16,2'/>
+<Ellipse Color='#000000' InnerRadiusColor='#000000' InnerRadiusOpacity='0.800' Name='BackgroundInner' Opacity='0.200' PackLocation='center,center' PackLocationProp='-016/0001,-016/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='32,32' Size='32,32' Thickness='16.000'/>
+<Ellipse Location='2,2' Name='Ring' Opacity='0.800' PackSize='absolute,absolute' PackSizeProp='0004/0001,0004/0001' ScrollExtent='28,28' Size='28,28' Thickness='2.000'/>
+<Ellipse Color='#000000' Name='Background' Opacity='0.800' PackSize='absolute,absolute' PackSizeProp='0000/0001,0000/0001' ScrollExtent='32,32' Size='32,32' Thickness='12.000'/>
+</Page>
 </Page>
 <Page defaultcolor='#FF0000' enemycolor='#00FF00' friendlycolor='#00FFFF' GetsInput='false' Location='262,134' Name='TestCrosshair' PackLocation='Center,Center' PackLocationProp='-250/0001,-250/0001' ScrollExtent='500,500' Size='500,500' Visible='false'>
 <Text Font='/SmallFont' LocalText='Test Crosshair' Location='100,112' Name='ID' Opacity='0.500' ScrollExtent='100,12' Size='100,12' Visible='false'>Test Crosshair</Text>
@@ -2770,16 +2667,13 @@ Targeted Object Name
 <ImageFrame Source='ui_HUD_altimeter_00' SourceRect='0,6,5,26'/>
 </ImageStyle>
 </Page>
-<Page Name='Label Layer' PackSize='Proportional,Proportional' PackSizeProp='1024/1024,0768/0768' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/SmallFont' Name='PlayerLabel'></Text>
-</Page>
 <Progressbar BackgroundColor='#425063' BackgroundOpacity='1.000' BarBackgroundColor='#0099C5' Color='#777777' Location='260,287' Name='Hack' PackLocation='Center,Center' PackLocationProp='-252/0001,-097/0001' Progress='0.500' ScrollExtent='504,30' Size='504,30' Style='/ProgressBars.HUD.Style' TooltipStyle='/Fonts.DefaultFont' Visible='false'/>
 <Page AbsorbsInput='false' Location='259,251' Name='VehicleOxygen' PackLocation='Center,Center' PackLocationProp='-253/0001,-133/0001' ScrollExtent='506,100' Size='506,100' Visible='false'>
-<Text AbsorbsInput='false' Color='#0000FF' Font='/Fonts.HudFont3' LocalText='Information about progress' Location='29,25' Name='VehicleOxygenText' ScrollExtent='400,21' Size='400,21'>Information about progress</Text>
+<Text AbsorbsInput='false' Color='#0000FF' Font='/Fonts.HudFont3' LocalText='[@InformationAboutProgress]' Location='29,25' Name='VehicleOxygenText' ScrollExtent='400,21' Size='400,21'>@InformationAboutProgress</Text>
 <Progressbar AbsorbsInput='false' BarBackgroundColor='#0000FF' Color='#777777' Location='29,54' Name='VehicleOxygenBar' Progress='0.330' ScrollExtent='447,13' Size='447,13' Style='/ProgressBars.Oxygen.style' TooltipStyle='/Fonts.DefaultFont'/>
 </Page>
 <Page AbsorbsInput='false' Location='259,251' Name='AvatarOxygen' PackLocation='Center,Center' PackLocationProp='-253/0001,-133/0001' ScrollExtent='506,100' Size='506,100' Visible='false'>
-<Text AbsorbsInput='false' Color='#FF0000' Font='/Fonts.HudFont3' LocalText='Information about progress' Location='76,25' Name='AvatarOxygenText' ScrollExtent='400,21' Size='400,21' TextAlignment='Right'>Information about progress</Text>
+<Text AbsorbsInput='false' Color='#FF0000' Font='/Fonts.HudFont3' LocalText='[@InformationAboutProgress]' Location='76,25' Name='AvatarOxygenText' ScrollExtent='400,21' Size='400,21' TextAlignment='Right'>@InformationAboutProgress</Text>
 <Progressbar AbsorbsInput='false' BarBackgroundColor='#FF0000' Color='#777777' Location='29,54' Name='AvatarOxygenBar' Progress='0.700' ScrollExtent='447,13' Size='447,13' Style='/ProgressBars.Oxygen.style' TooltipStyle='/Fonts.DefaultFont'/>
 </Page>
 <Page AbsorbsInput='false' Location='259,251' Name='OxygenBackground' PackLocation='Center,Center' PackLocationProp='-253/0001,-133/0001' ScrollExtent='506,100' Size='506,100' Visible='false'>
@@ -2787,6 +2681,11 @@ Targeted Object Name
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='style' ScrollExtent='506,100' Size='506,100' Stretch='false'/>
 </Page>
 <Page Location='0,716' movable='true' Name='ActiveItems' PackLocation='Left,Bottom' PackLocationProp='0000/0001,-052/0001' PackSize='1,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,50' Size='1024,50'>
+<Page Location='265,4' MaximumSize='113,34' MinimumSize='63,34' Name='VehicleShield' Opacity='0.800' ScrollExtent='113,34' Size='113,34'>
+<Text AbsorbsInput='false' Enabled='false' Font='/SmallFont' LocalText='[@VehicleShield]' Location='6,18' Name='StatusLabel' PackSize='absolute,fixed' PackSizeProp='0013/0001,0002/0003' ScrollExtent='100,12' Size='100,12' TextAlignment='Center'>@VehicleShield</Text>
+<Progressbar AbsorbsInput='false' BackgroundColor='#858585' BarBackgroundColor='#0099C5' LocalTooltip='[@VehicleShieldTooltip]' Location='6,5' Name='Status' Progress='1.000' ScrollExtent='100,13' Size='100,13' Style='/ProgressBars.Health.style' Tooltip='@VehicleShieldTooltip'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Border' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.ActiveItem.style' ScrollExtent='113,34' Size='113,34'/>
+</Page>
 <Page BackgroundColor='#11FFFF' Location='3,4' Name='ControlMap' PackLocation='left,top' PackLocationProp='0003/0001,0004/0001' ScrollExtent='39,42' Size='39,42'>
 <Button BackgroundColor='#FFFFFF' LocalText=')' LocalTooltip='[@MaximizeRadarTooltip]' Name='Radar' RStyleDefault=' ' ScrollExtent='39,20' Size='39,20' Style='/Buttons.IconButton.style' Tooltip='@MaximizeRadarTooltip'>)</Button>
 <Button BackgroundColor='#FFFFFF' LocalText='t' LocalTooltip='[@MaximizeChatTooltip]' Location='0,22' Name='Chat' RStyleDefault=' ' ScrollExtent='39,20' Size='39,20' Style='/Buttons.IconButton.style' Tooltip='@MaximizeChatTooltip'>t</Button>
@@ -2856,7 +2755,7 @@ Targeted Object Name
 </ImageStyle>
 <Progressbar BarBackgroundColor='#C0C0C0' LocalTooltip='[@ActiveWeaponStealthTooltip]' Location='3,3' Name='Progress' ScrollExtent='14,37' Size='14,37' Style='/ProgressBars.Stealth.style' Tooltip='@ActiveWeaponStealthTooltip'/>
 </Page>
-<Page Location='155,4' movable='false' Name='ShortcutPage' PackLocation='right,top' PackLocationProp='-869/0001,0004/0001' ScrollExtent='263,43' Size='263,43' Visible='false'>
+<Page Location='155,4' movable='false' Name='ShortcutPage' PackLocation='right,top' PackLocationProp='-869/0001,0004/0001' ScrollExtent='258,43' Size='258,43' Visible='false'>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.ChatFont' GetsInput='false' LocalText='[@F1]' Location='3,25' Name='F1' ScrollExtent='32,18' ShadowStyle='/Shadows.Default' Size='32,18' TextAlignment='Center' TextAlignmentVertical='Center'>@F1</Text>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.ChatFont' GetsInput='false' LocalText='[@F2]' Location='35,25' Name='F2' ScrollExtent='32,18' ShadowStyle='/Shadows.Default' Size='32,18' TextAlignment='Center' TextAlignmentVertical='Center'>@F2</Text>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.ChatFont' GetsInput='false' LocalText='[@F3]' Location='67,25' Name='F3' ScrollExtent='32,18' ShadowStyle='/Shadows.Default' Size='32,18' TextAlignment='Center' TextAlignmentVertical='Center'>@F3</Text>
@@ -2866,88 +2765,88 @@ Targeted Object Name
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.ChatFont' GetsInput='false' LocalText='[@F7]' Location='195,25' Name='F7' ScrollExtent='32,18' ShadowStyle='/Shadows.Default' Size='32,18' TextAlignment='Center' TextAlignmentVertical='Center'>@F7</Text>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.ChatFont' GetsInput='false' LocalText='[@F8]' Location='227,25' Name='F8' ScrollExtent='32,18' ShadowStyle='/Shadows.Default' Size='32,18' TextAlignment='Center' TextAlignmentVertical='Center'>@F8</Text>
 <Page BackgroundColor='#00F2C9' BackgroundOpacity='0.600' Name='Highlight' ScrollExtent='32,32' Size='32,32' Visible='false'/>
-<Grid CellCount='8,1' CellSize='32,32' DataSource='/DataSources.Shortcuts' DragAccepts='Item,Shortcut' Name='Shortcuts' ScrollExtent='256,32' Size='263,34' Style='/DefaultGrid.style'/>
+<Grid CellCount='8,1' CellSize='32,32' DataSource='/DataSources.Shortcuts' DragAccepts='Item,Shortcut' Name='Shortcuts' ScrollExtent='256,32' Size='258,34' Style='/DefaultGrid.style'/>
 </Page>
-<Page Location='423,5' MaximumSize='404,40' MinimumSize='4,40' Name='InventoryPage' ScrollExtent='404,40' Size='404,40'>
-<Page Location='300,0' Name='SlotVehicle' ScrollExtent='100,40' Size='100,40'>
-<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='47,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
-<Image AbsorbsInput='false' Color='#FFDC00' Location='14,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
-<Page Location='32,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
+<Page Location='423,5' MaximumSize='404,40' MinimumSize='4,40' Name='InventoryPage' ScrollExtent='395,40' Size='395,40'>
+<Page Location='292,0' Name='SlotVehicle' ScrollExtent='98,40' Size='98,40'>
+<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='45,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
+<Image AbsorbsInput='false' Color='#FFDC00' Location='12,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
+<Page Location='30,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
 <Image AbsorbsInput='false' Name='WeaponIcon' ScrollExtent='67,17' Size='67,17' Style='/ItemIcons1GridHigh.cycler'/>
 </Page>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='13,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>1</Text>
-<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='31,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
-<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='14,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='64,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
-<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='17,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
-<Button Color='#FF0000' Location='5,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='11,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'>1</Text>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='29,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='12,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='62,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
+<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='15,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
+<Button Color='#FF0000' Location='3,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
 </Page>
-<Page Name='Slot1' ScrollExtent='100,40' Size='100,40'>
-<Image AbsorbsInput='false' Color='#FFDC00' Location='14,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
-<Page Location='32,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
+<Page Location='-2,0' Name='Slot1' ScrollExtent='98,40' Size='98,40'>
+<Image AbsorbsInput='false' Color='#FFDC00' Location='12,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
+<Page Location='30,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
 <Image AbsorbsInput='false' Name='WeaponIcon' ScrollExtent='67,17' Size='67,17' Style='/ItemIcons1GridHigh.cycler'/>
 </Page>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='W' Location='13,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>W</Text>
-<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='31,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
-<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='14,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
-<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='47,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='64,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
-<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='17,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
-<Button Color='#FF0000' LocalTooltip='Bob was not here' Location='5,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Tooltip='Bob was not here'></Button>
-<Button Color='#F3E138' Location='5,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='W' Location='11,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>W</Text>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='29,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='12,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
+<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='45,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='62,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
+<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='15,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
+<Button Color='#FF0000' LocalTooltip='Bob was not here' Location='3,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant' Tooltip='Bob was not here'></Button>
+<Button Color='#F3E138' Location='3,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
 </Page>
-<Page Location='100,0' Name='Slot2' ScrollExtent='100,40' Size='100,40'>
-<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='47,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
-<Image AbsorbsInput='false' Color='#FFDC00' Location='14,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
-<Page Location='32,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
+<Page Location='96,0' Name='Slot2' ScrollExtent='98,40' Size='98,40'>
+<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='45,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
+<Image AbsorbsInput='false' Color='#FFDC00' Location='12,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
+<Page Location='30,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
 <Image AbsorbsInput='false' Name='WeaponIcon' ScrollExtent='67,17' Size='67,17' Style='/ItemIcons1GridHigh.cycler'/>
 </Page>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='13,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
-<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='31,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
-<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='14,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='64,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
-<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='17,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
-<Button Color='#FF0000' Location='5,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='11,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='29,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='12,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='62,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
+<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='15,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
+<Button Color='#FF0000' Location='3,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
 </Page>
-<Page Location='200,0' Name='Slot3' ScrollExtent='100,40' Size='100,40'>
-<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='47,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
-<Image AbsorbsInput='false' Color='#FFDC00' Location='14,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
-<Page Location='32,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
+<Page Location='194,0' Name='Slot3' ScrollExtent='98,40' Size='98,40'>
+<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='45,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
+<Image AbsorbsInput='false' Color='#FFDC00' Location='12,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
+<Page Location='30,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
 <Image AbsorbsInput='false' Name='WeaponIcon' ScrollExtent='67,17' Size='67,17' Style='/ItemIcons1GridHigh.cycler'/>
 </Page>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='13,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
-<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='31,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
-<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='14,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='64,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
-<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='17,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
-<Button Color='#FF0000' Location='5,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='11,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='29,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='12,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='62,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
+<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='15,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
+<Button Color='#FF0000' Location='3,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
 </Page>
-<Page Location='300,0' Name='Slot4' ScrollExtent='100,40' Size='100,40'>
-<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='47,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
-<Image AbsorbsInput='false' Color='#FFDC00' Location='14,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
-<Page Location='32,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
+<Page Location='292,0' Name='Slot4' ScrollExtent='98,40' Size='98,40'>
+<Image Activated='true' GetsInput='true' LocalTooltip='Bobble was here' Location='45,25' Name='AmmoIcon' ScrollExtent='16,16' Size='16,16' Style='/ItemIcons1GridHigh.9mmbullet_AP' Tooltip='Bobble was here'/>
+<Image AbsorbsInput='false' Color='#FFDC00' Location='12,0' Name='Highlight' ScrollExtent='86,24' Size='86,24' Stretch='false' Style='/ProgressBars.Ammo.Background' Visible='false'/>
+<Page Location='30,3' Name='WeaponIconPage' ScrollExtent='64,17' Size='64,17'>
 <Image AbsorbsInput='false' Name='WeaponIcon' ScrollExtent='67,17' Size='67,17' Style='/ItemIcons1GridHigh.cycler'/>
 </Page>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='13,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
-<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='31,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
-<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='14,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='64,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
-<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='17,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
-<Button Color='#FF0000' Location='5,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
-<Button Color='#F3E138' Location='5,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='1' Location='11,-3' Name='HolsterText' ScrollExtent='17,13' Size='17,13' TextAlignment='Center' TextAlignmentVertical='Center'>1</Text>
+<Text AbsorbsInput='false' Font='/Fonts.ChatFont' GetsInput='false' Location='29,1' Name='InfoText' ScrollExtent='67,20' Size='67,20' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Progressbar BackgroundColor='#00F2C9' BarBackgroundColor='#00F2C9' Location='12,0' Name='AmmoProgress' Opacity='0.750' Progress='0.900' ScrollExtent='86,24' Size='86,24' Style='/ProgressBars.Ammo.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='500' Location='62,25' Name='ReserveAmmo' ScrollExtent='33,16' Size='33,16' TextAlignment='Center' TextAlignmentVertical='Center'>500</Text>
+<Button BackgroundOpacity='0.000' Color='#000000' Enabled='false' LocalText='Bob' LocalTooltip='[@ActiveWeaponAmmoCountTooltip]' Location='15,25' Name='AmmoCount' ScrollExtent='27,16' Size='27,16' Style='/Buttons.ActiveItems.TextButton' TextColor='#000000' Tooltip='@ActiveWeaponAmmoCountTooltip'>Bob</Button>
+<Button Color='#FF0000' Location='3,1' Name='Mode1' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,11' Name='Mode2' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,21' Name='Mode3' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
+<Button Color='#F3E138' Location='3,31' Name='Mode4' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
 </Page>
 <ImageStyle Name='OccupantStyle'>
 <ImageFrame Source='ui_hud_vehicle_occupant_00' SourceRect='0,0,8,8'/>
@@ -3057,27 +2956,6 @@ Targeted Object Name
 </Page>
 </Page>
 </Page>
-<Page Name='Performance' PackLocation='left,bottom' PackLocationProp='0000/0001,-768/0001' runengine='true' ScrollExtent='1024,769' Size='1024,769' Visible='false'>
-<Image Color='#FFFF00' Location='700,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='600,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='500,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='400,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='300,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='200,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='100,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Image Color='#FFFF00' Location='0,575' Name='marker' Opacity='0.700' ScrollExtent='8,8' Size='8,8' SourceRect='0,0,8,8' SourceResource='cruise_marker'/>
-<Text Font='/Fonts.DefaultFont' LocalText='70 ms' Location='700,580' Name='70 ms' Opacity='0.700' ScrollExtent='50,20' Size='50,20'>70 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='60 ms' Location='600,580' Name='60 ms' Opacity='0.700' ScrollExtent='50,36' Size='50,20'>60 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='50 ms' Location='500,580' Name='50 ms' Opacity='0.700' ScrollExtent='50,36' Size='50,20'>50 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='40 ms' Location='400,580' Name='40 ms' Opacity='0.700' ScrollExtent='50,36' Size='50,20'>40 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='30 ms' Location='300,580' Name='30 ms' Opacity='0.700' ScrollExtent='50,36' Size='50,20'>30 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='20 ms' Location='200,580' Name='20 ms' Opacity='0.700' ScrollExtent='50,36' Size='50,20'>20 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='10 ms' Location='100,580' Name='10 ms' Opacity='0.700' ScrollExtent='50,20' Size='50,20'>10 ms</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='0 ms' Location='0,580' Name='0 ms' Opacity='0.700' ScrollExtent='40,20' Size='40,20'>0 ms</Text>
-<Progressbar Color='#FF0000' LocalTooltip='Engine3D' Location='3,668' Name='Engine3D' Opacity='0.500' PackLocation='left,bottom' PackLocationProp='0003/0001,-101/0001' Progress='0.500' ScrollExtent='800,16' Size='800,16' Style='/ProgressBars.Attribute.style' Tooltip='Engine3D'/>
-<Progressbar Color='#00FF00' LocalTooltip='ClientManager' Location='3,691' Name='ClientManager' Opacity='0.500' PackLocation='left,bottom' PackLocationProp='0003/0001,-078/0001' Progress='0.500' ScrollExtent='800,16' Size='800,16' Style='/ProgressBars.Attribute.style' Tooltip='ClientManager'/>
-<Progressbar Color='#0000FF' LocalTooltip='Physics' Location='3,713' Name='Physics' Opacity='0.500' PackLocation='left,bottom' PackLocationProp='0003/0001,-056/0001' Progress='0.500' ScrollExtent='800,16' Size='800,16' Style='/ProgressBars.Attribute.style' Tooltip='Physics'/>
-</Page>
 <Page BackgroundColor='#008000' BackgroundOpacity='0.475' Location='788,206' Name='EditCharacter' OnHide='parent.wantsinput = shared
 parent.showcursor = false' OnShow='parent.wantsinput = true
 parent.showcursor = true' PackLocation='right,center' PackLocationProp='-236/0001,-178/0001' ScrollExtent='190,300' Size='190,300' Visible='false'>
@@ -3126,20 +3004,6 @@ $Name$
 <Dropdownbox DataSource='RankDS' Location='10,240' Name='Rank' OnSelect='ic_setrank parent.guid.text selecteditem.name' RowTemplate='Row' ScrollExtent='170,20' Size='170,20' Style='/dropdown20.style'/>
 <Button LocalText='Close' Location='50,270' Name='Close' OnPress='parent.visible = false' ScrollExtent='90,24' Size='90,24' Style='/Buttons.Medium.style'>Close</Button>
 </Page>
-<Page Location='645,662' Name='PingInfo' PackLocation='left,bottom' PackLocationProp='0645/0001,-106/0001' ScrollExtent='302,33' Size='302,33'>
-<Text Font='/SmallFont' LocalText='Ping:' Location='5,7' Name='PingLabel' ScrollExtent='30,14' Size='30,14'>Ping:</Text>
-<Text Font='/SmallFont' LocalText='88888 ms' Location='30,8' Name='Ping' ScrollExtent='51,14' Size='51,14' TextAlignment='Right'>88888 ms</Text>
-<Text Font='/SmallFont' LocalText='Avg:' Location='5,19' Name='AvgLabel' ScrollExtent='30,14' Size='30,14'>Avg:</Text>
-<Text Font='/SmallFont' LocalText='88888 ms' Location='30,19' Name='Avg' ScrollExtent='51,14' Size='51,14' TextAlignment='Right'>88888 ms</Text>
-<Text Font='/SmallFont' LocalText='Framerate:' Location='83,8' Name='FramerateLabel' ScrollExtent='54,14' Size='54,14'>Framerate:</Text>
-<Text Font='/SmallFont' LocalText='XXX.X f/s' Location='136,8' Name='Framerate' ScrollExtent='43,14' Size='43,14' TextAlignment='Right'>XXX.X f/s</Text>
-<Text Font='/SmallFont' LocalText='Polygons:' Location='83,19' Name='PolygonsLabel' ScrollExtent='54,14' Size='54,14'>Polygons:</Text>
-<Text Font='/SmallFont' LocalText='XXXXXXX' Location='136,19' Name='Polygons' ScrollExtent='43,14' Size='43,14' TextAlignment='Right'>XXXXXXX</Text>
-<Text Font='/SmallFont' LocalText='Upstream:' Location='180,8' Name='UpstreamLabel' ScrollExtent='60,14' Size='60,14'>Upstream:</Text>
-<Text Font='/SmallFont' LocalText='1046 b/s' Location='240,8' Name='Upstream' ScrollExtent='47,14' Size='47,14' TextAlignment='Right'>1046 b/s</Text>
-<Text Font='/SmallFont' LocalText='Downstream:' Location='180,19' Name='DownstreamLabel' ScrollExtent='60,14' Size='60,14'>Downstream:</Text>
-<Text Font='/SmallFont' LocalText='1446 b/s' Location='240,19' Name='Downstream' ScrollExtent='47,14' Size='47,14' TextAlignment='Right'>1446 b/s</Text>
-</Page>
 <Page Location='302,105' MinimumSize='240,60' movable='false' Name='RankPopup' PackLocation='Center,Top' PackLocationProp='-210/0001,0105/0001' PackSize='Fixed,Fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='440,60' Size='440,60' Visible='false'>
 <Text Activated='true' Font='/Fonts.HudFont3' GetsInput='false' Location='45,13' MaxLines='1' Name='Text' PackSize='absolute,absolute' PackSizeProp='0090/0001,0037/0001' ScrollExtent='350,23' Size='350,23' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
 <Image Location='18,10' Name='LeftIcon' PackLocation='Left,Top' PackLocationProp='0018/0001,0010/0001' ScrollExtent='28,31' Size='28,31' Style='/Icons.HUD.Mini_logo_VS'/>
@@ -3177,5 +3041,108 @@ $Name$
 </Page>
 <Page Color='#FF0000' GetsInput='false' Location='831,675' Name='MosquitoIndicator' PackLocation='right,bottom' PackLocationProp='-193/0001,-093/0001' ScrollExtent='42,40' Size='42,40' Visible='false'>
 <Image AbsorbsInput='false' Name='MosquitoIcon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_mosquito_overflight' Style=' '/>
+</Page>
+<Page GetsInput='false' Location='903,660' Name='BombOKIndicator' PackLocation='right,bottom' PackLocationProp='-121/0001,-108/0001' ScrollExtent='54,54' Size='54,54' Visible='false'>
+<Image AbsorbsInput='false' Name='BombIcon' ScrollExtent='54,54' Size='54,54' SourceRect='0,0,54,54' SourceResource='ui_hud_bombs_00' Style=' '/>
+</Page>
+<Page GetsInput='false' Location='903,660' Name='BombNOIndicator' PackLocation='right,bottom' PackLocationProp='-121/0001,-108/0001' ScrollExtent='54,54' Size='54,54'>
+<Image AbsorbsInput='false' Name='BombIcon' ScrollExtent='54,54' Size='54,54' SourceRect='55,0,109,54' SourceResource='ui_hud_bombs_00' Style=' '/>
+</Page>
+<Page Location='255,178' MinimumSize='427,409' movable='true' Name='RearmTerminal' noresizex='true' resizable='true' ScrollExtent='427,409' Size='427,409' Visible='false'>
+<Image BackgroundOpacity='1.000' Location='381,58' Name='TabBorderTop5' Opacity='0.750' PackLocation='left,top' PackLocationProp='0381/0001,0058/0001' PackSize='absolute,fixed' PackSizeProp='0407/0001,0002/0003' ScrollExtent='20,1' Size='20,1' Style='TabBorderTopStyle'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Color='#385E61' Location='21,58' Name='TabBorder' PackSize='absolute,absolute' PackSizeProp='0045/0001,0126/0001' RStyleDefault='/WindowPanes.TabBorder.style' ScrollExtent='382,283' Size='382,283'/>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='352,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-075/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='58,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0058/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@EquipmentTerminalTitle]' Location='92,6' Name='TitleText' PackLocation='center,top' PackLocationProp='-121/0001,0006/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='245,20' Size='245,20' TextAlignment='Center' TextAlignmentVertical='Center'>@EquipmentTerminalTitle</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='30,-1' Name='Title' PackSize='absolute,fixed' PackSizeProp='0054/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='373,32' Size='373,32'/>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@VehicleTabTooltip]' Location='21,33' Name='VehicleAmmoTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@VehicleTabTooltip'>@VehicleTab</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FavotiresTabTooltip]' Location='95,33' Name='FavoritesTab' ScrollExtent='85,24' Size='85,24' Style='/Buttons.WindowIconTab.style' Tooltip='@FavotiresTabTooltip'>@FavoritesTab</Checkbox>
+<Page AbsorbsInput='false' Location='24,62' Name='RearmPage' PackSize='absolute,absolute' PackSizeProp='0053/0001,0094/0001' ScrollExtent='374,315' Size='374,315'>
+<Page Name='ListPage' PackSize='absolute,absolute' PackSizeProp='0000/0001,0131/0001' ScrollExtent='374,184' Size='374,184'>
+<Image BackgroundOpacity='1.000' Location='289,155' Name='Selection' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='57,29' Size='57,29' Style='S'/>
+<Scrollbar Control='RearmTerminalListbox' Location='364,8' Name='ScrollRearmTerminalListbox' PackLocation='right,top' PackLocationProp='-010/0001,0008/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0008/0001' ScrollExtent='9,176' Size='9,176' Style='/ScrollBars.vertical.style'/>
+<Listbox DataSource='RearmTerminalDataSource' Location='2,8' Name='RearmTerminalListbox' PackSize='absolute,absolute' PackSizeProp='0015/0001,0008/0001' RowTemplate='RearmTerminalTemplate' ScrollExtent='359,464' Size='359,176' Style='/Listboxes.Clear.style'/>
+</Page>
+<Rectangle Color='#385E61' Location='0,187' Name='InfoRect' PackLocation='left,bottom' PackLocationProp='0000/0001,-128/0001' PackSize='absolute,fixed' PackSizeProp='0001/0001,0002/0003' ScrollExtent='373,1' Size='373,1'/>
+<Text Font='/Fonts.HudFont2' LocalText='[@ItemInfo]' Location='3,190' Name='ItemInfoText' PackLocation='left,bottom' PackLocationProp='0003/0001,-125/0001' PackSize='absolute,fixed' PackSizeProp='0014/0001,0002/0003' ScrollExtent='360,86' Size='360,86' TextAlignment='Center'>@ItemInfo</Text>
+<Scrollbar Control='ItemInfoText' Location='364,190' Name='ItemInfoScrollbar' PackLocation='right,bottom' PackLocationProp='-010/0001,-125/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='9,86' Size='9,86' Style='/ScrollBars.vertical.style'/>
+<Button LocalText='[@BuyItem]' LocalTooltip='[@BuyTooltip]' Location='4,287' Name='BuyButton' PackLocation='center,bottom' PackLocationProp='-183/0001,-028/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@BuyTooltip'>@BuyItem</Button>
+<Button LocalText='[@SellItem]' LocalTooltip='[@SellTooltip]' Location='298,287' Name='SellButton' PackLocation='center,bottom' PackLocationProp='0111/0001,-028/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@SellTooltip'>@SellItem</Button>
+<DataSource Name='RearmTerminalDataSource'>
+<Data color='#FFFFFF' hasitem1='false' hasitem2='false' hasitem3='false' hasitem4='false' hasitem5='false' hasitem6='false' internationalize='STANDARD ASSAULT' isheading='true' isitem='false' issubitem='false' Name='standard'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Repeater' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.repeater' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='25' item1.x='290' item2.icon='/ItemIcons1GridHigh.9mmbullet' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.9mmbullet_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Scatter' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.isp' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='25' item1.x='290' item2.icon='/ItemIcons1GridHigh.shotgun_shell' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.shotgun_shell_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Suppressor' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.suppressor' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='51' item1.x='265' item2.icon='/ItemIcons1GridHigh.9mmbullet' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.9mmbullet_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='false' hasitem2='false' hasitem3='false' hasitem4='false' hasitem5='false' hasitem6='false' internationalize='MEDIUM ASSAULT' isheading='true' isitem='false' issubitem='false' Name='medium'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Gauss' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.gauss' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='51' item1.x='265' item2.icon='/ItemIcons1GridHigh.9mmbullet' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.9mmbullet_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='true' hasitem5='true' hasitem6='true' hasitem7='true' internationalize='Punisher' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.9mmbullet' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='25' item1.x='200' item2.icon='/ItemIcons1GridHigh.9mmbullet_ap' item2.w='25' item2.x='230' item3.icon='/ItemIcons1GridHigh.rocket' item3.w='25' item3.x='260' item4.icon='/ItemIcons1GridHigh.frag_cartridge' item4.w='25' item4.x='290' item5.icon='/ItemIcons1GridHigh.jammer_cartridge' item5.w='25' item5.x='320' item6.icon='/ItemIcons1GridHigh.plasma_cartridge' item6.w='25' item6.x='350' item7.icon='/ItemIcons1GridHigh.punisher' item7.w='75' item7.x='120' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Sweeper' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.lasher' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='239' item2.icon='/ItemIcons1GridHigh.shotgun_shell' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.shotgun_shell_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='false' hasitem2='false' hasitem3='false' hasitem4='false' hasitem5='false' hasitem6='false' internationalize='HEAVY ASSAULT' isheading='true' isitem='false' issubitem='false' Name='heavy'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='false' internationalize='Jackhammer' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.r_shotgun' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='239' item2.icon='/ItemIcons1GridHigh.shotgun_shell' item2.w='25' item2.x='320' item3.icon='/ItemIcons1GridHigh.shotgun_shell_ap' item3.w='25' item3.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='false' hasitem2='false' hasitem3='false' hasitem4='false' hasitem5='false' hasitem6='false' internationalize='SNIPER' isheading='true' isitem='false' issubitem='false' Name='sniper'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='false' hasitem4='false' internationalize='Bolt Driver' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.bolt_driver' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='270' item2.icon='/ItemIcons1GridHigh.bolt' item2.w='25' item2.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='false' hasitem2='false' hasitem3='false' hasitem4='false' hasitem5='false' hasitem6='false' internationalize='SPECIAL ASSAULT' isheading='true' isitem='false' issubitem='false' Name='special'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='false' hasitem3='false' hasitem4='false' internationalize='Decimator' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.phoenix' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='300' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='false' hasitem4='false' internationalize='Rocklet' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.rocklet' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='270' item2.icon='/ItemIcons1GridHigh.rocket' item2.w='25' item2.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+<Data color='#FFFFFF' hasitem1='true' hasitem2='true' hasitem3='true' hasitem4='true' internationalize='Thumper' isheading='false' isitem='true' issubitem='false' item1.icon='/ItemIcons1GridHigh.thumper' item1.name='AMP' item1.tooltip='@amptooltip' item1.w='75' item1.x='210' item2.icon='/ItemIcons1GridHigh.frag_cartridge' item2.w='25' item2.x='290' item3.icon='/ItemIcons1GridHigh.jammer_cartridge' item3.w='25' item3.x='320' item4.icon='/ItemIcons1GridHigh.plasma_cartridge' item4.w='25' item4.x='350' Localitem1.tooltip='[@amptooltip]' Name='weapon1' price='10000'/>
+</DataSource>
+<Template Name='RearmTerminalTemplate' Size='359,29'>\<image color = \'$item1.color$\' location = \'$item1.x$,2\' name = \'Image1Icon\' opacity = \'$item1.opacity$\' scrollextent = \'$item1.w$,25\' size = \'$item1.w$,25\' style = \'$item1.icon\' visible = \'$HasItem1$\'/\>
+\<image color = \'$item2.color$\' location = \'$item2.x$,2\' name = \'Image2Icon\' opacity = \'$item2.opacity$\' scrollextent = \'$item2.w$,25\' size = \'$item2.w$,25\' style = \'$item2.icon\' visible = \'$HasItem2$\'/\>
+\<image color = \'$item3.color$\' location = \'$item3.x$,2\' name = \'Image3Icon\' opacity = \'$item3.opacity$\' scrollextent = \'$item3.w$,25\' size = \'$item3.w$,25\' style = \'$item3.icon\' visible = \'$HasItem3$\'/\>
+\<image color = \'$item4.color$\' location = \'$item4.x$,2\' name = \'Image4Icon\' opacity = \'$item4.opacity$\' scrollextent = \'$item4.w$,25\' size = \'$item4.w$,25\' style = \'$item4.icon\' visible = \'$HasItem4$\'/\>
+\<image color = \'$item5.color$\' location = \'$item5.x$,2\' name = \'Image5Icon\' opacity = \'$item5.opacity$\' scrollextent = \'$item5.w$,25\' size = \'$item5.w$,25\' style = \'$item5.icon\' visible = \'$HasItem5$\'/\>
+\<image color = \'$item6.color$\' location = \'$item6.x$,2\' name = \'Image6Icon\' opacity = \'$item6.opacity$\' scrollextent = \'$item6.w$,25\' size = \'$item6.w$,25\' style = \'$item6.icon\' visible = \'$HasItem6$\'/\>
+\<image color = \'$item7.color$\' location = \'$item7.x$,2\' name = \'Image7Icon\' opacity = \'$item7.opacity$\' scrollextent = \'$item7.w$,25\' size = \'$item7.w$,25\' style = \'$item7.icon\' visible = \'$HasItem7$\'/\>
+\<text align = \'center\' color = \'$color\' font = \'/Fonts.HudFont2\' location = \'4,2\' scrollextent = \'420,25\' size = \'420,25\' textalignmentvertical = \'center\' visible = \'$IsItem$\'\>
+$Internationalize$ 
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'40,2\' size = \'380,50\' verticalalign = \'center\' visible = \'$IsSubitem$\'\>
+$Internationalize$ 
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'0,3\' maxlines = \'1\' size = \'340,18\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$IsHeading$\'\>
+$Internationalize$
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'200,2\' size = \'150,50\' verticalalign = \'center\'\>
+$Time$
+\</text\>
+\<Image backgroundopacity = \'1.000\' location = \'0,10\' name = \'UnderlineTemplate\' rstyledefault = \'/Listboxes.ListboxContentHeader.style\' scrollextent = \'359,8\' size = \'359,8\' visible = \'$IsHeading$\'/\></Template>
+</Page>
+<Page AbsorbsInput='false' Location='24,62' Name='FavoritesPage' PackSize='absolute,absolute' PackSizeProp='0053/0001,0094/0001' ScrollExtent='374,315' Size='374,315' Visible='false'>
+<Template Name='OldTemplate' Size='360,20'>\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'4,2\' maxlines = \'1\' size = \'32,20\'\>
+$slot$
+\</text\>
+\<Checkbox backgroundopacity = \'1.0\' checked = \'$isdefault$\' getsinput = \'false\' location = \'50,0\' scrollextent = \'15,20\' size = \'15,20\' style = \'/Buttons.DefaultCheckbox.style\'\>
+\</Checkbox\>
+\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'100,2\' maxlines = \'1\' size = \'250,20\'\>
+$name$
+\</text\></Template>
+<Text Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@InventoryFavoriteName]' LocalTooltip='[@SelectServerNewsTextHeadingTooltip]' Location='45,-3' Name='Name' ScrollExtent='261,20' Size='261,20' TextAlignment='Center' Tooltip='@SelectServerNewsTextHeadingTooltip' TooltipStyle='/Tooltips.Default'>@InventoryFavoriteName</Text>
+<Text Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@InventoryFavoriteDefault]' LocalTooltip='[@SelectServerNewsTextHeadingTooltip]' Location='20,-3' Name='Default' ScrollExtent='80,51' Size='80,20' TextAlignment='Center' Tooltip='@SelectServerNewsTextHeadingTooltip' TooltipStyle='/Tooltips.Default' Visible='false'>@InventoryFavoriteDefault</Text>
+<Listbox DataSource='/DataSources.VehicleFavorites' Location='2,24' Name='FavoritesListbox' PackSize='absolute,absolute' PackSizeProp='0014/0001,0062/0001' RowTemplate='FavoritesTemplate' ScrollExtent='360,253' Size='360,253' Style='/Listboxes.Clear.style'/>
+<Button LocalText='[@LoadFavorite]' LocalTooltip='[@LoadFavoriteTooltip]' Location='4,287' Name='LoadButton' PackLocation='center,bottom' PackLocationProp='-183/0001,-028/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@LoadFavoriteTooltip'>@LoadFavorite</Button>
+<Button LocalText='[@SaveFavorite]' LocalTooltip='[@SaveFavoriteTooltip]' Location='151,287' Name='SaveButton' PackLocation='center,bottom' PackLocationProp='-036/0001,-028/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@SaveFavoriteTooltip'>@SaveFavorite</Button>
+<Button LocalText='[@DeleteFavorite]' LocalTooltip='[@DeleteFavoriteTooltip]' Location='298,287' Name='DeleteButton' PackLocation='center,bottom' PackLocationProp='0111/0001,-028/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DeleteFavoriteTooltip'>@DeleteFavorite</Button>
+<Template Name='FavoritesTemplate' Size='360,20'>\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'4,2\' maxlines = \'1\' size = \'32,20\'\>
+$slot$
+\</text\>
+\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'40,2\' maxlines = \'1\' size = \'260,20\'\>
+$name$
+\</text\>
+\<text color = \'$textcolor$\' font = \'/Fonts.HudFont2\' location = \'310,2\' maxlines = \'1\' size = \'150,20\'\>
+$time$
+\</text\></Template>
+</Page>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='23,343' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0023/0001,-066/0001' PackSize='absolute,fixed' PackSizeProp='0048/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='379,31' Size='379,31'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='427,392' Size='427,392' Stretch='false'/>
+</Page>
+<Page GetsInput='false' Location='784,675' Name='ModuleIndicator' PackLocation='right,bottom' PackLocationProp='-240/0001,-093/0001' ScrollExtent='42,40' Size='42,40' Visible='false'>
+<Image AbsorbsInput='false' Color='#F10A1F' Name='ModuleIconInvalid' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_empty' Style=' '/>
+<Image AbsorbsInput='false' Name='ModuleIconEmpty' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_empty' Style=' '/>
+<Image AbsorbsInput='false' Color='#FF7F00' Name='ModuleIconBind' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
+<Image AbsorbsInput='false' Color='#FFFF00' Name='ModuleIconEnergy' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
+<Image AbsorbsInput='false' Color='#E5C3A1' Name='ModuleIconFortifier' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
+<Image AbsorbsInput='false' Color='#00FFFF' Name='ModuleIconDefender' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
+<Image AbsorbsInput='false' Color='#00FF00' Name='ModuleIconVehicle' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
+<Image AbsorbsInput='false' Color='#007FFF' Name='ModuleIconWeapon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_module_full' Style=' '/>
 </Page>
 </Page>

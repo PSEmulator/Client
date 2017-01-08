@@ -7,6 +7,7 @@ $begin OfflineTrainingMission1
 
     # Let's start this thing...
     $freeze
+    $set_can_clear_inventory false
 
     # 1st dialogue
     $text_dlg @OfflineMission1_01 30
@@ -15,7 +16,6 @@ $begin OfflineTrainingMission1
     $wait 3000
 
     # 2nd dialogue    
-    $set_page HUD
     $flash Chat
     $text_dlg @OfflineMission1_02 30
     $play Basic_02.mp3
@@ -37,40 +37,35 @@ $begin OfflineTrainingMission1
     $wait 3000
 
     # 5th dialogue    
-    $set_page ActiveItems.ControlMap
-    $flash Radar
+    $flash ActiveItems.ControlMap.Radar
     $text_dlg @OfflineMission1_05 30
     $play Basic_05.mp3
     $sync
     $wait 3000
 
     # 6th dialogue    
-    $set_page ActiveItems
-    $flash SoldierStatus
+    $flash ActiveItems.SoldierStatus
     $text_dlg @OfflineMission1_06 30
     $play Basic_06.mp3
     $sync
     $wait 3000
 
     # 7th dialogue    
-    $set_page ActiveItems
-    $flash ShortcutPage
+    $flash ActiveItems.ShortcutPage
     $text_dlg @OfflineMission1_07 30
     $play Basic_07.mp3
     $sync
     $wait 3000
 
     # 8th dialogue    
-    $set_page ActiveItems
-    $flash InventoryPage
+    $flash ActiveItems.InventoryPage
     $text_dlg @OfflineMission1_08 30
     $play Basic_08.mp3
     $sync
     $wait 3000
 
     # 9th dialogue
-    $set_page ActiveItems
-    $flash Control
+    $flash ActiveItems.Control
     $text_dlg @OfflineMission1_09 30
     $play Basic_09.mp3
     $sync
@@ -161,11 +156,11 @@ $begin OfflineTrainingMission1
 
 
     $thaw
-    $create_avatar "New Conglomerate" 4825 2695 77 200 NC male normal 1
+    $create_avatar "New Conglomerate" 4819 2703 76 200 NC male normal 1
     $set_orientation 200 10746
     $create_avatar "Terran Republic" 4828 2691 77 201 TR male normal 2
     $set_orientation 201 10579
-    $create_avatar "Vanu Sovereignty" 4830 2687 77 202 VS male normal 3
+    $create_avatar "Vanu Sovereignty" 4835 2679 76 202 VS male normal 3
     $set_orientation 202 10446
     
     $set_waypoint 4783 2632 3
@@ -192,8 +187,8 @@ $begin OfflineTrainingMission1
     $create_object suppressor 4862.00 2604.0 1000 100 1
     $create_object beamer 4862.00 2605.48 1000 101 1
     $create_object 9mmbullet 4864.80 2606.01 1000 102 1
-    $create_object 9mmbullet 4864.22 2605.53 1000 103 1
-    $create_object energy_cell 4864.01 2604.43 1000 106 1
+    $create_object 9mmbullet 4864.80 2605.53 1000 103 1
+    $create_object energy_cell 4864.80 2604.43 1000 106 1
     $create_object energy_cell 4863.97 2604.43 1000 107 1
     $create_object 9mmbullet_AP 4863.97 2606.01 1000 104 1
     $create_object 9mmbullet_AP 4863.97 2605.53 1000 105 1
@@ -205,23 +200,23 @@ $begin OfflineTrainingMission1
     $play Basic_19.mp3
 
     # wait for the user to pick up all of the items
-	$change_action_lock DAT 11 1
-	$change_action_lock GOT 6 1
-	$change_action_lock GOT 28 1
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
-	$wait_on_use 0 11
+	$change_action_lock DAT DAT_PICKUP_OBJECT 1
+	$change_action_lock GOT GOT_Weapon 1
+	$change_action_lock GOT GOT_Ammunition 1
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
+	$wait_on_use Generic DAT_PICKUP_OBJECT
     #$get suppressor beamer 9mmbullet 9mmbullet energy_cell energy_cell 9mmbullet_AP 9mmbullet_AP
     $sync
 
-	$change_action_lock DAT 11 0
-	$change_action_lock GOT 6 0
-	$change_action_lock GOT 28 0
+	$change_action_lock DAT DAT_PICKUP_OBJECT 0
+	$change_action_lock GOT GOT_Weapon 0
+	$change_action_lock GOT GOT_Ammunition 0
 
     $freeze false
 

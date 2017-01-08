@@ -42,9 +42,135 @@ tod_time VRshootingLight 12am 0.0
 tod_time VRshootingLightB 3am 0.0
 tod_end
 
+##underground
+
+tod_time ugd_morn 5am 0.000000
+tod_time ugd_day 11am 0.000000
+tod_time ugd_night 6pm 0.000000
+tod_end
+
+##ugd20
+
+tod_time ugd_20 5am 0.000000
+tod_time ugd_20 11am 0.000000
+tod_time ugd_20 6pm 0.000000
+tod_end
+
+##ugd18
+
+tod_time ugd_18 5am 0.000000
+tod_time ugd_18 11am 0.000000
+tod_time ugd_18 6pm 0.000000
+tod_end
+
+##ugd17
+
+tod_time ugd_17 5am 0.000000
+tod_time ugd_17 11am 0.000000
+tod_time ugd_17 6pm 0.000000
+tod_end
+
+##ugd16
+
+tod_time ugd_16 5am 0.000000
+tod_time ugd_16 11am 0.000000
+tod_time ugd_16 6pm 0.000000
+tod_end
+
+##ugd15
+
+tod_time ugd_15 5am 0.000000
+tod_time ugd_15 11am 0.000000
+tod_time ugd_15 6pm 0.000000
+tod_end
+
+##ugd14
+
+tod_time ugd_14 5am 0.000000
+tod_time ugd_14 11am 0.000000
+tod_time ugd_14 6pm 0.000000
+tod_end
+
+##ugd13
+
+tod_time ugd_13 5am 0.000000
+tod_time ugd_13 11am 0.000000
+tod_time ugd_13 6pm 0.000000
+tod_end
+
+##ugd12
+
+tod_time ugd_12 5am 0.000000
+tod_time ugd_12 11am 0.000000
+tod_time ugd_12 6pm 0.000000
+tod_end
+
+##ugd11
+
+tod_time ugd_11 5am 0.000000
+tod_time ugd_11 11am 0.000000
+tod_time ugd_11 6pm 0.000000
+tod_end
+
+##ugd10
+
+tod_time ugd_10 5am 0.000000
+tod_time ugd_10 11am 0.000000
+tod_time ugd_10 6pm 0.000000
+tod_end
+
+##ugd09
+
+tod_time ugd_09 5am 0.000000
+tod_time ugd_09 11am 0.000000
+tod_time ugd_09 6pm 0.000000
+tod_end
+
+##ugd08
+
+tod_time ugd_08 5am 0.000000
+tod_time ugd_08 11am 0.000000
+tod_time ugd_08 6pm 0.000000
+tod_end
+
+##ugd07
+
+tod_time ugd_07 5am 0.000000
+tod_time ugd_07 11am 0.000000
+tod_time ugd_07 6pm 0.000000
+tod_end
+
+##ugd06
+
+tod_time ugd_06 5am 0.000000
+tod_time ugd_06 11am 0.000000
+tod_time ugd_06 6pm 0.000000
+tod_end
+
+##ugd05
+
+tod_time ugd_05 5am 0.000000
+tod_time ugd_05 11am 0.000000
+tod_time ugd_05 6pm 0.000000
+tod_end
+
+##ugd02
+
+tod_time ugd_02 5am 0.000000
+tod_time ugd_02 11am 0.000000
+tod_time ugd_02 6pm 0.000000
+tod_end
+
+##ugd01
+
+tod_time ugd_01 5am 0.000000
+tod_time ugd_01 11am 0.000000
+tod_time ugd_01 6pm 0.000000
+tod_end
+
 ##map02
 
-tod_time artic_day 5am 0.0
+tod_time artic_day 5am 0.000000
 tod_end
 
 ##map01
@@ -67,4 +193,25 @@ tod_time vr_training 9am 0.0
 tod_time vr_training 10am 0.0
 tod_time vr_training 11am 0.0
 tod_time vr_training 12pm 0.0
+tod_end
+
+##ugd19
+
+tod_time ugd_19 5am 0.000000
+tod_time ugd_19 11am 0.000000
+tod_time ugd_19 6pm 0.000000
+tod_end
+
+##ugd03
+
+tod_time ugd_03 5am 0.000000
+tod_time ugd_03 11am 0.000000
+tod_time ugd_03 6pm 0.000000
+tod_end
+
+##ugd04
+
+tod_time ugd_04 5am 0.000000
+tod_time ugd_04 11am 0.000000
+tod_time ugd_04 6pm 0.000000
 tod_end

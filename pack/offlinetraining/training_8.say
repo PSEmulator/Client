@@ -1,4 +1,4 @@
-     ########################################################
+########################################################
 # Dying and Respawning Script
 ########################################################
 
@@ -47,11 +47,11 @@ $begin Main
 	# Use the terminal...
 	#------------------------------------
 	$thaw
-	$change_action_lock DAT 2 1
-	$change_action_lock GOT 49 1
-	$wait_on_use 49 2
-	$change_action_lock DAT 2 0
-	$change_action_lock GOT 49 0
+	$change_action_lock DAT DAT_USE_SPAWNTERMINAL 1
+	$change_action_lock GOT SpawnTerminal 1
+	$wait_on_use SpawnTerminal DAT_USE_SPAWNTERMINAL
+	$change_action_lock DAT DAT_USE_SPAWNTERMINAL 0
+	$change_action_lock GOT SpawnTerminal 0
 	$change_spawn_point 3 1 0 0 0
 	
 	
@@ -125,12 +125,13 @@ $begin Main
 	$play Dying_11.mp3
 	$sync
 	$thaw
-	$change_action_lock DAT 13 1
-	$change_action_lock GOT 3 1
-	$wait_on_use 3 13
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 1
+	$change_action_lock DAT DAT_ALL 1
+	$change_action_lock GOT GOT_Vehicle 1
+	$wait_on_use GOT_Vehicle DAT_USE_MOUNT_ZONE
 	$deploy_vehicle 505 0 
-	$change_action_lock DAT 13 0
-	$change_action_lock GOT 3 0
+	$change_action_lock DAT DAT_USE_MOUNT_ZONE 0
+	$change_action_lock GOT GOT_Vehicle 0
 
 	$freeze false
 	$text_dlg @OfflineMission8_12 25
@@ -169,9 +170,9 @@ $begin Main
 	$play Dying_15.mp3
 	$sync
 	$thaw
-	$change_action_lock DAT 6 1
-	$wait_on_use 0 6
-	$change_action_lock DAT 6 0
+	$change_action_lock DAT DAT_DECONSTRUCT_AVATAR 1
+	$wait_on_use Generic DAT_DECONSTRUCT_AVATAR
+	$change_action_lock DAT DAT_DECONSTRUCT_AVATAR 0
 
 	$text_dlg @OfflineMission8_16 25
 	$play Dying_16.mp3
@@ -189,11 +190,13 @@ $begin Main
 	#------------------------------------
 	# Recall...
 	#------------------------------------
+	$set_can_recall true
 	$wait_until_zone -1
+	$set_can_recall false
 
-	$set_position 15010 4380 3815 84 2
-	$set_position 15010 4143 3712 45 0
-	$set_position 15010 3355 4324 56 1
+	$set_position 15010 3088 4740 58 2
+	$set_position 15010 2858 3025 36 0
+	$set_position 15010 4714 3393 70 1
 
 	$text_dlg @OfflineMission8_18 25
 	$play Dying_18.mp3

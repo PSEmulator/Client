@@ -4,34 +4,41 @@
 #=======================================================
 
 $begin OfflineTrainingMission2
-	
+
+	#-----------------------------------------
+	# Set up our continent
+	#-----------------------------------------
+	$building_info ALL 3 10
+
+	$set_avatar_armor 15010 normal
 	$freeze false
-	$wait 10
+	# BOBM - removed for TT6150 $wait 10
 	$text_dlg @OfflineMission2_01 30
+	$play Certification_01.mp3
 	$sync
 
 	#-----------------------------------------
 	# User needs to open thier inventory
 	#-----------------------------------------
-	$set_page SoldierManagement
-	$flash button_inventory
+	$flash SoldierManagement.button_inventory
 	$wait_on_show Inventory 1 x
 
 	#-----------------------------------------
 	# User needs to close their inventory
 	#-----------------------------------------
 	$text_dlg @OfflineMission2_02 30
+	$play Certification_02.mp3
 	$wait_on_show Inventory 0 x
 	$sync
-	
 
 	#------------------------------------------
 	# Go to the waypoint by the HART building...
 	#------------------------------------------
 	$text_dlg @OfflineMission2_03 30
-	$set_waypoint 4454 3785 13
-	$set_waypoint 4200 3755 12
-	$set_waypoint 3406 4361 11
+	$play Certification_03.mp3
+	$set_waypoint 3067 4822 13
+	$set_waypoint 2916 2996 12
+	$set_waypoint 4761 3434 11
 	$sync
 	$thaw
 	$wait_waypoint 1
@@ -41,9 +48,10 @@ $begin OfflineTrainingMission2
 	# Enter the building...
 	#-------------------------------------------
 	$text_dlg @OfflineMission2_04 30
-	$set_waypoint 4454 3774 87 13
-	$set_waypoint 4200 3766 47 12
-	$set_waypoint 3405 4373 58 11
+	$play Certification_04.mp3
+	$set_waypoint 3051 4822 59 13
+	$set_waypoint 2933 2996 38 12
+	$set_waypoint 4773 3446 71 11
 	$sync
 	$thaw
 	$wait_waypoint 1
@@ -53,49 +61,49 @@ $begin OfflineTrainingMission2
 	# Go to the cert terminal and use it...
 	#---------------------------------------------
 	$text_dlg @OfflineMission2_05 30
-	$set_waypoint 4459 3776 87 13
-	$set_waypoint 4204 3765 47 12
-	$set_waypoint 3410 4370 58 11
+	$play Certification_05.mp3
+	$set_waypoint 3056 4827 59 13
+	$set_waypoint 2929 2992 38 12
+	$set_waypoint 4766 3446 71 11
 	$sync
 	$thaw
 	$wait_waypoint 1
-	$change_action_lock DAT 4 1
-	$change_action_lock GOT 51 1
-	$wait_on_use 51 4
+	$change_action_lock DAT DAT_USE_CERTIFICATIONTERMINAL 1
+	$change_action_lock GOT CertificationTerminal 1
+	$wait_on_use CertificationTerminal DAT_USE_CERTIFICATIONTERMINAL
 	$freeze false
-	
-	
 		
 	#---------------------------------------------
 	# Get Medium Assault...
 	#---------------------------------------------
 	$text_dlg @OfflineMission2_06 30
+	$play Certification_06.mp3
 	$add_certification medium_assault 1
 	$sync
-	
 	
 	#---------------------------------------------
 	# Go to the equipment terminal and use it...
 	#---------------------------------------------	
 	$text_dlg @OfflineMission2_07 30
-	$set_waypoint 4462 3774 87 13
-	$set_waypoint 4209 3766 47 12
-	$set_waypoint 3415 4372 58 11
+	$play Certification_07.mp3
+	$set_waypoint 3054 4831 59 13
+	$set_waypoint 2930 2987 38 12
+	$set_waypoint 4765 3450 71 11
 	$thaw
 	$wait_waypoint 1
-	$change_action_lock GOT 51 0
-	$change_action_lock DAT 4 0
-	$change_action_lock DAT 5 1
-	$change_action_lock GOT 18 1
-	$wait_on_use 18 5
+	$change_action_lock GOT CertificationTerminal 0
+	$change_action_lock DAT DAT_USE_CERTIFICATIONTERMINAL 0
+	$change_action_lock DAT DAT_USE_PURCHASETERMINAL 1
+	$change_action_lock GOT GOT_OrderTerminal 1
+	$wait_on_use GOT_OrderTerminal DAT_USE_PURCHASETERMINAL
 	$freeze false
 	$sync
-	
 		
 	#-----------------------------------------------
 	# Click around a bit....
 	#-----------------------------------------------
 	$text_dlg @OfflineMission2_08 30
+	$play Certification_08.mp3
 	$set_page EquipmentTerminal
 	$click_item FavoritesTab
 	$wait_click FavoritesTab
@@ -103,51 +111,51 @@ $begin OfflineTrainingMission2
 	$wait_click WeaponTab
 	$sync
 	
-	
 	#----------------------------------------------
-	# Get the punisher...
+	# Get the Punisher...
 	#----------------------------------------------	
 	$text_dlg @OfflineMission2_09 30
+	$play Certification_09.mp3
 	$get punisher
 	$sync
-	
 		
 	#----------------------------------------------
 	# Get the AMP...
 	#----------------------------------------------	
 	$text_dlg @OfflineMission2_10 30
+	$play Certification_10.mp3
 	$get ilc9
 	$sync
-	
 		
 	#-----------------------------------------------
 	# Get rid of the AMP
 	#-----------------------------------------------
 	$text_dlg @OfflineMission2_11 30
+	$play Certification_11.mp3
 	$lose ilc9
 	$sync
-	
 	
 	#-----------------------------------------------
 	# Get some ammo
 	#-----------------------------------------------
 	$text_dlg @OfflineMission2_12 30
+	$play Certification_12.mp3
 	$get 9mmbullet 9mmbullet 9mmbullet 9mmbullet_AP
 	$sync
-	
 	
 	#-----------------------------------------------
 	# Get a medkit
 	#-----------------------------------------------
 	$text_dlg @OfflineMission2_13 30
+	$play Certification_13.mp3
 	$get medkit
 	$sync
-	
 
 	#---------------------------------
 	# Clicky da favorites tab....
 	#---------------------------------
 	$text_dlg @OfflineMission2_14 30
+	$play Certification_14.mp3
 	$click_item FavoritesTab
 	$wait_click FavoritesTab
 	$sync
@@ -156,6 +164,7 @@ $begin OfflineTrainingMission2
 	# Save da favorite...
 	#-------------------------------------
 	$text_dlg @OfflineMission2_15 30
+	$play Certification_15.mp3
 	$save_favorite
 	$sync
 		
@@ -163,6 +172,7 @@ $begin OfflineTrainingMission2
 	# Clear da inventory...
 	#-------------------------------------
 	$text_dlg @OfflineMission2_16 30
+	$play Certification_16.mp3
 	$lose ALL
 	$sync
 		
@@ -170,35 +180,37 @@ $begin OfflineTrainingMission2
 	# Close da terminal...
 	#-------------------------------------
 	$text_dlg @OfflineMission2_17 30
+	$play Certification_17.mp3
 	$wait_on_show EquipmentTerminal 0 x
-	$change_action_lock DAT 5 0
-	$change_action_lock GOT 18 0
+	$change_action_lock DAT DAT_USE_PURCHASETERMINAL 0
+	$change_action_lock GOT GOT_OrderTerminal 0
 	$sync
-	
 		
 	#---------------------------------------
 	# Open the terminal...
 	#---------------------------------------
 	$text_dlg @OfflineMission2_18 30
-	$change_action_lock DAT 5 1
-	$change_action_lock GOT 18 1
-	$wait_on_use 18 5
+	$play Certification_18.mp3
+	$change_action_lock DAT DAT_USE_PURCHASETERMINAL 1
+	$change_action_lock GOT GOT_OrderTerminal 1
+	$wait_on_use GOT_OrderTerminal DAT_USE_PURCHASETERMINAL
 	$sync
-	
 		
 	#---------------------------------------------
 	# Reopen the terminal
 	#-------------------------------------------
 	$text_dlg @OfflineMission2_19 30
+	$play Certification_19.mp3
 	$wait_on_show EquipmentTerminal 0 x
-	$change_action_lock DAT 5 0
-	$change_action_lock GOT 18 0
+	$change_action_lock DAT DAT_USE_PURCHASETERMINAL 0
+	$change_action_lock GOT GOT_OrderTerminal 0
 	$sync
 		
 	#----------------------------------
 	# Pick a fav...
 	#------------------------------------
 	$text_dlg @OfflineMission2_20 30
+	$play Certification_20.mp3
 	$sync
 		
 	$wait 2000

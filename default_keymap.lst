@@ -5,76 +5,67 @@
 
 # Weapon Controls
 #----------------------------
-km_addbinding "Left Mouse Button" "Weapon Fire"
-km_addbinding "Joystick Button 1" "Weapon Fire"
+km_addbinding "LeftMouseButton" "@GA_WeaponFire"
+km_addbinding "JoystickButton 1" "WeaponFire"
 
-km_addbinding "Right Mouse Button" "Change Fire Mode"
-km_addbinding "Joystick Button 2" "Change Fire Mode"
+km_addbinding "RightMouseButton" "@GA_ChangeFireMode"
+km_addbinding "JoystickButton2" "@GA_ChangeFireMode"
 
-km_addbinding x "Change Ammunition"
+km_addbinding x "@GA_ChangeAmmunition"
 
 km_addbinding r "Reload"
-km_addbinding "Joystick Button 3" "Reload"
+km_addbinding "JoystickButton3" "@GA_Reload"
 
 # Most Used Controls
 #----------------------------
-km_addbinding "tab" "Toggle Mouse Look"
-km_addbinding g "Use Item"
-km_addbinding f "Drop Item"
-km_addbinding t "Toggle Third Person Camera"
+km_addbinding "tab" "@GA_ToggleMouseLook"
+km_addbinding g "@GA_UseItem"
+km_addbinding f "@GA_DropItem"
+km_addbinding t "@GA_ToggleThirdPersonCamera"
 
 # Inventory Controls
 #----------------------------
-km_addbinding i "Toggle Inventory"
+km_addbinding i "@GA_ToggleInventory"
 
 # Miscellaneous Controls
 #----------------------------
-km_addbinding "q" "Autorun"
+km_addbinding "q" "@GA_Autorun"
 
-km_addbinding "Z" "Zoom"
-km_addbinding "SHIFT+Z" "Smooth Zoom"
+km_addbinding "Z" "@GA_Zoom"
+km_addbinding "SHIFT+Z" "@GA_SmoothZoom"
 
-km_addbinding "]" "Radar Increase"
-km_addbinding "[" "Radar Decrease"
+km_addbinding "]" "@GA_RadarIncrease"
+km_addbinding "[" "@GA_RadarDecrease"
 
+km_addbinding "Shift+C" "@GA_ToggleChatPane"
+km_addbinding "O" "@GA_ToggleCharacterPane"
+km_addbinding "Shift+M" "@GA_ToggleManagementPane"
+km_addbinding "Shift+O" "@GA_ToggleOutfitPane"
+km_addbinding "P" "@GA_TogglePlayerPane"
+km_addbinding "Shift+R" "@GA_ToggleProximityMap"
+km_addbinding "Shift+V" "@GA_ToggleVehiclePane"
 
-km_addbinding "Shift+C" "Toggle Chat Pane"
-km_addbinding "O" "Toggle Character Pane"
-km_addbinding "Shift+M" "Toggle Management Pane"
-km_addbinding "Shift+O" "Toggle Outfit Pane"
-km_addbinding "P" "Toggle Player Pane"
-km_addbinding "Shift+R" "Toggle Proximity Map"
-km_addbinding "Shift+V" "Toggle Vehicle Pane"
+km_addbinding "SHIFT+P" "@GA_ToggleHelp"
 
-
-km_addbinding "SHIFT+P" "Toggle Help"
-
-km_addbinding "ALT+n" "Cycle Character Names"
-km_addbinding "K" "Toggle Stealth Suit"
-
+km_addbinding "ALT+n" "@GA_CycleCharacterNames"
+km_addbinding "K" "@GA_ToggleStealthSuit"
 
 # Shortcut hotbar keys
 #----------------------------
-km_addbinding "F1" "Use Quickslot 1"
-km_addbinding "F2" "Use Quickslot 2"
-km_addbinding "F3" "Use Quickslot 3"
-km_addbinding "F4" "Use Quickslot 4"
-km_addbinding "F5" "Use Quickslot 5"
-km_addbinding "F6" "Use Quickslot 6"
-km_addbinding "F7" "Use Quickslot 7"
-km_addbinding "F8" "Use Quickslot 8"
+km_addbinding "F1" "@GA_UseQuickslot1"
+km_addbinding "F2" "@GA_UseQuickslot2"
+km_addbinding "F3" "@GA_UseQuickslot3"
+km_addbinding "F4" "@GA_UseQuickslot4"
+km_addbinding "F5" "@GA_UseQuickslot5"
+km_addbinding "F6" "@GA_UseQuickslot6"
+km_addbinding "F7" "@GA_UseQuickslot7"
+km_addbinding "F8" "@GA_UseQuickslot8"
 
 
 # Camera Controls
 #----------------------------
-km_addbinding "home" "Raise Camera"
-km_addbinding "end" "Lower Camera"
-km_addbinding "num pad 9" "Raise Camera"
-km_addbinding "num pad 3" "Lower Camera"
-km_addbinding "num pad +" "Move Camera In"
-km_addbinding "num pad -" "Move Camera Out"
-km_addbinding "num pad 4" "Pan Camera Left"
-km_addbinding "num pad 6" "Pan Camera Right"
+km_addbinding "numpadsub" "@GA_MoveCameraIn"
+km_addbinding "numpadadd" "@GA_MoveCameraOut"
 
 
 

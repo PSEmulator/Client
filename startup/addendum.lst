@@ -85,10 +85,24 @@ addendum_embedded_effect generator_room 4.4331 -22.9393 13.4936 0000 09FB 07FF
 #####################################################################################
 
 #####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'plasma_grenade'
+#####ADDENDUM PACKAGE FOR DATA ASSET 'llm_socket'
 #####################################################################################
-addendum_package plasma_grenade
-addendum_bone hp_hand plasma_grenade 0.0000 0.0000 0.0000 0000 0000 0000
+addendum_package llm_socket
+addendum_material cryo_tubes llm_socket_material
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'jammer_grenade'
+#####################################################################################
+addendum_package jammer_grenade
+addendum_bone hp_hand jammer_grenade 0.0000 0.0000 0.0000 0000 3E14 0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'dropship_pad_doors'
+#####################################################################################
+addendum_package dropship_pad_doors
+addendum_bone hp_vehicle_alt hp_vehicle -5.5367 0.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
@@ -100,17 +114,10 @@ addendum_bone custom_head bip01_head 0.0400 0.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'dropship_pad_doors'
+#####ADDENDUM PACKAGE FOR DATA ASSET 'plasma_grenade'
 #####################################################################################
-addendum_package dropship_pad_doors
-addendum_bone hp_vehicle_alt hp_vehicle -5.5367 0.0000 0.0000 0000 0000 0000
-#####################################################################################
-
-#####################################################################################
-#####ADDENDUM PACKAGE FOR DATA ASSET 'jammer_grenade'
-#####################################################################################
-addendum_package jammer_grenade
-addendum_bone hp_hand jammer_grenade 0.0000 0.0000 0.0000 0000 3E14 0000
+addendum_package plasma_grenade
+addendum_bone hp_hand plasma_grenade 0.0000 0.0000 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
@@ -118,6 +125,14 @@ addendum_bone hp_hand jammer_grenade 0.0000 0.0000 0.0000 0000 3E14 0000
 #####################################################################################
 addendum_package mine_sweeper
 addendum_bone hp_hand ms_body 0.0000 0.0000 0.0000 0000 0000 0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'vanu_sentry_turret'
+#####################################################################################
+addendum_package vanu_sentry_turret
+addendum_bone turret_mount_real turret_mount 0.0000 -0.4800 0.0000 0000 0000 0000
+addendum_bone turret_mountb_real vanu_sentry_turret 0.0000 2.7800 0.0000 0000 0000 0000
 #####################################################################################
 
 #####################################################################################
@@ -166,6 +181,54 @@ addendum_package he_mine
 addendum_bone_reprogram hp_hand 0.0000 0.0000 0.0000    0.0000 0.0000 0.0000 1.0000
 addendum_bone_reprogram hp_hand01 0.0000 0.0000 0.0000    0.0000 0.0000 0.0000 1.0000
 addendum_bone_reprogram hp_hand02 0.0000 0.0000 0.0000    0.0000 0.0000 0.0000 1.0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'switchblade'
+#####################################################################################
+addendum_package switchblade
+addendum_bone ef_sb_energy_stream sb_move -1.6800 0.2000 0.8000 0000 0000 0FFF
+addendum_bone drivera_mount_real drivera_mount 0.6400 0.5200 0.0000 0000 0000 0000
+addendum_bone driverb_mount_real driverb_mount 0.6400 -0.5200 0.0000 0000 0000 0000
+#####################################################################################
+
+#####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'router'
+#####################################################################################
+addendum_package router
+addendum_outline 32 3.4839
+addendum_outline_point 2.0785 0.0000 0.0000
+addendum_outline_point 1.8749 0.4750 0.0000
+addendum_outline_point 1.5375 0.8687 0.0000
+addendum_outline_point 0.8178 0.8171 0.0000
+addendum_outline_point 1.1780 1.2212 0.0000
+addendum_outline_point 0.8813 1.5768 0.0000
+addendum_outline_point 0.6195 2.5391 0.0000
+addendum_outline_point 0.0504 4.3820 0.0000
+addendum_outline_point 0.0000 4.4013 0.0000
+addendum_outline_point -0.6185 2.5393 0.0000
+addendum_outline_point -0.8807 1.5771 0.0000
+addendum_outline_point -1.1775 1.2217 0.0000
+addendum_outline_point -0.8174 0.8174 0.0000
+addendum_outline_point -1.5372 0.8692 0.0000
+addendum_outline_point -1.8765 0.4746 0.0000
+addendum_outline_point -2.0067 0.1573 0.0000
+addendum_outline_point -2.0785 -0.0008 0.0000
+addendum_outline_point -1.8765 -0.4746 0.0000
+addendum_outline_point -1.5364 -0.8696 0.0000
+addendum_outline_point -0.1103 -0.0954 0.0000
+addendum_outline_point -1.1775 -1.2217 0.0000
+addendum_outline_point -0.8807 -1.5771 0.0000
+addendum_outline_point -0.6148 -2.7677 0.0000
+addendum_outline_point -0.1225 -3.0106 0.0000
+addendum_outline_point 0.0012 -3.0224 0.0000
+addendum_outline_point 0.6159 -2.7674 0.0000
+addendum_outline_point 0.8813 -1.5768 0.0000
+addendum_outline_point 1.1780 -1.2212 0.0000
+addendum_outline_point 0.8181 -0.8181 0.0000
+addendum_outline_point 1.5368 -0.8690 0.0000
+addendum_outline_point 1.8767 -0.4739 0.0000
+addendum_outline_point 2.0067 -0.1565 0.0000
 #####################################################################################
 
 #####################################################################################
@@ -1294,6 +1357,16 @@ addendum_outline_point 2.5301 -0.2983 0.0000
 #####################################################################################
 
 #####################################################################################
+#####ADDENDUM PACKAGE FOR DATA ASSET 'liberator'
+#####################################################################################
+addendum_package liberator
+addendum_bone rooster_tail gunnerc_mount -2.0000 0.0000 -0.6000 0000 0000 0000
+addendum_bone driver_mount drivera_mount 0.5600 0.0000 0.0000 0000 0000 0000
+addendum_bone viewpoint_gunnerb hp_gunb 0.0000 0.0000 -0.1200 0000 0000 0000
+addendum_bone liberator_chasecam liberator_body -1.1200 0.0000 -0.7200 0000 0000 0000
+#####################################################################################
+
+#####################################################################################
 #####ADDENDUM PACKAGE FOR DATA ASSET 'dropship'
 #####################################################################################
 addendum_package dropship
@@ -1496,154 +1569,143 @@ alias map09_1 lava09_1
 alias map09_2 lava09_2
 alias map09_3 lava09_3
 alias map09_7 lava09_7
-
 alias door_mb_ramp gr_unknown
 alias mb_flight_win_frame gr_unknown
-alias door_airlock gr_door_airlock
-alias garage_door gr_door_garage_ext
-alias door_garage gr_door_garage_int
-alias cryo_med_door gr_door_med
-alias door_mb_side gr_door_mb_lrg
-alias door_mb gr_door_mb_int
-alias door_mb_garage gr_unknown
-alias main_door gr_door_main
 alias door_mb_orb gr_door_mb_orb
+alias main_door gr_door_main
+alias door_mb_garage gr_unknown
+alias door_mb gr_door_mb_int
+alias door_mb_side gr_door_mb_lrg
+alias cryo_med_door gr_door_med
+alias door_garage gr_door_garage_int
+alias garage_door gr_door_garage_ext
+alias door_airlock gr_door_airlock
 alias door gr_door_int
 
+
+#####################################################################################
 ## Script commands to nudge specific buildings up/down to better match the terrain.
 ##   (mapno)    (building)  (height change)
-nudge map45           2          0.10
+nudge map45              2           0.10
 
-nudge map10           37         0.40
-nudge map10           38         0.55
-nudge map10           39         0.30
-nudge map10           40         0.80
-nudge map10           41         0.60
-nudge map10           42         0.80
-nudge map10           43         0.80
-nudge map10           25         0.15
-nudge map10           35         0.70
-nudge map10           46         0.25
+nudge map10             37           0.40
+nudge map10             38           0.55
+nudge map10             39           0.30
+nudge map10             40           0.80
+nudge map10             41           0.60
+nudge map10             42           0.80
+nudge map10             43           0.80
+nudge map10             25           0.15
+nudge map10             35           0.70
+nudge map10             46           0.25
 
-nudge map07           21         0.25
-nudge map07           40         0.55
-nudge map07           31         0.35
-nudge map07           39         0.60
-nudge map07           25         0.40
-nudge map07           43         0.15
-nudge map07           50         0.35
-nudge map07           49         0.50
-nudge map07           53         0.25
+nudge map07             21           0.25
+nudge map07             40           0.55
+nudge map07             31           0.35
+nudge map07             39           0.60
+nudge map07             25           0.40
+nudge map07             43           0.15
+nudge map07             50           0.35
+nudge map07             49           0.50
+nudge map07             53           0.25
 
-nudge map09           37         0.30
-nudge map09           1          -0.75
-nudge map09		    21         0.45
-nudge map09           28         0.55
-nudge map09           38         0.65
-nudge map09           46         0.70
-nudge map09           45	   0.70
-nudge map09           35         0.50
-nudge map09           25         0.15
-nudge map09           27         0.30
-nudge map09           41         -0.05
-nudge map09           50         1.05
-nudge map09           47         0.20
-nudge map09           20         0.60
-nudge map09           43         0.10
-nudge map09           42        -0.10
-nudge map09           44         0.35
-nudge map09           49         0.65
+nudge map09             37           0.30
+nudge map09              1          -0.75
+nudge map09             21           0.45
+nudge map09             28           0.55
+nudge map09             38           0.65
+nudge map09             46           0.70
+nudge map09             45           0.70
+nudge map09             35           0.50
+nudge map09             25           0.15
+nudge map09             27           0.30
+nudge map09             41          -0.05
+nudge map09             50           1.05
+nudge map09             47           0.20
+nudge map09             20           0.60
+nudge map09             43           0.10
+nudge map09             42          -0.10
+nudge map09             44           0.35
+nudge map09             49           0.65
+nudge map09             24           0.45
 
+nudge map02             27           0.10
+nudge map02             49           0.10
+nudge map02             47          -0.10
 
+nudge map06             38           0.30
+nudge map06             35           0.90
+nudge map06             12          -0.75
+nudge map06              3          -0.10
+nudge map06             36           0.45
+nudge map06             34           0.20
+nudge map06             48           0.65
+nudge map06             47           0.60
+nudge map06             50           0.15
+nudge map06             46           0.20
+nudge map06             29           0.65
+nudge map06             55           0.30
+nudge map06             28           0.10
+nudge map06             23           0.15
 
+nudge map01             36           0.15
+nudge map01             40          -0.05
+nudge map01             22           0.40
+nudge map01             23           0.15
+nudge map01             37           0.30
+nudge map01             16           0.30
+nudge map01             42          -0.05
+nudge map01             33           0.10
+nudge map01              7           0.15
 
-nudge map02		    27         0.10
-nudge map02		    49         0.10
-nudge map02		    47        -0.10
+nudge map03             68           0.60
+nudge map03             32           0.15
+nudge map03             38           0.10
+nudge map03             25           0.45
+nudge map03             63           0.30
+nudge map03             56           0.50
+nudge map03             64           1.05
+nudge map03             48           0.15
+nudge map03             62           0.45
+nudge map03             70           0.35
+nudge map03             66           1.00
+nudge map03             65           0.30
+nudge map03             43           0.30
+nudge map03             45           0.20
+nudge map03             22           0.40
+nudge map03             28           0.15
+nudge map03             17          -0.95
+nudge map03             37           0.75
+nudge map03             40           0.50
+nudge map03             53           0.45
+nudge map03             67           0.55
+nudge map03             24           1.15
+nudge map03             49           0.45
+nudge map03             71           0.40
+nudge map03             12           0.35
 
-nudge map06           38         0.30
-nudge map06           35         0.90
-nudge map06           12         -0.75
-nudge map06           3          -0.10
-nudge map06           36         0.45
-nudge map06           34         0.20
-nudge map06           48         0.65
-nudge map06           47         0.60
-nudge map06           50         0.15
-nudge map06           46         0.20
-nudge map06           29         0.65
-nudge map06           55         0.30
-nudge map06		    28         0.10
-nudge map06		    23	   0.15
+nudge map05             16           0.90
+nudge map05             30           0.40
+nudge map05             40           1.00
+nudge map05             21           0.30
+nudge map05             27           0.55
+nudge map05             23           0.65
+nudge map05              5           0.20
 
-nudge map01		    36	   0.15
-nudge map01           40         -0.05
-nudge map01           22         0.40
-nudge map01           23         0.15
-nudge map01           37         0.30
-nudge map01           16         0.30
-nudge map01		    42         -0.05
-nudge map01		    33         0.10
-nudge map01		    7          0.15
+nudge map04             40           0.20
+nudge map04             63           0.45
+nudge map04             65           0.20
 
-nudge map03           68         0.60
-nudge map03		    32         0.15
-nudge map03		    38         0.10
-nudge map03		    25         0.45
-nudge map03           63         0.30
-nudge map03           56         0.50
-nudge map03           64         1.05
-nudge map03           73         0.55
-nudge map03           48         0.15
-nudge map03           62         0.45
-nudge map03           70         0.35
-nudge map03           66         1.00
-nudge map03           65         0.30
-nudge map03           43         0.30
-nudge map03 	    45         0.20
-nudge map03           22         0.40
-nudge map03     	    28         0.15
-nudge map03		    17         -0.95
-nudge map03           37         0.75
-nudge map03           40         0.50
-nudge map03           53         0.45
-nudge map03           67         0.55
-nudge map03           24         1.15
-nudge map03           49         0.45
-nudge map03           71         0.40
+nudge map08             46           0.50
+nudge map08             45           0.20
 
-nudge map05           16         0.20
-nudge map05           30         0.40
-nudge map05           40         1.00
-nudge map05		    21         0.30
-nudge map05           27         0.55
-nudge map05           23         0.65
-nudge map05           5          0.20
+nudge map11             47           0.40
+nudge map11             51           0.40
+nudge map11             54           0.20
+nudge map11             58           0.40
+nudge map11             35           0.35
 
-nudge map04		    40         0.20
-nudge map04		    63         0.45
-nudge map04		    65         0.20
+nudge map12             66           0.40
+nudge map12             61           0.20
 
-nudge map08		    46         0.50
-nudge map08		    45         0.20
-
-nudge map11		    47         0.40
-nudge map11           51         0.40
-nudge map11           54         0.20
-nudge map11           58         0.40
-nudge map11           35         0.35
-
-nudge map12		    66	   0.40
-nudge map12		    61         0.20
-
-
-
-
-
-
-
-
-
-
-
-
+nudge map13              1          -0.50

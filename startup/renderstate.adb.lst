@@ -1,5 +1,128 @@
 #rsc_begin
 
+##cs9_ef_vanu_tunnel_beam_core_gf3
+
+rsc_zbias 16
+rsc_sourceblend destalpha
+rsc_destblend destcolor
+rsc_colorvertex
+rsc_end
+
+##cs9_solsar_cavern_lava_null
+
+rsc_noz
+rsc_zenable
+rsc_sourceblend one
+rsc_destblend one
+rsc_cullnone
+rsc_lighting
+rsc_localviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFA600
+rsc_end
+
+##cs9_ef_meg_elec
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFF5300
+rsc_end
+
+##cs9_ef_meg_glass
+
+rsc_sourceblend invsrcalpha
+rsc_cullnone
+rsc_noalphatest
+rsc_tfactor 37800080
+rsc_end
+
+##cs9_phantasm_test_material
+
+rsc_zbias 1
+rsc_sourceblend destcolor
+rsc_destblend invdestcolor
+rsc_cullnone
+rsc_nocolorvertex
+rsc_fog
+rsc_ambient 5796DB
+rsc_tfactor FFEE2B9B
+rsc_lfactor
+rsc_end
+
+##cs9_carston_water
+
+rsc_cullnone
+rsc_nolighting
+rsc_end
+
+##cs9_ef_pad_repair
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_ef_emp_sphere
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_ef_emp_sphere_vs
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF400080
+rsc_end
+
+##cs9_ef_emp_sphere_tr
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFF0000
+rsc_end
+
+##cs9_decal_deres
+
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
 ##cs9_flight_room_tpfr_tpfr_panel_01_lm_gf3
 
 rsc_localviewer
@@ -82,7 +205,6 @@ rsc_nolocalviewer
 rsc_noalphatest
 rsc_nofog
 rsc_alpha
-rsc_yon 8000
 rsc_end
 
 ##cs9_ef_lzr_a
@@ -96,7 +218,6 @@ rsc_nolocalviewer
 rsc_noalphatest
 rsc_nofog
 rsc_alpha
-rsc_yon 8000
 rsc_end
 
 ##cs9_ef_waypoint_nc
@@ -236,12 +357,6 @@ rsc_destblend one
 rsc_nolighting
 rsc_noalphatest
 rsc_tfactor 6400FFFF
-rsc_end
-
-##localviewer
-
-rsc_localviewer
-rsc_noalphatest
 rsc_end
 
 ##cs9_articleaf1
@@ -1227,6 +1342,163 @@ rsc_end
 
 rsc_cullnone
 rsc_tfactor FF00FF00
+rsc_end
+
+##cs9_full
+
+rsc_noz
+rsc_sourceblend srcalpha
+rsc_destblend invsrcalpha
+rsc_nolighting
+rsc_noalphatest
+rsc_nofog
+rsc_alpha
+rsc_yon 15000
+rsc_end
+
+##cs9_ef_pad_repair_panels
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFF0000
+rsc_end
+
+##cs9_ef_emp_sphere_nc
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_ef_repair_poles_null
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_new_water
+
+rsc_cullnone
+rsc_localviewer
+rsc_noalpha
+rsc_end
+
+##cs9_ef_lzr_a_yon
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_nofog
+rsc_alpha
+rsc_yon 8000
+rsc_end
+
+##cs9_ef_glowstar_yon
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_nofog
+rsc_alpha
+rsc_yon 8000
+rsc_end
+
+##cs9_ring12999-vanu
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_ef_vanu_tunnel_beam_core_null
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_ef_vanu_tunnel_beam_lites_null
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##localviewer
+
+rsc_localviewer
+rsc_noalphatest
+rsc_end
+
+##cs9_river_amerish_cavern_null
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF975A00
+rsc_end
+
+##cs9_ef_amerish_water_cloudy_null
+
+rsc_noz
+rsc_zenable
+rsc_cullnone
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF734302
+rsc_end
+
+##cs9_vanu_equip_term_effect
+
+rsc_tfactor FF962DFF
 rsc_end
 
 ##alpha_one

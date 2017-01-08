@@ -1,8 +1,12 @@
 <Page BackgroundOpacity='1.000' Name='Loading' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Page BackgroundOpacity='0.475' Location='259,330' Name='Status' PackLocation='center,center' PackLocationProp='-253/0001,-054/0001' ScrollExtent='500,250' Size='500,250'>
-<Rectangle Color='#000000' ScrollExtent='500,250' Size='500,250'/>
-<Text Font='/SmallFont' Location='10,5' Name='Text' PackSize='Absolute, Absolute' PackSizeProp='0020/0001,xxxx/xxxx' ScrollExtent='480,200' Size='480,200'></Text>
-<Progressbar BackgroundColor='#000000' BackgroundOpacity='1.000' Color='#777777' Location='12,222' Name='Progress' PackLocation='Center,Center' PackLocationProp='-238/0001,0097/0001' Progress='0.500' ScrollExtent='480,14' Size='480,14' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
+<ImageStyle Name='IntelLogo'>
+<ImageFrame Source='ui_intel_logo_00' SourceRect='0,0,143,98'/>
+</ImageStyle>
+<Image Location='879,666' Name='Intel' PackLocation='right,bottom' PackLocationProp='-145/0001,-102/0001' ScrollExtent='143,98' Size='143,98' Style='IntelLogo'/>
+<Page BackgroundOpacity='0.475' Location='259,330' Name='Status' PackLocation='center,center' PackLocationProp='-253/0001,-054/0001' ScrollExtent='500,31' Size='500,31'>
+<Rectangle Color='#000000' ScrollExtent='500,33' Size='500,33'/>
+<Text Font='/SmallFont' Location='10,36' Name='Text' PackSize='Absolute, Absolute' PackSizeProp='0020/0001,xxxx/xxxx' ScrollExtent='480,200' Size='480,200' Visible='false'></Text>
+<Progressbar BackgroundColor='#000000' BackgroundOpacity='1.000' Color='#777777' Location='12,9' Name='Progress' Progress='0.500' ScrollExtent='480,14' Size='480,14' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
 </Page>
 <Text Font='/Fonts.Medium' LocalText='[@loading]' Location='227,287' Name='Message' PackLocation='center,center' PackLocationProp='-285/0001,-097/0001' ScrollExtent='570,26' Size='570,26' TextAlignment='Center'>@loading</Text>
 <Text Font='/Fonts.Medium' LocalText='[@loading]' Location='228,288' Name='Message' PackLocation='center,center' PackLocationProp='-284/0001,-096/0001' ScrollExtent='570,26' Size='570,26' TextAlignment='Center' TextColor='#000000'>@loading</Text>
@@ -113,34 +117,34 @@
 </ImageStyle>
 <ImageStyle Name='z6'>
 <ImageFrame>
-<ImageFragment Source='ui_loading_map06_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_loading_map06_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_loading_map06_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_loading_map06_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_loading_map06_04' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_loading_map06_05' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,256' Source='ui_loading_map06_06' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,256' Source='ui_loading_map06_07' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_loading_map06_08' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,512' Source='ui_loading_map06_09' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,512' Source='ui_loading_map06_10' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,512' Source='ui_loading_map06_11' SourceRect='0,0,256,256'/>
+<ImageFragment Source='ui_loading_screens_map06_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_screens_map06_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_screens_map06_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_screens_map06_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_screens_map06_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_screens_map06_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_screens_map06_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_screens_map06_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_screens_map06_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_screens_map06_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_screens_map06_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_screens_map06_11' SourceRect='0,0,256,256'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='z7'>
 <ImageFrame>
-<ImageFragment Source='ui_loading_map07_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_loading_map07_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_loading_map07_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_loading_map07_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_loading_map07_04' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_loading_map07_05' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,256' Source='ui_loading_map07_06' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,256' Source='ui_loading_map07_07' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_loading_map07_08' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,512' Source='ui_loading_map07_09' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,512' Source='ui_loading_map07_10' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,512' Source='ui_loading_map07_11' SourceRect='0,0,256,256'/>
+<ImageFragment Source='ui_loading_screens_map07_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_screens_map07_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_screens_map07_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_screens_map07_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_screens_map07_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_screens_map07_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_screens_map07_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_screens_map07_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_screens_map07_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_screens_map07_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_screens_map07_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_screens_map07_11' SourceRect='0,0,256,256'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='z8'>
@@ -480,5 +484,101 @@
 </ImageFrame>
 </ImageStyle>
 <Image BackgroundOpacity='1.000' Location='115,280' Name='Title' PackLocation='center,center' PackLocationProp='-397/0001,-104/0001' RStyleDefault='TitleStyle' ScrollExtent='803,40' Size='803,40'/>
-<Image Name='MapImage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='tzconc'/>
+<Image Name='MapImage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Style='c2'/>
+<ImageStyle Name='c1'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd1_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd1_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd1_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd1_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd1_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd1_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd1_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd1_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd1_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd1_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd1_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='c2'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd2_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd2_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd2_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd2_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd2_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd2_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd2_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd2_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd2_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd2_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd2_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='c3'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd3_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd3_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd3_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd3_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd3_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd3_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd3_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd3_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd3_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd3_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd3_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='c4'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd4_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd4_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd4_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd4_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd4_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd4_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd4_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd4_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd4_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd4_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd4_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd4_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='c5'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd5_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd5_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd5_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd5_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd5_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd5_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd5_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd5_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd5_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd5_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd5_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd5_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='c6'>
+<ImageFrame>
+<ImageFragment Source='ui_loading_ugd6_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_loading_ugd6_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_loading_ugd6_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_loading_ugd6_03' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_loading_ugd6_04' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,256' Source='ui_loading_ugd6_05' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,256' Source='ui_loading_ugd6_06' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,256' Source='ui_loading_ugd6_07' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,512' Source='ui_loading_ugd6_08' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,512' Source='ui_loading_ugd6_09' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,512' Source='ui_loading_ugd6_10' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,512' Source='ui_loading_ugd6_11' SourceRect='0,0,256,256'/>
+</ImageFrame>
+</ImageStyle>
 </Page>

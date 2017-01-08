@@ -1,5 +1,53 @@
 #lpc_begin
 
+##cs8_blackmarble__exp_controlpoint_ul02
+
+lpc_set FFB6B6B6 FF828282 FFFFFFFF 00000000 0
+
+##cs8_blackmarble__exp_controlpoint_ul02_gf3
+
+lpc_set FFB7B7B7 FF838383 FFFFFFFF 00000000 0
+
+##cs8_solsar_pillara
+
+lpc_set FF7D2E20 FF5E483E FFFFFFFF FF230C0C 0
+
+##cs8_tunnelsuspensionbeam
+
+lpc_set FFFFFFFF FF151515 FFFFFFFF FF122916 0
+
+##cs8_crystal_energy
+
+lpc_set FFFFFFFF FF707070 FFEDFF0D FF000000 95
+
+##cs8_concrete10b_hive_
+
+lpc_set FFFFFFFF FF707070 FFBCBCBC FF000000 50
+
+##cs8_flail_laser
+
+lpc_set FFFFFFFF FF191919 FFA53A5A FF000000 95
+
+##cs8_flail_laser_gf3
+
+lpc_set FFFFFFFF FF1D1D1D FFAF3A8C FF000000 90
+
+##cs8_flail1
+
+lpc_set FFFFFFFF FF707070 FF404316 FF000000 99
+
+##cs8_radiator
+
+lpc_set FFFFFFFF FF707070 FF142070 FF000000 99
+
+##cs8_spiker_gf3
+
+lpc_set FFFFFFFF FF707070 FF222E73 FF000000 99
+
+##cs8_lava_tiled
+
+lpc_set FF770300 FF590000 FFFFFFFF FF2C2C2C 0
+
 ##cs8_earthbark1
 
 lpc_set FFCFCFCF FF272727 FFFFFFFF FF000000 0
@@ -439,6 +487,62 @@ lpc_set FF000000 FFFFFFFF FFFFFFFF FFCDAE70 0
 ##cs8_deserttreem
 
 lpc_set FFFFFFFF FF8F8F8F FFFFFFFF 00000000 0
+
+##cs8_new_water
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0.8
+
+##cs8_phantasm_test_material
+
+lpc_set FF2935C0 FF652FCA FF89E820 FF20DF29 1
+
+##cs8_gry_4_gf3
+
+lpc_set FFFFFFFF FF3E3E3E FF34478B FF000000 85
+
+##cs8_maelstrom_gf3
+
+lpc_set FFFFFFFF FF292B45 FF64602D FF000000 99
+
+##cs8_gry_3_gf3
+
+lpc_set FFFFFFFF FF383838 FFA92E59 FF000000 85
+
+##cs8_maelstrom_orb_gf3
+
+lpc_set FFFFFFFF FF707070 FFFF1A1A FF000000 99
+
+##cs8_zipline
+
+lpc_set FFFFFFFF FF707070 FF7185BB FF000000 97
+
+##cs8_vanu_vehicle_creation_pad
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 0
+
+##cs8_vanu_sentry_turret_gf3
+
+lpc_set FF9FA2B5 FF444444 FF3A2F80 FF616C81 95
+
+##cs8_crystal1
+
+lpc_set FFFFFFFF FFB2B2B2 FFD6F948 FF000000 15
+
+##cs8_ceryshenicetexture_gf3
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
+
+##cs8_amerish_cflora
+
+lpc_set FF77532F FF707070 FFFFFFFF FF000000 0
+
+##cs8_ef_vanu_core_crystals
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0
+
+##cs8_ef_vanu_tunnel_beam_lites
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00FFFFFF 0
 
 ##default_lighting
 

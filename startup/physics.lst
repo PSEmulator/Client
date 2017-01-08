@@ -1,7 +1,7 @@
 ########### Record 'ams' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction ams
 phys_material_dimensions 2
-phys_material_friction 50000
+phys_material_friction 5000
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -21,7 +21,7 @@ phys_material_secondaryslip 0
 ########### Record 'ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction ant
 phys_material_dimensions 2
-phys_material_friction 50000
+phys_material_friction 5000
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -82,7 +82,7 @@ phys_material_secondaryslip 0.0001
 ########### Record 'dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction dropship
 phys_material_dimensions 2
-phys_material_friction 40000
+phys_material_friction 4000
 phys_material_softness 0.001
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -99,10 +99,30 @@ phys_material_restitution 0
 phys_material_primaryslip 0
 phys_material_secondaryslip 0
 
+########### Record 'flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'flail_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
 ########### Record 'frontrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction frontrubber
 phys_material_dimensions 2
-phys_material_friction 400
+phys_material_friction 800
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.1
@@ -149,10 +169,30 @@ phys_material_restitution 0.001
 phys_material_primaryslip 0.001
 phys_material_secondaryslip 0.0005
 
+########### Record 'liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction liberator
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'liberator_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction liberator_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
 ########### Record 'lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction lightgunship
 phys_material_dimensions 2
-phys_material_friction 40000
+phys_material_friction 4000
 phys_material_softness 0.0001
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -172,7 +212,7 @@ phys_material_secondaryslip 0
 ########### Record 'lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction lightning
 phys_material_dimensions 2
-phys_material_friction 50000
+phys_material_friction 5000
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0
@@ -192,7 +232,7 @@ phys_material_secondaryslip 0
 ########### Record 'magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction magrider
 phys_material_dimensions 2
-phys_material_friction 5000
+phys_material_friction 500
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0
@@ -222,7 +262,7 @@ phys_material_secondaryslip 0.0001
 ########### Record 'manned_turret' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction manned_turret
 phys_material_dimensions 2
-phys_material_friction 40000
+phys_material_friction 4000
 phys_material_softness 0.0005
 phys_material_adhesion 0.0001
 phys_material_restitution 0.001
@@ -232,7 +272,7 @@ phys_material_secondaryslip 0.0005
 ########### Record 'mediumtransport' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction mediumtransport
 phys_material_dimensions 2
-phys_material_friction 40000
+phys_material_friction 4000
 phys_material_softness 0.0005
 phys_material_adhesion 0.0001
 phys_material_restitution 0.001
@@ -292,7 +332,7 @@ phys_material_secondaryslip 0.001
 ########### Record 'mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction mosquito
 phys_material_dimensions 2
-phys_material_friction 40000
+phys_material_friction 4000
 phys_material_softness 0.0001
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -433,7 +473,7 @@ phys_material_secondaryslip 0
 ########### Record 'quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction quadassault
 phys_material_dimensions 2
-phys_material_friction 50000
+phys_material_friction 5000
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -474,7 +514,7 @@ phys_material_secondaryslip 0.0001
 ########### Record 'rearrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction rearrubber
 phys_material_dimensions 2
-phys_material_friction 700
+phys_material_friction 800
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.1
@@ -500,6 +540,26 @@ phys_material_adhesion 0
 phys_material_restitution 0
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.00001
+
+########### Record 'router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction router
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'router_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction router_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 900000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
 
 ########### Record 'rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction rubber
@@ -603,6 +663,46 @@ phys_material_restitution 0.1
 phys_material_primaryslip 0.0001
 phys_material_secondaryslip 0.001
 
+########### Record 'skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skyguard
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'skyguard_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skyguard_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction switchblade
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'switchblade_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction switchblade_destroyed
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
 ########### Record 'threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction threemanheavybuggy
 phys_material_dimensions 2
@@ -676,7 +776,7 @@ phys_material_secondaryslip 0
 ########### Record 'twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
 phys_material_interaction twomanhoverbuggy
 phys_material_dimensions 2
-phys_material_friction 5000
+phys_material_friction 500
 phys_material_softness 0.0005
 phys_material_adhesion 0
 phys_material_restitution 0.001
@@ -1074,8 +1174,8 @@ phys_collisionboneoffset -0.76 0.00 -2.20
 phys_aggregate cdbox5_aggregate 
 
 ################ Physics Primitive ant_deployed_cdbox6 ###########
-phys_box cdbox6 0.1 0.97 0.21 2.59 -0.76 0.00 2.91 
-phys_orientation 6144 0 -4096 
+phys_box cdbox6 0.1 2.59 0.97 0.21 -0.76 0.00 2.91 
+phys_orientation 0 2250 0
 phys_cookie flare_top 
 phys_material ant 
 phys_collisionboneoffset 0.76 -0.00 -2.91 
@@ -1083,7 +1183,7 @@ phys_aggregate cdbox6_aggregate
 
 ################ Physics Primitive ant_deployed_cdbox7 ###########
 phys_box cdbox7 0.1 0.97 0.21 2.59 -0.77 1.37 2.15 
-phys_orientation 6144 2730 -4096 
+phys_orientation 6144 2730 4096
 phys_cookie flareleft 
 phys_material ant 
 phys_collisionboneoffset 0.77 -1.37 -2.15 
@@ -1091,7 +1191,7 @@ phys_aggregate cdbox7_aggregate
 
 ################ Physics Primitive ant_deployed_cdbox8 ###########
 phys_box cdbox8 0.1 0.97 0.21 2.59 -0.77 -1.37 2.15 
-phys_orientation 6143 -2730 -4096 
+phys_orientation 6144 -2730 4096
 phys_cookie flareright 
 phys_material ant 
 phys_collisionboneoffset 0.77 1.37 -2.15 
@@ -1161,7 +1261,7 @@ phys_carwheel_brakes true
 phys_sphere cdsph3 5 0.56 -1.20 -1.17 0.54 
 phys_cookie rearrightdirt 
 phys_bonewrite ant_tire_rr u v w 
-phys_bonewrite ant_sus_rear x y z 
+phys_bonewrite ant_sus_rear x y z
 phys_material rearrubber 
 phys_collisionboneoffset -0.00 0.00 0.00 
 phys_offset_lowlimit 0 0 -0.6 
@@ -1759,6 +1859,695 @@ phys_material dropship_destroyed
 phys_collisionboneoffset 2.25 9.03 -2.83 
 phys_aggregate cdbox6_aggregate 
 
+phys_model flail_deployed
+################ Physics Primitive flail_deployed_cdbox0 ###########
+phys_box root 65 2.57 3.14 1.00 0.65 -0.00 1.80 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material flail 
+phys_collisionboneoffset -0.65 0.00 -1.80 
+
+################ Physics Primitive flail_deployed_cdbox1 ###########
+phys_box cdbox1 0.1 1.94 2.09 1.37 0.65 0.00 1.30 
+phys_orientation 0 0 0 
+phys_cookie mainbody 
+phys_material flail 
+phys_collisionboneoffset -0.65 -0.00 -1.30 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive flail_deployed_cdbox3 ###########
+phys_box cdbox3 0.1 6.00 2.38 1.00 -0.5 0.06 1.9 
+phys_orientation 0 366 0 
+phys_cookie cigar_shape
+phys_material flail 
+phys_model_frictionless_with_terrain true
+phys_collisionboneoffset 0.5 0.06 -1.9
+phys_body_position 0.00 0.00 0.16
+phys_rpro cdbox3_rpro root cdbox3
+phys_rpro_linearstrength 1 1 1
+phys_rpro_angularstrength 1 1 1
+
+################ Physics Primitive flail_deployed_cdbox4 ###########
+phys_box cdbox4 0.1 1.13 3.02 0.60 2.07 0.01 1.08 
+phys_orientation 0 0 0 
+phys_cookie veryfront 
+phys_material flail 
+phys_collisionboneoffset -2.07 -0.01 -1.08 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive flail_deployed_cdbox10 ###########
+phys_box cdbox10 0.1 2.29 0.56 0.96 -0.79 2.34 1.51 
+phys_orientation -183 436 611 
+phys_cookie leftarmtail 
+phys_material flail 
+phys_collisionboneoffset 0.79 -2.34 -1.51 
+phys_aggregate cdbox10_aggregate 
+
+################ Physics Primitive flail_deployed_cdbox11 ###########
+phys_box cdbox11 0.1 2.29 0.56 0.96 -0.88 -2.35 1.55 
+phys_orientation -183 436 -1046 
+phys_cookie rightarmtail 
+phys_material flail 
+phys_collisionboneoffset 0.88 2.35 -1.55 
+phys_aggregate cdbox11_aggregate 
+
+################ Physics Primitive flail_deployed_cdbox8 ###########
+phys_box cdbox8 0.1 2.29 0.56 1.26 0.93 -2.62 1.29 
+phys_orientation 0 0 89 
+phys_cookie rightarmmain 
+phys_material flail 
+phys_collisionboneoffset -0.93 2.62 -1.29 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive flail_deployed_cdbox9 ###########
+phys_box cdbox9 0.1 2.29 0.56 1.26 0.86 2.65 1.29 
+phys_orientation 0 0 89 
+phys_cookie leftarmfront 
+phys_material flail 
+phys_collisionboneoffset -0.86 -2.65 -1.29 
+phys_aggregate cdbox9_aggregate 
+
+################ Physics Primitive flail_deployed_cdsph0 ###########
+phys_sphere cdsph0 2 0.54 1.71 2.52 0.52 
+phys_cookie frontleftdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset -1.71 -2.52 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailfl root cdsph0 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_deployed_cdsph1 ###########
+phys_sphere cdsph1 2.0 0.54 1.71 -2.52 0.52 
+phys_cookie frontrightdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset -1.71 2.52 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailfr root cdsph1 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_deployed_cdsph2 ###########
+phys_sphere cdsph2 2.0 0.54 -1.52 -1.91 0.52 
+phys_cookie rearrightdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset 1.52 1.91 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailrr root cdsph2 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_deployed_cdsph3 ###########
+phys_sphere cdsph3 2.0 0.54 -1.59 1.91 0.52 
+phys_cookie rearleftdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset 1.59 -1.91 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailrl root cdsph3 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+phys_model flail
+################ Physics Primitive flail_cdbox0 ###########
+phys_box root 65 2.57 3.14 0.87 0.65 -0.00 1.64 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material flail 
+phys_collisionboneoffset -0.65 0.00 -1.64 
+
+################ Physics Primitive flail_cdbox1 ###########
+phys_box cdbox1 0.1 1.94 2.09 1.37 0.65 0.00 1.30 
+phys_orientation 0 0 0 
+phys_cookie mainbody 
+phys_material flail 
+phys_collisionboneoffset -0.65 -0.00 -1.30 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive flail_cdbox10 ###########
+phys_box cdbox10 0.1 2.29 0.56 0.96 -0.79 2.34 1.51 
+phys_orientation -183 436 611 
+phys_cookie leftarmtail 
+phys_material flail 
+phys_collisionboneoffset 0.79 -2.34 -1.51 
+phys_aggregate cdbox10_aggregate 
+
+################ Physics Primitive flail_cdbox11 ###########
+phys_box cdbox11 0.1 2.29 0.56 0.96 -0.88 -2.35 1.55 
+phys_orientation -183 436 -1046 
+phys_cookie rightarmtail 
+phys_material flail 
+phys_collisionboneoffset 0.88 2.35 -1.55 
+phys_aggregate cdbox11_aggregate 
+
+################ Physics Primitive flail_cdbox2 ###########
+phys_box cdbox2 0.1 1.55 1.71 0.36 1.67 0.00 2.53 
+phys_orientation 0 0 0 
+phys_cookie eyepiece 
+phys_material flail 
+phys_collisionboneoffset -1.67 0.00 -2.53 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive flail_cdbox3 ###########
+phys_box cdbox3 0.1 2.35 2.38 0.19 0.49 0.06 2.14 
+phys_orientation 0 366 0 
+phys_cookie toppiece 
+phys_material flail 
+phys_collisionboneoffset -0.49 -0.06 -2.14 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive flail_cdbox4 ###########
+phys_box cdbox4 0.1 1.13 3.02 0.60 2.07 0.01 1.08 
+phys_orientation 0 0 0 
+phys_cookie veryfront 
+phys_material flail 
+phys_collisionboneoffset -2.07 -0.01 -1.08 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive flail_cdbox5 ###########
+phys_box cdbox5 0.1 1.94 2.38 0.47 -1.51 0.06 2.19 
+phys_orientation 0 0 0 
+phys_cookie reartop 
+phys_material flail 
+phys_collisionboneoffset 1.51 -0.06 -2.19 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive flail_cdbox6 ###########
+phys_box cdbox6 0.1 1.51 0.32 0.81 -3.20 -1.50 1.92 
+phys_orientation 0 0 -801 
+phys_cookie rearrightweaponpiece 
+phys_material flail 
+phys_collisionboneoffset 3.20 1.50 -1.92 
+phys_aggregate cdbox6_aggregate 
+
+################ Physics Primitive flail_cdbox7 ###########
+phys_box cdbox7 0.1 1.51 0.32 0.81 -3.22 1.47 1.92 
+phys_orientation 0 0 993 
+phys_cookie rearleftweaponpiece 
+phys_material flail 
+phys_collisionboneoffset 3.22 -1.47 -1.92 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive flail_cdbox8 ###########
+phys_box cdbox8 0.1 2.29 0.56 1.26 0.93 -2.62 1.29 
+phys_orientation 0 0 89 
+phys_cookie rightarmmain 
+phys_material flail 
+phys_collisionboneoffset -0.93 2.62 -1.29 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive flail_cdbox9 ###########
+phys_box cdbox9 0.1 2.29 0.56 1.26 0.86 2.65 1.29 
+phys_orientation 0 0 89 
+phys_cookie leftarmfront 
+phys_material flail 
+phys_collisionboneoffset -0.86 -2.65 -1.29 
+phys_aggregate cdbox9_aggregate 
+
+################ Physics Primitive flail_cdsph0 ###########
+phys_sphere cdsph0 2 0.54 1.71 2.52 0.52 
+phys_cookie frontleftdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset -1.71 -2.52 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailfl root cdsph0 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_cdsph1 ###########
+phys_sphere cdsph1 2.0 0.54 1.71 -2.52 0.52 
+phys_cookie frontrightdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset -1.71 2.52 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailfr root cdsph1 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_cdsph2 ###########
+phys_sphere cdsph2 2.0 0.54 -1.52 -1.91 0.52 
+phys_cookie rearrightdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset 1.52 1.91 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailrr root cdsph2 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive flail_cdsph3 ###########
+phys_sphere cdsph3 2.0 0.54 -1.59 1.91 0.52 
+phys_cookie rearleftdirt 
+phys_raytrace_excludedimensions true 
+phys_model_collides_with_objects false 
+phys_material hovertires 
+phys_collisionboneoffset 1.59 -1.91 -0.52 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel flailrl root cdsph3 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.54 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+phys_model flail_destroyed
+################ Physics Primitive flail_destroyed_cdbox0 ###########
+phys_box root 65 2.57 3.14 0.87 0.65 -0.00 1.64 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material flail_destroyed 
+phys_collisionboneoffset -0.65 0.00 -1.64 
+phys_com_offset 1.0 0.0 -2 
+
+################ Physics Primitive flail_destroyed_cdbox1 ###########
+phys_box cdbox1 0.1 1.94 2.09 1.37 0.65 0.00 1.30 
+phys_orientation 0 0 0 
+phys_cookie mainbody 
+phys_material flail_destroyed 
+phys_collisionboneoffset -0.65 -0.00 -1.30 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox10 ###########
+phys_box cdbox10 0.1 2.29 0.56 0.96 -0.79 2.34 1.21 
+phys_orientation -183 0 611 
+phys_cookie leftarmtail 
+phys_material flail_destroyed 
+phys_collisionboneoffset 0.79 -2.34 -1.21 
+phys_aggregate cdbox10_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox11 ###########
+phys_box cdbox11 0.1 2.29 0.56 0.96 -0.88 -2.35 1.25 
+phys_orientation -183 0 -1046 
+phys_cookie rightarmtail 
+phys_material flail_destroyed 
+phys_collisionboneoffset 0.88 2.35 -1.25 
+phys_aggregate cdbox11_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox3 ###########
+phys_box cdbox3 0.1 2.35 2.38 0.19 0.49 0.06 2.14 
+phys_orientation 0 366 0 
+phys_cookie toppiece 
+phys_material flail_destroyed 
+phys_collisionboneoffset -0.49 -0.06 -2.14 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox4 ###########
+phys_box cdbox4 0.1 1.13 3.02 0.60 2.07 0.01 1.08 
+phys_orientation 0 0 0 
+phys_cookie veryfront 
+phys_material flail_destroyed 
+phys_collisionboneoffset -2.07 -0.01 -1.08 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox5 ###########
+phys_box cdbox5 0.1 1.94 2.38 0.47 -1.51 0.06 2.19 
+phys_orientation 0 0 0 
+phys_cookie reartop 
+phys_material flail_destroyed 
+phys_collisionboneoffset 1.51 -0.06 -2.19 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox7 ###########
+phys_box cdbox7 0.1 1.51 0.32 0.81 -3.22 1.47 1.62 
+phys_orientation 0 0 993 
+phys_cookie rearleftweaponpiece 
+phys_material flail_destroyed 
+phys_collisionboneoffset 3.22 -1.47 -1.62 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox8 ###########
+phys_box cdbox8 0.1 2.29 0.56 1.26 0.93 -2.62 1.29 
+phys_orientation 0 0 89 
+phys_cookie rightarmmain 
+phys_material flail_destroyed 
+phys_collisionboneoffset -0.93 2.62 -1.29 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive flail_destroyed_cdbox9 ###########
+phys_box cdbox9 0.1 2.29 0.56 1.26 0.86 2.65 1.29 
+phys_orientation 0 0 89 
+phys_cookie leftarmfront 
+phys_material flail_destroyed 
+phys_collisionboneoffset -0.86 -2.65 -1.29 
+phys_aggregate cdbox9_aggregate 
+
+phys_model liberator
+################ Physics Primitive liberator_cdbox0 ###########
+phys_box root 80 3.71 2.33 1.50 0.00 0.00 1.08 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material liberator 
+phys_collisionboneoffset 0.00 0.00 -1.08 
+phys_com_offset 0.25 0 0.25
+
+################ Physics Primitive liberator_cdbox1 ###########
+phys_box cdbox1 0.1 2.41 1.20 1.03 -0.89 -0.00 2.27 
+phys_orientation 0 0 0 
+phys_cookie bombercockpit 
+phys_material liberator 
+phys_collisionboneoffset 0.89 0.00 -2.27 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive liberator_cdbox10 ###########
+phys_box cdbox10 0.1 1.59 0.17 0.59 -5.57 -0.00 2.86 
+phys_orientation 0 2389 0 
+phys_cookie midtail 
+phys_material liberator 
+phys_collisionboneoffset 5.57 0.00 -2.86 
+phys_aggregate cdbox10_aggregate 
+
+################ Physics Primitive liberator_cdbox11 ###########
+phys_box cdbox11 0.1 1.59 0.17 0.59 -5.57 -0.60 1.96 
+phys_orientation 4532 -557 2342 
+phys_cookie righttail 
+phys_material liberator 
+phys_collisionboneoffset 5.57 0.60 -1.96 
+phys_aggregate cdbox11_aggregate 
+
+################ Physics Primitive liberator_cdbox12 ###########
+phys_box cdbox12 0.1 1.59 0.17 0.59 -5.57 0.52 1.97 
+phys_orientation -4474 -557 -2353 
+phys_cookie lefttail 
+phys_material liberator 
+phys_collisionboneoffset 5.57 -0.52 -1.97 
+phys_aggregate cdbox12_aggregate 
+
+################ Physics Primitive liberator_cdbox13 ###########
+phys_box cdbox13 0.1 2.17 2.91 0.29 -0.46 -1.76 1.68 
+phys_orientation 674 105 -395 
+phys_cookie rightwing 
+phys_material liberator 
+phys_collisionboneoffset 0.46 1.76 -1.68 
+phys_aggregate cdbox13_aggregate 
+
+################ Physics Primitive liberator_cdbox14 ###########
+phys_box cdbox14 0.1 2.13 2.91 0.29 -0.46 1.68 1.81 
+phys_orientation -629 98 397 
+phys_cookie leftwing 
+phys_material liberator 
+phys_collisionboneoffset 0.46 -1.68 -1.81 
+phys_aggregate cdbox14_aggregate 
+
+################ Physics Primitive liberator_cdbox2 ###########
+phys_box cdbox2 0.1 1.84 1.12 1.19 2.63 0.00 0.92 
+phys_orientation 0 0 0 
+phys_cookie extremefront 
+phys_material liberator 
+phys_collisionboneoffset -2.63 0.00 -0.92 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive liberator_cdbox3 ###########
+phys_box cdbox3 0.1 1.73 1.20 1.03 2.55 -0.00 1.43 
+phys_orientation 0 1251 0 
+phys_cookie pilotcockpit 
+phys_material liberator 
+phys_collisionboneoffset -2.55 0.00 -1.43 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive liberator_cdbox4 ###########
+phys_box cdbox4 0.1 1.82 1.20 1.03 1.04 -0.00 2.03 
+phys_orientation 0 728 0 
+phys_cookie midcockpit 
+phys_material liberator 
+phys_collisionboneoffset -1.04 0.00 -2.03 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive liberator_cdbox5 ###########
+phys_box cdbox5 0.1 1.29 0.72 1.41 2.41 -0.59 1.04 
+phys_orientation 0 0 614 
+phys_cookie rightairintake 
+phys_material liberator 
+phys_collisionboneoffset -2.41 0.59 -1.04 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive liberator_cdbox6 ###########
+phys_box cdbox6 0.1 1.29 0.72 1.41 2.41 0.59 1.04 
+phys_orientation 0 0 -614 
+phys_cookie leftairintake 
+phys_material liberator 
+phys_collisionboneoffset -2.41 -0.59 -1.04 
+phys_aggregate cdbox6_aggregate 
+
+################ Physics Primitive liberator_cdbox7 ###########
+phys_box cdbox7 0.1 4.05 0.80 0.59 -3.94 -0.00 2.27 
+phys_orientation 0 0 0 
+phys_cookie fuselage 
+phys_material liberator 
+phys_collisionboneoffset 3.94 0.00 -2.27 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive liberator_cdbox8 ###########
+phys_box cdbox8 0.1 3.08 0.88 1.45 -0.76 -3.10 1.07 
+phys_orientation 0 0 0 
+phys_cookie rightengine 
+phys_material liberator 
+phys_collisionboneoffset 0.76 3.10 -1.07 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive liberator_cdbox9 ###########
+phys_box cdbox9 0.1 3.08 0.88 1.45 -0.76 3.10 1.07 
+phys_orientation 0 0 0 
+phys_cookie leftengine 
+phys_material liberator 
+phys_collisionboneoffset 0.76 -3.10 -1.07 
+phys_aggregate cdbox9_aggregate 
+
+################ Physics Primitive liberator_cdsph0 ###########
+phys_sphere cdsph0 .1 0.44 1.92 0.76 0.44
+phys_cookie frontleftdirt
+phys_material skimmer
+phys_collisionboneoffset -1.92 -0.76 -0.44
+phys_aggregate cdsph0_aggregate 
+
+################ Physics Primitive liberator_cdsph1 ###########
+phys_sphere cdsph1 .1 0.44 1.92 -0.76 0.44
+phys_cookie frontrightdirt
+phys_material skimmer
+phys_collisionboneoffset -1.92 0.76 -0.44
+phys_aggregate cdsph1_aggregate 
+
+################ Physics Primitive liberator_cdsph2 ###########
+phys_sphere cdsph2 .1 0.44 0.00 3.10 0.44
+phys_cookie rearleftdirt
+phys_material skimmer
+phys_collisionboneoffset 0.00 -3.10 -0.44
+phys_aggregate cdsph2_aggregate 
+
+################ Physics Primitive liberator_cdsph3 ###########
+phys_sphere cdsph3 .1 0.44 0.00 -3.10 0.44
+phys_cookie rearrightdirt
+phys_material skimmer
+phys_collisionboneoffset 0.00 3.10 -0.44
+phys_aggregate cdsph3_aggregate 
+
+################ Physics Primitive liberator_cdsph4 ###########
+phys_sphere cdsph4 .1 0.44 -1.50 0.00 0.44
+phys_cookie rearmiddirt
+phys_material skimmer
+phys_collisionboneoffset 1.50 0.00 -0.44
+phys_aggregate cdsph4_aggregate 
+
+################ Physics Primitive liberator_cdsph5 ###########
+phys_sphere cdsph5 .1 0.75 -1.88 0.00 1.08
+phys_cookie turret
+phys_material skimmer
+phys_collisionboneoffset 1.88 0.00 -1.08
+phys_aggregate cdsph5_aggregate 
+
+phys_model liberator_destroyed
+################ Physics Primitive liberator_destroyed_cdbox0 ###########
+phys_box root 80 3.71 2.33 1.50 0.00 0.00 1.08 
+phys_orientation 0 0 0 
+phys_cookie root
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.00 0.00 -1.08 
+phys_com_offset -0.5 0 -0.5 
+
+################ Physics Primitive liberator_destroyed_cdbox1 ###########
+phys_box cdbox1 0.1 2.41 1.20 1.03 -0.89 -0.00 2.27 
+phys_orientation 0 0 0 
+phys_cookie gunnercockpit 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.89 0.00 -2.27 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox10 ###########
+phys_box cdbox10 0.1 1.59 0.17 0.59 -5.57 -0.00 2.86 
+phys_orientation 0 2389 0 
+phys_cookie midreartail 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 5.57 0.00 -2.86 
+phys_aggregate cdbox10_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox11 ###########
+phys_box cdbox11 0.1 1.59 0.17 0.59 -5.57 -0.60 1.96 
+phys_orientation 4532 -557 2342 
+phys_cookie rightreartail 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 5.57 0.60 -1.96 
+phys_aggregate cdbox11_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox12 ###########
+phys_box cdbox12 0.1 1.59 0.17 0.59 -5.57 0.52 1.97 
+phys_orientation -4474 -557 -2353 
+phys_cookie leftreartail 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 5.57 -0.52 -1.97 
+phys_aggregate cdbox12_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox13 ###########
+phys_box cdbox13 0.1 2.17 2.91 0.29 -0.46 -1.76 1.68 
+phys_orientation 674 105 -395 
+phys_cookie rightwing 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.46 1.76 -1.68 
+phys_aggregate cdbox13_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox14 ###########
+phys_box cdbox14 0.1 2.13 2.91 0.29 -0.46 1.68 1.81 
+phys_orientation -629 98 397 
+phys_cookie leftwing 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.46 -1.68 -1.81 
+phys_aggregate cdbox14_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox2 ###########
+phys_box cdbox2 0.1 1.84 1.12 1.19 2.63 0.00 0.92 
+phys_orientation 0 0 0 
+phys_cookie nose 
+phys_material liberator_destroyed 
+phys_collisionboneoffset -2.63 0.00 -0.92 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox3 ###########
+phys_box cdbox3 0.1 1.73 1.20 1.03 2.55 -0.00 1.43 
+phys_orientation 0 1251 0 
+phys_cookie frontwindow 
+phys_material liberator_destroyed 
+phys_collisionboneoffset -2.55 0.00 -1.43 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox4 ###########
+phys_box cdbox4 0.1 1.82 1.20 1.03 1.04 -0.00 2.03 
+phys_orientation 0 728 0 
+phys_cookie frontcockpit 
+phys_material liberator_destroyed 
+phys_collisionboneoffset -1.04 0.00 -2.03 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox5 ###########
+phys_box cdbox5 0.1 1.29 0.72 1.41 2.41 -0.59 1.04 
+phys_orientation 0 0 614 
+phys_cookie rightfrontnose 
+phys_material liberator_destroyed 
+phys_collisionboneoffset -2.41 0.59 -1.04 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox6 ###########
+phys_box cdbox6 0.1 1.29 0.72 1.41 2.41 0.59 1.04 
+phys_orientation 0 0 -614 
+phys_cookie leftfrontnose 
+phys_material liberator_destroyed 
+phys_collisionboneoffset -2.41 -0.59 -1.04 
+phys_aggregate cdbox6_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox7 ###########
+phys_box cdbox7 0.1 4.05 0.80 0.59 -3.94 -0.00 2.27 
+phys_orientation 0 0 0 
+phys_cookie fuselage 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 3.94 0.00 -2.27 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox8 ###########
+phys_box cdbox8 0.1 3.08 0.88 1.45 -0.76 -3.10 1.07 
+phys_orientation 0 0 0 
+phys_cookie rightengine 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.76 3.10 -1.07 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive liberator_destroyed_cdbox9 ###########
+phys_box cdbox9 0.1 3.08 0.88 1.45 -0.76 3.10 1.25 
+phys_orientation 0 0 0 
+phys_cookie leftengine 
+phys_material liberator_destroyed 
+phys_collisionboneoffset 0.76 -3.10 -1.25 
+phys_aggregate cdbox9_aggregate 
+
 phys_model lightgunship
 ################ Physics Primitive lightgunship_cdbox0 ###########
 phys_box root 50 1.76 2.31 0.68 -0.23 0.00 0.55 
@@ -2086,11 +2875,13 @@ phys_collisionboneoffset 1.30 -0.00 -3.05
 phys_aggregate cdbox3_aggregate 
 
 ################ Physics Primitive magrider_cdsph0 ###########
-phys_sphere cdsph0 2.5 0.65 3.00 -1.40 0.56 
+phys_sphere cdsph0 2.5 0.65 3.50 -1.60 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie frontrightdirt 
 phys_bonewrite wheel_fr x y z 
 phys_material hovertires 
-phys_collisionboneoffset -3.00 1.40 -0.56 
+phys_collisionboneoffset -3.50 1.60 -0.56 
 phys_offset_lowlimit 0 0 -0.5 
 phys_offset_highlimit 0 0 0.1 
 phys_carwheel magriderfr root cdsph0 
@@ -2105,11 +2896,13 @@ phys_carwheel_drives true
 phys_carwheel_brakes true 
 
 ################ Physics Primitive magrider_cdsph1 ###########
-phys_sphere cdsph1 2.5 0.65 -3.25 1.40 0.56 
+phys_sphere cdsph1 2.5 0.65 -3.5 1.60 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie rearleftdirt 
 phys_bonewrite wheel_rl x y z 
 phys_material hovertires 
-phys_collisionboneoffset 3.25 -1.40 -0.56 
+phys_collisionboneoffset 3.5 -1.60 -0.56 
 phys_offset_lowlimit 0 0 -0.5 
 phys_offset_highlimit 0 0 .1 
 phys_carwheel magriderrl root cdsph1 
@@ -2124,11 +2917,13 @@ phys_carwheel_drives true
 phys_carwheel_brakes true 
 
 ################ Physics Primitive magrider_cdsph2 ###########
-phys_sphere cdsph2 2.5 0.65 3.00 1.40 0.56 
+phys_sphere cdsph2 2.5 0.65 3.50 1.60 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie frontleftdirt 
 phys_bonewrite wheel_fl x y z 
 phys_material hovertires 
-phys_collisionboneoffset -3.00 -1.40 -0.56 
+phys_collisionboneoffset -3.50 -1.60 -0.56 
 phys_offset_lowlimit 0 0 -0.5 
 phys_offset_highlimit 0 0 0.1 
 phys_carwheel magriderfl root cdsph2 
@@ -2143,11 +2938,13 @@ phys_carwheel_drives true
 phys_carwheel_brakes true 
 
 ################ Physics Primitive magrider_cdsph3 ###########
-phys_sphere cdsph3 2.5 0.65 -3.25 -1.40 0.56 
+phys_sphere cdsph3 2.5 0.65 -3.5 -1.60 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie rearrightdirt 
 phys_bonewrite wheel_rr x y z 
 phys_material hovertires 
-phys_collisionboneoffset 3.25 1.40 -0.56 
+phys_collisionboneoffset 3.5 1.60 -0.56 
 phys_offset_lowlimit 0 0 -0.5 
 phys_offset_highlimit 0 0 0.1 
 phys_carwheel magriderrr root cdsph3 
@@ -3076,6 +3873,253 @@ phys_material rearrubber
 phys_collisionboneoffset -0.01 0.21 -0.98 
 phys_aggregate cdsph3_aggregate
 
+phys_model skyguard
+################ Physics Primitive skyguard_cdbox0 ###########
+phys_box root 75 2.06 2.03 1.15 -1.34 0.00 0.94 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material skyguard 
+phys_collisionboneoffset 1.34 -0.00 -0.94 
+phys_com_offset 0.25 0 0.39
+
+################ Physics Primitive skyguard_cdbox1 ###########
+phys_box cdbox1 0.1 1.61 2.70 0.29 -1.45 0.00 1.14 
+phys_orientation 0 0 0 
+phys_cookie midrear 
+phys_material skyguard 
+phys_collisionboneoffset 1.45 -0.00 -1.14 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive skyguard_cdbox2 ###########
+phys_box cdbox2 0.1 2.27 1.12 0.48 0.78 0.00 0.60 
+phys_orientation 0 0 0 
+phys_cookie lowerfront 
+phys_material skyguard 
+phys_collisionboneoffset -0.78 -0.00 -0.60 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive skyguard_cdbox3 ###########
+phys_box cdbox3 0.1 1.45 1.12 0.68 0.32 0.00 1.07 
+phys_orientation 0 409 0 
+phys_cookie midwindow 
+phys_material skyguard 
+phys_collisionboneoffset -0.32 -0.00 -1.07 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive skyguard_cdbox4 ###########
+phys_box cdbox4 0.1 0.93 1.12 0.51 1.37 0.00 0.84 
+phys_orientation 0 1342 0 
+phys_cookie frontwindow 
+phys_material skyguard 
+phys_collisionboneoffset -1.37 -0.00 -0.84 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive skyguard_cdbox5 ###########
+phys_box cdbox5 0.1 2.06 0.31 0.53 1.31 -0.64 0.70 
+phys_orientation 0 455 0 
+phys_cookie frontright_top_suspension 
+phys_material skyguard 
+phys_collisionboneoffset -1.31 0.64 -0.70 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive skyguard_cdbox6 ###########
+phys_box cdbox6 0.1 2.06 0.31 0.53 1.30 -0.64 0.53 
+phys_orientation 0 0 0 
+phys_cookie frontright_bottom_suspension 
+phys_material skyguard 
+phys_collisionboneoffset -1.30 0.64 -0.53 
+phys_aggregate cdbox6_aggregate 
+
+################ Physics Primitive skyguard_cdbox7 ###########
+phys_box cdbox7 0.1 2.06 0.31 0.53 1.31 0.64 0.70 
+phys_orientation 0 455 0 
+phys_cookie frontleft_top_suspension 
+phys_material skyguard 
+phys_collisionboneoffset -1.31 -0.64 -0.70 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive skyguard_cdbox8 ###########
+phys_box cdbox8 0.1 2.06 0.31 0.53 1.30 0.64 0.53 
+phys_orientation 0 0 0 
+phys_cookie frontleft_bottom_suspension 
+phys_material skyguard 
+phys_collisionboneoffset -1.30 -0.64 -0.53 
+phys_aggregate cdbox8_aggregate 
+
+################ Physics Primitive skyguard_cdbox9 ###########
+phys_box cdbox9 0.1 1.45 1.43 0.56 -1.34 0.00 1.77 
+phys_orientation 0 0 0 
+phys_cookie weapons 
+phys_material skyguard 
+phys_collisionboneoffset 1.34 -0.00 -1.77 
+phys_aggregate cdbox9_aggregate 
+
+################ Physics Primitive skyguard_cdsph0 ###########
+phys_sphere cdsph0 0.75 0.55 2.05 1.14 0.55 
+phys_cookie frontleftdirt 
+phys_bonewrite skyguard_tire_fl u v w 
+phys_bonewrite skyguard_sus_arm_l x y z 
+phys_material frontrubber 
+phys_collisionboneoffset 0.00 0.25 -0.50 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.2 
+phys_carwheel skyguard_fl root cdsph0 
+phys_carwheel_locksteering false 
+phys_carwheel_suspension_chassisheight 0.65 
+phys_carwheel_suspension_travel 0.6 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.5 
+phys_carwheel_steers true 
+phys_carwheel_drives false 
+phys_carwheel_brakes false 
+
+################ Physics Primitive skyguard_cdsph1 ###########
+phys_sphere cdsph1 0.75 0.55 2.05 -1.14 0.55 
+phys_cookie frontrightdirt 
+phys_bonewrite skyguard_tire_fr u v w 
+phys_bonewrite skyguard_sus_arm_r x y z 
+phys_material frontrubber 
+phys_collisionboneoffset 0.00 -0.25 -0.50 
+phys_offset_lowlimit 0 0 -0.4
+phys_offset_highlimit 0 0 0.2
+phys_carwheel skyguard_fr root cdsph1 
+phys_carwheel_locksteering false 
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.6
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.5 
+phys_carwheel_steers true 
+phys_carwheel_drives false 
+phys_carwheel_brakes false 
+
+################ Physics Primitive skyguard_cdsph2 ###########
+phys_sphere cdsph2 0.75 0.55 -1.58 1.14 0.54 
+phys_cookie rearleftdirt 
+phys_bonewrite skyguard_tire_rl u v w 
+phys_bonewrite skyguard_sus_rear x y z 
+phys_material rearrubber 
+phys_collisionboneoffset 0.00 0.25 -0.50 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.0
+phys_carwheel skyguard_rl root cdsph2 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.65
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.5 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive skyguard_cdsph3 ###########
+phys_sphere cdsph3 0.75 0.55 -1.58 -1.14 0.54 
+phys_cookie rearrightdirt 
+phys_bonewrite skyguard_tire_rr u v w 
+phys_bonewrite skyguard_sus_rear x y z 
+phys_material rearrubber 
+phys_collisionboneoffset 0.00 -0.25 -0.50 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.0 
+phys_carwheel skyguard_rr root cdsph3 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.65 
+phys_carwheel_suspension_travel 0.4
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.5 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+phys_model skyguard_destroyed
+################ Physics Primitive skyguard_destroyed_cdbox0 ###########
+phys_box root 75 2.06 2.03 1.15 -1.28 0.03 0.87 
+phys_orientation -204 91 0 
+phys_cookie root 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset 1.28 -0.03 -0.87 
+phys_com_offset 0.25 0 0.39 
+
+################ Physics Primitive skyguard_destroyed_cdbox1 ###########
+phys_box cdbox1 0.1 1.63 2.71 0.56 -1.38 0.04 1.07 
+phys_orientation 0 0 0 
+phys_cookie rearturret 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset 1.38 -0.04 -1.07 
+phys_aggregate cdbox1_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox2 ###########
+phys_box cdbox2 0.1 2.29 1.15 0.65 0.83 -0.00 0.45 
+phys_orientation 0 0 0 
+phys_cookie lowerfront 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -0.83 0.00 -0.45 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox3 ###########
+phys_box cdbox3 0.1 2.08 1.19 0.83 0.67 0.04 0.60 
+phys_orientation 0 409 0 
+phys_cookie frontwindow 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -0.67 -0.04 -0.60 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox4 ###########
+phys_box cdbox4 0.1 2.08 0.38 0.62 1.34 -0.64 0.70 
+phys_orientation 0 455 0 
+phys_cookie frontright_top_suspension 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -1.34 0.64 -0.70 
+phys_aggregate cdbox4_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox5 ###########
+phys_box cdbox5 0.1 2.08 0.35 0.62 1.32 -0.65 0.53 
+phys_orientation 0 0 0 
+phys_cookie frontright_bottom_suspension 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -1.32 0.65 -0.53 
+phys_aggregate cdbox5_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox6 ###########
+phys_box cdbox6 0.1 2.08 0.37 0.62 1.30 0.69 0.63 
+phys_orientation 0 273 -14 
+phys_cookie frontleft_top_suspension 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -1.30 -0.69 -0.63 
+phys_aggregate cdbox6_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdbox7 ###########
+phys_box cdbox7 0.1 2.08 0.36 0.62 1.29 0.67 0.46 
+phys_orientation 0 -181 -14 
+phys_cookie frontleft_bottom_suspension 
+phys_material skyguard_destroyed 
+phys_collisionboneoffset -1.29 -0.67 -0.46 
+phys_aggregate cdbox7_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdsph0 ###########
+phys_sphere cdsph0 0.75 0.55 2.09 1.40 0.54 
+phys_cookie frontleftdirt 
+phys_material frontrubber 
+phys_collisionboneoffset -2.09 -1.40 -0.54 
+phys_aggregate cdsph0_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdsph1 ###########
+phys_sphere cdsph1 0.75 0.55 2.09 -1.18 0.52 
+phys_cookie frontrightdirt 
+phys_material frontrubber 
+phys_collisionboneoffset -2.09 1.18 -0.52 
+phys_aggregate cdsph1_aggregate 
+
+################ Physics Primitive skyguard_destroyed_cdsph3 ###########
+phys_sphere cdsph3 0.75 0.55 -1.56 -1.10 0.53 
+phys_cookie rearrightdirt 
+phys_material rearrubber 
+phys_collisionboneoffset 1.56 1.10 -0.53 
+phys_aggregate cdsph3_aggregate 
+
 phys_model spitfire_turret
 ################ Physics Primitive spitfire_turret_cdbox0 ###########
 phys_box root 5 0.84 0.88 1.48 0.02 0.02 0.74 
@@ -3091,6 +4135,151 @@ phys_orientation 0 0 -4095
 phys_cookie root 
 phys_material metal 
 phys_collisionboneoffset 0.01 0.02 -0.74 
+
+phys_model switchblade
+################ Physics Primitive switchblade_cdbox0 ###########
+phys_box root 55 2.19 2.07 0.42 -0.84 0.00 0.67 
+phys_orientation 0 0 0 
+phys_cookie root
+phys_material switchblade 
+phys_collisionboneoffset 0.84 -0.00 -0.67 
+
+################ Physics Primitive switchblade_cdbox1 ###########
+phys_box cdbox1 0.1 5.20 1.13 1.60 -.25 0.00 1.7
+phys_orientation 0 290 0 
+phys_cookie cigar_shape
+phys_model_frictionless_with_terrain true
+phys_material switchblade 
+phys_collisionboneoffset 0.25 -0.00 -1.7
+phys_body_position 0.5 0.0 1.0
+phys_rpro cdbox1_rpro root cdbox1
+phys_rpro_linearstrength 1 1 1
+phys_rpro_angularstrength 1 1 1
+
+################ Physics Primitive switchblade_cdbox2 ###########
+phys_box cdbox2 0.1 1.11 0.31 0.96 0.79 -0.87 0.87 
+phys_orientation 0 0 0 
+phys_cookie base_right_front 
+phys_material switchblade 
+phys_collisionboneoffset -0.79 0.87 -0.87 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive switchblade_cdbox3 ###########
+phys_box cdbox3 0.1 1.11 0.31 0.96 0.79 0.88 0.87 
+phys_orientation 0 0 0 
+phys_cookie base_left_front 
+phys_material switchblade 
+phys_collisionboneoffset -0.79 -0.88 -0.87 
+phys_aggregate cdbox3_aggregate 
+
+################ Physics Primitive switchblade_cdsph0 ###########
+phys_sphere cdsph0 2 0.56 1.75 1.03 0.80
+phys_cookie frontleftdirt 
+phys_model_collides_with_objects false
+phys_material hovertires 
+phys_collisionboneoffset -1.75 -1.03 -0.80
+phys_offset_lowlimit 0 0 -0.3 
+phys_offset_highlimit 0 0 0.4 
+phys_carwheel switchbladefl root cdsph0 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.80
+phys_carwheel_suspension_travel 0.7 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive switchblade_cdsph1 ###########
+phys_sphere cdsph1 2 0.56 -2.25 1.03 0.80
+phys_cookie rearleftdirt 
+phys_model_collides_with_objects false
+phys_material hovertires 
+phys_collisionboneoffset 2.25 -1.03 -0.80
+phys_offset_lowlimit 0 0 -0.3 
+phys_offset_highlimit 0 0 0.4 
+phys_carwheel switchbladerl root cdsph1 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.80
+phys_carwheel_suspension_travel 0.7 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive switchblade_cdsph2 ###########
+phys_sphere cdsph2 2 0.56 -2.25 -1.04 0.80
+phys_cookie rearrightdirt 
+phys_model_collides_with_objects false
+phys_material hovertires 
+phys_collisionboneoffset 2.25 1.04 -0.80
+phys_offset_lowlimit 0 0 -0.3 
+phys_offset_highlimit 0 0 0.4 
+phys_carwheel switchbladerr root cdsph2 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.80
+phys_carwheel_suspension_travel 0.7 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive switchblade_cdsph3 ###########
+phys_sphere cdsph3 2 0.56 1.75 -1.04 0.80
+phys_cookie frontrightdirt 
+phys_model_collides_with_objects false
+phys_material hovertires 
+phys_collisionboneoffset -1.75 1.04 -0.80
+phys_offset_lowlimit 0 0 -0.3 
+phys_offset_highlimit 0 0 0.4 
+phys_carwheel switchbladefr root cdsph3 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 0.80
+phys_carwheel_suspension_travel 0.7 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+phys_model switchblade_destroyed
+################ Physics Primitive switchblade_destroyed_cdbox0 ###########
+phys_box cdbox0 0.1 4.23 1.24 2.08 0.22 -0.06 1.57 
+phys_orientation 0 0 0 
+phys_cookie body 
+phys_material switchblade_destroyed 
+phys_collisionboneoffset -0.22 0.06 -1.57 
+phys_aggregate cdbox0_aggregate 
+
+################ Physics Primitive switchblade_destroyed_cdbox1 ###########
+phys_box root 1500 2.19 2.06 0.42 -0.96 -0.10 0.21 
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material switchblade_destroyed 
+phys_collisionboneoffset 0.96 0.10 -0.21 
+phys_com_offset 1.0 0.0 -1.0 
+
+################ Physics Primitive switchblade_destroyed_cdbox2 ###########
+phys_box cdbox2 0.1 1.11 0.31 0.96 0.68 -0.97 0.40 
+phys_orientation 0 0 0 
+phys_cookie base_right 
+phys_material switchblade_destroyed 
+phys_collisionboneoffset -0.68 0.97 -0.40 
+phys_aggregate cdbox2_aggregate 
+
+################ Physics Primitive switchblade_destroyed_cdbox3 ###########
+phys_box cdbox3 0.1 1.11 0.31 0.96 0.68 0.77 0.40 
+phys_orientation 0 0 0 
+phys_cookie base_left 
+phys_material switchblade_destroyed 
+phys_collisionboneoffset -0.68 -0.77 -0.40 
+phys_aggregate cdbox3_aggregate 
 
 phys_model threemanheavybuggy
 ################ Physics Primitive threemanheavybuggy_cdbox0 ###########
@@ -3619,6 +4808,8 @@ phys_aggregate cdbox5_aggregate
 
 ################ Physics Primitive twomanhoverbuggy_cdsph0 ###########
 phys_sphere cdsph0 2.5 0.65 -1.75 1.10 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie rearleftdirt
 phys_bonewrite wheel_rl x y z 
 phys_material hovertires 
@@ -3637,11 +4828,13 @@ phys_carwheel_drives true
 phys_carwheel_brakes true 
 
 ################ Physics Primitive twomanhoverbuggy_cdsph1 ###########
-phys_sphere cdsph1 2.5 0.65 2.00 1.10 0.56 
+phys_sphere cdsph1 2.5 0.65 2.40 1.10 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie frontleftdirt 
-phys_bonewrite wheel_fl x y z 
+phys_bonewrite thresher_f_l_sus x y z 
 phys_material hovertires 
-phys_collisionboneoffset -2.00 -1.10 -0.56 
+phys_collisionboneoffset -2.40 -1.10 -0.56 
 phys_offset_lowlimit 0 0 -0.4 
 phys_offset_highlimit 0 0 0.1 
 phys_carwheel twomanhoverfl root cdsph1 
@@ -3657,6 +4850,8 @@ phys_carwheel_brakes true
 
 ################ Physics Primitive twomanhoverbuggy_cdsph2 ###########
 phys_sphere cdsph2 2.5 0.65 -1.75 -1.10 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie rearrightdirt 
 phys_bonewrite wheel_rr x y z 
 phys_material hovertires 
@@ -3675,11 +4870,13 @@ phys_carwheel_drives true
 phys_carwheel_brakes true 
 
 ################ Physics Primitive twomanhoverbuggy_cdsph3 ###########
-phys_sphere cdsph3 2.5 0.65 2.00 -1.10 0.56 
+phys_sphere cdsph3 2.5 0.65 2.40 -1.10 0.56 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
 phys_cookie frontrightdirt 
-phys_bonewrite wheel_fr x y z 
+phys_bonewrite thresher_f_r_sus x y z 
 phys_material hovertires 
-phys_collisionboneoffset -2.00 1.10 -0.56 
+phys_collisionboneoffset -2.40 1.10 -0.56 
 phys_offset_lowlimit 0 0 -0.4 
 phys_offset_highlimit 0 0 0.1 
 phys_carwheel twomanhoverfr root cdsph3 
@@ -3997,209 +5194,166 @@ phys_collisionboneoffset 0.01 0.30 -4.46
 phys_aggregate cdbox1_aggregate 
 
 
-phys_model dropship_fixed
-################ Physics Primitive dropship_fixed_cdbox1 ###########
-phys_box cdbox1 .1 0.84 4.02 4.50 -2.65 0.00 2.75 
+phys_model router
+################ Physics Primitive router_cdbox0 ###########
+phys_box cdbox0 0.1 1.46 2.37 0.94 0.01 3.20 2.72 
 phys_orientation 0 0 0 
-phys_cookie c_stop 
-phys_material metal 
-phys_collisionboneoffset 2.65 0.00 -2.75 
-phys_aggregate cdbox1_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox2 ###########
-phys_box cdbox2 0.1 13.89 8.91 0.74 -9.29 0.00 5.15 
-phys_orientation 0 0 0 
-phys_cookie c_scoopt 
-phys_material rubber 
-phys_collisionboneoffset 9.29 0.00 -5.15 
-phys_aggregate cdbox2_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox3 ###########
-phys_box cdbox3 0.1 7.91 0.44 3.84 -6.61 2.19 2.74 
-phys_orientation 0 0 0 
-phys_cookie c_scooplw 
-phys_material rubber 
-phys_collisionboneoffset 6.61 -2.19 -2.74 
-phys_aggregate cdbox3_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox4 ###########
-phys_box cdbox4 0.1 7.91 0.44 3.84 -6.61 -2.21 2.74 
-phys_orientation 0 0 0 
-phys_cookie c_scooprw 
-phys_material rubber 
-phys_collisionboneoffset 6.61 2.21 -2.74 
-phys_aggregate cdbox4_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox5 ###########
-phys_box cdbox5 0.1 7.20 0.44 6.41 -13.93 -3.29 2.08 
-phys_orientation 0 0 803 
-phys_cookie c_scoopr 
-phys_material rubber 
-phys_collisionboneoffset 13.93 3.29 -2.08 
-phys_aggregate cdbox5_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox6 ###########
-phys_box cdbox6 0.1 7.20 0.44 6.41 -14.01 3.03 2.08 
-phys_orientation 0 0 -619 
-phys_cookie c_scoopl 
-phys_material rubber 
-phys_collisionboneoffset 14.01 -3.03 -2.08 
-phys_aggregate cdbox6_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox7 ###########
-phys_box cdbox7 .1 6.32 8.27 1.08 -12.61 0.00 -0.22 
-phys_orientation 0 -682 0 
-phys_cookie c_ramp 
-phys_material metal 
-phys_collisionboneoffset 12.61 -0.00 0.22 
-phys_aggregate cdbox7_aggregate 
-
-################ Physics Primitive dropship_fixed_cdbox8 ###########
-phys_box cdbox8 .1 6.70 4.02 0.60 -6.35 0.00 0.82 
-phys_orientation 0 0 0 
-phys_cookie c_plat 
-phys_material metal 
-phys_collisionboneoffset 6.35 -0.00 -0.82 
-phys_aggregate cdbox8_aggregate 
-
-
-phys_model ams_fixed
-################ Physics Primitive ams_fixed_cdbox0 ###########
-phys_box cdbox0 0.1 1.44 2.28 2.92 1.72 -0.01 2.05 
-phys_orientation 0 0 0 
-phys_cookie front2 
-phys_material ams 
-phys_collisionboneoffset -1.72 0.01 -2.05 
+phys_cookie leftwing 
+phys_material router 
+phys_collisionboneoffset -0.01 -3.20 -2.72 
 phys_aggregate cdbox0_aggregate 
 
-################ Physics Primitive ams_fixed_cdbox1 ###########
-phys_box cdbox1 0.1 2.49 2.04 2.04 -2.99 0.00 1.61 
+################ Physics Primitive router_cdbox1 ###########
+phys_box cdbox1 0.1 1.73 1.57 0.89 -0.01 -2.62 2.75 
 phys_orientation 0 0 0 
-phys_cookie backend 
-phys_material metal 
-phys_collisionboneoffset 2.99 -0.00 -1.61 
+phys_cookie rightwing 
+phys_material router 
+phys_collisionboneoffset 0.01 2.62 -2.75 
 phys_aggregate cdbox1_aggregate 
 
-################ Physics Primitive ams_fixed_cdbox2 ###########
-phys_box root 130 1.58 0.6 3.0 -0.03 0.02 1.75
-phys_orientation 0 0 0 
-phys_cookie root 
-phys_material ams 
-phys_collisionboneoffset 0.03 -0.02 -1.75
-phys_com_offset -0.27 0 0.5 
+################ Physics Primitive router_cdbox2 ###########
+phys_box cdbox2 0.1 1.39 3.13 0.47 0.04 -1.59 3.09
+phys_orientation -448 0 -8191 
+phys_cookie top_right 
+phys_material router 
+phys_collisionboneoffset -0.04 1.59 -3.09
+phys_aggregate cdbox2_aggregate 
 
-################ Physics Primitive ams_fixed_cdbox7 ###########
-phys_box cdbox7 0.1 0.75 3.07 2.0 0.90 0.02 2.125
-phys_orientation 0 0 0 
-phys_cookie ams_spawnfront
-phys_material metal 
-phys_collisionboneoffset -0.90 -0.02 -2.125
-phys_aggregate cdbox7_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox8 ###########
-phys_box cdbox8 0.1 0.75 3.07 2.0 -1.25 0.02 2.125 
-phys_orientation 0 0 0 
-phys_cookie ams_spawnrear
-phys_material metal 
-phys_collisionboneoffset 1.25 -0.02 -2.125
-phys_aggregate cdbox8_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox9 ###########
-phys_box cdbox9 0.1 0.75 3.07 1.0 0.90 0.02 0.625
-phys_orientation 0 0 0 
-phys_cookie ams_spawnfront_floor
-phys_material metal 
-phys_collisionboneoffset -0.90 -0.02 -0.625
-phys_aggregate cdbox9_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox10 ###########
-phys_box cdbox10 0.1 0.75 3.07 1.0 -1.25 0.02 0.625 
-phys_orientation 0 0 0 
-phys_cookie ams_spawnrear_floor
-phys_material metal 
-phys_collisionboneoffset 1.25 -0.02 -0.625
-phys_aggregate cdbox10_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox11 ###########
-phys_box cdbox11 0.1 3.0 3.07 0.2 -0.03 0.02 0.1
-phys_orientation 0 0 0 
-phys_cookie ams_floor
-phys_material metal 
-phys_collisionboneoffset 0.03 -0.02 -0.1
-phys_aggregate cdbox11_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox12 ###########
-phys_box cdbox12 0.1 3.0 3.05 0.2 -0.03 0.02 2.5
-phys_orientation 0 0 0 
-phys_cookie ams_ceiling
-phys_material metal 
-phys_collisionboneoffset 0.03 -0.02 -2.5
-phys_aggregate cdbox12_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox3 ###########
-phys_box cdbox3 0.1 3.48 0.90 1.21 -1.78 0.01 1.37 
-phys_orientation 0 -1206 0 
-phys_cookie ams_hydraulics 
-phys_material ams 
-phys_collisionboneoffset 1.78 -0.01 -1.37 
+################ Physics Primitive router_cdbox3 ###########
+phys_box cdbox3 0.1 1.39 3.13 0.47 0.04 1.39 3.11 
+phys_orientation -448 0 0 
+phys_cookie topleft 
+phys_material router 
+phys_collisionboneoffset -0.04 -1.25 -3.26 
 phys_aggregate cdbox3_aggregate 
 
-################ Physics Primitive ams_fixed_cdbox4 ###########
-phys_box cdbox4 0.1 1.06 1.43 0.34 -4.12 0.02 1.06 
+################ Physics Primitive router_cdbox4 ###########
+phys_box root 55 4.05 3.92 0.43 -0.02 0.05 2.85
+phys_orientation 0 0 2047
+phys_cookie root 
+phys_material router 
+phys_collisionboneoffset 0.02 -0.05 -2.85
+#phys_com_offset 0 0 -1.4 
+phys_com_offset 0 0 0
+
+################ Physics Primitive router_cdsph0 ###########
+phys_sphere cdsph0 2.5 1.29 1.33 1.44 1.28 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
+phys_cookie frontleftdirt
+phys_material hovertires 
+phys_collisionboneoffset -1.33 -1.44 -1.28 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel routerfl root cdsph0 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 1.3 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive router_cdsph1 ###########
+phys_sphere cdsph1 2.5 1.31 1.34 -1.27 1.28 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
+phys_cookie frontrightdirt
+phys_material hovertires 
+phys_collisionboneoffset -1.34 1.27 -1.28 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel routerfr root cdsph1 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 1.3 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive router_cdsph2 ###########
+phys_sphere cdsph2 2.5 1.31 -1.44 -1.27 1.28 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
+phys_cookie rearrightdirt
+phys_material hovertires 
+phys_collisionboneoffset 1.44 1.27 -1.28 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel routerrr root cdsph2 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 1.3 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+################ Physics Primitive router_cdsph3 ###########
+phys_sphere cdsph3 2.5 1.29 -1.43 1.44 1.28 
+phys_raytrace_excludedimensions true
+phys_model_collides_with_objects false
+phys_cookie rearleftdirt
+phys_material hovertires 
+phys_collisionboneoffset 1.43 -1.44 -1.28 
+phys_offset_lowlimit 0 0 -0.4 
+phys_offset_highlimit 0 0 0.1 
+phys_carwheel routerrl root cdsph3 
+phys_carwheel_locksteering true 
+phys_carwheel_suspension_chassisheight 1.3 
+phys_carwheel_suspension_travel 0.5 
+phys_carwheel_suspension_damping 1.25 
+phys_carwheel_suspension_ztos 0.8 
+phys_carwheel_suspension_softness 0.25 
+phys_carwheel_steers false 
+phys_carwheel_drives true 
+phys_carwheel_brakes true 
+
+phys_model router_destroyed
+################ Physics Primitive router_destroyed_cdbox0 ###########
+phys_box cdbox0 0.1 1.46 2.37 0.94 0.01 3.20 2.72 
 phys_orientation 0 0 0 
-phys_cookie trunk 
-phys_material ams 
-phys_collisionboneoffset 4.12 -0.02 -1.06 
-phys_aggregate cdbox4_aggregate 
+phys_cookie leftwing 
+phys_material router_destroyed 
+phys_collisionboneoffset -0.01 -3.20 -2.72 
+phys_aggregate cdbox0_aggregate 
 
-################ Physics Primitive ams_fixed_cdbox5 ###########
-phys_box cdbox5 0.1 1.14 1.83 1.14 2.29 -0.02 2.71 
-phys_orientation 0 -1570 0 
-phys_cookie cab 
-phys_material ams 
-phys_collisionboneoffset -2.29 0.02 -2.71 
-phys_aggregate cdbox5_aggregate 
-
-################ Physics Primitive ams_fixed_cdbox6 ###########
-phys_box cdbox6 0.1 1.07 2.25 1.91 2.98 -0.00 1.83 
+################ Physics Primitive router_destroyed_cdbox1 ###########
+phys_box cdbox1 0.1 1.73 1.57 0.89 -0.01 -2.62 2.75 
 phys_orientation 0 0 0 
-phys_cookie frontengine 
-phys_material ams 
-phys_collisionboneoffset -2.98 0.00 -1.83 
-phys_aggregate cdbox6_aggregate 
+phys_cookie rightwing 
+phys_material router_destroyed 
+phys_collisionboneoffset 0.01 2.62 -2.75 
+phys_aggregate cdbox1_aggregate 
 
-################ Physics Primitive ams_fixed_cdsph0 ###########
-phys_sphere cdsph0 1.5 0.60 2.18 1.32 0.60 
-phys_cookie frontleftdirt 
-phys_material ams 
-phys_collisionboneoffset -2.18 -1.32 -0.60 
+################ Physics Primitive router_destroyed_cdbox2 ###########
+phys_box cdbox2 0.1 1.39 3.13 0.47 0.04 -1.59 3.09
+phys_orientation -448 0 -8191 
+phys_cookie top_right 
+phys_material router_destroyed 
+phys_collisionboneoffset -0.04 1.59 -3.09
+phys_aggregate cdbox2_aggregate 
 
-################ Physics Primitive ams_fixed_cdsph1 ###########
-phys_sphere cdsph1 1.5 0.6 2.18 -1.38 0.60 
-phys_cookie frontrightdirt 
-phys_material ams
-phys_collisionboneoffset -2.18 1.38 -0.60 
+################ Physics Primitive router_destroyed_cdbox3 ###########
+phys_box cdbox3 0.1 1.39 3.13 0.47 0.04 1.39 3.11 
+phys_orientation -448 0 0 
+phys_cookie topleft 
+phys_material router_destroyed 
+phys_collisionboneoffset -0.04 -1.25 -3.26 
+phys_aggregate cdbox3_aggregate 
 
-################ Physics Primitive ams_fixed_cdsph2 ###########
-phys_sphere cdsph2 0.1 0.6 -2.25 1.32 0.77 
-phys_cookie midleftdirt 
-phys_material ams
-phys_collisionboneoffset 2.25 -1.32 -0.77 
+################ Physics Primitive router_destroyed_cdbox4 ###########
+phys_box root 55 4.05 3.92 0.43 -0.02 0.05 2.85
+phys_orientation 0 0 2047
+phys_cookie root 
+phys_material router_destroyed 
+phys_collisionboneoffset 0.02 -0.05 -2.85
+phys_com_offset 0 0 -1.4 
 
-################ Physics Primitive ams_fixed_cdsph3 ###########
-phys_sphere cdsph3 0.1 0.6 -2.27 -1.38 0.77 
-phys_cookie midrightdirt 
-phys_material ams 
-phys_collisionboneoffset 2.27 1.38 -0.77 
-
-################ Physics Primitive ams_fixed_cdsph4 ###########
-phys_sphere cdsph4 1.5 0.6 -3.60 1.30 0.60 
-phys_cookie rearleftdirt 
-phys_material ams
-phys_collisionboneoffset 3.60 -1.30 -0.60 
-
-################ Physics Primitive ams_fixed_cdsph5 ###########
-phys_sphere cdsph5 1.5 0.6 -3.60 -1.38 0.60 
-phys_cookie rearrightdirt 
-phys_material ams
-phys_collisionboneoffset 3.60 1.38 -0.60

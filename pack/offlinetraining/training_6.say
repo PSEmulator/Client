@@ -25,8 +25,7 @@ $begin OfflineTrainingMission6
     # 2nd dialogue
     $text_dlg @OfflineMission6_02 25
     $play Capture_02.mp3
-    $set_page SoldierManagement
-    $flash button_map
+    $flash SoldierManagement.button_map
     $sync
 
     # Wait for the overhead map to be shown
@@ -117,21 +116,23 @@ $begin OfflineTrainingMission6
     $thaw
 
     # follow internal way-points here!!!!
-	$set_waypoint 2522 3730 42 2
+	$set_waypoint 2518 3728 42 2
 	$wait_waypoint 2
 	$set_waypoint 2500 3730 45 2
 	$wait_waypoint 2
-	$set_waypoint 2487 3730 47 2
+	$set_waypoint 2485 3730 47 2
 	$wait_waypoint 2
 	$set_waypoint 2463 3726 52 2
 	$wait_waypoint 2
 	$set_waypoint 2463 3734 52 2
 	$wait_waypoint 2
-	$set_waypoint 2477 3734 57 2
+	$set_waypoint 2471 3734 54 2
+	$wait_waypoint 2
+	$set_waypoint 2477 3731 57 2
 	$wait_waypoint 2
 	$set_waypoint 2477 3725 57 2
-	$wait_waypoint 2
-    
+	$wait_waypoint 2    
+
     # 12th dialogue
     $freeze false
     $text_dlg @OfflineMission6_12 25

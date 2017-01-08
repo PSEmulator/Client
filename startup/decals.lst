@@ -1199,12 +1199,11 @@ decal_end
 
 
 ##############################################
-decal_begin     decal_deployable_nc
+decal_begin     decal_strike_nc
 
-decal_material  decal_waypoint
-decal_normal_only
-decal_size      3
-decal_range     25
+decal_material  decal_strike
+decal_size      2.5
+decal_range     500
 decal_color     AF0000A0
 decal_infinite
 
@@ -1212,12 +1211,11 @@ decal_end
 
 
 ##############################################
-decal_begin     decal_deployable_tr
+decal_begin     decal_strike_tr
 
-decal_material  decal_waypoint
-decal_normal_only
-decal_size      3
-decal_range     25
+decal_material  decal_strike
+decal_size      2.5
+decal_range     500
 decal_color     AFBE0000
 decal_infinite
 
@@ -1225,12 +1223,11 @@ decal_end
 
 
 ##############################################
-decal_begin     decal_deployable_vs
+decal_begin     decal_strike_vs
 
-decal_material  decal_waypoint
-decal_normal_only
-decal_size      3
-decal_range     25
+decal_material  decal_strike
+decal_size      2.5
+decal_range     500
 decal_color     AF4B0096
 decal_infinite
 
@@ -1328,7 +1325,6 @@ decal_end
 decal_begin     decal_bluedeath_nc
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      60:10.0
@@ -1344,7 +1340,6 @@ decal_end
 decal_begin     decal_bluedeath_tr
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      60:10.0
@@ -1360,7 +1355,6 @@ decal_end
 decal_begin     decal_bluedeath_vs
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      60:10.0
@@ -1376,7 +1370,6 @@ decal_end
 decal_begin     decal_bluedeath_lrg_nc
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      120:30.0
@@ -1392,7 +1385,6 @@ decal_end
 decal_begin     decal_bluedeath_lrg_tr
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      120:30.0
@@ -1408,7 +1400,6 @@ decal_end
 decal_begin     decal_bluedeath_lrg_vs
 
 decal_material  decal_bluedeath
-decal_normal_only
 decal_spacing   15
 decal_framerate 30
 decal_size      120:30.0
@@ -1424,7 +1415,6 @@ decal_end
 decal_begin     decal_bluedeath_exp_small
 
 decal_material  decal_warp_impact
-decal_normal_only
 decal_framerate 90
 decal_size      150
 decal_random_orientation
@@ -1437,11 +1427,47 @@ decal_end
 decal_begin     decal_bluedeath_exp_lrg
 
 decal_material  decal_warp_impact
-decal_normal_only
 decal_framerate 90
 decal_size      300
 decal_random_orientation
 decal_range     500
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deres_small
+
+decal_material  decal_deres
+decal_size      2
+decal_range     200
+decal_color     AF0000A0
+decal_fade      2
+
+decal_end
+
+
+
+##############################################
+decal_begin     decal_deres_medium
+
+decal_material  decal_deres
+decal_size      10
+decal_range     200
+decal_color     FFFFFFFF
+decal_fade      2
+
+decal_end
+
+
+##############################################
+decal_begin     decal_deres_large
+
+decal_material  decal_deres
+decal_size      25
+decal_range     200
+decal_color     FFFFFFFF
+decal_fade      2
 
 decal_end
 

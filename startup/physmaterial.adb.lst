@@ -172,17 +172,6 @@ phys_material_restitution 0.1
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.0001
 
-##corpse
-
-phys_material_dimensions 2
-phys_material_friction 100000
-phys_material_softness 0.0005
-phys_material_adhesion 2
-phys_material_restitution 0.0
-phys_material_primaryslip 0
-phys_material_secondaryslip 0
-phys_material_tensilestrength 1
-
 ##rearquadrubber
 
 phys_material_dimensions 2
@@ -274,6 +263,16 @@ phys_material_restitution 0.1
 phys_material_primaryslip 0.001
 phys_material_secondaryslip 0.001
 
+##metal
+
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
 ##magridertires
 
 phys_material_dimensions 2
@@ -334,35 +333,26 @@ phys_material_restitution 0.1
 phys_material_primaryslip 0.0001
 phys_material_secondaryslip 0.001
 
-##metal
+##corpse
 
 phys_material_dimensions 2
-phys_material_friction 50000
+phys_material_friction 100000
 phys_material_softness 0.0005
-phys_material_adhesion 0
-phys_material_restitution 0.01
+phys_material_adhesion 2
+phys_material_restitution 0.0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+phys_material_tensilestrength 1
+
+##manned_turret
+
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0005
+phys_material_adhesion 0.0001
+phys_material_restitution 0.001
 phys_material_primaryslip 0.001
-phys_material_secondaryslip 0.001
-
-##ant_destroyed
-
-phys_material_dimensions 2
-phys_material_friction 50000
-phys_material_softness 0.0005
-phys_material_adhesion 1000000
-phys_material_restitution 0.02
-phys_material_primaryslip 0.00001
-phys_material_secondaryslip 0.0001
-
-##ant
-
-phys_material_dimensions 2
-phys_material_friction 50000
-phys_material_softness 0.0005
-phys_material_adhesion 0
-phys_material_restitution 0.01
-phys_material_primaryslip 0.001
-phys_material_secondaryslip 0.001
+phys_material_secondaryslip 0.0005
 
 ##tread
 
@@ -373,6 +363,66 @@ phys_material_adhesion 0
 phys_material_restitution 0.01
 phys_material_primaryslip 0.0002
 phys_material_secondaryslip 0.0008
+
+##switchblade_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+##router_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 900000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+##flail_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+##switchblade
+
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+##router
+
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+##flail
+
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
 
 ##vanguard_destroyed
 
@@ -421,6 +471,16 @@ phys_material_friction 60000
 phys_material_softness 0.0005
 phys_material_adhesion 1000000
 phys_material_restitution 0.01
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+##skyguard_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.0001
 
@@ -494,6 +554,16 @@ phys_material_restitution 0.01
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.0001
 
+##liberator_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
 ##dropship_destroyed
 
 phys_material_dimensions 2
@@ -511,6 +581,16 @@ phys_material_friction 50000
 phys_material_softness 0.0005
 phys_material_adhesion 1000000
 phys_material_restitution 0.01
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+##ant_destroyed
+
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0.02
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.0001
 
@@ -565,6 +645,16 @@ phys_material_primaryslip 0.01
 phys_material_secondaryslip 0.01
 
 ##threemanheavybuggy
+
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+##skyguard
 
 phys_material_dimensions 2
 phys_material_friction 5000
@@ -644,6 +734,16 @@ phys_material_restitution 0.03
 phys_material_primaryslip 0.00001
 phys_material_secondaryslip 0.0001
 
+##liberator
+
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
 ##dropship
 
 phys_material_dimensions 2
@@ -673,6 +773,16 @@ phys_material_adhesion 1
 phys_material_restitution 0
 phys_material_primaryslip 0.001
 phys_material_secondaryslip 0.0001
+
+##ant
+
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
 
 ##ams
 

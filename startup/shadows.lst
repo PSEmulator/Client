@@ -22,6 +22,31 @@ coarse Vt_building_vs      vt_building_vs_crp
 coarse meeting_center_nc   meeting_center_nc_crp
 coarse meeting_center_tr   meeting_center_tr_crp
 coarse meeting_center_vs   meeting_center_vs_crp
+coarse ceiling_bldg_a      ceiling_bldg_a_crp
+coarse ceiling_bldg_b      ceiling_bldg_b_crp
+coarse ceiling_bldg_c      ceiling_bldg_c_crp
+coarse ceiling_bldg_d      ceiling_bldg_d_crp
+coarse ceiling_bldg_e      ceiling_bldg_e_crp
+coarse ceiling_bldg_f      ceiling_bldg_f_crp
+coarse ceiling_bldg_g      ceiling_bldg_g_crp
+coarse ceiling_bldg_h      ceiling_bldg_h_crp
+coarse ceiling_bldg_i      ceiling_bldg_i_crp
+coarse ceiling_bldg_j      ceiling_bldg_j_crp
+coarse ceiling_bldg_z      ceiling_bldg_z_crp
+coarse ground_bldg_a       ground_bldg_a_crp
+coarse ground_bldg_b       ground_bldg_b_crp
+coarse ground_bldg_c       ground_bldg_c_crp
+coarse ground_bldg_d       ground_bldg_d_crp
+coarse ground_bldg_e       ground_bldg_e_crp
+coarse ground_bldg_f       ground_bldg_f_crp
+coarse ground_bldg_g       ground_bldg_g_crp
+coarse ground_bldg_h       ground_bldg_h_crp
+coarse ground_bldg_i       ground_bldg_i_crp
+coarse ground_bldg_j       ground_bldg_j_crp
+coarse ground_bldg_z       ground_bldg_z_crp
+coarse Vanu_core              Vanu_core_crp
+coarse vanu_control_point     vanu_control_point_crp
+coarse vanu_vehicle_station   vanu_vehicle_station_crp
 
 coarse rockformationa      rockformationa_crp
 coarse rockformationb      rockformationb_crp
@@ -160,8 +185,24 @@ all_coarse swamptreed    swamptreed_crp
 # added some grannies with CDTRI creps
 all_coarse gen_rigging       gen_rigging_crp
 all_coarse pad_landing       pad_landing_crp
-all_coarse pad_creation      pad_creation_crp
-all_coarse mb_pad_creation   mb_pad_creation_crp
+
+# SRM taking out to fix issue with mount zones not showing up correctly on these ( we didn't use
+# coarse on the dropship pad doors either, so we won't on these )
+#all_coarse pad_creation      pad_creation_crp
+#all_coarse mb_pad_creation   mb_pad_creation_crp
+
+#SRM these objects also need to be all coarse, as they generate around 300-500 triangles for themselves
+all_coarse ext_sandbags_a            ext_sandbags_a_crp
+all_coarse ext_sandbags_b            ext_sandbags_b_crp
+all_coarse ext_barrier_2prong        ext_barrier_2prong_crp
+all_coarse ext_barrier_blind         ext_barrier_blind_crp
+all_coarse ext_barrier_double_2prong ext_barrier_double_2prong_crp
+all_coarse ext_barrier_double_heavy  ext_barrier_double_heavy_crp
+all_coarse ext_barrier_heavy         ext_barrier_heavy_crp
+all_coarse ext_barrier_medium        ext_barrier_medium_crp
+all_coarse zipline                   zipline_crp
+all_coarse stationaryteleportpad     stationaryteleportpad_crp
+
 
 shadow_begin ncmsi
 shadow_material ncmlite_shadow
@@ -489,6 +530,42 @@ shadow_offset_rotation 180
 ##shadow_render_to_texture
 shadow_end
 
+shadow_begin coffin_tr
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin coffin_nc
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
+shadow_begin coffin_vs
+shadow_material ncmlite_shadow
+shadow_scale    2.8
+shadow_bound     1 1 0.2
+shadow_terrain
+shadow_objects
+shadow_range    20
+shadow_oriented
+shadow_offset_rotation 180
+##shadow_render_to_texture
+shadow_end
+
 
 shadow_begin lightgunship
 shadow_material lightgunship_shadow
@@ -704,6 +781,30 @@ shadow_objects
 shadow_outside
 shadow_range  60
 shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin liberator
+shadow_material liberator_shadow
+shadow_scale 18.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin skyguard
+shadow_material skyguard_shadow
+shadow_scale 8.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
 shadow_oriented
 shadow_render_to_texture
 shadow_end

@@ -1,93 +1,183 @@
 #ap_begin
 
-##drop_pod_brakes_interior
+##vanu_spawn_room_mechanism
 
-ap_add drop_pod_brakes_interior_close close false none play_once_hold 0
-ap_audio drop_pod_brakes_interior_close 64 30 0
-ap_add drop_pod_brakes_interior_open open false none play_once_hold 0
-ap_audio drop_pod_brakes_interior_open 64 30 0
+ap_add vanu_spawn_room_mechanism_idle idle false none loop 0
+ap_audio vanu_spawn_room_mechanism_idle 64 30 0
 ap_end
 
-##fp_command_detonater
+##vanu_core_fins
 
-ap_add fp_command_detonater_equip equip false none play_once 0
-ap_audio fp_command_detonater_equip 64 30 0
-ap_add fp_command_detonater_fire1 fire1 false none play_once 0
-ap_audio fp_command_detonater_fire1 64 30 0
-ap_add fp_command_detonater_fire2 fire2 false none play_once 0
-ap_audio fp_command_detonater_fire2 64 30 0
-ap_add fp_command_detonater_fire3 fire3 false none play_once 0
-ap_audio fp_command_detonater_fire3 64 30 0
-ap_add fp_command_detonater_fire4 fire4 false none play_once 0
-ap_audio fp_command_detonater_fire4 64 30 0
-ap_add fp_command_detonater_holster holster false none play_once_hold 0
-ap_audio fp_command_detonater_holster 64 30 0
-ap_add fp_command_detonater_idle idle false none loop 0
-ap_audio fp_command_detonater_idle 64 30 0
-ap_add fp_command_detonater_run run false none loop 0
-ap_audio fp_command_detonater_run 64 30 0
+ap_add vanu_core_fins_charge charge false none loop 0
+ap_audio vanu_core_fins_charge 64 30 0
+ap_add vanu_core_fins_contract contract false none play_once 0
+ap_audio vanu_core_fins_contract 64 30 0
+ap_add vanu_core_fins_idle idle false none loop 0
+ap_audio vanu_core_fins_idle 64 30 0
+ap_add vanu_core_fins_retract retract false none play_once 0
+ap_audio vanu_core_fins_retract 64 30 0
 ap_end
 
-##fp_frag_grenade
+##pad_landing_repair
 
-ap_add fp_frag_grenade_equip equip false none play_once 0
-ap_audio fp_frag_grenade_equip 64 30 1
-ap_add fp_frag_grenade_fire1_end fire1_end false none play_once_hold 0
-ap_audio fp_frag_grenade_fire1_end 64 30 0
-ap_add fp_frag_grenade_fire1_idle fire1_idle false none loop 0
-ap_audio fp_frag_grenade_fire1_idle 64 30 0
-ap_add fp_frag_grenade_fire1_start fire1_start false none play_once 0
-ap_audio fp_frag_grenade_fire1_start 64 30 0
-ap_add fp_frag_grenade_fire2_end fire2_end false none play_once 0
-ap_audio fp_frag_grenade_fire2_end 64 30 0
-ap_add fp_frag_grenade_fire2_idle fire2_idle false none play_once 0
-ap_audio fp_frag_grenade_fire2_idle 64 30 0
-ap_add fp_frag_grenade_fire2_start fire2_start false none play_once 0
-ap_audio fp_frag_grenade_fire2_start 64 30 0
-ap_add fp_frag_grenade_holster holster false none play_once_hold 0
-ap_audio fp_frag_grenade_holster 64 30 0
-ap_add fp_frag_grenade_idle idle false none loop 0
-ap_audio fp_frag_grenade_idle 64 30 0
-ap_add fp_frag_grenade_run run false none loop 0
-ap_audio fp_frag_grenade_run 64 30 0
+ap_add pad_landing_repair_down down false none play_once 0
+ap_audio pad_landing_repair_down 64 30 0
+ap_add pad_landing_repair_up up false none play_once 0
+ap_audio pad_landing_repair_up 64 30 0
 ap_end
 
-##fp_mine_sweeper
+##helix
 
-ap_add fp_mine_sweeper_equip equip false none play_once 0
-ap_audio fp_mine_sweeper_equip 255 32 0
-ap_add fp_mine_sweeper_fire1 fire1 false none play_once_hold 0
-ap_audio fp_mine_sweeper_fire1 255 32 0
-ap_add fp_mine_sweeper_fire1_end fire1_end false none play_once_hold 0
-ap_audio fp_mine_sweeper_fire1_end 255 32 0
-ap_add fp_mine_sweeper_fire1_idle fire1_idle false none loop 0
-ap_audio fp_mine_sweeper_fire1_idle 255 32 0
-ap_add fp_mine_sweeper_fire1_start fire1_start false none play_once 0
-ap_audio fp_mine_sweeper_fire1_start 255 32 0
-ap_add fp_mine_sweeper_holster holster false none play_once_hold 0
-ap_audio fp_mine_sweeper_holster 255 32 0
-ap_add fp_mine_sweeper_idle idle false none loop 0
-ap_audio fp_mine_sweeper_idle 255 32 0
-ap_add fp_mine_sweeper_run run false none loop 0
-ap_audio fp_mine_sweeper_run 255 32 0
+ap_add helix_anim anim false none loop 0
+ap_audio helix_anim 64 30 0
 ap_end
 
-##fp_jammer_grenade
+##sprial
 
-ap_add fp_jammer_grenade_equip equip false none play_once 0
-ap_audio fp_jammer_grenade_equip 64 30 0
-ap_add fp_jammer_grenade_fire1_end fire1_end false none play_once_hold 0
-ap_audio fp_jammer_grenade_fire1_end 64 30 0
-ap_add fp_jammer_grenade_fire1_idle fire1_idle false none loop 0
-ap_audio fp_jammer_grenade_fire1_idle 64 30 0
-ap_add fp_jammer_grenade_fire1_start fire1_start false none play_once 0
-ap_audio fp_jammer_grenade_fire1_start 64 30 0
-ap_add fp_jammer_grenade_holster holster false none play_once 0
-ap_audio fp_jammer_grenade_holster 64 30 0
-ap_add fp_jammer_grenade_idle idle false none loop 0
-ap_audio fp_jammer_grenade_idle 64 30 0
-ap_add fp_jammer_grenade_run run false none loop 0
-ap_audio fp_jammer_grenade_run 64 30 0
+ap_add sprial_anim anim false none loop 0
+ap_audio sprial_anim 64 30 0
+ap_end
+
+##box_test
+
+ap_add box_test_anim anim false none loop 0
+ap_audio box_test_anim 64 30 0
+ap_end
+
+##fp_plasmagrenade
+
+ap_add fp_plasmagrenade_equip equip false none play_once 0
+ap_add fp_plasmagrenade_holster holster false none play_once_hold 0
+ap_add fp_plasmagrenade_idle idle false none loop 0
+ap_add fp_plasmagrenade_run run false none loop 0
+ap_add fp_plasmagrenade_throw throw false none play_once_hold 0
+ap_add fp_plasmagrenade_toss toss false none play_once_hold 0
+ap_end
+
+##fp_boomer
+
+ap_add fp_boomer_equip equip false none play_once 0
+ap_add fp_boomer_holster holster false none play_once_hold 0
+ap_add fp_boomer_idle idle false none loop 0
+ap_add fp_boomer_run run false none loop 0
+ap_add fp_boomer_trigger_equip trigger_equip false none play_once 0
+ap_add fp_boomer_trigger_fire1 trigger_fire1 false none play_once 0
+ap_add fp_boomer_trigger_holster trigger_holster false none play_once_hold 0
+ap_add fp_boomer_trigger_idle trigger_idle false none play_once_blend 0
+ap_add fp_boomer_trigger_run trigger_run false none play_once_blend 0
+ap_add fp_boomer_use use false none play_once_hold 0
+ap_end
+
+##bailtest
+
+ap_add bailtest_move move false none loop 0
+ap_audio bailtest_move 64 30 0
+ap_end
+
+##seigebeast
+
+ap_add seigebeast_bomb bomb false none play_once 0
+ap_add seigebeast_attack1 attack1 false none play_once 0
+ap_add seigebeast_walk walk false none loop 0
+ap_add seigebeast_idle idle false none loop 0
+ap_add seigebeast_charge charge false none loop 0
+ap_end
+
+##testsphere
+
+ap_add testsphere_anmtest anmtest false none play_once 0
+ap_audio testsphere_anmtest 64 30 0
+ap_end
+
+##two_man_heavy_buggy
+
+ap_add two_man_heavy_buggy_driver Driver true none refpose1
+ap_add two_man_heavy_buggy_driver_mount driver_mount false none play_once
+ap_add two_man_heavy_buggy_driver_dismount driver_dismount false none play_once_hold
+ap_end
+
+##fp_magnomine
+
+ap_add fp_magnomine_place place false none play_once 0
+ap_add fp_magnomine_run run false none play_once 0
+ap_add fp_magnomine_equip equip false none play_once 0
+ap_add fp_magnomine_holster holster false none play_once_hold 0
+ap_add fp_magnomine_idle idle false none loop 0
+ap_end
+
+##fp_hemine
+
+ap_add fp_hemine_place place false none play_once 0
+ap_add fp_hemine_run run false none loop 0
+ap_add fp_hemine_equip equip false none play_once 0
+ap_add fp_hemine_holster holster false none play_once_hold 0
+ap_add fp_hemine_idle idle false none loop 0
+ap_end
+
+##fp_motionalarmsensor
+
+ap_add fp_motionalarmsensor_equip equip false none play_once 0
+ap_add fp_motionalarmsensor_holster holster false none play_once_hold 0
+ap_add fp_motionalarmsensor_idle idle false none loop 0
+ap_add fp_motionalarmsensor_place place false none play_once_hold 0
+ap_add fp_motionalarmsensor_run run false none loop 0
+ap_end
+
+##spin
+
+ap_add spin_effect effect false none loop 0
+ap_end
+
+##ncmr_banners_flag
+
+ap_add ncmr_banners_flag_anim anim false none loop 0
+ap_audio ncmr_banners_flag_anim 64 30 0
+ap_end
+
+##nc_spawn_door
+
+ap_add nc_spawn_door_closing closing false none play_once 0
+ap_audio nc_spawn_door_closing 64 30 0
+ap_add nc_spawn_door_opening opening false none play_once 0
+ap_audio nc_spawn_door_opening 64 30 0
+ap_end
+
+##nc_symbol_banner
+
+ap_add nc_symbol_banner_anim anim false none loop 0
+ap_audio nc_symbol_banner_anim 64 30 0
+ap_end
+
+##tech_team_banner_flag_small
+
+ap_add tech_team_banner_flag_small_anim anim false none loop 0
+ap_audio tech_team_banner_flag_small_anim 64 30 0
+ap_end
+
+##trmr_banner_flag
+
+ap_add trmr_banner_flag_anim anim false none loop 0
+ap_audio trmr_banner_flag_anim 64 30 0
+ap_end
+
+##vsmr_banner_flag
+
+ap_add vsmr_banner_flag_anim anim false none loop 0
+ap_audio vsmr_banner_flag_anim 64 30 0
+ap_end
+
+##vs_symbol_banner
+
+ap_add vs_symbol_banner_anim anim false none loop 0
+ap_audio vs_symbol_banner_anim 64 30 0
+ap_end
+
+##tech_team_banner_flag
+
+ap_add tech_team_banner_flag_anim anim false none loop 0
+ap_audio tech_team_banner_flag_anim 64 30 0
+ap_add tech_team_banner_flag_small_anim small_anim false none loop 0
+ap_audio tech_team_banner_flag_small_anim 64 30 0
 ap_end
 
 ##fp_plasma_grenade
@@ -114,140 +204,128 @@ ap_add fp_plasma_grenade_run run false none loop 0
 ap_audio fp_plasma_grenade_run 64 30 0
 ap_end
 
-##tech_team_banner_flag
+##fp_jammer_grenade
 
-ap_add tech_team_banner_flag_anim anim false none loop 0
-ap_audio tech_team_banner_flag_anim 64 30 0
-ap_add tech_team_banner_flag_small_anim small_anim false none loop 0
-ap_audio tech_team_banner_flag_small_anim 64 30 0
+ap_add fp_jammer_grenade_equip equip false none play_once 0
+ap_audio fp_jammer_grenade_equip 64 30 0
+ap_add fp_jammer_grenade_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_jammer_grenade_fire1_end 64 30 0
+ap_add fp_jammer_grenade_fire1_idle fire1_idle false none loop 0
+ap_audio fp_jammer_grenade_fire1_idle 64 30 0
+ap_add fp_jammer_grenade_fire1_start fire1_start false none play_once 0
+ap_audio fp_jammer_grenade_fire1_start 64 30 0
+ap_add fp_jammer_grenade_holster holster false none play_once 0
+ap_audio fp_jammer_grenade_holster 64 30 0
+ap_add fp_jammer_grenade_idle idle false none loop 0
+ap_audio fp_jammer_grenade_idle 64 30 0
+ap_add fp_jammer_grenade_run run false none loop 0
+ap_audio fp_jammer_grenade_run 64 30 0
 ap_end
 
-##vs_symbol_banner
+##fp_mine_sweeper
 
-ap_add vs_symbol_banner_anim anim false none loop 0
-ap_audio vs_symbol_banner_anim 64 30 0
+ap_add fp_mine_sweeper_equip equip false none play_once 0
+ap_audio fp_mine_sweeper_equip 255 32 0
+ap_add fp_mine_sweeper_fire1 fire1 false none play_once_hold 0
+ap_audio fp_mine_sweeper_fire1 255 32 0
+ap_add fp_mine_sweeper_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_mine_sweeper_fire1_end 255 32 0
+ap_add fp_mine_sweeper_fire1_idle fire1_idle false none loop 0
+ap_audio fp_mine_sweeper_fire1_idle 255 32 0
+ap_add fp_mine_sweeper_fire1_start fire1_start false none play_once 0
+ap_audio fp_mine_sweeper_fire1_start 255 32 0
+ap_add fp_mine_sweeper_holster holster false none play_once_hold 0
+ap_audio fp_mine_sweeper_holster 255 32 0
+ap_add fp_mine_sweeper_idle idle false none loop 0
+ap_audio fp_mine_sweeper_idle 255 32 0
+ap_add fp_mine_sweeper_run run false none loop 0
+ap_audio fp_mine_sweeper_run 255 32 0
 ap_end
 
-##vsmr_banner_flag
+##fp_frag_grenade
 
-ap_add vsmr_banner_flag_anim anim false none loop 0
-ap_audio vsmr_banner_flag_anim 64 30 0
+ap_add fp_frag_grenade_equip equip false none play_once 0
+ap_audio fp_frag_grenade_equip 64 30 1
+ap_add fp_frag_grenade_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_frag_grenade_fire1_end 64 30 0
+ap_add fp_frag_grenade_fire1_idle fire1_idle false none loop 0
+ap_audio fp_frag_grenade_fire1_idle 64 30 0
+ap_add fp_frag_grenade_fire1_start fire1_start false none play_once 0
+ap_audio fp_frag_grenade_fire1_start 64 30 0
+ap_add fp_frag_grenade_fire2_end fire2_end false none play_once 0
+ap_audio fp_frag_grenade_fire2_end 64 30 0
+ap_add fp_frag_grenade_fire2_idle fire2_idle false none play_once 0
+ap_audio fp_frag_grenade_fire2_idle 64 30 0
+ap_add fp_frag_grenade_fire2_start fire2_start false none play_once 0
+ap_audio fp_frag_grenade_fire2_start 64 30 0
+ap_add fp_frag_grenade_holster holster false none play_once_hold 0
+ap_audio fp_frag_grenade_holster 64 30 0
+ap_add fp_frag_grenade_idle idle false none loop 0
+ap_audio fp_frag_grenade_idle 64 30 0
+ap_add fp_frag_grenade_run run false none loop 0
+ap_audio fp_frag_grenade_run 64 30 0
 ap_end
 
-##trmr_banner_flag
+##fp_command_detonater
 
-ap_add trmr_banner_flag_anim anim false none loop 0
-ap_audio trmr_banner_flag_anim 64 30 0
+ap_add fp_command_detonater_equip equip false none play_once 0
+ap_audio fp_command_detonater_equip 64 30 0
+ap_add fp_command_detonater_fire1 fire1 false none play_once 0
+ap_audio fp_command_detonater_fire1 64 30 0
+ap_add fp_command_detonater_fire2 fire2 false none play_once 0
+ap_audio fp_command_detonater_fire2 64 30 0
+ap_add fp_command_detonater_fire3 fire3 false none play_once 0
+ap_audio fp_command_detonater_fire3 64 30 0
+ap_add fp_command_detonater_fire4 fire4 false none play_once 0
+ap_audio fp_command_detonater_fire4 64 30 0
+ap_add fp_command_detonater_holster holster false none play_once_hold 0
+ap_audio fp_command_detonater_holster 64 30 0
+ap_add fp_command_detonater_idle idle false none loop 0
+ap_audio fp_command_detonater_idle 64 30 0
+ap_add fp_command_detonater_run run false none loop 0
+ap_audio fp_command_detonater_run 64 30 0
 ap_end
 
-##tech_team_banner_flag_small
+##drop_pod_brakes_interior
 
-ap_add tech_team_banner_flag_small_anim anim false none loop 0
-ap_audio tech_team_banner_flag_small_anim 64 30 0
+ap_add drop_pod_brakes_interior_close close false none play_once_hold 0
+ap_audio drop_pod_brakes_interior_close 64 30 0
+ap_add drop_pod_brakes_interior_open open false none play_once_hold 0
+ap_audio drop_pod_brakes_interior_open 64 30 0
 ap_end
 
-##nc_symbol_banner
+##teapot_test
 
-ap_add nc_symbol_banner_anim anim false none loop 0
-ap_audio nc_symbol_banner_anim 64 30 0
+ap_add teapot_test_anim anim false none loop 0
+ap_audio teapot_test_anim 64 30 0
 ap_end
 
-##nc_spawn_door
+##fp_router_telepad
 
-ap_add nc_spawn_door_closing closing false none play_once 0
-ap_audio nc_spawn_door_closing 64 30 0
-ap_add nc_spawn_door_opening opening false none play_once 0
-ap_audio nc_spawn_door_opening 64 30 0
+ap_add fp_router_telepad_equip equip false none play_once 0
+ap_audio fp_router_telepad_equip 64 30 0
+ap_add fp_router_telepad_holster holster false none play_once_hold 0
+ap_audio fp_router_telepad_holster 64 30 0
+ap_add fp_router_telepad_idle idle false none loop 0
+ap_audio fp_router_telepad_idle 64 30 0
+ap_add fp_router_telepad_run run false none loop 0
+ap_audio fp_router_telepad_run 64 30 0
 ap_end
 
-##ncmr_banners_flag
+##fp_radiator
 
-ap_add ncmr_banners_flag_anim anim false none loop 0
-ap_audio ncmr_banners_flag_anim 64 30 0
-ap_end
-
-##spin
-
-ap_add spin_effect effect false none loop 0
-ap_end
-
-##fp_motionalarmsensor
-
-ap_add fp_motionalarmsensor_equip equip false none play_once 0
-ap_add fp_motionalarmsensor_holster holster false none play_once_hold 0
-ap_add fp_motionalarmsensor_idle idle false none loop 0
-ap_add fp_motionalarmsensor_place place false none play_once_hold 0
-ap_add fp_motionalarmsensor_run run false none loop 0
-ap_end
-
-##fp_hemine
-
-ap_add fp_hemine_place place false none play_once 0
-ap_add fp_hemine_run run false none loop 0
-ap_add fp_hemine_equip equip false none play_once 0
-ap_add fp_hemine_holster holster false none play_once_hold 0
-ap_add fp_hemine_idle idle false none loop 0
-ap_end
-
-##fp_magnomine
-
-ap_add fp_magnomine_place place false none play_once 0
-ap_add fp_magnomine_run run false none play_once 0
-ap_add fp_magnomine_equip equip false none play_once 0
-ap_add fp_magnomine_holster holster false none play_once_hold 0
-ap_add fp_magnomine_idle idle false none loop 0
-ap_end
-
-##two_man_heavy_buggy
-
-ap_add two_man_heavy_buggy_driver Driver true none refpose1
-ap_add two_man_heavy_buggy_driver_mount driver_mount false none play_once
-ap_add two_man_heavy_buggy_driver_dismount driver_dismount false none play_once_hold
-ap_end
-
-##testsphere
-
-ap_add testsphere_anmtest anmtest false none play_once 0
-ap_audio testsphere_anmtest 64 30 0
-ap_end
-
-##seigebeast
-
-ap_add seigebeast_bomb bomb false none play_once 0
-ap_add seigebeast_attack1 attack1 false none play_once 0
-ap_add seigebeast_walk walk false none loop 0
-ap_add seigebeast_idle idle false none loop 0
-ap_add seigebeast_charge charge false none loop 0
-ap_end
-
-##bailtest
-
-ap_add bailtest_move move false none loop 0
-ap_audio bailtest_move 64 30 0
-ap_end
-
-##fp_boomer
-
-ap_add fp_boomer_equip equip false none play_once 0
-ap_add fp_boomer_holster holster false none play_once_hold 0
-ap_add fp_boomer_idle idle false none loop 0
-ap_add fp_boomer_run run false none loop 0
-ap_add fp_boomer_trigger_equip trigger_equip false none play_once 0
-ap_add fp_boomer_trigger_fire1 trigger_fire1 false none play_once 0
-ap_add fp_boomer_trigger_holster trigger_holster false none play_once_hold 0
-ap_add fp_boomer_trigger_idle trigger_idle false none play_once_blend 0
-ap_add fp_boomer_trigger_run trigger_run false none play_once_blend 0
-ap_add fp_boomer_use use false none play_once_hold 0
-ap_end
-
-##fp_plasmagrenade
-
-ap_add fp_plasmagrenade_equip equip false none play_once 0
-ap_add fp_plasmagrenade_holster holster false none play_once_hold 0
-ap_add fp_plasmagrenade_idle idle false none loop 0
-ap_add fp_plasmagrenade_run run false none loop 0
-ap_add fp_plasmagrenade_throw throw false none play_once_hold 0
-ap_add fp_plasmagrenade_toss toss false none play_once_hold 0
+ap_add fp_radiator_equip equip false none play_once 0
+ap_audio fp_radiator_equip 64 30 0
+ap_add fp_radiator_fire1 fire1 false none play_once 0
+ap_audio fp_radiator_fire1 64 30 0
+ap_add fp_radiator_holster holster false none play_once_hold 0
+ap_audio fp_radiator_holster 64 30 0
+ap_add fp_radiator_idle idle false none loop 0
+ap_audio fp_radiator_idle 64 30 0
+ap_add fp_radiator_recharge recharge false none loop 0
+ap_audio fp_radiator_recharge 64 30 0
+ap_add fp_radiator_run run false none loop 0
+ap_audio fp_radiator_run 64 30 0
 ap_end
 
 ##ef_waypoint_personal
@@ -561,36 +639,94 @@ ap_add fp_flame_spitter_reload reload false fp_flame_spitter_reload.wav play_onc
 ap_add fp_flame_spitter_holster holster false fp_flame_spitter_holster.wav play_once_hold 0
 ap_end
 
-##mosquito_hologram
+##fp_maelstrom
 
-ap_add mosquito_hologram_idle idle false none loop 0
-ap_audio mosquito_hologram_idle 64 30 0
+ap_add fp_maelstrom_equip equip false none play_once 0
+ap_audio fp_maelstrom_equip 64 30 0
+ap_add fp_maelstrom_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_maelstrom_fire1_end 64 30 0
+ap_add fp_maelstrom_fire1_idle fire1_idle false none loop 0
+ap_audio fp_maelstrom_fire1_idle 64 30 0
+ap_add fp_maelstrom_fire1_start fire1_start false none play_once_hold 0
+ap_audio fp_maelstrom_fire1_start 64 30 0
+ap_add fp_maelstrom_fire2 fire2 false none play_once_hold 0
+ap_audio fp_maelstrom_fire2 64 30 0
+ap_add fp_maelstrom_holster holster false none play_once_hold 0
+ap_audio fp_maelstrom_holster 64 30 0
+ap_add fp_maelstrom_idle idle false none loop 0
+ap_audio fp_maelstrom_idle 64 30 0
+ap_add fp_maelstrom_recharge recharge false none play_once 0
+ap_audio fp_maelstrom_recharge 64 30 0
+ap_add fp_maelstrom_run run false none loop 0
+ap_audio fp_maelstrom_run 64 30 0
+ap_add fp_maelstrom_walk walk false none loop 0
+ap_audio fp_maelstrom_walk 64 30 0
 ap_end
 
-##105mm_cannon_t
+##fp_spiker
 
-ap_add 105mm_cannon_t_fire01 fire01 false none play_once 0
-ap_audio 105mm_cannon_t_fire01 64 30 0
+ap_add fp_spiker_equip equip false none play_once 0
+ap_audio fp_spiker_equip 64 30 0
+ap_add fp_spiker_fire1 fire1 false none play_once 0
+ap_audio fp_spiker_fire1 64 30 0
+ap_add fp_spiker_fire1_end fire1_end false none play_once_hold 0
+ap_audio fp_spiker_fire1_end 64 30 0
+ap_add fp_spiker_fire1_idle fire1_idle false none loop 0
+ap_audio fp_spiker_fire1_idle 64 30 0
+ap_add fp_spiker_fire1_start fire1_start false none play_once_hold 0
+ap_audio fp_spiker_fire1_start 64 30 0
+ap_add fp_spiker_holster holster false none play_once_hold 0
+ap_audio fp_spiker_holster 64 30 0
+ap_add fp_spiker_idle idle false none loop 0
+ap_audio fp_spiker_idle 64 30 0
+ap_add fp_spiker_recharge recharge false none play_once 0
+ap_audio fp_spiker_recharge 64 30 0
+ap_add fp_spiker_reload reload false none play_once 0
+ap_audio fp_spiker_reload 64 30 0
+ap_add fp_spiker_run run false none loop 0
+ap_audio fp_spiker_run 64 30 0
+ap_add fp_spiker_walk walk false none loop 0
+ap_audio fp_spiker_walk 64 30 0
 ap_end
 
-##orb_hangar_shudders
+##van_bld_beam_top
 
-ap_add orb_hangar_shudders_close close false none play_once 0
-ap_audio orb_hangar_shudders_close 64 30 0
-ap_add orb_hangar_shudders_open open false none play_once 0
-ap_audio orb_hangar_shudders_open 64 30 0
+ap_add van_bld_beam_top_idle idle false none loop 0
+ap_audio van_bld_beam_top_idle 64 30 0
 ap_end
 
-##ob_doors
+##vanu_control_flywheels
 
-ap_add ob_doors_close close false none play_once_hold 0
-ap_add ob_doors_open open false none play_once_hold 0
+ap_add vanu_control_flywheels_hack_pad_down hack_pad_down false none play_once 0
+ap_audio vanu_control_flywheels_hack_pad_down 64 30 0
+ap_add vanu_control_flywheels_hack_pad_float hack_pad_float false none loop 0
+ap_audio vanu_control_flywheels_hack_pad_float 64 30 0
+ap_add vanu_control_flywheels_hack_pad_up hack_pad_up false none play_once 0
+ap_audio vanu_control_flywheels_hack_pad_up 64 30 0
+ap_add vanu_control_flywheels_hack_wheels hack_wheels false none play_once 0
+ap_audio vanu_control_flywheels_hack_wheels 64 30 0
+ap_add vanu_control_flywheels_idle idle false none loop 0
+ap_audio vanu_control_flywheels_idle 64 30 0
 ap_end
 
-##20mm_cannon_vanguard
+##vanu_control_counsole
 
-ap_add 20mm_cannon_vanguard_fire01 fire01 false none play_once 0
-ap_audio 20mm_cannon_vanguard_fire01 64 30 0
+ap_add vanu_control_counsole_idle idle false none loop 0
+ap_audio vanu_control_counsole_idle 64 30 0
+ap_end
+
+##game_table_effect
+
+ap_add game_table_effect_idle idle false none loop 0
+ap_audio game_table_effect_idle 64 30 0
+ap_end
+
+##light_gunship
+
+ap_add light_gunship_driverb_dismount driverb_dismount false none play_once_hold 0
+ap_add light_gunship_driver_mount driver_mount false none play_once 0
+ap_add light_gunship_driver_dismount driver_dismount false none play_once_hold 0
+ap_add light_gunship_driverb_mount driverb_mount false none play_once 0
 ap_end
 
 ##chaingun_lightning
@@ -603,18 +739,36 @@ ap_add chaingun_lightning_fire01_start fire01_start false none play_once 0
 ap_audio chaingun_lightning_fire01_start 64 30 0
 ap_end
 
-##light_gunship
+##20mm_cannon_vanguard
 
-ap_add light_gunship_driverb_dismount driverb_dismount false none play_once_hold 0
-ap_add light_gunship_driver_mount driver_mount false none play_once 0
-ap_add light_gunship_driver_dismount driver_dismount false none play_once_hold 0
-ap_add light_gunship_driverb_mount driverb_mount false none play_once 0
+ap_add 20mm_cannon_vanguard_fire01 fire01 false none play_once 0
+ap_audio 20mm_cannon_vanguard_fire01 64 30 0
 ap_end
 
-##game_table_effect
+##ob_doors
 
-ap_add game_table_effect_idle idle false none loop 0
-ap_audio game_table_effect_idle 64 30 0
+ap_add ob_doors_close close false none play_once_hold 0
+ap_add ob_doors_open open false none play_once_hold 0
+ap_end
+
+##orb_hangar_shudders
+
+ap_add orb_hangar_shudders_close close false none play_once 0
+ap_audio orb_hangar_shudders_close 64 30 0
+ap_add orb_hangar_shudders_open open false none play_once 0
+ap_audio orb_hangar_shudders_open 64 30 0
+ap_end
+
+##105mm_cannon_t
+
+ap_add 105mm_cannon_t_fire01 fire01 false none play_once 0
+ap_audio 105mm_cannon_t_fire01 64 30 0
+ap_end
+
+##mosquito_hologram
+
+ap_add mosquito_hologram_idle idle false none loop 0
+ap_audio mosquito_hologram_idle 64 30 0
 ap_end
 
 ##warp_hologram
@@ -640,6 +794,66 @@ ap_end
 
 ap_add nc_hev_sparrow_fire01 fire01 false none play_once 0
 ap_audio nc_hev_sparrow_fire01 64 30 0
+ap_end
+
+##150mm_cannon_vanguard
+
+ap_add 150mm_cannon_vanguard_fire01 fire01 false none play_once 0
+ap_audio 150mm_cannon_vanguard_fire01 64 30 0
+ap_end
+
+##warpgate_cavern
+
+ap_add warpgate_cavern_idle idle false none loop 0
+ap_audio warpgate_cavern_idle 64 30 0
+ap_add warpgate_cavern_spin spin false none play_once 0
+ap_audio warpgate_cavern_spin 64 30 0
+ap_end
+
+##vanu_control_console
+
+ap_add vanu_control_console_hack_pad_down hack_pad_down false none play_once 0
+ap_audio vanu_control_console_hack_pad_down 64 30 0
+ap_add vanu_control_console_hack_pad_float hack_pad_float false none loop 0
+ap_audio vanu_control_console_hack_pad_float 64 30 0
+ap_add vanu_control_console_hack_pad_up hack_pad_up false none play_once_hold 0
+ap_audio vanu_control_console_hack_pad_up 64 30 0
+ap_add vanu_control_console_hack_wheels hack_wheels false none play_once 0
+ap_audio vanu_control_console_hack_wheels 64 30 0
+ap_add vanu_control_console_idle idle false none loop 0
+ap_audio vanu_control_console_idle 64 30 0
+ap_end
+
+##spiker
+
+ap_add spiker_activate activate false none play_once_hold 0
+ap_audio spiker_activate 64 30 0
+ap_add spiker_deactivate deactivate false none play_once_hold 0
+ap_audio spiker_deactivate 64 30 0
+ap_end
+
+##repair_silo
+
+ap_add repair_silo_expand expand false none play_once_hold 0
+ap_audio repair_silo_expand 64 30 0
+ap_add repair_silo_retract retract false none play_once_hold 0
+ap_audio repair_silo_retract 64 30 0
+ap_end
+
+##maelstrom
+
+ap_add maelstrom_fire01_end fire01_end false none play_once 0
+ap_audio maelstrom_fire01_end 64 30 0
+ap_add maelstrom_fire01_idle fire01_idle false none loop 0
+ap_audio maelstrom_fire01_idle 64 30 0
+ap_add maelstrom_fire01_start fire01_start false none play_once 0
+ap_audio maelstrom_fire01_start 64 30 0
+ap_add maelstrom_fire1_end fire1_end false none play_once 0
+ap_audio maelstrom_fire1_end 64 30 0
+ap_add maelstrom_fire1_idle fire1_idle false none loop 0
+ap_audio maelstrom_fire1_idle 64 30 0
+ap_add maelstrom_fire1_start fire1_start false none play_once 0
+ap_audio maelstrom_fire1_start 64 30 0
 ap_end
 
 ##hunterseeker
@@ -783,12 +997,6 @@ ap_add wardoginfant_death1 death1 false none loop 0
 ap_add wardoginfant_attack2 attack2 false none play_once 0
 ap_add wardoginfant_attack1 attack1 false none play_once 0
 ap_add wardoginfant_run run false wardoginfant_run.wav play_once 0
-ap_end
-
-##150mm_cannon_vanguard
-
-ap_add 150mm_cannon_vanguard_fire01 fire01 false none play_once 0
-ap_audio 150mm_cannon_vanguard_fire01 64 30 0
 ap_end
 
 ##fp_cycler
@@ -973,10 +1181,17 @@ ap_add nchev_emote_base_wave emote_base_wave false none play_once 0
 ap_audio nchev_emote_base_wave 64 30 0
 ap_add nchev_emote_base_yes emote_base_yes false none play_once 0
 ap_audio nchev_emote_base_yes 64 30 0
+ap_add nchev_fallingdeath01_start_base fallingdeath01_start_base false none play_once 0
+ap_audio nchev_fallingdeath01_start_base 64 30 0
 ap_add nchev_gettinghit_back gettinghit_back false none play_once 0
 ap_audio nchev_gettinghit_back 64 30 0
 ap_add nchev_gettinghit_front gettinghit_front false none play_once 0
 ap_audio nchev_gettinghit_front 64 30 0
+ap_add nchev_jumpdown_base jumpdown_base false none play_once 0
+ap_audio nchev_jumpdown_base 64 30 0
+ap_audio_callback nchev_jumpdown_base land
+ap_add nchev_jumpidle_base jumpidle_base true none refpose3 0
+ap_audio nchev_jumpidle_base 64 30 0
 ap_add nchev_l_bail_idle l_bail_idle false none loop 0
 ap_audio nchev_l_bail_idle 64 30 0
 ap_add nchev_l_bail_land l_bail_land false none play_once 0
@@ -1024,6 +1239,18 @@ ap_audio_callback nchev_walkforwardleft_base walk
 ap_add nchev_walkforwardright_base walkforwardright_base true none refpose3 0
 ap_audio nchev_walkforwardright_base 64 30 0
 ap_audio_callback nchev_walkforwardright_base walk
+ap_add nchev_zip_death_idle01_base zip_death_idle01_base false none loop 0
+ap_audio nchev_zip_death_idle01_base 64 30 0
+ap_add nchev_zip_death_idle02_base zip_death_idle02_base false none play_once 0
+ap_audio nchev_zip_death_idle02_base 64 30 0
+ap_add nchev_zip_death_land01_base zip_death_land01_base false none play_once 0
+ap_audio nchev_zip_death_land01_base 64 30 0
+ap_add nchev_zip_death_land02_base zip_death_land02_base false none play_once 0
+ap_audio nchev_zip_death_land02_base 64 30 0
+ap_add nchev_zip_death_start01_base zip_death_start01_base false none play_once 0
+ap_audio nchev_zip_death_start01_base 64 30 0
+ap_add nchev_zip_death_start02_base zip_death_start02_base false none play_once 0
+ap_audio nchev_zip_death_start02_base 64 30 0
 ap_end
 
 ##chaingun_p
@@ -1108,18 +1335,6 @@ ap_add fp_lancer_reload reload false none play_once 0
 ap_audio fp_lancer_reload 64 30 1
 ap_add fp_lancer_run run false none loop 0
 ap_audio fp_lancer_run 64 30 0
-ap_end
-
-##obbasemesh
-
-ap_add obbasemesh_closea closea false none play_once_hold 0
-ap_audio obbasemesh_closea 64 30 0
-ap_add obbasemesh_closeb closeb false none play_once_hold 0
-ap_audio obbasemesh_closeb 64 30 0
-ap_add obbasemesh_open open false none play_once_hold 0
-ap_audio obbasemesh_open 64 30 0
-ap_add obbasemesh_openb openb false none play_once_hold 0
-ap_audio obbasemesh_openb 64 30 0
 ap_end
 
 ##fp_lasher
@@ -1768,6 +1983,8 @@ ap_audio ncflite_runforwardleft_low 64 30 0
 ap_add ncflite_runforwardleft_pistol runforwardleft_pistol true none refpose3 0
 ap_audio ncflite_runforwardleft_pistol 40 32 0
 ap_audio_callback ncflite_runforwardleft_pistol run
+ap_add ncflite_runforwardleft_rifle runforwardleft_rifle true none refpose3 0
+ap_audio ncflite_runforwardleft_rifle 64 30 0
 ap_add ncflite_runforwardright_base runforwardright_base true none refpose3 0
 ap_audio ncflite_runforwardright_base 40 32 0
 ap_audio_callback ncflite_runforwardright_base run
@@ -1776,6 +1993,8 @@ ap_audio ncflite_runforwardright_low 64 30 0
 ap_add ncflite_runforwardright_pistol runforwardright_pistol true none refpose3 0
 ap_audio ncflite_runforwardright_pistol 40 32 0
 ap_audio_callback ncflite_runforwardright_pistol run
+ap_add ncflite_runforwardright_rifle runforwardright_rifle true none refpose3 0
+ap_audio ncflite_runforwardright_rifle 64 30 0
 ap_add ncflite_strafeleft_crouch_base strafeleft_crouch_base true none refpose3 0
 ap_audio ncflite_strafeleft_crouch_base 40 20 0
 ap_audio_callback ncflite_strafeleft_crouch_base walk
@@ -1977,7 +2196,7 @@ ap_add ncmlite_base_charge base_charge false none play_once 0 charge
 ap_audio ncmlite_base_charge 64 32 0
 ap_add ncmlite_base_crouch base_crouch true none refpose9 0
 ap_audio ncmlite_base_crouch 255 32 0
-ap_add ncmlite_base_stand base_stand false none play_once 0
+ap_add ncmlite_base_stand base_stand false none loop 0
 ap_audio ncmlite_base_stand 255 32 0
 ap_add ncmlite_base_stinky base_stinky false none play_once 0 no
 ap_audio ncmlite_base_stinky 64 32 0
@@ -2437,19 +2656,19 @@ ap_add ncmlite_holster_rifle_right_crouch holster_rifle_right_crouch false none 
 ap_audio ncmlite_holster_rifle_right_crouch 255 32 0
 ap_add ncmlite_holster_seq holster_seq false none play_once 0.50
 ap_audio ncmlite_holster_seq 255 32 0
-ap_add ncmlite_jumpdown_base jumpdown_base false none play_once_hold 0
+ap_add ncmlite_jumpdown_base jumpdown_base false none play_once 0
 ap_audio ncmlite_jumpdown_base 64 30 0
 ap_audio_callback ncmlite_jumpdown_base land
-ap_add ncmlite_jumpdown_low jumpdown_low false none play_once_hold 0
+ap_add ncmlite_jumpdown_low jumpdown_low false none play_once 0
 ap_audio ncmlite_jumpdown_low 64 32 0
 ap_audio_callback ncmlite_jumpdown_low land
-ap_add ncmlite_jumpdown_pistol jumpdown_pistol false none play_once_hold 0
+ap_add ncmlite_jumpdown_pistol jumpdown_pistol false none play_once 0
 ap_audio ncmlite_jumpdown_pistol 64 32 0
 ap_audio_callback ncmlite_jumpdown_pistol land
 ap_add ncmlite_jumpdown_pistol_new jumpdown_pistol_new true none refpose3 0
 ap_audio ncmlite_jumpdown_pistol_new 64 30 0
 ap_audio_callback ncmlite_jumpdown_pistol_new land
-ap_add ncmlite_jumpdown_rifle jumpdown_rifle false none play_once_hold 0
+ap_add ncmlite_jumpdown_rifle jumpdown_rifle false none play_once 0
 ap_audio ncmlite_jumpdown_rifle 64 32 0
 ap_audio_callback ncmlite_jumpdown_rifle land
 ap_add ncmlite_jumpidle_backward_base jumpidle_backward_base true none refpose3 0
@@ -2458,6 +2677,8 @@ ap_add ncmlite_jumpidle_backward_low jumpidle_backward_low true none refpose1 0
 ap_audio ncmlite_jumpidle_backward_low 64 30 0
 ap_add ncmlite_jumpidle_backward_pistol jumpidle_backward_pistol true none refpose1 0
 ap_audio ncmlite_jumpidle_backward_pistol 64 30 0
+ap_add ncmlite_jumpidle_backward_rifle jumpidle_backward_rifle true none refpose1 0
+ap_audio ncmlite_jumpidle_backward_rifle 64 30 0
 ap_add ncmlite_jumpidle_base jumpidle_base false none refpose3 0
 ap_audio ncmlite_jumpidle_base 255 32 0
 ap_add ncmlite_jumpidle_forward_base jumpidle_forward_base true none refpose3 0
@@ -2466,6 +2687,8 @@ ap_add ncmlite_jumpidle_forward_low jumpidle_forward_low true none refpose1 0
 ap_audio ncmlite_jumpidle_forward_low 64 30 0
 ap_add ncmlite_jumpidle_forward_pistol jumpidle_forward_pistol true none refpose1 0
 ap_audio ncmlite_jumpidle_forward_pistol 64 30 0
+ap_add ncmlite_jumpidle_forward_rifle jumpidle_forward_rifle true none refpose1 0
+ap_audio ncmlite_jumpidle_forward_rifle 64 30 0
 ap_add ncmlite_jumpidle_low jumpidle_low true none refpose3 0
 ap_audio ncmlite_jumpidle_low 255 32 0
 ap_add ncmlite_jumpidle_pistol jumpidle_pistol true none refpose3 0
@@ -2539,6 +2762,12 @@ ap_add ncmlite_mini_chaingun mini_chaingun true none refpose9 0
 ap_audio ncmlite_mini_chaingun 64 30 0
 ap_add ncmlite_mini_chaingun_fire mini_chaingun_fire true none refpose9 0
 ap_audio ncmlite_mini_chaingun_fire 64 30 0
+ap_add ncmlite_module_charge_soldier_end module_charge_soldier_end false none play_once_hold 1.00
+ap_audio ncmlite_module_charge_soldier_end 64 30 0
+ap_add ncmlite_module_charge_soldier_idle module_charge_soldier_idle false none loop 0
+ap_audio ncmlite_module_charge_soldier_idle 64 30 0
+ap_add ncmlite_module_charge_soldier_start module_charge_soldier_start false none play_once_hold 1.00
+ap_audio ncmlite_module_charge_soldier_start 64 30 0
 ap_add ncmlite_mount mount false none play_once 0
 ap_audio ncmlite_mount 255 32 0
 ap_add ncmlite_nod nod false none play_once_blend 0
@@ -2726,8 +2955,8 @@ ap_audio_callback ncmlite_runforward_pistol run
 ap_add ncmlite_runforward_rifle runforward_rifle true none refpose9 0 none
 ap_audio ncmlite_runforward_rifle 40 32 1
 ap_audio_callback ncmlite_runforward_rifle run
-ap_add ncmlite_runforwardleft_base runforwardleft_base true none refpose1 0
-ap_audio ncmlite_runforwardleft_base 40 32 0
+ap_add ncmlite_runforwardleft_base runforwardleft_base true none refpose3 0
+ap_audio ncmlite_runforwardleft_base 64 30 0
 ap_audio_callback ncmlite_runforwardleft_base run
 ap_add ncmlite_runforwardleft_low runforwardleft_low true none refpose3 0
 ap_audio ncmlite_runforwardleft_low 40 32 0
@@ -2739,7 +2968,7 @@ ap_add ncmlite_runforwardleft_rifle runforwardleft_rifle true none refpose3 0
 ap_audio ncmlite_runforwardleft_rifle 40 32 0
 ap_audio_callback ncmlite_runforwardleft_rifle run
 ap_add ncmlite_runforwardright_base runforwardright_base true none refpose3 0
-ap_audio ncmlite_runforwardright_base 40 32 0
+ap_audio ncmlite_runforwardright_base 64 30 0
 ap_audio_callback ncmlite_runforwardright_base run
 ap_add ncmlite_runforwardright_low runforwardright_low true none refpose3 0
 ap_audio ncmlite_runforwardright_low 40 32 0
@@ -2918,11 +3147,47 @@ ap_add ncmlite_wave wave false none play_once_blend 0
 ap_audio ncmlite_wave 255 32 0
 ap_add ncmlite_wave2 wave2 false none play_once 0
 ap_audio ncmlite_wave2 255 32 0
+ap_add ncmlite_zip_death_idle01_base zip_death_idle01_base false none loop 0
+ap_audio ncmlite_zip_death_idle01_base 64 30 0
+ap_add ncmlite_zip_death_idle01_low zip_death_idle01_low false none play_once 0
+ap_audio ncmlite_zip_death_idle01_low 64 30 0
+ap_add ncmlite_zip_death_idle01_pistol zip_death_idle01_pistol false none play_once 0
+ap_audio ncmlite_zip_death_idle01_pistol 64 30 0
+ap_add ncmlite_zip_death_idle01_rifle zip_death_idle01_rifle false none play_once 0
+ap_audio ncmlite_zip_death_idle01_rifle 64 30 0
+ap_add ncmlite_zip_death_idle02_base zip_death_idle02_base false none play_once 0
+ap_audio ncmlite_zip_death_idle02_base 64 30 0
+ap_add ncmlite_zip_death_land01_base zip_death_land01_base false none play_once_hold 0
+ap_audio ncmlite_zip_death_land01_base 64 30 0
+ap_add ncmlite_zip_death_land01_low zip_death_land01_low false none play_once 0
+ap_audio ncmlite_zip_death_land01_low 64 30 0
+ap_add ncmlite_zip_death_land01_pistol zip_death_land01_pistol false none play_once 0
+ap_audio ncmlite_zip_death_land01_pistol 64 30 0
+ap_add ncmlite_zip_death_land01_rifle zip_death_land01_rifle false none play_once 0
+ap_audio ncmlite_zip_death_land01_rifle 64 30 0
+ap_add ncmlite_zip_death_land02_base zip_death_land02_base false none play_once 0
+ap_audio ncmlite_zip_death_land02_base 64 30 0
+ap_add ncmlite_zip_death_land02_low zip_death_land02_low false none play_once 0
+ap_audio ncmlite_zip_death_land02_low 64 30 0
+ap_add ncmlite_zip_death_land02_pistol zip_death_land02_pistol false none play_once 0
+ap_audio ncmlite_zip_death_land02_pistol 64 30 0
+ap_add ncmlite_zip_death_land02_rifle zip_death_land02_rifle false none play_once 0
+ap_audio ncmlite_zip_death_land02_rifle 64 30 0
+ap_add ncmlite_zip_death_start01_base zip_death_start01_base false none play_once 0
+ap_audio ncmlite_zip_death_start01_base 64 30 0
+ap_add ncmlite_zip_death_start01_low zip_death_start01_low false none play_once 0
+ap_audio ncmlite_zip_death_start01_low 64 30 0
+ap_add ncmlite_zip_death_start01_pistol zip_death_start01_pistol false none play_once 0
+ap_audio ncmlite_zip_death_start01_pistol 64 30 0
+ap_add ncmlite_zip_death_start01_rifle zip_death_start01_rifle false none play_once 0
+ap_audio ncmlite_zip_death_start01_rifle 64 30 0
+ap_add ncmlite_zip_death_start02_base zip_death_start02_base false none play_once 0
+ap_audio ncmlite_zip_death_start02_base 64 30 0
 ap_end
 
 ##vshev
 
-ap_add vshev magno_mine true none 0 0
+ap_add vshev ceiling_flag true none 0 0
 ap_audio vshev 64 30 0
 ap_add vshev_autorunforward_base autorunforward_base true none refpose3 0
 ap_audio vshev_autorunforward_base 64 30 1
@@ -2933,6 +3198,12 @@ ap_add vshev_base_comehere base_comehere false none play_once 0
 ap_audio vshev_base_comehere 64 30 0
 ap_add vshev_base_fire base_fire true none play_once 0
 ap_audio vshev_base_fire 64 30 0
+ap_add vshev_base_fire_comet base_fire_comet true none refpose3 0
+ap_audio vshev_base_fire_comet 64 30 0
+ap_add vshev_base_fire_quasar base_fire_quasar true none refpose3 0
+ap_audio vshev_base_fire_quasar 64 30 0
+ap_add vshev_base_fire_starfire base_fire_starfire true none refpose3 0
+ap_audio vshev_base_fire_starfire 64 30 0
 ap_add vshev_base_salute base_salute false none play_once 0
 ap_audio vshev_base_salute 64 30 0
 ap_add vshev_death01 death01 false none play_once 0
@@ -2967,6 +3238,8 @@ ap_add vshev_emote_base_help emote_base_help false none play_once 0
 ap_audio vshev_emote_base_help 64 30 0
 ap_add vshev_emote_base_laugh emote_base_laugh false none play_once 0
 ap_audio vshev_emote_base_laugh 64 30 0
+ap_add vshev_emote_base_laughing2 emote_base_laughing2 false none play_once 0
+ap_audio vshev_emote_base_laughing2 64 30 0
 ap_add vshev_emote_base_move emote_base_move false none play_once 0
 ap_audio vshev_emote_base_move 64 30 0
 ap_add vshev_emote_base_no emote_base_no false none play_once 0
@@ -2981,6 +3254,8 @@ ap_add vshev_emote_base_sorry emote_base_sorry false none play_once 0
 ap_audio vshev_emote_base_sorry 64 30 0
 ap_add vshev_emote_base_spreadout emote_base_spreadout false none play_once 0
 ap_audio vshev_emote_base_spreadout 64 30 0
+ap_add vshev_emote_base_vssalute emote_base_vssalute false none play_once 0
+ap_audio vshev_emote_base_vssalute 64 30 0
 ap_add vshev_emote_base_wave emote_base_wave false none play_once 0
 ap_audio vshev_emote_base_wave 64 30 0
 ap_add vshev_emote_base_yes emote_base_yes false none play_once 0
@@ -2992,28 +3267,16 @@ ap_audio vshev_gettinghit_front 64 30 0
 ap_add vshev_jumpdown_base jumpdown_base false none play_once 0
 ap_audio vshev_jumpdown_base 64 30 0
 ap_audio_callback vshev_jumpdown_base land
-ap_add vshev_jumpdown_base_new jumpdown_base_new false none play_once 0
-ap_audio vshev_jumpdown_base_new 64 30 0
-ap_add vshev_jumpidle_base jumpidle_base true none loop 0
+ap_add vshev_jumpidle_base jumpidle_base false none loop 0
 ap_audio vshev_jumpidle_base 64 30 0
-ap_add vshev_jumpidle_base_new jumpidle_base_new true none refpose3 0
-ap_audio vshev_jumpidle_base_new 64 30 0
 ap_add vshev_jumpthrust jumpthrust true none refpose3 0
 ap_audio vshev_jumpthrust 64 30 0
 ap_add vshev_jumpthrust_backward jumpthrust_backward true none refpose3 0
 ap_audio vshev_jumpthrust_backward 64 30 0
-ap_add vshev_jumpthrust_backward_new jumpthrust_backward_new true none refpose3 0
-ap_audio vshev_jumpthrust_backward_new 64 30 0
 ap_add vshev_jumpthrust_forward jumpthrust_forward true none refpose3 0
 ap_audio vshev_jumpthrust_forward 64 30 0
-ap_add vshev_jumpthrust_forward_new jumpthrust_forward_new true none refpose3 0
-ap_audio vshev_jumpthrust_forward_new 64 30 0
-ap_add vshev_jumpthrust_new jumpthrust_new true none refpose3 0
-ap_audio vshev_jumpthrust_new 64 30 0
 ap_add vshev_jumpup_base jumpup_base false none play_once 0
 ap_audio vshev_jumpup_base 64 30 0
-ap_add vshev_jumpup_base_new jumpup_base_new false none play_once 0
-ap_audio vshev_jumpup_base_new 64 30 0
 ap_add vshev_l_bail_idle l_bail_idle false none loop 0
 ap_audio vshev_l_bail_idle 64 30 0
 ap_add vshev_l_bail_land l_bail_land false none play_once 0
@@ -3413,6 +3676,11 @@ ap_add trhev_gettinghit_back gettinghit_back false none play_once 0
 ap_audio trhev_gettinghit_back 64 30 0
 ap_add trhev_gettinghit_front gettinghit_front false none play_once 0
 ap_audio trhev_gettinghit_front 64 30 0
+ap_add trhev_jumpdown_base jumpdown_base false none play_once 0
+ap_audio trhev_jumpdown_base 64 30 0
+ap_audio_callback trhev_jumpdown_base land
+ap_add trhev_jumpidle_base jumpidle_base true none refpose3 0
+ap_audio trhev_jumpidle_base 64 30 0
 ap_add trhev_l_bail_idle l_bail_idle false none loop 0
 ap_audio trhev_l_bail_idle 64 30 0
 ap_add trhev_l_bail_land l_bail_land false none play_once 0
@@ -3474,6 +3742,12 @@ ap_audio_callback trhev_walkforwardleft_base walk
 ap_add trhev_walkforwardright_base walkforwardright_base true none refpose3 0
 ap_audio trhev_walkforwardright_base 64 30 0
 ap_audio_callback trhev_walkforwardright_base walk
+ap_add trhev_zip_death_idle01_base zip_death_idle01_base false none play_once 0
+ap_audio trhev_zip_death_idle01_base 64 30 0
+ap_add trhev_zip_death_land01_base zip_death_land01_base false none play_once 0
+ap_audio trhev_zip_death_land01_base 64 30 0
+ap_add trhev_zip_death_start01_base zip_death_start01_base false none play_once 0
+ap_audio trhev_zip_death_start01_base 64 30 0
 ap_end
 
 ##gr_door_mb_obsd
@@ -3482,6 +3756,62 @@ ap_add gr_door_mb_obsd_close close false none play_once_hold 0
 ap_audio gr_door_mb_obsd_close 64 30 0
 ap_add gr_door_mb_obsd_open open false none play_once_hold 0
 ap_audio gr_door_mb_obsd_open 64 30 0
+ap_end
+
+##radiator
+
+ap_add radiator_fire01 fire01 false none play_once 0
+ap_audio radiator_fire01 64 30 0
+ap_add radiator_fire1 fire1 false none play_once 0
+ap_audio radiator_fire1 64 30 0
+ap_end
+
+##vanu_vehicle_creation_pad
+
+ap_add vanu_vehicle_creation_pad_active active false none play_once 0
+ap_audio vanu_vehicle_creation_pad_active 64 30 0
+ap_add vanu_vehicle_creation_pad_close close false none play_once_hold 0
+ap_audio vanu_vehicle_creation_pad_close 64 30 0
+ap_add vanu_vehicle_creation_pad_open open false none play_once_hold 0
+ap_audio vanu_vehicle_creation_pad_open 64 30 0
+ap_end
+
+##vanu_equipment_term
+
+ap_add vanu_equipment_term_idle idle false none loop 0
+ap_audio vanu_equipment_term_idle 64 30 0
+ap_end
+
+##ancient_garage_door
+
+ap_end
+
+##ancient_door
+
+ap_end
+
+##vanu_sentry_turret
+
+ap_add vanu_sentry_turret_gunnera_dismount gunnera_dismount false none play_once_hold 0
+ap_audio vanu_sentry_turret_gunnera_dismount 64 30 0
+ap_add vanu_sentry_turret_gunnera_mount gunnera_mount false none play_once_hold 0
+ap_audio vanu_sentry_turret_gunnera_mount 64 30 0
+ap_add vanu_sentry_turret_gunnerb_dismount gunnerb_dismount false none play_once_hold 0
+ap_audio vanu_sentry_turret_gunnerb_dismount 64 30 0
+ap_add vanu_sentry_turret_gunnerb_mount gunnerb_mount false none play_once_hold 0
+ap_audio vanu_sentry_turret_gunnerb_mount 64 30 0
+ap_add z_vanu_sentry_turret_cabin_dismount z_cabin_dismount false none play_once 0
+ap_audio z_vanu_sentry_turret_cabin_dismount 64 30 0
+ap_add z_vanu_sentry_turret_cabin_mount z_cabin_mount false none play_once 0
+ap_audio z_vanu_sentry_turret_cabin_mount 64 30 0
+ap_add z_vanu_sentry_turret_gunnera_dismount z_gunnera_dismount false none play_once_hold 0
+ap_audio z_vanu_sentry_turret_gunnera_dismount 64 30 0
+ap_add z_vanu_sentry_turret_gunnera_mount z_gunnera_mount false none play_once_hold 0
+ap_audio z_vanu_sentry_turret_gunnera_mount 64 30 0
+ap_add z_vanu_sentry_turret_gunnerb_dismount z_gunnerb_dismount false none play_once_hold 0
+ap_audio z_vanu_sentry_turret_gunnerb_dismount 64 30 0
+ap_add z_vanu_sentry_turret_gunnerb_mount z_gunnerb_mount false none play_once_hold 0
+ap_audio z_vanu_sentry_turret_gunnerb_mount 64 30 0
 ap_end
 
 ##implant_terminal_mech
@@ -3520,6 +3850,74 @@ ap_add z_manned_turret_gunnera_dismount z_gunnera_dismount false none play_once_
 ap_audio z_manned_turret_gunnera_dismount 110 32 1
 ap_add z_manned_turret_gunnera_mount z_gunnera_mount false none play_once_hold 0
 ap_audio z_manned_turret_gunnera_mount 110 32 1
+ap_end
+
+##obbasemesh
+
+ap_add obbasemesh_closea closea false none play_once_hold 0
+ap_audio obbasemesh_closea 64 30 0
+ap_add obbasemesh_closeb closeb false none play_once_hold 0
+ap_audio obbasemesh_closeb 64 30 0
+ap_add obbasemesh_open open false none play_once_hold 0
+ap_audio obbasemesh_open 64 30 0
+ap_add obbasemesh_openb openb false none play_once_hold 0
+ap_audio obbasemesh_openb 64 30 0
+ap_end
+
+##switchblade
+
+ap_add switchblade_driver_dismount driver_dismount false none play_once_hold 0
+ap_audio switchblade_driver_dismount 64 30 0
+ap_add switchblade_driver_mount driver_mount false none play_once_hold 0
+ap_audio switchblade_driver_mount 64 30 0
+ap_add switchblade_driverb_dismount driverb_dismount false none play_once_hold 0
+ap_audio switchblade_driverb_dismount 64 30 0
+ap_add switchblade_driverb_mount driverb_mount false none play_once_hold 0
+ap_audio switchblade_driverb_mount 64 30 0
+ap_add z_switchblade_driver_dismount z_driver_dismount false none play_once_hold 0
+ap_audio z_switchblade_driver_dismount 64 30 0
+ap_add z_switchblade_driver_mount z_driver_mount false none play_once_hold 0
+ap_audio z_switchblade_driver_mount 64 30 0
+ap_add z_switchblade_driverb_dismount z_driverb_dismount false none play_once_hold 0
+ap_audio z_switchblade_driverb_dismount 64 30 0
+ap_add z_switchblade_driverb_mount z_driverb_mount false none play_once_hold 0
+ap_audio z_switchblade_driverb_mount 64 30 0
+ap_end
+
+##router
+
+ap_add router_driver_dismount driver_dismount false none play_once_hold 0
+ap_audio router_driver_dismount 64 30 0
+ap_add router_driver_mount driver_mount false none play_once_hold 0
+ap_audio router_driver_mount 64 30 0
+ap_add router_driverb_dismount driverb_dismount false none play_once_hold 0
+ap_audio router_driverb_dismount 64 30 0
+ap_add router_driverb_mount driverb_mount false none play_once_hold 0
+ap_audio router_driverb_mount 64 30 0
+ap_add z_router_driver_dismount z_driver_dismount false none play_once_hold 0
+ap_audio z_router_driver_dismount 64 30 0
+ap_add z_router_driver_mount z_driver_mount false none play_once_hold 0
+ap_audio z_router_driver_mount 64 30 0
+ap_add z_router_driverb_dismount z_driverb_dismount false none play_once_hold 0
+ap_audio z_router_driverb_dismount 64 30 0
+ap_add z_router_driverb_mount z_driverb_mount false none play_once_hold 0
+ap_audio z_router_driverb_mount 64 30 0
+ap_end
+
+##flail
+
+ap_add flail_driver_dismount driver_dismount false none play_once_hold 0
+ap_audio flail_driver_dismount 64 30 0
+ap_add flail_driver_idle driver_idle false none loop 0
+ap_audio flail_driver_idle 64 30 0
+ap_add flail_driver_mount driver_mount false none play_once_hold 0
+ap_audio flail_driver_mount 64 30 0
+ap_add z_flail_driver_dismount z_driver_dismount false none play_once_hold 0
+ap_audio z_flail_driver_dismount 64 30 0
+ap_add z_flail_driver_idle z_driver_idle false none loop_audio_intermittent 0
+ap_audio z_flail_driver_idle 64 30 0
+ap_add z_flail_driver_mount z_driver_mount false none play_once_hold 0
+ap_audio z_flail_driver_mount 64 30 0
 ap_end
 
 ##vanguard
@@ -3652,7 +4050,7 @@ ap_add twomanheavybuggy_gunnera_pain3 gunnera_pain3 false none play_once 0
 ap_audio twomanheavybuggy_gunnera_pain3 255 32 0
 ap_add twomanheavybuggy_gunnera_turn gunnera_turn false none blended_refpose 0
 ap_audio twomanheavybuggy_gunnera_turn 255 32 0
-ap_add z_twomanheavybuggy_driver z_Driver true none refpose3 0
+ap_add z_twomanheavybuggy_driver z_driver true none refpose3 0
 ap_audio z_twomanheavybuggy_driver 64 30 0
 ap_add z_twomanheavybuggy_driver_bump z_Driver_bump false none play_once 0
 ap_audio z_twomanheavybuggy_driver_bump 255 32 0
@@ -3724,7 +4122,7 @@ ap_add two_man_assault_buggy_gunnera_mount gunnera_mount false none play_once_ho
 ap_audio two_man_assault_buggy_gunnera_mount 110 32 1
 ap_add two_man_assault_buggy_gunnera_pain gunnera_pain false none play_once 0
 ap_audio two_man_assault_buggy_gunnera_pain 255 32 0
-ap_add z_two_man_assault_buggy_driver z_Driver true none refpose3 0
+ap_add z_two_man_assault_buggy_driver z_driver true none refpose3 0
 ap_audio z_two_man_assault_buggy_driver 64 30 0
 ap_add z_two_man_assault_buggy_driver_bump z_Driver_bump false none play_once 0
 ap_audio z_two_man_assault_buggy_driver_bump 255 32 0
@@ -3812,7 +4210,7 @@ ap_add threemanheavybuggy_gunnerb_pain3 gunnerb_pain3 false none play_once 0
 ap_audio threemanheavybuggy_gunnerb_pain3 255 32 0
 ap_add threemanheavybuggy_gunnerb_turn gunnerb_turn false none blended_refpose 0
 ap_audio threemanheavybuggy_gunnerb_turn 255 32 0
-ap_add z_threemanheavybuggy_driver z_Driver true none refpose3 0
+ap_add z_threemanheavybuggy_driver z_driver true none refpose3 0
 ap_audio z_threemanheavybuggy_driver 64 30 0
 ap_add z_threemanheavybuggy_driver_bump z_Driver_bump false none play_once 0
 ap_audio z_threemanheavybuggy_driver_bump 64 30 0
@@ -3872,44 +4270,62 @@ ap_add z_threemanheavybuggy_gunnerb_turn z_gunnerb_turn false none blended_refpo
 ap_audio z_threemanheavybuggy_gunnerb_turn 64 30 0
 ap_end
 
+##skyguard
+
+ap_add skyguard_driver Driver true none refpose3 0
+ap_audio skyguard_driver 64 30 0
+ap_add Skyguard_driver_dismount driver_dismount false none play_once_hold 0
+ap_audio Skyguard_driver_dismount 64 30 0
+ap_add Skyguard_driver_mount driver_mount false none play_once_hold 0
+ap_audio Skyguard_driver_mount 64 30 0
+ap_add skyguard_driverb_dismount driverb_dismount false none play_once_hold 0
+ap_audio skyguard_driverb_dismount 64 30 0
+ap_add skyguard_driverb_mount driverb_mount false none play_once_hold 0
+ap_audio skyguard_driverb_mount 64 30 0
+ap_add skyguard_gunnera_dismount gunnera_dismount false none play_once_hold 0
+ap_audio skyguard_gunnera_dismount 64 30 0
+ap_add skyguard_gunnera_mount gunnera_mount false none play_once_hold 0
+ap_audio skyguard_gunnera_mount 64 30 0
+ap_add skyguard_gunnera_turn gunnera_turn false none blended_refpose 0
+ap_audio skyguard_gunnera_turn 64 30 0
+ap_add z_skyguard_driver z_driver true none refpose3 0
+ap_audio z_skyguard_driver 64 30 0
+ap_add z_skyguard_driver_dismount z_driver_dismount false none play_once_hold 0
+ap_audio z_skyguard_driver_dismount 64 30 0
+ap_add z_skyguard_driver_mount z_driver_mount false none play_once 0
+ap_audio z_skyguard_driver_mount 64 30 0
+ap_add z_skyguard_driverb_dismount z_driverb_dismount false none play_once_hold 0
+ap_audio z_skyguard_driverb_dismount 64 30 0
+ap_add z_skyguard_driverb_mount z_driverb_mount false none play_once 0
+ap_audio z_skyguard_driverb_mount 64 30 0
+ap_add z_skyguard_gunnera_dismount z_gunnera_dismount false none play_once_hold 0
+ap_audio z_skyguard_gunnera_dismount 64 30 0
+ap_add z_skyguard_gunnera_mount z_gunnera_mount false none play_once 0
+ap_audio z_skyguard_gunnera_mount 64 30 0
+ap_add z_skyguard_gunnera_turn z_gunnera_turn false none blended_refpose 0
+ap_audio z_skyguard_gunnera_turn 64 30 0
+ap_end
+
 ##quadstealth
 
 ap_end
 
 ##quadassault
 
-ap_add quadassault_driver Driver true none refpose3 0
-ap_audio quadassault_driver 255 32 0
-ap_add quadassault_driver_death1 driver_death1 false none play_once_hold 0
-ap_audio quadassault_driver_death1 255 32 0
-ap_add quadassault_driver_death2 driver_death2 false none play_once_hold 0
-ap_audio quadassault_driver_death2 255 32 0
 ap_add quadassault_driver_dismount driver_dismount false none play_once_hold 0
 ap_audio quadassault_driver_dismount 110 32 1
 ap_add quadassault_driver_mount driver_mount false none play_once_hold 0
 ap_audio quadassault_driver_mount 110 32 1
-ap_add quadassault_driver_pain1 driver_pain1 false none play_once 0
-ap_audio quadassault_driver_pain1 255 32 0
-ap_add quadassault_driver_pain2 driver_pain2 false none play_once 0
-ap_audio quadassault_driver_pain2 255 32 0
 ap_add quadassault_driverb_dismount driverb_dismount false none play_once_hold 0
 ap_audio quadassault_driverb_dismount 255 32 1
 ap_add quadassault_driverb_mount driverb_mount false none play_once_hold 0
 ap_audio quadassault_driverb_mount 255 32 1
-ap_add z_quadassault_driver z_Driver true none refpose3 0
+ap_add z_quadassault_driver z_driver true none refpose3 0
 ap_audio z_quadassault_driver 255 32 0
-ap_add z_quadassault_driver_death1 z_driver_death1 false none play_once_hold 0
-ap_audio z_quadassault_driver_death1 255 32 0
-ap_add z_quadassault_driver_death2 z_driver_death2 false none play_once_hold 0
-ap_audio z_quadassault_driver_death2 255 32 0
 ap_add z_quadassault_driver_dismount z_driver_dismount false none play_once_hold 0
 ap_audio z_quadassault_driver_dismount 255 32 1
 ap_add z_quadassault_driver_mount z_driver_mount false none play_once_hold 0
 ap_audio z_quadassault_driver_mount 255 32 1
-ap_add z_quadassault_driver_pain1 z_driver_pain1 false none play_once 0
-ap_audio z_quadassault_driver_pain1 255 32 0
-ap_add z_quadassault_driver_pain2 z_driver_pain2 false none play_once 0
-ap_audio z_quadassault_driver_pain2 255 32 0
 ap_add z_quadassault_driverb_dismount z_driverb_dismount false none play_once_hold 0
 ap_audio z_quadassault_driverb_dismount 255 32 1
 ap_add z_quadassault_driverb_mount z_driverb_mount false none play_once_hold 0
@@ -3992,7 +4408,7 @@ ap_add mediumtransport_passengerb_dismount passengerb_dismount false none play_o
 ap_audio mediumtransport_passengerb_dismount 255 32 1
 ap_add mediumtransport_passengerb_mount passengerb_mount false none play_once_hold 0
 ap_audio mediumtransport_passengerb_mount 255 32 1
-ap_add z_mediumtransport_driver z_Driver true none refpose3 0
+ap_add z_mediumtransport_driver z_driver true none refpose3 0
 ap_audio z_mediumtransport_driver 64 30 0
 ap_add z_mediumtransport_driver_death z_driver_death false none play_once_hold 0
 ap_audio z_mediumtransport_driver_death 255 32 0
@@ -4086,6 +4502,62 @@ ap_add z_lightgunship_driverb_dismount z_driverb_dismount false none play_once_h
 ap_audio z_lightgunship_driverb_dismount 110 32 1
 ap_add z_lightgunship_driverb_mount z_driverb_mount false none play_once_hold 0
 ap_audio z_lightgunship_driverb_mount 110 32 1
+ap_end
+
+##liberator
+
+ap_add liberator_bomb_bay_close bomb_bay_close false none play_once_hold 0
+ap_audio liberator_bomb_bay_close 64 30 0
+ap_add liberator_bomb_bay_open bomb_bay_open false none play_once_hold 0
+ap_audio liberator_bomb_bay_open 64 30 0
+ap_add liberator_driver Driver false none refpose3 0
+ap_audio liberator_driver 64 30 0
+ap_add liberator_driver_dismount driver_dismount false none play_once_hold 0
+ap_audio liberator_driver_dismount 64 30 0
+ap_add liberator_driver_mount driver_mount false none play_once_hold 0
+ap_audio liberator_driver_mount 64 30 0
+ap_add liberator_gunnera gunnera false none refpose3 0
+ap_audio liberator_gunnera 64 30 0
+ap_add liberator_gunnera_dismount gunnera_dismount false none play_once_hold 0
+ap_audio liberator_gunnera_dismount 64 30 0
+ap_add liberator_gunnera_mount gunnera_mount false none play_once_hold 0
+ap_audio liberator_gunnera_mount 64 30 0
+ap_add liberator_gunnerb gunnerb false none refpose3 0
+ap_audio liberator_gunnerb 64 30 0
+ap_add liberator_gunnerb_dismount gunnerb_dismount false none play_once_hold 0
+ap_audio liberator_gunnerb_dismount 64 30 0
+ap_add liberator_gunnerb_mount gunnerb_mount false none play_once_hold 0
+ap_audio liberator_gunnerb_mount 64 30 0
+ap_add liberator_gunnerc gunnerc false none refpose3 0
+ap_audio liberator_gunnerc 64 30 0
+ap_add liberator_gunnerc_dismount gunnerc_dismount false none play_once_hold 0
+ap_audio liberator_gunnerc_dismount 64 30 0
+ap_add liberator_gunnerc_mount gunnerc_mount false none play_once_hold 0
+ap_audio liberator_gunnerc_mount 64 30 0
+ap_add z_liberator_driver z_driver false none refpose3 0
+ap_audio z_liberator_driver 64 30 0
+ap_add z_liberator_driver_dismount z_driver_dismount false none play_once_hold 0
+ap_audio z_liberator_driver_dismount 64 30 0
+ap_add z_liberator_driver_mount z_driver_mount false none play_once_hold 0
+ap_audio z_liberator_driver_mount 64 30 0
+ap_add z_liberator_gunnera z_gunnera false none refpose3 0
+ap_audio z_liberator_gunnera 64 30 0
+ap_add z_liberator_gunnera_dismount z_gunnera_dismount false none play_once_hold 0
+ap_audio z_liberator_gunnera_dismount 64 30 0
+ap_add z_liberator_gunnera_mount z_gunnera_mount false none play_once_hold 0
+ap_audio z_liberator_gunnera_mount 64 30 0
+ap_add z_liberator_gunnerb z_gunnerb false none refpose3 0
+ap_audio z_liberator_gunnerb 64 30 0
+ap_add z_liberator_gunnerb_dismount z_gunnerb_dismount false none play_once_hold 0
+ap_audio z_liberator_gunnerb_dismount 64 30 0
+ap_add z_liberator_gunnerb_mount z_gunnerb_mount false none play_once_hold 0
+ap_audio z_liberator_gunnerb_mount 64 30 0
+ap_add z_liberator_gunnerc z_gunnerc false none refpose3 0
+ap_audio z_liberator_gunnerc 64 30 0
+ap_add z_liberator_gunnerc_dismount z_gunnerc_dismount false none play_once_hold 0
+ap_audio z_liberator_gunnerc_dismount 64 30 0
+ap_add z_liberator_gunnerc_mount z_gunnerc_mount false none play_once_hold 0
+ap_audio z_liberator_gunnerc_mount 64 30 0
 ap_end
 
 ##dropship
@@ -4436,7 +4908,7 @@ ap_add apc_passengerh_vsheavy_dismount passengerh_vsheavy_dismount false none pl
 ap_audio apc_passengerh_vsheavy_dismount 64 30 0
 ap_add apc_passengerh_vsheavy_mount passengerh_vsheavy_mount false none play_once_hold 0
 ap_audio apc_passengerh_vsheavy_mount 64 30 0
-ap_add z_apc_driver z_Driver true none refpose3 0
+ap_add z_apc_driver z_driver true none refpose3 0
 ap_audio z_apc_driver 64 30 0
 ap_add z_apc_driver_dismount z_driver_dismount false none play_once_hold 0
 ap_audio z_apc_driver_dismount 110 32 1
@@ -4494,7 +4966,7 @@ ap_add ant_driverb_dismount driverb_dismount false none play_once_hold 0
 ap_audio ant_driverb_dismount 64 30 0
 ap_add ant_driverb_mount driverb_mount false none play_once_hold 0
 ap_audio ant_driverb_mount 64 30 0
-ap_add z_ant_driver z_Driver true none refpose3 0
+ap_add z_ant_driver z_driver true none refpose3 0
 ap_audio z_ant_driver 64 30 0
 ap_add z_ant_driver_dismount z_driver_dismount false none play_once_hold 0
 ap_audio z_ant_driver_dismount 64 30 0
@@ -4532,7 +5004,7 @@ ap_add ams_passengera_dismount passengera_dismount false none play_once_hold 0
 ap_audio ams_passengera_dismount 110 32 1
 ap_add ams_passengerb_dismount passengerb_dismount false none play_once_hold 0
 ap_audio ams_passengerb_dismount 110 32 1
-ap_add z_ams_driver z_Driver true none refpose3 0
+ap_add z_ams_driver z_driver true none refpose3 0
 ap_audio z_ams_driver 255 32 0
 ap_add z_ams_driver_bump z_Driver_bump false none play_once 0
 ap_audio z_ams_driver_bump 255 32 0
@@ -4688,8 +5160,6 @@ ap_add fp_nchev_falcon_dunno dunno false none play_once 0
 ap_audio fp_nchev_falcon_dunno 64 30 0
 ap_add fp_nchev_falcon_fire1 fire1 false none play_once 0
 ap_audio fp_nchev_falcon_fire1 64 30 1
-ap_add fp_nchev_falcon_fistup fistup false none play_once 0
-ap_audio fp_nchev_falcon_fistup 64 30 0
 ap_add fp_nchev_falcon_fistupyeah fistupyeah false none play_once 0
 ap_audio fp_nchev_falcon_fistupyeah 64 30 0
 ap_add fp_nchev_falcon_followme followme false none play_once 0

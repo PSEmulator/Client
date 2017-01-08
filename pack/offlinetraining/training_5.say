@@ -1,4 +1,4 @@
- #=======================================================
+#=======================================================
 # Offline Training Mission 5
 # Drop Pods
 #=======================================================
@@ -7,22 +7,37 @@ $begin OfflineTrainingMission5
     
     $freeze false
 
+    #-----------------------------------------
+    # Set up our continent
+    #-----------------------------------------
+    $building_info ALL 3 10
+
     # 1st dialogue
     $text_dlg @OfflineMission5_01 25
     $play Drop_01.mp3
     $sync
     $thaw
 
-    $set_waypoint 3430 4363 11
-    $set_waypoint 4224 3758 12
-    $set_waypoint 4454 3782 13
+    $set_waypoint 4761 3434 11
+    $set_waypoint 2916 2996 12
+    $set_waypoint 3067 4822 13
     $wait_waypoint 5
     
+    $set_waypoint 4766 3439 11
+    $set_waypoint 2923 2996 12
+    $set_waypoint 3061 4822 13
+    $wait_waypoint 1
+
     # Internal way-point inside the HART center
-    $set_waypoint 3428 4375 58 11
-    $set_waypoint 4222 3768 47 12
-    $set_waypoint 4455 3772 87 13
-    $wait_waypoint 2
+    $set_waypoint 4771 3449 71 11
+    $set_waypoint 2935 2994 38 12
+    $set_waypoint 3049 4824 59 13
+    $wait_waypoint 1
+
+    $set_waypoint 4783 3455 71 11
+    $set_waypoint 2946 2996 38 12
+    $set_waypoint 3038 4822 59 13
+    $wait_waypoint 1
 
     # 2nd dialogue
     $freeze false
@@ -46,22 +61,25 @@ $begin OfflineTrainingMission5
     # 4th dialogue
     $text_dlg @OfflineMission5_04 25
     $play Drop_04.mp3
+	$sync
 
     # Wait for the user to pick a random drop zone.
+	$change_action_lock DAT DAT_DROPPOD_PICK 1
     $wait_until_drop_zone
-    $sync
+	$change_action_lock DAT DAT_DROPPOD_PICK 0
     
     # 5th dialogue
     $text_dlg @OfflineMission5_05 25
     $play Drop_05.mp3
     $sync
 
+	$change_action_lock DAT DAT_DROPPOD_DROP 1
     $wait_until_zone 2
     $launch_droppod
 
     # At this point the player is in a drop pod, so wait until they're no longer in
     # a vehicle, and finish the mission.
-    $mount ""
+    $mount "null"
     
     # 6th dialogue
     $text_dlg @OfflineMission5_06 25

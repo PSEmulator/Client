@@ -1,20 +1,20 @@
 ############################################################
 # FLYING and HOVER VEHICLE SPECIFIC KEYMAPS
 ############################################################
-km_addbinding "E" "Flight Elevate"
-km_addbinding "C" "Flight Lower"
-km_addbinding "Joystick POV1 Up" "Flight Elevate"
-km_addbinding "Joystick POV1 Down" "Flight Lower"
+km_addbinding "E" "@GA_FlightElevate"
+km_addbinding "C" "@GA_FlightLower"
+km_addbinding "JoystickPOV1Up" "@GA_FlightElevate"
+km_addbinding "JoystickPOV1Down" "@GA_FlightLower"
 
-km_addbinding "W" "Forward"
-km_addbinding "S" "Backward"
+km_addbinding "W" "@GA_Forward"
+km_addbinding "S" "@GA_Backward"
 
-km_addbinding "Left Arrow" "Strafe Left"
-km_addbinding "Right Arrow" "Strafe Right"
-km_addbinding "A" "Strafe Left"
-km_addbinding "D" "Strafe Right"
-km_addbinding "Joystick POV1 Left" "Strafe Left"
-km_addbinding "Joystick POV1 Right" "Strafe Right"
+km_addbinding "LeftArrow" "@GA_StrafeLeft"
+km_addbinding "RightArrow" "@GA_StrafeRight"
+km_addbinding "A" "@GA_StrafeLeft"
+km_addbinding "D" "@GA_StrafeRight"
+km_addbinding "JoystickPOV1Left" "@GA_StrafeLeft"
+km_addbinding "JoystickPOV1Right" "@GA_StrafeRight"
 
-km_addbinding "Space" "Flight Afterburners"
+km_addbinding "Space" "@GA_FlightAfterburners"
 

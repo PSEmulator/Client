@@ -5,30 +5,32 @@
 # Movement Controls
 #----------------------------
 
-km_addbinding "shift" "Walk/Run"
+km_addbinding "shift" "@GA_Walk/Run"
 
-km_addbinding "w" "Forward"
-km_addbinding "s" "Backward"
-km_addbinding "num pad 8" Forward
-km_addbinding "num pad 2" Backward
-km_addbinding "up arrow" "Forward"
-km_addbinding "down arrow" "Backward"
+km_addbinding "w" "@GA_Forward"
+km_addbinding "s" "@GA_Backward"
+km_addbinding "num pad 8" @GA_Forward
+km_addbinding "num pad 2" @GA_Backward
+km_addbinding "uparrow" "@GA_Forward"
+km_addbinding "downarrow" "@GA_Backward"
 
-km_addbinding "a" "Strafe Left"
-km_addbinding "d" "Strafe Right"
+km_addbinding "a" "@GA_StrafeLeft"
+km_addbinding "d" "@GA_StrafeRight"
 
-km_addbinding "left arrow" "Strafe Left"
-km_addbinding "right arrow" "Strafe Right"
+km_addbinding "leftarrow" "@GA_StrafeLeft"
+km_addbinding "rightarrow" "@GA_StrafeRight"
 
-km_addbinding "C" "Toggle Crouch"
-km_addbinding "ctrl" "Crouch"
+km_addbinding "C" "@GA_ToggleCrouch"
+km_addbinding "ctrl" "@GA_Crouch"
 
-km_addbinding "space" "Jump"
+km_addbinding "space" "@GA_Jump"
+
+km_addbinding "shift+g" "@GA_DropFlag"
 
 # Weapon Controls
 #----------------------------
-km_addbinding 1 "Use Right Hip Holster"
-km_addbinding 2 "Use Right Back Holster"
-km_addbinding 3 "Use Left Hip Holster"
-km_addbinding 4 "Use Left Back Holster"
-km_addbinding 5 "Use Knife Holster"
+km_addbinding 1 "@GA_UseRightHipHolster"
+km_addbinding 2 "@GA_UseRightBackHolster"
+km_addbinding 3 "@GA_UseLeftHipHolster"
+km_addbinding 4 "@GA_UseLeftBackHolster"
+km_addbinding 5 "@GA_UseKnifeHolster"

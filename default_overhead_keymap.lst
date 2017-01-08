@@ -5,25 +5,38 @@
 # Zoom Controls
 #----------------------------
 
-km_addbinding "Shift + =" "Zoom In"
-km_addbinding "Num Pad +" "Zoom In"
-km_addbinding "Z"         "Zoom In"
+km_addbinding "Shift+Equal" "@GA_ZoomIn"
+km_addbinding "NumPadAdd"   "@GA_ZoomIn"
+km_addbinding "Z"           "@GA_ZoomIn"
 
-km_addbinding "Shift + -" "Zoom Out"
-km_addbinding "Num Pad -" "Zoom Out"
-km_addbinding "X"         "Zoom Out"
+km_addbinding "Shift+Minus" "@GA_ZoomOut"
+km_addbinding "NumPadSub"   "@GA_ZoomOut"
+km_addbinding "X"           "@GA_ZoomOut"
+
+
+# Map Pan Controls
+#----------------------------
+
+km_addbinding "UpArrow"     "@GA_PanMapUp"
+km_addbinding "DownArrow"   "@GA_PanMapDown"
+km_addbinding "LeftArrow"   "@GA_PanMapLeft"
+km_addbinding "RightArrow"  "@GA_PanMapRight"
 
 
 # Other Keyboard Shortcuts
 #----------------------------
-km_addbinding "C" 	"Center on Player"
-km_addbinding "G" 	"Global View"
-km_addbinding "B" 	"Toggle Battleplans"
-km_addbinding "E" 	"Toggle Equipment"
-km_addbinding "F" 	"Toggle Facility Warnings"
-km_addbinding "H" 	"Toggle Hot Spots"
-km_addbinding "R" 	"Toggle Rsrc Facility Info"
-km_addbinding "S" 	"Toggle SOI"
-km_addbinding "Q" 	"Toggle Squad"
-km_addbinding "T" 	"Toggle Text"
-km_addbinding "W" 	"Toggle Weather"
+km_addbinding "C"           "@GA_CenteronPlayer"
+km_addbinding "G"           "@GA_GlobalView"
+km_addbinding "B"           "@GA_ToggleBattleplans"
+km_addbinding "E"           "@GA_ToggleEquipment"
+km_addbinding "F"           "@GA_ToggleFacilityWarnings"
+km_addbinding "O"           "@GA_ToggleHotSpots"
+km_addbinding "R"           "@GA_ToggleRsrcFacilityInfo"
+km_addbinding "S"           "@GA_ToggleSOI"
+km_addbinding "Q"           "@GA_ToggleSquad"
+km_addbinding "T"           "@GA_ToggleText"
+km_addbinding "W"           "@GA_ToggleWeather"
+km_addbinding "P"           "@GA_ChangeMapView"
+km_addbinding ","           "@GA_ToggleCeilingBuildings"
+km_addbinding "."           "@GA_ToggleGroundBuildings"
+km_addbinding "L"           "@GA_ToggleZiplines"

@@ -1,18 +1,8 @@
 #at_begin
 
-##fp_arms
-
-at_add fp_repeater repeater bip01_r_hand default
-at_end
-
 ##trmmed_h
 
 at_add trmmed bip01_head head parent_relative
-at_end
-
-##two_man_heavy_buggy
-
-at_add ncmlite Bip01 enforcer_body parent_relative
 at_end
 
 ##fp_beamer
@@ -20,10 +10,24 @@ at_end
 at_rem fp_bare_hands bip01_l_finger0 root default
 at_end
 
-##twomanassaultbuggy
+##two_man_heavy_buggy
 
-at_add ncmlite Bip01 root parent_relative
-at_add chaingun_p hp_guna hp_guna default
+at_add ncmlite Bip01 enforcer_body parent_relative
+at_end
+
+##sb_root
+
+at_add scythe hp_guna hp_weapon parent_relative
+at_end
+
+##vanu_sentry_turret_cabin
+
+at_rem vanu_sentry_turret_weapon hp_turretb hp_turretb parent_relative
+at_end
+
+##light_gunship
+
+at_add ncmlite Bip01 gunship_body parent_relative
 at_end
 
 ##threemanbuggy
@@ -33,84 +37,145 @@ at_add chaingun_p buggy_gun hp_guna default
 at_add 20mm_cannon_f hp_guna hp_gunb default
 at_end
 
-##light_gunship
+##twomanassaultbuggy
 
-at_add ncmlite Bip01 gunship_body parent_relative
+at_add ncmlite Bip01 root parent_relative
+at_add chaingun_p hp_guna hp_guna default
 at_end
 
-##forceblade
+##llm_base
 
-at_rem ef_vsfb_glow ef_vsfb_glow ef_blood reset_transform
+at_rem lattice_logic_module lattice_logic_module_top llm_base default
 at_end
 
-##ncmsi
+##llm_socket
 
-at_add male_head_b head bip01_head reset_transform
-at_add r_shotgun hp_hand hp_hand_right reset_transform
+at_add lattice_logic_module lattice_logic_module hp_llm_attach default
 at_end
 
-##vsfsth
+##trhev
 
-at_add vsfsthh head bip01_head reset_transform
-at_add remote_electronics_kit hp_hip_right hp_hip_right default
-at_add isp hp_hand hp_hand_right default
+at_add trhev_dualcycler_l hp_handleft hp_hand_left reset_transform
+at_add trhev_dualcycler_r hp_handright hp_hand_right reset_transform
+at_add trhev_m_head_b head bip01_head reset_transform
 at_end
 
-##trflite
+##fp_bolt_driver
 
-at_add trlite_f_head_d head bip01_head reset_transform
+at_end
+
+##ncfmed
+
+at_add ncmed_f_head_c head bip01_head reset_transform
+at_rem repeater hp_hand hp_hand_right default
 at_add r_shotgun hp_hand hp_hand_right default
 at_end
 
-##vsmsi
+##ncfsi
 
-at_add male_head_a head bip01_head reset_transform
+at_add r_shotgun hp_hand hp_hand_right default
+at_add female_head_c head bip01_head reset_transform
 at_end
 
-##pad_creation
+##trfsth
+
+at_add trsth_f_head_b head bip01_head reset_transform
+at_add remote_electronics_kit hp_hand hp_hand_right default
+at_end
+
+##trfmed
+
+at_add female_head_d head bip01_head reset_transform
+at_add remote_electronics_kit hp_hand hp_hand_right default
+at_end
+
+##trfsi
+
+at_add r_shotgun hp_hand hp_hand_right default
+at_add female_head_a head bip01_head reset_transform
+at_end
+
+##trmsth
+
+at_add trsth_m_head_e head bip01_head reset_transform
+at_add medical_applicator hp_hand hp_hand_right default
+at_end
+
+##trmsi
+
+at_add male_head_d head bip01_head reset_transform
+at_add thumper hp_hand hp_hand_right default
+at_end
+
+##ncmmed
+
+at_add ncmed_m_head_a head bip01_head reset_transform
+at_add radiator hp_shoulder_left hp_shoulder_left reset_transform
+at_add radiator hp_shoulder_right hp_shoulder_right default
+at_add radiator hp_shoulder_left hp_shoulder_left default
+at_end
+
+##mb_pad_creation
 
 at_add ams ams_body hp_vehicle parent_relative
 at_end
 
-##trmlite
+##cycler
 
-at_add trlite_m_head_a head bip01_head reset_transform
-at_add trm_backplate hp_spine bip01_spine1 reset_transform
 at_end
 
-##ncmsth
+##vsmlite
 
-at_add ncmsthh ncmsthh bip01_head reset_transform
-at_add medical_applicator hp_hand hp_hand_right default
+at_add jammer_grenade jammer_grenade hp_hand_right default
+at_add vslite_m_head_a head bip01_head reset_transform
+at_add vsm_right_shinpad hp_r_calf bip01_r_calf reset_transform
 at_end
 
-##nchev
+##vsmmed
 
-at_add nchev_m_head_e head bip01_head reset_transform
-at_add nc_hev_scattercannon hp_hand hp_hand reset_transform
+at_add vsmmedh vsmmedh bip01_head reset_transform
 at_end
 
-##trmmed
+##avianadolescent
 
-at_add trmed_m_head_c head bip01_head reset_transform
-at_add trm_backplate hp_spine bip01_spine1 reset_transform
+at_end
+
+##vsmsth
+
+at_add vsmsthh ncmsthh bip01_head reset_transform
+at_end
+
+##ncfsth
+
+at_add ncfsthh head bip01_head reset_transform
+at_add repeater hp_hand hp_hand_right default
+at_end
+
+##vshev
+
+at_add vshevh bip01_head bip01_head reset_transform
+at_add vs_hev_quasar hp_hand hp_hand default
+at_end
+
+##ncmlite
+
+at_add ncm_left_shinpad hp_l_calf bip01_l_calf reset_transform
+at_add nclite_m_head_b head bip01_head reset_transform
+at_add maelstrom hp_shoulder_left hp_shoulder_left default
+at_add maelstrom hp_shoulder_right hp_shoulder_right default
+at_end
+
+##vsfmed
+
+at_add vsfmedh vsfmedh bip01_head reset_transform
+at_add vsf_right_forearm hp_r_forearm bip01_r_forearm reset_transform
 at_add r_shotgun hp_hand hp_hand_right default
 at_end
 
-##vsflite
+##vsfsi
 
-at_add vslite_f_head_b head bip01_head reset_transform
+at_add female_head_e head bip01_head reset_transform
 at_add r_shotgun hp_hand hp_hand_right default
-at_end
-
-##obbasemesh
-
-at_add orbital_shuttle orbital_shuttle hp_shuttle default
-at_end
-
-##dropship_pad_doors
-
-at_add dropship dropship_body hp_vehicle parent_relative
 at_end
 
 ##ncflite
@@ -121,129 +186,80 @@ at_add r_shotgun hp_hand hp_hand_right default
 at_rem ncf_left_shoulder hp_l_shoulder bip01_l_clavicle reset_transform
 at_end
 
-##vsfsi
+##dropship_pad_doors
 
-at_add female_head_e head bip01_head reset_transform
+at_add dropship dropship_body hp_vehicle parent_relative
+at_end
+
+##vsflite
+
+at_add vslite_f_head_b head bip01_head reset_transform
 at_add r_shotgun hp_hand hp_hand_right default
 at_end
 
-##vsfmed
+##trmmed
 
-at_add vsfmedh vsfmedh bip01_head reset_transform
-at_add vsf_right_forearm hp_r_forearm bip01_r_forearm reset_transform
+at_add trmed_m_head_c head bip01_head reset_transform
+at_add trm_backplate hp_spine bip01_spine1 reset_transform
 at_add r_shotgun hp_hand hp_hand_right default
 at_end
 
-##ncmlite
+##nchev
 
-at_add ncm_left_shinpad hp_l_calf bip01_l_calf reset_transform
-at_add nclite_m_head_b head bip01_head reset_transform
-at_add ncm_backplate hp_spine bip01_spine1 reset_transform
-at_add magcutter hp_hand hp_hand_right default
+at_add nchev_m_head_e head bip01_head reset_transform
+at_add nc_hev_scattercannon hp_hand hp_hand reset_transform
 at_end
 
-##vshev
+##ncmsth
 
-at_add vshevh bip01_head bip01_head reset_transform
-at_add vs_hev_quasar hp_hand hp_hand default
+at_add ncmsthh ncmsthh bip01_head reset_transform
+at_add medical_applicator hp_hand hp_hand_right default
 at_end
 
-##ncfsth
+##trmlite
 
-at_add ncfsthh head bip01_head reset_transform
-at_add repeater hp_hand hp_hand_right default
+at_add trlite_m_head_a head bip01_head reset_transform
+at_rem trm_backplate hp_spine bip01_spine1 reset_transform
 at_end
 
-##vsmsth
-
-at_add vsmsthh ncmsthh bip01_head reset_transform
-at_end
-
-##avianadolescent
-
-at_end
-
-##vsmmed
-
-at_add vsmmedh vsmmedh bip01_head reset_transform
-at_end
-
-##vsmlite
-
-at_add jammer_grenade jammer_grenade hp_hand_right default
-at_add vslite_m_head_a head bip01_head reset_transform
-at_add vsm_right_shinpad hp_r_calf bip01_r_calf reset_transform
-at_end
-
-##cycler
-
-at_end
-
-##mb_pad_creation
+##pad_creation
 
 at_add ams ams_body hp_vehicle parent_relative
 at_end
 
-##ncmmed
+##vsmsi
 
-at_add ncmed_m_head_a head bip01_head reset_transform
-at_add ncm_backplate hp_spine_a bip01_spine1 reset_transform
-at_add ncm_right_forearm hp_r_forearm bip01_r_forearm reset_transform
+at_add male_head_a head bip01_head reset_transform
+at_end
+
+##trflite
+
+at_add trlite_f_head_d head bip01_head reset_transform
+at_add r_shotgun hp_hand hp_hand_right default
+at_end
+
+##vsfsth
+
+at_add vsfsthh head bip01_head reset_transform
+at_add remote_electronics_kit hp_hip_right hp_hip_right default
+at_add isp hp_hand hp_hand_right default
+at_end
+
+##ncmsi
+
+at_add male_head_b head bip01_head reset_transform
 at_add r_shotgun hp_hand hp_hand_right reset_transform
 at_end
 
-##trmsi
+##forceblade
 
-at_add male_head_d head bip01_head reset_transform
-at_add thumper hp_hand hp_hand_right default
+at_rem ef_vsfb_glow ef_vsfb_glow ef_blood reset_transform
 at_end
 
-##trmsth
+##vanu_sentry_turret
 
-at_add trsth_m_head_e head bip01_head reset_transform
-at_add medical_applicator hp_hand hp_hand_right default
-at_end
-
-##trfsi
-
-at_add r_shotgun hp_hand hp_hand_right default
-at_add female_head_a head bip01_head reset_transform
-at_end
-
-##trfmed
-
-at_add female_head_d head bip01_head reset_transform
-at_add remote_electronics_kit hp_hand hp_hand_right default
-at_end
-
-##trfsth
-
-at_add trsth_f_head_b head bip01_head reset_transform
-at_add remote_electronics_kit hp_hand hp_hand_right default
-at_end
-
-##ncfsi
-
-at_add r_shotgun hp_hand hp_hand_right default
-at_add female_head_c head bip01_head reset_transform
-at_end
-
-##ncfmed
-
-at_add ncmed_f_head_c head bip01_head reset_transform
-at_rem repeater hp_hand hp_hand_right default
-at_add r_shotgun hp_hand hp_hand_right default
-at_end
-
-##fp_bolt_driver
-
-at_end
-
-##trhev
-
-at_add trhev_dualcycler_l hp_handleft hp_hand_left reset_transform
-at_add trhev_dualcycler_r hp_handright hp_hand_right reset_transform
-at_add trhev_m_head_b head bip01_head reset_transform
+at_add vanu_sentry_turret_weapon hp_turretb hp_turretb parent_relative
+at_add ncmlite Bip01 root parent_relative
 at_end
 
 ##implant_terminal_mech
@@ -255,6 +271,34 @@ at_end
 
 at_add ncmlite Bip01 root parent_relative
 at_add phalanx_sgl_hevgatcan hp_phlsing hp_guna parent_relative
+at_end
+
+##fp_arms
+
+at_add fp_repeater repeater bip01_r_hand default
+at_end
+
+##obbasemesh
+
+at_add orbital_shuttle orbital_shuttle hp_shuttle default
+at_end
+
+##switchblade
+
+at_add ncmlite Bip01 switchblade parent_relative
+at_add sb_root sb_root sb_move parent_relative
+at_add scythe hp_guna hp_weapon parent_relative
+at_end
+
+##router
+
+at_add ncmlite Bip01 root parent_relative
+at_end
+
+##flail
+
+at_add ncmlite Bip01 root parent_relative
+at_add flail_weapon flail_weapon hp_guna parent_relative
 at_end
 
 ##vanguard
@@ -288,6 +332,11 @@ at_end
 at_add trfmed Bip01 root parent_relative
 at_add chaingun_p hp_guna hp_guna parent_relative
 at_add grenade_launcher_marauder hp_g_launcher hp_gunb parent_relative
+at_end
+
+##skyguard
+
+at_add ncmlite Bip01 root parent_relative
 at_end
 
 ##quadassault
@@ -340,6 +389,14 @@ at_add 20mm_cannon_reaver hp_20mm hp_guna parent_relative
 at_add rocket_launcher_reaver hp_rocketlauncher hp_gunb parent_relative
 at_end
 
+##liberator
+
+at_add ncmlite Bip01 root parent_relative
+at_add 35mm_chaincannon hp_35mm_chaincannon hp_guna parent_relative
+at_add liberator_bomb_bay hp_liberator_bomb_bay hp_gunb parent_relative
+at_add liberator_25mm_cannon liberator_25mm_cannon hp_gunc parent_relative
+at_end
+
 ##dropship
 
 at_add trfmed Bip01 root default
@@ -368,8 +425,8 @@ at_end
 ##ams
 
 at_add trfmed Bip01 root parent_relative
-at_add matrix_terminala matrix_terminala ams_spawntubes parent_relative
-at_add matrix_terminalb matrix_terminalb ams_spawntubes parent_relative
+at_add ams_spawntubes ams_spawntubes hp_spawntubes parent_relative
+at_add ams_spawndoors spawndoorroot hp_spawntubes parent_relative
 at_end
 
 ##fp_bare_hands

@@ -1,149 +1,157 @@
 #efp_begin
 
-##ef_waypoint_personal
+##105mm_cannon_dropship_l
 
-efp_swap_begin nc
-efp_swap_material ef_waypoint ef_waypoint_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material ef_waypoint ef_waypoint_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material ef_waypoint ef_waypoint_vs
+efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
+efp_end
+
+##12mm_machinegun
+
+efp_effect fire1 fp_12mm_machinegun_fire1 ef_muzzle
+efp_effect fire2 fp_12mm_machinegun_fire1 ef_muzzle
+efp_end
+
+##flail_targeting_laser
+
+efp_effect fire1 ef_flail_targeting_lazer_muzzle muzzlea
+efp_end
+
+##medical_applicator
+
+efp_effect fire1 fp_medical_applicator_fire1 medical_applicator
+efp_end
+
+##defender_forcefield_frame
+
+efp_effect idle defender_mainlights_idle root
+efp_effect nc defender_ff_nc root
+efp_effect tr defender_ff_tr root
+efp_effect vs defender_ff_vs root
+efp_end
+
+##pad_creation_crp
+
+efp_swap_begin swap00
+efp_swap_material null hangar03
 efp_swap_end
 efp_end
 
-##ef_waypoint_squad
+##motionalarmsensor_dest
 
-efp_swap_begin nc
-efp_swap_material ef_waypoint ef_waypoint_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material ef_waypoint ef_waypoint_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material ef_waypoint ef_waypoint_vs
-efp_swap_end
+efp_effect explosion detonate_motionalarmsensor motionalarmsensor
 efp_end
 
-##op_shuttle_light
-
-efp_swap_begin op_shuttle_depart
-efp_swap_material orb_shuttle_lights_001+null op_shuttle_depart
-efp_swap_end
-efp_end
-
-##em_cap
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_t1d
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_tsec
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t14w
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1h
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1t
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1c_r
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1c_l
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##vslite_f_head_e
+##trmed_f_head_e
 
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs2liteh
+efp_swap_material tr1med_h tr2medh
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
-##vslite_f_head_c
+##trmed_f_head_c
 
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs2liteh
+efp_swap_material tr1med_h tr2medh
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
-##vslite_f_head_b
+##trmed_f_head_b
 
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs2liteh
+efp_swap_material tr1med_h tr2medh
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
-##em_cfs
+##trlite_f_head_e
+
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
+efp_swap_end
+efp_end
+
+##trlite_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
+efp_swap_end
+efp_end
+
+##trlite_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
+efp_swap_end
+efp_end
+
+##nchev_f_head_e
+
+efp_swap_begin swap02
+efp_swap_material nc1hevh nc2hevh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
+efp_swap_end
+efp_end
+
+##nchev_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material nc1hevh nc2hevh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
+efp_swap_end
+efp_end
+
+##nchev_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material nc1hevh nc2hevh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
+efp_swap_end
+efp_end
+
+##em_radar
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_st_wall
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_tper
 
 efp_swap_begin em_red
 efp_swap_material em_star+null em_star_red
@@ -153,7 +161,77 @@ efp_swap_material em_star+null em_star_yellow
 efp_swap_end
 efp_end
 
-##em_garage
+##em_css
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_st_door
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1s_b
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1s_t
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1t_r
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1t_l
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_cfs2
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_ascr
 
 efp_swap_begin em_red
 efp_swap_material em_light+null em_light_red
@@ -163,7 +241,7 @@ efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##em_tpfr
+##em_asmr
 
 efp_swap_begin em_red
 efp_swap_material em_light+null em_light_red
@@ -173,7 +251,7 @@ efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##em_gen
+##em_tpmr
 
 efp_swap_begin em_red
 efp_swap_material em_light+null em_light_red
@@ -183,7 +261,7 @@ efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##em_pod
+##em_dsp
 
 efp_swap_begin em_red
 efp_swap_material em_light+null em_light_red
@@ -193,7 +271,7 @@ efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##em_generic
+##em_barracks
 
 efp_swap_begin em_red
 efp_swap_material em_light+null em_light_red
@@ -203,92 +281,343 @@ efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##ascr_lite
+##em_csmr
 
 efp_swap_begin em_red
-efp_swap_material em_red_off em_red_on
+efp_swap_material em_light+null em_light_red
 efp_swap_end
 efp_swap_begin em_yellow
-efp_swap_material em_yel_off em_yel_on
+efp_swap_material em_light+null em_light_yellow
 efp_swap_end
 efp_end
 
-##mb_prop_monitor4
+##em_cfir
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_spawn
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_cfmr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##ob_redlight
+
+efp_swap_begin hart_red_on
+efp_swap_material nc_inside_frame+_ob_light_off hart_red2
+efp_swap_material hart_red+_ob_light_off hart_red1
+efp_swap_end
+efp_swap_begin hart_red_off
+efp_swap_material hart_red+_ob_light_off hart_red+_ob_light_off
+efp_swap_end
+efp_end
+
+##ob_greenlight
+
+efp_swap_begin hart_green_on
+efp_swap_material nc_inside_frame+_ob_light_off hart_green2
+efp_swap_material hart_green+_ob_light_off hart_green1
+efp_swap_end
+efp_swap_begin hart_green_off
+efp_swap_material hart_green+_ob_light_off hart_green+_ob_light_off
+efp_swap_end
+efp_end
+
+##nclite_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material nc1liteh nc2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1liteh nc3liteh
+efp_swap_end
+efp_effect helmet_glow nclite_glow head
+efp_end
+
+##nclite_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material nc1liteh nc2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1liteh nc3liteh
+efp_swap_end
+efp_effect helmet_glow nclite_glow head
+efp_end
+
+##ncmed_f_head_e
+
+efp_swap_begin swap00
+efp_swap_material nc1medh nc2medh
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material nc1medh nc3medh
+efp_swap_end
+efp_effect helmet_glow ncmed_glow head
+efp_end
+
+##ncmed_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material nc1medh nc2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1medh nc3medh
+efp_swap_end
+efp_effect helmet_glow ncmed_glow head
+efp_end
+
+##ncmed_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material nc1medh nc2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1medh nc3medh
+efp_swap_end
+efp_effect helmet_glow ncmed_glow head
+efp_end
+
+##nclite_f_head_e
+
+efp_swap_begin swap00
+efp_swap_material nc1liteh nc2liteh
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material nc1liteh nc3liteh
+efp_swap_end
+efp_effect helmet_glow nclite_glow head
+efp_end
+
+##tech_banner_flag_small
 
 efp_swap_begin nc
-efp_swap_material poster_vsc+null poster_nca
+efp_swap_material _flag_generic2+null nclogo2
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material poster_vsc+null poster_tra
+efp_swap_material _flag_generic2+null trlogo2
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material poster_vsc+null poster_vsc
+efp_swap_material _flag_generic2+null vslogo2
+efp_swap_end
+efp_swap_begin flag_decal01_nc
+efp_swap_material _flag_generic2+null flag_decal01_nc
+efp_swap_end
+efp_swap_begin flag_decal01_tr
+efp_swap_material _flag_generic2+null flag_decal01_tr
+efp_swap_end
+efp_swap_begin flag_decal01_vs
+efp_swap_material _flag_generic2+null flag_decal01_vs
+efp_swap_end
+efp_swap_begin flag_decal02
+efp_swap_material _flag_generic2+null flag_decal02
+efp_swap_end
+efp_swap_begin flag_decal03_nc
+efp_swap_material _flag_generic2+null flag_decal03_nc
+efp_swap_end
+efp_swap_begin flag_decal03_tr
+efp_swap_material _flag_generic2+null flag_decal03_tr
+efp_swap_end
+efp_swap_begin flag_decal03_vs
+efp_swap_material _flag_generic2+null flag_decal03_vs
+efp_swap_end
+efp_swap_begin flag_decal04
+efp_swap_material _flag_generic2+null flag_decal04
+efp_swap_end
+efp_swap_begin flag_decal05
+efp_swap_material _flag_generic2+null flag_decal05
+efp_swap_end
+efp_swap_begin flag_decal06
+efp_swap_material _flag_generic2+null flag_decal06
+efp_swap_end
+efp_swap_begin flag_decal07_nc
+efp_swap_material _flag_generic2+null flag_decal07_nc
+efp_swap_end
+efp_swap_begin flag_decal07_tr
+efp_swap_material _flag_generic2+null flag_decal07_tr
+efp_swap_end
+efp_swap_begin flag_decal07_vs
+efp_swap_material _flag_generic2+null flag_decal07_vs
+efp_swap_end
+efp_swap_begin flag_decal08
+efp_swap_material _flag_generic2+null flag_decal08
+efp_swap_end
+efp_swap_begin flag_decal09
+efp_swap_material _flag_generic2+null flag_decal09
+efp_swap_end
+efp_swap_begin flag_decal10
+efp_swap_material _flag_generic2+null flag_decal10
+efp_swap_end
+efp_swap_begin flag_decal11_nc
+efp_swap_material _flag_generic2+null flag_decal11_nc
+efp_swap_end
+efp_swap_begin flag_decal11_tr
+efp_swap_material _flag_generic2+null flag_decal11_tr
+efp_swap_end
+efp_swap_begin flag_decal11_vs
+efp_swap_material _flag_generic2+null flag_decal11_vs
+efp_swap_end
+efp_swap_begin flag_decal12_nc
+efp_swap_material _flag_generic2+null flag_decal12_nc
+efp_swap_end
+efp_swap_begin flag_decal12_tr
+efp_swap_material _flag_generic2+null flag_decal12_tr
+efp_swap_end
+efp_swap_begin flag_decal12_vs
+efp_swap_material _flag_generic2+null flag_decal12_vs
+efp_swap_end
+efp_swap_begin flag_decal13_nc
+efp_swap_material _flag_generic2+null flag_decal13_nc
+efp_swap_end
+efp_swap_begin flag_decal13_tr
+efp_swap_material _flag_generic2+null flag_decal13_tr
+efp_swap_end
+efp_swap_begin flag_decal13_vs
+efp_swap_material _flag_generic2+null flag_decal13_vs
+efp_swap_end
+efp_swap_begin flag_decal14_nc
+efp_swap_material _flag_generic2+null flag_decal14_nc
+efp_swap_end
+efp_swap_begin flag_decal14_tr
+efp_swap_material _flag_generic2+null flag_decal14_tr
+efp_swap_end
+efp_swap_begin flag_decal14_vs
+efp_swap_material _flag_generic2+null flag_decal14_vs
+efp_swap_end
+efp_swap_begin flag_decal15
+efp_swap_material _flag_generic2+null flag_decal15
+efp_swap_end
+efp_swap_begin flag_decal16_nc
+efp_swap_material _flag_generic2+null flag_decal16_nc
+efp_swap_end
+efp_swap_begin flag_decal16_tr
+efp_swap_material _flag_generic2+null flag_decal16_tr
+efp_swap_end
+efp_swap_begin flag_decal16_vs
+efp_swap_material _flag_generic2+null flag_decal16_vs
+efp_swap_end
+efp_swap_begin flag_decal17
+efp_swap_material _flag_generic2+null flag_decal17
+efp_swap_end
+efp_swap_begin flag_decal18
+efp_swap_material _flag_generic2+null flag_decal18
+efp_swap_end
+efp_swap_begin flag_decal19_nc
+efp_swap_material _flag_generic2+null flag_decal19_nc
+efp_swap_end
+efp_swap_begin flag_decal19_tr
+efp_swap_material _flag_generic2+null flag_decal19_tr
+efp_swap_end
+efp_swap_begin flag_decal19_vs
+efp_swap_material _flag_generic2+null flag_decal19_vs
+efp_swap_end
+efp_swap_begin flag_decal20
+efp_swap_material _flag_generic2+null flag_decal20
+efp_swap_end
+efp_swap_begin flag_decal21_nc
+efp_swap_material _flag_generic2+null flag_decal21_nc
+efp_swap_end
+efp_swap_begin flag_decal21_tr
+efp_swap_material _flag_generic2+null flag_decal21_tr
+efp_swap_end
+efp_swap_begin flag_decal21_vs
+efp_swap_material _flag_generic2+null flag_decal21_vs
+efp_swap_end
+efp_swap_begin flag_decal22
+efp_swap_material _flag_generic2+null flag_decal22
+efp_swap_end
+efp_swap_begin flag_decal23_nc
+efp_swap_material _flag_generic2+null flag_decal23_nc
+efp_swap_end
+efp_swap_begin flag_decal23_tr
+efp_swap_material _flag_generic2+null flag_decal23_tr
+efp_swap_end
+efp_swap_begin flag_decal23_vs
+efp_swap_material _flag_generic2+null flag_decal23_vs
+efp_swap_end
+efp_swap_begin flag_decal24
+efp_swap_material _flag_generic2+null flag_decal24
+efp_swap_end
+efp_swap_begin flag_decal25_nc
+efp_swap_material _flag_generic2+null flag_decal25_nc
+efp_swap_end
+efp_swap_begin flag_decal25_tr
+efp_swap_material _flag_generic2+null flag_decal25_tr
+efp_swap_end
+efp_swap_begin flag_decal25_vs
+efp_swap_material _flag_generic2+null flag_decal25_vs
+efp_swap_end
+efp_swap_begin flag_decal26
+efp_swap_material _flag_generic2+null flag_decal26
 efp_swap_end
 efp_end
 
-##banner
+##spawn_h_middle
+
+efp_effect default dual_headlight hp_spawn_h_middle_001
+efp_end
+
+##mb_prop_monitor3
 
 efp_swap_begin nc
-efp_swap_material _flag_generic+null nclogo
+efp_swap_material poster_ncb+null poster_ncb
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material _flag_generic+null trlogo
+efp_swap_material poster_ncb+null poster_trb
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material _flag_generic+null vslogo
+efp_swap_material poster_ncb+null poster_vsb
 efp_swap_end
 efp_end
 
-##orb_plat_banner
+##mb_meet_monitor
 
 efp_swap_begin nc
-efp_swap_material generic_flag ncflag
-efp_swap_material generic_flag+null ncflag
+efp_swap_material poster_nca+null poster_nca
+efp_swap_material poster_ncb+null poster_ncb
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material generic_flag trflag
-efp_swap_material generic_flag+null trflag
+efp_swap_material poster_nca+null poster_tra
+efp_swap_material poster_ncb+null poster_trb
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material generic_flag vsflag
-efp_swap_material generic_flag+null vsflag
+efp_swap_material poster_nca+null poster_vsa
+efp_swap_material poster_ncb+null poster_vsb
 efp_swap_end
 efp_end
 
-##20mm_cannon_t
+##mb_magdisk
 
-efp_effect fire2 vanguard_20mmcannon_flash ef_muzzlec
-efp_effect fire3 vanguard_20mmcannon_flash ef_muzzleb
+efp_effect idle magdisk_spin root
 efp_end
 
-##20mm_cannon_f
+##terminal_control_core
 
-efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
-efp_end
-
-##missile_launcher_enforcer
-
-efp_effect fire1 fp_firebird_fire ef_aml_muzzlea
-efp_end
-
-##fp_hunter_seeker
-
-efp_effect fire1 jolt_hunterseeker_fire1 ef_muzzlea
-efp_end
-
-##test_terminal
-
-efp_effect damage1 damage_sparks hp_spark_001
-efp_effect damage2 damage_sparks hp_spark_002
-efp_effect damage3 damage_sparks hp_spark_003
-efp_effect damage4 damage_sparks hp_spark_004
-efp_end
-
-##20mm_cannon_p
-
-efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
-efp_effect fire2 fp_20mm_cannon_f_fire2 root
-efp_effect reload fp_20mm_cannon_f_reload root
+efp_effect damage1 damage_sparks hp_terminal_control_core_005
+efp_effect damage2 damage_sparks hp_terminal_control_core_004
+efp_effect damage3 damage_sparks hp_terminal_control_core_003
+efp_effect damage4 damage_sparks hp_terminal_control_core_002
+efp_effect damage5 damage_sparks hp_terminal_control_core_001
 efp_end
 
 ##ncfhevh
@@ -311,61 +640,425 @@ efp_swap_material _skin female_face_04
 efp_swap_end
 efp_end
 
-##fp_trhev
+##20mm_cannon_p
 
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr1hev
-efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr2hev
-efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr3hev
-efp_swap_end
-efp_effect fire1 trhev_pounder_flash ef_muzzlea_pounder_l
-efp_effect fire2 trhev_pounder_flash ef_muzzlea_pounder_r
+efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
+efp_effect fire2 fp_20mm_cannon_f_fire2 root
+efp_effect reload fp_20mm_cannon_f_reload root
 efp_end
 
-##terminal_control_core
+##test_terminal
 
-efp_effect damage1 damage_sparks hp_terminal_control_core_005
-efp_effect damage2 damage_sparks hp_terminal_control_core_004
-efp_effect damage3 damage_sparks hp_terminal_control_core_003
-efp_effect damage4 damage_sparks hp_terminal_control_core_002
-efp_effect damage5 damage_sparks hp_terminal_control_core_001
+efp_effect damage1 damage_sparks hp_spark_001
+efp_effect damage2 damage_sparks hp_spark_002
+efp_effect damage3 damage_sparks hp_spark_003
+efp_effect damage4 damage_sparks hp_spark_004
 efp_end
 
-##mb_magdisk
+##missile_launcher_enforcer
 
-efp_effect idle magdisk_spin root
+efp_effect fire1 fp_firebird_fire ef_aml_muzzlea
 efp_end
 
-##mb_meet_monitor
+##20mm_cannon_f
+
+efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
+efp_end
+
+##20mm_cannon_t
+
+efp_effect fire2 vanguard_20mmcannon_flash ef_muzzlec
+efp_effect fire3 vanguard_20mmcannon_flash ef_muzzleb
+efp_end
+
+##orb_plat_banner
 
 efp_swap_begin nc
-efp_swap_material poster_nca+null poster_nca
-efp_swap_material poster_ncb+null poster_ncb
+efp_swap_material generic_flag ncflag
+efp_swap_material generic_flag+null ncflag
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material poster_nca+null poster_tra
-efp_swap_material poster_ncb+null poster_trb
+efp_swap_material generic_flag trflag
+efp_swap_material generic_flag+null trflag
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material poster_nca+null poster_vsa
-efp_swap_material poster_ncb+null poster_vsb
+efp_swap_material generic_flag vsflag
+efp_swap_material generic_flag+null vsflag
 efp_swap_end
 efp_end
 
-##mb_prop_monitor3
+##mb_prop_monitor4
 
 efp_swap_begin nc
-efp_swap_material poster_ncb+null poster_ncb
+efp_swap_material poster_vsc+null poster_nca
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material poster_ncb+null poster_trb
+efp_swap_material poster_vsc+null poster_tra
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material poster_ncb+null poster_vsb
+efp_swap_material poster_vsc+null poster_vsc
+efp_swap_end
+efp_end
+
+##em_generic
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_pod
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_gen
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_tpfr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_garage
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_cfs
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##vslite_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
+efp_end
+
+##vslite_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
+efp_end
+
+##vslite_f_head_e
+
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
+efp_end
+
+##em_frame_t1c_l
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1c_r
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1t
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1h
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t14w
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_tsec
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_t1d
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_cap
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##op_shuttle_light
+
+efp_swap_begin op_shuttle_depart
+efp_swap_material orb_shuttle_lights_001+null op_shuttle_depart
+efp_swap_end
+efp_end
+
+##vanu_century_turret_weapon
+
+efp_effect charge1 vst_charge_particles_a ef_muzzle_a
+efp_effect charge2 vst_charge_particles_b ef_muzzle_b
+efp_effect charge3 vst_charge_particles_c ef_muzzle_c
+efp_effect fire1 fp_vst_fire1 ef_muzzle_a
+efp_effect fire2 fp_vst_fire2 ef_muzzle_d
+efp_end
+
+##150mm_cannon_t
+
+efp_effect equip fp_150mm_cannon_t_equip 150mmhtt01
+efp_effect fire1 fp_150mm_cannon_t_fire1 muzzlea01
+efp_effect reload fp_150mm_cannon_t_fire1 150mmhtt01
+efp_effect dryfire1 150mm_cannon_dryfire muzzlea01
+efp_end
+
+##crystals_damage_a_crp
+
+efp_lod 10 15
+efp_end
+
+##banner
+
+efp_swap_begin nc
+efp_swap_material _flag_generic+null nclogo
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _flag_generic+null trlogo
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _flag_generic+null vslogo
+efp_swap_end
+efp_swap_begin flag_decal01_nc
+efp_swap_material _flag_generic+null flag_decal01_nc
+efp_swap_end
+efp_swap_begin flag_decal01_tr
+efp_swap_material _flag_generic+null flag_decal01_tr
+efp_swap_end
+efp_swap_begin flag_decal01_vs
+efp_swap_material _flag_generic+null flag_decal01_vs
+efp_swap_end
+efp_swap_begin flag_decal02
+efp_swap_material _flag_generic+null flag_decal02
+efp_swap_end
+efp_swap_begin flag_decal03_nc
+efp_swap_material _flag_generic+null flag_decal03_nc
+efp_swap_end
+efp_swap_begin flag_decal03_tr
+efp_swap_material _flag_generic+null flag_decal03_tr
+efp_swap_end
+efp_swap_begin flag_decal03_vs
+efp_swap_material _flag_generic+null flag_decal03_vs
+efp_swap_end
+efp_swap_begin flag_decal04
+efp_swap_material _flag_generic+null flag_decal04
+efp_swap_end
+efp_swap_begin flag_decal05
+efp_swap_material _flag_generic+null flag_decal05
+efp_swap_end
+efp_swap_begin flag_decal06
+efp_swap_material _flag_generic+null flag_decal06
+efp_swap_end
+efp_swap_begin flag_decal07_nc
+efp_swap_material _flag_generic+null flag_decal07_nc
+efp_swap_end
+efp_swap_begin flag_decal07_tr
+efp_swap_material _flag_generic+null flag_decal07_tr
+efp_swap_end
+efp_swap_begin flag_decal07_vs
+efp_swap_material _flag_generic+null flag_decal07_vs
+efp_swap_end
+efp_swap_begin flag_decal08
+efp_swap_material _flag_generic+null flag_decal08
+efp_swap_end
+efp_swap_begin flag_decal09
+efp_swap_material _flag_generic+null flag_decal09
+efp_swap_end
+efp_swap_begin flag_decal10
+efp_swap_material _flag_generic+null flag_decal10
+efp_swap_end
+efp_swap_begin flag_decal11_nc
+efp_swap_material _flag_generic+null flag_decal11_nc
+efp_swap_end
+efp_swap_begin flag_decal11_tr
+efp_swap_material _flag_generic+null flag_decal11_tr
+efp_swap_end
+efp_swap_begin flag_decal11_vs
+efp_swap_material _flag_generic+null flag_decal11_vs
+efp_swap_end
+efp_swap_begin flag_decal12_nc
+efp_swap_material _flag_generic+null flag_decal12_nc
+efp_swap_end
+efp_swap_begin flag_decal12_tr
+efp_swap_material _flag_generic+null flag_decal12_tr
+efp_swap_end
+efp_swap_begin flag_decal12_vs
+efp_swap_material _flag_generic+null flag_decal12_vs
+efp_swap_end
+efp_swap_begin flag_decal13_nc
+efp_swap_material _flag_generic+null flag_decal13_nc
+efp_swap_end
+efp_swap_begin flag_decal13_tr
+efp_swap_material _flag_generic+null flag_decal13_tr
+efp_swap_end
+efp_swap_begin flag_decal13_vs
+efp_swap_material _flag_generic+null flag_decal13_vs
+efp_swap_end
+efp_swap_begin flag_decal14_nc
+efp_swap_material _flag_generic+null flag_decal14_nc
+efp_swap_end
+efp_swap_begin flag_decal14_tr
+efp_swap_material _flag_generic+null flag_decal14_tr
+efp_swap_end
+efp_swap_begin flag_decal14_vs
+efp_swap_material _flag_generic+null flag_decal14_vs
+efp_swap_end
+efp_swap_begin flag_decal15
+efp_swap_material _flag_generic+null flag_decal15
+efp_swap_end
+efp_swap_begin flag_decal16_nc
+efp_swap_material _flag_generic+null flag_decal16_nc
+efp_swap_end
+efp_swap_begin flag_decal16_tr
+efp_swap_material _flag_generic+null flag_decal16_tr
+efp_swap_end
+efp_swap_begin flag_decal16_vs
+efp_swap_material _flag_generic+null flag_decal16_vs
+efp_swap_end
+efp_swap_begin flag_decal17
+efp_swap_material _flag_generic+null flag_decal17
+efp_swap_end
+efp_swap_begin flag_decal18
+efp_swap_material _flag_generic+null flag_decal18
+efp_swap_end
+efp_swap_begin flag_decal19_nc
+efp_swap_material _flag_generic+null flag_decal19_nc
+efp_swap_end
+efp_swap_begin flag_decal19_tr
+efp_swap_material _flag_generic+null flag_decal19_tr
+efp_swap_end
+efp_swap_begin flag_decal19_vs
+efp_swap_material _flag_generic+null flag_decal19_vs
+efp_swap_end
+efp_swap_begin flag_decal20
+efp_swap_material _flag_generic+null flag_decal20
+efp_swap_end
+efp_swap_begin flag_decal21_nc
+efp_swap_material _flag_generic+null flag_decal21_nc
+efp_swap_end
+efp_swap_begin flag_decal21_tr
+efp_swap_material _flag_generic+null flag_decal21_tr
+efp_swap_end
+efp_swap_begin flag_decal21_vs
+efp_swap_material _flag_generic+null flag_decal21_vs
+efp_swap_end
+efp_swap_begin flag_decal22
+efp_swap_material _flag_generic+null flag_decal22
+efp_swap_end
+efp_swap_begin flag_decal23_nc
+efp_swap_material _flag_generic+null flag_decal23_nc
+efp_swap_end
+efp_swap_begin flag_decal23_tr
+efp_swap_material _flag_generic+null flag_decal23_tr
+efp_swap_end
+efp_swap_begin flag_decal23_vs
+efp_swap_material _flag_generic+null flag_decal23_vs
+efp_swap_end
+efp_swap_begin flag_decal24
+efp_swap_material _flag_generic+null flag_decal24
+efp_swap_end
+efp_swap_begin flag_decal25_nc
+efp_swap_material _flag_generic+null flag_decal25_nc
+efp_swap_end
+efp_swap_begin flag_decal25_tr
+efp_swap_material _flag_generic+null flag_decal25_tr
+efp_swap_end
+efp_swap_begin flag_decal25_vs
+efp_swap_material _flag_generic+null flag_decal25_vs
+efp_swap_end
+efp_swap_begin flag_decal26
+efp_swap_material _flag_generic+null flag_decal26
 efp_swap_end
 efp_end
 
@@ -382,61 +1075,141 @@ efp_swap_material complete_alpha+null bink_logo_vs
 efp_swap_end
 efp_end
 
-##spawn_h_middle
+##ancient_garage
 
-efp_effect default dual_headlight hp_spawn_h_middle_001
+efp_effect open ancient_garage_open root
+efp_effect close ancient_garage_close root
 efp_end
 
-##tech_banner_flag_small
+##ams_spawntubes
 
+efp_swap_begin gen
+efp_swap_end
 efp_swap_begin nc
-efp_swap_material _flag_generic2+null nclogo2
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material _flag_generic2+null trlogo2
+efp_swap_material amsnc_lod4 amstr_lod4
+efp_swap_material amsnc_3_alpha amstr_3_alpha
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material _flag_generic2+null vslogo2
+efp_swap_material amsnc_lod4 amsvs_lod4
+efp_swap_material amsnc_3_alpha amsvs_3_alpha
 efp_swap_end
 efp_end
 
-##fp_trhev_burster
+##ams_spawntubes_low
+
+efp_swap_begin gen
+efp_swap_end
+efp_swap_begin nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_end
+efp_end
+
+##skyguard_flak_cannon
+
+efp_effect fire1 fp_skyguard_fire1 ef_muzzle_up
+efp_effect fire2 fp_skyguard_fire2 ef_muzzle_down
+efp_effect fire3 fp_skyguard_fire1 ef_muzzle_up
+efp_effect fire4 fp_skyguard_fire2 ef_muzzle_down
+efp_end
+
+##van_bld_beam_top
+
+efp_effect idle vanu_bld_susp_idle_effect van_bld_beam_top
+efp_end
+
+##fp_spiker
+
+efp_effect chargeup fp_spiker_chargeup muzzlea
+efp_end
+
+##fp_maelstrom
+
+efp_effect fire2 maelstrom_muzzle_flash_grenade ef_muzzleb
+efp_effect fire1 fp_maelstrom_fire1 ef_muzzlea
+efp_effect beam maelstrom_energy_stream ef_muzzlea
+efp_end
+
+##fp_flame_spitter
+
+efp_effect fire1 smgfire muzzle
+efp_effect fire2 smgfire muzzle
+efp_end
+
+##fp_beamer
+
+efp_effect fire1 jolt_beamer_fire1 ef_muzzlea
+efp_effect fire2 jolt_beamer_fire2 ef_muzzlea
+efp_end
+
+##fp_chainblade
+
+efp_end
+
+##fp_bank
+
+efp_effect fire1 fp_bank_fire1 bank
+efp_end
+
+##fp_ace
+
+efp_end
+
+##fp_nchev_scattercannon
 
 efp_swap_begin swap00
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
 efp_swap_end
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_begin nc1
+efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
 efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr_h_2_skin
+efp_swap_begin nc2
+efp_swap_material fp_nc1hevarmsa fp_nc_h_2_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_2_skin2
 efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr_h_3_skin
+efp_swap_begin nc3
+efp_swap_material fp_nc1hevarmsa fp_nc_h_3_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_3_skin2
 efp_swap_end
-efp_effect fire1 jolt_trhev_burster_fire ef_muzzlea
-efp_effect fire2 jolt_trhev_burster_fire ef_muzzleb
+efp_effect fire1 jolt_nchev_scattercannon_fire muzzlea
+efp_effect fire2 jolt_nchev_scattercannon_fire muzzleb
+efp_effect fire3 jolt_nchev_scattercannon_fire muzzlec
 efp_end
 
-##fp_trhev_pounder
+##fp_nano_dispenser
 
-efp_swap_begin swap00
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
-efp_swap_end
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
-efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr_h_2_skin
-efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr_h_3_skin
-efp_swap_end
-efp_effect fire1 jolt_trhev_pounder_fire ef_muzzlea_pounder_l
-efp_effect fire2 jolt_trhev_pounder_fire ef_muzzlea_pounder_r
+efp_effect fire1 fp_nano_dispenser_fire1 ef_muzzlea
 efp_end
 
-##fp_vshev_quasar
+##fp_forceblade
+
+efp_effect active fp_forceblade_active ef_blood
+efp_end
+
+##fp_medicalapplicator
+
+efp_end
+
+##fp_magcutter
+
+efp_end
+
+##fp_remote_electronics_kit
+
+efp_effect fire1 fp_rek_fire1 ef_muzzlea
+efp_end
+
+##fp_vshev_starfire
 
 efp_swap_begin swap00
 efp_swap_material fp_vs1hevaemsa fp_vs_h_1_skin
@@ -450,7 +1223,7 @@ efp_swap_end
 efp_swap_begin vs3
 efp_swap_material fp_vs1hevaemsa fp_vs_h_3_skin
 efp_swap_end
-efp_effect fire1 jolt_vshev_quasar_fire ef_muzzlea
+efp_effect fire1 jolt_vshev_starfire_fire muzzlea
 efp_end
 
 ##fp_nchev_sparrow
@@ -477,7 +1250,7 @@ efp_effect fire3 jolt_nchev_sparrow_fire muzzled
 efp_effect fire4 jolt_nchev_sparrow_fire muzzlec
 efp_end
 
-##fp_vshev_starfire
+##fp_vshev_quasar
 
 efp_swap_begin swap00
 efp_swap_material fp_vs1hevaemsa fp_vs_h_1_skin
@@ -491,451 +1264,133 @@ efp_swap_end
 efp_swap_begin vs3
 efp_swap_material fp_vs1hevaemsa fp_vs_h_3_skin
 efp_swap_end
-efp_effect fire1 jolt_vshev_starfire_fire muzzlea
+efp_effect fire1 jolt_vshev_quasar_fire ef_muzzlea
 efp_end
 
-##fp_remote_electronics_kit
-
-efp_effect fire1 fp_rek_fire1 ef_muzzlea
-efp_end
-
-##fp_magcutter
-
-efp_end
-
-##fp_medicalapplicator
-
-efp_end
-
-##fp_forceblade
-
-efp_effect active fp_forceblade_active ef_blood
-efp_end
-
-##fp_nano_dispenser
-
-efp_effect fire1 fp_nano_dispenser_fire1 ef_muzzlea
-efp_end
-
-##fp_nchev_scattercannon
+##fp_trhev_pounder
 
 efp_swap_begin swap00
-efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
 efp_swap_end
-efp_swap_begin nc1
-efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
 efp_swap_end
-efp_swap_begin nc2
-efp_swap_material fp_nc1hevarmsa fp_nc_h_2_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_2_skin2
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr_h_2_skin
 efp_swap_end
-efp_swap_begin nc3
-efp_swap_material fp_nc1hevarmsa fp_nc_h_3_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_3_skin2
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr_h_3_skin
 efp_swap_end
-efp_effect fire1 jolt_nchev_scattercannon_fire muzzlea
-efp_effect fire2 jolt_nchev_scattercannon_fire muzzleb
-efp_effect fire3 jolt_nchev_scattercannon_fire muzzlec
+efp_effect fire1 jolt_trhev_pounder_fire ef_muzzlea_pounder_l
+efp_effect fire2 jolt_trhev_pounder_fire ef_muzzlea_pounder_r
 efp_end
 
-##fp_ace
-
-efp_end
-
-##fp_bank
-
-efp_effect fire1 fp_bank_fire1 bank
-efp_end
-
-##fp_chainblade
-
-efp_end
-
-##fp_beamer
-
-efp_effect fire1 jolt_beamer_fire1 ef_muzzlea
-efp_effect fire2 fp_beamer_fire2 ef_muzzlea
-efp_end
-
-##fp_flame_spitter
-
-efp_effect fire1 smgfire muzzle
-efp_effect fire2 smgfire muzzle
-efp_end
-
-##nclite_f_head_e
+##fp_trhev_burster
 
 efp_swap_begin swap00
-efp_swap_material nc1liteh nc2liteh
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
 efp_swap_end
-efp_swap_begin swap01
-efp_swap_material nc1liteh nc3liteh
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
 efp_swap_end
-efp_effect helmet_glow nclite_glow head
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr_h_2_skin
+efp_swap_end
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr_h_3_skin
+efp_swap_end
+efp_effect fire1 jolt_trhev_burster_fire ef_muzzlea
+efp_effect fire2 jolt_trhev_burster_fire ef_muzzleb
 efp_end
 
-##ncmed_f_head_b
+##fp_trhev
 
-efp_swap_begin swap02
-efp_swap_material nc1medh nc2medh
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr1hev
 efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1medh nc3medh
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr2hev
 efp_swap_end
-efp_effect helmet_glow ncmed_glow head
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr3hev
+efp_swap_end
+efp_effect fire1 trhev_pounder_flash ef_muzzlea_pounder_l
+efp_effect fire2 trhev_pounder_flash ef_muzzlea_pounder_r
 efp_end
 
-##ncmed_f_head_c
+##fp_hunter_seeker
 
-efp_swap_begin swap02
-efp_swap_material nc1medh nc2medh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1medh nc3medh
-efp_swap_end
-efp_effect helmet_glow ncmed_glow head
+efp_effect fire1 jolt_hunterseeker_fire1 ef_muzzlea
 efp_end
 
-##ncmed_f_head_e
-
-efp_swap_begin swap00
-efp_swap_material nc1medh nc2medh
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material nc1medh nc3medh
-efp_swap_end
-efp_effect helmet_glow ncmed_glow head
-efp_end
-
-##nclite_f_head_b
-
-efp_swap_begin swap02
-efp_swap_material nc1liteh nc2liteh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1liteh nc3liteh
-efp_swap_end
-efp_effect helmet_glow nclite_glow head
-efp_end
-
-##nclite_f_head_c
-
-efp_swap_begin swap02
-efp_swap_material nc1liteh nc2liteh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1liteh nc3liteh
-efp_swap_end
-efp_effect helmet_glow nclite_glow head
-efp_end
-
-##ob_greenlight
-
-efp_swap_begin hart_green_on
-efp_swap_material nc_inside_frame+_ob_light_off hart_green2
-efp_swap_material hart_green+_ob_light_off hart_green1
-efp_swap_end
-efp_swap_begin hart_green_off
-efp_swap_material hart_green+_ob_light_off hart_green+_ob_light_off
-efp_swap_end
-efp_end
-
-##ob_redlight
-
-efp_swap_begin hart_red_on
-efp_swap_material nc_inside_frame+_ob_light_off hart_red2
-efp_swap_material hart_red+_ob_light_off hart_red1
-efp_swap_end
-efp_swap_begin hart_red_off
-efp_swap_material hart_red+_ob_light_off hart_red+_ob_light_off
-efp_swap_end
-efp_end
-
-##em_cfmr
+##ascr_lite
 
 efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
+efp_swap_material em_red_off em_red_on
 efp_swap_end
 efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_material em_yel_off em_yel_on
 efp_swap_end
 efp_end
 
-##em_spawn
+##ef_waypoint_squad
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
+efp_swap_begin nc
+efp_swap_material ef_waypoint ef_waypoint_nc
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin tr
+efp_swap_material ef_waypoint ef_waypoint_tr
 efp_swap_end
-efp_end
-
-##em_cfir
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin vs
+efp_swap_material ef_waypoint ef_waypoint_vs
 efp_swap_end
 efp_end
 
-##em_csmr
+##ef_waypoint_personal
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
+efp_swap_begin nc
+efp_swap_material ef_waypoint ef_waypoint_nc
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin tr
+efp_swap_material ef_waypoint ef_waypoint_tr
 efp_swap_end
-efp_end
-
-##em_barracks
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin vs
+efp_swap_material ef_waypoint ef_waypoint_vs
 efp_swap_end
 efp_end
 
-##em_dsp
+##fp_radiator
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
+efp_effect fire1 fp_radiator_fire1 ef_muzzlea
+efp_effect fire2 fp_radiator_fire1 ef_muzzlea
 efp_end
 
-##em_tpmr
+##vanu_spawn_room_mechanism
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
+efp_effect active vanu_spawn_mech_a vsrm_mech_fins_a
+efp_effect active2 vanu_spawn_mech_b vsrm_mech_fins_b
+efp_effect active3 vanu_spawn_mech_c vsrm_mech_fins_c
+efp_effect idle vanu_spawn_idle vanu_spawn_room_mechanism
+efp_effect active4 vanu_spawn_active vanu_spawn_room_mechanism
 efp_end
 
-##em_asmr
+##105mm_cannon_dropship
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
+efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
 efp_end
 
-##em_ascr
+##sb_root
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
+efp_swap_begin nc
+efp_swap_material null nc_blue_8x8
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin vs
+efp_swap_material null vs_purp_8x8
 efp_swap_end
-efp_end
-
-##em_cfs2
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
+efp_swap_begin tr
+efp_swap_material null tr_red_8x8
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1t_l
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1t_r
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1s_t
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1s_b
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_st_door
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_css
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_tper
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_st_wall
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_radar
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##nchev_f_head_b
-
-efp_swap_begin swap02
-efp_swap_material nc1hevh nc2hevh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1hevh nc3hevh
-efp_swap_end
-efp_end
-
-##nchev_f_head_c
-
-efp_swap_begin swap02
-efp_swap_material nc1hevh nc2hevh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1hevh nc3hevh
-efp_swap_end
-efp_end
-
-##nchev_f_head_e
-
-efp_swap_begin swap02
-efp_swap_material nc1hevh nc2hevh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material nc1hevh nc3hevh
-efp_swap_end
-efp_end
-
-##trlite_f_head_b
-
-efp_swap_begin swap02
-efp_swap_material tr1liteh tr2liteh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1liteh tr3liteh
-efp_swap_end
-efp_end
-
-##trlite_f_head_c
-
-efp_swap_begin swap02
-efp_swap_material tr1liteh tr2liteh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1liteh tr3liteh
-efp_swap_end
-efp_end
-
-##trlite_f_head_e
-
-efp_swap_begin swap02
-efp_swap_material tr1liteh tr2liteh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1liteh tr3liteh
-efp_swap_end
-efp_end
-
-##trmed_f_head_b
-
-efp_swap_begin swap02
-efp_swap_material tr1med_h tr2medh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1med_h tr3medh
-efp_swap_end
-efp_end
-
-##trmed_f_head_c
-
-efp_swap_begin swap02
-efp_swap_material tr1med_h tr2medh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1med_h tr3medh
-efp_swap_end
-efp_end
-
-##trmed_f_head_e
-
-efp_swap_begin swap02
-efp_swap_material tr1med_h tr2medh
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1med_h tr3medh
-efp_swap_end
-efp_end
-
-##medical_applicator
-
-efp_effect fire1 fp_medical_applicator_fire1 medical_applicator
+efp_effect idle switchblade_active switchblade_body
 efp_end
 
 ##hologram_base
@@ -953,6 +1408,156 @@ efp_swap_material _flag_generic+null trlogo
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material _flag_generic+null vslogo
+efp_swap_end
+efp_swap_begin flag_decal01_nc
+efp_swap_material _flag_generic+null flag_decal01_nc
+efp_swap_end
+efp_swap_begin flag_decal01_tr
+efp_swap_material _flag_generic+null flag_decal01_tr
+efp_swap_end
+efp_swap_begin flag_decal01_vs
+efp_swap_material _flag_generic+null flag_decal01_vs
+efp_swap_end
+efp_swap_begin flag_decal02
+efp_swap_material _flag_generic+null flag_decal02
+efp_swap_end
+efp_swap_begin flag_decal03_nc
+efp_swap_material _flag_generic+null flag_decal03_nc
+efp_swap_end
+efp_swap_begin flag_decal03_tr
+efp_swap_material _flag_generic+null flag_decal03_tr
+efp_swap_end
+efp_swap_begin flag_decal03_vs
+efp_swap_material _flag_generic+null flag_decal03_vs
+efp_swap_end
+efp_swap_begin flag_decal04
+efp_swap_material _flag_generic+null flag_decal04
+efp_swap_end
+efp_swap_begin flag_decal05
+efp_swap_material _flag_generic+null flag_decal05
+efp_swap_end
+efp_swap_begin flag_decal06
+efp_swap_material _flag_generic+null flag_decal06
+efp_swap_end
+efp_swap_begin flag_decal07_nc
+efp_swap_material _flag_generic+null flag_decal07_nc
+efp_swap_end
+efp_swap_begin flag_decal07_tr
+efp_swap_material _flag_generic+null flag_decal07_tr
+efp_swap_end
+efp_swap_begin flag_decal07_vs
+efp_swap_material _flag_generic+null flag_decal07_vs
+efp_swap_end
+efp_swap_begin flag_decal08
+efp_swap_material _flag_generic+null flag_decal08
+efp_swap_end
+efp_swap_begin flag_decal09
+efp_swap_material _flag_generic+null flag_decal09
+efp_swap_end
+efp_swap_begin flag_decal10
+efp_swap_material _flag_generic+null flag_decal10
+efp_swap_end
+efp_swap_begin flag_decal11_nc
+efp_swap_material _flag_generic+null flag_decal11_nc
+efp_swap_end
+efp_swap_begin flag_decal11_tr
+efp_swap_material _flag_generic+null flag_decal11_tr
+efp_swap_end
+efp_swap_begin flag_decal11_vs
+efp_swap_material _flag_generic+null flag_decal11_vs
+efp_swap_end
+efp_swap_begin flag_decal12_nc
+efp_swap_material _flag_generic+null flag_decal12_nc
+efp_swap_end
+efp_swap_begin flag_decal12_tr
+efp_swap_material _flag_generic+null flag_decal12_tr
+efp_swap_end
+efp_swap_begin flag_decal12_vs
+efp_swap_material _flag_generic+null flag_decal12_vs
+efp_swap_end
+efp_swap_begin flag_decal13_nc
+efp_swap_material _flag_generic+null flag_decal13_nc
+efp_swap_end
+efp_swap_begin flag_decal13_tr
+efp_swap_material _flag_generic+null flag_decal13_tr
+efp_swap_end
+efp_swap_begin flag_decal13_vs
+efp_swap_material _flag_generic+null flag_decal13_vs
+efp_swap_end
+efp_swap_begin flag_decal14_nc
+efp_swap_material _flag_generic+null flag_decal14_nc
+efp_swap_end
+efp_swap_begin flag_decal14_tr
+efp_swap_material _flag_generic+null flag_decal14_tr
+efp_swap_end
+efp_swap_begin flag_decal14_vs
+efp_swap_material _flag_generic+null flag_decal14_vs
+efp_swap_end
+efp_swap_begin flag_decal15
+efp_swap_material _flag_generic+null flag_decal15
+efp_swap_end
+efp_swap_begin flag_decal16_nc
+efp_swap_material _flag_generic+null flag_decal16_nc
+efp_swap_end
+efp_swap_begin flag_decal16_tr
+efp_swap_material _flag_generic+null flag_decal16_tr
+efp_swap_end
+efp_swap_begin flag_decal16_vs
+efp_swap_material _flag_generic+null flag_decal16_vs
+efp_swap_end
+efp_swap_begin flag_decal17
+efp_swap_material _flag_generic+null flag_decal17
+efp_swap_end
+efp_swap_begin flag_decal18
+efp_swap_material _flag_generic+null flag_decal18
+efp_swap_end
+efp_swap_begin flag_decal19_nc
+efp_swap_material _flag_generic+null flag_decal19_nc
+efp_swap_end
+efp_swap_begin flag_decal19_tr
+efp_swap_material _flag_generic+null flag_decal19_tr
+efp_swap_end
+efp_swap_begin flag_decal19_vs
+efp_swap_material _flag_generic+null flag_decal19_vs
+efp_swap_end
+efp_swap_begin flag_decal20
+efp_swap_material _flag_generic+null flag_decal20
+efp_swap_end
+efp_swap_begin flag_decal21_nc
+efp_swap_material _flag_generic+null flag_decal21_nc
+efp_swap_end
+efp_swap_begin flag_decal21_tr
+efp_swap_material _flag_generic+null flag_decal21_tr
+efp_swap_end
+efp_swap_begin flag_decal21_vs
+efp_swap_material _flag_generic+null flag_decal21_vs
+efp_swap_end
+efp_swap_begin flag_decal22
+efp_swap_material _flag_generic+null flag_decal22
+efp_swap_end
+efp_swap_begin flag_decal23_nc
+efp_swap_material _flag_generic+null flag_decal23_nc
+efp_swap_end
+efp_swap_begin flag_decal23_tr
+efp_swap_material _flag_generic+null flag_decal23_tr
+efp_swap_end
+efp_swap_begin flag_decal23_vs
+efp_swap_material _flag_generic+null flag_decal23_vs
+efp_swap_end
+efp_swap_begin flag_decal24
+efp_swap_material _flag_generic+null flag_decal24
+efp_swap_end
+efp_swap_begin flag_decal25_nc
+efp_swap_material _flag_generic+null flag_decal25_nc
+efp_swap_end
+efp_swap_begin flag_decal25_tr
+efp_swap_material _flag_generic+null flag_decal25_tr
+efp_swap_end
+efp_swap_begin flag_decal25_vs
+efp_swap_material _flag_generic+null flag_decal25_vs
+efp_swap_end
+efp_swap_begin flag_decal26
+efp_swap_material _flag_generic+null flag_decal26
 efp_swap_end
 efp_end
 
@@ -1306,6 +1911,156 @@ efp_swap_end
 efp_swap_begin vs
 efp_swap_material _flag_generic2+null vslogo2
 efp_swap_end
+efp_swap_begin flag_decal01_nc
+efp_swap_material _flag_generic2+null flag_decal01_nc
+efp_swap_end
+efp_swap_begin flag_decal01_tr
+efp_swap_material _flag_generic2+null flag_decal01_tr
+efp_swap_end
+efp_swap_begin flag_decal01_vs
+efp_swap_material _flag_generic2+null flag_decal01_vs
+efp_swap_end
+efp_swap_begin flag_decal02
+efp_swap_material _flag_generic2+null flag_decal02
+efp_swap_end
+efp_swap_begin flag_decal03_nc
+efp_swap_material _flag_generic2+null flag_decal03_nc
+efp_swap_end
+efp_swap_begin flag_decal03_tr
+efp_swap_material _flag_generic2+null flag_decal03_tr
+efp_swap_end
+efp_swap_begin flag_decal03_vs
+efp_swap_material _flag_generic2+null flag_decal03_vs
+efp_swap_end
+efp_swap_begin flag_decal04
+efp_swap_material _flag_generic2+null flag_decal04
+efp_swap_end
+efp_swap_begin flag_decal05
+efp_swap_material _flag_generic2+null flag_decal05
+efp_swap_end
+efp_swap_begin flag_decal06
+efp_swap_material _flag_generic2+null flag_decal06
+efp_swap_end
+efp_swap_begin flag_decal07_nc
+efp_swap_material _flag_generic2+null flag_decal07_nc
+efp_swap_end
+efp_swap_begin flag_decal07_tr
+efp_swap_material _flag_generic2+null flag_decal07_tr
+efp_swap_end
+efp_swap_begin flag_decal07_vs
+efp_swap_material _flag_generic2+null flag_decal07_vs
+efp_swap_end
+efp_swap_begin flag_decal08
+efp_swap_material _flag_generic2+null flag_decal08
+efp_swap_end
+efp_swap_begin flag_decal09
+efp_swap_material _flag_generic2+null flag_decal09
+efp_swap_end
+efp_swap_begin flag_decal10
+efp_swap_material _flag_generic2+null flag_decal10
+efp_swap_end
+efp_swap_begin flag_decal11_nc
+efp_swap_material _flag_generic2+null flag_decal11_nc
+efp_swap_end
+efp_swap_begin flag_decal11_tr
+efp_swap_material _flag_generic2+null flag_decal11_tr
+efp_swap_end
+efp_swap_begin flag_decal11_vs
+efp_swap_material _flag_generic2+null flag_decal11_vs
+efp_swap_end
+efp_swap_begin flag_decal12_nc
+efp_swap_material _flag_generic2+null flag_decal12_nc
+efp_swap_end
+efp_swap_begin flag_decal12_tr
+efp_swap_material _flag_generic2+null flag_decal12_tr
+efp_swap_end
+efp_swap_begin flag_decal12_vs
+efp_swap_material _flag_generic2+null flag_decal12_vs
+efp_swap_end
+efp_swap_begin flag_decal13_nc
+efp_swap_material _flag_generic2+null flag_decal13_nc
+efp_swap_end
+efp_swap_begin flag_decal13_tr
+efp_swap_material _flag_generic2+null flag_decal13_tr
+efp_swap_end
+efp_swap_begin flag_decal13_vs
+efp_swap_material _flag_generic2+null flag_decal13_vs
+efp_swap_end
+efp_swap_begin flag_decal14_nc
+efp_swap_material _flag_generic2+null flag_decal14_nc
+efp_swap_end
+efp_swap_begin flag_decal14_tr
+efp_swap_material _flag_generic2+null flag_decal14_tr
+efp_swap_end
+efp_swap_begin flag_decal14_vs
+efp_swap_material _flag_generic2+null flag_decal14_vs
+efp_swap_end
+efp_swap_begin flag_decal15
+efp_swap_material _flag_generic2+null flag_decal15
+efp_swap_end
+efp_swap_begin flag_decal16_nc
+efp_swap_material _flag_generic2+null flag_decal16_nc
+efp_swap_end
+efp_swap_begin flag_decal16_tr
+efp_swap_material _flag_generic2+null flag_decal16_tr
+efp_swap_end
+efp_swap_begin flag_decal16_vs
+efp_swap_material _flag_generic2+null flag_decal16_vs
+efp_swap_end
+efp_swap_begin flag_decal17
+efp_swap_material _flag_generic2+null flag_decal17
+efp_swap_end
+efp_swap_begin flag_decal18
+efp_swap_material _flag_generic2+null flag_decal18
+efp_swap_end
+efp_swap_begin flag_decal19_nc
+efp_swap_material _flag_generic2+null flag_decal19_nc
+efp_swap_end
+efp_swap_begin flag_decal19_tr
+efp_swap_material _flag_generic2+null flag_decal19_tr
+efp_swap_end
+efp_swap_begin flag_decal19_vs
+efp_swap_material _flag_generic2+null flag_decal19_vs
+efp_swap_end
+efp_swap_begin flag_decal20
+efp_swap_material _flag_generic2+null flag_decal20
+efp_swap_end
+efp_swap_begin flag_decal21_nc
+efp_swap_material _flag_generic2+null flag_decal21_nc
+efp_swap_end
+efp_swap_begin flag_decal21_tr
+efp_swap_material _flag_generic2+null flag_decal21_tr
+efp_swap_end
+efp_swap_begin flag_decal21_vs
+efp_swap_material _flag_generic2+null flag_decal21_vs
+efp_swap_end
+efp_swap_begin flag_decal22
+efp_swap_material _flag_generic2+null flag_decal22
+efp_swap_end
+efp_swap_begin flag_decal23_nc
+efp_swap_material _flag_generic2+null flag_decal23_nc
+efp_swap_end
+efp_swap_begin flag_decal23_tr
+efp_swap_material _flag_generic2+null flag_decal23_tr
+efp_swap_end
+efp_swap_begin flag_decal23_vs
+efp_swap_material _flag_generic2+null flag_decal23_vs
+efp_swap_end
+efp_swap_begin flag_decal24
+efp_swap_material _flag_generic2+null flag_decal24
+efp_swap_end
+efp_swap_begin flag_decal25_nc
+efp_swap_material _flag_generic2+null flag_decal25_nc
+efp_swap_end
+efp_swap_begin flag_decal25_tr
+efp_swap_material _flag_generic2+null flag_decal25_tr
+efp_swap_end
+efp_swap_begin flag_decal25_vs
+efp_swap_material _flag_generic2+null flag_decal25_vs
+efp_swap_end
+efp_swap_begin flag_decal26
+efp_swap_material _flag_generic2+null flag_decal26
+efp_swap_end
 efp_end
 
 ##trlite_m_head_e
@@ -1316,28 +2071,6 @@ efp_swap_end
 efp_swap_begin swap03
 efp_swap_material tr1lite_h tr3liteh
 efp_swap_end
-efp_end
-
-##quad_assault
-
-efp_effect none quad_headlight glowa
-efp_effect none none none
-efp_effect none none none
-efp_effect none none none
-efp_effect none none none
-efp_effect none none none
-efp_effect none dirt_left_rear quad_sus_rl
-efp_effect none dirt_right_rear quad_sus_rr
-efp_effect none bit_left_rear quad_sus_rl
-efp_effect none bit_right_rear quad_sus_rr
-efp_effect none exhaust exausta
-efp_effect none exhaust exaustb
-efp_effect none dirt_left_front quad_sus_fl
-efp_effect none dirt_right_front quad_sus_fr
-efp_effect none bit_left_front quad_sus_fl
-efp_effect none bit_right_front quad_sus_fr
-efp_effect driverentry1 driverentry mount_left
-efp_effect driverentry2 driverentry mount_right
 efp_end
 
 ##20mm_cannon_vanguard
@@ -1873,16 +2606,178 @@ efp_swap_end
 efp_swap_begin vs
 efp_swap_material _flag_generic+null vslogo
 efp_swap_end
+efp_swap_begin flag_decal01_nc
+efp_swap_material _flag_generic+null flag_decal01_nc
+efp_swap_end
+efp_swap_begin flag_decal01_tr
+efp_swap_material _flag_generic+null flag_decal01_tr
+efp_swap_end
+efp_swap_begin flag_decal01_vs
+efp_swap_material _flag_generic+null flag_decal01_vs
+efp_swap_end
+efp_swap_begin flag_decal02
+efp_swap_material _flag_generic+null flag_decal02
+efp_swap_end
+efp_swap_begin flag_decal03_nc
+efp_swap_material _flag_generic+null flag_decal03_nc
+efp_swap_end
+efp_swap_begin flag_decal03_tr
+efp_swap_material _flag_generic+null flag_decal03_tr
+efp_swap_end
+efp_swap_begin flag_decal03_vs
+efp_swap_material _flag_generic+null flag_decal03_vs
+efp_swap_end
+efp_swap_begin flag_decal04
+efp_swap_material _flag_generic+null flag_decal04
+efp_swap_end
+efp_swap_begin flag_decal05
+efp_swap_material _flag_generic+null flag_decal05
+efp_swap_end
+efp_swap_begin flag_decal06
+efp_swap_material _flag_generic+null flag_decal06
+efp_swap_end
+efp_swap_begin flag_decal07_nc
+efp_swap_material _flag_generic+null flag_decal07_nc
+efp_swap_end
+efp_swap_begin flag_decal07_tr
+efp_swap_material _flag_generic+null flag_decal07_tr
+efp_swap_end
+efp_swap_begin flag_decal07_vs
+efp_swap_material _flag_generic+null flag_decal07_vs
+efp_swap_end
+efp_swap_begin flag_decal08
+efp_swap_material _flag_generic+null flag_decal08
+efp_swap_end
+efp_swap_begin flag_decal09
+efp_swap_material _flag_generic+null flag_decal09
+efp_swap_end
+efp_swap_begin flag_decal10
+efp_swap_material _flag_generic+null flag_decal10
+efp_swap_end
+efp_swap_begin flag_decal11_nc
+efp_swap_material _flag_generic+null flag_decal11_nc
+efp_swap_end
+efp_swap_begin flag_decal11_tr
+efp_swap_material _flag_generic+null flag_decal11_tr
+efp_swap_end
+efp_swap_begin flag_decal11_vs
+efp_swap_material _flag_generic+null flag_decal11_vs
+efp_swap_end
+efp_swap_begin flag_decal12_nc
+efp_swap_material _flag_generic+null flag_decal12_nc
+efp_swap_end
+efp_swap_begin flag_decal12_tr
+efp_swap_material _flag_generic+null flag_decal12_tr
+efp_swap_end
+efp_swap_begin flag_decal12_vs
+efp_swap_material _flag_generic+null flag_decal12_vs
+efp_swap_end
+efp_swap_begin flag_decal13_nc
+efp_swap_material _flag_generic+null flag_decal13_nc
+efp_swap_end
+efp_swap_begin flag_decal13_tr
+efp_swap_material _flag_generic+null flag_decal13_tr
+efp_swap_end
+efp_swap_begin flag_decal13_vs
+efp_swap_material _flag_generic+null flag_decal13_vs
+efp_swap_end
+efp_swap_begin flag_decal14_nc
+efp_swap_material _flag_generic+null flag_decal14_nc
+efp_swap_end
+efp_swap_begin flag_decal14_tr
+efp_swap_material _flag_generic+null flag_decal14_tr
+efp_swap_end
+efp_swap_begin flag_decal14_vs
+efp_swap_material _flag_generic+null flag_decal14_vs
+efp_swap_end
+efp_swap_begin flag_decal15
+efp_swap_material _flag_generic+null flag_decal15
+efp_swap_end
+efp_swap_begin flag_decal16_nc
+efp_swap_material _flag_generic+null flag_decal16_nc
+efp_swap_end
+efp_swap_begin flag_decal16_tr
+efp_swap_material _flag_generic+null flag_decal16_tr
+efp_swap_end
+efp_swap_begin flag_decal16_vs
+efp_swap_material _flag_generic+null flag_decal16_vs
+efp_swap_end
+efp_swap_begin flag_decal17
+efp_swap_material _flag_generic+null flag_decal17
+efp_swap_end
+efp_swap_begin flag_decal18
+efp_swap_material _flag_generic+null flag_decal18
+efp_swap_end
+efp_swap_begin flag_decal19_nc
+efp_swap_material _flag_generic+null flag_decal19_nc
+efp_swap_end
+efp_swap_begin flag_decal19_tr
+efp_swap_material _flag_generic+null flag_decal19_tr
+efp_swap_end
+efp_swap_begin flag_decal19_vs
+efp_swap_material _flag_generic+null flag_decal19_vs
+efp_swap_end
+efp_swap_begin flag_decal20
+efp_swap_material _flag_generic+null flag_decal20
+efp_swap_end
+efp_swap_begin flag_decal21_nc
+efp_swap_material _flag_generic+null flag_decal21_nc
+efp_swap_end
+efp_swap_begin flag_decal21_tr
+efp_swap_material _flag_generic+null flag_decal21_tr
+efp_swap_end
+efp_swap_begin flag_decal21_vs
+efp_swap_material _flag_generic+null flag_decal21_vs
+efp_swap_end
+efp_swap_begin flag_decal22
+efp_swap_material _flag_generic+null flag_decal22
+efp_swap_end
+efp_swap_begin flag_decal23_nc
+efp_swap_material _flag_generic+null flag_decal23_nc
+efp_swap_end
+efp_swap_begin flag_decal23_tr
+efp_swap_material _flag_generic+null flag_decal23_tr
+efp_swap_end
+efp_swap_begin flag_decal23_vs
+efp_swap_material _flag_generic+null flag_decal23_vs
+efp_swap_end
+efp_swap_begin flag_decal24
+efp_swap_material _flag_generic+null flag_decal24
+efp_swap_end
+efp_swap_begin flag_decal25_nc
+efp_swap_material _flag_generic+null flag_decal25_nc
+efp_swap_end
+efp_swap_begin flag_decal25_tr
+efp_swap_material _flag_generic+null flag_decal25_tr
+efp_swap_end
+efp_swap_begin flag_decal25_vs
+efp_swap_material _flag_generic+null flag_decal25_vs
+efp_swap_end
+efp_swap_begin flag_decal26
+efp_swap_material _flag_generic+null flag_decal26
+efp_swap_end
 efp_end
 
-##thesun
+##35mm_chaincannon
 
-efp_effect thesun thesun
+efp_effect fire1 fp_35mm_chaingun_fire1 ef_muzzle
+efp_end
+
+##zipline_end
+
+efp_lod 5 30
+efp_effect idle zipline_core zipline
+efp_effect zipline_end zipline_core_end zipline
 efp_end
 
 ##105mm_projectile
 
 efp_effect default mortar_shell_trail ef_trails
+efp_end
+
+##thesun
+
+efp_effect thesun thesun
 efp_end
 
 ##dome3
@@ -1904,11 +2799,17 @@ efp_swap_end
 efp_effect default corecenter root
 efp_end
 
-##pad_creation_crp
+##lattice_logic_module
 
-efp_swap_begin swap00
-efp_swap_material null hangar03
+efp_swap_begin nc
 efp_swap_end
+efp_swap_begin tr
+efp_swap_material metalncblue metaltrred
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material metalncblue metalvspurple
+efp_swap_end
+efp_effect pulse flag_carrier_effect lattice_logic_module
 efp_end
 
 ##dome2
@@ -1992,9 +2893,145 @@ efp_effect holster fp_flechette_holster flechette_rifle
 efp_effect reload fp_flechette_reload flechette_rifle_pump
 efp_end
 
+##tunnelsuspensionbeam
+
+efp_effect idle vanu_tunnel_suspension_meshes tunnelsuspensionbeam
+efp_effect idle2 vanu_tunnel_suspension_hotspots tunnelsuspensionbeam
+efp_effect idle3 vanu_tunnel_suspension_beams tunnelsuspensionbeam
+efp_end
+
+##150mm_cannon_vanguard
+
+efp_effect fire1 fp_150mm_cannon_t_fire1 ef_muzzle
+efp_end
+
 ##manned_turret_destroyed
 
 efp_effect explosion detonate_mannedturret turret_base
+efp_end
+
+##vanu_center_beam
+
+efp_effect idle vanu_core_idle root
+efp_effect idle2 vanu_core_idle2 root
+efp_effect active vanu_core_active root
+efp_end
+
+##vanu_module_canister
+
+efp_swap_begin none
+efp_swap_material null hart_green_lit
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material null vmc_tr
+efp_swap_end
+efp_swap_begin nc
+efp_swap_material null vmc_nc
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material null vmc_vs
+efp_swap_end
+efp_swap_begin swap04
+efp_swap_end
+efp_end
+
+##crystals_vehicle_b
+
+efp_effect active crystal_vehicle_effect_b crystal_vehicle_b
+efp_end
+
+##crystals_energy_b
+
+efp_effect active crystal_energy_effect_b crystal_energy_b
+efp_end
+
+##crystals_health_b
+
+efp_effect active crystal_health_effect_b crystal_health_b
+efp_end
+
+##crystals_damage_b
+
+efp_lod 20 30
+efp_effect active crystal_damage_effect_b crystal_damage_b
+efp_end
+
+##warpgate_cavern
+
+efp_effect idle wpg_cavern_idle ef_warpgate_cavern
+efp_effect idle1 wpg_cavern_arm_idle wpg_cavern_arm_a
+efp_effect idle2 wpg_cavern_arm_idle wpg_cavern_arm_b
+efp_effect idle3 wpg_cavern_arm_idle wpg_cavern_arm_c
+efp_effect idle4 ef_warpgate_cavern ef_warpgate_cavern
+efp_end
+
+##vanu_vehicle_station
+
+efp_swap_begin nc
+efp_swap_material blackmarble+_exp_vehicle_station_ul02 blackmarble+_exp_vehicle_station_ulnc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material blackmarble+_exp_vehicle_station_ul02 blackmarble+_exp_vehicle_station_ultr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material blackmarble+_exp_vehicle_station_ul02 blackmarble+_exp_vehicle_station_ulvs
+efp_swap_end
+efp_end
+
+##vanu_control_point
+
+efp_swap_begin nc
+efp_swap_material blackmarble+_exp_controlpoint_ul02 blackmarble+_exp_controlpoint_ulnc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material blackmarble+_exp_controlpoint_ul02 blackmarble+_exp_controlpoint_ultr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material blackmarble+_exp_controlpoint_ul02 blackmarble+_exp_controlpoint_ulvs
+efp_swap_end
+efp_end
+
+##stationaryteleportpad
+
+efp_lod 15 45
+efp_effect appear stp_teleport_ext stationaryteleportpad
+efp_effect disappear stp_teleport_entrance stationaryteleportpad
+efp_effect idle stp_idle_entrance stationaryteleportpad
+efp_effect zipline_end stp_idle_exit stationaryteleportpad
+efp_end
+
+##zipline
+
+efp_lod 5 100
+efp_effect idle zipline_core zipline
+efp_effect zipline_end zipline_core_end zipline
+efp_end
+
+##vanu_sentry_turret_weapon
+
+efp_effect chargeup vst_charge_particles_a ef_muzzle_a
+efp_effect charge_b vst_charge_particles_b ef_muzzle_b
+efp_effect charge_c vst_charge_particles_c ef_muzzle_c
+efp_effect fire1 fp_vst_fire1 ef_muzzle_a
+efp_effect fire2 fp_vst_fire2 ef_muzzle_d
+efp_end
+
+##spiker
+
+efp_effect fire1 fp_spiker_fire1 muzzlea
+efp_effect chargeup fp_spiker_chargeup muzzlea
+efp_end
+
+##repair_silo
+
+efp_effect active repair_silo_effect root
+efp_end
+
+##maelstrom
+
+efp_effect fire2 fp_maelstrom_fire2 muzzleb
+efp_effect fire1 fp_maelstrom_fire1 muzzlea
+efp_effect beam maelstrom_energy_stream muzzlea
 efp_end
 
 ##ground_vehicle_terminal
@@ -2010,6 +3047,7 @@ efp_end
 ##hunterseeker
 
 efp_effect fire1 fp_hunterseeker_fire1 muzzlea
+efp_effect fire2 fp_hunterseeker_fire1 muzzlea
 efp_end
 
 ##generator
@@ -2055,6 +3093,8 @@ efp_swap_material nc1msi nc3msi
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##adv_med_terminal
@@ -2153,6 +3193,8 @@ efp_swap_material vs1fsth vs3fsth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##wardoginfant
@@ -2216,11 +3258,8 @@ efp_swap_material tr1flite tr3flite
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##150mm_cannon_vanguard
-
-efp_effect fire1 fp_150mm_cannon_t_fire1 ef_muzzle
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##chameleonelder
@@ -2265,6 +3304,8 @@ efp_swap_material vs1msi vs3msi
 efp_swap_end
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##phalanx_sgl_hevgatcan
@@ -2291,8 +3332,8 @@ efp_end
 
 ##spitfire_weapon
 
-efp_effect fire1 spitfire_turret_fire ef_muzzlea
-efp_effect fire2 spitfire_turret_fire ef_muzzleb
+efp_effect fire1 spitfire_turret_fire ef_firea
+efp_effect fire2 spitfire_turret_fire ef_fireb
 efp_end
 
 ##thumper
@@ -2304,31 +3345,25 @@ efp_end
 ##trmlite
 
 efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
 efp_swap_material tr1mlite tr1mlite
 efp_hidden decal
 efp_swap_end
 efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
 efp_swap_material tr1mlite tr1mlite
 efp_hidden decal
 efp_swap_end
 efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera003 clod_soldierb003
 efp_swap_material tr1mlite tr2mlite
 efp_hidden decal
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera003 clod_soldierc003
 efp_swap_material tr1mlite tr3mlite
 efp_hidden decal
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##rotarychaingun_mosquito
@@ -2399,6 +3434,8 @@ efp_swap_material nc1msth nc3msth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_isp
@@ -2467,6 +3504,8 @@ efp_swap_material tr1mmed tr3mmed
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##pad_landing
@@ -2588,6 +3627,8 @@ efp_swap_material vs1flite vs3flite
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##ilc9
@@ -2610,18 +3651,6 @@ efp_effect fire1 fp_pulsar_fire1 muzzlea
 efp_effect fire2 fp_pulsar_fire2 muzzlea
 efp_end
 
-##obbasemesh
-
-efp_effect lights1 orbital_building_flashing_lights root
-efp_effect lights2 orbital_building_flashing_lights root
-efp_effect lights3 orbital_building_flashing_lights root
-efp_effect lights4 orbital_building_flashing_lights root
-efp_effect lights5 orbital_building_flashing_lights root
-efp_effect lights6 orbital_building_flashing_lights root
-efp_effect lights7 orbital_building_flashing_lights root
-efp_effect lights8 orbital_building_flashing_lights root
-efp_end
-
 ##advanced_missile_launcher_t
 
 efp_swap_begin swap00
@@ -2637,11 +3666,7 @@ efp_end
 ##fp_hunterseeker
 
 efp_effect fire1 fp_hunterseeker_fire1 ef_muzzlea
-efp_end
-
-##105mm_cannon_dropship_l
-
-efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
+efp_effect fire2 jolt_hunterseeker_fire2 ef_muzzlea
 efp_end
 
 ##ncflite
@@ -2669,6 +3694,8 @@ efp_swap_material nc1flite nc3flite
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_r_shotgun
@@ -2701,6 +3728,8 @@ efp_swap_material vs1fsi vs3fsi
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##vsfmed
@@ -2727,6 +3756,8 @@ efp_swap_material vs1fmed vs3fmed
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_suppressor
@@ -2759,6 +3790,8 @@ efp_swap_end
 efp_effect implant_surge surge_implant_effect bip01_footsteps
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##cryo_facility
@@ -2843,6 +3876,8 @@ efp_swap_material nc1fsth nc3fsth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##vsmsth
@@ -2869,6 +3904,8 @@ efp_swap_material vs1msth vs3msth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_phoenix
@@ -2961,32 +3998,36 @@ efp_swap_material vs1mmed vs3mmed
 efp_swap_end
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##vsmlite
 
 efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
 efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
 efp_swap_material vs1mlite vs1mlite
 efp_swap_end
 efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
 efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
 efp_swap_material vs1mlite vs1mlite
 efp_swap_end
 efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
 efp_swap_material clod_soldiera006 clod_soldierb006
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
 efp_swap_material vs1mlite vs2mlite
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
 efp_swap_material clod_soldiera006 clod_soldierc006
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
 efp_swap_material vs1mlite vs3mlite
 efp_swap_end
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##cycler
@@ -3013,27 +4054,21 @@ efp_end
 ##ncmmed
 
 efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
 efp_swap_material nc1mmed nc1mmed
 efp_swap_end
 efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
 efp_swap_material nc1mmed nc1mmed
 efp_swap_end
 efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera001 clod_soldierb001
 efp_swap_material nc1mmed nc2mmed
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera001 clod_soldierc001
 efp_swap_material nc1mmed nc3mmed
 efp_swap_end
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##punisher
@@ -3125,17 +4160,14 @@ efp_hidden decal
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_punisher
 
 efp_effect fire1 jolt_punisher_fire1 ef_muzzlea
 efp_effect fire2 jolt_punisher_fire2 ef_muzzleb
-efp_end
-
-##105mm_cannon_dropship
-
-efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
 efp_end
 
 ##cs_comm_dish
@@ -3164,14 +4196,8 @@ efp_swap_material tr1msth tr3msth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##150mm_cannon_t
-
-efp_effect equip fp_150mm_cannon_t_equip 150mmhtt01
-efp_effect fire1 fp_150mm_cannon_t_fire1 muzzlea01
-efp_effect reload fp_150mm_cannon_t_fire1 150mmhtt01
-efp_effect dryfire1 150mm_cannon_dryfire muzzlea01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_flechette
@@ -3203,6 +4229,8 @@ efp_swap_material tr1fsi tr3fsi
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##mini_chaingun
@@ -3235,6 +4263,8 @@ efp_swap_material tr1fmed tr3fmed
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##trfsth
@@ -3261,6 +4291,8 @@ efp_swap_material tr1fsth tr3fsth
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##implant_terminal
@@ -3330,6 +4362,8 @@ efp_swap_material nc1fsi nc3fsi
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##ncfmed
@@ -3356,6 +4390,8 @@ efp_swap_material nc1fmed nc3fmed
 efp_swap_end
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect flag_carrier flag_carrier_effect Bip01
+efp_effect module_carrier_trigger module_carrier Bip01
 efp_end
 
 ##fp_striker
@@ -3427,6 +4463,151 @@ efp_effect spike3 trhev_anchor_dirt bip01_l_spike11
 efp_effect spike4 trhev_anchor_dirt bip01_l_spike0
 efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##liberator_25mm_cannon
+
+efp_effect fire1 fp_25mm_liberator_fire1 ef_liberator_25mm_cannon_muzzle
+efp_end
+
+##ace
+
+efp_effect deploy_zone object_deploy_zone root
+efp_end
+
+##pad_landing_frame
+
+efp_effect active landing_pad_repair_effect root
+efp_end
+
+##pad_landing_tower_frame
+
+efp_effect active landing_pad_tower_repair_effect root
+efp_end
+
+##radiator
+
+efp_effect fire1 fp_radiator_fire1 ef_muzzlea
+efp_effect fire2 fp_radiator_fire1 ef_muzzlea
+efp_end
+
+##scythe
+
+efp_effect fire1 scythe_muzzleflash muzzlea
+efp_effect idle scythe_active scythe
+efp_end
+
+##crystals_health_a
+
+efp_effect active crystal_health_effect_a crystal_health_a
+efp_end
+
+##crystals_damage_a
+
+efp_lod 20 30
+efp_effect active crystal_damage_effect_a crystal_damage_a
+efp_end
+
+##crystals_energy_a
+
+efp_effect active crystal_energy_effect_a crystal_energy_a
+efp_end
+
+##crystals_repair_a
+
+efp_effect active crystal_repair_effect_a crystal_repair_a
+efp_end
+
+##crystals_vehicle_a
+
+efp_effect active crystal_vehicle_effect_a crystal_vehicle_a
+efp_end
+
+##defender_forcefield_mesh
+
+efp_swap_begin nc
+efp_swap_material vslogo nclogo
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material vslogo trlogo
+efp_swap_end
+efp_swap_begin vs
+efp_swap_end
+efp_end
+
+##flail_weapon
+
+efp_effect fire1 scythe_muzzleflash ef_muzzle
+efp_end
+
+##ancient_garage_door
+
+efp_effect open ef_ancient_garage_shimmer_open root
+efp_effect close ef_ancient_garage_shimmer_close root
+efp_end
+
+##ancient_door
+
+efp_effect open ef_ancient_door_shimmer_open root
+efp_effect close ef_ancient_door_shimmer_close root
+efp_end
+
+##crystals_repair_b
+
+efp_effect active crystal_repair_effect_b crystal_repair_b
+efp_end
+
+##hst
+
+efp_effect idle hst_idle_effect ef_hst_dome
+efp_effect idle2 ef_hst_dome ef_hst_dome
+efp_end
+
+##vanu_module
+
+efp_swap_begin invalid
+efp_swap_end
+efp_swap_begin empty
+efp_swap_end
+efp_swap_begin bind
+efp_swap_end
+efp_swap_begin energy
+efp_swap_end
+efp_swap_begin fortifier
+efp_swap_end
+efp_swap_begin defender
+efp_swap_end
+efp_swap_begin vehicle
+efp_swap_end
+efp_swap_begin weapon
+efp_swap_end
+efp_end
+
+##vanu_sentry_turret
+
+efp_swap_begin nc
+efp_swap_material sythedetail nc_blue_orb
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material sythedetail tr_red_orb
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material sythedetail vs_purple_orb
+efp_swap_end
+efp_swap_begin gen
+efp_swap_end
+efp_effect gunnera passengergunnermount turret_mount_real
+efp_effect gunneranoentry passengerentry_notavailable turret_mount_real
+efp_effect smoke1 manned_turret_damage_smoke_large root
+efp_effect smoke2 manned_turret_damage_sparks hp_turretb
+efp_effect smoke3 max_damage_sparks hp_turretb
+efp_effect explosion detonate_vst vanu_sentry_turret
+efp_effect gunnera_mount1 vanu_sentry_turret_mount turret_mount_real
+efp_effect gunnera_dismount1 vanu_sentry_turret_dismount turret_mount_real
+efp_effect gunnerb passengergunnermount turret_mountb_real
+efp_effect gunnerbnoentry passengerentry_notavailable turret_mountb_real
+efp_effect gunnerb_mount1 vanu_sentry_turret_mountb turret_mountb_real
+efp_effect gunnerb_dismount1 vanu_sentry_turret_dismountb turret_mountb_real
 efp_end
 
 ##implant_terminal_mech
@@ -3889,9 +5070,164 @@ efp_end
 efp_effect fire1 fp_bank_fire1 bank
 efp_end
 
-##ace
+##quad_assault
 
-efp_effect deploy_zone object_deploy_zone root
+efp_effect none quad_headlight glowa
+efp_effect none none none
+efp_effect none none none
+efp_effect none none none
+efp_effect none none none
+efp_effect none none none
+efp_effect none dirt_left_rear quad_sus_rl
+efp_effect none dirt_right_rear quad_sus_rr
+efp_effect none bit_left_rear quad_sus_rl
+efp_effect none bit_right_rear quad_sus_rr
+efp_effect none exhaust exausta
+efp_effect none exhaust exaustb
+efp_effect none dirt_left_front quad_sus_fl
+efp_effect none dirt_right_front quad_sus_fr
+efp_effect none bit_left_front quad_sus_fl
+efp_effect none bit_right_front quad_sus_fr
+efp_effect driverentry1 driverentry mount_left
+efp_effect driverentry2 driverentry mount_right
+efp_end
+
+##obbasemesh
+
+efp_effect lights1 orbital_building_flashing_lights root
+efp_effect lights2 orbital_building_flashing_lights root
+efp_effect lights3 orbital_building_flashing_lights root
+efp_effect lights4 orbital_building_flashing_lights root
+efp_effect lights5 orbital_building_flashing_lights root
+efp_effect lights6 orbital_building_flashing_lights root
+efp_effect lights7 orbital_building_flashing_lights root
+efp_effect lights8 orbital_building_flashing_lights root
+efp_end
+
+##router_telepad
+
+efp_effect deploy jammer_shockwave router_telepad
+efp_effect active firecloud router_telepad
+efp_effect ready router_teleport root
+efp_effect teleport router_teleportation router_telepad
+efp_end
+
+##switchblade
+
+efp_swap_begin nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_end
+efp_effect damage1a max_damage_sparks ef_damage_a
+efp_effect damage1b max_damage_sparks ef_damage_b
+efp_effect damage1c max_damage_sparks ef_damage_c
+efp_effect damage1d max_damage_sparks ef_damage_a
+efp_effect damage2a max_damage_elecarcs ef_damage_a
+efp_effect damage2b max_damage_elecarcs ef_damage_b
+efp_effect damage2c max_damage_elecarcs ef_damage_c
+efp_effect damage2d max_damage_elecarcs ef_damage_a
+efp_effect damage3a verysmall_damage_smoke ef_damage_a
+efp_effect damage3b verysmall_damage_smoke ef_damage_b
+efp_effect damage3c verysmall_damage_smoke ef_damage_c
+efp_effect damage3d verysmall_damage_smoke ef_damage_a
+efp_effect damage4a small_damage_smoke ef_damage_a
+efp_effect driverentrya driverentry drivera_mount_real
+efp_effect driverentrya_notavailable passengerentry_notavailable drivera_mount_real
+efp_effect driverentryb driverentry driverb_mount_real
+efp_effect driverentryb_notavailable passengerentry_notavailable driverb_mount_real
+efp_effect trunk vehicletrunk trunk_mount
+efp_effect trunknoentry vehicletrunk_notavailable trunk_mount
+efp_effect deployuseA deploymount deploy
+efp_effect spray_dirt1 thresher_active_dirt root
+efp_effect spray_snow1 thresher_active_snow root
+efp_effect spray_water1 thresher_active_water root
+efp_effect driver_mount1 switchblade_driver_mount drivera_mount
+efp_effect driver_dismount1 switchblade_driver_dismount ef_damage_d
+efp_effect driverb_mount1 switchblade_driverb_mount driverb_mount
+efp_effect driverb_dismount1 switchblade_driverb_dismount ef_damage_d
+efp_end
+
+##router
+
+efp_swap_begin nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material nc_blue_8x8 tr_red_orb
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material nc_blue_8x8 vs_purple_orb
+efp_swap_end
+efp_effect damage1a max_damage_sparks ef_damage_a
+efp_effect damage1b max_damage_sparks ef_damage_b
+efp_effect damage1c max_damage_sparks ef_damage_c
+efp_effect damage1d max_damage_sparks ef_damage_d
+efp_effect damage2a max_damage_elecarcs ef_damage_a
+efp_effect damage2b max_damage_elecarcs ef_damage_b
+efp_effect damage2c max_damage_elecarcs ef_damage_c
+efp_effect damage2d max_damage_elecarcs ef_damage_d
+efp_effect damage3a verysmall_damage_smoke ef_damage_a
+efp_effect damage3b verysmall_damage_smoke ef_damage_b
+efp_effect damage3c verysmall_damage_smoke ef_damage_c
+efp_effect damage3d verysmall_damage_smoke ef_damage_d
+efp_effect damage4a small_damage_smoke ef_damage
+efp_effect driverentry driverentry driver_mount
+efp_effect drivernoentry passengerentry_notavailable driver_mount
+efp_effect trunk vehicletrunk trunkmount
+efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect deployuseA deploymount deploymount
+efp_effect deploynouseA deploymount_ant deploymount
+efp_effect terminaluseA router_terminal_icon ordermount
+efp_effect terminalnouseA passengerentry_notavailable ordermount
+efp_effect flag_carrier flag_carrier_effect router_orb
+efp_effect spary_dirt1 thresher_active_dirt root
+efp_effect spray_snow1 thresher_active_snow root
+efp_effect spray_water1 thresher_active_water root
+efp_effect driver_mount1 router_driver_mount driver_mount
+efp_effect driver_dismount1 router_driver_mount driver_mount
+efp_end
+
+##flail
+
+efp_swap_begin nc
+efp_swap_material null nc_blue_8x8_gf3
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material null tr_red_orb
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material null vs_purple_orb
+efp_swap_end
+efp_effect damage1a max_damage_sparks ef_damage1
+efp_effect damage1b max_damage_sparks ef_damage2
+efp_effect damage1c max_damage_sparks ef_damage3
+efp_effect damage1d max_damage_sparks ef_damage4
+efp_effect damage2a max_damage_elecarcs ef_damage1
+efp_effect damage2b max_damage_elecarcs ef_damage2
+efp_effect damage2c max_damage_elecarcs ef_damage3
+efp_effect damage2d max_damage_elecarcs ef_damage4
+efp_effect damage3a verysmall_damage_smoke ef_damage1
+efp_effect damage3b verysmall_damage_smoke ef_damage2
+efp_effect damage3c verysmall_damage_smoke ef_damage3
+efp_effect damage3d verysmall_damage_smoke ef_damage4
+efp_effect damage4a small_damage_smoke ef_damage_a
+efp_effect driverentry driverentry driver_mount
+efp_effect drivernoentry passengerentry_notavailable driver_mount
+efp_effect deployuse deploymount deploymount
+efp_effect deploynouse passengerentry_notavailable deploymount
+efp_effect spray_dirt1 thresher_active_dirt root
+efp_effect spray_snow1 thresher_active_snow root
+efp_effect spray_water1 thresher_active_water root
+efp_effect flag_carrier flag_carrier_effect hp_guna
+efp_effect explosion flail_debris_a flail
+efp_effect driver_mount1 flail_driver_mount driver_mount
+efp_effect driver_dismount1 flail_driver_dismount driver_mount
+efp_effect driver_mount2 flail_driver_mount2 ef_muzzle
+efp_effect driver_dismount2 flail_driver_dismount2 ef_muzzle
+efp_effect trunk vehicletrunk trunkmount
+efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect module_carrier_trigger module_carrier hp_guna
 efp_end
 
 ##vanguard_destroyed
@@ -3998,6 +5334,11 @@ efp_end
 ##spitfire_turret_destroyed
 
 efp_effect explosion detonate_spitfire spitfire_body
+efp_end
+
+##skyguard_destroyed
+
+efp_effect explosion detonate_skyguard skyguard_body
 efp_end
 
 ##quadstealth_destroyed
@@ -4156,6 +5497,11 @@ efp_effect explosion detonate_lightgunship lightgunship_body
 efp_effect smoke_1 smoke_dead lightgunship_body
 efp_end
 
+##liberator_destroyed
+
+efp_effect explosion detonate_liberator liberator_body
+efp_end
+
 ##dropship_destroyed
 
 efp_swap_begin gen
@@ -4252,18 +5598,36 @@ efp_end
 ##vanguard
 
 efp_swap_begin nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material vanguardnc_lod vanguardtr_lod
 efp_swap_material vanguardnc_1_alpha vanguardtr_1_alpha
 efp_swap_material vanguardnc_2_alpha vanguardtr_2_alpha
+efp_hidden decal
 efp_swap_material vanguardnc_3_alpha vanguardtr_3_alpha
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material vanguardnc_lod vanguardvs_lod
 efp_swap_material vanguardnc_1_alpha vanguardvs_1_alpha
 efp_swap_material vanguardnc_2_alpha vanguardvs_2_alpha
+efp_hidden decal
 efp_swap_material vanguardnc_3_alpha vanguardvs_3_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_hidden decal
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_hidden decal
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_hidden decal
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 vanguard_dual_headlight_left vanguard_body
 efp_effect headlight2 vanguard_dual_headlight_right vanguard_body
@@ -4301,23 +5665,43 @@ efp_effect spray_water2 vanguard_water_fr van_tread_right
 efp_effect wake1 vanguard_water_wake_l root
 efp_effect wake2 vanguard_water_wake_r root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect vanguard_turret
+efp_effect module_carrier_trigger module_carrier vanguard_turret
 efp_end
 
 ##twomanhoverbuggy
 
 efp_swap_begin nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_tr_lod
 efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_tr1_alpha
 efp_swap_material twomanhoverbuggy_nc2_alpha twomanhoverbuggy_tr2_alpha
 efp_swap_material twomanhoverbuggy_nc3_alpha twomanhoverbuggy_tr3_alpha
+efp_hidden decal
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_vs_lod
 efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_vs1_alpha
 efp_swap_material twomanhoverbuggy_nc2_alpha twomanhoverbuggy_vs2_alpha
 efp_swap_material twomanhoverbuggy_nc3_alpha twomanhoverbuggy_vs3_alpha
+efp_hidden decal
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_material metalvspurple metalncblue
+efp_swap_material metalvsteal metalncyellow
+efp_hidden decal
+efp_swap_material logo_vs logo_nc
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalvspurple metaltrblack
+efp_swap_material metalvsteal metaltrred
+efp_hidden decal
+efp_swap_material logo_vs logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_hidden decal
 efp_swap_end
 efp_effect headlight1 twomanhoverbuggy_headlight_left thresher_body
 efp_effect headlight2 twomanhoverbuggy_headlight_right thresher_body
@@ -4345,6 +5729,8 @@ efp_effect spray_water1 thresher_active_water thresher_body
 efp_effect drivernoentry passengerentry_notavailable driver_mount
 efp_effect gunnernoentrya passengerentry_notavailable gunnera_mount
 efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect flag_carrier flag_carrier_effect hp_guna
+efp_effect module_carrier_trigger module_carrier hp_guna
 efp_end
 
 ##twomanheavybuggy
@@ -4362,6 +5748,18 @@ efp_swap_material two_man_heavy_buggy_nc_lod two_man_heavy_buggy_vs_lod
 efp_swap_material two_man_heavy_buggy_nc1_alpha two_man_heavy_buggy_vs1_alpha
 efp_swap_material two_man_heavy_buggy_nc3_alpha two_man_heavy_buggy_vs3_alpha
 efp_swap_material two_man_heavy_buggy_nc2_alpha two_man_heavy_buggy_vs2_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 twomanheavybuggy_headlight_right enforcer_body
 efp_effect headlight2 twomanheavybuggy_headlight_left enforcer_body
@@ -4405,21 +5803,46 @@ efp_effect wake2 2manhev_water_wake_fr root
 efp_effect wake3 2manhev_water_wake_fl root
 efp_effect wake4 2manhev_water_wake_fr root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect enforcer_turret
+efp_effect module_carrier_trigger module_carrier enforcer_turret
 efp_end
 
 ##two_man_assault_buggy
 
 efp_swap_begin nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material buggync_lod buggytr_lod
+efp_swap_material deliverer_nc_lod deliverer_tr_lod
 efp_swap_material buggync_1_alpha buggytr_1_alpha
 efp_swap_material buggync_2_alpha buggytr_2_alpha
+efp_hidden decal
+efp_swap_material deliverer_nc_2_alpha deliverer_tr_2_alpha
+efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_tr1_alpha
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material buggync_lod buggyvs_lod
+efp_swap_material deliverer_nc_lod deliverer_vs_lod
 efp_swap_material buggync_1_alpha buggyvs_1_alpha
 efp_swap_material buggync_2_alpha buggyvs_2_alpha
+efp_hidden decal
+efp_swap_material deliverer_nc_2_alpha deliverer_vs_2_alpha
+efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_vs1_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_material buggync_lod buggytr_lod
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
+efp_swap_material buggync_lod buggyvs_lod
 efp_swap_end
 efp_effect headlight1 twomanassault_headlight_left buggy_body
 efp_effect headlight2 twomanassault_headlight_right buggy_body
@@ -4461,6 +5884,8 @@ efp_effect wake2 2manass_water_wake_fr root
 efp_effect wake3 2manass_water_wake_fl root
 efp_effect wake4 2manass_water_wake_fr root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect buggy_turret
+efp_effect module_carrier_trigger module_carrier buggy_turret
 efp_end
 
 ##threemanheavybuggy
@@ -4478,6 +5903,18 @@ efp_swap_material 3manbuggy_bodyanc 3manbuggy_bodyavs
 efp_swap_material 3manbuggy_underanc 3manbuggy_underavs
 efp_swap_material 3manbuggyint_anc 3manbuggyint_avs
 efp_swap_material 3manbuggy_lod04nc 3manbuggy_lod04vs
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 threemanheavybuggy_headlight_left 3manbuggy_body
 efp_effect headlight2 threemanheavybuggy_headlight_right 3manbuggy_body
@@ -4521,6 +5958,68 @@ efp_effect wake2 3manhev_water_wake_fr root
 efp_effect wake3 3manhev_water_wake_fl root
 efp_effect wake4 3manhev_water_wake_fr root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect 3manbuggy_gunner_control
+efp_effect module_carrier_trigger module_carrier 3manbuggy_gunner_control
+efp_end
+
+##skyguard
+
+efp_swap_begin nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material 3manbuggyint_anc 3manbuggyint_atr
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_material metalncyellow metaltrred
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material 3manbuggyint_anc 3manbuggyint_avs
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
+efp_swap_material metalncyellow metalvsteal
+efp_swap_end
+efp_effect spray_water1 skyguard_water_fl skyguard_sus_arm_l
+efp_effect spray_water2 skyguard_water_fr skyguard_sus_arm_r
+efp_effect spray_water3 skyguard_water_rl skyguard_sus_rear
+efp_effect spray_water4 skyguard_water_rr skyguard_sus_rear
+efp_effect wake1 skyguard_water_wake_fl skyguard_tire_fl
+efp_effect wake2 skyguard_water_wake_fr skyguard_tire_fr
+efp_effect wake3 skyguard_water_wake_rl skyguard_tire_rl
+efp_effect wake4 skyguard_water_wake_rr skyguard_tire_rr
+efp_effect exhaust1 exhaust ef_exhausta
+efp_effect exhaust2 exhaust ef_exhaustb
+efp_effect spray_dirt1 vehicle_kick_dirt_skyguard ef_dustb
+efp_effect spray_grass1 vehicle_kick_grass_skyguard ef_dustb
+efp_effect spray_snow1 vehicle_kick_snow_skyguard ef_dustb
+efp_effect driverentrya driverentry driver_mounta
+efp_effect drivernoentrya passengerentry_notavailable driver_mounta
+efp_effect driverentryb driverentry driver_mountb
+efp_effect drivernoentryb passengerentry_notavailable driver_mountb
+efp_effect Gunnerentrya passengergunnermount gunnera_mount
+efp_effect gunnernoentrya passengerentry_notavailable gunnera_mount
+efp_effect trunk vehicletrunk trunkmount
+efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect spray_dirt_r1 vehicle_kick_dirt_skyguard ef_dusta
+efp_effect spray_grass_r1 vehicle_kick_grass_skyguard ef_dusta
+efp_effect spray_snow_r1 vehicle_kick_snow_skyguard ef_dusta
+efp_effect headlight1 skyguard_headlight_left ef_headlighta
+efp_effect headlight2 skyguard_headlight_left ef_headlightb
+efp_effect tail1 skyguard_tail_left ef_taillightb
+efp_effect tail2 skyguard_tail_right ef_taillighta
+efp_effect damage1a vehicle_damage_sparks skyguard_tire_rr
+efp_effect damage1b vehicle_damage_sparks skyguard_tire_fr
+efp_effect damage1c vehicle_damage_sparks skyguard_tire_fl
+efp_effect damage1d vehicle_damage_sparks skyguard_tire_rl
+efp_effect damage2a skyguard_tail_right_flicker ef_taillighta
+efp_effect damage2b headlight_flicker ef_headlighta
+efp_effect damage2c headlight_flicker ef_headlightb
+efp_effect damage2d skyguard_tail_left_flicker ef_taillightb
+efp_effect damage3a verysmall_damage_smoke skyguard_tire_rr
+efp_effect damage3b verysmall_damage_smoke skyguard_tire_fr
+efp_effect damage3c verysmall_damage_smoke skyguard_tire_fl
+efp_effect damage3d verysmall_damage_smoke skyguard_tire_rl
+efp_effect damage4a small_damage_smoke skyguard_steering
+efp_effect flag_carrier flag_carrier_effect skyguard_turret
 efp_end
 
 ##quadstealth
@@ -4534,6 +6033,12 @@ efp_swap_end
 efp_swap_begin vs
 efp_swap_material stealthnc_1_alpha stealthvs_1_alpha
 efp_swap_material stealthnc_1_lod2 stealthvs_1_lod2
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_end
+efp_swap_begin vs_low
 efp_swap_end
 efp_effect driverentry driverentry drivera_mount
 efp_effect driverentryb driverentry driverb_mount
@@ -4570,14 +6075,26 @@ efp_end
 ##quadassault
 
 efp_swap_begin nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material quadnc_1_alpha quadtr_1_alpha
+efp_hidden decal
 efp_swap_material quadnc_1_lod2 quadtr_1_lod2
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material quadnc_1_alpha quadvs_1_alpha
+efp_hidden decal
 efp_swap_material quadnc_1_lod2 quadvs_1_lod2
+efp_swap_end
+efp_swap_begin nc_low
+efp_hidden decal
+efp_swap_end
+efp_swap_begin tr_low
+efp_hidden decal
+efp_swap_end
+efp_swap_begin vs_low
+efp_hidden decal
 efp_swap_end
 efp_effect headlight1 quad_headlight quad_body
 efp_effect exhaust1 exhaust ef_exhausta
@@ -4589,12 +6106,12 @@ efp_effect damage1b vehicle_damage_sparks_emitter quad_sus_f_r
 efp_effect damage1c vehicle_damage_sparks_emitter quad_sus_f_l
 efp_effect damage1d vehicle_damage_sparks_emitter quad_sus_r_l
 efp_effect damage4a small_damage_smoke quad_turret
-efp_effect damage2b headlight_flicker ef_headlight
+efp_effect damage2b quad_headlight_flicker quad_body
 efp_effect damage3a verysmall_damage_smoke quad_sus_r_r
 efp_effect damage3b verysmall_damage_smoke quad_sus_f_r
 efp_effect damage3c verysmall_damage_smoke quad_sus_f_l
 efp_effect damage3d verysmall_damage_smoke quad_sus_r_l
-efp_effect damage2c headlight_flicker ef_headlight
+efp_effect damage2c quad_headlight_flicker quad_body
 efp_effect spray_dirt1 vehicle_kick_dirt ef_dusta
 efp_effect spray_grass1 vehicle_kick_grass ef_dusta
 efp_effect spray_snow1 vehicle_kick_snow ef_dusta
@@ -4635,6 +6152,18 @@ efp_swap_material prowlerlogonc prowlerlogovs
 efp_swap_material prowlernc_3_alpha prowlervs_3_alpha
 efp_swap_material prowlernc_turret_alpha prowlervs_turret_alpha
 efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material logo_nc logo_vs
+efp_swap_end
 efp_effect headlight1 prowler_headlighta ef_headlighta
 efp_effect headlight2 prowler_headlightb ef_headlightb
 efp_effect tail1 prowler_taillight_left prowler_body
@@ -4673,23 +6202,49 @@ efp_effect spray_water2 prowler_water_fr prowler_tread_r
 efp_effect wake1 prowler_water_wake_l root
 efp_effect wake2 prowler_water_wake_r root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect prowler_main_turret
+efp_effect module_carrier_trigger module_carrier prowler_main_turret
 efp_end
 
 ##mosquito
 
 efp_swap_begin nc
+efp_swap_material decal oi_decal25_nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material mosquitonc_lod mosquitotr_lod
+efp_swap_material mosquitonc_1_alpha mosquitotr_1_alpha
+efp_swap_material decal oi_decal07_tr
+efp_hidden decal
 efp_swap_material mosquitonc_2_alpha mosquitotr_2_alpha
 efp_swap_material mosquitonc_3_alpha mosquitotr_3_alpha
-efp_swap_material mosquitonc_1_alpha mosquitotr_1_alpha
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material mosquitonc_lod mosquitovs_lod
+efp_swap_material mosquitonc_1_alpha mosquitovs_1_alpha
+efp_swap_material decal oi_decal09
+efp_hidden decal
 efp_swap_material mosquitonc_2_alpha mosquitovs_2_alpha
 efp_swap_material mosquitonc_3_alpha mosquitovs_3_alpha
-efp_swap_material mosquitonc_1_alpha mosquitovs_1_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_material decal oi_decal25_nc
+efp_hidden decal
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_material decal oi_decal07_tr
+efp_hidden decal
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material decal oi_decal09
+efp_hidden decal
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 mosquito_headlight ef_headlighra
 efp_effect driverentry driverentry driver_mounta
@@ -4708,7 +6263,7 @@ efp_effect damage1b vehicle_damage_sparks_emitter ef_exhaustb
 efp_effect damage1c vehicle_damage_sparks_emitter ef_exhausta
 efp_effect damage1d vehicle_damage_sparks_emitter mosquito_tail
 efp_effect damage2b mosquito_headlight_flicker ef_headlighra
-efp_effect damage2c magrider_headlight_flicker ef_headlighra
+efp_effect damage2c mosquito_headlight_flicker ef_headlighra
 efp_effect damage3a verysmall_damage_smoke mosquito_tail
 efp_effect damage3b verysmall_damage_smoke ef_exhaustb
 efp_effect damage3c verysmall_damage_smoke ef_exhausta
@@ -4734,18 +6289,38 @@ efp_end
 ##mediumtransport
 
 efp_swap_begin nc
+efp_hidden decal
 efp_swap_end
 efp_swap_begin tr
 efp_swap_material deliverer_nc_1_alpha deliverer_tr_1_alpha
 efp_swap_material deliverer_nc_lod deliverer_tr_lod
 efp_swap_material deliverer_nc_2_alpha deliverer_tr_2_alpha
 efp_swap_material deliverer_nc_3_alpha deliverer_tr_3_alpha
+efp_hidden decal
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material deliverer_nc_1_alpha deliverer_vs_1_alpha
 efp_swap_material deliverer_nc_lod deliverer_vs_lod
 efp_swap_material deliverer_nc_2_alpha deliverer_vs_2_alpha
 efp_swap_material deliverer_nc_3_alpha deliverer_vs_3_alpha
+efp_hidden decal
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_material metalvspurple metalncblue
+efp_swap_material metalvsteal metalncyellow
+efp_swap_material logo_vs logo_nc
+efp_hidden decal
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalvspurple metaltrblack
+efp_swap_material deliverer_nc_3_alpha deliverer_tr_3_alpha
+efp_swap_material metalvsteal metaltrred
+efp_swap_material logo_vs logo_tr
+efp_hidden decal
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material deliverer_nc_3_alpha deliverer_vs_3_alpha
+efp_hidden decal
 efp_swap_end
 efp_effect tail2 mediumtransport_taillight ef_brakelightglow
 efp_effect headlight1 mediumtransport_headlight ef_headlightglowb
@@ -4789,6 +6364,8 @@ efp_effect spray_water3 mediumtransport_water_rl ef_exaustb
 efp_effect spray_water4 mediumtransport_water_rr ef_exausta
 efp_effect water_splashdown mediumtransport_splashdown deliverer_body
 efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect flag_carrier flag_carrier_effect deliverer_turret_front
+efp_effect module_carrier_trigger module_carrier deliverer_turret_front
 efp_end
 
 ##magrider
@@ -4796,16 +6373,30 @@ efp_end
 efp_swap_begin nc
 efp_swap_end
 efp_swap_begin tr
-efp_swap_material magrider_nc02_alpha magrider_tr02_alpha
-efp_swap_material magrider_nc01_alpha magrider_tr01_alpha
-efp_swap_material magrider_nc03_alpha magrider_tr03_alpha
 efp_swap_material magrider_nc_lod magrider_tr_lod
+efp_swap_material magrider_nc01_alpha magrider_tr01_alpha
+efp_swap_material magrider_nc02_alpha magrider_tr02_alpha
+efp_swap_material magrider_nc03_alpha magrider_tr03_alpha
 efp_swap_end
 efp_swap_begin vs
-efp_swap_material magrider_nc02_alpha magrider_vs02_alpha
-efp_swap_material magrider_nc01_alpha magrider_vs01_alpha
-efp_swap_material magrider_nc03_alpha magrider_vs03_alpha
 efp_swap_material magrider_nc_lod magrider_vs_lod
+efp_swap_material magrider_nc01_alpha magrider_vs01_alpha
+efp_swap_material magrider_nc02_alpha magrider_vs02_alpha
+efp_swap_material magrider_nc03_alpha magrider_vs03_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material magrider_nc_lod magrider_tr_lod
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material magrider_nc_lod magrider_vs_lod
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 magrider_headlight_left magrider_body
 efp_effect headlight2 magrider_headlights_right magrider_body
@@ -4830,6 +6421,8 @@ efp_effect spray_water1 magrider_active_water magrider_body
 efp_effect drivernoentry passengerentry_notavailable driver_mount
 efp_effect gunnernoentrya passengerentry_notavailable gunnera_mount
 efp_effect trunknoentry vehicletrunk_notavailable trunk_mount
+efp_effect flag_carrier flag_carrier_effect magrider_turret
+efp_effect module_carrier_trigger module_carrier magrider_turret
 efp_end
 
 ##lightning
@@ -4845,6 +6438,18 @@ efp_swap_begin vs
 efp_swap_material lightningnc_lod4 lightningvs_lod4
 efp_swap_material lightningnc_1_alpha lightningvs_1_alpha
 efp_swap_material lightningnc_2_alpha lightningvs_2_alpha
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect headlight1 lightning_headlight_left lightning_body
 efp_effect headlight2 lightning_headlight_right lightning_body
@@ -4901,6 +6506,18 @@ efp_swap_material gunshipnc_lod gunshipvs_lod
 efp_swap_material gunshipnc_1_alpha gunshipvs_1_alpha
 efp_swap_material gunshipnc_2_alpha gunshipvs_2_alpha
 efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
+efp_swap_end
 efp_effect headlight1 lightgunship_headlights lightgunship_body
 efp_effect driverentry driverentry drivera_mount
 efp_effect driverentryb driverentry driverb_mount
@@ -4941,6 +6558,76 @@ efp_effect spray_water1 magrider_active_water rooster_tail
 efp_effect wake1 rooster_tail rooster_tail
 efp_end
 
+##liberator
+
+efp_swap_begin nc
+efp_swap_material magrider_nc03 magrider_nc03_alpha
+efp_swap_material decal logo_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material shuttle_nc_2 shuttle_tr_2
+efp_swap_material metalncb metaltrred
+efp_swap_material shuttle_nc_1 shuttle_tr_1
+efp_swap_material shuttle_nc_3 shuttle_tr_3
+efp_swap_material magrider_nc03 magrider_tr03_alpha
+efp_swap_material dropshipnc_4_alpha dropshiptr_4_alpha
+efp_swap_material metalncblue metaltrblack
+efp_swap_material decal logo_tr
+efp_swap_material metalncyellow metaltrred
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material shuttle_nc_2 shuttle_vs_2
+efp_swap_material metalncb metalvspurple
+efp_swap_material shuttle_nc_1 shuttle_vs_1
+efp_swap_material shuttle_nc_3 shuttle_vs_3
+efp_swap_material magrider_nc03 magrider_vs03_alpha
+efp_swap_material metalncblue metalvspurple
+efp_swap_material decal logo_vs
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material logo_nc logo_vs
+efp_swap_end
+efp_effect contrail1 mosquito_tail_left ef_ctraila
+efp_effect contrail2 mosquito_tail_left ef_ctrailb
+efp_effect contrail3 mosquito_tail_left ef_ctrailc
+efp_effect idle1 liberator_engines liberator_engine
+efp_effect warmup1 liberator_engines liberator_engine
+efp_effect thrust1a liberator_thrust_a liberator_engine
+efp_effect thrust2a liberator_thrust_b liberator_engine
+efp_effect thrust3a liberator_thrust_c liberator_engine
+efp_effect exhaust1 liberator_boosters ef_exhausta
+efp_effect exhaust2 liberator_boosters ef_exhaustb
+efp_effect spray_water1 magrider_active_water liberator_body
+efp_effect rooster_tail rooster_tail root
+efp_effect driverentry driverentry driver_mount
+efp_effect drivernoentry passengerentry_notavailable driver_mount
+efp_effect Gunnerentrya passengergunnermount gunnera_mount
+efp_effect gunnernoentrya passengerentry_notavailable gunnera_mount
+efp_effect gunnerentryb passengergunnermount gunnerb_mount
+efp_effect gunnernoentryb passengerentry_notavailable gunnerb_mount
+efp_effect gunnerentryc passengergunnermount gunnerc_mount
+efp_effect gunnernoentryc passengerentry_notavailable gunnerc_mount
+efp_effect trunk vehicletrunk trunkmount
+efp_effect trunknoentry vehicletrunk_notavailable trunkmount
+efp_effect spray_dirt1 magrider_active_dirt liberator_body
+efp_effect spray_snow1 magrider_active_snow liberator_body
+efp_effect spray_lava1 magrider_active_lava liberator_body
+efp_effect damage1a vehicle_damage_sparks ef_exhausta
+efp_effect damage1b vehicle_damage_sparks liberator_driver_canopy_a
+efp_effect damage1c vehicle_damage_sparks liberator_bomber_canopy_a
+efp_effect damage1d vehicle_damage_sparks ef_exhaustb
+efp_effect damage2a vehicle_damage_sparks liberator_nose
+efp_effect damage2b vehicle_damage_sparks ef_damage
+efp_effect damage2c verysmall_damage_smoke ef_exhausta
+efp_effect damage2d verysmall_damage_smoke ef_exhaustb
+efp_effect damage3a small_damage_smoke ef_damage
+efp_effect damage3b small_damage_smoke ef_exhausta
+efp_effect damage3c verysmall_damage_smoke liberator_nose
+efp_effect damage3d verysmall_damage_smoke ef_exhaustb
+efp_effect damage4a small_damage_smoke liberator_bomber_canopy_b
+efp_effect wake1 rooster_tail rooster_tail
+efp_end
+
 ##dropship
 
 efp_swap_begin nc
@@ -4964,6 +6651,18 @@ efp_swap_material dropshipnc_6_alpha dropshipvs_6_alpha
 efp_swap_material dropshiplogonc dropshiplogovs
 efp_swap_material dropshipnc_4_alpha dropshipvs_4_alpha
 efp_swap_material dropshipnc_lod4 dropshipvs_lod4
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material logo_nc logo_vs
 efp_swap_end
 efp_effect driverentry driverentry driver_mount
 efp_effect gunnerentryc passengergunnermount gunnerc_mount
@@ -5071,6 +6770,18 @@ efp_swap_material ncapca_alpha vsapca_alpha
 efp_swap_material ncapcb_alpha vsapcb_alpha
 efp_swap_material apcnc_lod apcvs_lod
 efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncyellow metaltrred
+efp_swap_material metalncblue metaltrblack
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncyellow metalvsteal
+efp_swap_material metalncblue metalvspurple
+efp_swap_material logo_nc logo_vs
+efp_swap_end
 efp_effect headlight1 apc_headlight_left apc_body
 efp_effect headlight2 apc_headlight_right apc_body
 efp_effect driverentry driverentry drivera_mount
@@ -5126,6 +6837,8 @@ efp_effect wake2 apc_water_wake_fr root
 efp_effect wake3 apc_water_wake_rl root
 efp_effect wake4 apc_water_wake_rr root
 efp_effect water_splashdown corecenter root
+efp_effect flag_carrier flag_carrier_effect apc_driver_hatch
+efp_effect module_carrier_trigger module_carrier apc_driver_hatch
 efp_end
 
 ##ant
@@ -5141,6 +6854,16 @@ efp_swap_begin vs
 efp_swap_material antnc_lod antvs_lod
 efp_swap_material antnc1 antvs1
 efp_swap_material antnc2 antvs2
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
 efp_swap_end
 efp_effect driverentry driverentry drivera_mount_alt
 efp_effect driverentryb driverentry driverb_mount_alt
@@ -5211,6 +6934,16 @@ efp_swap_material amsnc_2_alpha amsvs_2_alpha
 efp_swap_material amsnc_4_alpha amsvs_4_alpha
 efp_swap_material amsnc_3_alpha amsvs_3_alpha
 efp_swap_material terminal_animation00 terminal_animation00vs
+efp_swap_end
+efp_swap_begin nc_low
+efp_swap_end
+efp_swap_begin tr_low
+efp_swap_material metalncblue metaltrblack
+efp_swap_material metalncyellow metaltrred
+efp_swap_end
+efp_swap_begin vs_low
+efp_swap_material metalncblue metalvspurple
+efp_swap_material metalncyellow metalvsteal
 efp_swap_end
 efp_effect headlight1 ams_headlight ef_headllighta
 efp_effect tail1 ams_taillight ef_tailighta

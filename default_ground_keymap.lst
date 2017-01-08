@@ -1,12 +1,12 @@
 ############################################################
 # GROUND VEHICLE SPECIFIC KEYMAPS
 ############################################################
-km_addbinding "W" "Forward"
-km_addbinding "S" "Backward"
+km_addbinding "W" "@GA_Forward"
+km_addbinding "S" "@GA_Backward"
 
-km_addbinding "Left Arrow" "Turn Left"
-km_addbinding "Right Arrow" "Turn Right"
-km_addbinding "A" "Turn Left"
-km_addbinding "D" "Turn Right"
+km_addbinding "Left Arrow" "@GA_TurnLeft"
+km_addbinding "Right Arrow" "@GA_TurnRight"
+km_addbinding "A" "@GA_TurnLeft"
+km_addbinding "D" "@GA_TurnRight"
 
-km_addbinding "Space" "Brake"
+km_addbinding "Space" "@GA_Brake"

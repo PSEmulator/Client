@@ -4,7 +4,7 @@
 <Scrollbar Control='ObjectList' Location='230,90' ScrollExtent='30,370' Size='30,370' Style='/VScrollbar.style'/>
 <Button LocalText='[@Create]' Location='50,470' Name='Create' OnPress='fs_create Parent.ObjectList.SelectedItem.Name
 ui_popstate' ScrollExtent='200,32' Size='200,32' Style='/Buttons.Default.style'>@Create</Button>
-<Listbox DataSource='WorldObjects' Location='50,90' Name='ObjectList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,1320' Size='180,370' Style='/Listboxes.Generic.style'/>
+<Listbox DataSource='WorldObjects' Location='50,90' Name='ObjectList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,1125' Size='180,370' Style='/Listboxes.Generic.style'/>
 <Text Color='#FFFF00' Font='/Fonts.DefaultFont' LocalText='Go To UI Screen' Location='260,70' Name='Screens' ScrollExtent='180,20' Size='180,20'>Go To UI Screen</Text>
 <Scrollbar Control='ScreenList' Location='440,90' ScrollExtent='30,370' Size='30,370' Style='/VScrollbar.style'/>
 <Listbox DataSource='UIScreens' Location='260,90' Name='ScreenList' RowTemplate='WorldObjectRowTemplate' ScrollExtent='249,370' Size='180,370' Style='/Listboxes.Generic.style'/>
@@ -21,6 +21,7 @@ $name$
 <Data Name='apc'/>
 <Data Name='droppod'/>
 <Data Name='dropship'/>
+<Data Name='liberator'/>
 <Data Name='lightgunship'/>
 <Data Name='lightning'/>
 <Data Name='magrider'/>
@@ -30,12 +31,18 @@ $name$
 <Data Name='prowler'/>
 <Data Name='quadassault'/>
 <Data Name='quadstealth'/>
+<Data Name='skyguard'/>
 <Data Name='spitfire_turret'/>
 <Data Name='threemanheavybuggy'/>
 <Data Name='two_man_assault_buggy'/>
 <Data Name='twomanheavybuggy'/>
 <Data Name='twomanhoverbuggy'/>
 <Data Name='vanguard'/>
+<Data color='#FF0000' Name='===== EXPANSION VEHICLES ====='/>
+<Data color='#FFFFFF' Name='flail'/>
+<Data color='#FFFFFF' Name='router'/>
+<Data color='#FFFFFF' Name='switchblade'/>
+<Data color='#FFFFFF' Name='vanu_sentry_turret'/>
 <Data color='#FF0000' Name='===== CHARACTERS ================='/>
 <Data Name='avatar'/>
 <Data color='#FF0000' Name='===== WEAPONS =================='/>
@@ -43,7 +50,6 @@ $name$
 <Data Name='bolt_driver'/>
 <Data Name='chainblade'/>
 <Data Name='cycler'/>
-<Data Name='flame_spitter'/>
 <Data Name='flechette_rifle'/>
 <Data Name='force_blade'/>
 <Data Name='gauss'/>
@@ -54,39 +60,19 @@ $name$
 <Data Name='lasher'/>
 <Data Name='magcutter'/>
 <Data Name='mini_chaingun'/>
-<Data Name='nc_knife'/>
 <Data Name='phoenix'/>
 <Data Name='punisher'/>
 <Data Name='pulsar'/>
 <Data Name='r_shotgun'/>
 <Data Name='repeater'/>
-<Data Name='rocklet_gun'/>
+<Data Name='rocklet'/>
 <Data Name='suppressor'/>
 <Data Name='striker'/>
 <Data Name='thumper'/>
-<Data Name='tr_knife'/>
 <Data color='#FF0000' Name='==== MISC. OBJECTS ============'/>
-<Data Name='alarm_beacon'/>
-<Data Name='bolt_pack'/>
-<Data Name='bullet_pack'/>
-<Data Name='energy_cell_pack'/>
-<Data Name='fuel_pack'/>
-<Data Name='founder_recharge'/>
-<Data Name='grenade_pack'/>
-<Data Name='hack_kit'/>
-<Data Name='jack_kit'/>
+<Data Name='capture_flag'/>
 <Data Name='medkit'/>
-<Data Name='mine_sweeper'/>
-<Data Name='missile_pack'/>
-<Data Name='mortar_pack'/>
-<Data Name='remote_camera'/>
-<Data Name='rocklet_pack'/>
-<Data Name='serum_adrenaline'/>
-<Data Name='serum_bracing'/>
-<Data Name='serum_surge'/>
-<Data Name='shotgun_pack'/>
-<Data Name='targeting_beacon'/>
-<Data Name='terminal'/>
+<Data Name='remote_electronics_kit'/>
 <Data color='#FF0000' Name='==== SHIFTERS ============'/>
 <Data Name='wardoginfant'/>
 <Data Name='wardogadolescent'/>
@@ -107,15 +93,11 @@ $name$
 <DataSource Name='UIScreens'>
 <Data Name='PCT'/>
 <Data Name='News'/>
-<Data Name='Email'/>
-<Data Name='Missions'/>
 <Data Name='PlanetaryMap'/>
 <Data Name='ContinentalMap'/>
-<Data Name='Vendor'/>
 <Data Name='Play'/>
 <Data Name='CreateCharacter'/>
 <Data Name='Profile'/>
-<Data Name='PreGameChat'/>
 <Data Name='Options'/>
 <Data Name='MapSelect'/>
 <Data Name='SplashScreen'/>

@@ -35,6 +35,15 @@ phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
 
+phys_model vanu_vehicle_barrier
+################ Physics Primitive vanu_vehicle_barrier_cdbox0 ###########
+phys_box root 10 3.0 14.0 8.5 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
 phys_model avatar_barrier_virtual_training
 ################ Physics Primitive avatar_barrier_virtual_training_cdbox0 ###########
 phys_box root 10 0.5 6.0 5.5 0 0 0
@@ -46,7 +55,7 @@ phys_com_offset 0 0 0
 
 phys_model warpgate_barrier
 ################ Physics Primitive warpgate_barrier_cdsph0 ###########
-phys_sphere root 5.0 0.3 0 0 0.3
+phys_sphere root 5.0 227 0 0 0.3
 phys_cookie warp_gate_barrier 
 phys_collisionboneoffset 0 0 0
 phys_material barrier
@@ -79,3 +88,60 @@ phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
 
+phys_model expansion_barrier_force_field
+################ Physics Primitive expansion_barrier_force_field_cdbox0 ###########
+#phys_box root 1.0 2.0 30.0 12.0 0 0 0
+phys_box root 1.0 2.0 18.5 12.0 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox1 ###########
+phys_box cdbox1 1.0 2.0 8.5 10.0 1.3 -16.0 -1
+phys_orientation 0 0 0 
+phys_cookie right_side
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox2 ###########
+phys_box cdbox2 1.0 2.0 8.5 10.0 1.3 16.0 -1
+phys_orientation 0 0 0 
+phys_cookie left_side
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox3 ###########
+phys_box cdbox3 1.0 2.0 3.0 12.0 0.65 -10.75 0
+phys_orientation 0 0 892 
+phys_cookie right_side_angled
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox4 ###########
+phys_box cdbox4 1.0 2.0 3.0 12.0 0.65 10.75 0
+phys_orientation 0 0 -892 
+phys_cookie left_side_angled
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox5 ###########
+phys_box cdbox5 1.0 2.0 4.0 2.0 1.3 -14.5 4.5
+phys_orientation 0 0 0 
+phys_cookie right_side_uppersmall
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+################ Physics Primitive expansion_barrier_force_field_cdbox6 ###########
+phys_box cdbox6 1.0 2.0 4.0 2.0 1.3 14.5 4.5
+phys_orientation 0 0 0 
+phys_cookie left_side_uppersmall
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
