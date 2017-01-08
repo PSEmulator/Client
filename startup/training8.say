@@ -1,9 +1,211 @@
-#=======================================================
-# Offline Training Mission 8
-# Dying and Respawning
-#=======================================================
+     ########################################################
+# Dying and Respawning Script
+########################################################
 
-$begin OfflineTrainingMission8
-	$levelup
+# Start the event script.
+$begin Main
+	#-----------------------------------
+	# Set up...
+	#-----------------------------------
+	$set_key_location 0 3000.0 3000.0 0.0
+	$building_info Ogma 3 3
+	$building_info Neit 3 5
+	$building_info "NW Gwydion" 3 3
+	$building_info Gwydion 4 6
+	$create_avatar "Jackson" 3533 3277 104 1010 EN male normal 1 
+	$set_orientation 1010 15000
+	$set_avatar_armor 1010 heavy
+	$freeze false
+	$create_object ams 5530 3690 61 505 1
+	$set_orientation 505 22000
+	$change_spawn_point 2 1 5529 3689 61
+	$wait 1000
+
+	#----------------------------------
+	# Start...
+	#----------------------------------
+	$text_dlg @OfflineMission8_01 25
+	$play Dying_01.mp3
+	$move_from_location 500.0
+	$sync
+
+	#-----------------------------------
+	# Bind...
+	#-----------------------------------
+	$text_dlg @OfflineMission8_02 25
+	$play Dying_02.mp3
+	$sync
+	$thaw
+	$move_from_location 2.0
+	
+	$freeze false
+	$text_dlg @OfflineMission8_03 25
+	$play Dying_03.mp3
+	$sync
+
+	#------------------------------------
+	# Use the terminal...
+	#------------------------------------
+	$thaw
+	$change_action_lock DAT 2 1
+	$change_action_lock GOT 49 1
+	$wait_on_use 49 2
+	$change_action_lock DAT 2 0
+	$change_action_lock GOT 49 0
+	$change_spawn_point 3 1 0 0 0
+	
+	
+	$freeze false
+	$text_dlg @OfflineMission8_04 25
+	$play Dying_04.mp3
+	$sync
+
+	$thaw
+	$set_waypoint 3538 3275 104 5
+	$wait_waypoint 1
+	#$face_player
+	#$fire
+	$freeze false
+
+	#-----------------------------------
+	# Die...
+	#-----------------------------------
+	$wait 1000
+	$destroy_object 15010
+	$wait 2000
+
+	#------------------------------------
+	# Show the map...
+	#------------------------------------
+	$show_respawn
+	
+	$text_dlg @OfflineMission8_05 25
+	$play Dying_05.mp3
+	$sync
+	$wait 1000
+
+	$wait_on_respawn 2
+
+	#------------------------------------
+	# Respawn at the AMS...
+	#------------------------------------
+	$set_waypoint 5520 3690 5
+	$text_dlg @OfflineMission8_06 25
+	$play Dying_06.mp3
+	$sync
+	$thaw
+	$wait_waypoint  1
+
+	$freeze false
+	$text_dlg @OfflineMission8_07 25
+	$play Dying_07.mp3
+	$sync
+
+	$set_waypoint 5510 3690 5
+	$text_dlg @OfflineMission8_08 25
+	$play Dying_08.mp3
+	$sync
+	$thaw
+	$wait_waypoint 1
+
+	$freeze false
+	$text_dlg @OfflineMission8_09 25
+	$play Dying_09.mp3
+	$sync
+
+	$set_waypoint 5520 3690 5
+	$text_dlg @OfflineMission8_10 25
+	$play Dying_10.mp3
+	$sync
+	$thaw
+	$wait_waypoint  1
+	$freeze false
+
+	$text_dlg @OfflineMission8_11 25
+	$play Dying_11.mp3
+	$sync
+	$thaw
+	$change_action_lock DAT 13 1
+	$change_action_lock DAT 0 1
+	$change_action_lock GOT 3 1
+	$wait_on_use 3 13
+	$deploy_vehicle 505 0 
+	$change_action_lock DAT 13 0
+	$change_action_lock GOT 3 0
+
+	$freeze false
+	$text_dlg @OfflineMission8_12 25
+	$play Dying_12.mp3
+	$sync
+	
+	#------------------------------------
+	# Destroy the AMS...
+	#------------------------------------
+	$wait 1500
+	$destroy_object 505
+	$change_spawn_point 2 0 0 0 0
+	$wait 500
+	$destroy_object 15010
+	$destroy_object 1010
+	$wait 2000
+	$show_respawn
+
+	$text_dlg @OfflineMission8_13 25
+	$play Dying_13.mp3
+	$sync
+
+	#------------------------------------
+	# Respawn at the Guntower...
+	#------------------------------------
+	$wait_on_respawn 4
+
+	$text_dlg @OfflineMission8_14 25
+	$play Dying_14.mp3
+	$sync
+	$thaw
+	$move_from_location 2.0
+	$freeze false
+
+	$text_dlg @OfflineMission8_15 25
+	$play Dying_15.mp3
+	$sync
+	$thaw
+	$change_action_lock DAT 6 1
+	$wait_on_use 0 6
+	$change_action_lock DAT 6 0
+
+	$text_dlg @OfflineMission8_16 25
+	$play Dying_16.mp3
+	$sync
+
+	#------------------------------------
+	# Respawn at the Ogma...
+	#------------------------------------
+	$wait_on_respawn 3
+
+	$text_dlg @OfflineMission8_17 25
+	$play Dying_17.mp3
+	$sync
+
+	#------------------------------------
+	# Recall...
+	#------------------------------------
+	$wait_until_zone -1
+
+	$set_position 15010 3088 4740 58 2
+	$set_position 15010 2858 3025 36 0
+	$set_position 15010 4714 3393 70 1
+
+	$text_dlg @OfflineMission8_18 25
+	$play Dying_18.mp3
+	$sync
+	$wait 2000
+
+    $levelup
+	$show_mission_selection
+
+	$thaw
 	$quit
 $end
+
+

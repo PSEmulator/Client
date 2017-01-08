@@ -1,0 +1,171 @@
+#=======================================================
+# Offline Training Mission 6
+# Capturing Facilities
+#=======================================================
+
+$begin OfflineTrainingMission6
+
+    # Create the first way point that the user will be running to.
+    $building_info Ghanon -1 0
+    $freeze
+    $set_waypoint 2585 3699 2
+    
+    # 1st dialogue
+    $text_dlg @OfflineMission6_01 25
+    $play Capture_01.mp3
+    $sync
+
+    # Allow the user to move
+    $thaw
+    $wait_waypoint 1
+
+    # Freeze them again for a little while...
+    $freeze false
+    
+    # 2nd dialogue
+    $text_dlg @OfflineMission6_02 25
+    $play Capture_02.mp3
+    $set_page SoldierManagement
+    $flash button_map
+    $sync
+
+    # Wait for the overhead map to be shown
+    $wait_on_show OverheadMap 1 ""
+
+    # 3rd dialogue
+    $text_dlg @OfflineMission6_03 25
+    $play Capture_03.mp3
+    $sync
+
+    # Wait for the overhead map to be hidden
+    $wait_on_show OverheadMap 0 ""
+
+    # 4th dialogue
+    $text_dlg @OfflineMission6_04 25
+    $play Capture_04.mp3
+    $sync
+
+    # Start the building cycling through ownership
+    $wait 3000
+    $building_info Ghanon 1 10
+
+    # 5th dialogue
+    $text_dlg @OfflineMission6_05 25
+    $play Capture_05.mp3
+    $sync
+
+    # Next...
+    $wait 3000
+    $building_info Ghanon 0 10
+
+    # 6th dialogue
+    $text_dlg @OfflineMission6_06 25
+    $play Capture_06.mp3
+    $sync
+
+    # Next...
+    $wait 3000
+    $building_info Ghanon 2 10
+
+    # 7th dialogue
+    $text_dlg @OfflineMission6_07 25
+    $play Capture_07.mp3
+    $sync
+
+    # Ok reset everything...
+    $wait 3000
+    $building_info Ghanon -1 0
+
+    # Give the user a rek
+    $add_inventory remote_electronics_kit
+
+    # 8th dialogue
+    $text_dlg @OfflineMission6_08 25
+    $play Capture_08.mp3
+    $sync
+
+    $building_info Ghanon 4 10
+    $thaw
+
+    # Wait for the user to equip the REK
+    $equip remote_electronics_kit
+
+    # 9th dialogue
+    $text_dlg @OfflineMission6_09 25
+    $play Capture_09.mp3
+    $sync
+
+    # Guide the player to the next way-point
+    $set_waypoint 2522 3709 2
+    $wait_waypoint 1
+    $freeze false
+
+    # 10th dialogue
+    $text_dlg @OfflineMission6_10 25
+    $play Capture_10.mp3
+    $sync
+
+    # Wait for the user to "use" the lock, which means it's been hacked
+    $thaw
+    $wait_until_hacked lock_external
+    $freeze false
+
+    # 11th dialogue
+    $text_dlg @OfflineMission6_11 25
+    $play Capture_11.mp3
+    $sync
+    $thaw
+
+    # follow internal way-points here!!!!
+	$set_waypoint 2522 3730 42 2
+	$wait_waypoint 2
+	$set_waypoint 2500 3730 45 2
+	$wait_waypoint 2
+	$set_waypoint 2487 3730 47 2
+	$wait_waypoint 2
+	$set_waypoint 2463 3726 52 2
+	$wait_waypoint 2
+	$set_waypoint 2463 3734 52 2
+	$wait_waypoint 2
+	$set_waypoint 2477 3734 57 2
+	$wait_waypoint 2
+	$set_waypoint 2477 3725 57 2
+	$wait_waypoint 2
+    
+    # 12th dialogue
+    $freeze false
+    $text_dlg @OfflineMission6_12 25
+    $play Capture_12.mp3
+    $sync
+    $thaw
+
+    # Wait for the user to hack the lock outside of the control room.
+    $wait_until_hacked lock_small
+
+    # Insert a way-point that leads user into the room!!!!
+	$set_waypoint 2485 3718 57 2
+	$wait_waypoint 2
+    
+    # 13th dialogue
+    $freeze false
+    $text_dlg @OfflineMission6_13 25
+    $play Capture_13.mp3
+    $sync
+    $thaw
+
+    # Wait for the user to hack the control terminal.
+    $wait_until_hacked capture_terminal
+    
+    # 14th dialogue
+    $freeze
+    $text_dlg @OfflineMission6_14 25
+    $play Capture_14.mp3
+    $sync
+
+    # End...
+    $wait 5000
+    $levelup
+    $show_mission_selection
+    $quit
+
+$end

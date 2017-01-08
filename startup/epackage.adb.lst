@@ -1,192 +1,15 @@
 #efp_begin
 
-##em_radar
+##ef_waypoint_personal
 
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
+efp_swap_begin nc
+efp_swap_material ef_waypoint ef_waypoint_nc
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin tr
+efp_swap_material ef_waypoint ef_waypoint_tr
 efp_swap_end
-efp_end
-
-##em_st_wall
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_tper
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_css
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_st_door
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1s_b
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1s_t
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1t_r
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1t_l
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_cfs2
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_ascr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_asmr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_tpmr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_dsp
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_barracks
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_csmr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_cfir
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_spawn
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_cfmr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
+efp_swap_begin vs
+efp_swap_material ef_waypoint ef_waypoint_vs
 efp_swap_end
 efp_end
 
@@ -203,130 +26,417 @@ efp_swap_material ef_waypoint ef_waypoint_vs
 efp_swap_end
 efp_end
 
-##ob_redlight
+##op_shuttle_light
 
-efp_swap_begin hart_red_on
-efp_swap_material nc_inside_frame+_ob_light_off hart_red2
-efp_swap_material hart_red+_ob_light_off hart_red1
-efp_swap_end
-efp_swap_begin hart_red_off
-efp_swap_material hart_red+_ob_light_off hart_red_off
+efp_swap_begin op_shuttle_depart
+efp_swap_material orb_shuttle_lights_001+null op_shuttle_depart
 efp_swap_end
 efp_end
 
-##ob_greenlight
+##em_cap
 
-efp_swap_begin hart_green_on
-efp_swap_material nc_inside_frame+_ob_light_off hart_green2
-efp_swap_material hart_green+_ob_light_off hart_green1
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
 efp_swap_end
-efp_swap_begin hart_green_off
-efp_swap_material hart_green+_ob_light_off hart_green_off
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
 efp_swap_end
 efp_end
 
-##nclite_f_head_c
+##em_t1d
 
-efp_effect helmet_glow nclite_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##nclite_f_head_b
+##em_tsec
 
-efp_effect helmet_glow nclite_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##ncmed_f_head_e
+##em_frame_t14w
 
-efp_effect helmet_glow ncmed_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##ncmed_f_head_c
+##em_frame_t1h
 
-efp_effect helmet_glow ncmed_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##ncmed_f_head_b
+##em_frame_t1t
 
-efp_effect helmet_glow ncmed_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##nclite_f_head_e
+##em_frame_t1c_r
 
-efp_effect helmet_glow nclite_glow head
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##fp_flame_spitter
+##em_frame_t1c_l
 
-efp_effect fire1 smgfire muzzle
-efp_effect fire2 smgfire muzzle
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##fp_beamer
+##vslite_f_head_e
 
-efp_effect fire1 jolt_beamer_fire1 ef_muzzlea
-efp_effect fire2 fp_beamer_fire2 ef_muzzlea
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
 efp_end
 
-##fp_chainblade
+##vslite_f_head_c
 
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
 efp_end
 
-##fp_bank
+##vslite_f_head_b
 
-efp_effect fire1 fp_bank_fire1 bank
+efp_swap_begin swap02
+efp_swap_material vs1liteh vs2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material vs1liteh vs3liteh
+efp_swap_end
 efp_end
 
-##fp_ace
+##em_cfs
 
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
 efp_end
 
-##fp_nchev_scattercannon
+##em_garage
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_tpfr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_gen
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_pod
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_generic
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##ascr_lite
+
+efp_swap_begin em_red
+efp_swap_material em_red_off em_red_on
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_yel_off em_yel_on
+efp_swap_end
+efp_end
+
+##mb_prop_monitor4
+
+efp_swap_begin nc
+efp_swap_material poster_vsc+null poster_nca
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material poster_vsc+null poster_tra
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material poster_vsc+null poster_vsc
+efp_swap_end
+efp_end
+
+##banner
+
+efp_swap_begin nc
+efp_swap_material _flag_generic+null nclogo
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _flag_generic+null trlogo
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _flag_generic+null vslogo
+efp_swap_end
+efp_end
+
+##orb_plat_banner
+
+efp_swap_begin nc
+efp_swap_material generic_flag ncflag
+efp_swap_material generic_flag+null ncflag
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material generic_flag trflag
+efp_swap_material generic_flag+null trflag
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material generic_flag vsflag
+efp_swap_material generic_flag+null vsflag
+efp_swap_end
+efp_end
+
+##20mm_cannon_t
+
+efp_effect fire2 vanguard_20mmcannon_flash ef_muzzlec
+efp_effect fire3 vanguard_20mmcannon_flash ef_muzzleb
+efp_end
+
+##20mm_cannon_f
+
+efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
+efp_end
+
+##missile_launcher_enforcer
+
+efp_effect fire1 fp_firebird_fire ef_aml_muzzlea
+efp_end
+
+##fp_hunter_seeker
+
+efp_effect fire1 jolt_hunterseeker_fire1 ef_muzzlea
+efp_end
+
+##test_terminal
+
+efp_effect damage1 damage_sparks hp_spark_001
+efp_effect damage2 damage_sparks hp_spark_002
+efp_effect damage3 damage_sparks hp_spark_003
+efp_effect damage4 damage_sparks hp_spark_004
+efp_end
+
+##20mm_cannon_p
+
+efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
+efp_effect fire2 fp_20mm_cannon_f_fire2 root
+efp_effect reload fp_20mm_cannon_f_reload root
+efp_end
+
+##ncfhevh
 
 efp_swap_begin swap00
-efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
+efp_swap_material _h nc1hevh
+efp_swap_material _skin female_face_04
 efp_swap_end
-efp_swap_begin nc1
-efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
+efp_swap_begin swap01
+efp_swap_material _h nc1hevh
+efp_swap_material _skin female_face_04
 efp_swap_end
-efp_swap_begin nc2
-efp_swap_material fp_nc1hevarmsa fp_nc_h_2_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_2_skin2
+efp_swap_begin swap02
+efp_swap_material _h nc2hevh
+efp_swap_material _skin female_face_04
 efp_swap_end
-efp_swap_begin nc3
-efp_swap_material fp_nc1hevarmsa fp_nc_h_3_skin
-efp_swap_material fp_nc1hevarmsb fp_nc_h_3_skin2
+efp_swap_begin swap03
+efp_swap_material _h nc3hevh
+efp_swap_material _skin female_face_04
 efp_swap_end
-efp_effect fire1 jolt_nchev_scattercannon_fire muzzlea
-efp_effect fire2 jolt_nchev_scattercannon_fire muzzleb
-efp_effect fire3 jolt_nchev_scattercannon_fire muzzlec
 efp_end
 
-##fp_nano_dispenser
+##fp_trhev
 
-efp_effect fire1 fp_nano_dispenser_fire1 ef_muzzlea
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr1hev
+efp_swap_end
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr2hev
+efp_swap_end
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr3hev
+efp_swap_end
+efp_effect fire1 trhev_pounder_flash ef_muzzlea_pounder_l
+efp_effect fire2 trhev_pounder_flash ef_muzzlea_pounder_r
 efp_end
 
-##fp_forceblade
+##terminal_control_core
 
-efp_effect active fp_forceblade_active ef_blood
+efp_effect damage1 damage_sparks hp_terminal_control_core_005
+efp_effect damage2 damage_sparks hp_terminal_control_core_004
+efp_effect damage3 damage_sparks hp_terminal_control_core_003
+efp_effect damage4 damage_sparks hp_terminal_control_core_002
+efp_effect damage5 damage_sparks hp_terminal_control_core_001
 efp_end
 
-##fp_medicalapplicator
+##mb_magdisk
 
+efp_effect idle magdisk_spin root
 efp_end
 
-##fp_magcutter
+##mb_meet_monitor
 
+efp_swap_begin nc
+efp_swap_material poster_nca+null poster_nca
+efp_swap_material poster_ncb+null poster_ncb
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material poster_nca+null poster_tra
+efp_swap_material poster_ncb+null poster_trb
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material poster_nca+null poster_vsa
+efp_swap_material poster_ncb+null poster_vsb
+efp_swap_end
 efp_end
 
-##fp_remote_electronics_kit
+##mb_prop_monitor3
 
-efp_effect fire1 fp_rek_fire1 ef_muzzlea
+efp_swap_begin nc
+efp_swap_material poster_ncb+null poster_ncb
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material poster_ncb+null poster_trb
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material poster_ncb+null poster_vsb
+efp_swap_end
 efp_end
 
-##fp_vshev_starfire
+##br_entertain
+
+efp_swap_begin nc
+efp_swap_material complete_alpha+null bink_logo_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material complete_alpha+null bink_logo_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material complete_alpha+null bink_logo_vs
+efp_swap_end
+efp_end
+
+##spawn_h_middle
+
+efp_effect default dual_headlight hp_spawn_h_middle_001
+efp_end
+
+##tech_banner_flag_small
+
+efp_swap_begin nc
+efp_swap_material _flag_generic2+null nclogo2
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _flag_generic2+null trlogo2
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _flag_generic2+null vslogo2
+efp_swap_end
+efp_end
+
+##fp_trhev_burster
+
+efp_swap_begin swap00
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_end
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_end
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr_h_2_skin
+efp_swap_end
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr_h_3_skin
+efp_swap_end
+efp_effect fire1 jolt_trhev_burster_fire ef_muzzlea
+efp_effect fire2 jolt_trhev_burster_fire ef_muzzleb
+efp_end
+
+##fp_trhev_pounder
+
+efp_swap_begin swap00
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_end
+efp_swap_begin tr1
+efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_end
+efp_swap_begin tr2
+efp_swap_material fp_tr1hev fp_tr_h_2_skin
+efp_swap_end
+efp_swap_begin tr3
+efp_swap_material fp_tr1hev fp_tr_h_3_skin
+efp_swap_end
+efp_effect fire1 jolt_trhev_pounder_fire ef_muzzlea_pounder_l
+efp_effect fire2 jolt_trhev_pounder_fire ef_muzzlea_pounder_r
+efp_end
+
+##fp_vshev_quasar
 
 efp_swap_begin swap00
 efp_swap_material fp_vs1hevaemsa fp_vs_h_1_skin
@@ -340,7 +450,7 @@ efp_swap_end
 efp_swap_begin vs3
 efp_swap_material fp_vs1hevaemsa fp_vs_h_3_skin
 efp_swap_end
-efp_effect fire1 jolt_vshev_starfire_fire muzzlea
+efp_effect fire1 jolt_vshev_quasar_fire ef_muzzlea
 efp_end
 
 ##fp_nchev_sparrow
@@ -367,7 +477,7 @@ efp_effect fire3 jolt_nchev_sparrow_fire muzzled
 efp_effect fire4 jolt_nchev_sparrow_fire muzzlec
 efp_end
 
-##fp_vshev_quasar
+##fp_vshev_starfire
 
 efp_swap_begin swap00
 efp_swap_material fp_vs1hevaemsa fp_vs_h_1_skin
@@ -381,436 +491,456 @@ efp_swap_end
 efp_swap_begin vs3
 efp_swap_material fp_vs1hevaemsa fp_vs_h_3_skin
 efp_swap_end
-efp_effect fire1 jolt_vshev_quasar_fire ef_muzzlea
+efp_effect fire1 jolt_vshev_starfire_fire muzzlea
 efp_end
 
-##fp_trhev_pounder
+##fp_remote_electronics_kit
+
+efp_effect fire1 fp_rek_fire1 ef_muzzlea
+efp_end
+
+##fp_magcutter
+
+efp_end
+
+##fp_medicalapplicator
+
+efp_end
+
+##fp_forceblade
+
+efp_effect active fp_forceblade_active ef_blood
+efp_end
+
+##fp_nano_dispenser
+
+efp_effect fire1 fp_nano_dispenser_fire1 ef_muzzlea
+efp_end
+
+##fp_nchev_scattercannon
 
 efp_swap_begin swap00
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
 efp_swap_end
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
+efp_swap_begin nc1
+efp_swap_material fp_nc1hevarmsa fp_nc_h_1_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_1_skin2
 efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr_h_2_skin
+efp_swap_begin nc2
+efp_swap_material fp_nc1hevarmsa fp_nc_h_2_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_2_skin2
 efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr_h_3_skin
+efp_swap_begin nc3
+efp_swap_material fp_nc1hevarmsa fp_nc_h_3_skin
+efp_swap_material fp_nc1hevarmsb fp_nc_h_3_skin2
 efp_swap_end
-efp_effect fire1 jolt_trhev_pounder_fire ef_muzzlea_pounder_l
-efp_effect fire2 jolt_trhev_pounder_fire ef_muzzlea_pounder_r
+efp_effect fire1 jolt_nchev_scattercannon_fire muzzlea
+efp_effect fire2 jolt_nchev_scattercannon_fire muzzleb
+efp_effect fire3 jolt_nchev_scattercannon_fire muzzlec
 efp_end
 
-##fp_trhev_burster
+##fp_ace
+
+efp_end
+
+##fp_bank
+
+efp_effect fire1 fp_bank_fire1 bank
+efp_end
+
+##fp_chainblade
+
+efp_end
+
+##fp_beamer
+
+efp_effect fire1 jolt_beamer_fire1 ef_muzzlea
+efp_effect fire2 fp_beamer_fire2 ef_muzzlea
+efp_end
+
+##fp_flame_spitter
+
+efp_effect fire1 smgfire muzzle
+efp_effect fire2 smgfire muzzle
+efp_end
+
+##nclite_f_head_e
 
 efp_swap_begin swap00
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
-efp_swap_end
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr_h_1_skin
-efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr_h_2_skin
-efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr_h_3_skin
-efp_swap_end
-efp_effect fire1 jolt_trhev_burster_fire ef_muzzlea
-efp_effect fire2 jolt_trhev_burster_fire ef_muzzleb
-efp_end
-
-##tech_banner_flag_small
-
-efp_swap_begin nc
-efp_swap_material _flag_generic2+null nclogo2
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _flag_generic2+null trlogo2
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _flag_generic2+null vslogo2
-efp_swap_end
-efp_end
-
-##spawn_h_middle
-
-efp_effect default dual_headlight hp_spawn_h_middle_001
-efp_end
-
-##br_entertain
-
-efp_swap_begin nc
-efp_swap_material complete_alpha+null bink_logo_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material complete_alpha+null bink_logo_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material complete_alpha+null bink_logo_vs
-efp_swap_end
-efp_end
-
-##mb_prop_monitor3
-
-efp_swap_begin nc
-efp_swap_material poster_ncb+null poster_ncb
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material poster_ncb+null poster_trb
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material poster_ncb+null poster_vsb
-efp_swap_end
-efp_end
-
-##mb_meet_monitor
-
-efp_swap_begin nc
-efp_swap_material poster_nca+null poster_nca
-efp_swap_material poster_ncb+null poster_ncb
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material poster_nca+null poster_tra
-efp_swap_material poster_ncb+null poster_trb
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material poster_nca+null poster_vsa
-efp_swap_material poster_ncb+null poster_vsb
-efp_swap_end
-efp_end
-
-##mb_magdisk
-
-efp_effect idle magdisk_spin root
-efp_end
-
-##terminal_control_core
-
-efp_effect damage1 damage_sparks hp_terminal_control_core_005
-efp_effect damage2 damage_sparks hp_terminal_control_core_004
-efp_effect damage3 damage_sparks hp_terminal_control_core_003
-efp_effect damage4 damage_sparks hp_terminal_control_core_002
-efp_effect damage5 damage_sparks hp_terminal_control_core_001
-efp_end
-
-##fp_trhev
-
-efp_swap_begin tr1
-efp_swap_material fp_tr1hev fp_tr1hev
-efp_swap_end
-efp_swap_begin tr2
-efp_swap_material fp_tr1hev fp_tr2hev
-efp_swap_end
-efp_swap_begin tr3
-efp_swap_material fp_tr1hev fp_tr3hev
-efp_swap_end
-efp_effect fire1 trhev_pounder_flash ef_muzzlea_pounder_l
-efp_effect fire2 trhev_pounder_flash ef_muzzlea_pounder_r
-efp_end
-
-##ncfhevh
-
-efp_swap_begin swap00
-efp_swap_material _h nc1hevh
-efp_swap_material _skin female_face_04
+efp_swap_material nc1liteh nc2liteh
 efp_swap_end
 efp_swap_begin swap01
-efp_swap_material _h nc1hevh
-efp_swap_material _skin female_face_04
+efp_swap_material nc1liteh nc3liteh
 efp_swap_end
+efp_effect helmet_glow nclite_glow head
+efp_end
+
+##ncmed_f_head_b
+
 efp_swap_begin swap02
-efp_swap_material _h nc2hevh
-efp_swap_material _skin female_face_04
+efp_swap_material nc1medh nc2medh
 efp_swap_end
 efp_swap_begin swap03
-efp_swap_material _h nc3hevh
-efp_swap_material _skin female_face_04
+efp_swap_material nc1medh nc3medh
 efp_swap_end
+efp_effect helmet_glow ncmed_glow head
 efp_end
 
-##20mm_cannon_p
+##ncmed_f_head_c
 
-efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
-efp_effect fire2 fp_20mm_cannon_f_fire2 root
-efp_effect reload fp_20mm_cannon_f_reload root
+efp_swap_begin swap02
+efp_swap_material nc1medh nc2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1medh nc3medh
+efp_swap_end
+efp_effect helmet_glow ncmed_glow head
 efp_end
 
-##test_terminal
-
-efp_effect damage1 damage_sparks hp_spark_001
-efp_effect damage2 damage_sparks hp_spark_002
-efp_effect damage3 damage_sparks hp_spark_003
-efp_effect damage4 damage_sparks hp_spark_004
-efp_end
-
-##fp_hunter_seeker
-
-efp_effect fire1 jolt_hunterseeker_fire1 ef_muzzlea
-efp_end
-
-##missile_launcher_enforcer
-
-efp_effect fire1 fp_firebird_fire ef_aml_muzzlea
-efp_end
-
-##20mm_cannon_f
-
-efp_effect fire1 fp_20mm_cannon_f_fire1 muzzlea
-efp_end
-
-##20mm_cannon_t
-
-efp_effect fire2 vanguard_20mmcannon_flash ef_muzzlec
-efp_effect fire3 vanguard_20mmcannon_flash ef_muzzleb
-efp_end
-
-##orb_plat_banner
-
-efp_swap_begin nc
-efp_swap_material generic_flag ncflag
-efp_swap_material generic_flag+null ncflag
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material generic_flag trflag
-efp_swap_material generic_flag+null trflag
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material generic_flag vsflag
-efp_swap_material generic_flag+null vsflag
-efp_swap_end
-efp_end
-
-##ef_waypoint_personal
-
-efp_swap_begin nc
-efp_swap_material ef_waypoint ef_waypoint_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material ef_waypoint ef_waypoint_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material ef_waypoint ef_waypoint_vs
-efp_swap_end
-efp_end
-
-##banner
-
-efp_swap_begin nc
-efp_swap_material _flag_generic+null nclogo
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _flag_generic+null trlogo
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _flag_generic+null vslogo
-efp_swap_end
-efp_end
-
-##mb_prop_monitor4
-
-efp_swap_begin nc
-efp_swap_material poster_vsc+null poster_nca
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material poster_vsc+null poster_tra
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material poster_vsc+null poster_vsc
-efp_swap_end
-efp_end
-
-##ascr_lite
-
-efp_swap_begin em_red
-efp_swap_material em_red_off em_red_on
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_yel_off em_yel_on
-efp_swap_end
-efp_end
-
-##em_generic
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_pod
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_gen
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_tpfr
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_garage
-
-efp_swap_begin em_red
-efp_swap_material em_light+null em_light_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_light+null em_light_yellow
-efp_swap_end
-efp_end
-
-##em_cfs
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##vslite_f_head_b
+##ncmed_f_head_e
 
 efp_swap_begin swap00
+efp_swap_material nc1medh nc2medh
 efp_swap_end
 efp_swap_begin swap01
-efp_swap_material vs1liteh vs2liteh
+efp_swap_material nc1medh nc3medh
 efp_swap_end
+efp_effect helmet_glow ncmed_glow head
+efp_end
+
+##nclite_f_head_b
+
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material nc1liteh nc2liteh
 efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1liteh nc3liteh
+efp_swap_end
+efp_effect helmet_glow nclite_glow head
 efp_end
 
-##vslite_f_head_c
+##nclite_f_head_c
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material vs1liteh vs2liteh
-efp_swap_end
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material nc1liteh nc2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1liteh nc3liteh
+efp_swap_end
+efp_effect helmet_glow nclite_glow head
+efp_end
+
+##ob_greenlight
+
+efp_swap_begin hart_green_on
+efp_swap_material nc_inside_frame+_ob_light_off hart_green2
+efp_swap_material hart_green+_ob_light_off hart_green1
+efp_swap_end
+efp_swap_begin hart_green_off
+efp_swap_material hart_green+_ob_light_off hart_green+_ob_light_off
 efp_swap_end
 efp_end
 
-##vslite_f_head_e
+##ob_redlight
 
-efp_swap_begin swap00
+efp_swap_begin hart_red_on
+efp_swap_material nc_inside_frame+_ob_light_off hart_red2
+efp_swap_material hart_red+_ob_light_off hart_red1
 efp_swap_end
-efp_swap_begin swap01
-efp_swap_material vs1liteh vs2liteh
+efp_swap_begin hart_red_off
+efp_swap_material hart_red+_ob_light_off hart_red+_ob_light_off
 efp_swap_end
+efp_end
+
+##em_cfmr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_spawn
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_cfir
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_csmr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_barracks
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_dsp
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_tpmr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_asmr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_ascr
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_cfs2
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1t_l
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1t_r
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1s_t
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_frame_t1s_b
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_st_door
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_css
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_tper
+
+efp_swap_begin em_red
+efp_swap_material em_star+null em_star_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_star+null em_star_yellow
+efp_swap_end
+efp_end
+
+##em_st_wall
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##em_radar
+
+efp_swap_begin em_red
+efp_swap_material em_light+null em_light_red
+efp_swap_end
+efp_swap_begin em_yellow
+efp_swap_material em_light+null em_light_yellow
+efp_swap_end
+efp_end
+
+##nchev_f_head_b
+
 efp_swap_begin swap02
-efp_swap_material vs1liteh vs3liteh
+efp_swap_material nc1hevh nc2hevh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
 efp_swap_end
 efp_end
 
-##em_frame_t1c_l
+##nchev_f_head_c
 
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
+efp_swap_begin swap02
+efp_swap_material nc1hevh nc2hevh
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1c_r
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
 efp_swap_end
 efp_end
 
-##em_frame_t1t
+##nchev_f_head_e
 
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
+efp_swap_begin swap02
+efp_swap_material nc1hevh nc2hevh
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_frame_t1h
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
+efp_swap_begin swap03
+efp_swap_material nc1hevh nc3hevh
 efp_swap_end
 efp_end
 
-##em_frame_t14w
+##trlite_f_head_b
 
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_tsec
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
 efp_swap_end
 efp_end
 
-##em_t1d
+##trlite_f_head_c
 
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
 efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
-efp_swap_end
-efp_end
-
-##em_cap
-
-efp_swap_begin em_red
-efp_swap_material em_star+null em_star_red
-efp_swap_end
-efp_swap_begin em_yellow
-efp_swap_material em_star+null em_star_yellow
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
 efp_swap_end
 efp_end
 
-##op_shuttle_light
+##trlite_f_head_e
 
-efp_swap_begin op_shuttle_depart
-efp_swap_material orb_shuttle_lights_001+null op_shuttle_depart
+efp_swap_begin swap02
+efp_swap_material tr1liteh tr2liteh
 efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1liteh tr3liteh
+efp_swap_end
+efp_end
+
+##trmed_f_head_b
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
+efp_swap_end
+efp_end
+
+##trmed_f_head_c
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
+efp_swap_end
+efp_end
+
+##trmed_f_head_e
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
+efp_swap_end
+efp_end
+
+##medical_applicator
+
+efp_effect fire1 fp_medical_applicator_fire1 medical_applicator
+efp_end
+
+##hologram_base
+
+efp_effect idle warp_hologram root
 efp_end
 
 ##banner_mount
@@ -823,6 +953,16 @@ efp_swap_material _flag_generic+null trlogo
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material _flag_generic+null vslogo
+efp_swap_end
+efp_end
+
+##trlite_m_head_c
+
+efp_swap_begin swap02
+efp_swap_material tr1lite_h tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1lite_h tr3liteh
 efp_swap_end
 efp_end
 
@@ -934,17 +1074,21 @@ efp_end
 
 ##vsfmedh
 
-efp_swap_begin swap00
-efp_swap_material vs1mmedh vs1mmedh
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material vs1mmedh vs1mmedh
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material vs1mmedh vs2mmedh
 efp_swap_end
 efp_swap_begin swap03
 efp_swap_material vs1mmedh vs3mmedh
+efp_swap_end
+efp_end
+
+##trmed_m_head_c
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
@@ -963,24 +1107,20 @@ efp_end
 
 ##vslite_m_head_b
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
+efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
 efp_swap_end
-efp_swap_begin swap02
+efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
 efp_swap_end
 efp_end
 
 ##vslite_m_head_d
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
+efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
 efp_swap_end
-efp_swap_begin swap02
+efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
 efp_swap_end
 efp_end
@@ -1013,6 +1153,16 @@ efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
+##trmed_m_head_b
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
+efp_swap_end
+efp_end
+
 ##nchev_f_head_a
 
 efp_swap_begin swap02
@@ -1020,6 +1170,16 @@ efp_swap_material nc1hevh nc2hevh
 efp_swap_end
 efp_swap_begin swap03
 efp_swap_material nc1hevh nc3hevh
+efp_swap_end
+efp_end
+
+##trlite_m_head_d
+
+efp_swap_begin swap02
+efp_swap_material tr1lite_h tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1lite_h tr3liteh
 efp_swap_end
 efp_end
 
@@ -1031,23 +1191,16 @@ efp_end
 
 ##vslite_m_head_a
 
-efp_swap_begin swap01
-efp_swap_material visor vsvisor
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
-efp_swap_material visor vsvisor
 efp_swap_end
 efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
-efp_swap_material visor vsvisor
 efp_swap_end
 efp_end
 
 ##trlite_m_head_a
 
-efp_swap_begin swap01
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material tr1lite_h tr2liteh
 efp_swap_end
@@ -1110,6 +1263,16 @@ efp_swap_material nc1hevh nc3hevh
 efp_swap_end
 efp_end
 
+##trmed_f_head_d
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
+efp_swap_end
+efp_end
+
 ##nclite_f_head_a
 
 efp_swap_begin swap02
@@ -1142,6 +1305,16 @@ efp_swap_material _flag_generic2+null trlogo2
 efp_swap_end
 efp_swap_begin vs
 efp_swap_material _flag_generic2+null vslogo2
+efp_swap_end
+efp_end
+
+##trlite_m_head_e
+
+efp_swap_begin swap02
+efp_swap_material tr1lite_h tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1lite_h tr3liteh
 efp_swap_end
 efp_end
 
@@ -1214,12 +1387,10 @@ efp_end
 
 ##vslite_m_head_c
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
+efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
 efp_swap_end
-efp_swap_begin swap02
+efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
 efp_swap_end
 efp_end
@@ -1237,23 +1408,16 @@ efp_end
 
 ##vslite_f_head_a
 
-efp_swap_begin swap01
-efp_swap_material visor vsvisor
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
-efp_swap_material visor vsvisor
 efp_swap_end
 efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
-efp_swap_material visor vsvisor
 efp_swap_end
 efp_end
 
 ##trlite_f_head_a
 
-efp_swap_begin swap01
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material tr1liteh tr2liteh
 efp_swap_end
@@ -1282,13 +1446,21 @@ efp_end
 
 ##vslite_m_head_e
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
+efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
 efp_swap_end
-efp_swap_begin swap02
+efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
+efp_swap_end
+efp_end
+
+##trmed_m_head_d
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
@@ -1316,6 +1488,16 @@ efp_swap_material tr1liteh tr3liteh
 efp_swap_end
 efp_end
 
+##trlite_m_head_b
+
+efp_swap_begin swap02
+efp_swap_material tr1lite_h tr2liteh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1lite_h tr3liteh
+efp_swap_end
+efp_end
+
 ##nchev_m_head_e
 
 efp_swap_begin swap02
@@ -1323,6 +1505,16 @@ efp_swap_material nc1hevh nc2hevh
 efp_swap_end
 efp_swap_begin swap03
 efp_swap_material nc1hevh nc3hevh
+efp_swap_end
+efp_end
+
+##trmed_m_head_e
+
+efp_swap_begin swap02
+efp_swap_material tr1med_h tr2medh
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1med_h tr3medh
 efp_swap_end
 efp_end
 
@@ -1362,12 +1554,6 @@ efp_end
 
 ##vsmmedh
 
-efp_swap_begin swap00
-efp_swap_material vs1mmedh vs1mmedh
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material vs1mmedh vs1mmedh
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material vs1mmedh vs2mmedh
 efp_swap_end
@@ -1574,10 +1760,6 @@ efp_end
 
 ##trlite_f_head_d
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material tr1liteh tr2liteh
 efp_swap_end
@@ -1662,20 +1844,16 @@ efp_end
 
 ##vslite_f_head_d
 
-efp_swap_begin swap00
-efp_swap_end
-efp_swap_begin swap01
+efp_swap_begin swap02
 efp_swap_material vs1liteh vs2liteh
 efp_swap_end
-efp_swap_begin swap02
+efp_swap_begin swap03
 efp_swap_material vs1liteh vs3liteh
 efp_swap_end
 efp_end
 
 ##vshevh
 
-efp_swap_begin swap01
-efp_swap_end
 efp_swap_begin swap02
 efp_swap_material vs1heva vs2heva
 efp_swap_end
@@ -1801,11 +1979,6 @@ efp_end
 efp_effect fire1 fp_nchev_falcon_fire muzzlea
 efp_end
 
-##medical_applicator
-
-efp_effect fire1 fp_medical_applicator_fire1 medical_applicator
-efp_end
-
 ##ilc9_pistol
 
 efp_effect null ilc9_pistol_bullet_fire muzzlea
@@ -1822,6 +1995,1395 @@ efp_end
 ##manned_turret_destroyed
 
 efp_effect explosion detonate_mannedturret turret_base
+efp_end
+
+##ground_vehicle_terminal
+
+efp_effect damage1 damage_sparks hp_ground_vehicle_terminal_006
+efp_effect damage2 damage_sparks hp_ground_vehicle_terminal_005
+efp_effect damage3 damage_sparks hp_ground_vehicle_terminal_004
+efp_effect damage4 damage_sparks hp_ground_vehicle_terminal_003
+efp_effect damage5 damage_sparks hp_ground_vehicle_terminal_002
+efp_effect damage6 damage_sparks hp_ground_vehicle_terminal_001
+efp_end
+
+##hunterseeker
+
+efp_effect fire1 fp_hunterseeker_fire1 muzzlea
+efp_end
+
+##generator
+
+efp_effect idle example_script_spin root
+efp_effect power_up example_spin_up root
+efp_effect power_down example_spin_down root
+efp_effect init generator_init root
+efp_effect generator_electric generator_electric root
+efp_end
+
+##forceblade
+
+efp_effect active forceblade_active ef_blood
+efp_end
+
+##gauss
+
+efp_effect fire1 fp_gauss_fire1 muzzlea
+efp_end
+
+##ncmsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1msi nc1msi
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1msi nc1msi
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera001 clod_soldierb001
+efp_swap_material nc1msi nc2msi
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera001 clod_soldierc001
+efp_swap_material nc1msi nc3msi
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##adv_med_terminal
+
+efp_swap_begin nc
+efp_swap_material adv_med_term_lites+null advmed_lites_nc
+efp_swap_material adv_med_term+null advmed_nc
+efp_swap_material circuits01+null circuits01_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material adv_med_term_lites+null advmed_lites_tr
+efp_swap_material adv_med_term+null advmed_tr
+efp_swap_material circuits01+null circuits01_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material adv_med_term_lites+null advmed_lites_vs
+efp_swap_material adv_med_term+null advmed_vs
+efp_swap_material circuits01+null circuits01_vs
+efp_swap_end
+efp_effect damage1 damage_sparks hp_adv_med_terminal_001
+efp_effect damage2 damage_sparks hp_adv_med_terminal_006
+efp_effect damage3 damage_sparks hp_adv_med_terminal_005
+efp_effect damage4 damage_sparks hp_adv_med_terminal_004
+efp_effect damage5 damage_sparks hp_adv_med_terminal_003
+efp_effect damage6 damage_sparks hp_adv_med_terminal_002
+efp_effect active adv_med_term hp_adv_med_terminal_007
+efp_end
+
+##isp
+
+efp_effect fire1 fp_isp_fire1 muzzlea
+efp_end
+
+##bolt_driver
+
+efp_effect fire1 fp_bolt_driver_fire1 muzzlea
+efp_effect glow boltdriver_glow eject
+efp_end
+
+##fp_pulsar
+
+efp_effect fire1 fp_pulsar_fire1 ef_muzzlea
+efp_effect fire2 fp_pulsar_fire2 ef_muzzlea
+efp_end
+
+##suppressor
+
+efp_effect fire1 fp_suppressor_fire1 muzzlea
+efp_end
+
+##dropship_vehicle_terminal
+
+efp_swap_begin nc
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
+efp_swap_material vehicterm_fx1+null vehicterm_nc
+efp_swap_material circuits01+null circuits01_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
+efp_swap_material vehicterm_fx1+null vehicterm_tr
+efp_swap_material circuits01+null circuits01_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
+efp_swap_material vehicterm_fx1+null vehicterm_vs
+efp_swap_material circuits01+null circuits01_vs
+efp_swap_end
+efp_end
+
+##fp_gauss
+
+efp_effect fire1 jolt_gauss_fire1 ef_muzzlea
+efp_end
+
+##vsfsth
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1fsth vs1fsth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1fsth vs1fsth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera007 clod_soldierb007
+efp_swap_material vs1fsth vs2fsth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera007 clod_soldierc007
+efp_swap_material vs1fsth vs3fsth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##wardoginfant
+
+efp_swap_begin membrane
+efp_swap_end
+efp_swap_begin sine_wave
+efp_swap_material wardoginfant wardoginfant_sine_wave
+efp_swap_end
+efp_swap_begin simple
+efp_swap_material wardoginfant wardoginfant_simple
+efp_swap_end
+efp_end
+
+##beamer
+
+efp_effect fire1 fp_beamer_fire1 muzzlea
+efp_effect fire2 fp_beamer_fire2 muzzlea
+efp_end
+
+##locker_cryo
+
+efp_swap_begin nc
+efp_swap_material _locker_term+locker_terminal locker_term_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _locker_term+locker_terminal locker_term_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _locker_term+locker_terminal locker_term_vs
+efp_swap_end
+efp_end
+
+##grenade
+
+efp_effect smoke fire4 grenade
+efp_effect hit_effect grenade_explode grenade
+efp_end
+
+##trflite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material tr1flite tr1flite
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material tr1flite tr1flite
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera004 clod_soldierb004
+efp_swap_material tr1flite tr2flite
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera004 clod_soldierc004
+efp_swap_material tr1flite tr3flite
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##150mm_cannon_vanguard
+
+efp_effect fire1 fp_150mm_cannon_t_fire1 ef_muzzle
+efp_end
+
+##chameleonelder
+
+efp_swap_begin membrane
+efp_swap_material wardoginfant bmp_dsrtrock34
+efp_swap_end
+efp_end
+
+##fp_cycler
+
+efp_effect fire1 jolt_cycler_fire1 muzzlea_l1
+efp_effect fire2 jolt_cycler_fire1 muzzleb_l1
+efp_end
+
+##fp_ilc9
+
+efp_effect fire1 jolt_ilc9_fire1 ef_muzzlea
+efp_end
+
+##vsmsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material vs1msi vs1msi
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material vs1msi vs1msi
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera006 clod_soldierb006
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material vs1msi vs2msi
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera006 clod_soldierc006
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material vs1msi vs3msi
+efp_swap_end
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_end
+
+##phalanx_sgl_hevgatcan
+
+efp_swap_begin des
+efp_swap_material phalanx128lod mannedturret_des
+efp_swap_material phalanx256 mannedturret_des
+efp_swap_material phalanx128 mannedturret_des
+efp_swap_end
+efp_swap_begin normal
+efp_swap_end
+efp_effect fire1 phalanx_sgl_muzzle_flash ef_muzzleflash
+efp_end
+
+##lasher
+
+efp_effect fire1 fp_lasher_fire1 muzzlea
+efp_end
+
+##grenade_launcher_marauder
+
+efp_effect fire1 fp_grenade_launcher_marauder_fire ef_muzzle
+efp_end
+
+##spitfire_weapon
+
+efp_effect fire1 spitfire_turret_fire ef_muzzlea
+efp_effect fire2 spitfire_turret_fire ef_muzzleb
+efp_end
+
+##thumper
+
+efp_effect fire1 fp_thumper_fire1 muzzlea
+efp_effect fire2 fp_thumper_fire1 muzzlea
+efp_end
+
+##trmlite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material tr1mlite tr1mlite
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material tr1mlite tr1mlite
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera003 clod_soldierb003
+efp_swap_material tr1mlite tr2mlite
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera003 clod_soldierc003
+efp_swap_material tr1mlite tr3mlite
+efp_hidden decal
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##rotarychaingun_mosquito
+
+efp_effect fire1 mosquito_chaingun_muzzle_flash ef_muzzle
+efp_end
+
+##fp_thumper
+
+efp_effect fire1 jolt_thumper_fire1 ef_muzzlea
+efp_effect fire2 jolt_thumper_fire1 ef_muzzlea
+efp_end
+
+##amp_station
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_end
+efp_end
+
+##opbasemesh
+
+efp_swap_begin nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material shuttle_nc_1 shuttle_tr_1
+efp_swap_material shuttle_nc_2 shuttle_tr_2
+efp_swap_material shuttle_nc_3 shuttle_tr_3
+efp_swap_material shuttle_nc_4 shuttle_tr_4
+efp_swap_material logo_nc logo_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material shuttle_nc_1 shuttle_vs_1
+efp_swap_material shuttle_nc_2 shuttle_vs_2
+efp_swap_material shuttle_nc_3 shuttle_vs_3
+efp_swap_material shuttle_nc_4 shuttle_vs_4
+efp_swap_material logo_nc logo_vs
+efp_swap_end
+efp_end
+
+##ncmsth
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1msth nc1msth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1msth nc1msth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera001 clod_soldierb001
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material nc1msth nc2msth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera001 clod_soldierc001
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material nc1msth nc3msth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_isp
+
+efp_effect fire1 jolt_isp_fire1 muzzlea
+efp_end
+
+##flux_cannon_thresher
+
+efp_effect fire1 flux_cannon_thresher_fire ef_fluxcannon_muzzlea
+efp_end
+
+##nchev
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1hev1 nc1hev1
+efp_swap_material nc1hev2 nc1hev2
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1hev1 nc1hev1
+efp_swap_material nc1hev2 nc1hev2
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera003 clod_soldierb003
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material nc1hev1 nc2hev1
+efp_swap_material nc1hev2 nc2hev2
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera003 clod_soldierc003
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material nc1hev1 nc3hev1
+efp_swap_material nc1hev2 nc3hev2
+efp_swap_end
+efp_effect glow1 nchev_lite ef_lite_l
+efp_effect glow2 nchev_lite ef_lite_r
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##trmmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material tr1mmed tr1mmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material tr1mmed tr1mmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera004 clod_soldierb004
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material tr1mmed tr2mmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera004 clod_soldierc004
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material tr1mmed tr3mmed
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##pad_landing
+
+efp_swap_begin gen
+efp_swap_material landing_platform landing_pad
+efp_swap_end
+efp_end
+
+##remote_electronics_kit
+
+efp_effect fire1 fp_rek_fire1 ef_rek
+efp_end
+
+##chaingun_p
+
+efp_effect fire1 fp_chaingun_p_fire1 muzzlea
+efp_effect fire2 fp_chaingun_p_fire1 muzzlea
+efp_end
+
+##tower_b
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_material wall_building+null wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_material wall_building+null wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_material wall_building+null wall_building_vs
+efp_swap_end
+efp_end
+
+##tower_c
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_material wall_building+null wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_material wall_building+null wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_material wall_building+null wall_building_vs
+efp_swap_end
+efp_end
+
+##20mm_cannon_dropship_l
+
+efp_effect fire1 fp_20mm_cannon_f_fire1 ef_20mm_muzzle
+efp_end
+
+##striker
+
+efp_effect fire1 fp_striker_fire1 muzzlea
+efp_effect fire2 fp_striker_fire1 muzzlea
+efp_end
+
+##fp_repeater
+
+efp_effect fire1 jolt_repeater_fire1 ef_muzzlea
+efp_end
+
+##secondary_capture
+
+efp_swap_begin nc
+efp_swap_material circuits01+null circuits01_nc
+efp_swap_material capture_term+null capterm_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material circuits01+null circuits01_tr
+efp_swap_material capture_term+null capterm_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material circuits01+null circuits01_vs
+efp_swap_material capture_term+null capterm_vs
+efp_swap_end
+efp_end
+
+##orbital_station
+
+efp_swap_begin nc
+efp_swap_material orbital_airlock orbital_airlock_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material orbital_airlock orbital_airlock_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material orbital_airlock orbital_airlock_vs
+efp_swap_end
+efp_end
+
+##vsflite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1flite vs1flite
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1flite vs1flite
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera007 clod_soldierb007
+efp_swap_material vs1flite vs2flite
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera007 clod_soldierc007
+efp_swap_material vs1flite vs3flite
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##ilc9
+
+efp_effect fire1 fp_ilc9_fire1 muzzlea
+efp_end
+
+##magcutter
+
+efp_end
+
+##fp_lancer
+
+efp_effect fire1 jolt_lancer_fire1 ef_muzzlea
+efp_end
+
+##pulsar
+
+efp_effect fire1 fp_pulsar_fire1 muzzlea
+efp_effect fire2 fp_pulsar_fire2 muzzlea
+efp_end
+
+##obbasemesh
+
+efp_effect lights1 orbital_building_flashing_lights root
+efp_effect lights2 orbital_building_flashing_lights root
+efp_effect lights3 orbital_building_flashing_lights root
+efp_effect lights4 orbital_building_flashing_lights root
+efp_effect lights5 orbital_building_flashing_lights root
+efp_effect lights6 orbital_building_flashing_lights root
+efp_effect lights7 orbital_building_flashing_lights root
+efp_effect lights8 orbital_building_flashing_lights root
+efp_end
+
+##advanced_missile_launcher_t
+
+efp_swap_begin swap00
+efp_swap_end
+efp_effect fire1 fp_adv_missle_launch_fire1 ef_aml_muzzlea
+efp_end
+
+##fp_lasher
+
+efp_effect fire1 fp_lasher_fire1 ef_muzzlea
+efp_end
+
+##fp_hunterseeker
+
+efp_effect fire1 fp_hunterseeker_fire1 ef_muzzlea
+efp_end
+
+##105mm_cannon_dropship_l
+
+efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
+efp_end
+
+##ncflite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1flite nc1flite
+efp_swap_material decal oi_decal01_nc
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1flite nc1flite
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera002 clod_soldierb002
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material nc1flite nc2flite
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera002 clod_soldierc002
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material nc1flite nc3flite
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_r_shotgun
+
+efp_effect fire1 jolt_r_shotgun_fire1 ef_muzzlea
+efp_effect fire2 jolt_r_shotgun_fire1 ef_muzzlea
+efp_end
+
+##vsfsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material vs1fsi vs1fsi
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material vs1fsi vs1fsi
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera007 clod_soldierb007
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material vs1fsi vs2fsi
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera007 clod_soldierc007
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material vs1fsi vs3fsi
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##vsfmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1fmed vs1fmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera007 clod_soldiera007
+efp_swap_material vs1fmed vs1fmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera007 clod_soldierb007
+efp_swap_material vs1fmed vs2fmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera007 clod_soldierc007
+efp_swap_material vs1fmed vs3fmed
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_suppressor
+
+efp_effect fire1 jolt_suppressor_fire1 ef_muzzlea
+efp_end
+
+##ncmlite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1mlite nc1mlite
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1mlite nc1mlite
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera001 clod_soldierb001
+efp_swap_material nc1mlite nc2mlite
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera001 clod_soldierc001
+efp_swap_material nc1mlite nc3mlite
+efp_swap_end
+efp_effect implant_surge surge_implant_effect bip01_footsteps
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##cryo_facility
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_end
+efp_end
+
+##comm_station
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_end
+efp_end
+
+##vshev
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera008 clod_soldiera008
+efp_swap_material vs1heva vs1heva
+efp_swap_material vs1hevb vs1hevb
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera008 clod_soldiera008
+efp_swap_material vs1heva vs1heva
+efp_swap_material vs1hevb vs1hevb
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera008 clod_soldierb008
+efp_swap_material vs1heva vs2heva
+efp_swap_material vs1hevb vs2hevb
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera008 clod_soldierc008
+efp_swap_material vs1heva vs3heva
+efp_swap_material vs1hevb vs3hevb
+efp_swap_end
+efp_effect jump vshev_jump Bip01_L_Toe0
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect jump vshev_jump Bip01_R_Toe0
+efp_end
+
+##ncfsth
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material nc1fsth nc1fsth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material nc1fsth nc1fsth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera002 clod_soldierb002
+efp_swap_material nc1fsth nc2fsth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera002 clod_soldierc002
+efp_swap_material nc1fsth nc3fsth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##vsmsth
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1msth vs1msth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1msth vs1msth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera006 clod_soldierb006
+efp_swap_material vs1msth vs2msth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera006 clod_soldierc006
+efp_swap_material vs1msth vs3msth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_phoenix
+
+efp_effect fire1 jolt_phoenix_fire1 ef_muzzlea
+efp_effect fire2 jolt_phoenix_fire1 ef_muzzlea
+efp_end
+
+##wardogadult
+
+efp_swap_begin wardogelder
+efp_swap_material wardogadult wardogelder
+efp_swap_end
+efp_effect null blupuf bip01_neck1
+efp_end
+
+##avianadolescent
+
+efp_effect flame repeater_fire1 upperjaw
+efp_end
+
+##flechette
+
+efp_effect fire1 fp_flechette_fire1 muzzlea
+efp_end
+
+##tech_plant
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_end
+efp_end
+
+##particle_beam_magrider
+
+efp_effect fire1 particle_beam_magrider muzzlea
+efp_end
+
+##fp_rocklet
+
+efp_effect fire1 jolt_rocklet_fire1 ef_muzzlea
+efp_effect fire2 jolt_rocklet_fire1 ef_muzzlea
+efp_end
+
+##comm_station_dsp
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_end
+efp_end
+
+##20mm_cannon_dropship
+
+efp_effect fire1 fp_20mm_cannon_f_fire1 ef_20mm_muzzle
+efp_end
+
+##vsmmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1mmed vs1mmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1mmed vs1mmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera006 clod_soldierb006
+efp_swap_material vs1mmed vs2mmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera006 clod_soldierc006
+efp_swap_material vs1mmed vs3mmed
+efp_swap_end
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_end
+
+##vsmlite
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1mlite vs1mlite
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera006 clod_soldiera006
+efp_swap_material vs1mlite vs1mlite
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera006 clod_soldierb006
+efp_swap_material vs1mlite vs2mlite
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera006 clod_soldierc006
+efp_swap_material vs1mlite vs3mlite
+efp_swap_end
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_end
+
+##cycler
+
+efp_effect fire1 fp_cycler_fire1 muzzlea
+efp_end
+
+##rocklet
+
+efp_effect fire1 fp_rocklet_fire1 muzzlea
+efp_effect fire2 fp_rocklet_fire1 muzzlea
+efp_end
+
+##wardogadolescent
+
+efp_swap_begin swap00
+efp_swap_lighting wardogadolecent brown_tint
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_lighting wardogadolecent default_specular
+efp_swap_end
+efp_end
+
+##ncmmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1mmed nc1mmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera001 clod_soldiera001
+efp_swap_material nc1mmed nc1mmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera001 clod_soldierb001
+efp_swap_material nc1mmed nc2mmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera001 clod_soldierc001
+efp_swap_material nc1mmed nc3mmed
+efp_swap_end
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_end
+
+##punisher
+
+efp_effect fire1 fp_punisher_fire1 muzzlea
+efp_effect fire2 fp_punisher_fire2 muzzleb
+efp_end
+
+##repeater
+
+efp_effect fire1 fp_repeater_fire1 muzzlea
+efp_end
+
+##locker_med
+
+efp_swap_begin nc
+efp_swap_material _locker_term+locker_terminal locker_term_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _locker_term+locker_terminal locker_term_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _locker_term+locker_terminal locker_term_vs
+efp_swap_end
+efp_end
+
+##air_vehicle_terminal
+
+efp_swap_begin nc
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
+efp_swap_material vehicterm_fx1+null vehicterm_nc
+efp_swap_material circuits01+null circuits01_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
+efp_swap_material vehicterm_fx1+null vehicterm_tr
+efp_swap_material circuits01+null circuits01_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
+efp_swap_material vehicterm_fx1+null vehicterm_vs
+efp_swap_material circuits01+null circuits01_vs
+efp_swap_end
+efp_effect damage1 damage_sparks hp_air_vehicle_terminal_005
+efp_effect damage2 damage_sparks hp_air_vehicle_terminal_004
+efp_effect damage3 damage_sparks hp_air_vehicle_terminal_003
+efp_effect damage4 damage_sparks hp_air_vehicle_terminal_002
+efp_effect damage5 damage_sparks hp_air_vehicle_terminal_001
+efp_end
+
+##lock_garage
+
+efp_swap_begin nc
+efp_swap_material garage_lock+lock_scroll1 lock_garage_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material garage_lock+lock_scroll1 lock_garage_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material garage_lock+lock_scroll1 lock_garage_vs
+efp_swap_end
+efp_end
+
+##trmsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material tr1msi tr1msi
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera003 clod_soldiera003
+efp_swap_material tr1msi tr1msi
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera003 clod_soldierb003
+efp_swap_material tr1msi tr2msi
+efp_hidden decal
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera003 clod_soldierc003
+efp_swap_material tr1msi tr3msi
+efp_hidden decal
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_punisher
+
+efp_effect fire1 jolt_punisher_fire1 ef_muzzlea
+efp_effect fire2 jolt_punisher_fire2 ef_muzzleb
+efp_end
+
+##105mm_cannon_dropship
+
+efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
+efp_end
+
+##cs_comm_dish
+
+efp_effect idle comm_dish_spin root
+efp_end
+
+##75mm_lightning
+
+efp_effect fire1 75mm_lightning_flash ef_75mm_muzzle
+efp_end
+
+##trmsth
+
+efp_swap_begin swap00
+efp_swap_material tr1msth tr1msth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material tr1msth tr1msth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material tr1msth tr2msth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material tr1msth tr3msth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##150mm_cannon_t
+
+efp_effect equip fp_150mm_cannon_t_equip 150mmhtt01
+efp_effect fire1 fp_150mm_cannon_t_fire1 muzzlea01
+efp_effect reload fp_150mm_cannon_t_fire1 150mmhtt01
+efp_effect dryfire1 150mm_cannon_dryfire muzzlea01
+efp_end
+
+##fp_flechette
+
+efp_effect fire1 jolt_flechette_fire1 ef_muzzlea
+efp_end
+
+##trfsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material tr1fsi tr1fsi
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera004 clod_soldiera004
+efp_swap_material tr1fsi tr1fsi
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera004 clod_soldierb004
+efp_swap_material tr1fsi tr2fsi
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera004 clod_soldierc004
+efp_swap_material tr1fsi tr3fsi
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##mini_chaingun
+
+efp_effect fire1 fp_mini_chaingun_fire1 muzzlea
+efp_effect cool_down rising_smoke_small muzzlea
+efp_end
+
+##trfmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera005 clod_soldiera005
+efp_swap_material tr1fmed tr1fmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera005 clod_soldiera005
+efp_swap_material tr1fmed tr1fmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera005 clod_soldierb005
+efp_swap_material tr1fmed tr2fmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera005 clod_soldierc005
+efp_swap_material tr1fmed tr3fmed
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##trfsth
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera005 clod_soldiera005
+efp_swap_material tr1fsth tr1fsth
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
+efp_swap_material clod_soldiera005 clod_soldiera005
+efp_swap_material tr1fsth tr1fsth
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
+efp_swap_material clod_soldiera005 clod_soldierb005
+efp_swap_material tr1fsth tr2fsth
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
+efp_swap_material clod_soldiera005 clod_soldierc005
+efp_swap_material tr1fsth tr3fsth
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##implant_terminal
+
+efp_effect damage1 damage_sparks hp_implant_terminal_007
+efp_effect damage2 damage_sparks hp_implant_terminal_006
+efp_effect damage3 damage_sparks hp_implant_terminal_005
+efp_effect damage4 damage_sparks hp_implant_terminal_004
+efp_effect damage5 damage_sparks hp_implant_terminal_003
+efp_effect damage6 damage_sparks hp_implant_terminal_002
+efp_effect damage7 damage_sparks hp_implant_terminal_001
+efp_end
+
+##tower_a
+
+efp_swap_begin nc
+efp_swap_material wall_building wall_building_nc
+efp_swap_material wall_building+null wall_building_nc
+efp_swap_end
+efp_swap_begin tr
+efp_swap_material wall_building wall_building_tr
+efp_swap_material wall_building+null wall_building_tr
+efp_swap_end
+efp_swap_begin vs
+efp_swap_material wall_building wall_building_vs
+efp_swap_material wall_building+null wall_building_vs
+efp_swap_end
+efp_end
+
+##lancer
+
+efp_effect fire1 lancer_fire1 muzzlea
+efp_end
+
+##r_shotgun
+
+efp_effect fire1 fp_r_shotgun_fire1 muzzlea
+efp_effect fire2 fp_r_shotgun_fire1 muzzlea
+efp_end
+
+##pulsed_particle_accelerator
+
+efp_effect fire1 fp_beamer_fire2 muzzlea
+efp_end
+
+##ncfsi
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1fsi nc1fsi
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material nc1fsi nc1fsi
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera002 clod_soldierb002
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material nc1fsi nc2fsi
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera002 clod_soldierc002
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material nc1fsi nc3fsi
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##ncfmed
+
+efp_swap_begin swap00
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material nc1fmed nc1fmed
+efp_swap_end
+efp_swap_begin swap01
+efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
+efp_swap_material clod_soldiera002 clod_soldiera002
+efp_swap_material nc1fmed nc1fmed
+efp_swap_end
+efp_swap_begin swap02
+efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
+efp_swap_material clod_soldiera002 clod_soldierb002
+efp_swap_material nc1fmed nc2fmed
+efp_swap_end
+efp_swap_begin swap03
+efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
+efp_swap_material clod_soldiera002 clod_soldierc002
+efp_swap_material nc1fmed nc3fmed
+efp_swap_end
+efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
+efp_effect comet_burn aggravated_damage_comet_effect Bip01
+efp_end
+
+##fp_striker
+
+efp_effect fire1 jolt_striker_fire1 ef_muzzlea
+efp_effect fire2 jolt_striker_fire1 ef_muzzlea
+efp_end
+
+##fp_bolt_driver
+
+efp_effect fire1 jolt_bolt_driver_fire1 muzzle1
+efp_end
+
+##heavy_rail_beam_magrider
+
+efp_effect fire1 heavy_rail_beam_magrider_fire muzzlea
+efp_end
+
+##phoenix
+
+efp_effect fire1 fp_phoenix_fire1 muzzlea
+efp_effect fire2 fp_phoenix_fire1 muzzlea
+efp_effect glow phoenix_glow muzzlea
+efp_end
+
+##fp_mini_chaingun
+
+efp_effect fire1 fp_mini_chaingun_fire1 ef_muzzlea
 efp_end
 
 ##trhev
@@ -1867,1393 +3429,6 @@ efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
 efp_effect comet_burn aggravated_damage_comet_effect Bip01
 efp_end
 
-##fp_mini_chaingun
-
-efp_effect fire1 fp_mini_chaingun_fire1 ef_muzzlea
-efp_end
-
-##phoenix
-
-efp_effect fire1 fp_phoenix_fire1 muzzlea
-efp_effect fire2 fp_phoenix_fire1 muzzlea
-efp_effect glow phoenix_glow muzzlea
-efp_end
-
-##heavy_rail_beam_magrider
-
-efp_effect fire1 heavy_rail_beam_magrider_fire muzzlea
-efp_end
-
-##fp_bolt_driver
-
-efp_effect fire1 jolt_bolt_driver_fire1 muzzle1
-efp_end
-
-##fp_striker
-
-efp_effect fire1 jolt_striker_fire1 ef_muzzlea
-efp_effect fire2 jolt_striker_fire1 ef_muzzlea
-efp_end
-
-##ncfmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material nc1fmed nc1fmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material nc1fmed nc1fmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera002 clod_soldierb002
-efp_swap_material nc1fmed nc2fmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera002 clod_soldierc002
-efp_swap_material nc1fmed nc3fmed
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##ncfsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1fsi nc1fsi
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1fsi nc1fsi
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera002 clod_soldierb002
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material nc1fsi nc2fsi
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera002 clod_soldierc002
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material nc1fsi nc3fsi
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##pulsed_particle_accelerator
-
-efp_effect fire1 fp_beamer_fire2 muzzlea
-efp_end
-
-##r_shotgun
-
-efp_effect fire1 fp_r_shotgun_fire1 muzzlea
-efp_effect fire2 fp_r_shotgun_fire1 muzzlea
-efp_end
-
-##lancer
-
-efp_effect fire1 lancer_fire1 muzzlea
-efp_end
-
-##tower_a
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_material wall_building+null wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_material wall_building+null wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_material wall_building+null wall_building_vs
-efp_swap_end
-efp_end
-
-##implant_terminal
-
-efp_effect damage1 damage_sparks hp_implant_terminal_007
-efp_effect damage2 damage_sparks hp_implant_terminal_006
-efp_effect damage3 damage_sparks hp_implant_terminal_005
-efp_effect damage4 damage_sparks hp_implant_terminal_004
-efp_effect damage5 damage_sparks hp_implant_terminal_003
-efp_effect damage6 damage_sparks hp_implant_terminal_002
-efp_effect damage7 damage_sparks hp_implant_terminal_001
-efp_end
-
-##trfsth
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera005 clod_soldiera005
-efp_swap_material tr1fsth tr1fsth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera005 clod_soldiera005
-efp_swap_material tr1fsth tr1fsth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera005 clod_soldierb005
-efp_swap_material tr1fsth tr2fsth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera005 clod_soldierc005
-efp_swap_material tr1fsth tr3fsth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##trfmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera005 clod_soldiera005
-efp_swap_material tr1fmed tr1fmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera005 clod_soldiera005
-efp_swap_material tr1fmed tr1fmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera005 clod_soldierb005
-efp_swap_material tr1fmed tr2fmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera005 clod_soldierc005
-efp_swap_material tr1fmed tr3fmed
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##mini_chaingun
-
-efp_effect fire1 fp_mini_chaingun_fire1 muzzlea
-efp_effect cool_down rising_smoke_small muzzlea
-efp_end
-
-##trfsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material tr1fsi tr1fsi
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material tr1fsi tr1fsi
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera004 clod_soldierb004
-efp_swap_material tr1fsi tr2fsi
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera004 clod_soldierc004
-efp_swap_material tr1fsi tr3fsi
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##fp_flechette
-
-efp_effect fire1 jolt_flechette_fire1 ef_muzzlea
-efp_end
-
-##150mm_cannon_t
-
-efp_effect equip fp_150mm_cannon_t_equip 150mmhtt01
-efp_effect fire1 fp_150mm_cannon_t_fire1 muzzlea01
-efp_effect reload fp_150mm_cannon_t_fire1 150mmhtt01
-efp_effect dryfire1 150mm_cannon_dryfire muzzlea01
-efp_end
-
-##trmsth
-
-efp_swap_begin swap00
-efp_swap_material tr1msth tr1msth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material tr1msth tr1msth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material tr1msth tr2msth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material tr1msth tr3msth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##75mm_lightning
-
-efp_effect fire1 75mm_lightning_flash ef_75mm_muzzle
-efp_end
-
-##cs_comm_dish
-
-efp_effect idle comm_dish_spin root
-efp_end
-
-##105mm_cannon_dropship
-
-efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
-efp_end
-
-##fp_punisher
-
-efp_effect fire1 jolt_punisher_fire1 ef_muzzlea
-efp_effect fire2 jolt_punisher_fire2 ef_muzzleb
-efp_end
-
-##trmsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material tr1msi tr1msi
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material tr1msi tr1msi
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera003 clod_soldierb003
-efp_swap_material tr1msi tr2msi
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera003 clod_soldierc003
-efp_swap_material tr1msi tr3msi
-efp_hidden decal
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##lock_garage
-
-efp_swap_begin nc
-efp_swap_material garage_lock+lock_scroll1 lock_garage_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material garage_lock+lock_scroll1 lock_garage_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material garage_lock+lock_scroll1 lock_garage_vs
-efp_swap_end
-efp_end
-
-##air_vehicle_terminal
-
-efp_swap_begin nc
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
-efp_swap_material vehicterm_fx1+null vehicterm_nc
-efp_swap_material circuits01+null circuits01_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
-efp_swap_material vehicterm_fx1+null vehicterm_tr
-efp_swap_material circuits01+null circuits01_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
-efp_swap_material vehicterm_fx1+null vehicterm_vs
-efp_swap_material circuits01+null circuits01_vs
-efp_swap_end
-efp_effect damage1 damage_sparks hp_air_vehicle_terminal_005
-efp_effect damage2 damage_sparks hp_air_vehicle_terminal_004
-efp_effect damage3 damage_sparks hp_air_vehicle_terminal_003
-efp_effect damage4 damage_sparks hp_air_vehicle_terminal_002
-efp_effect damage5 damage_sparks hp_air_vehicle_terminal_001
-efp_end
-
-##locker_med
-
-efp_swap_begin nc
-efp_swap_material _locker_term+locker_terminal locker_term_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _locker_term+locker_terminal locker_term_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _locker_term+locker_terminal locker_term_vs
-efp_swap_end
-efp_end
-
-##repeater
-
-efp_effect fire1 fp_repeater_fire1 muzzlea
-efp_end
-
-##punisher
-
-efp_effect fire1 fp_punisher_fire1 muzzlea
-efp_effect fire2 fp_punisher_fire2 muzzleb
-efp_end
-
-##ncmmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1mmed nc1mmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1mmed nc1mmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera001 clod_soldierb001
-efp_swap_material nc1mmed nc2mmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera001 clod_soldierc001
-efp_swap_material nc1mmed nc3mmed
-efp_swap_end
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_end
-
-##wardogadolescent
-
-efp_swap_begin swap00
-efp_swap_lighting wardogadolecent brown_tint
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_lighting wardogadolecent default_specular
-efp_swap_end
-efp_end
-
-##rocklet
-
-efp_effect fire1 fp_rocklet_fire1 muzzlea
-efp_effect fire2 fp_rocklet_fire1 muzzlea
-efp_end
-
-##cycler
-
-efp_effect fire1 fp_cycler_fire1 muzzlea
-efp_end
-
-##vsmlite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1mlite vs1mlite
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1mlite vs1mlite
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera006 clod_soldierb006
-efp_swap_material vs1mlite vs2mlite
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera006 clod_soldierc006
-efp_swap_material vs1mlite vs3mlite
-efp_swap_end
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_end
-
-##vsmmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1mmed vs1mmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1mmed vs1mmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera006 clod_soldierb006
-efp_swap_material vs1mmed vs2mmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera006 clod_soldierc006
-efp_swap_material vs1mmed vs3mmed
-efp_swap_end
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_end
-
-##20mm_cannon_dropship
-
-efp_effect fire1 fp_20mm_cannon_f_fire1 ef_20mm_muzzle
-efp_end
-
-##comm_station_dsp
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_end
-efp_end
-
-##fp_rocklet
-
-efp_effect fire1 jolt_rocklet_fire1 ef_muzzlea
-efp_effect fire2 jolt_rocklet_fire1 ef_muzzlea
-efp_end
-
-##particle_beam_magrider
-
-efp_effect fire1 particle_beam_magrider muzzlea
-efp_end
-
-##tech_plant
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_end
-efp_end
-
-##flechette
-
-efp_effect fire1 fp_flechette_fire1 muzzlea
-efp_end
-
-##avianadolescent
-
-efp_effect flame repeater_fire1 upperjaw
-efp_end
-
-##wardogadult
-
-efp_swap_begin wardogelder
-efp_swap_material wardogadult wardogelder
-efp_swap_end
-efp_effect null blupuf bip01_neck1
-efp_end
-
-##fp_phoenix
-
-efp_effect fire1 jolt_phoenix_fire1 ef_muzzlea
-efp_effect fire2 jolt_phoenix_fire1 ef_muzzlea
-efp_end
-
-##vsmsth
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1msth vs1msth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material vs1msth vs1msth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera006 clod_soldierb006
-efp_swap_material vs1msth vs2msth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera006 clod_soldierc006
-efp_swap_material vs1msth vs3msth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##ncfsth
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material nc1fsth nc1fsth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material nc1fsth nc1fsth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera002 clod_soldierb002
-efp_swap_material nc1fsth nc2fsth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera002 clod_soldierc002
-efp_swap_material nc1fsth nc3fsth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##vshev
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera008 clod_soldiera008
-efp_swap_material vs1heva vs1heva
-efp_swap_material vs1hevb vs1hevb
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera008 clod_soldiera008
-efp_swap_material vs1heva vs1heva
-efp_swap_material vs1hevb vs1hevb
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera008 clod_soldierb008
-efp_swap_material vs1heva vs2heva
-efp_swap_material vs1hevb vs2hevb
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera008 clod_soldierc008
-efp_swap_material vs1heva vs3heva
-efp_swap_material vs1hevb vs3hevb
-efp_swap_end
-efp_effect jump vshev_jump bip01_footsteps
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##comm_station
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_end
-efp_end
-
-##cryo_facility
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_end
-efp_end
-
-##ncmlite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1mlite nc1mlite
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1mlite nc1mlite
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera001 clod_soldierb001
-efp_swap_material nc1mlite nc2mlite
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera001 clod_soldierc001
-efp_swap_material nc1mlite nc3mlite
-efp_swap_end
-efp_effect implant_surge surge_implant_effect bip01_footsteps
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##fp_suppressor
-
-efp_effect fire1 jolt_suppressor_fire1 ef_muzzlea
-efp_end
-
-##vsfmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1fmed vs1fmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1fmed vs1fmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera007 clod_soldierb007
-efp_swap_material vs1fmed vs2fmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera007 clod_soldierc007
-efp_swap_material vs1fmed vs3fmed
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##vsfsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material vs1fsi vs1fsi
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material vs1fsi vs1fsi
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera007 clod_soldierb007
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material vs1fsi vs2fsi
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera007 clod_soldierc007
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material vs1fsi vs3fsi
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##fp_r_shotgun
-
-efp_effect fire1 jolt_r_shotgun_fire1 ef_muzzlea
-efp_effect fire2 jolt_r_shotgun_fire1 ef_muzzlea
-efp_end
-
-##ncflite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1flite nc1flite
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera002 clod_soldiera002
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1flite nc1flite
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera002 clod_soldierb002
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material nc1flite nc2flite
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera002 clod_soldierc002
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material nc1flite nc3flite
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##105mm_cannon_dropship_l
-
-efp_effect fire1 fp_105mm_cannon_t_fire1 ef_muzzle
-efp_end
-
-##fp_hunterseeker
-
-efp_effect fire1 fp_hunterseeker_fire1 ef_muzzlea
-efp_end
-
-##fp_lasher
-
-efp_effect fire1 fp_lasher_fire1 ef_muzzlea
-efp_end
-
-##advanced_missile_launcher_t
-
-efp_swap_begin swap00
-efp_swap_end
-efp_effect fire1 fp_adv_missle_launch_fire1 ef_aml_muzzlea
-efp_end
-
-##obbasemesh
-
-efp_effect lights1 orbital_building_flashing_lights root
-efp_effect lights2 orbital_building_flashing_lights root
-efp_effect lights3 orbital_building_flashing_lights root
-efp_effect lights4 orbital_building_flashing_lights root
-efp_effect lights5 orbital_building_flashing_lights root
-efp_effect lights6 orbital_building_flashing_lights root
-efp_effect lights7 orbital_building_flashing_lights root
-efp_effect lights8 orbital_building_flashing_lights root
-efp_end
-
-##pulsar
-
-efp_effect fire1 fp_pulsar_fire1 muzzlea
-efp_effect fire2 fp_pulsar_fire2 muzzlea
-efp_end
-
-##fp_lancer
-
-efp_effect fire1 jolt_lancer_fire1 ef_muzzlea
-efp_end
-
-##magcutter
-
-efp_end
-
-##ilc9
-
-efp_effect fire1 fp_ilc9_fire1 muzzlea
-efp_end
-
-##vsflite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1flite vs1flite
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1flite vs1flite
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera007 clod_soldierb007
-efp_swap_material vs1flite vs2flite
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera007 clod_soldierc007
-efp_swap_material vs1flite vs3flite
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##orbital_station
-
-efp_swap_begin nc
-efp_swap_material orbital_airlock orbital_airlock_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material orbital_airlock orbital_airlock_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material orbital_airlock orbital_airlock_vs
-efp_swap_end
-efp_end
-
-##secondary_capture
-
-efp_swap_begin nc
-efp_swap_material circuits01+null circuits01_nc
-efp_swap_material capture_term+null capterm_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material circuits01+null circuits01_tr
-efp_swap_material capture_term+null capterm_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material circuits01+null circuits01_vs
-efp_swap_material capture_term+null capterm_vs
-efp_swap_end
-efp_end
-
-##fp_repeater
-
-efp_effect fire1 jolt_repeater_fire1 ef_muzzlea
-efp_end
-
-##striker
-
-efp_effect fire1 fp_striker_fire1 muzzlea
-efp_effect fire2 fp_striker_fire1 muzzlea
-efp_end
-
-##20mm_cannon_dropship_l
-
-efp_effect fire1 fp_20mm_cannon_f_fire1 ef_20mm_muzzle
-efp_end
-
-##tower_c
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_material wall_building+null wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_material wall_building+null wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_material wall_building+null wall_building_vs
-efp_swap_end
-efp_end
-
-##tower_b
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_material wall_building+null wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_material wall_building+null wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_material wall_building+null wall_building_vs
-efp_swap_end
-efp_end
-
-##chaingun_p
-
-efp_effect fire1 fp_chaingun_p_fire1 muzzlea
-efp_effect fire2 fp_chaingun_p_fire1 muzzlea
-efp_end
-
-##remote_electronics_kit
-
-efp_effect fire1 fp_rek_fire1 ef_rek
-efp_end
-
-##pad_landing
-
-efp_swap_begin gen
-efp_swap_material landing_platform landing_pad
-efp_swap_end
-efp_end
-
-##trmmed
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material tr1mmed tr1mmed
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material tr1mmed tr1mmed
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera004 clod_soldierb004
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material tr1mmed tr2mmed
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera004 clod_soldierc004
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material tr1mmed tr3mmed
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##nchev
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1hev1 nc1hev1
-efp_swap_material nc1hev2 nc1hev2
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1hev1 nc1hev1
-efp_swap_material nc1hev2 nc1hev2
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera003 clod_soldierb003
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material nc1hev1 nc2hev1
-efp_swap_material nc1hev2 nc2hev2
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera003 clod_soldierc003
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material nc1hev1 nc3hev1
-efp_swap_material nc1hev2 nc3hev2
-efp_swap_end
-efp_effect glow1 nchev_lite ef_lite_l
-efp_effect glow2 nchev_lite ef_lite_r
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##flux_cannon_thresher
-
-efp_effect fire1 flux_cannon_thresher_fire ef_fluxcannon_muzzlea
-efp_end
-
-##fp_isp
-
-efp_effect fire1 jolt_isp_fire1 muzzlea
-efp_end
-
-##ncmsth
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1msth nc1msth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material nc1msth nc1msth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera001 clod_soldierb001
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material nc1msth nc2msth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera001 clod_soldierc001
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material nc1msth nc3msth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##opbasemesh
-
-efp_swap_begin nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material shuttle_nc_1 shuttle_tr_1
-efp_swap_material shuttle_nc_2 shuttle_tr_2
-efp_swap_material shuttle_nc_3 shuttle_tr_3
-efp_swap_material shuttle_nc_4 shuttle_tr_4
-efp_swap_material logo_nc logo_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material shuttle_nc_1 shuttle_vs_1
-efp_swap_material shuttle_nc_2 shuttle_vs_2
-efp_swap_material shuttle_nc_3 shuttle_vs_3
-efp_swap_material shuttle_nc_4 shuttle_vs_4
-efp_swap_material logo_nc logo_vs
-efp_swap_end
-efp_end
-
-##amp_station
-
-efp_swap_begin nc
-efp_swap_material wall_building wall_building_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material wall_building wall_building_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material wall_building wall_building_vs
-efp_swap_end
-efp_end
-
-##fp_thumper
-
-efp_effect fire1 jolt_thumper_fire1 ef_muzzlea
-efp_effect fire2 jolt_thumper_fire1 ef_muzzlea
-efp_end
-
-##rotarychaingun_mosquito
-
-efp_effect fire1 mosquito_chaingun_muzzle_flash ef_muzzle
-efp_end
-
-##trmlite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material tr1mlite tr1mlite
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera003 clod_soldiera003
-efp_swap_material tr1mlite tr1mlite
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera003 clod_soldierb003
-efp_swap_material tr1mlite tr2mlite
-efp_hidden decal
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera003 clod_soldierc003
-efp_swap_material tr1mlite tr3mlite
-efp_hidden decal
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##thumper
-
-efp_effect fire1 fp_thumper_fire1 muzzlea
-efp_effect fire2 fp_thumper_fire1 muzzlea
-efp_end
-
-##spitfire_weapon
-
-efp_effect fire1 spitfire_turret_fire ef_muzzlea
-efp_effect fire2 spitfire_turret_fire ef_muzzleb
-efp_end
-
-##grenade_launcher_marauder
-
-efp_effect fire1 fp_grenade_launcher_marauder_fire ef_muzzle
-efp_end
-
-##lasher
-
-efp_effect fire1 fp_lasher_fire1 muzzlea
-efp_end
-
-##phalanx_sgl_hevgatcan
-
-efp_swap_begin des
-efp_swap_material phalanx128lod mannedturret_des
-efp_swap_material phalanx256 mannedturret_des
-efp_swap_material phalanx128 mannedturret_des
-efp_swap_end
-efp_swap_begin normal
-efp_swap_end
-efp_effect fire1 phalanx_sgl_muzzle_flash ef_muzzleflash
-efp_end
-
-##vsmsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material vs1msi vs1msi
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera006 clod_soldiera006
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material vs1msi vs1msi
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera006 clod_soldierb006
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material vs1msi vs2msi
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera006 clod_soldierc006
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material vs1msi vs3msi
-efp_swap_end
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_end
-
-##fp_ilc9
-
-efp_effect fire1 jolt_ilc9_fire1 ef_muzzlea
-efp_end
-
-##fp_cycler
-
-efp_effect fire1 jolt_cycler_fire1 muzzlea_l1
-efp_effect fire2 jolt_cycler_fire1 muzzleb_l1
-efp_end
-
-##chameleonelder
-
-efp_swap_begin membrane
-efp_swap_material wardoginfant bmp_dsrtrock34
-efp_swap_end
-efp_end
-
-##150mm_cannon_vanguard
-
-efp_effect fire1 fp_150mm_cannon_t_fire1 ef_muzzle
-efp_end
-
-##trflite
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material tr1flite tr1flite
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera004 clod_soldiera004
-efp_swap_material tr1flite tr1flite
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera004 clod_soldierb004
-efp_swap_material tr1flite tr2flite
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera004 clod_soldierc004
-efp_swap_material tr1flite tr3flite
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##grenade
-
-efp_effect smoke fire4 grenade
-efp_effect hit_effect grenade_explode grenade
-efp_end
-
-##locker_cryo
-
-efp_swap_begin nc
-efp_swap_material _locker_term+locker_terminal locker_term_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _locker_term+locker_terminal locker_term_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _locker_term+locker_terminal locker_term_vs
-efp_swap_end
-efp_end
-
-##beamer
-
-efp_effect fire1 fp_beamer_fire1 muzzlea
-efp_effect fire2 fp_beamer_fire2 muzzlea
-efp_end
-
-##wardoginfant
-
-efp_swap_begin membrane
-efp_swap_end
-efp_swap_begin sine_wave
-efp_swap_material wardoginfant wardoginfant_sine_wave
-efp_swap_end
-efp_swap_begin simple
-efp_swap_material wardoginfant wardoginfant_simple
-efp_swap_end
-efp_end
-
-##vsfsth
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1fsth vs1fsth
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod002 clod_soldiera_lod002
-efp_swap_material clod_soldiera007 clod_soldiera007
-efp_swap_material vs1fsth vs1fsth
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod002 clod_soldierb_lod002
-efp_swap_material clod_soldiera007 clod_soldierb007
-efp_swap_material vs1fsth vs2fsth
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod002 clod_soldierc_lod002
-efp_swap_material clod_soldiera007 clod_soldierc007
-efp_swap_material vs1fsth vs3fsth
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##fp_gauss
-
-efp_effect fire1 jolt_gauss_fire1 ef_muzzlea
-efp_end
-
-##dropship_vehicle_terminal
-
-efp_swap_begin nc
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
-efp_swap_material vehicterm_fx1+null vehicterm_nc
-efp_swap_material circuits01+null circuits01_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
-efp_swap_material vehicterm_fx1+null vehicterm_tr
-efp_swap_material circuits01+null circuits01_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
-efp_swap_material vehicterm_fx1+null vehicterm_vs
-efp_swap_material circuits01+null circuits01_vs
-efp_swap_end
-efp_end
-
-##suppressor
-
-efp_effect fire1 fp_suppressor_fire1 muzzlea
-efp_end
-
-##fp_pulsar
-
-efp_effect fire1 fp_pulsar_fire1 ef_muzzlea
-efp_effect fire2 fp_pulsar_fire2 ef_muzzlea
-efp_end
-
-##bolt_driver
-
-efp_effect fire1 fp_bolt_driver_fire1 muzzlea
-efp_effect glow boltdriver_glow eject
-efp_end
-
-##isp
-
-efp_effect fire1 fp_isp_fire1 muzzlea
-efp_end
-
-##adv_med_terminal
-
-efp_swap_begin nc
-efp_swap_material adv_med_term_lites+null advmed_lites_nc
-efp_swap_material adv_med_term+null advmed_nc
-efp_swap_material circuits01+null circuits01_nc
-efp_swap_end
-efp_swap_begin tr
-efp_swap_material adv_med_term_lites+null advmed_lites_tr
-efp_swap_material adv_med_term+null advmed_tr
-efp_swap_material circuits01+null circuits01_tr
-efp_swap_end
-efp_swap_begin vs
-efp_swap_material adv_med_term_lites+null advmed_lites_vs
-efp_swap_material adv_med_term+null advmed_vs
-efp_swap_material circuits01+null circuits01_vs
-efp_swap_end
-efp_effect damage1 damage_sparks hp_adv_med_terminal_001
-efp_effect damage2 damage_sparks hp_adv_med_terminal_006
-efp_effect damage3 damage_sparks hp_adv_med_terminal_005
-efp_effect damage4 damage_sparks hp_adv_med_terminal_004
-efp_effect damage5 damage_sparks hp_adv_med_terminal_003
-efp_effect damage6 damage_sparks hp_adv_med_terminal_002
-efp_effect active adv_med_term hp_adv_med_terminal_007
-efp_end
-
-##ncmsi
-
-efp_swap_begin swap00
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1msi nc1msi
-efp_swap_end
-efp_swap_begin swap01
-efp_swap_material clod_soldiera_lod001 clod_soldiera_lod001
-efp_swap_material clod_soldiera001 clod_soldiera001
-efp_swap_material nc1msi nc1msi
-efp_swap_end
-efp_swap_begin swap02
-efp_swap_material clod_soldiera_lod001 clod_soldierb_lod001
-efp_swap_material clod_soldiera001 clod_soldierb001
-efp_swap_material nc1msi nc2msi
-efp_swap_end
-efp_swap_begin swap03
-efp_swap_material clod_soldiera_lod001 clod_soldierc_lod001
-efp_swap_material clod_soldiera001 clod_soldierc001
-efp_swap_material nc1msi nc3msi
-efp_swap_end
-efp_effect plasma_burn aggravated_damage_plasma_effect Bip01
-efp_effect comet_burn aggravated_damage_comet_effect Bip01
-efp_end
-
-##gauss
-
-efp_effect fire1 fp_gauss_fire1 muzzlea
-efp_end
-
-##forceblade
-
-efp_effect active forceblade_active ef_blood
-efp_end
-
-##generator
-
-efp_effect idle example_script_spin root
-efp_effect power_up example_spin_up root
-efp_effect power_down example_spin_down root
-efp_effect init generator_init root
-efp_effect generator_electric generator_electric root
-efp_end
-
-##hunterseeker
-
-efp_effect fire1 fp_hunterseeker_fire1 muzzlea
-efp_end
-
-##ground_vehicle_terminal
-
-efp_effect damage1 damage_sparks hp_ground_vehicle_terminal_006
-efp_effect damage2 damage_sparks hp_ground_vehicle_terminal_005
-efp_effect damage3 damage_sparks hp_ground_vehicle_terminal_004
-efp_effect damage4 damage_sparks hp_ground_vehicle_terminal_003
-efp_effect damage5 damage_sparks hp_ground_vehicle_terminal_002
-efp_effect damage6 damage_sparks hp_ground_vehicle_terminal_001
-efp_end
-
 ##implant_terminal_mech
 
 efp_effect passengerentry implantoccupant gunnera_mount
@@ -3286,27 +3461,41 @@ efp_end
 ##vehicle_terminal
 
 efp_swap_begin nc
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
 efp_swap_material vehicterm_fx1+null vehicterm_nc
 efp_swap_material circuits01+null circuits01_nc
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_nc
 efp_swap_end
 efp_swap_begin tr
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
 efp_swap_material vehicterm_fx1+null vehicterm_tr
 efp_swap_material circuits01+null circuits01_tr
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_tr
 efp_swap_end
 efp_swap_begin vs
+efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
 efp_swap_material vehicterm_fx1+null vehicterm_vs
 efp_swap_material circuits01+null circuits01_vs
-efp_swap_material _vehic_blinkers+vehicterm_fx1 vehicterm_blinkers_vs
 efp_swap_end
-efp_effect damage1 damage_sparks hp_vehicle_terminal_007
-efp_effect damage2 damage_sparks hp_vehicle_terminal_006
-efp_effect damage3 damage_sparks hp_vehicle_terminal_005
-efp_effect damage4 damage_sparks hp_vehicle_terminal_004
-efp_effect damage5 damage_sparks hp_vehicle_terminal_003
-efp_effect damage6 damage_sparks hp_vehicle_terminal_002
-efp_effect damage7 damage_sparks hp_vehicle_terminal_001
+efp_effect damage1 terminal_damage_elecarcs hp_vehicle_terminal_007
+efp_effect damage2 terminal_damage_elecarcs hp_vehicle_terminal_006
+efp_effect damage3 terminal_damage_elecarcs hp_vehicle_terminal_005
+efp_effect damage4 terminal_damage_elecarcs hp_vehicle_terminal_004
+efp_effect damage5 terminal_damage_elecarcs hp_vehicle_terminal_003
+efp_effect damage6 terminal_damage_elecarcs hp_vehicle_terminal_002
+efp_effect damage7 terminal_damage_elecarcs hp_vehicle_terminal_001
+efp_effect damage_smoke terminal_damage_smoke hp_vehicle_terminal_002
+efp_effect damage_smoke terminal_damage_smoke hp_vehicle_terminal_003
+efp_end
+
+##respawn_tube
+
+efp_swap_begin destroyed
+efp_swap_material spawn_tube_inside+_respawn_tube_lm spawn_dest_2
+efp_swap_material spawn_door+_respawn_tube_lm spawn_dest_1
+efp_swap_end
+efp_swap_begin functional
+efp_swap_material spawn_tube_inside+_respawn_tube_lm spawn_tube_inside+_respawn_tube_lm
+efp_swap_material spawn_door+_respawn_tube_lm spawn_door+_respawn_tube_lm
+efp_swap_end
 efp_end
 
 ##spawn_terminal
@@ -3347,6 +3536,7 @@ efp_effect damage7 damage_sparks hp_order_terminal_002
 efp_effect damage8 damage_sparks hp_order_terminal_001
 efp_effect ambient order_terminal_effect order_terminal
 efp_effect explode detonate_terminal order_terminal
+efp_effect damage_smoke terminal_damage_smoke order_terminal
 efp_end
 
 ##nano_dispenser
@@ -3368,15 +3558,16 @@ efp_swap_begin vs
 efp_swap_material med_led+null medterm_vs
 efp_swap_material circuits01+null circuits01_vs
 efp_swap_end
-efp_effect damage1 damage_sparks hp_medical_terminal_003
-efp_effect damage2 damage_sparks hp_medical_terminal_002
-efp_effect damage3 damage_sparks hp_medical_terminal_001
-efp_effect damage4 damage_sparks hp_medical_terminal_008
-efp_effect damage5 damage_sparks hp_medical_terminal_007
-efp_effect damage6 damage_sparks hp_medical_terminal_006
-efp_effect damage7 damage_sparks hp_medical_terminal_005
-efp_effect damage8 damage_sparks hp_medical_terminal_004
+efp_effect damage1 terminal_damage_elecarcs hp_medical_terminal_003
+efp_effect damage2 terminal_damage_elecarcs hp_medical_terminal_002
+efp_effect damage3 terminal_damage_elecarcs hp_medical_terminal_001
+efp_effect damage4 terminal_damage_elecarcs hp_medical_terminal_008
+efp_effect damage5 terminal_damage_elecarcs hp_medical_terminal_007
+efp_effect damage6 terminal_damage_elecarcs hp_medical_terminal_006
+efp_effect damage7 terminal_damage_elecarcs hp_medical_terminal_005
+efp_effect damage8 terminal_damage_elecarcs hp_medical_terminal_004
 efp_effect active med_term hp_medical_terminal_009
+efp_effect damage_smoke terminal_damage_smoke hp_medical_terminal_005
 efp_end
 
 ##main_terminal
@@ -3435,6 +3626,12 @@ efp_swap_begin vs
 efp_swap_material circuits01+null circuits01_vs
 efp_swap_material orderterminal_fx+null orderterm_led_vs
 efp_swap_end
+efp_effect damage1 terminal_damage_elecarcs hp_cert_terminal_001
+efp_effect damage2 terminal_damage_elecarcs hp_cert_terminal_002
+efp_effect damage3 terminal_damage_elecarcs hp_cert_terminal_003
+efp_effect damage4 terminal_damage_elecarcs hp_cert_terminal_004
+efp_effect damage5 terminal_damage_elecarcs hp_cert_terminal_005
+efp_effect damage_smoke terminal_damage_smoke hp_cert_terminal_002
 efp_end
 
 ##resource_silo
@@ -4111,15 +4308,15 @@ efp_end
 efp_swap_begin nc
 efp_swap_end
 efp_swap_begin tr
+efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_tr_lod
 efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_tr1_alpha
 efp_swap_material twomanhoverbuggy_nc2_alpha twomanhoverbuggy_tr2_alpha
-efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_tr_lod
 efp_swap_material twomanhoverbuggy_nc3_alpha twomanhoverbuggy_tr3_alpha
 efp_swap_end
 efp_swap_begin vs
+efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_vs_lod
 efp_swap_material twomanhoverbuggy_nc1_alpha twomanhoverbuggy_vs1_alpha
 efp_swap_material twomanhoverbuggy_nc2_alpha twomanhoverbuggy_vs2_alpha
-efp_swap_material twomanhoverbuggy_nc_lod twomanhoverbuggy_vs_lod
 efp_swap_material twomanhoverbuggy_nc3_alpha twomanhoverbuggy_vs3_alpha
 efp_swap_end
 efp_effect headlight1 twomanhoverbuggy_headlight_left thresher_body
@@ -4142,7 +4339,7 @@ efp_effect damage3a verysmall_damage_smoke ef_taillighta
 efp_effect damage3b verysmall_damage_smoke ef_headlighta
 efp_effect damage3c verysmall_damage_smoke ef_headlightb
 efp_effect damage3d verysmall_damage_smoke ef_taillightb
-efp_effect spray_dirt1 thresher_active_dirt root
+efp_effect spray_dirt1 thresher_active_dirt thresher_body
 efp_effect spray_snow1 thresher_active_snow root
 efp_effect spray_water1 thresher_active_water thresher_body
 efp_effect drivernoentry passengerentry_notavailable driver_mount
@@ -4945,8 +5142,8 @@ efp_swap_material antnc_lod antvs_lod
 efp_swap_material antnc1 antvs1
 efp_swap_material antnc2 antvs2
 efp_swap_end
-efp_effect driverentry driverentry drivera_mount
-efp_effect driverentryb driverentry driverb_mount
+efp_effect driverentry driverentry drivera_mount_alt
+efp_effect driverentryb driverentry driverb_mount_alt
 efp_effect deployA deploymount_ant deploy
 efp_effect drivernoentry passengerentry_notavailable drivera_mount
 efp_effect drivernoentryb passengerentry_notavailable driverb_mount
@@ -5059,6 +5256,7 @@ efp_effect wake2 ams_water_wake_frnt ams_body
 efp_effect wake3 ams_water_wake_rear ams_body
 efp_effect wake4 ams_water_wake_rear ams_body
 efp_effect water_splashdown corecenter root
+efp_effect cloak ams_cloak root
 efp_end
 
 ##orbital_shuttle

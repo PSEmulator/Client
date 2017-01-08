@@ -1,8 +1,10 @@
-############################################################3
-# FLYING VEHICLE SPECIFIC KEYMAPS
-############################################################3
+############################################################
+# FLYING and HOVER VEHICLE SPECIFIC KEYMAPS
+############################################################
 km_addbinding "E" "Flight Elevate"
 km_addbinding "C" "Flight Lower"
+km_addbinding "Joystick POV1 Up" "Flight Elevate"
+km_addbinding "Joystick POV1 Down" "Flight Lower"
 
 km_addbinding "W" "Forward"
 km_addbinding "S" "Backward"
@@ -11,32 +13,8 @@ km_addbinding "Left Arrow" "Strafe Left"
 km_addbinding "Right Arrow" "Strafe Right"
 km_addbinding "A" "Strafe Left"
 km_addbinding "D" "Strafe Right"
+km_addbinding "Joystick POV1 Left" "Strafe Left"
+km_addbinding "Joystick POV1 Right" "Strafe Right"
 
 km_addbinding "Space" "Flight Afterburners"
 
-km_addbinding "1" "Cruise 10 Percent Power"
-km_addbinding "2" "Cruise 20 Percent Power"
-km_addbinding "3" "Cruise 30 Percent Power"
-km_addbinding "4" "Cruise 40 Percent Power"
-km_addbinding "5" "Cruise 50 Percent Power"
-km_addbinding "6" "Cruise 60 Percent Power"
-km_addbinding "7" "Cruise 70 Percent Power"
-km_addbinding "8" "Cruise 80 Percent Power"
-km_addbinding "9" "Cruise 90 Percent Power"
-km_addbinding "0" "Cruise 100 Percent Power"
-km_addbinding "." "Cruise Increment Power"
-km_addbinding "," "Cruise Decrement Power"
-
-km_addbinding "Num Pad 1" "Cruise 10 Percent Power"
-km_addbinding "Num Pad 2" "Cruise 20 Percent Power"
-km_addbinding "Num Pad 3" "Cruise 30 Percent Power"
-km_addbinding "Num Pad 4" "Cruise 40 Percent Power"
-km_addbinding "Num Pad 5" "Cruise 50 Percent Power"
-km_addbinding "Num Pad 6" "Cruise 60 Percent Power"
-km_addbinding "Num Pad 7" "Cruise 70 Percent Power"
-km_addbinding "Num Pad 8" "Cruise 80 Percent Power"
-km_addbinding "Num Pad 9" "Cruise 90 Percent Power"
-km_addbinding "Num Pad 0" "Cruise 100 Percent Power"
-
-km_addbinding "Alt + G" "Bail Vehicle"
-km_addbinding "Alt + R" "Reset Controls"

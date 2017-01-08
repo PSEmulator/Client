@@ -16,6 +16,12 @@ coarse warpgate            warpgate_crp
 coarse bunker_lg           bunker_lg_crp
 coarse bunker_sm           bunker_sm_crp
 coarse bunker_gauntlet     bunker_guantlet_crp
+coarse VT_building_nc      vt_building_nc_crp
+coarse Vt_building_tr      vt_building_tr_crp
+coarse Vt_building_vs      vt_building_vs_crp
+coarse meeting_center_nc   meeting_center_nc_crp
+coarse meeting_center_tr   meeting_center_tr_crp
+coarse meeting_center_vs   meeting_center_vs_crp
 
 coarse rockformationa      rockformationa_crp
 coarse rockformationb      rockformationb_crp

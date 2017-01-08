@@ -1,5 +1,17 @@
 #lod_begin
 
+##vrtb_sign
+
+lod_curve 1000
+
+##ods_sign
+
+lod_curve 1000
+
+##mosquito_hologram
+
+lod_curve 10 30 50 70
+
 ##banner_mount_small
 
 lod_curve 1000
@@ -1140,13 +1152,53 @@ lod_curve 50 450 600
 
 lod_curve 1000
 
-##capture_core
+##ap_shell_pack
 
-lod_curve 600
+lod_curve 2 4 6 8 10 12 14
+
+##ap_ammo_pack
+
+lod_curve 1 3
+
+##meetingone_sign
+
+lod_curve 1000
+
+##meetingtwo_sign
+
+lod_curve 1000
+
+##meetingthree_sign
+
+lod_curve 1000
+
+##meetingfour_sign
+
+lod_curve 1000
+
+##hologram_base
+
+lod_curve 1000
+
+##meeting_sign
+
+lod_curve 1000
+
+##hologram_mosquito
+
+lod_curve 1000
 
 ##dome3
 
 lod_curve 2000 200 300 400 500 600 700
+
+##capture_core
+
+lod_curve 600
+
+##warp_hologram
+
+lod_curve 5 10 20 30
 
 ##gen_rigging
 
@@ -1287,6 +1339,14 @@ lod_curve 50 350 550
 ##volcanicrocka
 
 lod_curve 60 200 400
+
+##deserttreee
+
+lod_curve 60 100 250 350
+
+##deserttreed
+
+lod_curve 50 110 230 400
 
 ##desertrocke
 
@@ -1452,95 +1512,7 @@ lod_curve 200 500 700 1000
 
 lod_curve 200 500 700 1000
 
-##ap_shell_pack
-
-lod_curve 2 4 6 8 10 12 14
-
-##deserttreef
-
-lod_curve 65 110 300 470
-
-##deserttreee
-
-lod_curve 60 100 250 350
-
-##deserttreed
-
-lod_curve 50 110 230 400
-
-##deserttreec
-
-lod_curve 14 30 50 100
-
-##deserttreeb
-
-lod_curve 14 30 50 100
-
-##deserttreea
-
-lod_curve 14 30 50 100
-
-##articshrubd
-
-lod_curve 50 100 150
-
-##ap_ammo_pack
-
-lod_curve 1 3
-
-##deserttreeg
-
-lod_curve 50 110 230 400
-
-##deserttreeh
-
-lod_curve 60 100 250 350
-
-##flame_spitter
-
-lod_curve 10 20 40 60
-
-##20mm_cannon_reaver
-
-lod_curve 10 20 30
-
-##minirocket
-
-lod_curve 40 60
-
-##heavy_rail_beam
-
-lod_curve 10 20 30
-
-##spitfire
-
-lod_curve 10 35 55 60 85 60 70
-
-##deserttreei
-
-lod_curve 65 110 300 470
-
-##swamptreeb
-
-lod_curve 150 300 500 1000
-
-##swamptreea
-
-lod_curve 150 300 500 1000
-
-##vs_hev_starfire
-
-lod_curve 20 40
-
-##vs_hev_quasar
-
-lod_curve 20 40
-
-##vs_hev_comet
-
-lod_curve 20 40
-
-##nc_hev_sparrow
+##nc_hev_falcon
 
 lod_curve 15 30
 
@@ -1548,9 +1520,81 @@ lod_curve 15 30
 
 lod_curve 15 30
 
-##nc_hev_falcon
+##nc_hev_sparrow
 
 lod_curve 15 30
+
+##vs_hev_comet
+
+lod_curve 20 40
+
+##vs_hev_quasar
+
+lod_curve 20 40
+
+##vs_hev_starfire
+
+lod_curve 20 40
+
+##swamptreea
+
+lod_curve 150 300 500 1000
+
+##swamptreeb
+
+lod_curve 150 300 500 1000
+
+##deserttreei
+
+lod_curve 15 65 110 300 470
+
+##spitfire
+
+lod_curve 10 35 55 60 85 60 70
+
+##heavy_rail_beam
+
+lod_curve 10 20 30
+
+##minirocket
+
+lod_curve 40 60
+
+##20mm_cannon_reaver
+
+lod_curve 10 20 30
+
+##flame_spitter
+
+lod_curve 10 20 40 60
+
+##deserttreeh
+
+lod_curve 20 60 100 250 350
+
+##deserttreeg
+
+lod_curve 15 50 110 230 400
+
+##articshrubd
+
+lod_curve 50 100 150
+
+##deserttreea
+
+lod_curve 14 30 50 100
+
+##deserttreeb
+
+lod_curve 14 30 50 100
+
+##deserttreec
+
+lod_curve 14 30 50 100
+
+##deserttreef
+
+lod_curve 65 110 300 470
 
 ##mb_flight_win_frame
 
@@ -1678,7 +1722,7 @@ lod_curve 15 25 40 60 100 150
 
 ##orbital_building_tr
 
-lod_curve 300 400 500 600
+lod_curve 300 500 600 800
 
 ##75mm_lightning
 
@@ -1702,7 +1746,7 @@ lod_curve 15 25 40 60 100 150
 
 ##orbital_building_vs
 
-lod_curve 200 300 400 500
+lod_curve 300 500 600 800
 
 ##repeater
 
@@ -1778,7 +1822,7 @@ lod_curve 500
 
 ##meeting_center_tr
 
-lod_curve 200 300 400
+lod_curve 300 500 700
 
 ##particle_beam_magrider
 
@@ -1802,7 +1846,7 @@ lod_curve 15 25 40 80 125 150
 
 ##meeting_center_vs
 
-lod_curve 200 300 400
+lod_curve 300 500 700
 
 ##ncfsth
 
@@ -1930,7 +1974,7 @@ lod_curve 1000
 
 ##Vt_building_vs
 
-lod_curve 250 350 500 600
+lod_curve 250 350 550 850
 
 ##ncmsth
 
@@ -1942,7 +1986,7 @@ lod_curve 500
 
 ##amp_station
 
-lod_curve 300 500 600 700
+lod_curve 300 500 600 800
 
 ##rotarychaingun_mosquito
 
@@ -2002,7 +2046,7 @@ lod_curve 10 20 80
 
 ##meeting_center_NC
 
-lod_curve 200 300 300
+lod_curve 300 400 700
 
 ##vsfsth
 
@@ -2018,7 +2062,7 @@ lod_curve 1000
 
 ##orbital_building_nc
 
-lod_curve 300 500 600 700
+lod_curve 300 500 600 800
 
 ##gr_door_main
 
@@ -2042,11 +2086,11 @@ lod_curve 15 30 40
 
 ##VT_building_nc
 
-lod_curve 250 350 500 600
+lod_curve 250 350 550 850
 
 ##isp
 
-lod_curve 10 20 30
+lod_curve 10 20
 
 ##ncmsi
 
@@ -2066,7 +2110,7 @@ lod_curve 1000
 
 ##Vt_building_tr
 
-lod_curve 250 350 500 600
+lod_curve 250 350 550 850
 
 ##gauss
 
@@ -2091,6 +2135,10 @@ lod_curve 20 40 60
 ##mainbase_tr
 
 lod_curve 300 400 500 600
+
+##hologram_warp
+
+lod_curve 1000
 
 ##rock_formations
 
@@ -2247,6 +2295,18 @@ lod_curve 30 45 60 100 250
 ##ams
 
 lod_curve 30 45 60 100 300
+
+##coffin_vs
+
+lod_curve 10 20 40 50 60 100
+
+##coffin_nc
+
+lod_curve 10 20 40 50 60 100
+
+##coffin_tr
+
+lod_curve 10 20 40 50 60 100
 
 ##orbital_shuttle
 

@@ -1,0 +1,449 @@
+  #=======================================================
+# Offline Training Mission 4
+# Map Usage
+#=======================================================
+
+$begin OfflineTrainingMission4
+	$freeze
+	$set_key_location 0 3000.0 3000.0 0.0
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$building_info Bitol 1 1
+	$building_info Kisin 2 9
+	$building_info Voltan 1 2
+	$building_info Ixtab -1 0
+	$building_info Ghanon -1 0
+	$building_info Acan 2 4
+	$building_info Naum 1 2
+	$building_info Chac 2 8
+
+	#-------------------------------
+	# Cycle the map...
+	#-------------------------------
+	$text_dlg @OfflineMission4_01 25
+	$play Map_01.mp3 
+	$radar_range 50.0
+	$radar_range 200.0
+	$sync
+
+	#-------------------------------
+	# Open da map....
+	#-------------------------------
+	$text_dlg @OfflineMission4_02 25
+	$play Map_05.mp3 
+	$wait_on_show OverheadMap 1 Tactical 
+	$sync
+
+	#-------------------------------
+	# Wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_03 25
+	$play Map_06.mp3 
+	$sync
+	$wait 2000
+
+	#-------------------------------
+	# Flash blue SOI's and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_04 25
+	$play Map_07.mp3 
+	$sync
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+	$building_info Naum -1 2
+	$building_info Voltan -1 2
+	$building_info Bitol -1 1
+	$wait 200
+	$building_info Naum 1 2
+	$building_info Voltan 1 2
+	$building_info Bitol 1 1
+	$wait 200
+
+	
+
+	#-------------------------------
+	# Flash red SOI's and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_05 25
+	$play Map_08.mp3 
+	$sync
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+	$building_info Zotz -1 2
+	$building_info Mulac -1 5
+	$wait 200
+	$building_info Zotz 0 2
+	$building_info Mulac 0 5
+	$wait 200
+
+
+
+	#-------------------------------
+	# Flash purple SOI's and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_06 25
+	$play Map_09.mp3 
+	$sync
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+	$building_info Kisin -1 9
+	$building_info Acan -1 4
+	$building_info Chac -1 8
+	$wait 200
+	$building_info Kisin 2 9
+	$building_info Acan 2 4
+	$building_info Chac 2 8
+	$wait 200
+
+
+	#-------------------------------
+	# Flash yellow SOI's and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_07 25
+	$play Map_10.mp3 
+	$sync
+	
+	$wait 2000
+
+	#-------------------------------
+	# Flash warpgate SOI's and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_08 25
+	$play Map_11.mp3 
+	$sync
+	$wait 2000
+
+	#-------------------------------
+	# Flash hotspots and wait...
+	#-------------------------------
+	$text_dlg @OfflineMission4_09 25
+	$play Map_12.mp3 
+	$sync
+	$wait 2000
+
+	#--------------------------------
+	# Zoom in....
+	#--------------------------------
+	$text_dlg @OfflineMission4_10 25
+	$play Map_13.mp3 
+	$sync
+	$map_zoom 6
+
+	#--------------------------------
+	# Pan around...
+	#--------------------------------
+	$text_dlg @OfflineMission4_11 25
+	$play Map_14.mp3 
+	$sync
+	$wait 4000
+
+	#--------------------------------
+	# Zoom out....
+	#--------------------------------
+	$text_dlg @OfflineMission4_12 25
+	$play Map_15.mp3 
+	$sync
+	$map_zoom 0
+
+	#--------------------------------
+	# Global view...
+	#--------------------------------
+	$text_dlg @OfflineMission4_13 25
+	$play Map_16.mp3 
+	$sync
+	$wait_on_show OverheadMap 1 Global
+
+	#--------------------------------
+	# Wait...select some continents auto magically...
+	#--------------------------------
+	$text_dlg @OfflineMission4_14 25
+	$play Map_17.mp3 
+	$wait 4000
+	$select_continent 1
+	$wait 3500
+	$select_continent 2
+	$wait 3500
+	$select_continent 3
+	$wait 3500
+	$select_continent 4
+	$wait 3500
+	$select_continent 5
+	$wait 3500
+	$select_continent 6
+	$wait 3500
+	$select_continent 7
+	$wait 3500
+	$select_continent 8
+	$wait 3500
+	$select_continent 9
+	$wait 3500
+	$select_continent 10
+	$wait 3500
+	
+
+	#--------------------------------
+	# Select NC sanc...and wait...
+	#--------------------------------
+	$text_dlg @OfflineMission4_15 25
+	$play Map_18.mp3 
+	$select_continent 11
+	$sync
+	$wait 2000
+
+	#--------------------------------
+	# Select VS sanc...and wait...
+	#--------------------------------
+	$text_dlg @OfflineMission4_16 25
+	$play Map_19.mp3 
+	$select_continent 12
+	$sync
+	$wait 3000
+
+	#--------------------------------
+	# Select TR sanc...and wait...
+	#--------------------------------
+	$text_dlg @OfflineMission4_17 25
+	$play Map_20.mp3 
+	$select_continent 13
+	$sync
+	$wait 3000
+
+	#--------------------------------
+	# Back to the tac map...
+	#--------------------------------
+	$text_dlg @OfflineMission4_18 25
+	$play Map_21.mp3 
+	$select_continent 2
+	$sync
+	$wait_on_show OverheadMap 1 Tactical
+
+	#--------------------------------
+	# Place a waypoint
+	#--------------------------------
+	$text_dlg @OfflineMission4_19 25
+	$play Map_22.mp3 
+	$wait_waypoint -1
+	$sync
+
+	#---------------------------------
+	# Leave da tac map....
+	#---------------------------------
+	$text_dlg @OfflineMission4_20 25
+	$play Map_23.mp3 
+	$wait_on_show OverheadMap 0 x
+	$sync
+
+	#----------------------------------
+	# Wait on da waypoint you placed...
+	#----------------------------------
+	$text_dlg @OfflineMission4_21 25
+	$play Map_24.mp3 
+	$thaw 
+	$wait_waypoint 5
+	$sync
+	$freeze false
+
+	#----------------------------------
+	# Set a waypoint in the warpgate, go to it, and warp them...
+	#----------------------------------
+	$text_dlg @OfflineMission4_22 25
+	$play Map_25.mp3 
+	$sync
+	$set_waypoint 3176 1978 2
+	$thaw
+	$wait_waypoint 15
+	$zone 8
+
+	#-----------------------------------
+	# Done...
+	#-----------------------------------
+	$wait_until_zone 8
+	$set_position 15010 5425 5211 32
+	$text_dlg @OfflineMission4_23 25
+	$play Map_26.mp3 
+	$sync
+
+    $levelup
+	$show_mission_selection
+	$quit
+$end

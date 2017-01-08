@@ -1,72 +1,111 @@
-<Page Name='SelectServer' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Button Enabled='false' LocalTooltip='[@SelectServerConnectButtonTooltip]' Location='898,733' Name='BackButton' ScrollExtent='43,15' Size='43,15' Style='/Buttons.ShellBack.style' Tooltip='@SelectServerConnectButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<Button IsDefaultButton='true' LocalTooltip='[@SelectServerConnectButtonTooltip]' Location='965,733' Name='Connect' ScrollExtent='41,15' Size='41,15' Style='/Buttons.ShellForward.style' Tooltip='@SelectServerConnectButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@SelectServerOptionsButtonTooltip]' Location='808,734' Name='Options' ScrollExtent='65,18' Size='65,18' Style='/Buttons.ShellOptions.style' Tooltip='@SelectServerOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsCancelButton='true' LocalTooltip='[@SelectServerQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='24,23' Size='24,23' Style='/Buttons.ShellClose.style' Tooltip='@SelectServerQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Page Location='55,78' Name='ScrollingTextPage' ScrollExtent='911,29' Size='911,29'>
-<Text Font='/Fonts.HudFont3' LocalText='[@BannerMessage]' Location='6,0' Name='Text' ScrollExtent='898,29' Size='898,29' TextAlignmentVertical='Center'>@BannerMessage</Text>
-</Page>
-<Page Location='56,123' Name='ServerListPage' ScrollExtent='916,311' Size='916,311'>
-<Button LocalText='[@ServerNameHeading]' LocalTooltip='[@SelectServerServerNameHeadingTooltip]' Location='6,3' Name='ServerNameHeading' ScrollExtent='200,30' Size='200,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerServerNameHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerNameHeading</Button>
-<Button LocalText='[@PlayerCount]' LocalTooltip='[@SelectServerPlayerCountHeadingTooltip]' Location='216,3' Name='PlayerCountHeading' ScrollExtent='120,30' Size='120,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerPlayerCountHeadingTooltip' TooltipStyle='/Tooltips.Default'>@PlayerCount</Button>
-<Button LocalText='[@ServerStatus]' LocalTooltip='[@SelectServerServerStatusHeadingTooltip]' Location='346,3' Name='ServerStatusHeading' ScrollExtent='120,30' Size='120,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerServerStatusHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerStatus</Button>
-<Button LocalText='[@ServerType]' LocalTooltip='[@SelectServerServerTypeHeadingTooltip]' Location='476,3' Name='ServerTypeHeading' ScrollExtent='120,30' Size='120,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerServerTypeHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerType</Button>
-<Button LocalText='[@ServerPing]' LocalTooltip='[@SelectServerServerPingHeadingTooltip]' Location='606,3' Name='ServerPingHeading' ScrollExtent='120,30' Size='120,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerServerPingHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerPing</Button>
-<Button LocalText='[@ServerNeed]' LocalTooltip='[@SelectServerNeedHeadingTooltip]' Location='736,3' Name='ServerNeedHeading' ScrollExtent='125,30' Size='125,30' Style='/Buttons.ServerSelectHeading.style' Tooltip='@SelectServerNeedHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerNeed</Button>
-<Listbox DataSource='/DataSources.ServerList' LocalTooltip='[@SelectServerServerListTooltip]' Location='7,37' Name='ServerList' RowTemplate='ServerListTemplate' ScrollExtent='882,271' Size='882,271' Style='/Listboxes.EmbeddedListbox16.style' Tooltip='@SelectServerServerListTooltip' TooltipStyle='/Tooltips.Default'/>
-<Scrollbar Control='ServerList' Location='894,37' Name='Scrollbar' ScrollExtent='10,271' Size='10,271' Style='/ScrollBars.vertical.style'/>
-<Template Name='ServerListTemplate' Size='882,22'>\<text font = \'/Fonts.HudFont3\' location = \'6,2\' size = \'200,18\' textalignment = \'left\'\>
-$Name$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'216,2\' size = \'120,18\' textalignment = \'left\'\>
-$Num$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'346,2\' size = \'120,18\' textalignment = \'left\'\>
-$Status$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'476,2\' size = \'120,18\' textalignment = \'left\'\>
-$Type$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'606,2\' size = \'120,18\' textalignment = \'left\'\>
-$Ping$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'736,2\' size = \'120,18\' textalignment = \'left\'\>
-$Need$
-\</text\></Template>
-<Text Font='/Fonts.DefaultFont' GetsInput='false' LocalText='[@TotalPlayersOnlineHeading]' Location='5,0' Name='TotalPlayersOnlineHeading' ScrollExtent='420,20' Size='420,20' TextAlignment='Right' Visible='false'>@TotalPlayersOnlineHeading</Text>
-<Text Font='/Fonts.DefaultFont' GetsInput='false' LocalText='8888888' LocalTooltip='[@SelectServerTotalPlayersTooltip]' Location='430,0' Name='TotalPlayersOnline' ScrollExtent='120,20' Size='120,20' Tooltip='@SelectServerTotalPlayersTooltip' TooltipStyle='/Tooltips.Default' Visible='false'>8888888</Text>
-</Page>
-<Page body.scrolllocation='0,0' body.text='SelectedItem.Body' Location='55,468' Name='NewsPage' ScrollExtent='911,225' Size='911,225' title.text='SelectedItem.Name'>
-<Image BackgroundOpacity='1.000' Location='6,25' Name='AccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='295,8' Size='295,8'/>
-<Image BackgroundOpacity='1.000' Location='325,25' Name='AccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='570,8' Size='570,8'/>
-<Button BackgroundOpacity='0.000' LocalText='[@NewsTopic]' LocalTooltip='[@SelectServerNewsTopicHeadingTooltip]' Location='7,9' Name='NewsTopicHeading' ScrollExtent='174,22' Size='174,22' Style='/Buttons.ServerSelectNewsTopic.style' Tooltip='@SelectServerNewsTopicHeadingTooltip' TooltipStyle='/Tooltips.Default'>@NewsTopic</Button>
-<Button BackgroundOpacity='0.000' LocalText='[@NewsDate]' LocalTooltip='[@SelectServerNewsDateHeadingTooltip]' Location='181,9' Name='NewsDateHeading' ScrollExtent='120,22' Size='120,22' Style='/Buttons.ServerSelectNewsDate.style' Tooltip='@SelectServerNewsDateHeadingTooltip' TooltipStyle='/Tooltips.Default'>@NewsDate</Button>
-<Listbox DataSource='/DataSources.News' LocalTooltip='[@SelectServerNewsListTooltip]' Location='7,34' Name='NewsSelection' ondatasourcechanged='SelectedItemIndex = 1
+<Page Name='SelectServer' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Page body.scrolllocation='0,0' body.text='SelectedItem.Body' Location='807,469' Name='ArchivePage' PackLocation='right,bottom' PackLocationProp='-217/0001,-299/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='143,183' Size='143,183' title.text='SelectedItem.Name' Visible='false'>
+<Image Location='121,7' Name='Toggle' PackLocation='right,top' PackLocationProp='-022/0001,0007/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='10,20' Size='10,20' Stretch='false' Style='/Frontend.CloseIcon'/>
+<Button LocalText='[@SelectServerNewsArchive]' LocalTooltip='[@SelectServerNewsArchiveCloseTooltip]' Location='2,2' Name='NewsArchive' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='139,30' Size='139,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNewsArchiveCloseTooltip' TooltipStyle='/Tooltips.Default'>@SelectServerNewsArchive</Button>
+<Listbox DataSource='/DataSources.News' LocalTooltip='[@SelectServerNewsListTooltip]' Location='10,37' Name='NewsSelection' ondatasourcechanged='SelectedItemIndex = 1
 Parent.Title.Text = SelectedItem.Name
 Parent.Body.Text = SelectedItem.Body
 Parent.Body.ScrollLocation = 0,0' OnSelect='Parent.Title.Text = SelectedItem.Name
 Parent.Body.Text = SelectedItem.Body
-Parent.Body.ScrollLocation = 0,0' RowTemplate='NewsTemplate' ScrollExtent='284,186' Size='284,186' Style='/Listboxes.EmbeddedListbox16.style' Tooltip='@SelectServerNewsListTooltip' TooltipStyle='/Tooltips.Default'/>
-<Scrollbar Control='NewsSelection' Location='296,41' Name='NewsSelectionScrollbar' ScrollExtent='10,180' Size='10,180' Style='/ScrollBars.vertical.style'/>
-<Text Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NewsTextHeading]' LocalTooltip='[@SelectServerNewsTextHeadingTooltip]' Location='317,12' Name='NewsTextHeading' ScrollExtent='577,20' Size='577,20' TextAlignment='Center' Tooltip='@SelectServerNewsTextHeadingTooltip' TooltipStyle='/Tooltips.Default'>@NewsTextHeading</Text>
-<Text Font='/Fonts.HudFont3' LocalText='Need to fill this with localized news text.' LocalTooltip='[@SelectServerNewsTextTooltip]' Location='326,37' Name='NewsText' ScrollExtent='568,184' Size='568,184' Tooltip='@SelectServerNewsTextTooltip' TooltipStyle='/Tooltips.Default'>Need to fill this with localized news text.</Text>
-<Scrollbar Control='NewsText' Location='897,37' Name='NewsTextScrollbar' ScrollExtent='10,184' Size='10,184' Style='/ScrollBars.vertical.style'/>
-<Template Name='NewsTemplate' Size='284,22'>\<text font = \'/Fonts.HudFont3\' location = \'2,2\' size = \'160,18\'\>
-$Name$
-\</text\>
-\<text font = \'/Fonts.HudFont3\' location = \'175,2\' size = \'105,18\' textalignment = \'center\'\>
+Parent.Body.ScrollLocation = 0,0' PackSize='absolute,absolute' PackSizeProp='0033/0001,0044/0001' RowTemplate='NewsTemplate' ScrollExtent='110,139' Size='110,139' Style='/Listboxes.Frontend.style' Tooltip='@SelectServerNewsListTooltip' TooltipStyle='/Tooltips.Default'/>
+<Scrollbar Control='NewsSelection' Location='126,37' Name='NewsSelectionScrollbar' PackLocation='right,top' PackLocationProp='-017/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0044/0001' ScrollExtent='10,139' Size='10,139' Style='/ScrollBars.frontend_vertical.style'/>
+<Template Name='NewsTemplate' Size='110,28'>\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'10,2\' size = \'110,24\' textalignment = \'left\'\>
 $Date$
 \</text\></Template>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='143,183' Size='143,183' Stretch='false' Style=' '/>
 </Page>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellServerSelectBackground' visualeditlock='true'/>
+<Page Location='53,55' Name='ScrollingTextPage' PackLocation='left,top' PackLocationProp='0053/0001,0055/0001' PackSize='absolute,fixed' PackSizeProp='0106/0001,0002/0003' ScrollExtent='918,43' Size='918,43'>
+<Text Color='#72C9D1' Font='/Fonts.Agency24' LocalText='[@BannerMessage]' Location='2,4' Name='Text' PackSize='absolute,fixed' PackSizeProp='0007/0001,0002/0003' ScrollExtent='911,36' Size='911,36' TextAlignmentVertical='Center'>@BannerMessage</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='918,43' Size='918,43' Stretch='false' Style=' '/>
 </Page>
-<Page Name='SelectEmpire' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false' visualeditlock='true'>
-<Button IsCancelButton='true' LocalTooltip='[@SelectEmpireBackButtonTooltip]' Location='898,733' Name='Back' ScrollExtent='43,15' Size='43,15' Style='/Buttons.ShellBack.style' Tooltip='@SelectEmpireBackButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@SelectEmpireQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='23,24' Size='23,24' Style='/Buttons.ShellClose.style' Tooltip='@SelectEmpireQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@SelectEmpireOptionsButtonTooltip]' Location='808,733' Name='Options' ScrollExtent='65,18' Size='65,18' Style='/Buttons.ShellOptions.style' Tooltip='@SelectEmpireOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsDefaultButton='true' LocalTooltip='[@SelectEmpireEnterButtonTooltip]' Location='965,733' Name='Enter' ScrollExtent='41,15' Size='41,15' Style='/Buttons.ShellForward.style' Tooltip='@SelectEmpireEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Page Location='53,118' Name='ServerListPage' PackLocation='left,top' PackLocationProp='0053/0001,0118/0001' PackSize='absolute,absolute' PackSizeProp='0106/0001,0445/0001' ScrollExtent='918,323' Size='918,323'>
+<Button LocalText='[@ServerNameHeading]' LocalTooltip='[@SelectServerServerNameHeadingTooltip]' Location='10,10' Name='ServerNameHeading' ScrollExtent='285,30' Size='285,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerServerNameHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerNameHeading</Button>
+<Button LocalText='[@PlayerCount]' LocalTooltip='[@SelectServerPlayerCountHeadingTooltip]' Location='305,10' Name='PlayerCountHeading' ScrollExtent='115,30' Size='115,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerPlayerCountHeadingTooltip' TooltipStyle='/Tooltips.Default'>@PlayerCount</Button>
+<Button LocalText='[@ServerStatus]' LocalTooltip='[@SelectServerServerStatusHeadingTooltip]' Location='430,10' Name='ServerStatusHeading' ScrollExtent='104,30' Size='104,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerServerStatusHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerStatus</Button>
+<Button LocalText='[@ServerType]' LocalTooltip='[@SelectServerServerTypeHeadingTooltip]' Location='544,10' Name='ServerTypeHeading' ScrollExtent='81,30' Size='81,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerServerTypeHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerType</Button>
+<Button LocalText='[@ServerPing]' LocalTooltip='[@SelectServerServerPingHeadingTooltip]' Location='635,10' Name='ServerPingHeading' ScrollExtent='79,30' Size='79,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerServerPingHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerPing</Button>
+<Button LocalText='[@ServerNeed]' LocalTooltip='[@SelectServerNeedHeadingTooltip]' Location='724,10' Name='ServerNeedHeading' ScrollExtent='170,30' Size='170,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNeedHeadingTooltip' TooltipStyle='/Tooltips.Default'>@ServerNeed</Button>
+<Listbox DataSource='/DataSources.ServerList' LocalTooltip='[@SelectServerServerListTooltip]' Location='10,45' Name='ServerList' PackSize='absolute,absolute' PackSizeProp='0035/0001,0050/0001' RowTemplate='ServerListTemplate' ScrollExtent='883,273' Size='883,273' Style='/Listboxes.Frontend.style' Tooltip='@SelectServerServerListTooltip' TooltipStyle='/Tooltips.Default'/>
+<Scrollbar Control='ServerList' Location='898,45' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0050/0001' ScrollExtent='10,273' Size='10,273' Style='/ScrollBars.frontend_vertical.style'/>
+<Template Name='ServerListTemplate' Size='883,28'>\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'10,2\' size = \'285,24\' textalignment = \'left\'\>
+$Name$
+\</text\>
+\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'305,2\' size = \'65,24\' textalignment = \'right\'\>
+$Num$
+\</text\>
+\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'420,2\' size = \'104,24\' textalignment = \'center\'\>
+$Status$
+\</text\>
+\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'534,2\' size = \'81,24\' textalignment = \'center\'\>
+$Type$
+\</text\>
+\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'635,2\' size = \'39,24\' textalignment = \'right\'\>
+$Ping$
+\</text\>
+\<Image backgroundopacity = \'0.000\' enabled = \'false\' location = \'744,3\' scrollextent = \'25,22\' size = \'25,22\' stretch = \'false\' style = \'/Frontend.NCLogoSolid\' visible = \'$NeedNC$\'/\>
+\<Image backgroundopacity = \'0.000\' enabled = \'false\' location = \'791,3\' scrollextent = \'17,22\' size = \'23,22\' stretch = \'false\' style = \'/Frontend.VSLogoSolid\' visible = \'$NeedVS$\'/\>
+\<Image backgroundopacity = \'0.000\' enabled = \'false\' location = \'830,3\' scrollextent = \'23,22\' size = \'17,22\' stretch = \'false\' style = \'/Frontend.TRLogoSolid\' visible = \'$NeedTR$\'/\></Template>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='918,323' Size='918,323' Stretch='false' Style=' '/>
+</Page>
+<Page body.scrolllocation='0,0' body.text='SelectedItem.Body' Location='53,461' Name='NewsPage' PackLocation='left,bottom' PackLocationProp='0053/0001,-307/0001' PackSize='absolute,fixed' PackSizeProp='0106/0001,0002/0003' ScrollExtent='918,252' Size='918,252' title.text='SelectedItem.Name'>
+<Text Color='#72C9D1' Font='/Fonts.Agency24' LocalText='Jan 15' Location='556,10' Name='NewsDate' PackSize='right,bottom' ScrollExtent='181,32' Size='181,32' TextAlignment='Right' TextAlignmentVertical='Center' TooltipStyle='/Tooltips.Default'>Jan 15</Text>
+<Image Location='874,21' Name='Toggle' PackLocation='right,top' PackLocationProp='-044/0001,0021/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='10,10' Size='10,10' Stretch='false' Style='/Frontend.OpenIcon'/>
+<Button Enabled='false' LocalText='[@NewsTopic]' LocalTooltip='[@SelectServerNewsTopicHeadingTooltip]' Location='10,10' Name='NewsTopicHeading' PackLocation='left,top' PackLocationProp='0010/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0183/0001,0002/0003' ScrollExtent='735,30' Size='735,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNewsTopicHeadingTooltip' TooltipStyle='/Tooltips.Default'>@NewsTopic</Button>
+<Button LocalText='[@SelectServerNewsArchive]' LocalTooltip='[@SelectServerNewsArchiveTooltip]' Location='755,10' Name='NewsArchive' PackLocation='right,top' PackLocationProp='-163/0001,0010/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='139,30' Size='139,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNewsArchiveTooltip' TooltipStyle='/Tooltips.Default'>@SelectServerNewsArchive</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='Slow news day?' LocalTooltip='[@SelectServerNewsTextTooltip]' Location='10,45' Name='NewsText' PackSize='absolute,absolute' PackSizeProp='0033/0001,0050/0001' ScrollExtent='885,202' Size='885,202' Tooltip='@SelectServerNewsTextTooltip' TooltipStyle='/Tooltips.Default'>Slow news day?</Text>
+<Scrollbar Control='NewsText' Location='898,45' Name='NewsTextScrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0050/0001' ScrollExtent='10,202' Size='10,202' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='918,252' Size='918,252' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendCreditsButton]' LocalTooltip='[@FrontendCreditsTooltip]' Location='5,723' Name='CreditsButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendCreditsTooltip'>@FrontendCreditsButton</Button>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='[@FrontendBackTooltip]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendBackTooltip' Visible='false'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendNextButton]' LocalTooltip='[@SelectServerConnectButtonTooltip]' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@SelectServerConnectButtonTooltip'>@FrontendNextButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
+</Page>
+<Page Name='SelectEmpire' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Button LocalText='New Button' LocalTooltip='[@SelectEmpireNextLogoTooltip]' Location='500,530' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='-012/0001,-238/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' Tooltip='@SelectEmpireNextLogoTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@SelectEmpirePrevLogoTooltip]' Location='220,530' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-292/0001,-238/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' Tooltip='@SelectEmpirePrevLogoTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@selectempire]' Location='61,523' Name='SelectEmpireText' PackLocation='left,bottom' PackLocationProp='0061/0001,-245/0001' PackSize='absolute,fixed' PackSizeProp='0400/0001,0002/0003' ScrollExtent='624,27' Size='624,27' TextAlignment='Center'>@selectempire</Text>
+<Page BackgroundColor='#0000FF' Location='58,60' Name='Logos' PackLocation='left,top' PackLocationProp='0058/0001,0060/0001' PackSize='a,a' PackSizeProp='0394/0001,0308/0001' ScrollExtent='630,460' Size='630,460'>
+<Page Location='171,171' Name='NC' ScrollExtent='288,288' Size='288,288'>
+<Image Location='12,27' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0264/0288,0234/0288' ScrollExtent='264,234' Size='264,234' Style='/Frontend.NCLogoGlow'/>
+<Image Location='12,27' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0264/0288,0234/0288' ScrollExtent='264,234' Size='264,234' Style='/Frontend.NC3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireNCTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='288,288' Size='288,288' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireNCTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<Page Location='370,40' Name='VS' ScrollExtent='200,200' Size='200,200'>
+<Image Location='23,18' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,-001/0001' PackSize='p,p' PackSizeProp='0154/0200,0162/0200' ScrollExtent='154,162' Size='154,162' Style='/Frontend.VSLogoGlow'/>
+<Image Location='23,18' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,-001/0001' PackSize='p,p' PackSizeProp='0154/0200,0162/0200' ScrollExtent='154,162' Size='154,162' Style='/Frontend.VS3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireVSTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='200,200' Size='200,200' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireVSTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<Page Location='60,40' Name='TR' ScrollExtent='200,200' Size='200,200'>
+<Image Location='36,20' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0128/0200,0161/0200' ScrollExtent='128,161' Size='128,161' Style='/Frontend.TRLogoGlow'/>
+<Image Location='36,20' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0128/0200,0161/0200' ScrollExtent='128,161' Size='128,161' Style='/Frontend.TR3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireTRTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='200,200' Size='200,200' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireTRTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<GameObjectView BackgroundColor='#0000FF' BackgroundOpacity='1.000' Location='227,240' Name='E3' PackLocation='cpc,cpc' PackLocationProp='0011/0630,0109/0460' PackSize='p,p' PackSizeProp='0199/0630,0198/0460' ScrollExtent='199,198' Size='199,198' Visible='false'/>
+<GameObjectView BackgroundColor='#FF00FF' BackgroundOpacity='1.000' Location='408,63' Name='E1' PackLocation='cpc,cpc' PackLocationProp='0168/0630,-093/0460' PackSize='p,p' PackSizeProp='0150/0630,0149/0460' ScrollExtent='150,149' Size='150,149' Visible='false'/>
+<GameObjectView BackgroundColor='#FF0000' BackgroundOpacity='1.000' Location='88,58' Name='E2' PackLocation='cpc,cpc' PackLocationProp='-152/0630,-098/0460' PackSize='p,p' PackSizeProp='0150/0630,0149/0460' ScrollExtent='150,149' Size='150,149' Visible='false'/>
+</Page>
+<Page Location='705,55' Name='EmpireDescription' PackLocation='right,top' PackLocationProp='-319/0001,0055/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0110/0001' ScrollExtent='266,658' Size='266,658'>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='10,10' Name='Heading' PackLocation='left,top' PackLocationProp='0010/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0037/0001,0002/0003' ScrollExtent='229,30' Size='229,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='[@EmpireGeneralDescription]' Location='10,45' Name='EmpireText' PackLocation='left,top' PackLocationProp='0010/0001,0045/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0051/0001' ScrollExtent='230,607' Size='230,607'>@EmpireGeneralDescription</Text>
+<Scrollbar Control='EmpireText' Location='246,45' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0051/0001' ScrollExtent='10,607' Size='10,607' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='266,658' Size='266,658' Stretch='false' Style=' '/>
+</Page>
 <ImageStyle Name='BorderStyle'>
 <ImageFrame SourceRect='0,0,561,473'>
 <ImageFragment Source='ui_shell_empire_buttons_border_00' SourceRect='0,0,256,256'/>
@@ -77,390 +116,353 @@ $Date$
 <ImageFragment Offset='512,256' Source='ui_shell_empire_buttons_border_05' SourceRect='0,0,49,217'/>
 </ImageFrame>
 </ImageStyle>
-<Image Location='63,136' Name='Border' ScrollExtent='561,473' Size='561,473' Stretch='false' Style='BorderStyle'/>
 <OpacityEffector Name='RolloverEffector' Speed='2.000' TargetOpacity='1.000'/>
 <OpacityEffector Name='RolloutEffector' Speed='1.000' TargetOpacity='0.750'/>
-<ImageStyle Name='MiniTR'>
-<ImageFrame Source='ui_shell_empire_mini_tr_00' SourceRect='0,0,25,32'/>
-</ImageStyle>
-<ImageStyle Name='MiniNC'>
-<ImageFrame Source='ui_shell_empire_mini_nc_00' SourceRect='0,0,30,26'/>
-</ImageStyle>
-<ImageStyle Name='MiniVS'>
-<ImageFrame Source='ui_shell_empire_mini_vs_00' SourceRect='0,0,28,30'/>
-</ImageStyle>
-<Page Location='659,70' Name='EmpireIncentives' ScrollExtent='297,190' Size='297,190'>
-<Text Font='/Fonts.HudFont3' LocalText='[@EmpireIncentives_FrontEndTitle]' Location='0,-3' Name='Title' PackLocation='center,top' PackLocationProp='-148/0001,-003/0001' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='297,58' Size='297,58' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireIncentives_FrontEndTitle</Text>
-<Image AbsorbsInput='false' Location='155,65' Name='TR' PackLocation='right,top' PackLocationProp='-142/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniTR'/>
-<Image AbsorbsInput='false' Location='205,65' Name='NC' PackLocation='right,top' PackLocationProp='-092/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniNC'/>
-<Image AbsorbsInput='false' Location='255,65' Name='VS' PackLocation='right,top' PackLocationProp='-042/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniVS'/>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireIncentives_FrontEndXP]' Location='10,108' Name='IncentiveXP' PackSize='absolute,fixed' PackSizeProp='0157/0001,0002/0003' ScrollExtent='140,28' Size='140,19'>@EmpireIncentives_FrontEndXP</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='153,108' Name='XP_TR' PackLocation='right,top' PackLocationProp='-144/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='203,108' Name='XP_NC' PackLocation='right,top' PackLocationProp='-094/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='253,108' Name='XP_VS' PackLocation='right,top' PackLocationProp='-044/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireIncentives_FrontEndHP]' Location='10,148' Name='IncentiveHP' PackSize='absolute,fixed' PackSizeProp='0157/0001,0002/0003' ScrollExtent='140,28' Size='140,19'>@EmpireIncentives_FrontEndHP</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='153,148' Name='HP_TR' PackLocation='right,top' PackLocationProp='-144/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='203,148' Name='HP_NC' PackLocation='right,top' PackLocationProp='-094/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='253,148' Name='HP_VS' PackLocation='right,top' PackLocationProp='-044/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
+<Page Location='167,572' Name='EmpireIncentives' PackLocation='center,bottom' PackLocationProp='-345/0001,-196/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='406,140' Size='406,140'>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@EmpireIncentiveTooltip]' Name='Tooltip' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='406,140' Size='406,140' Tooltip='@EmpireIncentiveTooltip'></Button>
+<Text Color='#72C9D1' Font='/Fonts.HudFont3' LocalText='[@EmpireCounts_FrontEndTitle]' Location='45,7' Name='Title' PackLocation='left,top' PackLocationProp='0045/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0241/0001,0002/0003' ScrollExtent='165,34' Size='165,24' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireCounts_FrontEndTitle</Text>
+<Text Color='#72C9D1' Font='/Fonts.HudFont3' LocalText='[@EmpireIncentives_FrontEndTitle]' Location='217,7' Name='Title' PackLocation='right,top' PackLocationProp='-189/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0220/0001,0002/0003' ScrollExtent='186,34' Size='186,24' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireIncentives_FrontEndTitle</Text>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='227,33' Name='TRIncentive' PackLocation='right,top' PackLocationProp='-179/0001,0033/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='226,68' Name='NCIncentive' PackLocation='right,top' PackLocationProp='-180/0001,0068/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='226,103' Name='VSIncentive' PackLocation='right,top' PackLocationProp='-180/0001,0103/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#DE4E4E' LocalTooltip='[@HeatlhTooltip]' Location='95,42' Name='TRProgress' PackLocation='left,top' PackLocationProp='0095/0001,0042/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#6572D6' LocalTooltip='[@HeatlhTooltip]' Location='95,77' Name='NCProgress' PackLocation='left,top' PackLocationProp='0095/0001,0077/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#92579E' LocalTooltip='[@HeatlhTooltip]' Location='95,112' Name='VSProgress' PackLocation='left,top' PackLocationProp='0095/0001,0112/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Image AbsorbsInput='false' Location='10,33' Name='TR' PackLocation='left,top' PackLocationProp='0010/0001,0033/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniTR'/>
+<Image AbsorbsInput='false' Location='10,67' Name='NC' PackLocation='left,top' PackLocationProp='0010/0001,0067/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniNC'/>
+<Image AbsorbsInput='false' Location='10,101' Name='VS' PackLocation='left,top' PackLocationProp='0010/0001,0101/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniVS'/>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,36' Name='XP_TR' PackLocation='left,top' PackLocationProp='0044/0001,0036/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,72' Name='XP_NC' PackLocation='left,top' PackLocationProp='0044/0001,0072/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,106' Name='XP_VS' PackLocation='left,top' PackLocationProp='0044/0001,0106/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='406,140' Size='406,140' Stretch='false' Style=' '/>
 </Page>
-<Scrollbar Control='EmpireText' Location='944,284' Name='Scrollbar' ScrollExtent='10,415' Size='10,415' Style='/ScrollBars.vertical.style'/>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireGeneralDescription]' Location='661,286' Name='EmpireText' PackLocation='center,center' PackLocationProp='0149/0001,-098/0001' ScrollExtent='278,414' Size='278,414'>@EmpireGeneralDescription</Text>
-<Text Font='/Fonts.HudFont3' LocalText='[@selectempire]' Location='168,623' Name='SelectEmpireText' PackLocation='center,center' PackLocationProp='-344/0001,0239/0001' ScrollExtent='357,27' Size='357,27' TextAlignment='Center'>@selectempire</Text>
-<Checkbox BackgroundOpacity='1.000' BoundaryPolygon='110.000,7.000,261.000,106.000,236.000,284.000,71.000,272.000,8.000,140.000,105.000,11.000' LocalTooltip='[@SelectEmpireE2Tooltip]' Location='64,302' Name='E1' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='276,307' Size='276,307' Style='/Buttons.ShellEmpireTR.style' Tooltip='@SelectEmpireE2Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' BoundaryPolygon='97.000,3.000,241.000,1.000,330.000,155.000,168.000,259.000,9.000,155.000' LocalTooltip='[@SelectEmpireE1Tooltip]' Location='173,136' Name='E2' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='339,275' Size='339,275' Style='/Buttons.ShellEmpireNC.style' Tooltip='@SelectEmpireE1Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' BoundaryPolygon='172.000,5.000,275.000,146.000,217.000,281.000,41.000,296.000,10.000,110.000' LocalTooltip='[@SelectEmpireE3Tooltip]' Location='338,297' Name='E3' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='286,311' Size='286,311' Style='/Buttons.ShellEmpireVS.style' Tooltip='@SelectEmpireE3Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellEmpireSelectBackground'/>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='Press to return to the server selection screen' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='Press to return to the server selection screen'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendNextButton]' LocalTooltip='SelectEmpireEnterButtonTooltip' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='SelectEmpireEnterButtonTooltip'>@FrontendNextButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>
 <Page Name='WorldCharacterManagement' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Button LocalTooltip='[@WorldCharacterQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='24,24' Size='24,24' Style='/Buttons.ShellClose.style' Tooltip='@WorldCharacterQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsCancelButton='true' LocalTooltip='[@WorldCharacterBackButtonTooltip]' Location='898,733' Name='Back' ScrollExtent='43,15' Size='43,15' Style='/Buttons.ShellBack.style' Tooltip='@WorldCharacterBackButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@WorldCharacterOptionsButtonTooltip]' Location='808,733' Name='Options' ScrollExtent='65,18' Size='65,18' Style='/Buttons.ShellOptions.style' Tooltip='@WorldCharacterOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsDefaultButton='true' LocalTooltip='[@WorldCharacterEnterButtonTooltip]' Location='965,733' Name='Enter' ScrollExtent='41,15' Size='41,15' Style='/Buttons.ShellForward.style' Tooltip='@WorldCharacterEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@WorldCharacterDeleteButtonTooltip]' Location='223,437' Name='Delete' ScrollExtent='64,64' Size='64,64' Style='/Buttons.CharacterDelete.style' Tooltip='@WorldCharacterDeleteButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<ImageStyle Name='MiniNC'>
-<ImageFrame Source='ui_shell_empire_mini_nc_00' SourceRect='0,0,30,26'/>
-</ImageStyle>
-<ImageStyle Name='MiniTR'>
-<ImageFrame Source='ui_shell_empire_mini_tr_00' SourceRect='0,0,25,32'/>
-</ImageStyle>
-<ImageStyle Name='MiniVS'>
-<ImageFrame Source='ui_shell_empire_mini_vs_00' SourceRect='0,0,28,30'/>
-</ImageStyle>
-<ImageStyle Name='TrainingSHStyle'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_map14_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map14_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map14_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map14_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map14_04' SourceRect='0,0,256,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map14_05' SourceRect='0,0,256,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='TrainingDRStyle'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_map16_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map16_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map16_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map16_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map16_04' SourceRect='0,0,256,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map16_05' SourceRect='0,0,256,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='TrainingCOStyle'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_map15_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map15_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map15_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map15_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map15_04' SourceRect='0,0,256,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map15_05' SourceRect='0,0,256,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map01Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map01_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map01_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map01_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map01_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map01_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map01_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map01_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map01_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map02Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map02_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map02_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map02_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map02_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map02_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map02_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map02_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map02_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map03Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map03_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map03_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map03_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map03_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map03_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map03_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map03_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map03_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map04Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map04_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map04_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map04_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map04_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map04_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map04_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map04_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map04_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map05Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map05_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map05_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map05_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map05_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map05_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map05_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map05_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map05_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map06Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map06_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map06_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map06_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map06_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map06_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map06_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map06_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map06_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map07Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_charbg_map07_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map07_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map07_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map07_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map07_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map07_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map07_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map07_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map08Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map08_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map08_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map08_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map08_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map08_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map08_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map08_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map08_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map09Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map09_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map09_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map09_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map09_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map09_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map09_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map09_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map09_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map10Style'>
-<ImageFrame SourceRect='0,0,417,599'>
-<ImageFragment Source='ui_shell_charselect_charbg_map10_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_charbg_map10_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_charbg_map10_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_charbg_map10_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_charbg_map10_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_charbg_map10_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_charbg_map10_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_charbg_map10_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map11Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map11_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map11_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map11_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map11_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map11_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map11_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map11_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map11_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map12Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map12_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map12_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map12_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map12_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map12_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map12_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map12_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map12_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map13Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map13_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map13_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map13_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map13_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map13_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map13_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map13_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map13_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map14Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map14_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map14_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map14_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map14_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map14_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map14_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map14_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map14_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map15Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map15_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map15_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map15_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map15_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map15_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map15_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map15_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map15_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<ImageStyle Name='Map16Style'>
-<ImageFrame>
-<ImageFragment Source='ui_shell_charselect_map16_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_charselect_map16_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_charselect_map16_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,256' Source='ui_shell_charselect_map16_03' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='0,512' Source='ui_shell_charselect_map16_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,512' Source='ui_shell_charselect_map16_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,512' Source='ui_shell_charselect_map16_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,512' Source='ui_shell_charselect_map16_07' SourceRect='0,0,128,128'/>
-</ImageFrame>
-</ImageStyle>
-<Text Font='/Fonts.HudFont3' LocalText='[@CharacterBattleRank]' Location='524,646' Name='BattleRankTitle' ScrollExtent='128,40' Size='128,40' TextAlignment='Right' TextAlignmentVertical='Center'>@CharacterBattleRank</Text>
-<Text Font='/Fonts.HudFont3' LocalText='[@CharacterCommandRank]' Location='749,647' Name='CommandRankTitle' ScrollExtent='128,40' Size='128,40' TextAlignment='Right' TextAlignmentVertical='Center'>@CharacterCommandRank</Text>
-<Text Font='/Fonts.HudFont3' LocalText='6' Location='659,647' Name='BattleRank' ScrollExtent='48,40' Size='48,40' TextAlignment='Center' TextAlignmentVertical='Center'>6</Text>
-<Text Font='/Fonts.HudFont3' LocalText='2' Location='882,646' Name='CommandRank' ScrollExtent='44,40' Size='44,40' TextAlignment='Center' TextAlignmentVertical='Center'>2</Text>
-<GameObjectView AbsorbsInput='false' GetsInput='false' Location='512,93' Name='CharacterView' ScrollExtent='418,598' Size='418,598'/>
-<Image Location='543,111' Name='TRBackground' ScrollExtent='359,476' Size='359,476' Style='/Plates.ShellTRBackground' Visible='false'/>
-<Image Location='523,109' Name='VSBackground' ScrollExtent='389,407' Size='389,407' Style='/Plates.ShellVSBackground' Visible='false'/>
-<Image Location='527,101' Name='NCBackground' ScrollExtent='393,342' Size='393,342' Style='/Plates.ShellNCBackground' Visible='false'/>
-<Image Location='513,90' Name='MapImage' ScrollExtent='417,599' Size='417,599' Style='Map11Style' Visible='false'/>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='Silverfrost
-Location: Not implemented' LocalTooltip='[@WorldCharacterCharacter1Button]' Location='63,89' Name='Character1' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@WorldCharacterCharacter1Button' TooltipStyle='/Tooltips.Default'>Silverfrost
-Location: Not implemented</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='Silverfrost
-Location: Not implemented' LocalTooltip='[@WorldCharacterCharacter2ButtonTooltip]' Location='63,177' Name='Character2' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@WorldCharacterCharacter2ButtonTooltip' TooltipStyle='/Tooltips.Default'>Silverfrost
-Location: Not implemented</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='Silverfrost
-Location: Not implemented' LocalTooltip='[@WorldCharacterCharacter3ButtonTooltip]' Location='63,265' Name='Character3' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@WorldCharacterCharacter3ButtonTooltip' TooltipStyle='/Tooltips.Default'>Silverfrost
-Location: Not implemented</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='Silverfrost
-Location: Not implemented' LocalTooltip='[@WorldCharacterCharacter4ButtonTooltip]' Location='63,353' Name='Character4' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@WorldCharacterCharacter4ButtonTooltip' TooltipStyle='/Tooltips.Default'>Silverfrost
-Location: Not implemented</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,89' Name='Character1Highlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' Location='63,177' Name='Character2Highlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' Enabled='false' Location='63,265' Name='Character3Highlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' Enabled='false' Location='63,353' Name='Character4Highlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Page Location='107,504' Name='EmpireIncentives' ScrollExtent='297,190' Size='297,190'>
-<Text Font='/Fonts.HudFont3' LocalText='[@EmpireIncentives_FrontEndTitle]' Location='0,-3' Name='Title' PackLocation='center,top' PackLocationProp='-148/0001,-003/0001' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='297,58' Size='297,58' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireIncentives_FrontEndTitle</Text>
-<Image AbsorbsInput='false' Location='155,65' Name='TR' PackLocation='right,top' PackLocationProp='-142/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniTR'/>
-<Image AbsorbsInput='false' Location='205,65' Name='NC' PackLocation='right,top' PackLocationProp='-092/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniNC'/>
-<Image AbsorbsInput='false' Location='255,65' Name='VS' PackLocation='right,top' PackLocationProp='-042/0001,0065/0001' ScrollExtent='32,32' Size='32,32' Style='MiniVS'/>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireIncentives_FrontEndXP]' Location='10,108' Name='IncentiveXP' PackSize='absolute,fixed' PackSizeProp='0157/0001,0002/0003' ScrollExtent='140,28' Size='140,19'>@EmpireIncentives_FrontEndXP</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='153,108' Name='XP_TR' PackLocation='right,top' PackLocationProp='-144/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='203,108' Name='XP_NC' PackLocation='right,top' PackLocationProp='-094/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='253,108' Name='XP_VS' PackLocation='right,top' PackLocationProp='-044/0001,0108/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireIncentives_FrontEndHP]' Location='10,148' Name='IncentiveHP' PackSize='absolute,fixed' PackSizeProp='0157/0001,0002/0003' ScrollExtent='140,28' Size='140,19'>@EmpireIncentives_FrontEndHP</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='153,148' Name='HP_TR' PackLocation='right,top' PackLocationProp='-144/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='203,148' Name='HP_NC' PackLocation='right,top' PackLocationProp='-094/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
-<Text Font='/Fonts.HudFont2' LocalText='-99%' Location='253,148' Name='HP_VS' PackLocation='right,top' PackLocationProp='-044/0001,0148/0001' ScrollExtent='36,19' Size='36,19' TextAlignment='Center'>-99%</Text>
+<Page Location='88,59' Name='CharacterSelect' PackLocation='cpc,top' PackLocationProp='-223/1024,0059/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='402,400' Size='402,400'>
+<Page Location='0,5' Name='Character1' ScrollExtent='399,98' Size='399,98'>
+<Button LocalText='Bobble' LocalTooltip='[@WorldCharacterSelectButtonTooltip]' Location='11,9' Name='Button' PackSize='absolute,fixed' PackSizeProp='0022/0001,0002/0003' ScrollExtent='377,30' Size='377,30' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterSelectButtonTooltip' TooltipStyle='/Tooltips.Default'>Bobble</Button>
+<Text AbsorbsInput='false' Color='#72C9D1' Font='/Fonts.Agency20' LocalText='BATTLE RANK: 5' Location='20,45' Name='Battle' ScrollExtent='116,27' Size='116,27'>BATTLE RANK: 5</Text>
+<Text AbsorbsInput='false' Color='#72C9D1' Font='/Fonts.Agency20' LocalText='COMMAND RANK: 0' Location='20,66' Name='Command' ScrollExtent='180,27' Size='180,27'>COMMAND RANK: 0</Text>
+<Text AbsorbsInput='false' Color='#72C9D1' Font='/Fonts.Agency20' LocalText='TR SANCTUARY' Location='196,46' Name='Continent' PackLocation='right,top' PackLocationProp='-203/0001,0046/0001' ScrollExtent='180,27' Size='180,27' TextAlignment='Right'>TR SANCTUARY</Text>
+<Image BackgroundOpacity='1.000' Location='6,3' Name='Box' PackLocation='left,top' PackLocationProp='0006/0001,0003/0001' PackSize='absolute,absolute' PackSizeProp='0011/0001,0007/0001' RStyleDefault='/Frontend.Box.style' ScrollExtent='388,91' Size='388,91' Stretch='false' Style=' ' Visible='false'/>
 </Page>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellCharacterSelectBackground'/>
+<Page Location='0,102' Name='Character2' ScrollExtent='399,98' Size='399,98'>
+<Button LocalText='CREATE NEW CHARACTER' LocalTooltip='[@WorldCharacterSelectButtonTooltip]' Location='11,9' Name='Button' PackSize='absolute,fixed' PackSizeProp='0022/0001,0002/0003' ScrollExtent='377,30' Size='377,30' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterSelectButtonTooltip' TooltipStyle='/Tooltips.Default'>CREATE NEW CHARACTER</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='BATTLE RANK: 5' Location='20,45' Name='Battle' ScrollExtent='116,27' Size='116,27' Visible='false'>BATTLE RANK: 5</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='COMMAND RANK: 0' Location='20,66' Name='Command' ScrollExtent='180,27' Size='180,27' Visible='false'>COMMAND RANK: 0</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='TR SANCTUARY' Location='196,46' Name='Continent' PackLocation='right,top' PackLocationProp='-203/0001,0046/0001' ScrollExtent='180,27' Size='180,27' TextAlignment='Right' Visible='false'>TR SANCTUARY</Text>
+<Image BackgroundOpacity='1.000' Location='6,3' Name='Box' PackLocation='left,top' PackLocationProp='0006/0001,0003/0001' PackSize='absolute,absolute' PackSizeProp='0011/0001,0007/0001' RStyleDefault='/Frontend.Box.style' ScrollExtent='388,91' Size='388,91' Stretch='false' Style=' ' Visible='false'/>
+</Page>
+<Page Location='0,199' Name='Character3' ScrollExtent='399,98' Size='399,98'>
+<Button LocalText='Bobble' LocalTooltip='[@WorldCharacterSelectButtonTooltip]' Location='11,9' Name='Button' PackSize='absolute,fixed' PackSizeProp='0022/0001,0002/0003' ScrollExtent='377,30' Size='377,30' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterSelectButtonTooltip' TooltipStyle='/Tooltips.Default'>Bobble</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='BATTLE RANK: 5' Location='20,45' Name='Battle' ScrollExtent='116,27' Size='116,27'>BATTLE RANK: 5</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='COMMAND RANK: 0' Location='20,66' Name='Command' ScrollExtent='180,27' Size='180,27'>COMMAND RANK: 0</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='TR SANCTUARY' Location='196,46' Name='Continent' PackLocation='right,top' PackLocationProp='-203/0001,0046/0001' ScrollExtent='180,27' Size='180,27' TextAlignment='Right'>TR SANCTUARY</Text>
+<Image BackgroundOpacity='1.000' Location='6,3' Name='Box' PackLocation='left,top' PackLocationProp='0006/0001,0003/0001' PackSize='absolute,absolute' PackSizeProp='0011/0001,0007/0001' RStyleDefault='/Frontend.Box.style' ScrollExtent='388,91' Size='388,91' Stretch='false' Style=' ' Visible='false'/>
+</Page>
+<Page Location='0,296' Name='Character4' ScrollExtent='399,98' Size='399,98'>
+<Button LocalText='Bobble' LocalTooltip='[@WorldCharacterSelectButtonTooltip]' Location='11,9' Name='Button' PackSize='absolute,fixed' PackSizeProp='0022/0001,0002/0003' ScrollExtent='377,30' Size='377,30' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterSelectButtonTooltip' TooltipStyle='/Tooltips.Default'>Bobble</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='BATTLE RANK: 5' Location='20,45' Name='Battle' ScrollExtent='116,27' Size='116,27'>BATTLE RANK: 5</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='COMMAND RANK: 0' Location='20,66' Name='Command' ScrollExtent='180,27' Size='180,27'>COMMAND RANK: 0</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='TR SANCTUARY' Location='196,46' Name='Continent' PackLocation='right,top' PackLocationProp='-203/0001,0046/0001' ScrollExtent='180,27' Size='180,27' TextAlignment='Right'>TR SANCTUARY</Text>
+<Image BackgroundOpacity='1.000' Location='6,3' Name='Box' PackLocation='left,top' PackLocationProp='0006/0001,0003/0001' PackSize='absolute,absolute' PackSizeProp='0011/0001,0007/0001' RStyleDefault='/Frontend.Box.style' ScrollExtent='388,91' Size='388,91' Stretch='false' Style=' ' Visible='false'/>
+</Page>
+<Image BackgroundOpacity='1.000' Name='Box' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='402,400' Size='402,400' Stretch='false' Style=' '/>
+</Page>
+<Button LocalText='[@WorldCharacterDeleteButton]' LocalTooltip='[@WorldCharacterDeleteButtonTooltip]' Location='88,478' Name='Delete' PackLocation='fff,fpf' PackLocationProp='-534/0001,-250/0768' PackSize='p,f' PackSizeProp='0402/1024,0002/0003' ScrollExtent='402,40' Size='402,40' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterDeleteButtonTooltip' TooltipStyle='/Tooltips.Default'>@WorldCharacterDeleteButton</Button>
+<Page Location='544,59' Name='CharacterView' PackLocation='fff,top' PackLocationProp='-055/0001,0059/0001' PackSize='proportional,proportional' PackSizeProp='0425/1024,0650/0768' ScrollExtent='425,650' Size='425,650'>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateLeftButtonTooltip]' Location='114,602' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-098/0001,-048/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' Tooltip='@CreateCharacterRotateLeftButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateRightButtonTooltip]' Location='289,602' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='0077/0001,-048/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' Tooltip='@CreateCharacterRotateRightButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomInButtonTooltip]' Location='190,601' Name='ZoomIn' PackLocation='center,bottom' PackLocationProp='-022/0001,-049/0001' ScrollExtent='15,15' Size='15,15' Style='/Buttons.CharacterCreateZoomIn.style' Tooltip='@CreateCharacterZoomInButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomOutButtonTooltip]' Location='219,605' Name='ZoomOut' PackLocation='center,bottom' PackLocationProp='0007/0001,-045/0001' ScrollExtent='16,6' Size='16,6' Style='/Buttons.CharacterCreateZoomOut.style' Tooltip='@CreateCharacterZoomOutButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<GameObjectView Location='10,10' Name='3DCharacterView' PackSize='absolute,absolute' PackSizeProp='0020/0001,0020/0001' ScrollExtent='405,630' Size='405,630'/>
+<Image Location='-11,34' Name='VSBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,0049/0001' ScrollExtent='451,601' Size='451,601' Style='/Plates.ShellVSBackground' Visible='false'/>
+<Image Location='-8,10' Name='TRBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,-026/0001' ScrollExtent='451,676' Size='451,676' Style='/Plates.ShellTRBackground' Visible='false'/>
+<Image Location='-11,60' Name='NCBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,0111/0001' ScrollExtent='451,539' Size='451,539' Style='/Plates.ShellNCBackground' Visible='false'/>
+<Image Location='-3,52' Name='MapImage' ScrollExtent='432,528' Size='432,528' Style='/Frontend.ZoneImages.Map01Style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='425,650' Size='425,650' Stretch='false' Style=' '/>
+</Page>
+<Page Location='88,572' Name='EmpireIncentives' PackLocation='cpc,bottom' PackLocationProp='-221/1024,-196/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='406,140' Size='406,140'>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@EmpireIncentiveTooltip]' Name='Tooltip' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='406,140' Size='406,140' Tooltip='@EmpireIncentiveTooltip'></Button>
+<Text Color='#72C9D1' Font='/Fonts.HudFont3' LocalText='[@EmpireCounts_FrontEndTitle]' Location='45,7' Name='Title' PackLocation='left,top' PackLocationProp='0045/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0241/0001,0002/0003' ScrollExtent='165,34' Size='165,24' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireCounts_FrontEndTitle</Text>
+<Text Color='#72C9D1' Font='/Fonts.HudFont3' LocalText='[@EmpireIncentives_FrontEndTitle]' Location='217,7' Name='Title' PackLocation='right,top' PackLocationProp='-189/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0220/0001,0002/0003' ScrollExtent='186,34' Size='186,24' TextAlignment='Center' TextAlignmentVertical='Center'>@EmpireIncentives_FrontEndTitle</Text>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='227,33' Name='TRIncentive' PackLocation='right,top' PackLocationProp='-179/0001,0033/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='226,68' Name='NCIncentive' PackLocation='right,top' PackLocationProp='-180/0001,0068/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='226,103' Name='VSIncentive' PackLocation='right,top' PackLocationProp='-180/0001,0103/0001' PackSize='absolute,fixed' PackSizeProp='0239/0001,0002/0003' ScrollExtent='167,30' Size='167,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#DE4E4E' LocalTooltip='[@HeatlhTooltip]' Location='95,42' Name='TRProgress' PackLocation='left,top' PackLocationProp='0095/0001,0042/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#6572D6' LocalTooltip='[@HeatlhTooltip]' Location='95,77' Name='NCProgress' PackLocation='left,top' PackLocationProp='0095/0001,0077/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Progressbar BackgroundColor='#858585' BarBackgroundColor='#92579E' LocalTooltip='[@HeatlhTooltip]' Location='95,112' Name='VSProgress' PackLocation='left,top' PackLocationProp='0095/0001,0112/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' Progress='0.800' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@HeatlhTooltip'/>
+<Image AbsorbsInput='false' Location='10,33' Name='TR' PackLocation='left,top' PackLocationProp='0010/0001,0033/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniTR'/>
+<Image AbsorbsInput='false' Location='10,67' Name='NC' PackLocation='left,top' PackLocationProp='0010/0001,0067/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniNC'/>
+<Image AbsorbsInput='false' Location='10,101' Name='VS' PackLocation='left,top' PackLocationProp='0010/0001,0101/0001' ScrollExtent='32,32' Size='32,32' Style='/Frontend.MiniVS'/>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,36' Name='XP_TR' PackLocation='left,top' PackLocationProp='0044/0001,0036/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,72' Name='XP_NC' PackLocation='left,top' PackLocationProp='0044/0001,0072/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='-99%' Location='44,106' Name='XP_VS' PackLocation='left,top' PackLocationProp='0044/0001,0106/0001' ScrollExtent='48,24' Size='48,22' TextAlignment='Center'>-99%</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='406,140' Size='406,140' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='[@WorldCharacterBackButtonTooltip]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterBackButtonTooltip'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendPlayButton]' LocalTooltip='[@WorldCharacterEnterButtonTooltip]' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@WorldCharacterEnterButtonTooltip'>@FrontendPlayButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>
 <Page Name='InstantAction' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Activated='true' Font='/Fonts.HudFont3' LocalText='Test' Location='513,92' Name='InstantActionInfoBox' Opacity='0.750' ScrollExtent='415,598' Size='415,598'>Test</Text>
-<Button LocalTooltip='[@WorldCharacterQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='24,24' Size='24,24' Style='/Buttons.ShellClose.style' Tooltip='@WorldCharacterQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsCancelButton='true' LocalTooltip='[@WorldCharacterBackButtonTooltip]' Location='898,733' Name='Back' ScrollExtent='43,15' Size='43,15' Style='/Buttons.ShellBack.style' Tooltip='@WorldCharacterBackButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@WorldCharacterOptionsButtonTooltip]' Location='808,733' Name='Options' ScrollExtent='65,18' Size='65,18' Style='/Buttons.ShellOptions.style' Tooltip='@WorldCharacterOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsDefaultButton='true' LocalTooltip='[@WorldCharacterEnterButtonTooltip]' Location='965,733' Name='Enter' ScrollExtent='41,15' Size='41,15' Style='/Buttons.ShellForward.style' Tooltip='@WorldCharacterEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' IsDefaultButton='true' LocalText='[@InstantActionSanctuaryButton]' LocalTooltip='[@InstantActionSanctuaryButtonToolTip]' Location='63,89' Name='SanctuaryButton' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='[@InstantActionSanctuaryButtonToolTip]' TooltipStyle='/Tooltips.Default'>@InstantActionSanctuaryButton</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' IsDefaultButton='true' LocalText='[@InstantActionHotSpotButton]' LocalTooltip='[@InstantActionHotSpotButtonToolTip]' Location='63,177' Name='HotSpotButton' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='[@InstantActionHotSpotButtonToolTip]' TooltipStyle='/Tooltips.Default'>@InstantActionHotSpotButton</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,89' Name='SanctuaryButtonHighlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Checkbox BackgroundOpacity='1.000' Location='63,177' Name='HotSpotButtonHighlight' ScrollExtent='385,88' Size='385,88' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellCharacterSelectBackground'/>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@IASanctuaryTooltip]' Location='53,59' Name='SanctuaryButton' PackLocation='right,top' PackLocationProp='-971/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' TextColor='#72C9D1' Tooltip='@IASanctuaryTooltip' TooltipStyle='/Tooltips.Default'>@IASanctuaryAction</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@IAInstantActionTooltip]' Location='306,59' Name='InstantActionButton' PackLocation='right,top' PackLocationProp='-718/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' TextColor='#72C9D1' Tooltip='@IAInstantActionTooltip' TooltipStyle='/Tooltips.Default'>@IAInstantAction</Checkbox>
+<Image Location='104,115' Name='InstantActionImage' PackLocation='left,top' PackLocationProp='0104/0001,0115/0001' PackSize='p,p' PackSizeProp='0372/1024,0279/0768' ScrollExtent='372,279' Size='372,279' Stretch='false' Style='/Frontend.IA_Hotspot'/>
+<Image Location='104,115' Name='SanctuaryImage' PackLocation='left,top' PackLocationProp='0104/0001,0115/0001' PackSize='p,p' PackSizeProp='0372/1024,0279/0768' ScrollExtent='372,279' Size='372,279' Stretch='false' Style='/Frontend.IA_Sanctuary'/>
+<Button LocalText='[@IASanctuaryAction]' LocalTooltip='[@IASanctuaryTooltip]' Location='53,59' Name='SanctuaryButtonOLD' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.style' Tooltip='@IASanctuaryTooltip' TooltipStyle='/Tooltips.Default' Visible='false'>@IASanctuaryAction</Button>
+<Button LocalText='[@IAInstantAction]' LocalTooltip='[@IAInstantActionTooltip]' Location='306,59' Name='InstantActionButtonOLD' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.style' Tooltip='@IAInstantActionTooltip' TooltipStyle='/Tooltips.Default' Visible='false'>@IAInstantAction</Button>
+<Page Location='544,59' Name='CharacterView' ScrollExtent='425,650' Size='425,650'>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateLeftButtonTooltip]' Location='114,602' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-098/0001,-048/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' Tooltip='@CreateCharacterRotateLeftButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateRightButtonTooltip]' Location='289,602' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='0077/0001,-048/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' Tooltip='@CreateCharacterRotateRightButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomInButtonTooltip]' Location='190,601' Name='ZoomIn' PackLocation='center,bottom' PackLocationProp='-022/0001,-049/0001' ScrollExtent='15,15' Size='15,15' Style='/Buttons.CharacterCreateZoomIn.style' Tooltip='@CreateCharacterZoomInButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomOutButtonTooltip]' Location='219,605' Name='ZoomOut' PackLocation='center,bottom' PackLocationProp='0007/0001,-045/0001' ScrollExtent='16,6' Size='16,6' Style='/Buttons.CharacterCreateZoomOut.style' Tooltip='@CreateCharacterZoomOutButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button Enabled='false' LocalText='Bobble' Location='10,10' Name='Heading' PackLocation='left,top' PackLocationProp='0010/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0026/0001,0002/0003' ScrollExtent='399,30' Size='399,30' Style='/Buttons.FrontendTitleButton.style' TooltipStyle='/Tooltips.Default'>Bobble</Button>
+<GameObjectView Location='10,10' Name='3DCharacterView' PackSize='absolute,absolute' PackSizeProp='0020/0001,0020/0001' ScrollExtent='405,630' Size='405,630'/>
+<Image Location='-11,34' Name='VSBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,0049/0001' ScrollExtent='451,601' Size='451,601' Style='/Plates.ShellVSBackground' Visible='false'/>
+<Image Location='-8,10' Name='TRBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,-026/0001' ScrollExtent='451,676' Size='451,676' Style='/Plates.ShellTRBackground' Visible='false'/>
+<Image Location='-11,60' Name='NCBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,0111/0001' ScrollExtent='451,539' Size='451,539' Style='/Plates.ShellNCBackground' Visible='false'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='425,650' Size='425,650' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,413' Name='Description' ScrollExtent='473,296' Size='473,296'>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='[@InstantActionDescription]' Location='10,14' Name='Text' PackLocation='left,top' PackLocationProp='0010/0001,0014/0001' PackSize='absolute,absolute' PackSizeProp='0034/0001,0022/0001' ScrollExtent='439,274' Size='439,274'>@InstantActionDescription</Text>
+<Scrollbar Control='Text' Location='453,14' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0014/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0022/0001' ScrollExtent='10,274' Size='10,274' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='473,296' Size='473,296' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='[@FrontendBackTooltip]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendBackTooltip'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendPlayButton]' LocalTooltip='[@FrontendPlayTooltip]' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendPlayTooltip'>@FrontendPlayButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>
 <Page Name='SelectEmpireOffline' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false' visualeditlock='true'>
-<Button IsCancelButton='true' LocalTooltip='[@SelectEmpireBackButtonTooltip]' Location='875,729' Name='Back' ScrollExtent='48,22' Size='48,22' Style='/Buttons.ShellBack.style' Tooltip='@SelectEmpireBackButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@SelectEmpireQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='23,24' Size='23,24' Style='/Buttons.ShellClose.style' Tooltip='@SelectEmpireQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@SelectEmpireOptionsButtonTooltip]' Location='811,725' Name='Options' ScrollExtent='31,31' Size='31,31' Style='/Buttons.ShellOptions.style' Tooltip='@SelectEmpireOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsDefaultButton='true' LocalTooltip='[@SelectEmpireEnterButtonTooltip]' Location='955,729' Name='Enter' ScrollExtent='48,22' Size='48,22' Style='/Buttons.ShellForward.style' Tooltip='@SelectEmpireEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<ImageStyle Name='BorderStyle'>
-<ImageFrame SourceRect='0,0,561,473'>
-<ImageFragment Source='ui_shell_empire_buttons_border_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_shell_empire_buttons_border_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_shell_empire_buttons_border_02' SourceRect='0,0,49,256'/>
-<ImageFragment Offset='0,256' Source='ui_shell_empire_buttons_border_03' SourceRect='0,0,256,217'/>
-<ImageFragment Offset='256,256' Source='ui_shell_empire_buttons_border_04' SourceRect='0,0,256,217'/>
-<ImageFragment Offset='512,256' Source='ui_shell_empire_buttons_border_05' SourceRect='0,0,49,217'/>
-</ImageFrame>
-</ImageStyle>
-<Image Location='63,136' Name='Border' ScrollExtent='561,473' Size='561,473' Stretch='false' Style='BorderStyle'/>
-<OpacityEffector Name='RolloverEffector' Speed='2.000' TargetOpacity='1.000'/>
-<OpacityEffector Name='RolloutEffector' Speed='1.000' TargetOpacity='0.750'/>
-<ImageStyle Name='MiniTR'>
-<ImageFrame Source='ui_shell_empire_mini_tr_00' SourceRect='0,0,25,32'/>
-</ImageStyle>
-<ImageStyle Name='MiniNC'>
-<ImageFrame Source='ui_shell_empire_mini_nc_00' SourceRect='0,0,30,26'/>
-</ImageStyle>
-<ImageStyle Name='MiniVS'>
-<ImageFrame Source='ui_shell_empire_mini_vs_00' SourceRect='0,0,28,30'/>
-</ImageStyle>
-<Scrollbar Control='EmpireText' Location='944,284' Name='Scrollbar' ScrollExtent='10,415' Size='10,415' Style='/ScrollBars.vertical.style'/>
-<Text Font='/Fonts.HudFont2' LocalText='[@EmpireGeneralDescription]' Location='661,286' Name='EmpireText' PackLocation='center,center' PackLocationProp='0149/0001,-098/0001' ScrollExtent='278,414' Size='278,414'>@EmpireGeneralDescription</Text>
-<Text Font='/Fonts.HudFont3' LocalText='[@selectempire]' Location='168,623' Name='SelectEmpireText' PackLocation='center,center' PackLocationProp='-344/0001,0239/0001' ScrollExtent='357,27' Size='357,27' TextAlignment='Center'>@selectempire</Text>
-<Checkbox Activated='true' BackgroundOpacity='1.000' BoundaryPolygon='110.000,7.000,261.000,106.000,236.000,284.000,71.000,272.000,8.000,140.000,105.000,11.000' Checked='true' LocalTooltip='[@SelectEmpireE2Tooltip]' Location='64,302' Name='E1' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='276,307' Size='276,307' Style='/Buttons.ShellEmpireTR.style' Tooltip='@SelectEmpireE2Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Checkbox Activated='true' BackgroundOpacity='1.000' BoundaryPolygon='97.000,3.000,241.000,1.000,330.000,155.000,168.000,259.000,9.000,155.000' Checked='true' LocalTooltip='[@SelectEmpireE1Tooltip]' Location='173,136' Name='E2' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='339,275' Size='339,275' Style='/Buttons.ShellEmpireNC.style' Tooltip='@SelectEmpireE1Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Checkbox Activated='true' BackgroundOpacity='1.000' BoundaryPolygon='172.000,5.000,275.000,146.000,217.000,281.000,41.000,296.000,10.000,110.000' Checked='true' LocalTooltip='[@SelectEmpireE3Tooltip]' Location='338,297' Name='E3' OnHoverInEffector='RolloverEffector' OnHoverOutEffector='RolloutEffector' Opacity='0.750' ScrollExtent='286,311' Size='286,311' Style='/Buttons.ShellEmpireVS.style' Tooltip='@SelectEmpireE3Tooltip' TooltipStyle='/Tooltips.Default'></Checkbox>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellEmpireSelectBackground'/>
+<Button LocalText='New Button' LocalTooltip='[@SelectEmpireNextLogoTooltip]' Location='500,530' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='-012/0001,-238/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' Tooltip='@SelectEmpireNextLogoTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' LocalTooltip='[@SelectEmpirePrevLogoTooltip]' Location='220,530' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-292/0001,-238/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' Tooltip='@SelectEmpirePrevLogoTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@selectempire]' Location='61,523' Name='SelectEmpireText' PackLocation='left,bottom' PackLocationProp='0061/0001,-245/0001' PackSize='absolute,fixed' PackSizeProp='0400/0001,0002/0003' ScrollExtent='624,27' Size='624,27' TextAlignment='Center'>@selectempire</Text>
+<Page BackgroundColor='#0000FF' Location='58,60' Name='Logos' PackLocation='left,top' PackLocationProp='0058/0001,0060/0001' PackSize='a,a' PackSizeProp='0394/0001,0308/0001' ScrollExtent='630,460' Size='630,460'>
+<Page Location='171,171' Name='NC' ScrollExtent='288,288' Size='288,288'>
+<Image Location='12,27' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0264/0288,0234/0288' ScrollExtent='264,234' Size='264,234' Style='/Frontend.NCLogoGlow'/>
+<Image Location='12,27' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0264/0288,0234/0288' ScrollExtent='264,234' Size='264,234' Style='/Frontend.NC3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireNCTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='288,288' Size='288,288' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireNCTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<Page Location='370,40' Name='VS' ScrollExtent='200,200' Size='200,200'>
+<Image Location='23,18' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,-001/0001' PackSize='p,p' PackSizeProp='0154/0200,0162/0200' ScrollExtent='154,162' Size='154,162' Style='/Frontend.VSLogoGlow'/>
+<Image Location='23,18' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,-001/0001' PackSize='p,p' PackSizeProp='0154/0200,0162/0200' ScrollExtent='154,162' Size='154,162' Style='/Frontend.VS3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireVSTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='200,200' Size='200,200' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireVSTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<Page Location='60,40' Name='TR' ScrollExtent='200,200' Size='200,200'>
+<Image Location='36,20' Name='Glow' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0128/0200,0161/0200' ScrollExtent='128,161' Size='128,161' Style='/Frontend.TRLogoGlow'/>
+<Image Location='36,20' Name='Logo' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' PackSize='p,p' PackSizeProp='0128/0200,0161/0200' ScrollExtent='128,161' Size='128,161' Style='/Frontend.TR3DLogo'/>
+<Button BackgroundOpacity='0.000' LocalTooltip='[@SelectEmpireTRTooltip]' Name='Button' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='200,200' Size='200,200' Style='/Buttons.ShellEmpireButton.button' Tooltip='@SelectEmpireTRTooltip' TooltipStyle='/Tooltips.Default'></Button>
+</Page>
+<GameObjectView BackgroundColor='#0000FF' BackgroundOpacity='1.000' Location='227,240' Name='E3' PackLocation='cpc,cpc' PackLocationProp='0011/0630,0109/0460' PackSize='p,p' PackSizeProp='0199/0630,0198/0460' ScrollExtent='199,198' Size='199,198' Visible='false'/>
+<GameObjectView BackgroundColor='#FF00FF' BackgroundOpacity='1.000' Location='408,63' Name='E1' PackLocation='cpc,cpc' PackLocationProp='0168/0630,-093/0460' PackSize='p,p' PackSizeProp='0150/0630,0149/0460' ScrollExtent='150,149' Size='150,149' Visible='false'/>
+<GameObjectView BackgroundColor='#FF0000' BackgroundOpacity='1.000' Location='88,58' Name='E2' PackLocation='cpc,cpc' PackLocationProp='-152/0630,-098/0460' PackSize='p,p' PackSizeProp='0150/0630,0149/0460' ScrollExtent='150,149' Size='150,149' Visible='false'/>
+</Page>
+<Page Location='705,55' Name='EmpireDescription' PackLocation='right,top' PackLocationProp='-319/0001,0055/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0110/0001' ScrollExtent='266,658' Size='266,658'>
+<Button Enabled='false' LocalText='Planetside' LocalTooltip='[@SelectEmpireHeading]' Location='10,10' Name='Heading' PackLocation='left,top' PackLocationProp='0010/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0037/0001,0002/0003' ScrollExtent='229,30' Size='229,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectEmpireHeading' TooltipStyle='/Tooltips.Default'>Planetside</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='[@EmpireGeneralDescription]' Location='10,45' Name='EmpireText' PackLocation='left,top' PackLocationProp='0010/0001,0045/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0051/0001' ScrollExtent='230,607' Size='230,607'>@EmpireGeneralDescription</Text>
+<Scrollbar Control='EmpireText' Location='246,45' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0051/0001' ScrollExtent='10,607' Size='10,607' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='266,658' Size='266,658' Stretch='false' Style=' '/>
+</Page>
+<Page Location='56,564' Name='TrainingDescription' PackLocation='right,bottom' PackLocationProp='-968/0001,-204/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0619/0001' ScrollExtent='628,149' Size='628,149'>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='[@OfflineTrainingFirstTimeMessage]' Location='10,8' Name='TrainingInfo' PackLocation='left,top' PackLocationProp='0010/0001,0008/0001' PackSize='absolute,absolute' PackSizeProp='0035/0001,0014/0001' ScrollExtent='593,135' Size='593,135'>@OfflineTrainingFirstTimeMessage</Text>
+<Scrollbar Control='TrainingInfo' Location='608,8' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0008/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0014/0001' ScrollExtent='10,135' Size='10,135' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='628,149' Size='628,149' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Button LocalText='[@FrontendCreditsButton]' LocalTooltip='[@FrontendCreditsTooltip]' Location='5,723' Name='CreditsButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendCreditsTooltip'>@FrontendCreditsButton</Button>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='Press to return to the server selection screen' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='Press to return to the server selection screen' Visible='false'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendNextButton]' LocalTooltip='SelectEmpireEnterButtonTooltip' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='SelectEmpireEnterButtonTooltip'>@FrontendNextButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>
 <Page Name='SelectMissionOffline' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Activated='true' Font='/Fonts.HudFont3' LocalText='Test' Location='513,92' Name='SelectMissonOfflineInfo' Opacity='0.750' ScrollExtent='415,598' Size='415,598'>Test</Text>
-<Button LocalTooltip='[@WorldCharacterQuitButtonTooltip]' Location='968,11' Name='Quit' ScrollExtent='24,24' Size='24,24' Style='/Buttons.ShellClose.style' Tooltip='@WorldCharacterQuitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsCancelButton='true' LocalTooltip='[@WorldCharacterBackButtonTooltip]' Location='875,729' Name='Back' ScrollExtent='48,22' Size='48,22' Style='/Buttons.ShellBack.style' Tooltip='@WorldCharacterBackButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalTooltip='[@WorldCharacterOptionsButtonTooltip]' Location='811,725' Name='Options' ScrollExtent='31,31' Size='31,31' Style='/Buttons.ShellOptions.style' Tooltip='@WorldCharacterOptionsButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsDefaultButton='true' LocalTooltip='[@WorldCharacterEnterButtonTooltip]' Location='955,729' Name='Enter' ScrollExtent='48,22' Size='48,22' Style='/Buttons.ShellForward.style' Tooltip='@WorldCharacterEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='17,7' Name='HelpButton' PackLocation='right,top' PackLocationProp='-1007/0001,0007/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' IsDefaultButton='true' LocalText='[@OfflineMission0]' LocalTooltip='[@OfflineMissionTip0]' Location='63,89' Name='Mission0' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip0' TooltipStyle='/Tooltips.Default'>@OfflineMission0</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,89' Name='CMission0' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission1]' LocalTooltip='[@OfflineMissionTip1]' Location='63,139' Name='Mission1' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip1' TooltipStyle='/Tooltips.Default'>@OfflineMission1</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,139' Name='CMission1' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission2]' LocalTooltip='[@OfflineMissionTip2]' Location='63,189' Name='Mission2' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip2' TooltipStyle='/Tooltips.Default'>@OfflineMission2</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,189' Name='CMission2' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission3]' LocalTooltip='[@OfflineMissionTip3]' Location='63,239' Name='Mission3' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip3' TooltipStyle='/Tooltips.Default'>@OfflineMission3</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,239' Name='CMission3' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission4]' LocalTooltip='[@OfflineMissionTip4]' Location='63,290' Name='Mission4' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip4' TooltipStyle='/Tooltips.Default'>@OfflineMission4</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,289' Name='CMission4' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission5]' LocalTooltip='[@OfflineMissionTip5]' Location='63,339' Name='Mission5' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip5' TooltipStyle='/Tooltips.Default'>@OfflineMission5</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,339' Name='CMission5' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission6]' LocalTooltip='[@OfflineMissionTip6]' Location='63,389' Name='Mission6' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip6' TooltipStyle='/Tooltips.Default'>@OfflineMission6</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,389' Name='CMission6' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Button AbsorbsInput='false' BackgroundOpacity='0.000' LocalText='[@OfflineMission7]' LocalTooltip='[@OfflineMissionTip7]' Location='63,439' Name='Mission7' RStyleDefault='/Buttons.CharacterSelectBackground.remptychecked ' ScrollExtent='385,49' Size='385,49' Style='/Buttons.CharacterSelect.style' TextMaxLines='3' Tooltip='@OfflineMissionTip7' TooltipStyle='/Tooltips.Default'>@OfflineMission7</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='63,439' Name='CMission7' ScrollExtent='385,48' Size='385,48' Style='/Buttons.CharacterSelectBackground.style'></Checkbox>
-<Image Name='LoginShellBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.ShellCharacterSelectBackground'/>
+<Image Location='512,64' Name='MissionImage' PackLocation='left,top' PackLocationProp='0512/0001,0064/0001' PackSize='p,p' PackSizeProp='0464/1024,0336/0768' ScrollExtent='464,336' Size='464,336' Stretch='false' Style='Mission3.style'/>
+<Page Location='53,55' Name='Mission0' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission1_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission1_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission1_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission0]' LocalTooltip='[@OfflineMissionTip0]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.selected' Tooltip='@OfflineMissionTip0' TooltipStyle='/Tooltips.Default'>@OfflineMission0</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,138' Name='Mission1' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission2_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission2_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission2_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission1]' LocalTooltip='[@OfflineMissionTip1]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip1' TooltipStyle='/Tooltips.Default'>@OfflineMission1</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,221' Name='Mission2' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission3_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission3_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission3_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission2]' LocalTooltip='[@OfflineMissionTip2]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip2' TooltipStyle='/Tooltips.Default'>@OfflineMission2</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,304' Name='Mission3' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission4_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission4_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission4_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission4_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission3]' LocalTooltip='[@OfflineMissionTip4]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip4' TooltipStyle='/Tooltips.Default'>@OfflineMission3</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,387' Name='Mission4' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission5_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission5_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission5_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission5_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission4]' LocalTooltip='[@OfflineMissionTip4]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip4' TooltipStyle='/Tooltips.Default'>@OfflineMission4</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,470' Name='Mission5' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission6_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission6_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission6_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission6_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission5]' LocalTooltip='[@OfflineMissionTip5]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip5' TooltipStyle='/Tooltips.Default'>@OfflineMission5</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,553' Name='Mission6' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission7_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission7_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission7_02' SourceRect='0,0,256,80'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission7_03' SourceRect='0,0,208,80'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission6]' LocalTooltip='[@OfflineMissionTip6]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip6' TooltipStyle='/Tooltips.Default'>@OfflineMission6</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='53,636' Name='Mission7' ScrollExtent='449,78' Size='449,78'>
+<ImageStyle Name='style'>
+<ImageFrame>
+<ImageFragment Source='ui_shell_mission8_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_shell_mission8_01' SourceRect='0,0,208,256'/>
+<ImageFragment Offset='0,256' Source='ui_shell_mission8_02' SourceRect='0,0,256,110'/>
+<ImageFragment Offset='256,256' Source='ui_shell_mission8_03' SourceRect='0,0,208,110'/>
+</ImageFrame>
+</ImageStyle>
+<Button LocalText='[@OfflineMission7]' LocalTooltip='[@OfflineMissionTip7]' Location='10,10' Name='Button' ScrollExtent='429,30' Size='429,30' Style='/Buttons.FrontendButton.style' Tooltip='@OfflineMissionTip7' TooltipStyle='/Tooltips.Default'>@OfflineMission7</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency20' LocalText='[@MissionStatusReady]' Location='10,45' Name='Status' PackLocation='left,bottom' PackLocationProp='0010/0001,-033/0001' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='429,30' Size='429,30' TextAlignment='Center'>@MissionStatusReady</Text>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,78' Size='449,78' Stretch='false' Style=' '/>
+</Page>
+<Page Location='522,387' Name='MissionDescription' PackLocation='right,bottom' PackLocationProp='-502/0001,-381/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0442/0001' ScrollExtent='449,326' Size='449,326'>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='[@MissionDescription1]' Location='10,8' Name='SelectMissionOfflineInfo' PackLocation='left,top' PackLocationProp='0010/0001,0008/0001' PackSize='absolute,absolute' PackSizeProp='0035/0001,0014/0001' ScrollExtent='414,312' Size='414,312'>@MissionDescription1</Text>
+<Scrollbar Control='SelectMissionOfflineInfo' Location='429,8' Name='Scrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0008/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0014/0001' ScrollExtent='10,312' Size='10,312' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='449,326' Size='449,326' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
+<Button LocalText='[@FrontendCreditsButton]' LocalTooltip='[@FrontendCreditsTooltip]' Location='5,723' Name='CreditsButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendCreditsTooltip' Visible='false'>@FrontendCreditsButton</Button>
+<Button LocalText='[@FrontendBackButton]' LocalTooltip='[@FrontendBackTooltip]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendBackTooltip'>@FrontendBackButton</Button>
+<Button LocalText='[@FrontendNextButton]' LocalTooltip='[@FrontendNextTooltip]' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendNextTooltip'>@FrontendNextButton</Button>
+<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
+<Button LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
+<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
+<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>

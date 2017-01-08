@@ -4,6 +4,79 @@
 #=======================================================
 
 $begin OfflineTrainingMission5
-	$levelup
-	$quit
+    
+    $freeze false
+
+    # 1st dialogue
+    $text_dlg @OfflineMission5_01 25
+    $play Drop_01.mp3
+    $sync
+    $thaw
+
+    $set_waypoint 4761 3434 11
+    $set_waypoint 2916 2996 12
+    $set_waypoint 3067 4822 13
+    $wait_waypoint 5
+    
+    # Internal way-point inside the HART center
+    $set_waypoint 4773 3446 71 11
+    $set_waypoint 2933 2996 38 12
+    $set_waypoint 3051 4822 59 13
+    $wait_waypoint 1
+
+	$set_waypoint 4778 3455 71 11
+    $set_waypoint 2944 2992 38 12
+    $set_waypoint 3040 4825 59 13
+    $wait_waypoint 1
+
+    # 2nd dialogue
+    $freeze false
+    $text_dlg @OfflineMission5_02 25
+    $play Drop_02.mp3
+    $sync
+    $thaw
+
+    $mount orbital_shuttle
+    $show_droppod_ui 2
+    $wait_on_show OverheadMap 1 Global
+
+    # 3rd dialogue
+    $text_dlg @OfflineMission5_03 25
+    $play Drop_03.mp3
+    $sync
+
+    # Wait for the user to select hossin
+    $wait_until_selected_continent 2
+
+    # 4th dialogue
+    $text_dlg @OfflineMission5_04 25
+    $play Drop_04.mp3
+
+    # Wait for the user to pick a random drop zone.
+    $wait_until_drop_zone
+    $sync
+    
+    # 5th dialogue
+    $text_dlg @OfflineMission5_05 25
+    $play Drop_05.mp3
+    $sync
+
+    $wait_until_zone 2
+    $launch_droppod
+
+    # At this point the player is in a drop pod, so wait until they're no longer in
+    # a vehicle, and finish the mission.
+    $mount ""
+    
+    # 6th dialogue
+    $text_dlg @OfflineMission5_06 25
+    $play Drop_06.mp3
+    $sync
+
+    # End...
+    $wait 5000
+    $levelup
+    $show_mission_selection
+    $quit
+
 $end

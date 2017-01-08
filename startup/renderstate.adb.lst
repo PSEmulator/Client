@@ -1,83 +1,64 @@
 #rsc_begin
 
-##cs9_deserttreehflip
+##cs9_flight_room_tpfr_tpfr_panel_01_lm_gf3
 
-rsc_alphatest
-rsc_alpharef 64
+rsc_localviewer
+rsc_noalphatest
+rsc_tfactor 32363636
 rsc_end
 
-##cs9_deserttreeiflip
+##cs9_nchev_sh
 
-rsc_alphatest
-rsc_alpharef 100
-rsc_end
-
-##cs9_deserttreem
-
-rsc_normalizenormals
-rsc_end
-
-##cs9_deserttreek
-
+rsc_noz
+rsc_zenable
+rsc_destblend one
 rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFAAAAFF
+rsc_end
+
+##cs9_ef_water_splash
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFF5F5F5
+rsc_end
+
+##cs9_deserttreeg
+
 rsc_normalizenormals
-rsc_alphatest
-rsc_alpharef 85
 rsc_end
 
-##cs9_em_light_yellow
-
-rsc_zbias 16
-rsc_tfactor FFFFFF00
-rsc_end
-
-##cs9_swampbarka
+##cs9_earthbark1
 
 rsc_normalizenormals
 rsc_end
 
-##cs9_artictree1
-
-rsc_normalizenormals
-rsc_end
-
-##cs9_em_light_null
+##cs9_em_light_red
 
 rsc_zbias 16
 rsc_tfactor FFFF0000
 rsc_end
 
-##cs9_plasma-tall
+##cs9_tide_null_gf3
 
-rsc_tfactor FFFFFFFF
-rsc_end
-
-##cs9_ef_tide
-
+rsc_zbias 16
 rsc_noz
 rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
 rsc_noalphatest
 rsc_alpha
-rsc_tfactor FFBEBEBE
 rsc_end
 
-##cs9_ef_moon_two
-
-rsc_yon 18000
-rsc_end
-
-##cs9_earthshrubg
-
-rsc_cullcw
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##cs9_ef_sun
+##cs9_sun_one
 
 rsc_noz
 rsc_destblend one
@@ -88,1011 +69,6 @@ rsc_noalphatest
 rsc_nofog
 rsc_alpha
 rsc_yon 18000
-rsc_end
-
-##cs9_ams_taillight
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FFFFFFFF
-rsc_end
-
-##cs9_skydome20
-
-rsc_noz
-rsc_noz
-rsc_noalphatest
-rsc_nofog
-rsc_alpha
-rsc_yon 10000
-rsc_end
-
-##cs9_fireplanet
-
-rsc_sourceblend one
-rsc_destblend one
-rsc_noalphatest
-rsc_end
-
-##cs9_ef_sun_one
-
-rsc_noz
-rsc_destblend one
-rsc_nolighting
-rsc_nofog
-rsc_alpha
-rsc_end
-
-##cs9_ef_moon_one
-
-rsc_noz
-rsc_nofog
-rsc_alpha
-rsc_yon 18000
-rsc_end
-
-##cs9_swamp_null
-
-rsc_noz
-rsc_zenable
-rsc_cullnone
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_arcticbranches3
-
-rsc_alphatest
-rsc_alpharef 120
-rsc_end
-
-##cs9_ef_waypoint_vs
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF1B0035
-rsc_end
-
-##cs9_ef_waypoint_tr
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF800000
-rsc_end
-
-##cs9_decal_waypoint
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##tfactor80
-
-rsc_tfactor 80FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_large_panel02_testbox_lm
-
-rsc_sourceblend invdestalpha
-rsc_destblend invdestalpha
-rsc_noalphatest
-rsc_end
-
-##cs9_ef_warpgate_pass
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF0080FF
-rsc_end
-
-##cs9_cool_stealth
-
-rsc_destblend one
-rsc_alpha
-rsc_end
-
-##cs9_pleaves01
-
-rsc_zwrite
-rsc_alphatest
-rsc_alpharef 8
-rsc_end
-
-##cs9_jthickgrass_gf4
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##cs9_artictreedflip
-
-rsc_alphatest
-rsc_alpharef 160
-rsc_end
-
-##cs9_shuttle_nc_1
-
-rsc_localviewer
-rsc_noalphatest
-rsc_yon 1600
-rsc_end
-
-##cull_reversed
-
-rsc_cullccw
-rsc_end
-
-##scaled_lighting
-
-rsc_normalizenormals
-rsc_end
-
-##tfactorB0
-
-rsc_tfactor B0FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_ef_test
-
-rsc_zbias 16
-rsc_cullnone
-rsc_end
-
-##cs9_ef_motionsensor
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FFFFAA55
-rsc_end
-
-##cs9_base_dome_null
-
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor 64E6FFFF
-rsc_end
-
-##tfactor50
-
-rsc_tfactor 50FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_deserttreej
-
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##cs9_ef_head_on
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_yon 900
-rsc_end
-
-##cs9_sun_glow
-
-rsc_noz
-rsc_noz
-rsc_destblend one
-rsc_nofog
-rsc_end
-
-##cs9_spawn_door_glass
-
-rsc_localviewer
-rsc_noalphatest
-rsc_tfactor 64FFFFFF
-rsc_end
-
-##lighting_noalphatest
-
-rsc_lighting
-rsc_noalphatest
-rsc_end
-
-##cs9_buggy_shadow
-
-rsc_zbias 16
-rsc_alphatest
-rsc_end
-
-##cs9_desertswatch2
-
-rsc_nolighting
-rsc_alpharef 64
-rsc_tfactor FFFFFFFF
-rsc_end
-
-##sky
-
-rsc_cullnone
-rsc_yon 150000.00
-rsc_nofog
-rsc_noalphatest
-rsc_end
-
-##cs9_glass__lmap2
-
-rsc_noz
-rsc_zenable
-rsc_localviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor 55FFFFFF
-rsc_end
-
-##tfactor40
-
-rsc_tfactor 40FFFFFF
-rsc_noalphatest
-rsc_end
-
-##tfactor30
-
-rsc_tfactor 30FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_wall02_amp_mainroom_lm_gf3
-
-rsc_noalphatest
-rsc_tfactor 05FFFFFF
-rsc_end
-
-##zbias16
-
-rsc_zbias 16
-rsc_end
-
-##cs9_dome_vs
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF400040
-rsc_end
-
-##cs9_dome_tr
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF800000
-rsc_end
-
-##cs9_dome_nc
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FFF4F400
-rsc_end
-
-##cs9_rock_surface
-
-rsc_zbias 16
-rsc_localviewer
-rsc_end
-
-##nolighting
-
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##cs9_shadow
-
-rsc_zbias 16
-rsc_end
-
-##cs9_glow
-
-rsc_noz
-rsc_end
-
-##wireframe
-
-rsc_wire
-rsc_end
-
-##alpha_grass
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_alphatest
-rsc_alpharef 8
-rsc_end
-
-##cs9_earthleaf1
-
-rsc_cullnone
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##distancefademesh
-
-rsc_alpharef 64
-rsc_tfactor FFFFFFFF
-rsc_end
-
-##cs9_ef_vt_portal
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF8000FF
-rsc_end
-
-##cs9_tree_surface
-
-rsc_zbias 16
-rsc_localviewer
-rsc_noalphatest
-rsc_end
-
-##cs9_arcticbranch1
-
-rsc_alphatest
-rsc_alpharef 128
-rsc_end
-
-##cs9_cas_b
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FFFFAD5B
-rsc_end
-
-##tfactorC0
-
-rsc_tfactor C0FFFFFF
-rsc_noalphatest
-rsc_end
-
-##tfactor90
-
-rsc_tfactor 90FFFFFF
-rsc_noalphatest
-rsc_end
-
-##tfactorE0
-
-rsc_tfactor E0FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_nc1msth_gf3
-
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor 64FFFFFF
-rsc_end
-
-##cs9_sky2_l1greycloudy_sky1_layer2
-
-rsc_nolighting
-rsc_end
-
-##cs9_ef_sparks
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##dark_glass
-
-rsc_sourceblend bothinvsrcalpha
-rsc_nolighting
-rsc_noalphatest
-rsc_tfactor 32FFFFFF
-rsc_end
-
-##doublesided
-
-rsc_cullnone
-rsc_end
-
-##alphapipe
-
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_gen_light_grate__genroom_small_lm
-
-rsc_noz
-rsc_zenable
-rsc_sourceblend bothinvsrcalpha
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##tfactorA0
-
-rsc_tfactor A0FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_vlight
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_square_tail_light
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##noalphatest
-
-rsc_noalphatest
-rsc_end
-
-##tfactor70
-
-rsc_tfactor 70FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_limesto3_null
-
-rsc_cullnone
-rsc_alphatest
-rsc_ambient 1B31CD
-rsc_yon 600
-rsc_end
-
-##cs9_dome
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor_distance FFFFFFFF
-rsc_end
-
-##alphatest64
-
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##cs9_old_dome_effect
-
-rsc_cullnone
-rsc_nolighting
-rsc_alpha
-rsc_tfactor 14FFFFFF
-rsc_end
-
-##cs9_articshrubce
-
-rsc_alphatest
-rsc_alpharef 200
-rsc_end
-
-##tfactor20
-
-rsc_tfactor 20FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_leaves01_earth_tree2_lmap
-
-rsc_nolighting
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##cs9_ef_test_beam
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_yon 800
-rsc_end
-
-##cs9_vrskya_null
-
-rsc_noz
-rsc_end
-
-##glass1
-
-rsc_cullnone
-rsc_tfactor 20FFFFFF
-rsc_noalphatest
-rsc_end
-
-##tfactorD0
-
-rsc_tfactor D0FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_testgrad1_null
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_decal_lasher_hit
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF0000FF
-rsc_end
-
-##tfactor10
-
-rsc_tfactor 10FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_articshrubd
-
-rsc_alphatest
-rsc_alpharef 180
-rsc_end
-
-##see_through
-
-rsc_noz
-rsc_zenable
-rsc_sourceblend one
-rsc_destblend one
-rsc_cullnone
-rsc_lighting
-rsc_localviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor 80FFFFFF
-rsc_end
-
-##cs9_jgrass18
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_alphatest
-rsc_alpharef 8
-rsc_end
-
-##cs9_deserttreeh
-
-rsc_lighting
-rsc_normalizenormals
-rsc_alphatest
-rsc_alpharef 90
-rsc_end
-
-##cs9_barrier_effect_gf3
-
-rsc_localviewer
-rsc_noalphatest
-rsc_tfactor 80FFFFFF
-rsc_end
-
-##cs9_vr_effect
-
-rsc_zbias 16
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullccw
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_bright_spark
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##branches
-
-rsc_cullnone
-rsc_alphatest
-rsc_alpharef 64
-rsc_end
-
-##cs9_grasswatch2
-
-rsc_alphatest
-rsc_alpharef 64
-rsc_tfactor FFFFFFFF
-rsc_end
-
-##tfactor60
-
-rsc_tfactor 60FFFFFF
-rsc_noalphatest
-rsc_end
-
-##cs9_decal_skull
-
-rsc_zbias 16
-rsc_end
-
-##cs9_decal
-
-rsc_zbias 16
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_glass__lmap2_gf3
-
-rsc_nolighting
-rsc_localviewer
-rsc_noalphatest
-rsc_tfactor 50FFFFFF
-rsc_end
-
-##aa_temp
-
-rsc_noz
-rsc_zenable
-rsc_nolighting
-rsc_alphatest
-rsc_alpharef 8
-rsc_end
-
-##cs9_articleaf2
-
-rsc_alphatest
-rsc_alpharef 180
-rsc_end
-
-##lighting
-
-rsc_lighting
-rsc_end
-
-##cull_none
-
-rsc_cullnone
-rsc_localviewer
-rsc_end
-
-##cs9_visor_gf3
-
-rsc_cullnone
-rsc_noalphatest
-rsc_tfactor 20FFFFFF
-rsc_lfactor
-rsc_end
-
-##cs9_stair-signs_tpsa_stair_sign_three_01_lm
-
-rsc_zbias 8
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_arcticbranches2
-
-rsc_alphatest
-rsc_alpharef 120
-rsc_end
-
-##cs9_dome_null_nc
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF0000FF
-rsc_end
-
-##cs9_water
-
-rsc_cullnone
-rsc_tfactor 50FFFFFF
-rsc_end
-
-##cs9_ef_ant_arrays
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FFFFFF00
-rsc_end
-
-##cs9_articleaf1
-
-rsc_alphatest
-rsc_alpharef 180
-rsc_end
-
-##localviewer
-
-rsc_localviewer
-rsc_noalphatest
-rsc_end
-
-##cs9_warpgate_dome_null
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_nolighting
-rsc_noalphatest
-rsc_tfactor 6400FFFF
-rsc_end
-
-##cs9_cell_ef_water_ripple
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_end
-
-##cs9_ef_muzzle_side
-
-rsc_noz
-rsc_zenable
-rsc_sourceblend one
-rsc_destblend one
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##cs9_lava
-
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor 64FFFFFF
-rsc_end
-
-##cs9_scorch1
-
-rsc_zbias 3
-rsc_zwrite
-rsc_zenable
-rsc_cullcw
-rsc_alphatest
-rsc_nofog
-rsc_alpha
-rsc_end
-
-##cs9_artictreeeflip
-
-rsc_alphatest
-rsc_alpharef 175
-rsc_end
-
-##cs9_fog
-
-rsc_destblend one
-rsc_end
-
-##cs9_ef_glow
-
-rsc_noz
-rsc_end
-
-##cs9_wardogadult
-
-rsc_sourceblend one
-rsc_noalphatest
-rsc_tfactor FFFF0000
-rsc_end
-
-##cs9_glass__lmap
-
-rsc_nolighting
-rsc_noalphatest
-rsc_end
-
-##cs9_lava_lavalayer09
-
-rsc_cullnone
-rsc_end
-
-##cs9_swamptreea
-
-rsc_cullnone
-rsc_normalizenormals
-rsc_alphatest
-rsc_alpharef 100
-rsc_end
-
-##cs9_swamptreeb
-
-rsc_cullnone
-rsc_normalizenormals
-rsc_localviewer
-rsc_alphatest
-rsc_alpharef 100
-rsc_end
-
-##cs9_arctic_rock_snow
-
-rsc_alphatest
-rsc_alpharef 10
-rsc_end
-
-##cs9_arctic_tree_snow
-
-rsc_alphatest
-rsc_alpharef 10
-rsc_end
-
-##cs9_ef_waypoint
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF000040
-rsc_end
-
-##cs9_ef_waypoint_nc
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_alpha
-rsc_tfactor FF0000A0
-rsc_end
-
-##cs9_ef_lzr_a
-
-rsc_noz
-rsc_zenable
-rsc_destblend one
-rsc_cullnone
-rsc_nolighting
-rsc_nolocalviewer
-rsc_noalphatest
-rsc_nofog
-rsc_alpha
-rsc_yon 8000
 rsc_end
 
 ##cs9_ef_glowstar
@@ -1109,7 +85,1012 @@ rsc_alpha
 rsc_yon 8000
 rsc_end
 
-##cs9_sun_one
+##cs9_ef_lzr_a
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_nofog
+rsc_alpha
+rsc_yon 8000
+rsc_end
+
+##cs9_ef_waypoint_nc
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF0000A0
+rsc_end
+
+##cs9_ef_waypoint
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF000040
+rsc_end
+
+##cs9_arctic_tree_snow
+
+rsc_alphatest
+rsc_alpharef 10
+rsc_end
+
+##cs9_arctic_rock_snow
+
+rsc_alphatest
+rsc_alpharef 10
+rsc_end
+
+##cs9_swamptreeb
+
+rsc_cullnone
+rsc_normalizenormals
+rsc_localviewer
+rsc_alphatest
+rsc_alpharef 100
+rsc_end
+
+##cs9_swamptreea
+
+rsc_cullnone
+rsc_normalizenormals
+rsc_alphatest
+rsc_alpharef 100
+rsc_end
+
+##cs9_lava_lavalayer09
+
+rsc_cullnone
+rsc_end
+
+##cs9_glass__lmap
+
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_wardogadult
+
+rsc_sourceblend one
+rsc_noalphatest
+rsc_tfactor FFFF0000
+rsc_end
+
+##cs9_ef_glow
+
+rsc_noz
+rsc_end
+
+##cs9_fog
+
+rsc_destblend one
+rsc_end
+
+##cs9_artictreeeflip
+
+rsc_alphatest
+rsc_alpharef 175
+rsc_end
+
+##cs9_scorch1
+
+rsc_zbias 3
+rsc_zwrite
+rsc_zenable
+rsc_cullcw
+rsc_alphatest
+rsc_nofog
+rsc_alpha
+rsc_end
+
+##cs9_lava
+
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor 64FFFFFF
+rsc_end
+
+##cs9_ef_muzzle_side
+
+rsc_noz
+rsc_zenable
+rsc_sourceblend one
+rsc_destblend one
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_cell_ef_water_ripple
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_warpgate_dome_null
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_nolighting
+rsc_noalphatest
+rsc_tfactor 6400FFFF
+rsc_end
+
+##localviewer
+
+rsc_localviewer
+rsc_noalphatest
+rsc_end
+
+##cs9_articleaf1
+
+rsc_alphatest
+rsc_alpharef 180
+rsc_end
+
+##cs9_ef_ant_arrays
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFF00
+rsc_end
+
+##cs9_water
+
+rsc_cullnone
+rsc_tfactor 8CFFFFFF
+rsc_end
+
+##cs9_dome_null_nc
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF0000FF
+rsc_end
+
+##cs9_arcticbranches2
+
+rsc_alphatest
+rsc_alpharef 120
+rsc_end
+
+##cs9_stair-signs_tpsa_stair_sign_three_01_lm
+
+rsc_zbias 8
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_visor_gf3
+
+rsc_cullnone
+rsc_noalphatest
+rsc_tfactor 20FFFFFF
+rsc_lfactor
+rsc_end
+
+##cull_none
+
+rsc_cullnone
+rsc_localviewer
+rsc_end
+
+##lighting
+
+rsc_lighting
+rsc_end
+
+##cs9_articleaf2
+
+rsc_alphatest
+rsc_alpharef 180
+rsc_end
+
+##aa_temp
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_alphatest
+rsc_alpharef 8
+rsc_end
+
+##cs9_glass__lmap2_gf3
+
+rsc_nolighting
+rsc_localviewer
+rsc_noalphatest
+rsc_tfactor 50FFFFFF
+rsc_end
+
+##cs9_decal
+
+rsc_zbias 16
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_decal_skull
+
+rsc_zbias 16
+rsc_end
+
+##tfactor60
+
+rsc_tfactor 60FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_grasswatch2
+
+rsc_alphatest
+rsc_alpharef 64
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##branches
+
+rsc_cullnone
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##cs9_bright_spark
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_vr_effect
+
+rsc_zbias 16
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullccw
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_barrier_effect_gf3
+
+rsc_localviewer
+rsc_noalphatest
+rsc_tfactor 80FFFFFF
+rsc_end
+
+##cs9_deserttreeh
+
+rsc_lighting
+rsc_normalizenormals
+rsc_alphatest
+rsc_alpharef 90
+rsc_end
+
+##cs9_jgrass18
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_alphatest
+rsc_alpharef 8
+rsc_end
+
+##see_through
+
+rsc_noz
+rsc_zenable
+rsc_sourceblend one
+rsc_destblend one
+rsc_cullnone
+rsc_lighting
+rsc_localviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor 80FFFFFF
+rsc_end
+
+##cs9_articshrubd
+
+rsc_alphatest
+rsc_alpharef 180
+rsc_end
+
+##tfactor10
+
+rsc_tfactor 10FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_decal_lasher_hit
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF0000FF
+rsc_end
+
+##cs9_testgrad1_null
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##tfactorD0
+
+rsc_tfactor D0FFFFFF
+rsc_noalphatest
+rsc_end
+
+##glass1
+
+rsc_cullnone
+rsc_tfactor 20FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_vrskya_null
+
+rsc_noz
+rsc_end
+
+##cs9_ef_test_beam
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_yon 800
+rsc_end
+
+##cs9_leaves01_earth_tree2_lmap
+
+rsc_nolighting
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##tfactor20
+
+rsc_tfactor 20FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_articshrubce
+
+rsc_alphatest
+rsc_alpharef 200
+rsc_end
+
+##cs9_old_dome_effect
+
+rsc_cullnone
+rsc_nolighting
+rsc_alpha
+rsc_tfactor 14FFFFFF
+rsc_end
+
+##alphatest64
+
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##cs9_dome
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF46FF75
+rsc_end
+
+##cs9_limesto3_null
+
+rsc_cullnone
+rsc_alphatest
+rsc_ambient 1B31CD
+rsc_yon 600
+rsc_end
+
+##tfactor70
+
+rsc_tfactor 70FFFFFF
+rsc_noalphatest
+rsc_end
+
+##noalphatest
+
+rsc_noalphatest
+rsc_end
+
+##cs9_square_tail_light
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_vlight
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##tfactorA0
+
+rsc_tfactor A0FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_gen_light_grate__genroom_small_lm
+
+rsc_noz
+rsc_zenable
+rsc_sourceblend bothinvsrcalpha
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##alphapipe
+
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##doublesided
+
+rsc_cullnone
+rsc_end
+
+##dark_glass
+
+rsc_sourceblend bothinvsrcalpha
+rsc_nolighting
+rsc_noalphatest
+rsc_tfactor 32FFFFFF
+rsc_end
+
+##cs9_ef_sparks
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_sky2_l1greycloudy_sky1_layer2
+
+rsc_nolighting
+rsc_end
+
+##cs9_nc1msth_gf3
+
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor 64FFFFFF
+rsc_end
+
+##tfactorE0
+
+rsc_tfactor E0FFFFFF
+rsc_noalphatest
+rsc_end
+
+##tfactor90
+
+rsc_tfactor 90FFFFFF
+rsc_noalphatest
+rsc_end
+
+##tfactorC0
+
+rsc_tfactor C0FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_cas_b
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFAD5B
+rsc_end
+
+##cs9_arcticbranch1
+
+rsc_alphatest
+rsc_alpharef 128
+rsc_end
+
+##cs9_tree_surface
+
+rsc_zbias 16
+rsc_localviewer
+rsc_noalphatest
+rsc_end
+
+##cs9_ef_vt_portal
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF8000FF
+rsc_end
+
+##distancefademesh
+
+rsc_alpharef 64
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_earthleaf1
+
+rsc_cullnone
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##alpha_grass
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_alphatest
+rsc_alpharef 8
+rsc_end
+
+##wireframe
+
+rsc_wire
+rsc_end
+
+##cs9_glow
+
+rsc_noz
+rsc_end
+
+##cs9_shadow
+
+rsc_zbias 16
+rsc_end
+
+##nolighting
+
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_rock_surface
+
+rsc_zbias 16
+rsc_localviewer
+rsc_end
+
+##cs9_dome_nc
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFF4F400
+rsc_end
+
+##cs9_dome_tr
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF800000
+rsc_end
+
+##cs9_dome_vs
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF400040
+rsc_end
+
+##zbias16
+
+rsc_zbias 16
+rsc_end
+
+##cs9_wall02_amp_mainroom_lm_gf3
+
+rsc_noalphatest
+rsc_tfactor 05FFFFFF
+rsc_end
+
+##tfactor30
+
+rsc_tfactor 30FFFFFF
+rsc_noalphatest
+rsc_end
+
+##tfactor40
+
+rsc_tfactor 40FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_glass__lmap2
+
+rsc_noz
+rsc_zenable
+rsc_localviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor 55FFFFFF
+rsc_end
+
+##sky
+
+rsc_cullnone
+rsc_yon 150000.00
+rsc_nofog
+rsc_noalphatest
+rsc_end
+
+##cs9_desertswatch2
+
+rsc_nolighting
+rsc_alpharef 64
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_buggy_shadow
+
+rsc_zbias 16
+rsc_alphatest
+rsc_end
+
+##lighting_noalphatest
+
+rsc_lighting
+rsc_noalphatest
+rsc_end
+
+##cs9_spawn_door_glass
+
+rsc_localviewer
+rsc_noalphatest
+rsc_tfactor 64FFFFFF
+rsc_end
+
+##cs9_sun_glow
+
+rsc_noz
+rsc_noz
+rsc_destblend one
+rsc_nofog
+rsc_end
+
+##cs9_ef_head_on
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_yon 900
+rsc_end
+
+##cs9_deserttreej
+
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##tfactor50
+
+rsc_tfactor 50FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_base_dome_null
+
+rsc_noz
+rsc_zenable
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor 64E6FFFF
+rsc_end
+
+##cs9_ef_motionsensor
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFAA55
+rsc_end
+
+##cs9_ef_test
+
+rsc_zbias 16
+rsc_cullnone
+rsc_end
+
+##tfactorB0
+
+rsc_tfactor B0FFFFFF
+rsc_noalphatest
+rsc_end
+
+##scaled_lighting
+
+rsc_normalizenormals
+rsc_end
+
+##cull_reversed
+
+rsc_cullccw
+rsc_end
+
+##cs9_shuttle_nc_1
+
+rsc_localviewer
+rsc_noalphatest
+rsc_yon 1600
+rsc_end
+
+##cs9_artictreedflip
+
+rsc_alphatest
+rsc_alpharef 160
+rsc_end
+
+##cs9_jthickgrass_gf4
+
+rsc_noz
+rsc_zenable
+rsc_nolighting
+rsc_noalphatest
+rsc_end
+
+##cs9_pleaves01
+
+rsc_zwrite
+rsc_alphatest
+rsc_alpharef 8
+rsc_end
+
+##cs9_cool_stealth
+
+rsc_destblend one
+rsc_alpha
+rsc_end
+
+##cs9_ef_warpgate_pass
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF0080FF
+rsc_end
+
+##cs9_large_panel02_testbox_lm
+
+rsc_sourceblend invdestalpha
+rsc_destblend invdestalpha
+rsc_noalphatest
+rsc_end
+
+##tfactor80
+
+rsc_tfactor 80FFFFFF
+rsc_noalphatest
+rsc_end
+
+##cs9_decal_waypoint
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_ef_waypoint_tr
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF800000
+rsc_end
+
+##cs9_ef_waypoint_vs
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FF1B0035
+rsc_end
+
+##cs9_arcticbranches3
+
+rsc_alphatest
+rsc_alpharef 120
+rsc_end
+
+##cs9_swamp_null
+
+rsc_noz
+rsc_zenable
+rsc_cullnone
+rsc_noalphatest
+rsc_alpha
+rsc_end
+
+##cs9_ef_moon_one
+
+rsc_noz
+rsc_nofog
+rsc_alpha
+rsc_yon 18000
+rsc_end
+
+##cs9_ef_sun_one
+
+rsc_noz
+rsc_destblend one
+rsc_nolighting
+rsc_nofog
+rsc_alpha
+rsc_end
+
+##cs9_fireplanet
+
+rsc_sourceblend one
+rsc_destblend one
+rsc_noalphatest
+rsc_end
+
+##cs9_skydome20
+
+rsc_noz
+rsc_noz
+rsc_noalphatest
+rsc_nofog
+rsc_alpha
+rsc_yon 10000
+rsc_end
+
+##cs9_ams_taillight
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_ef_sun
 
 rsc_noz
 rsc_destblend one
@@ -1122,32 +1103,19 @@ rsc_alpha
 rsc_yon 18000
 rsc_end
 
-##cs9_tide_null_gf3
+##cs9_earthshrubg
 
-rsc_zbias 16
-rsc_noz
-rsc_zenable
-rsc_noalphatest
-rsc_alpha
+rsc_cullcw
+rsc_alphatest
+rsc_alpharef 64
 rsc_end
 
-##cs9_em_light_red
+##cs9_ef_moon_two
 
-rsc_zbias 16
-rsc_tfactor FFFF0000
+rsc_yon 18000
 rsc_end
 
-##cs9_earthbark1
-
-rsc_normalizenormals
-rsc_end
-
-##cs9_deserttreeg
-
-rsc_normalizenormals
-rsc_end
-
-##cs9_ef_water_splash
+##cs9_ef_tide
 
 rsc_noz
 rsc_zenable
@@ -1157,7 +1125,108 @@ rsc_nolighting
 rsc_nolocalviewer
 rsc_noalphatest
 rsc_alpha
-rsc_tfactor FFF5F5F5
+rsc_tfactor FFBEBEBE
+rsc_end
+
+##cs9_plasma-tall
+
+rsc_tfactor FFFFFFFF
+rsc_end
+
+##cs9_em_light_null
+
+rsc_zbias 16
+rsc_tfactor FFFF0000
+rsc_end
+
+##cs9_artictree1
+
+rsc_normalizenormals
+rsc_end
+
+##cs9_swampbarka
+
+rsc_normalizenormals
+rsc_end
+
+##cs9_em_light_yellow
+
+rsc_zbias 16
+rsc_tfactor FFFFFF00
+rsc_end
+
+##cs9_deserttreek
+
+rsc_cullnone
+rsc_normalizenormals
+rsc_alphatest
+rsc_alpharef 85
+rsc_end
+
+##cs9_deserttreem
+
+rsc_normalizenormals
+rsc_end
+
+##cs9_deserttreeiflip
+
+rsc_alphatest
+rsc_alpharef 100
+rsc_end
+
+##cs9_deserttreehflip
+
+rsc_alphatest
+rsc_alpharef 64
+rsc_end
+
+##cs9_ef_warp_xfer
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFFF8204
+rsc_end
+
+##cs9_ef_warp_xfer_b
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFC25301
+rsc_end
+
+##cs9_ef_warp_xfer_ring_mesh
+
+rsc_noz
+rsc_zenable
+rsc_destblend one
+rsc_cullnone
+rsc_nolighting
+rsc_nolocalviewer
+rsc_noalphatest
+rsc_alpha
+rsc_tfactor FFD0B102
+rsc_end
+
+##cs9_warp_holo
+
+rsc_end
+
+##cs9__warp_hologram
+
+rsc_cullnone
+rsc_tfactor FF00FF00
 rsc_end
 
 ##alpha_one

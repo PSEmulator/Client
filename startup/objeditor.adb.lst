@@ -1,5 +1,85 @@
 #ob_begin
 
+##barrier_prong2
+
+ob_mesh ext_barrier_double_2prong
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##barrier_double
+
+ob_mesh ext_barrier_double_heavy
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##barrier_blind
+
+ob_mesh ext_barrier_blind
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##barrier_prong
+
+ob_mesh ext_barrier_2prong
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##sandbags_b
+
+ob_mesh ext_sandbags_b
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##sandbags_a
+
+ob_mesh ext_sandbags_a
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##med_barrier
+
+ob_mesh ext_barrier_medium
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
+##hvy_barrier
+
+ob_mesh ext_barrier_heavy
+ob_scalexy 1
+ob_scalez 1
+ob_zoffset 0
+ob_slope_limit 10
+ob_count 1
+eb_end
+
 ##vrrocks
 
 ob_mesh vrrocka
@@ -674,7 +754,7 @@ ob_scalez 1:0.2<0.6:2.4>
 ob_zoffset 0.2:0.2<0:1>
 ob_slope_limit 18
 ob_count 16
-ob_exclude_radius 3
+ob_exclude_radius 4
 ob_clump 42 1 16
 ob_random_rotation
 ob_child grey_rocks_clump
@@ -1401,6 +1481,13 @@ ob_random_rotation
 ob_orient_to_terrain
 eb_end
 
+##map17_mask
+
+ob_mask artic_trees_thin 0 150 0
+ob_mask artic_trees_thick 0 255 0
+ob_mask artic_rocks3 255 0 0
+eb_end
+
 ##rock_formation7
 
 ob_mesh rock_formation7
@@ -1449,9 +1536,9 @@ ob_exclude_radius 1000
 ob_count 1
 eb_end
 
-##deserttreea
+##deserttreec
 
-ob_mesh deserttreea
+ob_mesh deserttreec
 ob_scalexy 1:0.5<0.7:1.1>
 ob_scalez 1:0.2<0.8:1.2>
 ob_zoffset 0.2:0.2<0:.2>
@@ -1477,9 +1564,9 @@ ob_random_rotation
 ob_orient_to_terrain
 eb_end
 
-##deserttreec
+##deserttreea
 
-ob_mesh deserttreec
+ob_mesh deserttreea
 ob_scalexy 1:0.5<0.7:1.1>
 ob_scalez 1:0.2<0.8:1.2>
 ob_zoffset 0.2:0.2<0:.2>

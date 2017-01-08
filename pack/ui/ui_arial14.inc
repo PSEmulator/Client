@@ -95,7 +95,7 @@
 <FontCharacter Advance='4' Code='125' SourceFile='arial14_0' SourceRect='62,97,67,111'/>
 <FontCharacter Advance='6' Code='126' SourceFile='arial14_0' SourceRect='69,97,76,111'/>
 <FontCharacter Advance='24' Code='57345' Name='ilc9' SourceFile='ui_kill_echo_amp_magscatter' SourceRect='0,0,24,16'/>
-<FontCharacter Advance='19' Code='57346' Name='isp' SourceFile='ui_kill_echo_amp_magscatter' SourceRect='0,16,19,32'/>
+<FontCharacter Advance='22' Code='57346' Name='isp' SourceFile='ui_kill_echo_amp_magscatter' SourceRect='0,16,22,32'/>
 <FontCharacter Advance='31' Code='57347' Name='ams' SourceFile='ui_kill_echo_ams_sunder_stealthquad_basilisk' SourceRect='0,0,31,16'/>
 <FontCharacter Advance='34' Code='57348' Name='apc' SourceFile='ui_kill_echo_ams_sunder_stealthquad_basilisk' SourceRect='0,16,34,32'/>
 <FontCharacter Advance='33' Code='57349' Name='quadstealth' SourceFile='ui_kill_echo_ams_sunder_stealthquad_basilisk' SourceRect='0,32,33,48'/>
@@ -114,7 +114,7 @@
 <FontCharacter Advance='49' Code='57362' Name='r_shotgun' SourceFile='ui_kill_echo_dragon_jackhammer_cycler_minichaingun' SourceRect='0,16,49,32'/>
 <FontCharacter Advance='52' Code='57363' Name='cycler' SourceFile='ui_kill_echo_dragon_jackhammer_cycler_minichaingun' SourceRect='0,32,52,48'/>
 <FontCharacter Advance='48' Code='57364' Name='mini_chaingun' SourceFile='ui_kill_echo_dragon_jackhammer_cycler_minichaingun' SourceRect='0,48,48,64'/>
-<FontCharacter Advance='17' Code='57365' Name='hemine' SourceFile='ui_kill_echo_hemine_magno' SourceRect='0,0,17,16'/>
+<FontCharacter Advance='17' Code='57365' Name='he_mine' SourceFile='ui_kill_echo_hemine_magno' SourceRect='0,0,17,16'/>
 <FontCharacter Advance='16' Code='57366' Name='magno_mine' SourceFile='ui_kill_echo_hemine_magno' SourceRect='0,16,16,32'/>
 <FontCharacter Advance='57' Code='57367' Name='lasher' SourceFile='ui_kill_echo_lasher_pulsar_thumper_guass' SourceRect='0,0,57,16'/>
 <FontCharacter Advance='44' Code='57368' Name='pulsar' SourceFile='ui_kill_echo_lasher_pulsar_thumper_guass' SourceRect='0,16,44,32'/>
@@ -144,13 +144,13 @@
 <FontCharacter Advance='17' Code='57392' Name='nchev_falcon' SourceFile='ui_kill_echo_trhev_nchev' SourceRect='0,16,17,32'/>
 <FontCharacter Advance='17' Code='57393' Name='nchev_scattercannon' SourceFile='ui_kill_echo_trhev_nchev' SourceRect='0,16,17,32'/>
 <FontCharacter Advance='17' Code='57394' Name='nchev_sparrow' SourceFile='ui_kill_echo_trhev_nchev' SourceRect='0,16,17,32'/>
-<FontCharacter Advance='18' Code='57395' Name='vshev1*' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
-<FontCharacter Advance='18' Code='57396' Name='vshev2*' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
-<FontCharacter Advance='18' Code='57397' Name='vshev3*' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
+<FontCharacter Advance='18' Code='57395' Name='vshev_comet' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
+<FontCharacter Advance='18' Code='57396' Name='vshev_starfire' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
+<FontCharacter Advance='18' Code='57397' Name='vshev_quasar' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,0,18,16'/>
 <FontCharacter Advance='27' Code='57398' Name='suicide' SourceFile='ui_kill_echo_vshev_suicide' SourceRect='0,16,27,32'/>
-<FontCharacter Advance='1840696944' Code='57399' Name='flechette' SourceFile='ui_kill_echo_flechette_phoenix_spitfire' SourceRect='0,0,64,14'/>
+<FontCharacter Advance='45' Code='57399' Name='flechette' SourceFile='ui_kill_echo_flechette_phoenix_spitfire' SourceRect='0,0,64,14'/>
 <FontCharacter Advance='49' Code='57400' Name='phoenix' SourceFile='ui_kill_echo_flechette_phoenix_spitfire' SourceRect='0,16,49,32'/>
-<FontCharacter Advance='14' Code='57401' Name='flame_spitter' SourceFile='ui_kill_echo_flechette_phoenix_spitfire' SourceRect='0,33,14,49'/>
+<FontCharacter Advance='14' Code='57401' Name='spitfire_turret' SourceFile='ui_kill_echo_flechette_phoenix_spitfire' SourceRect='0,33,14,49'/>
 <FontCharacter Advance='30' Code='57402' Name='ace' SourceFile='ui_smlinv_ace_00' SourceRect='0,0,30,16'/>
 <FontCharacter Advance='24' Code='57403' Name='bank' SourceFile='ui_smlinv_bank_00' SourceRect='0,0,24,16'/>
 <FontCharacter Advance='37' Code='57404' Name='boomer' SourceFile='ui_smlinv_boomer_trigger_00' SourceRect='0,0,37,16'/>

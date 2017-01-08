@@ -1,7 +1,7 @@
 pse_link Akna amp_station_3
 pse_link Anguta comm_station_dsp_3
 pse_link Igaluk tech_plant_3
-pse_link Keelut tech_plant_4
+pse_link Keelut comm_station_4
 pse_link Nerrivik tech_plant_5
 pse_link Pinga tech_plant_1
 pse_link Sedna cryo_facility_3
@@ -43,3 +43,13 @@ pse_link bunker_gauntlet_42 bunker_gauntlet_1
 pse_link bunker_gauntlet_43 bunker_gauntlet_1
 pse_link bunker_gauntlet_44 bunker_gauntlet_1
 pse_link bunker_sm_45 bunker_sm_1
+pse_link Igaluk_Tower tower_a_1
+pse_link Sedna_Tower tower_a_1
+pse_link Anguta_Tower tower_b_1
+pse_link Akna_Tower tower_c_1
+pse_link Nerrivik_Tower tower_a_1
+pse_link Hossin_Warpgate_Tower tower_c_1
+pse_link Tootega_Tower tower_a_1
+pse_link Keelut_Tower tower_a_1
+pse_link Amerish_Warpgate_Tower tower_c_1
+pse_link Pinga_Tower tower_c_1

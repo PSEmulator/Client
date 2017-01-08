@@ -1,6 +1,6 @@
 <Page Location='100,100' MinimumSize='367,200' movable='true' Name='Help' PackLocation='center,center' PackLocationProp='-412/0001,-284/0001' resizable='true' ScrollExtent='419,290' Size='419,290' Visible='false'>
-<Scrollbar Control='HelpText' Location='385,37' Name='TextScroll' PackLocation='right,top' PackLocationProp='-034/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0072/0001' ScrollExtent='9,218' Size='9,218' Style='/ScrollBars.vertical.style'/>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='Bob\\nTwo' Location='190,39' Name='HelpText' PackSize='absolute,absolute' PackSizeProp='0230/0001,0071/0001' ScrollExtent='189,219' Size='189,219'>Bob\\nTwo</Text>
+<Scrollbar Control='HelpText' Location='385,35' Name='TextScroll' PackLocation='right,top' PackLocationProp='-034/0001,0035/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0067/0001' ScrollExtent='9,223' Size='9,223' Style='/ScrollBars.vertical.style'/>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='Bob\\nTwo' Location='190,35' Name='HelpText' PackSize='absolute,absolute' PackSizeProp='0230/0001,0067/0001' ScrollExtent='189,223' Size='189,223'>Bob\\nTwo</Text>
 <Template Name='HelpListTemplate' Size='154,25'>\<text color = \'$color\' font = \'/Fonts.HudFont2\' location = \'4,2\' maxlines = \'1\' size = \'150,20\' truncateelipsis = \'true\' visible = \'$IsItem1$\'\>
 $Internationalize$ 
 \</text\>
@@ -15,6 +15,8 @@ $Internationalize$
 <Data internationalize='@HelpHelp' isexpanded='false' isheading='true' isitem1='false' isitem2='false' Localinternationalize='[@HelpHelp]' Name='Help'/>
 <Data internationalize='@HelpHelpItem' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHelpItem]' Name='HelpItem'/>
 <Data internationalize='@HelpHelpContext' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHelpContext]' Name='HelpContext'/>
+<Data internationalize='@HelpOfflineTraining' isexpanded='false' isheading='true' isitem1='false' isitem2='false' Localinternationalize='[@HelpOfflineTraining]' Name='Offline Training'/>
+<Data internationalize='@HelpOfflineMissionSelect' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpOfflineMissionSelect]' Name='OfflineMissionSelectHelp'/>
 <Data internationalize='@HelpFrontend' isexpanded='false' isheading='true' isitem1='false' isitem2='false' Localinternationalize='[@HelpFrontend]' Name='Frontend'/>
 <Data internationalize='@HelpFrontendServer' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpFrontendServer]' Name='FrontendServer'/>
 <Data internationalize='@HelpFrontendEmpire' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpFrontendEmpire]' Name='FrontendEmpire'/>
@@ -27,6 +29,7 @@ $Internationalize$
 <Data internationalize='@HelpOptionSound' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='OptionsSound'/>
 <Data internationalize='@HelpOptionOther' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='OptionsOther'/>
 <Data internationalize='@HelpHUDView' isexpanded='false' isheading='true' isitem1='false' isitem2='false' Localinternationalize='[@HelpHUDView]' Name='HUDView'/>
+<Data internationalize='@HelpHUDAlarm' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDAlarm]' Name='HUDAlarm'/>
 <Data internationalize='@HelpHUDActiveItems' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='HUDActiveItems'/>
 <Data internationalize='@HelpHUDCharacterPane' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDCharacterPane]' Name='HUDCharacterPane'/>
 <Data internationalize='@HelpHUDCorpse' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDCorpse]' Name='HUDCorpse'/>
@@ -44,6 +47,7 @@ $Internationalize$
 <Data internationalize='@HelpHUDShortcuts' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='HUDShortcuts'/>
 <Data internationalize='@HelpHUDSquad' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDSquad]' Name='HUDSquad'/>
 <Data internationalize='@HelpHUDStatus' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='HUDStatus'/>
+<Data internationalize='@HelpHUDStatistics' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDStatistics]' Name='HUDStatisticsPane'/>
 <Data internationalize='@HelpHUDTrade' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDTrade]' Name='HUDTrade'/>
 <Data internationalize='@HelpHUDTrunk' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpHUDTrunk]' Name='HUDTrunk'/>
 <Data internationalize='@HelpHUDVehicle' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@Help]' Name='HUDVehicle'/>
@@ -169,10 +173,10 @@ $Internationalize$
 <Data internationalize='@HelpSupportWeb' isheading='false' isitem1='true' isitem2='false' Localinternationalize='[@HelpSupportWeb]' Name='SupportWeb'/>
 </DataSource>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@HelpTitle]' Location='65,7' Name='TitleText' PackLocation='center,fixed' PackLocationProp='-144/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='278,20' Size='278,20' TextAlignment='Center' TextAlignmentVertical='Center'>@HelpTitle</Text>
-<Listbox DataSource='HelpData' Location='21,33' Name='HelpList' PackSize='fixed,absolute' PackSizeProp='0002/0003,0067/0001' RowTemplate='HelpListTemplate' ScrollExtent='154,3875' Size='154,223' Style='/Listboxes.Clear.style'/>
-<Scrollbar Control='HelpList' Location='177,33' Name='ListScroll' PackSize='fixed,absolute' PackSizeProp='0002/0003,0067/0001' ScrollExtent='9,223' Size='9,223' Style='/ScrollBars.vertical.style'/>
+<Listbox DataSource='HelpData' Location='21,35' Name='HelpList' PackSize='fixed,absolute' PackSizeProp='0002/0003,0067/0001' RowTemplate='HelpListTemplate' ScrollExtent='154,3975' Size='154,223' Style='/Listboxes.Clear.style'/>
+<Scrollbar Control='HelpList' Location='177,35' Name='ListScroll' PackSize='fixed,absolute' PackSizeProp='0002/0003,0067/0001' ScrollExtent='9,223' Size='9,223' Style='/ScrollBars.vertical.style'/>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='330,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-089/0001,0008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='31,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0071/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='348,32' Size='348,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' Opacity='0.800' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='419,273' Size='419,273' Stretch='false'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='8,15' Name='FrontendBackground' PackSize='absolute,absolute' PackSizeProp='0015/0001,0028/0001' RStyleDefault='/WindowPanes.FrontendDialog.style' ScrollExtent='404,262' Size='404,262' Stretch='false' Visible='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='11,22' Name='FrontendBackground' PackSize='absolute,absolute' PackSizeProp='0024/0001,0046/0001' RStyleDefault='/Frontend.Box.style' ScrollExtent='395,244' Size='395,244' Stretch='false' Visible='false'/>
 </Page>

@@ -1,0 +1,34 @@
+############################################################
+# SOLDIER SPECIFIC KEYMAPS
+############################################################
+
+# Movement Controls
+#----------------------------
+
+km_addbinding "shift" "Walk/Run"
+
+km_addbinding "w" "Forward"
+km_addbinding "s" "Backward"
+km_addbinding "num pad 8" Forward
+km_addbinding "num pad 2" Backward
+km_addbinding "up arrow" "Forward"
+km_addbinding "down arrow" "Backward"
+
+km_addbinding "a" "Strafe Left"
+km_addbinding "d" "Strafe Right"
+
+km_addbinding "left arrow" "Strafe Left"
+km_addbinding "right arrow" "Strafe Right"
+
+km_addbinding "C" "Toggle Crouch"
+km_addbinding "ctrl" "Crouch"
+
+km_addbinding "space" "Jump"
+
+# Weapon Controls
+#----------------------------
+km_addbinding 1 "Use Right Hip Holster"
+km_addbinding 2 "Use Right Back Holster"
+km_addbinding 3 "Use Left Hip Holster"
+km_addbinding 4 "Use Left Back Holster"
+km_addbinding 5 "Use Knife Holster"

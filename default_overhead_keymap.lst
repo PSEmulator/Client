@@ -1,3 +1,7 @@
+############################################################
+# OVERHEAD MAP SPECIFIC KEYMAPS
+############################################################
+
 # Zoom Controls
 #----------------------------
 
@@ -14,7 +18,9 @@ km_addbinding "X"         "Zoom Out"
 #----------------------------
 km_addbinding "C" 	"Center on Player"
 km_addbinding "G" 	"Global View"
+km_addbinding "B" 	"Toggle Battleplans"
 km_addbinding "E" 	"Toggle Equipment"
+km_addbinding "F" 	"Toggle Facility Warnings"
 km_addbinding "H" 	"Toggle Hot Spots"
 km_addbinding "R" 	"Toggle Rsrc Facility Info"
 km_addbinding "S" 	"Toggle SOI"

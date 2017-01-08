@@ -1,0 +1,303 @@
+#=======================================================
+# Offline Training Mission 1
+# Basic Controls and Waypoint Handling
+#=======================================================
+
+$begin OfflineTrainingMission1
+
+    # Let's start this thing...
+    $freeze
+
+    # 1st dialogue
+    $text_dlg @OfflineMission1_01 30
+    $play Basic_01.mp3
+    $sync
+    $wait 3000
+
+    # 2nd dialogue    
+    $set_page HUD
+    $flash Chat
+    $text_dlg @OfflineMission1_02 30
+    $play Basic_02.mp3
+    $sync
+    $wait 3000
+
+    # 3rd dialogue    
+    $flash Radar
+    $text_dlg @OfflineMission1_03 30
+    $play Basic_03.mp3
+    $sync
+    $wait 3000
+
+    # 4th dialogue    
+    $flash ActiveItems
+    $text_dlg @OfflineMission1_04 30
+    $play Basic_04.mp3
+    $sync
+    $wait 3000
+
+    # 5th dialogue    
+    $set_page ActiveItems.ControlMap
+    $flash Radar
+    $text_dlg @OfflineMission1_05 30
+    $play Basic_05.mp3
+    $sync
+    $wait 3000
+
+    # 6th dialogue    
+    $set_page ActiveItems
+    $flash SoldierStatus
+    $text_dlg @OfflineMission1_06 30
+    $play Basic_06.mp3
+    $sync
+    $wait 3000
+
+    # 7th dialogue    
+    $set_page ActiveItems
+    $flash ShortcutPage
+    $text_dlg @OfflineMission1_07 30
+    $play Basic_07.mp3
+    $sync
+    $wait 3000
+
+    # 8th dialogue    
+    $set_page ActiveItems
+    $flash InventoryPage
+    $text_dlg @OfflineMission1_08 30
+    $play Basic_08.mp3
+    $sync
+    $wait 3000
+
+    # 9th dialogue
+    $set_page ActiveItems
+    $flash Control
+    $text_dlg @OfflineMission1_09 30
+    $play Basic_09.mp3
+    $sync
+    $wait 3000
+
+    # 10th dialogue
+    # Set our way-point to the next area for our mission
+    $set_waypoint 4691 2582 3
+    $text_dlg @OfflineMission1_10 30
+    $play Basic_10.mp3
+
+    # Create 3 avatars at that location
+    $create_avatar "" 4690 2586 84 100 NC male normal 1
+    $set_orientation 100 12950
+    $create_avatar "" 4692 2585 84 101 TR male normal 2
+    $set_orientation 101 11447
+    $create_avatar "" 4694 2584 84 102 VS male normal 3
+    $set_orientation 102 10047
+
+    # Allow the player to move, and wait until they reach that way point
+    $thaw
+    $sync
+    $wait_waypoint 1
+
+    # Freeze everything but their ability to look around.
+    $freeze false
+
+
+    # 11th dialogue    
+    $text_dlg @OfflineMission1_11 30
+    $play Basic_11.mp3
+    $sync
+
+    # 12th dialogue    
+    $wait_until_facing 100 10
+    $set_avatar_name 100 "New Conglomerate"
+    $text_dlg @OfflineMission1_12 30
+    $play Basic_12.mp3
+    $sync
+    
+    # 13th dialogue    
+    $wait_until_facing 101 10
+    $set_avatar_name 101 "Terran Republic"
+    $text_dlg @OfflineMission1_13 30
+    $play Basic_13.mp3
+    $sync
+    
+    # 14th dialogue    
+    $wait_until_facing 102 10
+    $set_avatar_name 102 "Vanu Sovereignty"
+    $text_dlg @OfflineMission1_14 30
+    $play Basic_14.mp3
+    $sync
+   
+    # 15th dialogue    
+    $text_dlg @OfflineMission1_15 30
+    $play Basic_15.mp3
+    $sync
+
+    # Cycle the body armor on all of our avatars.
+    $set_avatar_armor 100 light
+    $set_avatar_armor 101 light
+    $set_avatar_armor 102 light
+    $wait 3000
+
+    $set_avatar_armor 100 medium
+    $set_avatar_armor 101 medium
+    $set_avatar_armor 102 medium
+    $wait 3000
+
+    $set_avatar_armor 100 heavy
+    $set_avatar_armor 101 heavy
+    $set_avatar_armor 102 heavy
+    $wait 3000
+
+    $set_avatar_armor 100 stealth
+    $set_avatar_armor 101 stealth
+    $set_avatar_armor 102 stealth
+    $wait 3000
+
+    $set_avatar_armor 100 normal
+    $set_avatar_armor 101 normal
+    $set_avatar_armor 102 normal
+
+    # 16th dialogue    
+    $text_dlg @OfflineMission1_16 30
+    $play Basic_16.mp3
+
+
+    $thaw
+    $create_avatar "New Conglomerate" 4825 2695 77 200 NC male normal 1
+    $set_orientation 200 10746
+    $create_avatar "Terran Republic" 4828 2691 77 201 TR male normal 2
+    $set_orientation 201 10579
+    $create_avatar "Vanu Sovereignty" 4830 2687 77 202 VS male normal 3
+    $set_orientation 202 10446
+    
+    $set_waypoint 4783 2632 3
+    $sync
+    $wait_waypoint 1
+    $freeze false
+
+    # 17th dialogue    
+    $text_dlg @OfflineMission1_17 30
+    $play Basic_17.mp3
+    $sync
+    $wait_until_facing 200 201 202 150
+
+    # 18th dialogue    
+    $text_dlg @OfflineMission1_18 30
+    $play Basic_18.mp3
+    $sync
+  
+    $set_waypoint 4857 2604 3
+    $thaw
+    $wait_waypoint 0.5
+
+    # Create the items that are to be picked up
+    $create_object suppressor 4862.00 2604.0 1000 100 1
+    $create_object beamer 4862.00 2605.48 1000 101 1
+    $create_object 9mmbullet 4864.80 2606.01 1000 102 1
+    $create_object 9mmbullet 4864.22 2605.53 1000 103 1
+    $create_object energy_cell 4864.01 2604.43 1000 106 1
+    $create_object energy_cell 4863.97 2604.43 1000 107 1
+    $create_object 9mmbullet_AP 4863.97 2606.01 1000 104 1
+    $create_object 9mmbullet_AP 4863.97 2605.53 1000 105 1
+    $set_orientation 100 15896
+    $set_orientation 101 15896
+    
+    # 19th dialogue    
+    $text_dlg @OfflineMission1_19 30
+    $play Basic_19.mp3
+
+    # wait for the user to pick up all of the items
+	$change_action_lock DAT 11 1
+	$change_action_lock GOT 6 1
+	$change_action_lock GOT 28 1
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+	$wait_on_use 0 11
+    #$get suppressor beamer 9mmbullet 9mmbullet energy_cell energy_cell 9mmbullet_AP 9mmbullet_AP
+    $sync
+
+	$change_action_lock DAT 11 0
+	$change_action_lock GOT 6 0
+	$change_action_lock GOT 28 0
+
+    $freeze false
+
+    # 20th dialogue    
+    $text_dlg @OfflineMission1_20 30
+    $play Basic_20.mp3
+    $sync
+    $equip suppressor
+
+    # 21st dialogue    
+    $text_dlg @OfflineMission1_21 30
+    $play Basic_21.mp3
+    $sync
+
+    $thaw
+    $set_waypoint 4883 2701 3
+    $create_avatar "Jackson" 4884 2707 72 200 EN male normal 3
+    $set_orientation 200 11808
+    $wait_waypoint 1
+
+    $freeze false
+
+    # 22nd dialogue    
+    $text_dlg @OfflineMission1_22 30
+    $play Basic_22.mp3
+    $sync
+
+    $wait_until_destroyed 200
+
+    $wait 3000
+    $create_object two_man_assault_buggy 4896 2711 71 210 1
+    $set_empire 210 EN
+    $thaw
+
+    # 23rd dialogue    
+    $text_dlg @OfflineMission1_23 30
+    $play Basic_23.mp3
+    $sync
+
+    # wait for the user to destroy the harasser
+    $wait_until_destroyed 210
+
+    $freeze false
+
+    # 24th dialogue    
+    $text_dlg @OfflineMission1_24 30
+    $play Basic_24.mp3
+    $sync
+    
+    # wait for the user to equip the suppressor
+    $equip beamer
+
+    $create_avatar "Anderson" 4884 2707 72 211 EN male normal 3
+    $set_orientation 211 13465
+    $create_object quadassault 4881 2734 72 212 1
+    $set_empire 212 EN
+
+    # 25th dialogue    
+    $text_dlg @OfflineMission1_25 30
+    $play Basic_25.mp3
+    $sync
+
+    $thaw
+
+    $wait_until_destroyed 211 212
+
+
+    # 26th dialogue    
+    $text_dlg @OfflineMission1_26 30
+    $play Basic_26.mp3
+    $sync
+
+    # End...
+    $wait 5000
+    $levelup
+    $show_mission_selection
+    $quit
+
+$end

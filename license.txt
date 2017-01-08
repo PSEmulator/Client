@@ -1,77 +1,264 @@
-In order to participate in the beta testing of PlanetSide (TM), you must read and accept the terms of use and license agreement below.  Please read the TERMS OF USE AND LICENSE AGREEMENT closely.  By clicking the "Yes" button below, you agree to be legally bound by the terms of this agreement.
+Please remember to review the current terms and conditions of the User 
+Agreement and Software License. Thank you.
 
+PLANETSIDE(tm) USER AGREEMENT AND SOFTWARE LICENSE
 
-TERMS OF USE AND LICENSE AGREEMENT
-(BETA TESTING OF A PRE-RELEASE GAME)
+THIS AGREEMENT DESCRIBES THE TERMS ON WHICH SONY ONLINE 
+ENTERTAINMENT INC. ("SOE") OFFERS YOU ACCESS TO AN ACCOUNT 
+(THE "ACCOUNT") TO PLAY THE PLANETSIDE MASSIVELY MULTIPLAYER 
+ONLINE COMBAT GAME FOR THE PC AND ANY EXPANSION PACKS 
+(INDIVIDUALLY AND COLLECTIVELY, THE "GAME"). BY PRESSING THE "I 
+ACCEPT" BUTTON, YOU ACCEPT THE TERMS AND CONDITIONS BELOW. 
+BY PRESSING THE "I DO NOT ACCEPT" BUTTON, YOU DECLINE OUR 
+OFFER, IN WHICH CASE YOU SHOULD CONTACT YOUR PLACE OF 
+PURCHASE REGARDING ITS RETURN POLICY FOR THE APPLICABLE 
+PLANETSIDE PRODUCT. 
 
+1. Accounts are available only to adults or, in their discretion, their minor child.  If 
+you are a minor, your parent(s) or guardian(s) must complete the registration 
+process, in which case they will take full responsibility for all obligations under 
+this Agreement. By clicking the "I Accept" button and providing us with a credit 
+card number or, if made available by SOE, a valid Game Card, you represent 
+that you are an adult and are either accepting this Agreement on behalf of 
+yourself or your child. You may not transfer or share your Account with anyone, 
+except that if you are a parent or guardian, you may permit one child to use the 
+Account instead of you (in which case you may not use that Account). You are 
+liable for all activities conducted through the Account, and parents or guardians 
+are liable for the activities of their child. Corporations and other entities are not 
+eligible to procure Accounts.
 
-Sony Online Entertainment Inc. ("SOE") has designed and developed and is the publisher of a software product entitled PlanetSide (the "Game").  SOE has established a Beta Test program (the "Beta Program") to, among other things, allow a limited number of people to test the features, capabilities and performance of one or more prerelease version(s) of the Game (the "Beta Software") and provide feedback and comments to SOE.  By clicking the "I ACCEPT" button below:
+2. To play the Game, you must (a) purchase or receive through an SOE-
+authorized promotional offer (such as an authentic disk bundled with a game 
+magazine) the PlanetSide CD-ROM for the PC (the "CD-ROM"), or applicable 
+files which we may make available for direct download, which includes software 
+required for the Game (the "Software"), (b) have a fully paid Account, and (c) 
+have an Internet connection (which we do not provide) to access your Account. 
+In addition to any fees described herein, you are responsible for paying all 
+applicable taxes (including those we are not required to collect) and for all 
+hardware, software, service and other costs you incur to access your Account.  
+Neither this Agreement nor your Account entitles you to any subsequent releases 
+of the Software, nor to any expansion packs or similar ancillary products, without 
+paying applicable charges. You understand that we may update or otherwise 
+enhance the Software at any time and in doing so incur no obligation to furnish 
+such updates to you pursuant to this Agreement.
 
-(1)	You promise that you are eighteen (18) years of age or older, and are not a principal,  employee, agent, independent contractor, officer or director of a developer or publisher of video or computer games (other than SOE), and are entering into this agreement on a completely voluntary basis with no expectation of consideration, remuneration or any form of compensation whatsoever other than what is expressly provided for in this agreement (IF YOU ARE UNDER 18 YEARS OF AGE, YOU MAY NOT PARTICIPATE IN THE BETA PROGRAM);
+3. We may amend this Agreement at any time in our sole discretion. 
+Amendments shall be communicated to you at the time you log into your 
+Account. Such amendments shall be effective whenever we make the notification 
+available for your review.
 
-(2)	You acknowledge that SOE may, in its discretion and at any time before or during the Beta Program, accept or reject your application for the Beta Program (or terminate your participation therein), and if you are accepted, the Agreement below is a binding contract between you and SOE;
+4. Upon registration, you must select a password. You may not disclose your 
+password to any third party. We never ask you for your password by telephone or 
+email, and you should not disclose it this way if someone asks you to do so.  
+Although we may offer a feature that allows you to "save" or "remember" your 
+password on your hard drive, please note that by using this feature third parties 
+may be able to access your computer and thus your Account.
 
-(3)	You acknowledge that SOE may, in its discretion, charge a fee for the Beta Software and/or participation in the Beta Program, and your participation in the Beta Program is contingent on your payment of such fee(s); 
+5. We describe our fees and billing procedures at a hotlink located at 
+www.planetside.com, which are incorporated by reference. All fees are stated in 
+U.S. Dollars unless otherwise specified. All fees are prepaid and non-refundable. 
+Upon your acceptance of these terms, we have the right to automatically charge 
+your credit card the Account fee plus any applicable taxes we are required to 
+collect, and you authorize us to do so. Thereafter, each time your Account comes 
+up for renewal, we have the right to charge your credit card the then-current 
+renewal rate plus any applicable taxes we are required to collect, and you 
+authorize us to do so. If we are unable to process your credit card at a renewal 
+period, your Account may be immediately terminated. If we make a Game Card 
+available and you use a Game Card to pay for your Account, the Game Card 
+shall activate your Account for the period stated on the Game Card and, 
+thereafter, you will either need to provide a valid credit card (in which case your 
+credit card will subsequently be charged as referenced above) or purchase 
+another Game Card for subsequent subscription periods, or your Account will be 
+closed.  You may terminate your Account at any time through the Account 
+registration process.  If you terminate your Account during your initial free period, 
+if any, your account will be closed at the end of the free period and you will not 
+be billed.  If you terminate your Account during any subscription cycle, your 
+Account will be closed at the end of the then-current cycle and you will not be 
+billed again unless you affirmatively reopen the Account.  We do not give full or 
+partial refunds for subscription periods that you have purchased.
 
-(4)	SOE may, in its sole discretion, reschedule the start date or end date of the Beta Program at any time; and
+6. We may terminate this Agreement (including your Software license and your 
+Account) and/or suspend your Account immediately and without notice if you 
+breach this Agreement or repeatedly infringe any third party intellectual property 
+rights, or if we are unable to verify or authenticate any information you provide to 
+us, or upon gameplay, chat or any player activity whatsoever which we, in our 
+sole discretion, determine is inappropriate and/or in violation of the spirit of the 
+Game as set forth in the Game player rules of conduct, which are posted at a 
+hotlink located at www.planetside.com. If we terminate this Agreement or 
+suspend your Account under these circumstances, you will lose access to your 
+Account for the duration of the suspension and/or the balance of any prepaid 
+period without any refund.  We may also terminate this Agreement if we decide, 
+in our sole discretion, to discontinue offering the Game, in which case we may 
+provide you with a prorated refund of any prepaid amounts.
 
-(5)	You agree to all of the terms of the Agreement set forth below.
+7. Subject to the terms of this Agreement, we hereby grant to you a non-
+exclusive, non-transferable, revocable license to use the Software solely in 
+connection with playing the Game via an authorized and fully-paid Account.  You 
+may not copy (except to make one necessary back-up copy), distribute, sell, 
+auction, rent, lease, loan, modify or create derivative works, adapt, translate, 
+perform, display, sublicense or transfer all or any portion of the Software. You 
+may not copy any of the written materials accompanying the Software.  You may 
+not reverse engineer, disassemble or decompile the Software except to the 
+extent that this restriction is expressly prohibited by applicable law. The Software 
+may contain license management software that restricts your use of the 
+Software.
 
+8. We and our suppliers shall retain all rights, title and interest, including, without 
+limitation, ownership of all intellectual property rights relating to or residing in the 
+CD-ROM, the Software and the Game, all copies thereof, and all game character 
+data in connection therewith. You acknowledge and agree that you have not and 
+will not acquire or obtain any intellectual property or other rights, including any 
+right of exploitation, of any kind in or to the CD-ROM, the Software or the Game, 
+including, without limitation, in any character(s), item(s), coin(s) or other material 
+or property, and that all such property, material and items are exclusively owned 
+by us.
 
-AGREEMENT
+9. You may not use any third party software to modify the Software to change 
+Game play. You may not create, facilitate, host, link to or provide any other 
+means through which the Game may be played by others, such as through 
+server emulators. You may not take any action which imposes an unreasonable 
+or disproportionately large load on our infrastructure. You may not buy, sell or 
+auction (or host or facilitate the ability to allow others to buy, sell or auction) any 
+Game characters, items, monetary units (such as coin, if any), or copyrighted 
+material.
 
-1.	License Terms.
+10. To obtain an Account, you will be required to choose both a login name and a 
+player name. While you are encouraged to use a pseudonym, especially if you 
+are a minor, you may not pick a name that violates anyone's trademarks, 
+publicity rights or other proprietary rights.
 
-	1.1	License Grant.   SOE grants you (the "Recipient") the revocable, limited right to install the Beta Software onto a single computer for Recipient's personal use.  Recipient may not use, copy, modify, sell, auction, lease, rent, distribute, transfer or disclose any part of the Beta Software except as provided in this Agreement.  Recipient may only use the Beta Software for testing and evaluation purposes as set forth in Section 1.4 below.  All other rights are reserved to SOE.
+11. As part of your Account, you can upload content to our servers in various 
+forms, such as in the selections you make for the Game and in chat rooms and 
+similar user-to-user areas (collectively, your "Content"). Your Content shall not: 
+(a) infringe any third party intellectual property, other proprietary or 
+publicity/privacy rights; (b) violate any law or regulation; (c) be defamatory, 
+obscene, child pornographic or harmful to minors; or (d) contain any viruses, 
+trojan horses, worms, time bombs, cancelbots or other computer programming 
+routines that are intended to damage, detrimentally interfere with, surreptitiously 
+intercept or expropriate any system, data or personal information. We may take 
+any action with respect to your Content if we believe it may create liability for us 
+or may cause us to lose (in whole or in part) the services of our ISPs or other 
+suppliers. You hereby grant to us a worldwide, perpetual, irrevocable, royalty-
+free, sublicenseable (through multiple tiers) right to exercise all intellectual 
+property rights, in any media now known or not currently known, associated with 
+your Content.  Additionally, the Game may include certain optional voice 
+communication features that you may choose to use.  If you use these voice 
+communication features, if any, to send or receive voice messages through the 
+Game, you agree that (a) you will not receive or send any Content in violation of 
+this Agreement, (b) we are not responsible for any Content transmitted by you, 
+other users, or any other third parties, and (c) we are not responsible for any use 
+of such features by any other users or third parties, including without limitation, 
+uses that may result in unauthorized access or damage to your computer and/or 
+the information stored there.   
 
-	1.2	License Restrictions.  Recipient shall not:
+12. We cannot ensure that your private communications and other personally 
+identifiable information will not be disclosed to third parties. For example, we may 
+be forced to disclose information to the government or third parties under certain 
+circumstances, or third parties may unlawfully intercept or access transmissions 
+or private communications.  Additionally, we can (and you authorize us to) 
+disclose any information about you to private entities, law enforcement or other 
+government officials as we, in our sole discretion, believe necessary or 
+appropriate to investigate or resolve possible problems or inquiries. Furthermore, 
+if you request any technical support, you consent to our remote accessing and 
+review of the computer you load the Software onto for purposes of support and 
+debugging. You agree that we may communicate with you via email and any 
+similar technology for any purpose relating to the Game, the Software and any 
+services or software which may in the future be provided by us or on our behalf. 
+You may choose to visit www.planetside.com or www.station.sony.com, the web 
+site of Sony Online Entertainment Inc. ("The Station") if such web sites offer 
+services such as a PlanetSide game themed chat room or other services of 
+interest to you.  You are subject to the terms and conditions, rules of play and 
+privacy policies of Sony Online Entertainment Inc. while on such web sites and/or 
+in connection with use of your Account and the Game, which terms and 
+conditions, rules of play and policy are incorporated herein by this reference.  
+Since we do not control other web sites and/or privacy policies of third parties, 
+different rules may apply to their use or disclosure of the personal information 
+you disclose to others. Solely for the purpose of patching and updating the 
+Game, you hereby grant us permission to (i) upload Game file information from 
+the Game directory and (ii) download Game files to you. You acknowledge that 
+any and all character data is stored and is resident on our servers, and any and 
+all communications that you make within the Game (including, but not limited to, 
+messages solely directed at another player or group of players) traverse through 
+our servers, may or may not be monitored by our personnel, you have no 
+expectation of privacy in any such communications and you expressly 
+consent to monitoring of communications that you send and receive.  You 
+acknowledge and agree that we may transfer such information (including, 
+without limitation your personally identifiable information or personal data) 
+to the United States or other countries or may share such information with 
+our licensees and agents in connection with the Game.
 
-		(a)	Sublicense to, transfer, distribute or permit use of the Beta Software by, any third party;
+13.  WE PROVIDE THE CD-ROM, THE SOFTWARE, THE ACCOUNT, THE 
+GAME AND ALL OTHER SERVICES "AS IS."  WE AND OUR SUPPLIERS 
+EXPRESSLY DISCLAIM ALL WARRANTIES OR CONDITIONS OF ANY KIND, 
+EXPRESS, IMPLIED OR STATUTORY, INCLUDING WITHOUT LIMITATION 
+THE IMPLIED WARRANTIES OF TITLE, NONINFRINGEMENT, 
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Without 
+limiting the foregoing, we do not ensure continuous, error-free, secure or virus-
+free operation of the CD-ROM, the Software, the Game, your Account or 
+continued operation or availability of any given server. Some states do not allow 
+limitations as to how long an implied warranty lasts and/or exclusions or 
+limitations of consequential damages, so the above limitations and/or exclusions 
+of liability may not apply to you.  This warranty gives you specific legal rights and 
+you may also have other legal rights which vary from state to state.
 
-		(b)	Reverse engineer, decompile, or disassemble the Beta Software;
+We are not liable for any delay or failure to perform resulting from any causes 
+beyond our reasonable control. Further, we cannot and do not promise or ensure 
+that you will be able to access your Account whenever you want, and there may 
+be extended periods of time when you cannot access your Account.
 
-		(c)	Make copies of the Beta Software other than one (1) copy for back-up purposes to be used solely as a replacement for the original copy, provided that Recipient includes on the back-up copy all copyright and other notices that are included on the Beta Software; and
+14. IN NO EVENT SHALL WE, OUR PARENT, OUR AFFILIATES OR OUR 
+SUPPLIERS BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR ANY LOST 
+PROFITS OR SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL 
+DAMAGES (HOWEVER ARISING, INCLUDING NEGLIGENCE) ARISING OUT 
+OF OR IN CONNECTION WITH THE POSSESSION, USE, OR MALFUNCTION 
+OF THE SOFTWARE, YOUR ACCOUNT, THE GAME, OR THIS AGREEMENT. 
+OUR LIABILITY TO YOU OR ANY THIRD PARTIES IS LIMITED TO $100. Some 
+states do not allow the foregoing limitations of liability, so they may not apply to 
+you.
 
-		(d)	Export the Beta Software in violation of the export control laws of the United States of America and other countries.
+15. You shall comply with all applicable laws regarding your use of the the 
+Software, your access to your Account and your playing of the Game. Without 
+limiting the foregoing, you may not download, use or otherwise export or re-
+export the Software except in full compliance with all applicable laws and 
+regulations, including, without limitation, the laws of the United States.
 
-	1.3	Indemnification.  Recipient (a) agrees to indemnify, defend and hold harmless, and (b) hereby releases, SOE and its direct and indirect parent, subsidiary and sister corporations, and their respective officers, directors, employees, and agents, from and against any losses, liabilities, claims, obligations, costs and/or expenses (including reasonable legal fees) which result from, arise out of or in connection with the use of the Beta Software and all other services or activities related thereto.
+16. This Agreement is governed in all respects by the laws of the State of 
+California as such laws are applied to agreements entered into and to be 
+performed entirely within California between California residents. The UN 
+Convention on Contracts for the International Sale of Goods is expressly 
+disclaimed. Both parties submit to personal jurisdiction in California and further 
+agree that any cause of action relating to this Agreement shall be brought in the 
+County of San Diego, State of California (if under State law) or the Southern 
+District of California (if under federal law). If any provision of this Agreement is 
+held to be invalid or unenforceable, such provision shall be struck and the 
+remaining provisions shall be enforced. Our failure to act with respect to a breach 
+by you or others does not waive our right to act with respect to subsequent or 
+similar breaches. You may not assign or transfer this Agreement or your rights 
+hereunder, and any attempt to the contrary is void. This Agreement sets forth the 
+entire understanding and agreement between us and you with respect to the 
+subject matter hereof. Except as provided herein, this Agreement may not be 
+amended except in a writing signed by both parties.
 
-	1.4	Testing and Evaluation Obligations.  Recipient hereby agrees to perform all of the following obligations: (a) to test, evaluate and analyze the Beta Software and its operation, features, capabilities and performance; (b) to comply with the reasonable requests of SOE from time to time regarding testing; and (c) to provide feedback and comments to SOE (including, but not limited to, bug reports and test results).  All of Recipient’s feedback and comments shall be the sole and exclusive property of SOE and/or its licensors or licensees, and SOE and/or its licensors or licensees shall have the perpetual right to use all or part of the Recipient's feedback or comments in any manner or media now known or hereafter devised.
+17. All services hereunder are offered by Sony Online Entertainment Inc., located 
+at 8928 Terman Court, San Diego, California 92121.  Our phone number is (858) 
+537-0898. Current rates for using the Game may be obtained from a hotlink 
+located at www.planetside.com, and such rates are subject to change at any 
+time. If you are a California resident, you may have this same information 
+emailed to you by sending a letter to the foregoing address with your email 
+address and a request for this information.
 
-	1.5	Personally Identifiable Information; Monitoring; Privacy Issues.  Recipient shall be required to provide to SOE, as a condition to participation in the Beta Program, certain personally identifiable information, including, but not limited to, certain specifications of Recipient’s hardware and software ("Personal Information").  SOE’s retention and use of all Personal Information shall be subject to SOE’s posted privacy policy, as that policy may be modified by SOE in its discretion from time to time.  Recipient acknowledges that any and all Beta Software character data is stored and is resident on SOE’s servers, and any and all communications that he or she makes within the Beta Software (including, but not limited to, messages solely directed at another player or group of players) traverse through SOE’s servers, may or may not be monitored by SOE personnel and, accordingly, Recipient has no expectation of privacy in any such communication or in any communications referenced in Section 5.3 herein.	
+The Complaint Assistance Unit of the Division of Consumer Services of the 
+Department of Consumer Affairs may be contacted in writing at 400 R Street, 
+Sacramento, CA  95814, or by telephone at (800) 952-5210.
 
-	1.6 	Term of the Agreement.  Recipient’s participation in the Beta Program, and the grant of license herein, may be terminated by SOE at any time, for any reason or for no reason, in SOE’s sole and absolute discretion, by providing written or emailed notice to Recipient.  Recipient may, at any time and for any reason or for no reason, terminate his or her participation in the Beta Program by providing written or emailed notice to SOE.  The Beta Program will be terminated upon the earlier of (a) SOE’s written or emailed notice to Recipient or (b) the commercial release of the Game.  The termination of Recipient’s participation in the Beta Program and/or the termination of the Beta Program, however, shall not modify or supersede the survival provision in Section 6.1 below.      
+Parental control protections (such as computer hardware, software, or filtering 
+services) are commercially available that may assist you in limiting access to 
+material that is harmful to minors. If you are interested in learning about these 
+protections, information is available at 
+http://www.worldvillage.com/wv/school/html/control.htm or other similar sites 
+providing information on such protections.
 
-
-2.	Reserved [Intentionally Left Blank].
-
-
-3.	Ownership.  Except for the revocable, limited license expressly granted hereunder, SOE retains all rights, title and interests in and to the Beta Software and all copies thereof, and all game character data in connection therewith.  The Beta Software is copyrighted and is protected by United States copyright laws and international treaty provisions.  Recipient acknowledges that the Beta Software contains valuable trade secrets and/or other intellectual property of SOE, and that SOE and/or its licensors own all intellectual property rights in and to the Beta Software, including, without limitation, all patent rights, copyrights, inventions, trade secret rights, trade dress rights, trademark rights and intellectual property rights therein and thereto.  Recipient may not remove the copyright and other proprietary rights notices from the Beta Software.  Recipient agrees that this Agreement shall be retained with all printed and electronic copies of the Beta Software and documentation constituting the Beta Software.  Recipient agrees to prevent any unauthorized copying of the Beta Software.  Except for the revocable, limited license as expressly provided herein, SOE does not grant Recipient any express or implied right in any patents, copyrights, trademarks, or trade secret information of SOE, and/or its licensors. In accordance with Section 1.4, Recipient agrees that SOE and/or its licensors or licensees own all rights, title, and interests in any and all of Recipient’s feedback and comments, without any remuneration, compensation or credit to Recipient.  To the extent that any of the rights assigned herein cannot presently be assigned under applicable law, Recipient agrees to assign such rights at such time as the rights are capable of being assigned.  Recipient agrees at SOE's request to execute such further documents and to do such further acts as may be necessary or desirable to document, perfect, register or enforce SOE’s and/or its licensor’s ownership of any of the rights, title and/or interests hereunder, in whole or in part including, without limitation, execution of a copyright assignment in a form provided by SOE in its sole discretion.  If Recipient fails or refuses to execute any such documents, Recipient hereby appoints SOE as Recipient’s attorney in fact, which appointment is coupled with an interest and is irrevocable, to act on Recipient’s behalf and to execute, deliver, record and file such documents. The rights granted, assigned and/or to be assigned by Recipient hereunder are granted for the entire universe and shall inure in perpetuity, and, as set forth above, no further consideration shall be payable to Recipient at anytime in connection therewith.  Recipient will acquire no right to use, and will not use without SOE's prior written consent, the names, characters, artwork, designs, tradenames, copyrighted materials, trademarks or service marks of SOE or its parent, related or subsidiary companies, employees, directors, officers, shareholders, assigns, successors, licensors or licensees: (a) in any advertising, publicity, marketing, promotion or on any website; or (b) in any manner other than in accordance with this Agreement.
-
-
-4.	Injunctive Relief.  Recipient acknowledges and agrees that a breach or threatened breach of any covenant contained in this Agreement would cause irreparable injury, that money damages would be an inadequate remedy and that SOE shall be entitled to temporary and permanent injunctive relief, without the posting of any bond or other security, to restrain Recipient, from such breach or threatened breach.  Nothing in this Section 4 shall be construed as preventing SOE from pursuing any and all remedies available to it, including the recovery of money damages from Recipient.  
-
-
-5.	No Warranty; No Liability For Damages; No Support; Character Data.
-
-	5.1	No Warranty.  Recipient acknowledges that the Beta Software is a pre-release version and is not a final Game.  RECIPIENT ACKNOWLEDGES THAT THE BETA SOFTWARE MAY WELL CONTAIN ERRORS AND DEFECTS.  THE BETA SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND INCLUDING WARRANTIES OF SATISFACTORY QUALITY, MERCHANTABILITY, NONINFRINGEMENT OF THIRD-PARTY INTELLECTUAL PROPERTY, OR FITNESS FOR ANY PARTICULAR PURPOSE.
-
-	5.2  	No Liability For Damages.  IN NO EVENT SHALL SOE, ITS DIRECT AND INDIRECT PARENT, SISTER AND SUBSIDIARY CORPORATIONS, OR EMPLOYEES, AGENTS, OFFICERS AND/OR DIRECTORS OF ANY OF THE ABOVE, BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE OR OTHER DAMAGES) ARISING OUT OF THIS AGREEMENT OR THE USE OF OR INABILITY TO USE THE GAME, EVEN IF ANY OF THE ABOVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  Without limiting the generality of the foregoing, no warranty is made that the Beta Software will generate programs with the characteristics or specifications desired by Recipient or that the Beta Software will be uninterrupted or error-free.  THESE DISCLAIMERS OF WARRANTY CONSTITUTE AN ESSENTIAL PART OF THIS AGREEMENT.	
-
-	5.3	No Support.  SOE does not provide any support for the Beta Software.  However, SOE may provide an e-mail address and/or a passworded board for Recipient to send any questions and/or comments regarding the Beta Software.  SOE does not, however, make any representations or warranties as to the accuracy of any statements or advice provided in response to Recipient’s e-mail(s) and/or board postings.
-
-	5.4	Test Environment.  Recipient acknowledges that the Beta Program is a test environment, that Game characters and/or character data will be frequently wiped or modified at SOE’s sole discretion, and that – notwithstanding any fee that Recipient may be charged for participation in the Beta Program – Beta Program Game characters and/or character data shall likely not be exported into the Game once the Game is commercially released. 
-
-
-6.	Miscellaneous.
-
-	6.1	Survival. The provisions of this Agreement, other than Sections 1.1, 1.3, 1.4, 3, 6.1 and 6.2  shall continue in full force and effect even after (i) the Beta Program has been terminated or completed and/or (ii) Recipient’s participation in the Beta Program has been terminated.
-
-	6.2	Governing Law; Jurisdiction.  This Agreement shall be governed by and construed and enforced in accordance with the laws of the State of California excluding conflict of law rules and principles.  The state courts located in San Diego County and the U.S. District Court of the Southern District of California shall have exclusive jurisdiction to determine the validity, construction and performance of this Agreement and the legal relations between the parties hereto.  Recipient hereby waives any claim that such venue is improper or inconvenient.
-
-	6.3	Severability.  If any provision of this Agreement shall be held invalid or unenforceable, in whole or in part, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, and the validity and enforceability of all other provisions of this Agreement shall not be affected thereby.
-
-	6.4	Entire Agreement/Changes in Terms.  This Agreement constitutes the entire agreement between the parties hereto relating to the subject matter hereof and supersedes all prior oral and written and all contemporaneous oral negotiations, commitments and understandings of the parties.  Changes made by Recipient to this Agreement will not be effective unless set forth in a writing describing the change and agreed to and signed by both SOE and Recipient.  SOE reserves the right to change the terms of this Agreement at any time upon notice to Recipient by e-mail.  Such changes by SOE shall be effective upon notice to Recipient and Recipient’s continued participation in the Beta Program after notice of a change in terms by SOE shall constitute Recipient’s acknowledgement of, and agreement to, be bound by such changes.   
-
-
-PlanetSide, Auraxis, and Station.com are trademarks of, and SOE and the SOE logo are registered trademarks of, Sony Online Entertainment Inc. © 2003 Sony Online Entertainment Inc. All Rights Reserved.
+The Software is a "commercial item" if acquired under agreement with the U.S. 
+Government or any contractor therewith in accordance with 48 CFR 12.212 of 
+the FAR and, if acquired for Department of Defense (DoD) units, 48 CFR 227-
+7202 of the DoD FAR Supplement, or any succeeding similar regulations.

@@ -15,8 +15,8 @@ pse_link S_Forseral_Warpgate_Tower tower_a_1
 pse_link W_Hvar_Tower tower_b_1
 pse_link N_Jamshid_Tower tower_a_1
 pse_link S_Rashnu_Tower tower_c_1
-pse_link NE_Amerish_Warpgate_Tower tower_c_1
-pse_link E_Forseral_Warpgate_Tower tower_a_1
+pse_link NE_Amerish_Warpgate_Tower tower_b_1
+pse_link NE_Dahaka_Tower tower_c_1
 pse_link S_Dahaka_Tower tower_b_1
 pse_link W_Yazata_Tower tower_a_1
 pse_link S_Hossin_Warpgate_Tower tower_a_1
@@ -36,4 +36,11 @@ pse_link bunker_gauntlet_35 bunker_gauntlet_1
 pse_link bunker_gauntlet_36 bunker_gauntlet_1
 pse_link bunker_gauntlet_37 bunker_gauntlet_1
 pse_link bunker_gauntlet_38 bunker_gauntlet_1
-
+pse_link Mithra_Tower tower_c_1
+pse_link Rashnu_Tower tower_a_1
+pse_link Atar_Tower tower_c_1
+pse_link Zal_Tower tower_a_1
+pse_link Yazata_Tower tower_c_1
+pse_link Izha_Tower tower_a_1
+pse_link Hossin_Warpgate_Tower tower_b_1
+pse_link Hvar_Tower bunker_sm_1

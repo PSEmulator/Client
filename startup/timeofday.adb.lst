@@ -1,11 +1,17 @@
 #tod_begin
 
-##op_cycle
+##artic_cycle
 
-tod_time op_atmosphere 5am 0.0
-tod_time op_atmosphere 11am 0.0
-tod_time op_atmosphere 3pm 0.0
-tod_time op_atmosphere 11pm 0.0
+tod_time artic_morn 5am 0.000000
+tod_time artic_day 11am 0.000000
+tod_time artic_night 6pm 0.000000
+tod_end
+
+##map07cycle
+
+tod_time map07day 6am 0.000000
+tod_time map07night 8pm 0.000000
+tod_time map07night 2am 0.000000
 tod_end
 
 ##desert_cycle
@@ -16,18 +22,12 @@ tod_time desert_even 6pm 0.0
 tod_time desert_night 9pm 0.0
 tod_end
 
-##artic_cycle
+##op_cycle
 
-tod_time artic_morn 5am 0.000000
-tod_time artic_day 11am 0.000000
-tod_time artic_night 6pm 0.000000
-tod_end
-
-##map07cycle
-
-tod_time map07day 6am 0.0
-tod_time map07night 8pm 0.0
-tod_time map07night 2am 0.0
+tod_time op_atmosphere 5am 0.0
+tod_time op_atmosphere 11am 0.0
+tod_time op_atmosphere 3pm 0.0
+tod_time op_atmosphere 11pm 0.0
 tod_end
 
 ##VRshoot_cycle

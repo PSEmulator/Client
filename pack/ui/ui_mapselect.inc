@@ -1,9 +1,9 @@
 <Page Location='1,0' Name='MapSelect' PackLocation='0.5, 0.5' PackLocationProp='0001/0001,xxxx/xxxx' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
 <Text Color='#FFFF00' Font='/Fonts.DefaultFont' LocalText='Map:' Location='270,260' ScrollExtent='160,20' Size='160,20'>Map:</Text>
 <Button LocalText='[@Launch]' Location='300,330' Name='Launch' OnPress='aplay stereoar.wav' ScrollExtent='200,32' Size='200,32' Style='/Buttons.Default.style'>@Launch</Button>
-<Checkbox BackgroundOpacity='1.000' Location='270,210' Name='Fullscreen' ScrollExtent='120,20' Size='120,20' Style='/Buttons.DefaultCheckbox.style'>Full Screen</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='270,210' Name='Fullscreen' ScrollExtent='120,20' Size='120,20' Style='/Buttons.DefaultCheckbox.style' Visible='false'>Full Screen</Checkbox>
 <Checkbox BackgroundOpacity='1.000' Location='270,235' Name='Preview' ScrollExtent='130,20' Size='130,20' Style='/Buttons.DefaultCheckbox.style'>Preview Mode</Checkbox>
-<Dropdownbox DataSource='/DataSources.ScreenResolutions' Location='390,210' Name='Screen Resolution' RowTemplate='Screen Resolution Row Template' ScrollExtent='140,31' Size='140,31' Style='/dropdown20.style'/>
+<Dropdownbox DataSource='/DataSources.ScreenResolutions' Location='390,210' Name='Screen Resolution' RowTemplate='Screen Resolution Row Template' ScrollExtent='140,31' Size='140,31' Style='/dropdown20.style' Visible='false'/>
 <Dropdownbox DataSource='/DataSources.Maps' Location='270,280' Name='Map Selection' RowTemplate='Map Selection Row Template' ScrollExtent='260,31' Size='260,31' Style='/dropdown20.style'/>
 <Template Name='Screen Resolution Row Template' Size='200,16'>\<text font = \'/Fonts.DefaultFont\' location = \'5,-1\' size = \'105,16\'\>
 $Name$

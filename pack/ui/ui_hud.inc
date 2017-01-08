@@ -1,4 +1,31 @@
 <Page BackgroundColor='#00FFFF' DragAccepts='Item,Shortcut' Name='HUD' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='true' ScrollExtent='1024,768' showcursor='false' Size='1024,768' Visible='false' wantsinput='shared'>
+<Page Location='298,160' movable='true' Name='Alarm' PackLocation='Center,Center' PackLocationProp='-214/0001,-224/0001' popup='True' ScrollExtent='466,406' Size='466,406' Visible='false'>
+<Text Font='/Fonts.HudFont3' LocalText='22:22' Location='331,236' Name='CurrentTime' ScrollExtent='79,25' Size='79,25' TextAlignment='Center' TextAlignmentVertical='Center'>22:22</Text>
+<Text Font='/Fonts.HudFont1' LocalText='[@AlarmCurrentTime]' Location='207,236' Name='CurrentTimeText' ScrollExtent='121,25' Size='121,25' TextAlignment='Right' TextAlignmentVertical='Center'>@AlarmCurrentTime</Text>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@AlarmWarningTooltip]' Location='253,312' Name='WarningCheck' ScrollExtent='184,25' Size='184,25' Style='/Buttons.OptionsCheckbox.style' Tooltip='@AlarmWarningTooltip'>@AlarmWarning</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@AlarmOnStartupTooltip]' Location='51,312' Name='StartupCheck' ScrollExtent='184,25' Size='184,25' Style='/Buttons.OptionsCheckbox.style' Tooltip='@AlarmOnStartupTooltip'>@AlarmOnStartup</Checkbox>
+<Text duplicate='true' Font='/Fonts.HudFont3' LocalText='[@AlarmText]' Location='24,35' Name='Text' PackLocation='left,top' PackLocationProp='0024/0001,0035/0001' PackSize='absolute,absolute' PackSizeProp='0055/0001,0342/0001' ScrollExtent='411,64' Size='411,64' TextAlignment='Center' TextAlignmentVertical='Center'>@AlarmText</Text>
+<Text Font='/Fonts.HudFont1' LocalText='[@AlarmMinutes]' LocalTooltip='[@AlarmMinutesTooltip]' Location='57,121' Name='MinText' ScrollExtent='108,25' Size='108,25' TextAlignment='Right' TextAlignmentVertical='Center' Tooltip='@AlarmMinutesTooltip'>@AlarmMinutes</Text>
+<Sliderbar LocalTooltip='[@AlarmMinutesTooltip]' Location='173,118' Name='MinSlider' ScrollExtent='173,25' Size='173,25' Style='/Sliderbars.Options.Style' Tooltip='@AlarmMinutesTooltip' UpperLimit='60'/>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,118' MaxLength='2' Name='MinuteInput' PackLocation='left,bottom' PackLocationProp='0378/0001,-288/0001' PackSize='absolute,fixed' PackSizeProp='0436/0001,0002/0003' ScrollExtent='30,28' Size='30,28' Style='/ConsoleTextbox.Style'>0</Textbox>
+<Text Font='/Fonts.HudFont1' LocalText='[@AlarmHours]' LocalTooltip='[@AlarmHoursTooltip]' Location='66,167' Name='HourText' ScrollExtent='99,25' Size='99,25' TextAlignment='Right' TextAlignmentVertical='Center' Tooltip='@AlarmHoursTooltip'>@AlarmHours</Text>
+<Sliderbar LocalTooltip='[@AlarmHoursTooltip]' Location='173,164' Name='HourSlider' ScrollExtent='173,25' Size='173,25' Style='/Sliderbars.Options.Style' Tooltip='@AlarmHoursTooltip' UpperLimit='24' Value='2'/>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='378,163' MaxLength='2' Name='HourInput' PackLocation='left,bottom' PackLocationProp='0378/0001,-243/0001' PackSize='absolute,fixed' PackSizeProp='0434/0001,0002/0003' ScrollExtent='32,28' Size='32,28' Style='/ConsoleTextbox.Style'>2</Textbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@AlarmUseTimeTooltip]' Location='51,208' Name='TimeCheck' ScrollExtent='198,25' Size='198,25' Style='/Buttons.OptionsCheckbox.style' Tooltip='@AlarmUseTimeTooltip'>@AlarmUseTime</Checkbox>
+<Text Font='/Fonts.HudFont1' LocalText='[@AlarmTime]' Location='216,207' Name='TimeText' ScrollExtent='108,25' Size='108,25' TextAlignment='Right' TextAlignmentVertical='Center'>@AlarmTime</Text>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='332,205' MaxLength='36' Name='TimeInput' PackLocation='left,bottom' PackLocationProp='0332/0001,-201/0001' PackSize='absolute,fixed' PackSizeProp='0386/0001,0002/0003' ScrollExtent='80,28' Size='80,28' Style='/ConsoleTextbox.Style'></Textbox>
+<Text Font='/Fonts.HudFont1' LocalText='[@AlarmMessage]' Location='54,238' Name='MessageText' ScrollExtent='255,25' Size='255,25' TextAlignmentVertical='Center'>@AlarmMessage</Text>
+<Textbox BackgroundColor='#DDDDDD' BackgroundOpacity='0.475' Location='52,265' MaxLength='255' Name='TextInput' PackLocation='left,bottom' PackLocationProp='0052/0001,-141/0001' PackSize='absolute,fixed' PackSizeProp='0105/0001,0002/0003' ScrollExtent='361,28' Size='361,28' Style='/ConsoleTextbox.Style'></Textbox>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='368,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-098/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='82,8' Name='HelpButton' PackLocation='right,top' PackLocationProp='-384/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
+<Button LocalText='[@AlarmClear]' LocalTooltip='[@AlarmClearTooltip]' Location='353,347' Name='Clear' PackLocation='center, bottom' PackLocationProp='0120/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@AlarmClearTooltip'>@AlarmClear</Button>
+<Button LocalText='[@AlarmSet]' LocalTooltip='[@AlarmSetTooltip]' Location='32,347' Name='Set' PackLocation='center, bottom' PackLocationProp='-201/0001,xxxx/xxxx' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@AlarmSetTooltip'>@AlarmSet</Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@AlarmTitle]' Location='101,5' Name='TitleText' ScrollExtent='265,20' Size='265,20' TextAlignment='Center' TextAlignmentVertical='Center'>@AlarmTitle</Text>
+<Rectangle Color='#385E61' GetsInput='false' Location='24,34' PackSize='absolute,absolute' PackSizeProp='0052/0001,0135/0001' ScrollExtent='414,271' Size='414,271'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='53,-1' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='362,32' Size='362,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='20,342' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='420,31' Size='420,31'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-1,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='466,389' Size='466,389' Stretch='false'/>
+</Page>
 <Page Location='426,290' MinimumSize='145,58' movable='false' Name='EscapeMenu' PackLocation='center,center' PackLocationProp='-086/0001,-094/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,216' Size='213,216' Visible='false'>
 <Page Name='MenuPage' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='213,216' Size='213,216'>
 <Text AbsorbsInput='false' BackgroundColor='#00F2C9' BackgroundOpacity='0.224' Enabled='false' Font='/Fonts.DefaultFont' LocalText='[@OptionMenu]' Location='12,18' Name='MenuTitle' PackLocation='left,top' PackLocationProp='0012/0001,0018/0001' PackSize='absolute,fixed' PackSizeProp='0024/0001,0002/0003' ScrollExtent='189,21' Size='189,21' SizeIncrement='0,0' TextAlignment='Center'>@OptionMenu</Text>
@@ -22,9 +49,9 @@
 <Page BackgroundColor='#FFFFFF' Location='228,204' MinimumSize='400,240' minsize='400,240' movable='true' Name='CSManagement' PackLocation='center,center' PackLocationProp='-284/0001,-180/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='false' ScrollExtent='483,386' Size='483,386' Visible='false'>
 <Button Location='413,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'></Button>
 <Button Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'></Button>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='[@cs_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='275,20' Size='275,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_title</Text>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='275,20' Size='275,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_title</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='434,32' Size='434,32'/>
-<Text Font='/Fonts.HudFont2' LocalText='[@cs_help]' Location='32,46' PackLocation='left,bottom' PackLocationProp='0032/0001,-340/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' ScrollExtent='420,50' Size='420,50' TextAlignment='Center'>@cs_help</Text>
+<Text Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@cs_help]' Location='32,46' PackLocation='left,bottom' PackLocationProp='0032/0001,-340/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' ScrollExtent='420,50' Size='420,50' TextAlignment='Center'>@cs_help</Text>
 <Scrollbar Control='ItemInfoText' Location='293,126' Name='ItemInfoScrollbar' PackLocation='right,top' PackLocationProp='-190/0001,0126/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0166/0001' ScrollExtent='10,220' Size='10,220' Style='/ScrollBars.vertical.style'/>
 <Listbox DataSource='AppealsData' Location='33,126' Name='AppealsListbox' PackLocation='left,top' PackLocationProp='0033/0001,0126/0001' PackSize='absolute,absolute' PackSizeProp='0223/0001,0166/0001' RowTemplate='AppealsTemplate' ScrollExtent='2000,220' Size='260,220' Style='/Listboxes.Clear.style'/>
 <Button LocalText='[@cs_new]' Location='324,115' Name='NewAppeal' PackLocation='right,top' PackLocationProp='-159/0001,0115/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@cs_new</Button>
@@ -34,7 +61,7 @@
 <Button IsCancelButton='true' LocalText='[@Cancel]' Location='324,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@Cancel</Button>
 <Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,absolute' PackSizeProp='0043/0001,0316/0001' ScrollExtent='440,70' Size='440,70'/>
 <Rectangle Color='#385E61' GetsInput='false' Location='23,116' PackSize='absolute,absolute' PackSizeProp='0193/0001,0146/0001' ScrollExtent='290,240' Size='290,240'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='483,369' Size='483,369' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='483,369' Size='483,369' Stretch='false'/>
 <Template Name='AppealsTemplate' Size='2000,16'>\<text font = \'/Fonts.HudFont2\' location = \'3,1\' size = \'2000,18\'\>
 $Name$
 \</text\></Template>
@@ -47,7 +74,7 @@ $Name$
 <Dropdownbox BackgroundColor='#FFFFFF' BackgroundOpacity='0.675' BackgroundTint='#000000' DataSource='Category1Data' Location='32,86' Name='Category1' PackLocation='left,top' PackLocationProp='0032/0001,0086/0001' PackSize='absolute,fixed' PackSizeProp='0063/0001,0002/0003' RowTemplate='BugReportTemplate' ScrollExtent='419,32' SelectedItemIndex='5' Size='419,32' Style='/Dropdowns.HudPane.style'/>
 <Button Location='412,8' Name='CloseButton' PackLocation='right,top' PackLocationProp='-070/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'></Button>
 <Button Location='55,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0055/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'></Button>
-<Text AbsorbsInput='false' Font='/Fonts.HudFont3' LocalText='[@cs_new_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='274,20' Size='274,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_new_title</Text>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@cs_new_title]' Location='101,7' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0007/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='274,20' Size='274,20' TextAlignment='Center' TextAlignmentVertical='Center'>@cs_new_title</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='433,32' Size='433,32'/>
 <Textbox Activated='true' BackgroundColor='#385E61' BackgroundOpacity='1.000' Location='33,146' MaxLength='3800' MaxLines='Unlimited' Name='Body' PackLocation='left,top' PackLocationProp='0033/0001,0146/0001' PackSize='absolute,absolute' PackSizeProp='0074/0001,0216/0001' ScrollExtent='408,170' Size='408,170' Style='/Textboxes.Bordered' WrapWidth='404'></Textbox>
 <Scrollbar Control='ItemInfoText' Location='442,146' Name='ItemInfoScrollbar' PackLocation='right,top' PackLocationProp='-040/0001,0146/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0216/0001' ScrollExtent='10,170' Size='10,170' Style='/ScrollBars.vertical.style'/>
@@ -55,7 +82,7 @@ $Name$
 <Button IsCancelButton='true' LocalText='[@Cancel]' Location='323,336' Name='CancelButton' PackLocation='right,bottom' PackLocationProp='-159/0001,-050/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='140,20' Size='140,20' Style='/Buttons.TextButton.style'>@Cancel</Button>
 <Rectangle Color='#385E61' GetsInput='false' Location='22,36' PackSize='absolute,fixed' PackSizeProp='0043/0001,0002/0003' ScrollExtent='439,90' Size='439,90'/>
 <Rectangle Color='#385E61' GetsInput='false' Location='23,136' PackLocation='top,left' PackLocationProp='0023/0001,0136/0001' PackSize='absolute,absolute' PackSizeProp='0044/0001,0196/0001' ScrollExtent='438,190' Size='438,190'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='482,369' Size='482,369' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='482,369' Size='482,369' Stretch='false'/>
 <DataSource Name='Category0Data'/>
 <DataSource Name='Category1Data'/>
 </Page>
@@ -63,6 +90,7 @@ $Name$
 <ImageFrame Source='ui_window_map_tab_border_00' SourceRect='8,0,24,2'/>
 </ImageStyle>
 <Page Name='OverheadMap' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' runengine='false' ScrollExtent='1024,768' Size='1024,768' Visible='false' wantsinput='Shared'>
+<Textbox Location='460,400' MinimumSize='32,16' Name='EditTextbox' ScrollExtent='128,20' Size='128,20' Style='/Textboxes.Clear' TooltipStyle='/Tooltips.Default' Visible='false'>Test Text</Textbox>
 <Page BackgroundOpacity='1.000' Name='Buildings' ScrollExtent='512,512' Size='512,512' Visible='false'>
 <Image Name='amp_station' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.amp_station'/>
 <Image Location='68,0' Name='bunker_lg' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_lg'/>
@@ -85,6 +113,7 @@ $Name$
 <Image Location='160,342' Name='bridge_end' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bridge_end'/>
 <Image Location='235,342' Name='vr_training' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vr_training'/>
 <Image Location='9,411' Name='bunker_gauntlet' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.bunker_gauntlet'/>
+<Image Location='88,411' Name='vt_spawn' ScrollExtent='64,64' Size='64,64' Style='/Icons.Map.Buildings.vt_spawn'/>
 </Page>
 <Page BackgroundOpacity='1.000' maxsize='500,500' minsize='100,100' movable='true' Name='Templates' preserveaspectratio='true' resizable='true' ScrollExtent='377,387' Size='377,387' Visible='false'>
 <Image Location='131,32' Name='SquadBlip0' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_0'/>
@@ -122,9 +151,12 @@ $Name$
 <Image Location='63,197' Name='Generator' ScrollExtent='12,32' Size='12,32' Stretch='false' Style='/Icons.Map.Facility.Generator_icon'/>
 <Image Location='85,197' Name='Boomer' ScrollExtent='30,32' Size='30,32' Stretch='false' Style='/Icons.Map.Equipment.Boomer_icon'/>
 <Image Location='122,197' Name='HEMine' ScrollExtent='34,32' Size='34,32' Stretch='false' Style='/Icons.Map.Equipment.Hemine_icon'/>
-<Image Location='17,235' Name='Spitfire' ScrollExtent='25,32' Size='25,32' Stretch='false' Style='/Icons.Map.Equipment.Spitfire_icon'/>
-<Image Location='58,235' Name='MotionSensor' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Equipment.Motion_sensor_icon'/>
-<Image Location='101,235' Name='SpawnTube' ScrollExtent='11,32' Size='11,32' Stretch='false' Style='/Icons.Map.Facility.SpawnTube_icon'/>
+<Image Location='7,235' Name='Spitfire' ScrollExtent='25,32' Size='25,32' Stretch='false' Style='/Icons.Map.Equipment.Spitfire_icon'/>
+<Image Location='38,235' Name='MotionSensor' ScrollExtent='32,32' Size='32,32' Stretch='false' Style='/Icons.Map.Equipment.Motion_sensor_icon'/>
+<Image Location='80,235' Name='SpawnTube' ScrollExtent='11,32' Size='11,32' Stretch='false' Style='/Icons.Map.Facility.SpawnTube_icon'/>
+<Image Location='99,235' Name='Repair' ScrollExtent='15,21' Size='15,21' Stretch='false' Style='/Icons.Map.Facility.Benefit_Repair_icon'/>
+<Image Location='122,235' Name='ShieldedVehicle' ScrollExtent='37,12' Size='37,12' Stretch='false' Style='/Icons.Map.Facility.Benefit_ShieldedVehicle_icon'/>
+<Image Location='122,252' Name='AssaultVehicle' ScrollExtent='40,16' Size='40,16' Stretch='false' Style='/Icons.Map.Facility.Benefit_AssaultVehicle_icon'/>
 <Image Location='6,277' Name='SquareImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Square_icon'/>
 <Image Location='29,277' Name='TriangleImage' ScrollExtent='19,20' Size='19,20' Style='/Icons.Map.Misc.Triangle_icon'/>
 <Image Location='52,277' Name='CircleImage' ScrollExtent='20,20' Size='20,20' Style='/Icons.Map.Misc.Circle_icon'/>
@@ -158,28 +190,63 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,81' Size='193,81' Stretch='false'/>
 <Image AbsorbsInput='false' BackgroundColor='#FFFFFF' BackgroundOpacity='1.000' Name='Flash' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='193,81' Size='193,81' Stretch='false' Visible='false'/>
 </Page>
-<Page BackgroundColor='#FFFF00' Location='546,616' movable='true' Name='CommanderToolbar' PackLocation='proportional,proportional' PackLocationProp='0634/1024,0688/0768' ScrollExtent='177,145' Size='177,145'>
-<Page Location='0,113' Name='Title' ScrollExtent='177,32' Size='177,32'>
+<Page BackgroundColor='#FFFF00' Location='446,648' movable='true' Name='CommanderToolbar' PackLocation='proportional,proportional' PackLocationProp='0534/1024,0709/0768' ScrollExtent='177,123' Size='177,123'>
+<Page Location='0,91' Name='Title' ScrollExtent='177,32' Size='177,32'>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='121,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-056/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapCommand]' Location='44,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0044/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0097/0001,0002/0003' ScrollExtent='80,32' Size='80,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapCommand</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='17,0' Name='Title' PackLocation='left,top' PackLocationProp='0017/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='143,32' Size='143,32'/>
 </Page>
-<Page Name='MainPage' ScrollExtent='177,145' Size='177,145' Visible='false'>
+<Page Name='MainPage' ScrollExtent='177,123' Size='177,123' Visible='false'>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendliesTooltip]' Location='21,37' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendliesTooltip'>@ToggleFriendlies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEnemiesTooltip]' Location='21,59' Name='EnemyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEnemiesTooltip'>@ToggleEnemies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@AddWaypointTooltip]' Location='21,81' Name='AddWaypointToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@AddWaypointTooltip'>@AddWaypoint</Checkbox>
-<Button LocalText='[@MapButtonFindWaypoint]' LocalTooltip='[@MapButtonFindWaypointTooltip]' Location='21,103' Name='FindWaypointButton' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@MapButtonFindWaypointTooltip'>@MapButtonFindWaypoint</Button>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,129' Size='177,129' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,107' Size='177,107' Stretch='false'/>
 </Page>
-<Page Name='FlippedPage' ScrollExtent='177,145' Size='177,145'>
+<Page Name='FlippedPage' ScrollExtent='177,123' Size='177,123'>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFriendliesTooltip]' Location='21,22' Name='FriendlyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFriendliesTooltip'>@ToggleFriendlies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEnemiesTooltip]' Location='21,44' Name='EnemyToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEnemiesTooltip'>@ToggleEnemies</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@AddWaypointTooltip]' Location='21,66' Name='AddWaypointToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@AddWaypointTooltip'>@AddWaypoint</Checkbox>
-<Button LocalText='[@MapButtonFindWaypoint]' LocalTooltip='[@MapButtonFindWaypointTooltip]' Location='21,88' Name='FindWaypointButton' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@MapButtonFindWaypointTooltip'>@MapButtonFindWaypoint</Button>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-145/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,135' Size='177,135' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-123/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,113' Size='177,113' Stretch='false'/>
 </Page>
 </Page>
-<Page Location='368,589' movable='true' Name='MainToolbar' PackLocation='proportional,proportional' PackLocationProp='0456/1024,0675/0768' ScrollExtent='177,172' Size='177,172'>
+<Page BackgroundColor='#FFFF00' Location='630,535' movable='true' Name='BattleplanToolbar' PackLocation='proportional,proportional' PackLocationProp='0718/1024,0684/0768' ScrollExtent='177,299' Size='177,299'>
+<Page Location='0,205' Name='Title' ScrollExtent='177,32' Size='177,32'>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='121,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-056/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapBattleplan]' Location='44,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0044/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0097/0001,0002/0003' ScrollExtent='80,32' Size='80,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapBattleplan</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='17,0' Name='Title' PackLocation='left,top' PackLocationProp='0017/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='143,32' Size='143,32'/>
+</Page>
+<Page Name='MainPage' ScrollExtent='177,237' Size='177,237' Visible='false'>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor0Tooltip]' Location='21,37' Name='Color0Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor0Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor1Tooltip]' Location='89,37' Name='Color1Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor1Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor2Tooltip]' Location='21,59' Name='Color2Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor2Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor3Tooltip]' Location='89,59' Name='Color3Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor3Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor4Tooltip]' Location='21,81' Name='Color4Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor4Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor5Tooltip]' Location='89,81' Name='Color5Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor5Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor6Tooltip]' Location='21,103' Name='Color6Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor6Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='90,103' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleDrawTooltip]' Location='21,129' Name='DrawToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleDrawTooltip'>@ToggleDraw</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEraseTooltip]' Location='21,151' Name='EraseToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEraseTooltip'>@ToggleErase</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEditTextTooltip]' Location='21,173' Name='EditTextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEditTextTooltip'>@ToggleEditText</Checkbox>
+<Button LocalText='[@MapButtonClearAll]' LocalTooltip='[@MapButtonClearAllTooltip]' Location='21,195' Name='ClearAllButton' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@MapButtonClearAllTooltip'>@MapButtonClearAll</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,221' Size='177,221' Stretch='false'/>
+</Page>
+<Page Name='FlippedPage' ScrollExtent='177,237' Size='177,237'>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor0Tooltip]' Location='21,22' Name='Color0Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor0Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor1Tooltip]' Location='89,22' Name='Color1Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor1Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor2Tooltip]' Location='21,44' Name='Color2Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor2Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor3Tooltip]' Location='89,44' Name='Color3Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor3Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor4Tooltip]' Location='21,66' Name='Color4Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor4Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor5Tooltip]' Location='89,66' Name='Color5Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor5Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor6Tooltip]' Location='21,88' Name='Color6Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor6Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleColor7Tooltip]' Location='90,88' Name='Color7Toggle' ScrollExtent='66,20' Size='66,20' Style='/Buttons.TextButton.checkcolorstyle' Tooltip='@ToggleColor7Tooltip'></Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleDrawTooltip]' Location='21,114' Name='DrawToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleDrawTooltip'>@ToggleDraw</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEraseTooltip]' Location='21,136' Name='EraseToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEraseTooltip'>@ToggleErase</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEditTextTooltip]' Location='21,158' Name='EditTextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEditTextTooltip'>@ToggleEditText</Checkbox>
+<Button LocalText='[@MapButtonClearAll]' LocalTooltip='[@MapButtonClearAllTooltip]' Location='21,180' Name='ClearAllButton' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.style' Tooltip='@MapButtonClearAllTooltip'>@MapButtonClearAll</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-237/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0011/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,226' Size='177,226' Stretch='false'/>
+</Page>
+</Page>
+<Page Location='270,600' movable='true' Name='MainToolbar' PackLocation='proportional,proportional' PackLocationProp='0358/1024,0686/0768' ScrollExtent='177,172' Size='177,172'>
 <Page Location='0,140' Name='Title' ScrollExtent='177,32' Size='177,32'>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='121,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-056/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapToolbar]' Location='42,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0042/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0101/0001,0002/0003' ScrollExtent='76,32' Size='76,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapToolbar</Text>
@@ -204,24 +271,25 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackLocation='left,bottom' PackLocationProp='0000/0001,-172/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0010/0001' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,162' Size='177,162' Stretch='false'/>
 </Page>
 </Page>
-<Page Location='725,528' movable='true' Name='ToggleToolbar' PackLocation='proportional,proportional' PackLocationProp='0813/1024,0644/0768' ScrollExtent='177,233' Size='177,233'>
-<Page Location='0,201' Name='Title' ScrollExtent='177,32' Size='177,32'>
+<Page Location='830,517' movable='true' Name='ToggleToolbar' PackLocation='proportional,proportional' PackLocationProp='0918/1024,0644/0768' ScrollExtent='177,255' Size='177,255'>
+<Page Location='0,223' Name='Title' ScrollExtent='177,32' Size='177,32'>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='120,6' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-057/0001,0006/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadToggleToolbar]' Location='43,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0043/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0104/0001,0002/0003' ScrollExtent='73,42' Size='73,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadToggleToolbar</Text>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='15,0' Name='Title' PackLocation='left,top' PackLocationProp='0015/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0033/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='144,32' Size='144,32'/>
 </Page>
-<Page Name='MainPage' ScrollExtent='177,233' Size='177,233' Visible='false'>
+<Page Name='MainPage' ScrollExtent='177,255' Size='177,255' Visible='false'>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleTextOn/Off]' Location='21,37' Name='TextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleTextOn/Off'>@OverheadToggleText</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleResourcesTooltip]' Location='21,59' Name='ResourceToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleResourcesTooltip'>@OverheadToggleResources</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEquipmentTooltip]' Location='21,81' Name='EquipmentToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEquipmentTooltip'>@OverheadToggleEquipment</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSOITooltip]' Location='21,103' Name='BuildingSOIToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSOITooltip'>@OverheadToggleBuildingSOI</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSOITooltip]' Location='21,125' Name='BuildingStateToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSOITooltip'>@OverheadToggleFacilityInfo</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleFacilityInfoTooltip]' Location='21,125' Name='BuildingStateToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleFacilityInfoTooltip'>@OverheadToggleFacilityInfo</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSquadTooltip]' Location='21,147' Name='SquadToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSquadTooltip'>@OverheadToggleSquad</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleHotSpotsTooltip]' Location='21,169' Name='HotSpotToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleHotSpotsTooltip'>@OverheadToggleHotSpots</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleWeatherTooltip]' Location='21,191' Name='WeatherToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleWeatherTooltip'>@OverheadToggleWeather</Checkbox>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,217' Size='177,217' Stretch='false'/>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleBattleplanTooltip]' Location='21,213' Name='BattleplanToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleBattleplanTooltip'>@OverheadToggleBattleplan</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0016/0001' PackSize='absolute,absolute' PackSizeProp='0000/0001,0016/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='177,239' Size='177,239' Stretch='false'/>
 </Page>
-<Page Name='FlippedPage' ScrollExtent='177,233' Size='177,233'>
+<Page Name='FlippedPage' ScrollExtent='177,255' Size='177,255'>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleTextOn/Off]' Location='21,22' Name='TextToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleTextOn/Off'>@OverheadToggleText</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleResourcesTooltip]' Location='21,44' Name='ResourceToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleResourcesTooltip'>@OverheadToggleResources</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleEquipmentTooltip]' Location='21,66' Name='EquipmentToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleEquipmentTooltip'>@OverheadToggleEquipment</Checkbox>
@@ -230,10 +298,11 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleSquadTooltip]' Location='21,132' Name='SquadToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleSquadTooltip'>@OverheadToggleSquad</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleHotSpotsTooltip]' Location='21,154' Name='HotSpotToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleHotSpotsTooltip'>@OverheadToggleHotSpots</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleWeatherTooltip]' Location='21,176' Name='WeatherToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleWeatherTooltip'>@OverheadToggleWeather</Checkbox>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,223' Size='177,223' Stretch='false'/>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@ToggleBattleplanTooltip]' Location='21,198' Name='BattleplanToggle' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.checklongstyle' Tooltip='@ToggleBattleplanTooltip'>@OverheadToggleBattleplan</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' RStyleDefault='/WindowPanes.SmallFlippedBackground.style' ScrollExtent='177,245' Size='177,245' Stretch='false'/>
 </Page>
 </Page>
-<Page Location='52,381' movable='true' Name='MapLegend' PackLocation='proportional,proportional' PackLocationProp='0187/1024,0571/0768' ScrollExtent='270,380' Size='270,380'>
+<Page Location='2,391' movable='true' Name='MapLegend' PackLocation='proportional,proportional' PackLocationProp='0137/1024,0581/0768' ScrollExtent='270,380' Size='270,380'>
 <Page Location='0,348' Name='Title' ScrollExtent='270,32' Size='270,32'>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='207,5' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-063/0001,0005/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@OverheadMapLegend]' Location='51,0' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0051/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0117/0001,0002/0003' ScrollExtent='153,32' Size='153,32' TextAlignment='Center' TextAlignmentVertical='Center' TruncateElipsis='false'>@OverheadMapLegend</Text>
@@ -349,12 +418,14 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='455,66' Size='455,66' Stretch='false'/>
 </Page>
 </Page>
-<Page Activated='true' BackgroundColor='#FFFF00' Location='831,566' movable='true' Name='RespawnSanctuary' PackLocation='right,bottom' PackLocationProp='-193/0001,-202/0001' ScrollExtent='185,180' Size='185,180'>
+<Page Activated='true' BackgroundColor='#FFFF00' Location='831,566' movable='true' Name='RespawnSanctuary' PackLocation='right,bottom' PackLocationProp='-193/0001,-202/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
+<Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' Location='12,8' Name='MapText' PackLocation='left,top' PackLocationProp='0012/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0025/0001,0002/0003' ScrollExtent='160,18' ShadowStyle='/Shadows.Default' Size='160,18' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
 <OverheadMap AbsorbsInput='false' Location='32,25' Name='Map' PackLocation='center,center' PackLocationProp='-060/0001,-065/0001' ScrollExtent='120,120' Size='120,120'/>
 <Page AbsorbsInput='false' BackgroundColor='#64719B' BackgroundOpacity='0.475' Enabled='false' GetsInput='false' Location='32,26' Name='Water' ScrollExtent='120,120' Size='120,120'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='185,180' Size='185,180' Stretch='false'/>
 </Page>
-<Page Activated='true' BackgroundColor='#FFFF00' Location='831,358' movable='true' Name='RespawnOther' PackLocation='right,bottom' PackLocationProp='-193/0001,-410/0001' ScrollExtent='185,180' Size='185,180'>
+<Page Activated='true' BackgroundColor='#FFFF00' Location='831,358' movable='true' Name='RespawnOther' PackLocation='right,bottom' PackLocationProp='-193/0001,-410/0001' ScrollExtent='185,180' Size='185,180' Visible='false'>
+<Text continentid='1' Font='/Fonts.HudFont2' GetsInput='false' Location='12,8' Name='MapText' PackLocation='left,top' PackLocationProp='0012/0001,0008/0001' PackSize='absolute,fixed' PackSizeProp='0025/0001,0002/0003' ScrollExtent='160,18' ShadowStyle='/Shadows.Default' Size='160,18' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
 <OverheadMap AbsorbsInput='false' Location='32,30' Name='Map' PackLocation='center,center' PackLocationProp='-060/0001,-060/0001' ScrollExtent='120,120' Size='120,120'/>
 <Page AbsorbsInput='false' BackgroundColor='#64719B' BackgroundOpacity='0.475' Enabled='false' GetsInput='false' Location='32,26' Name='Water' ScrollExtent='120,120' Size='120,120'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='185,180' Size='185,180' Stretch='false'/>
@@ -377,11 +448,11 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Page Location='285,305' Name='Release' PackLocation='center,center' PackLocationProp='-227/0001,-079/0001' ScrollExtent='455,159' Size='455,159'>
 <Text AbsorbsInput='false' BackgroundColor='#00F2C9' Font='/Fonts.HudFont3' LocalText='[@ReleaseCountdownText]' Location='27,11' Name='ReleaseCountdownText' PackLocation='center,top' PackLocationProp='-200/0001,0011/0001' PackSize='absolute,absolute' PackSizeProp='0055/0001,0082/0001' ScrollExtent='400,77' Size='400,77' TextAlignment='Center' TextAlignmentVertical='Center'>@ReleaseCountdownText</Text>
 <Progressbar AbsorbsInput='false' BarBackgroundColor='#00F2C9' Color='#777777' Location='27,96' Name='ReleaseProgress' PackLocation='center,bottom' PackLocationProp='-200/0001,-063/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' Progress='1.000' ScrollExtent='400,13' Size='400,13' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
-<Button LocalText='[@ReleaseButtonText]' Location='27,116' Name='OK' PackLocation='center,bottom' PackLocationProp='-200/0001,-043/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' ScrollExtent='400,20' Size='400,20' Style='/Buttons.TitlebarTextButton.style'>@ReleaseButtonText</Button>
+<Button LocalText='[@ReleaseButtonText]' Location='27,116' Name='OK' PackLocation='center,bottom' PackLocationProp='-200/0001,-043/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' ScrollExtent='400,20' Size='400,20' Style='/Buttons.TextButton.style'>@ReleaseButtonText</Button>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='455,159' Size='455,159' Stretch='false'/>
 </Page>
 </Page>
-<Page Location='772,243' MinimumSize='200,150' movable='true' Name='ExclamationHelp' PackLocation='Right,Bottom' PackLocationProp='-252/0001,-525/0001' PackSize='Fixed,Absolute' PackSizeProp='0002/0003,0438/0001' resizable='true' ScrollExtent='241,330' Size='241,330' Visible='false'>
+<Page Location='772,243' MinimumSize='200,150' movable='true' Name='ExclamationHelp' PackLocation='Right,Bottom' PackLocationProp='-252/0001,-525/0001' PackSize='Fixed,Fixed' PackSizeProp='0002/0003,0002/0003' resizable='true' ScrollExtent='241,330' Size='241,330' Visible='false'>
 <Text AbsorbsInput='false' Activated='true' Font='/Fonts.ChatFont' Location='16,34' Name='Text' PackSize='absolute,absolute' PackSizeProp='0046/0001,0055/0001' ScrollExtent='195,275' Size='195,275'></Text>
 <Scrollbar Control='Text' Location='216,34' Name='ScrollText' PackLocation='right,top' PackLocationProp='-025/0001,0034/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0059/0001' ScrollExtent='10,271' Size='10,271' Style='/ScrollBars.vertical.style'/>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='170,8' Name='CancelButton' PackLocation='right,top' PackLocationProp='-071/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
@@ -415,13 +486,13 @@ psc_hidemap' ScrollExtent='135,20' Size='135,20' Style='/Buttons.TextButton.styl
 <Page Name='VoiceMacro' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false' visualeditlock='true'>
 <Page Location='235,308' Name='Level4' ScrollExtent='205,87' Size='205,87'>
 <PopupMenuStyle ButtonStyle='/Buttons.HUD_VoiceMacro.style' Name='PopupMenuStyle'/>
-<PopupMenu DataSource='Level3.5Data' Location='15,19' MaximumSize='175,112' MinimumSize='175,112' Name='Menu1' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='175,112' Size='175,112' Style='PopupMenuStyle'>
+<PopupMenu DataSource='Level3.6Data' Location='15,19' MaximumSize='175,112' MinimumSize='175,112' Name='Menu1' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='175,112' Size='175,112' Style='PopupMenuStyle'>
 </PopupMenu>
 <Image BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='205,87' Size='205,87' Stretch='false'/>
 </Page>
 <Page Location='230,200' Name='Level3' ScrollExtent='206,104' Size='206,104'>
 <PopupMenuStyle ButtonStyle='/Buttons.HUD_VoiceMacro.style' Name='PopupMenuStyle'/>
-<PopupMenu DataSource='Level3.1Data' Location='15,20' MaximumSize='188,128' MinimumSize='188,128' Name='Menu1' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='188,128' Size='188,128' Style='PopupMenuStyle'>
+<PopupMenu DataSource='Level3.2Data' Location='15,20' MaximumSize='188,128' MinimumSize='188,128' Name='Menu1' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='188,128' Size='188,128' Style='PopupMenuStyle'>
 </PopupMenu>
 <Image BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='206,104' Size='206,104' Stretch='false'/>
 </Page>
@@ -440,48 +511,16 @@ u
 <Image BackgroundOpacity='1.000' Name='Background' Opacity='0.800' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='249,262' Size='249,262' Stretch='false'/>
 </Page>
 <DataSource Name='Level2Data'>
-<Data isall='true' islocal='false' issquad='false' localtext='[@VoiceL2_VeryQuick]' menu='Level3.4Data' Name='VeryQuick' text='@VoiceL2_VeryQuick'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Attack]' menu='Level3.1Data' Name='Attack' text='@VoiceL2_Attack'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Defend]' menu='Level3.1Data' Name='Defend' text='@VoiceL2_Defend'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Need]' menu='Level3.2Data' Name='Need' text='@VoiceL2_Need'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Repair]' menu='Level3.1Data' Name='Repair' text='@VoiceL2_Repair'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Warning]' menu='Level3.5Data' Name='Warning' text='@VoiceL2_Warning'/>
-<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Self]' menu='Level3.6Data' Name='Self' text='@VoiceL2_Self'/>
-<Data isall='false' islocal='false' issquad='true' localtext='[@VoiceL2_Tactical]' menu='Level3.3Data' Name='Tactical' text='@VoiceL2_Tactical'/>
+<Data isall='true' islocal='false' issquad='false' localtext='[@VoiceL2_VeryQuick]' menu='Level3.1Data' Name='VeryQuick' text='@VoiceL2_VeryQuick'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Attack]' menu='Level3.2Data' Name='Attack' text='@VoiceL2_Attack'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Defend]' menu='Level3.3Data' Name='Defend' text='@VoiceL2_Defend'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Need]' menu='Level3.4Data' Name='Need' text='@VoiceL2_Need'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Repair]' menu='Level3.2Data' Name='Repair' text='@VoiceL2_Repair'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Warning]' menu='Level3.6Data' Name='Warning' text='@VoiceL2_Warning'/>
+<Data isall='false' islocal='true' issquad='true' localtext='[@VoiceL2_Self]' menu='Level3.7Data' Name='Self' text='@VoiceL2_Self'/>
+<Data isall='false' islocal='false' issquad='true' localtext='[@VoiceL2_Tactical]' menu='Level3.8Data' Name='Tactical' text='@VoiceL2_Tactical'/>
 </DataSource>
 <DataSource Name='Level3.1Data'>
-<Data localtext='[@VoiceL3_TypeControl]' Name='TypeControl' text='@VoiceL3_TypeControl'/>
-<Data localtext='[@VoiceL3_TypeDeployable]' Name='TypeDeployable' text='@VoiceL3_TypeDeployable'/>
-<Data localtext='[@VoiceL3_TypeEquipment]' Name='TypeEquipment' text='@VoiceL3_TypeEquipment'/>
-<Data localtext='[@VoiceL3_TypeGenerator]' Name='TypeGenerator' text='@VoiceL3_TypeGenerator'/>
-<Data localtext='[@VoiceL3_TypeMedical]' Name='TypeMedical' text='@VoiceL3_TypeMedical'/>
-<Data localtext='[@VoiceL3_TypeSpawn]' Name='TypeSpawn' text='@VoiceL3_TypeSpawn'/>
-<Data localtext='[@VoiceL3_TypeTurret]' Name='TypeTurret' text='@VoiceL3_TypeTurret'/>
-<Data localtext='[@VoiceL3_TypeVehicle]' Name='TypeVehicle' text='@VoiceL3_TypeVehicle'/>
-</DataSource>
-<DataSource Name='Level3.2Data'>
-<Data localtext='[@VoiceL3_NeedAir]' Name='NeedAir' text='@VoiceL3_NeedAir'/>
-<Data localtext='[@VoiceL3_NeedCovering]' Name='NeedCovering' text='@VoiceL3_NeedCovering'/>
-<Data localtext='[@VoiceL3_NeedDriver]' Name='NeedDriver' text='@VoiceL3_NeedDriver'/>
-<Data localtext='[@VoiceL3_NeedEscort]' Name='NeedEscort' text='@VoiceL3_NeedEscort'/>
-<Data localtext='[@VoiceL3_NeedGunner]' Name='NeedGunner' text='@VoiceL3_NeedGunner'/>
-<Data localtext='[@VoiceL3_NeedHacker]' Name='NeedHacker' text='@VoiceL3_NeedHacker'/>
-<Data localtext='[@VoiceL3_NeedMedic]' Name='NeedMedic' text='@VoiceL3_NeedMedic'/>
-<Data localtext='[@VoiceL3_NeedPassenger]' Name='NeedPassenger' text='@VoiceL3_NeedPassenger'/>
-<Data localtext='[@VoiceL3_NeedRepairs]' Name='NeedRepairs' text='@VoiceL3_NeedRepairs'/>
-</DataSource>
-<DataSource Name='Level3.3Data'>
-<Data localtext='[@VoiceL3_TactAck]' Name='TactAck' text='@VoiceL3_TactAck'/>
-<Data localtext='[@VoiceL3_TactComplete]' Name='TactComplete' text='@VoiceL3_TactComplete'/>
-<Data localtext='[@VoiceL3_TactDeploy]' Name='TactDeploy' text='@VoiceL3_TactDeploy'/>
-<Data localtext='[@VoiceL3_TactFollow]' Name='TactFollow' text='@VoiceL3_TactFollow'/>
-<Data localtext='[@VoiceL3_TactRequest]' Name='TactRequest' text='@VoiceL3_TactRequest'/>
-<Data localtext='[@VoiceL3_TactSpreadOut]' Name='TactSpreadOut' text='@VoiceL3_TactSpreadOut'/>
-<Data localtext='[@VoiceL3_TactTurret]' Name='TactTurret' text='@VoiceL3_TactTurret'/>
-<Data localtext='[@VoiceL3_TactWaypoint]' Name='TactWaypoint' text='@VoiceL3_TactWaypoint'/>
-<Data localtext='[@VoiceL3_TactDecline]' Name='TactDecline' text='@VoiceL3_TactDecline'/>
-</DataSource>
-<DataSource Name='Level3.4Data'>
 <Data localtext='[@VoiceL3_Anytime]' Name='Anytime' text='@VoiceL3_Anytime'/>
 <Data localtext='[@VoiceL3_Best]' Name='Best' text='@VoiceL3_Best'/>
 <Data localtext='[@VoiceL3_CeaseFire]' Name='CeaseFire' text='@VoiceL3_CeaseFire'/>
@@ -502,7 +541,35 @@ u
 <Data localtext='[@VoiceL3_Yes]' Name='Yes' text='@VoiceL3_Yes'/>
 <Data localtext='[@VoiceL3_ZeroChance]' Name='ZeroChance' text='@VoiceL3_ZeroChance'/>
 </DataSource>
-<DataSource Name='Level3.5Data'>
+<DataSource Name='Level3.2Data'>
+<Data localtext='[@VoiceL3_TypeControl]' Name='TypeControl' text='@VoiceL3_TypeControl'/>
+<Data localtext='[@VoiceL3_TypeDeployable]' Name='TypeDeployable' text='@VoiceL3_TypeDeployable'/>
+<Data localtext='[@VoiceL3_TypeEquipment]' Name='TypeEquipment' text='@VoiceL3_TypeEquipment'/>
+<Data localtext='[@VoiceL3_TypeGenerator]' Name='TypeGenerator' text='@VoiceL3_TypeGenerator'/>
+<Data localtext='[@VoiceL3_TypeMedical]' Name='TypeMedical' text='@VoiceL3_TypeMedical'/>
+<Data localtext='[@VoiceL3_TypeSpawn]' Name='TypeSpawn' text='@VoiceL3_TypeSpawn'/>
+<Data localtext='[@VoiceL3_TypeTurret]' Name='TypeTurret' text='@VoiceL3_TypeTurret'/>
+<Data localtext='[@VoiceL3_TypeVehicle]' Name='TypeVehicle' text='@VoiceL3_TypeVehicle'/>
+</DataSource>
+<DataSource Name='Level3.3Data'>
+<Data localtext='[@VoiceL3_TypeControl]' Name='TypeControl' text='@VoiceL3_TypeControl'/>
+<Data localtext='[@VoiceL3_TypeEquipment]' Name='TypeEquipment' text='@VoiceL3_TypeEquipment'/>
+<Data localtext='[@VoiceL3_TypeGenerator]' Name='TypeGenerator' text='@VoiceL3_TypeGenerator'/>
+<Data localtext='[@VoiceL3_TypeSpawn]' Name='TypeSpawn' text='@VoiceL3_TypeSpawn'/>
+<Data localtext='[@VoiceL3_TypeTurret]' Name='TypeTurret' text='@VoiceL3_TypeTurret'/>
+<Data localtext='[@VoiceL3_TypeVehicle]' Name='TypeVehicle' text='@VoiceL3_TypeVehicle'/>
+</DataSource>
+<DataSource Name='Level3.4Data'>
+<Data localtext='[@VoiceL3_NeedAir]' Name='NeedAir' text='@VoiceL3_NeedAir'/>
+<Data localtext='[@VoiceL3_NeedCovering]' Name='NeedCovering' text='@VoiceL3_NeedCovering'/>
+<Data localtext='[@VoiceL3_NeedEscort]' Name='NeedEscort' text='@VoiceL3_NeedEscort'/>
+<Data localtext='[@VoiceL3_NeedGunner]' Name='NeedGunner' text='@VoiceL3_NeedGunner'/>
+<Data localtext='[@VoiceL3_NeedHacker]' Name='NeedHacker' text='@VoiceL3_NeedHacker'/>
+<Data localtext='[@VoiceL3_NeedMedic]' Name='NeedMedic' text='@VoiceL3_NeedMedic'/>
+<Data localtext='[@VoiceL3_NeedPassenger]' Name='NeedPassenger' text='@VoiceL3_NeedPassenger'/>
+<Data localtext='[@VoiceL3_NeedRepairs]' Name='NeedRepairs' text='@VoiceL3_NeedRepairs'/>
+</DataSource>
+<DataSource Name='Level3.6Data'>
 <Data localtext='[@VoiceL3_WarnAir]' Name='WarnAir' text='@VoiceL3_WarnAir'/>
 <Data localtext='[@VoiceL3_WarnCloaked]' Name='WarnCloaked' text='@VoiceL3_WarnCloaked'/>
 <Data localtext='[@VoiceL3_WarnMAX]' Name='WarnMAX' text='@VoiceL3_WarnMAX'/>
@@ -511,10 +578,23 @@ u
 <Data localtext='[@VoiceL3_WarnGround]' Name='WarnGround' text='@VoiceL3_WarnGround'/>
 <Data localtext='[@VoiceL3_WarnClear]' Name='WarnClear' text='@VoiceL3_WarnClear'/>
 </DataSource>
-<DataSource Name='Level3.6Data'>
-<Data localtext='[@VoiceL3_SelfAttack]' menu='Level3.1Data' Name='SelfAttack' text='@VoiceL3_SelfAttack'/>
-<Data localtext='[@VoiceL3_SelfDefend]' menu='Level3.1Data' Name='SelfDefend' text='@VoiceL3_SelfDefend'/>
-<Data localtext='[@VoiceL3_SelfRepair]' menu='Level3.1Data' Name='SelfRepair' text='@VoiceL3_SelfRepair'/>
+<DataSource Name='Level3.7Data'>
+<Data localtext='[@VoiceL3_SelfAttack]' menu='Level3.2Data' Name='SelfAttack' text='@VoiceL3_SelfAttack'/>
+<Data localtext='[@VoiceL3_SelfDefend]' menu='Level3.3Data' Name='SelfDefend' text='@VoiceL3_SelfDefend'/>
+<Data localtext='[@VoiceL3_SelfRepair]' menu='Level3.2Data' Name='SelfRepair' text='@VoiceL3_SelfRepair'/>
+</DataSource>
+<DataSource Name='Level3.8Data'>
+<Data localtext='[@VoiceL3_TactFallback]' Name='TactFallBack' text='@VoiceL3_TactFallback'/>
+<Data localtext='[@VoiceL3_TactCover]' Name='TactCover' text='@VoiceL3_TactCover'/>
+<Data localtext='[@VoiceL3_TactDeploy]' Name='TactDeploy' text='@VoiceL3_TactDeploy'/>
+<Data localtext='[@VoiceL3_TactEnemy]' Name='TactEnemy' text='@VoiceL3_TactEnemy'/>
+<Data localtext='[@VoiceL3_TactFollow]' Name='TactFollow' text='@VoiceL3_TactFollow'/>
+<Data localtext='[@VoiceL3_TactRetreat]' Name='TactRetreat' text='@VoiceL3_TactRetreat'/>
+<Data localtext='[@VoiceL3_TactRequest]' Name='TactRequest' text='@VoiceL3_TactRequest'/>
+<Data localtext='[@VoiceL3_TactSpreadOut]' Name='TactSpreadOut' text='@VoiceL3_TactSpreadOut'/>
+<Data localtext='[@VoiceL3_TactTurret]' Name='TactTurret' text='@VoiceL3_TactTurret'/>
+<Data localtext='[@VoiceL3_TactWaypoint]' Name='TactWaypoint' text='@VoiceL3_TactWaypoint'/>
+<Data localtext='[@VoiceL3_TactDecline]' Name='TactDecline' text='@VoiceL3_TactDecline'/>
 </DataSource>
 </Page>
 <Page Location='8,283' MinimumSize='145,58' movable='true' Name='PlayerInterfaceMenu' ScrollExtent='189,146' Size='189,146' Visible='false'>
@@ -640,14 +720,21 @@ $Name$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='25,0' Name='Title' PackLocation='left,top' PackLocationProp='0025/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0049/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='391,32' Size='391,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,16' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0017/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='440,446' Size='440,446' Stretch='false'/>
 </Page>
-<Page Location='3,482' movable='true' Name='AcceptSquadInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-286/0001' ScrollExtent='211,97' Size='211,97' Visible='false'>
+<Page Location='3,384' movable='true' Name='AcceptOutfitInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-384/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
 <Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
 <Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
 <Button LocalText='[@No]' Location='116,53' Name='DeclineButton' PackLocation='center,bottom' PackLocationProp='0011/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@No</Button>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,47' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0019/0001,-050/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='177,32' Size='177,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='211,97' Size='211,97' Stretch='false' Style=' '/>
 </Page>
-<Page Location='3,384' movable='true' Name='AcceptOutfitInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-384/0001' ScrollExtent='211,97' Size='211,97' Visible='false'>
+<Page Location='3,482' movable='true' Name='AcceptSquadInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-286/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
+<Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
+<Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
+<Button LocalText='[@No]' Location='116,53' Name='DeclineButton' PackLocation='center,bottom' PackLocationProp='0011/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@No</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,47' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0019/0001,-050/0001' PackSize='absolute,fixed' PackSizeProp='0034/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='177,32' Size='177,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='211,97' Size='211,97' Stretch='false' Style=' '/>
+</Page>
+<Page Location='3,482' movable='true' Name='AcceptVoiceInvitation' PackLocation='left,bottom' PackLocationProp='0003/0001,-286/0001' ScrollExtent='211,97' ShowSound='interface_feedback_rollover.wav' Size='211,97' Visible='false'>
 <Text AbsorbsInput='false' Color='#00F2C9' Enabled='false' Font='/Fonts.HudFont2' LocalText='100/100' Location='21,10' Name='InvitationText' PackLocation='left,top' PackLocationProp='0021/0001,0010/0001' PackSize='absolute,absolute' PackSizeProp='0037/0001,0062/0001' ScrollExtent='174,35' Size='174,35' TextAlignment='Center'>100/100</Text>
 <Button LocalText='[@Yes]' Location='25,53' Name='AcceptButton' PackLocation='Center,bottom' PackLocationProp='-080/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@Yes</Button>
 <Button LocalText='[@No]' Location='116,53' Name='DeclineButton' PackLocation='center,bottom' PackLocationProp='0011/0001,-044/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@No</Button>
@@ -670,7 +757,7 @@ $Name$
 <Progressbar BackgroundColor='#858585' BarBackgroundColor='#0099C5' LocalTooltip='[@ArmorTooltip]' Location='32,40' Name='Armor' Progress='0.600' ScrollExtent='100,12' Size='100,12' Style='/ProgressBars.Health.style' Tooltip='@ArmorTooltip'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='2,0' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='147,72' Size='147,72' Stretch='false' Style=' '/>
 </Page>
-<Page Activated='true' Location='9,589' movable='true' Name='VehicleIcons' Opacity='0.800' PackLocation='left,bottom' PackLocationProp='0009/0001,-179/0001' ScrollExtent='104,100' Size='104,100'>
+<Page Activated='true' Location='9,589' movable='true' Name='VehicleIcons' Opacity='0.800' PackLocation='left,bottom' PackLocationProp='0009/0001,-179/0001' ScrollExtent='104,100' Size='104,100' Visible='false'>
 <ImageStyle Name='FullOccupant'>
 <ImageFrame Source='ui_vehicle_occupant_00' SourceRect='0,0,8,8'/>
 </ImageStyle>
@@ -752,8 +839,8 @@ $Name$
 <Image Color='#F3E138' Location='22,64' mountpointname='GunnerA' Name='GunnerA' ScrollExtent='8,8' Size='8,8' Stretch='false' Style='EmptyOccupant'/>
 <Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.800' ScrollExtent='50,100' Size='50,100' Style='/ProgressBars.magrider.style'/>
 </Page>
-<Page isvehiclepage='true' Name='manned_turret' ScrollExtent='102,99' Size='102,99' Visible='false'>
-<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.700' ScrollExtent='102,99' Size='102,99' Style='/ProgressBars.manned_turret.style'/>
+<Page isvehiclepage='true' Name='manned_turret' ScrollExtent='96,100' Size='96,100' Visible='false'>
+<Progressbar BackgroundColor='#FF0000' BarBackgroundColor='#00F2C9' GetsInput='false' Name='Progress' Progress='0.700' ScrollExtent='96,100' Size='96,100' Style='/ProgressBars.manned_turret.style'/>
 </Page>
 <Page isvehiclepage='true' Name='mediumtransport' ScrollExtent='50,100' Size='50,100' Visible='false'>
 <Button Color='#F3E138' Location='15,28' mountpointname='Driver' Name='Driver' ScrollExtent='8,8' Size='8,8' stretch='false' Style='Occupant'></Button>
@@ -907,7 +994,7 @@ $Internationalize$
 $Internationalize$
 \</text\></Template>
 </Page>
-<Page BackgroundColor='#FFFFFF' Location='124,213' movable='true' Name='ContainerView' PackLocation='proportional, fixed' PackLocationProp='0275/1024,xxxx/xxxx' ScrollExtent='303,236' Size='303,236' Visible='false'>
+<Page BackgroundColor='#FFFFFF' Location='124,213' movable='true' Name='ContainerView' PackLocation='center,center' PackLocationProp='-388/0001,-171/0001' ScrollExtent='303,236' Size='303,236' Visible='false'>
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='62,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0062/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Button LocalTooltip='[@CloseTooltip]' Location='225,8' Name='Close' PackLocation='right,top' PackLocationProp='-078/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'></Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@Trunk]' Location='79,4' Name='TitleText' PackLocation='Left,Top' PackLocationProp='0079/0001,0004/0001' PackSize='Absolute,fixed' PackSizeProp='0159/0001,0002/0003' ScrollExtent='144,23' Size='144,23' TextAlignment='Center' TextAlignmentVertical='Center'>@Trunk</Text>
@@ -915,8 +1002,8 @@ $Internationalize$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,-1' Name='Title' PackLocation='left,top' PackLocationProp='0033/0001,-001/0001' PackSize='absolute,fixed' PackSizeProp='0062/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='241,32' Size='241,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,12' Name='Background' PackSize='absolute,absolute' PackSizeProp='0000/0001,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='303,222' Size='303,222' Stretch='false' Style=' '/>
 </Page>
-<Page HideSound='interface_pane_close2.wav' Location='537,235' movable='true' Name='AvatarView' PackLocation='center,center' PackLocationProp='0025/0001,-149/0001' ScrollExtent='455,274' ShowSound='interface_pane_open.wav' Size='455,274' Visible='false'>
-<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='StealthArmor' ScrollExtent='281,171' Size='281,171'>
+<Page HideSound='interface_pane_close2.wav' Location='537,235' movable='true' Name='AvatarView' PackLocation='center,center' PackLocationProp='0025/0001,-149/0001' ScrollExtent='455,280' ShowSound='interface_pane_open.wav' Size='455,280' Visible='false'>
+<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='StealthArmor' ScrollExtent='281,171' Size='281,171' Visible='false'>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='206,10' Name='CloseButton' PackLocation='right,top' PackLocationProp='-075/0001,0010/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='53,9' Name='HelpButton' PackLocation='right,top' PackLocationProp='-228/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@InventoryTitle]' Location='77,7' Name='TitleText' ScrollExtent='124,20' Size='124,20' TextAlignment='Center' TextAlignmentVertical='Center'>@InventoryTitle</Text>
@@ -927,14 +1014,14 @@ $Internationalize$
 <Grid CellCount='3,45' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='25,36' Name='RightHipHolster' ScrollExtent='51,765' Size='52,52' Style='/DefaultGrid.style'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='-2,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='281,157' Size='281,157' Stretch='false'/>
 </Page>
-<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='HeavyArmor' ScrollExtent='327,248' Size='327,248' Visible='false'>
-<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='256,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-071/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
+<Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='-4,0' Name='HeavyArmor' ScrollExtent='325,282' Size='325,282'>
+<Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='254,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-071/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
 <Button LocalText='[@Cancel]' LocalTooltip='[@HelpTooltip]' Location='64,9' Name='HelpButton' PackLocation='left,top' PackLocationProp='0064/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style' Tooltip='@HelpTooltip'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@InventoryTitle]' Location='52,6' Name='TitleText' ScrollExtent='224,20' Size='224,20' TextAlignment='Center' TextAlignmentVertical='Center'>@InventoryTitle</Text>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0058/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='269,32' Size='269,32'/>
-<Rectangle Color='#81C9D4' Location='27,36' Name='BackpackRect' PackSize='absolute,absolute' PackSizeProp='0052/0001,0076/0001' ScrollExtent='275,172' Size='275,172'/>
-<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='27,36' Name='Backpack' ScrollExtent='272,204' Size='275,172' Style='/DefaultGrid.style'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='2,14' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='327,228' Size='327,228' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,0' Name='Title' PackSize='absolute,fixed' PackSizeProp='0058/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='267,32' Size='267,32'/>
+<Rectangle Color='#81C9D4' Location='27,36' Name='BackpackRect' PackSize='absolute,absolute' PackSizeProp='0052/0001,0076/0001' ScrollExtent='273,206' Size='273,206'/>
+<Grid CellCount='16,12' CellSize='17,17' DataSource='/DataSources.Inventory' DragAccepts='Item' Location='27,36' Name='Backpack' ScrollExtent='272,204' Size='275,213' Style='/DefaultGrid.style'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='2,14' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='325,262' Size='325,262' Stretch='false'/>
 </Page>
 <Page AbsorbsInput='false' BackgroundColor='#FFFFFF' Location='3,0' Name='MediumArmor' ScrollExtent='405,232' Size='405,232' Visible='false'>
 <Button LocalText='[@Cancel]' LocalTooltip='[@CloseTooltip]' Location='309,9' Name='CloseButton' PackLocation='right,top' PackLocationProp='-096/0001,0009/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style' Tooltip='@CloseTooltip'>@Cancel</Button>
@@ -1310,11 +1397,8 @@ $Time$
 <Data color='#FFFFFF' internationalize='WEAPONS' isheading='true' isnotheading='false' Name='Dummy1' price='-10000'/>
 <Data color='#FFFFFF' internationalize='Blah Blah Blah' isheading='false' isnotheading='true' Name='Dummy2' price='-5000'/>
 </DataSource>
-<Template Name='ListboxTemplate' Size='260,20'>\<text color = \'$color\' font = \'/Fonts.HudFont2\' location = \'5,0\' maxlines = \'1\' size = \'200,20\' visible = \'$IsNotHeading$\'\>
+<Template Name='ListboxTemplate' Size='260,20'>\<text color = \'$color\' font = \'/Fonts.HudFont2\' location = \'5,0\' maxlines = \'1\' size = \'255,20\' visible = \'$IsNotHeading$\'\>
 $Internationalize$
-\</text\>
-\<text color = \'$color\' font = \'/Fonts.HudFont2\' location = \'205,0\' size = \'50,20\' textalignment = \'center\' visible = \'$IsNotHeading$\'\>
-$Price$
 \</text\>
 \<text color = \'$color$\' font = \'/Fonts.HudFont1\' location = \'-18,2\' maxlines = \'1\' size = \'260,18\' textalignment = \'right\' truncateelipsis = \'false\' visible = \'$IsHeading$\'\>
 $Internationalize$
@@ -1345,8 +1429,12 @@ $Internationalize$
 <Scrollbar Control='AcquiredListbox' Location='579,255' Name='ScrollAcquired' ScrollExtent='9,85' Size='9,85' Style='/ScrollBars.vertical.style'/>
 <Text AbsorbsInput='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@CertificationAvailableCredits]' Location='176,38' Name='AvailableCurrency' ScrollExtent='274,20' Size='274,20' TextAlignment='Center'>@CertificationAvailableCredits</Text>
 <Rectangle AbsorbsInput='false' Color='#00F2C9' Location='173,35' Name='AvailableRect' Opacity='0.750' ScrollExtent='279,25' Size='279,25'/>
-<Button LocalText='[@CertLearn]' LocalTooltip='[@CertLearnTooltip]' Location='27,355' Name='BuyButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@CertLearnTooltip'>@CertLearn</Button>
-<Button LocalText='[@CertForget]' LocalTooltip='[@CertForgetTooltip]' Location='519,355' Name='SellButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@CertForgetTooltip'>@CertForget</Button>
+<Text AbsorbsInput='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='[@CertificationBeingNeutralized]' Location='112,355' MaxLines='1' Name='UnlearnTime' ScrollExtent='397,18' Size='397,18' TextAlignment='Center' TruncateElipsis='false' Visible='false'>@CertificationBeingNeutralized</Text>
+<Rectangle AbsorbsInput='false' Color='#00F2C9' Location='108,354' Name='UnlearnRect' Opacity='0.750' ScrollExtent='404,20' Size='404,20' Visible='false'/>
+<Button LocalText='[@CertLearn]' LocalTooltip='[@CertLearnTooltip]' Location='27,354' Name='BuyButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@CertLearnTooltip'>@CertLearn</Button>
+<Button LocalText='[@CertForget]' LocalTooltip='[@CertForgetTooltip]' Location='519,354' Name='SellButton' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@CertForgetTooltip'>@CertForget</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='21,349' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='578,31' Size='578,31'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0018/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='623,398' Size='623,398' Stretch='false'/>
 <DataSource Name='UnacquiredDataSource'>
 <Data color='#FFFFFF' internationalize='WEAPONS' isheading='true' isnotheading='false' Name='Dummy1' price='10000'/>
 <Data color='#FFFFFF' internationalize='Blah Blah Blah' isheading='false' isnotheading='true' Name='Dummy2' price='5000'/>
@@ -1365,12 +1453,10 @@ $Price$
 $Internationalize$
 \</text\>
 \<Image backgroundopacity = \'1.000\' location = \'0,10\' name = \'UnderlineTemplate\' rstyledefault = \'/Listboxes.ListboxContentHeader.style\' scrollextent = \'260,8\' size = \'260,8\' visible = \'$IsHeading$\'/\></Template>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='21,349' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='578,31' Size='578,31'/>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Location='0,12' Name='Background' PackSize='1,Absolute' PackSizeProp='0002/0003,0018/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='623,398' Size='623,398' Stretch='false'/>
 </Page>
-<Page Location='292,130' minsize='404,344' movable='true' Name='CharacterPane' resizable='true' ScrollExtent='442,386' Size='442,386' Visible='false'>
+<Page Location='292,130' minsize='404,344' movable='true' Name='CharacterPane' resizable='false' ScrollExtent='442,386' Size='442,386' Visible='false'>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='16,335' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='409,31' Size='409,31'/>
-<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@CharacterTitle]' Location='101,13' Name='TitleText' ScrollExtent='234,20' Size='234,20' TextAlignment='Center' TextAlignmentVertical='Center'>@CharacterTitle</Text>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@CharacterTitle]' Location='101,13' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0013/0001' PackSize='absolute,fixed' PackSizeProp='0208/0001,0002/0003' ScrollExtent='234,20' Size='234,20' TextAlignment='Center' TextAlignmentVertical='Center'>@CharacterTitle</Text>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CharacterInfoTabTooltip]' Location='19,46' Name='SoldierTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@CharacterInfoTabTooltip'>@CharacterInfoTab</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@PlayerEventTooltip]' Location='100,46' Name='EventTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerEventTooltip'>@CharacterEventsTab</Checkbox>
 <Page Location='18,70' Name='SoldierPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='406,296' Size='406,296'>
@@ -1448,9 +1534,9 @@ $Internationalize$
 <Data color='#FFFFFF' internationalize='Jimmy the Greek' isheading='false' isnotheading='true' Name='Event1' width='384'/>
 </DataSource>
 </Page>
-<Button LocalText='[@Cancel]' Location='81,14' Name='HelpButton' PackLocation='right,top' PackLocationProp='-361/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
+<Button LocalText='[@Cancel]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
 <Button LocalText='[@Cancel]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-102/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='338,32' Size='338,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' PackLocation='left,top' PackLocationProp='0051/0001,0006/0001' PackSize='absolute,fixed' PackSizeProp='0104/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='338,32' Size='338,32'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,20' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0021/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='442,365' Size='442,365' Stretch='false'/>
 </Page>
 <Page Location='112,130' minsize='404,344' movable='true' Name='StatisticsPane' PackLocation='center,center' PackLocationProp='-400/0001,-254/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' resizable='false' ScrollExtent='800,376' Size='800,376' Visible='false'>
@@ -1635,40 +1721,48 @@ j
 G
 \</text\></Template>
 </Page>
-<Page Location='296,188' MinimumSize='440,330' minsize='400,330' movable='true' Name='PlayerPane' resizable='true' ScrollExtent='440,330' Size='440,330' Visible='false'>
+<Page Location='296,188' MinimumSize='440,340' minsize='440,340' movable='true' Name='PlayerPane' resizable='true' ScrollExtent='440,370' Size='440,370' Visible='false'>
 <Button LocalText='[@Cancel]' Location='340,14' Name='CloseButton' PackLocation='right,top' PackLocationProp='-100/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'>@Cancel</Button>
 <Button LocalText='[@Cancel]' Location='81,14' Name='HelpButton' PackLocation='left,top' PackLocationProp='0081/0001,0014/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
 <Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@PlayerPane]' Location='101,14' MaxLines='1' Name='TitleText' PackLocation='left,top' PackLocationProp='0101/0001,0014/0001' PackSize='absolute,fixed' PackSizeProp='0204/0001,0002/0003' ScrollExtent='236,17' Size='236,17' TextAlignment='Center'>@PlayerPane</Text>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' PackSize='absolute,fixed' PackSizeProp='0103/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='337,32' Size='337,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='51,6' Name='Title' PackLocation='left,top' PackLocationProp='0051/0001,0006/0001' PackSize='absolute,fixed' PackSizeProp='0103/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='337,32' Size='337,32'/>
 <Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@PlayerSquadTooltip]' Location='20,49' Name='SquadTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerSquadTooltip'>@PlayerSquad</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@PlayerFriendTooltip]' Location='102,49' Name='FriendTab' ScrollExtent='72,24' Size='72,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerFriendTooltip'>@PlayerFriend</Checkbox>
 <Checkbox BackgroundOpacity='1.000' LocalTooltip='[@PlayerFindTooltip]' Location='186,49' Name='FindTab' ScrollExtent='90,24' Size='90,24' Style='/Buttons.WindowIconTab.style' Tooltip='@PlayerFindTooltip'>@PlayerFind</Checkbox>
-<Page Location='18,70' Name='SquadInfoPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,240' Size='404,240' Visible='false'>
-<Image BackgroundOpacity='1.000' Location='1,206' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0003/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='401,31' Size='401,31'/>
-<Rectangle Color='#385E61' Location='2,2' Name='SquadListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0040/0001' ScrollExtent='400,200' Size='400,200'/>
-<Listbox DataSource='/DataSources.SquadList' Location='4,4' Name='SquadListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0008/0001,0044/0001' RowTemplate='ListboxTemplate' ScrollExtent='396,196' Size='396,196' Style='/Listboxes.Clear.style'/>
-<Button LocalText='[@SquadPromote]' LocalTooltip='[@PromoteTooltip]' Location='6,211' Name='PromoteButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@PromoteTooltip'>@SquadPromote</Button>
-<Button LocalText='[@SquadKick]' LocalTooltip='[@KickTooltip]' Location='111,211' Name='KickButton' PackLocation='center,bottom' PackLocationProp='-091/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KickTooltip'>@SquadKick</Button>
-<Button LocalText='[@SquadLeave]' LocalTooltip='[@LeaveTooltip]' Location='216,211' Name='LeaveButton' PackLocation='center,bottom' PackLocationProp='0014/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@LeaveTooltip'>@SquadLeave</Button>
-<Button LocalText='[@SquadOpen]' LocalTooltip='[@OpenSquadTooltip]' Location='322,211' Name='MiniButton' PackLocation='center,bottom' PackLocationProp='0120/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OpenSquadTooltip'>@SquadOpen</Button>
-<Template Name='ListboxTemplate' Size='396,19'>\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'5,2\' maxlines = \'1\' size = \'30,18\' textalignment = \'right\' truncateelipsis = \'false\'\>
+<Page Location='18,70' Name='SquadInfoPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280'>
+<Rectangle Color='#385E61' Location='2,2' Name='SquadListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0074/0001' ScrollExtent='400,206' Size='400,206'/>
+<Listbox DataSource='/DataSources.SquadList' Location='4,4' Name='SquadListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0008/0001,0078/0001' RowTemplate='ListboxTemplate' ScrollExtent='396,202' Size='396,202' Style='/Listboxes.Clear.style'/>
+<Image BackgroundOpacity='1.000' Location='1,212' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-068/0001' PackSize='absolute,fixed' PackSizeProp='0004/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='400,31' Size='400,31'/>
+<Button LocalText='[@SquadPromote]' LocalTooltip='[@PromoteTooltip]' Location='6,217' Name='PromoteButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@PromoteTooltip'>@SquadPromote</Button>
+<Button LocalText='[@SquadKick]' LocalTooltip='[@KickTooltip]' Location='111,217' Name='KickButton' PackLocation='center,bottom' PackLocationProp='-091/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@KickTooltip'>@SquadKick</Button>
+<Button LocalText='[@SquadLeave]' LocalTooltip='[@LeaveTooltip]' Location='216,217' Name='LeaveButton' PackLocation='center,bottom' PackLocationProp='0014/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@LeaveTooltip'>@SquadLeave</Button>
+<Button LocalText='[@SquadOpen]' LocalTooltip='[@OpenSquadTooltip]' Location='322,217' Name='MiniButton' PackLocation='center,bottom' PackLocationProp='0120/0001,-063/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@OpenSquadTooltip'>@SquadOpen</Button>
+<Image BackgroundOpacity='1.000' Location='1,246' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0004/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='400,31' Size='400,31'/>
+<Button Enabled='false' LocalText='[@SquadVoiceHostStart]' LocalTooltip='[@SquadVoiceHostStartTooltip]' Location='34,251' Name='VoiceHostStartButton' PackLocation='center,bottom' PackLocationProp='-168/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceHostStartTooltip'>@SquadVoiceHostStart</Button>
+<Button Enabled='false' LocalText='[@SquadVoiceHostStop]' LocalTooltip='[@SquadVoiceHostStopTooltip]' Location='34,251' Name='VoiceHostStopButton' PackLocation='center,bottom' PackLocationProp='-168/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceHostStopTooltip' Visible='false'>@SquadVoiceHostStop</Button>
+<Button Enabled='false' LocalText='[@SquadVoiceJoinStart]' LocalTooltip='[@SquadVoiceJoinStartTooltip]' Location='218,251' Name='VoiceJoinStartButton' PackLocation='center,bottom' PackLocationProp='0016/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceJoinStartTooltip'>@SquadVoiceJoinStart</Button>
+<Button Enabled='false' LocalText='[@SquadVoiceJoinStop]' LocalTooltip='[@SquadVoiceJoinStopTooltip]' Location='218,251' Name='VoiceJoinStopButton' PackLocation='center,bottom' PackLocationProp='0016/0001,-029/0001' ScrollExtent='150,20' Size='150,20' Style='/Buttons.TextButton.style' Tooltip='@SquadVoiceJoinStopTooltip' Visible='false'>@SquadVoiceJoinStop</Button>
+<Template Name='ListboxTemplate' Size='396,20'>\<text color = \'$VoiceStatusColor$\' font = \'/Fonts.MiscIcons\' location = \'5,0\' maxlines = \'1\' size = \'20,18\' textalignment = \'center\' truncateelipsis = \'false\'\>
+$VoiceStatus$
+\</text\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'30,4\' maxlines = \'1\' size = \'20,18\' textalignment = \'right\' truncateelipsis = \'false\'\>
 $MemberID$
 \</text\>
-\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'45,2\' maxlines = \'1\' size = \'$width$,18\'\>
+\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'60,4\' maxlines = \'1\' size = \'$width$,18\'\>
 $Internationalize$
 \</text\></Template>
 </Page>
-<Page Location='18,70' Name='FriendsPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,240' Size='404,240'>
-<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NoFriends]' Location='52,91' MaxLines='1' Name='NoFriendsText' PackLocation='center,center' PackLocationProp='-150/0001,-029/0001' ScrollExtent='291,17' Size='291,17' TextAlignment='Center'>@NoFriends</Text>
-<Image BackgroundOpacity='1.000' Location='1,206' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0003/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='401,31' Size='401,31'/>
-<Rectangle Color='#385E61' Location='2,2' Name='FriendListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0040/0001' ScrollExtent='400,200' Size='400,200'/>
-<Listbox DataSource='/DataSources.FriendsList' Location='4,4' Name='FriendListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0020/0001,0044/0001' RowTemplate='ListboxTemplate' ScrollExtent='384,196' Size='384,196' Style='/Listboxes.Clear.style'/>
-<Scrollbar Control='FriendListbox' Location='391,4' Name='ScrollFriendList' PackLocation='right,top' PackLocationProp='-013/0001,0004/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0044/0001' ScrollExtent='9,196' Size='9,196' Style='/ScrollBars.vertical.style'/>
-<Button LocalText='[@AddFriend]' LocalTooltip='[@AddFriendTooltip]' Location='6,211' Name='AddFriendButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@AddFriendTooltip'>@AddFriend</Button>
-<Button LocalText='[@DeleteFriend]' LocalTooltip='[@DeleteFriendTooltip]' Location='164,211' Name='DeleteFriendButton' PackLocation='center,bottom' PackLocationProp='-038/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DeleteFriendTooltip'>@DeleteFriend</Button>
-<Button LocalText='[@MonitorFriends]' LocalTooltip='[@MonitorFriendsTooltip]' Location='322,211' Name='MonitorFriendsButton' PackLocation='center,bottom' PackLocationProp='0120/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@MonitorFriendsTooltip'>@MonitorFriends</Button>
-<Checkbox BackgroundOpacity='1.000' Location='255,210' Name='HideOn' PackLocation='center,bottom' PackLocationProp='0053/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Visible='false'>@H</Checkbox>
-<Checkbox BackgroundOpacity='1.000' Location='323,210' Name='HideOff' PackLocation='center,bottom' PackLocationProp='0121/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Visible='false'>@NH</Checkbox>
+<Page Location='18,70' Name='FriendsPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280' Visible='false'>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' GetsInput='false' LocalText='[@NoFriends]' Location='52,111' MaxLines='1' Name='NoFriendsText' PackLocation='center,center' PackLocationProp='-150/0001,-029/0001' ScrollExtent='291,17' Size='291,17' TextAlignment='Center'>@NoFriends</Text>
+<Rectangle Color='#385E61' Location='2,2' Name='FriendListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0044/0001' ScrollExtent='400,236' Size='400,236'/>
+<Listbox DataSource='/DataSources.FriendsList' Location='4,4' Name='FriendListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0020/0001,0048/0001' RowTemplate='ListboxTemplate' ScrollExtent='384,232' Size='384,232' Style='/Listboxes.Clear.style'/>
+<Scrollbar Control='FriendListbox' Location='391,4' Name='ScrollFriendList' PackLocation='right,top' PackLocationProp='-013/0001,0004/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0048/0001' ScrollExtent='9,232' Size='9,232' Style='/ScrollBars.vertical.style'/>
+<Image BackgroundOpacity='1.000' Location='1,246' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0003/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='401,31' Size='401,31'/>
+<Button LocalText='[@AddFriend]' LocalTooltip='[@AddFriendTooltip]' Location='6,251' Name='AddFriendButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@AddFriendTooltip'>@AddFriend</Button>
+<Button LocalText='[@DeleteFriend]' LocalTooltip='[@DeleteFriendTooltip]' Location='164,251' Name='DeleteFriendButton' PackLocation='center,bottom' PackLocationProp='-038/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@DeleteFriendTooltip'>@DeleteFriend</Button>
+<Button LocalText='[@MonitorFriends]' LocalTooltip='[@MonitorFriendsTooltip]' Location='322,251' Name='MonitorFriendsButton' PackLocation='center,bottom' PackLocationProp='0120/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@MonitorFriendsTooltip'>@MonitorFriends</Button>
+<Checkbox BackgroundOpacity='1.000' Location='255,254' Name='HideOn' PackLocation='center,bottom' PackLocationProp='0053/0001,-026/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Visible='false'>@H</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='323,254' Name='HideOff' PackLocation='center,bottom' PackLocationProp='0121/0001,-026/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Visible='false'>@NH</Checkbox>
 <Template Name='ListboxTemplate' Size='384,20'>\<text color = \'#FFFF00\' font = \'/Fonts.HudFont2\' location = \'5,2\' maxlines = \'1\' size = \'$width$,18\' textalignment = \'left\' truncateelipsis = \'true\' visible = \'$IsOnline$\'\>
 $Internationalize$
 \</text\>
@@ -1682,16 +1776,16 @@ $Internationalize$
 @FriendsList_Offline
 \</text\></Template>
 </Page>
-<Page Location='18,70' Name='FindPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,240' Size='404,240' Visible='false'>
-<Image BackgroundOpacity='1.000' Location='1,206' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0003/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='401,31' Size='401,31'/>
-<Rectangle Color='#385E61' Location='2,2' Name='FindListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0040/0001' ScrollExtent='400,200' Size='400,200'/>
-<Listbox DataSource='FindList' Location='4,4' Name='FindListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0020/0001,0044/0001' RowTemplate='ListboxTemplate' ScrollExtent='384,196' Size='384,196' Style='/Listboxes.Clear.style' Visible='false'/>
-<Scrollbar Control='FindListbox' Location='391,4' Name='ScrollFindList' PackLocation='right,top' PackLocationProp='-013/0001,0004/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0044/0001' ScrollExtent='9,196' Size='9,196' Style='/ScrollBars.vertical.style'/>
-<Button LocalText='[@FindSearch]' LocalTooltip='[@FindSearchTooltip]' Location='6,211' Name='SearchButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindSearchTooltip'>@FindSearch</Button>
-<Button LocalText='[@FindMessage]' LocalTooltip='[@FindMessageTooltip]' Location='83,211' Name='MessageButton' PackLocation='center,bottom' PackLocationProp='-119/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindMessageTooltip'>@FindMessage</Button>
-<Button LocalText='[@FindInfo]' LocalTooltip='[@FindInfoTooltip]' Location='160,211' Name='InfoButton' PackLocation='center,bottom' PackLocationProp='-042/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindInfoTooltip'>@FindInfo</Button>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FindLookingOnTooltip]' Location='255,210' Name='LookingOn' PackLocation='center,bottom' PackLocationProp='0053/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Tooltip='@FindLookingOnTooltip'>@L</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FindLookingOffTooltip]' Location='323,210' Name='LookingOff' PackLocation='center,bottom' PackLocationProp='0121/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Tooltip='@FindLookingOffTooltip'>@NL</Checkbox>
+<Page Location='18,70' Name='FindPage' PackLocation='left,top' PackLocationProp='0018/0001,0070/0001' PackSize='absolute,absolute' PackSizeProp='0036/0001,0090/0001' ScrollExtent='404,280' Size='404,280' Visible='false'>
+<Rectangle Color='#385E61' Location='2,2' Name='FindListRect' PackLocation='left,top' PackLocationProp='0002/0001,0002/0001' PackSize='absolute,absolute' PackSizeProp='0004/0001,0044/0001' ScrollExtent='400,236' Size='400,236'/>
+<Listbox DataSource='FindList' Location='4,4' Name='FindListbox' PackLocation='left,top' PackLocationProp='0004/0001,0004/0001' PackSize='absolute,absolute' PackSizeProp='0020/0001,0048/0001' RowTemplate='ListboxTemplate' ScrollExtent='384,232' Size='384,232' Style='/Listboxes.Clear.style' Visible='false'/>
+<Scrollbar Control='FindListbox' Location='391,4' Name='ScrollFindList' PackLocation='right,top' PackLocationProp='-013/0001,0004/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0048/0001' ScrollExtent='9,232' Size='9,232' Style='/ScrollBars.vertical.style'/>
+<Image BackgroundOpacity='1.000' Location='1,246' Name='ButtonBorder' PackLocation='left,bottom' PackLocationProp='0001/0001,-034/0001' PackSize='absolute,fixed' PackSizeProp='0003/0001,0002/0003' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='401,31' Size='401,31'/>
+<Button LocalText='[@FindSearch]' LocalTooltip='[@FindSearchTooltip]' Location='6,251' Name='SearchButton' PackLocation='center,bottom' PackLocationProp='-196/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindSearchTooltip'>@FindSearch</Button>
+<Button LocalText='[@FindMessage]' LocalTooltip='[@FindMessageTooltip]' Location='83,251' Name='MessageButton' PackLocation='center,bottom' PackLocationProp='-119/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindMessageTooltip'>@FindMessage</Button>
+<Button LocalText='[@FindInfo]' LocalTooltip='[@FindInfoTooltip]' Location='160,251' Name='InfoButton' PackLocation='center,bottom' PackLocationProp='-042/0001,-029/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style' Tooltip='@FindInfoTooltip'>@FindInfo</Button>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FindLookingOnTooltip]' Location='255,250' Name='LookingOn' PackLocation='center,bottom' PackLocationProp='0053/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Tooltip='@FindLookingOnTooltip'>@L</Checkbox>
+<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@FindLookingOffTooltip]' Location='323,250' Name='LookingOff' PackLocation='center,bottom' PackLocationProp='0121/0001,-030/0001' ScrollExtent='57,22' Size='57,22' Style='/Buttons.LargeRadiobox.style' Tooltip='@FindLookingOffTooltip'>@NL</Checkbox>
 <Template Name='ListboxTemplate' Size='384,20'>\<text color = \'$color$\' font = \'/Fonts.HudFont2\' location = \'5,2\' maxlines = \'1\' size = \'$width$,18\' visible = \'$IsNotHeading$\'\>
 $Internationalize$
 \</text\>
@@ -1705,7 +1799,7 @@ $Internationalize$
 <Data color='#FFFFFF' internationalize='SOLO SOLDIERS' isheading='true' isnotheading='false' Name='SoloSoldierHeading' width='384'/>
 </DataSource>
 </Page>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,20' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='440,310' Size='440,310' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,20' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='440,350' Size='440,350' Stretch='false'/>
 </Page>
 <Page Location='313,167' movable='true' Name='KeyCard' ScrollExtent='376,446' Size='376,446' Visible='false'>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='198,208' Name='AccessSeparator' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='157,8' Size='157,8'/>
@@ -1753,13 +1847,26 @@ $displayname$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='19,399' Name='ButtonBorder' RStyleDefault='/WindowPanes.ButtonBorder.style' ScrollExtent='341,31' Size='341,31'/>
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,15' Name='Background' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='376,434' Size='376,434' Stretch='false'/>
 </Page>
-<Page Location='5,4' maxsize='500,500' minsize='193,216' movable='true' Name='Radar' preserveaspectratio='true' resizable='true' ScrollExtent='220,236' Size='220,236'>
-<Page BackgroundColor='#FFFFFF' Location='14,32' MinimumSize='100,100' Name='MapPage' PackSize='absolute,absolute' PackSizeProp='0028/0001,0047/0001' ScrollExtent='192,189' Size='192,189'>
-<Image Enabled='false' Location='89,86' Name='PlayerBlip' PackLocation='center,center' PackLocationProp='-007/0001,-008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='14,16' Size='14,16' Stretch='false' Style='/Icons.HUD.Radar_avatar_blip'/>
-<Image AbsorbsInput='false' Enabled='false' Location='0,1' Name='Compass' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='192,188' Size='192,188' Style='/Icons.HUD.Radar_compass'/>
-<Ellipse AbsorbsInput='false' ArcBegin='0.740' ArcEnd='0.760' Color='#FFFF00' Enabled='false' GetsInput='false' InnerRadiusColor='#FFFF00' Location='0,1' Name='VehicleFinder' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='192,188' Size='192,188' Thickness='5.000' Visible='false'/>
-<Ellipse AbsorbsInput='false' ArcBegin='0.600' ArcEnd='0.900' Color='#7AAACB' Enabled='false' GetsInput='false' InnerRadiusColor='#7AAACB' Location='0,1' Name='FOV' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' Rotation='0.750' ScrollExtent='192,188' Size='192,188' Thickness='600.000' Visible='false'/>
-<Image Color='#FF0000' Location='135,170' Name='SquadBlip0' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_0' Visible='false'/>
+<Page Location='5,4' maxsize='500,500' minsize='193,216' movable='true' Name='Radar' preserveaspectratio='true' resizable='true' ScrollExtent='212,233' Size='212,233'>
+<Page Location='64,7' Name='HeadingPage' ScrollExtent='80,18' Size='80,18' Visible='false'>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='-60,0' Name='Heading' RStyleActivated=' ' ScrollExtent='662,18' Size='662,18' Stretch='false' Style='/Icons.HUD.Radar_directions'/>
+</Page>
+<Page Location='0,-1' Name='Control' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='212,30' Size='212,30'>
+<Page Location='58,2' Name='MainControl' ScrollExtent='97,27' Size='97,27'>
+<Button LocalTooltip='[@IncreaseRangeTooltip]' Location='31,3' Name='Up' PackLocation='right,top' PackLocationProp='-066/0001,0003/0001' ScrollExtent='41,12' Size='41,12' Style='/Buttons.Radar_Up.style' Tooltip='@IncreaseRangeTooltip'></Button>
+<Button LocalTooltip='[@DecreaseRangeTooltip]' Location='36,15' Name='Down' PackLocation='right,top' PackLocationProp='-061/0001,0015/0001' ScrollExtent='33,12' Size='33,12' Style='/Buttons.Radar_Down.style' Tooltip='@DecreaseRangeTooltip'></Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='200' Location='-5,7' Name='Distance' PackLocation='right,top' PackLocationProp='-102/0001,0007/0001' ScrollExtent='46,17' Size='46,17' TextAlignment='Center' TextAlignmentVertical='Center'>200</Text>
+</Page>
+<Button LocalTooltip='[@MinimizeTooltip]' Location='19,1' Name='Minimize' ScrollExtent='37,30' Size='37,30' Style='/Buttons.HUD_Minimize.style' Tooltip='@MinimizeTooltip'></Button>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='151,7' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-061/0001,0007/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='32,0' Name='Title' PackLocation='left,top' PackLocationProp='0032/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='157,32' Size='157,32'/>
+</Page>
+<Page BackgroundColor='#FFFFFF' Location='12,32' MinimumSize='100,100' Name='MapPage' PackSize='absolute,absolute' PackSizeProp='0024/0001,0045/0001' ScrollExtent='188,188' Size='188,188'>
+<Image Enabled='false' Location='87,86' Name='PlayerBlip' PackLocation='center,center' PackLocationProp='-007/0001,-008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='14,16' Size='14,16' Stretch='false' Style='/Icons.HUD.Radar_avatar_blip'/>
+<Image AbsorbsInput='false' Enabled='false' Location='0,1' Name='Compass' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187' Style='/Icons.HUD.Radar_compass'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.740' ArcEnd='0.760' Color='#FFFF00' Enabled='false' GetsInput='false' InnerRadiusColor='#FFFF00' Location='0,1' Name='VehicleFinder' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187' Thickness='5.000'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.600' ArcEnd='0.900' Color='#7AAACB' Enabled='false' GetsInput='false' InnerRadiusColor='#7AAACB' Location='0,1' Name='FOV' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' Rotation='0.750' ScrollExtent='188,187' Size='188,187' Thickness='600.000' Visible='false'/>
+<Image Color='#FFDC00' Location='135,170' Name='SquadBlip0' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_0' Visible='false'/>
 <Image Color='#FF0000' Location='45,170' Name='SquadBlip1' ScrollExtent='7,14' Size='7,14' Stretch='false' Style='/Icons.HUD.Radar_digit_1' Visible='false'/>
 <Image Color='#FF0000' Location='55,170' Name='SquadBlip2' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_2' Visible='false'/>
 <Image Color='#FF0000' Location='65,170' Name='SquadBlip3' ScrollExtent='10,14' Size='10,14' Stretch='false' Style='/Icons.HUD.Radar_digit_3' Visible='false'/>
@@ -1792,8 +1899,36 @@ $displayname$
 <Image Location='35,170' Name='MissileBlip' PackLocation='Top,Left' PackLocationProp='0035/0001,0170/0001' ScrollExtent='4,11' Size='4,11' Style='/Icons.HUD.Radar_missile_blip' Visible='false'/>
 <Image Location='58,38' Name='HartBlip' PackLocation='Top,Left' PackLocationProp='0058/0001,0038/0001' ScrollExtent='60,128' Size='60,128' Style='/Icons.HUD.Radar_hart_blip' Visible='false'/>
 <Image AbsorbsInput='false' Enabled='false' Location='0,1' Name='Building' Opacity='0.750' PackLocation='left,top' PackLocationProp='0000/0001,0001/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='193,192' Size='193,192' Style='BuildingMaps.Map_4_0'/>
-<OverheadMap AbsorbsInput='false' Enabled='false' GetsInput='false' Location='0,1' Name='OverheadMap' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='192,188' Size='192,188'/>
+<OverheadMap AbsorbsInput='false' Enabled='false' GetsInput='false' Location='0,1' Name='OverheadMap' Opacity='0.500' PackSize='absolute,absolute' PackSizeProp='0000/0001,0001/0001' ScrollExtent='188,187' Size='188,187'/>
 <Namespace Name='BuildingMaps'>
+<ImageStyle Name='Map_bunker_0'>
+<ImageFrame>
+<ImageFragment Source='ui_building_bunker_gauntlet_0_00' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,0' Source='ui_building_bunker_gauntlet_0_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,0' Source='ui_building_bunker_gauntlet_0_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,0' Source='ui_building_bunker_gauntlet_0_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,0' Source='ui_building_bunker_gauntlet_0_04' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,64' Source='ui_building_bunker_gauntlet_0_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,64' Source='ui_building_bunker_gauntlet_0_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,64' Source='ui_building_bunker_gauntlet_0_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,64' Source='ui_building_bunker_gauntlet_0_08' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,64' Source='ui_building_bunker_gauntlet_0_09' SourceRect='0,0,16,32'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Map_bunker_1'>
+<ImageFrame>
+<ImageFragment Source='ui_building_bunker_gauntlet_1_00' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,0' Source='ui_building_bunker_gauntlet_1_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,0' Source='ui_building_bunker_gauntlet_1_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,0' Source='ui_building_bunker_gauntlet_1_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,0' Source='ui_building_bunker_gauntlet_1_04' SourceRect='0,0,16,64'/>
+<ImageFragment Offset='0,64' Source='ui_building_bunker_gauntlet_1_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,64' Source='ui_building_bunker_gauntlet_1_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,64' Source='ui_building_bunker_gauntlet_1_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,64' Source='ui_building_bunker_gauntlet_1_08' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,64' Source='ui_building_bunker_gauntlet_1_09' SourceRect='0,0,16,32'/>
+</ImageFrame>
+</ImageStyle>
 <ImageStyle Name='Map_bunker_sm_0'>
 <ImageFrame Source='ui_building_bunker_sm_0_00' SourceRect='0,0,32,32'/>
 </ImageStyle>
@@ -1810,26 +1945,11 @@ $displayname$
 <ImageStyle Name='Map_training_0'>
 <ImageFrame>
 <ImageFragment Source='ui_building_vr_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_vr_0_01' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,0' Source='ui_building_vr_0_02' SourceRect='0,0,28,32'/>
-<ImageFragment Offset='128,32' Source='ui_building_vr_0_03' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,32' Source='ui_building_vr_0_04' SourceRect='0,0,28,32'/>
-<ImageFragment Offset='128,64' Source='ui_building_vr_0_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,64' Source='ui_building_vr_0_06' SourceRect='0,0,28,32'/>
-<ImageFragment Offset='128,96' Source='ui_building_vr_0_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,96' Source='ui_building_vr_0_08' SourceRect='0,0,28,32'/>
-<ImageFragment Offset='0,128' Source='ui_building_vr_0_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,128' Source='ui_building_vr_0_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,128' Source='ui_building_vr_0_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,128' Source='ui_building_vr_0_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,128' Source='ui_building_vr_0_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,128' Source='ui_building_vr_0_14' SourceRect='0,0,28,32'/>
-<ImageFragment Offset='0,160' Source='ui_building_vr_0_15' SourceRect='0,0,32,29'/>
-<ImageFragment Offset='32,160' Source='ui_building_vr_0_16' SourceRect='0,0,32,29'/>
-<ImageFragment Offset='64,160' Source='ui_building_vr_0_17' SourceRect='0,0,32,29'/>
-<ImageFragment Offset='96,160' Source='ui_building_vr_0_18' SourceRect='0,0,32,29'/>
-<ImageFragment Offset='128,160' Source='ui_building_vr_0_19' SourceRect='0,0,32,29'/>
-<ImageFragment Offset='160,160' Source='ui_building_vr_0_20' SourceRect='0,0,28,29'/>
+<ImageFragment Offset='128,0' Source='ui_building_vr_0_01' SourceRect='0,0,60,64'/>
+<ImageFragment Offset='128,64' Source='ui_building_vr_0_02' SourceRect='0,0,60,64'/>
+<ImageFragment Offset='0,128' Source='ui_building_vr_0_03' SourceRect='0,0,64,61'/>
+<ImageFragment Offset='64,128' Source='ui_building_vr_0_04' SourceRect='0,0,64,61'/>
+<ImageFragment Offset='128,128' Source='ui_building_vr_0_05' SourceRect='0,0,60,61'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_meeting_0'>
@@ -1881,58 +2001,28 @@ $displayname$
 <ImageStyle Name='Map_towera_3'>
 <ImageFrame Source='ui_building_tower_a_3_00' SourceRect='0,0,64,64'/>
 </ImageStyle>
-<ImageStyle Name='Map_station_1'>
-<ImageFrame>
-<ImageFragment Source='ui_building_station_1_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ui_building_station_1_01' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='512,0' Source='ui_building_station_1_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_building_station_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,0' Source='ui_building_station_1_04' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='768,128' Source='ui_building_station_1_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,128' Source='ui_building_station_1_06' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_station_1_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_station_1_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_station_1_09' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,256' Source='ui_building_station_1_10' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='512,256' Source='ui_building_station_1_11' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='640,256' Source='ui_building_station_1_12' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='768,256' Source='ui_building_station_1_13' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,256' Source='ui_building_station_1_14' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_station_1_15' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_station_1_16' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_station_1_17' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='384,384' Source='ui_building_station_1_18' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='512,384' Source='ui_building_station_1_19' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='640,384' Source='ui_building_station_1_20' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='768,384' Source='ui_building_station_1_21' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='896,384' Source='ui_building_station_1_22' SourceRect='0,0,32,64'/>
-</ImageFrame>
-</ImageStyle>
 <ImageStyle Name='Map_station_0'>
 <ImageFrame>
 <ImageFragment Source='ui_building_station_0_00' SourceRect='0,0,256,256'/>
 <ImageFragment Offset='256,0' Source='ui_building_station_0_01' SourceRect='0,0,256,256'/>
 <ImageFragment Offset='512,0' Source='ui_building_station_0_02' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='768,0' Source='ui_building_station_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,0' Source='ui_building_station_0_04' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='768,128' Source='ui_building_station_0_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,128' Source='ui_building_station_0_06' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_station_0_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_station_0_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_station_0_09' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='384,256' Source='ui_building_station_0_10' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='512,256' Source='ui_building_station_0_11' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='640,256' Source='ui_building_station_0_12' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='768,256' Source='ui_building_station_0_13' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='896,256' Source='ui_building_station_0_14' SourceRect='0,0,32,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_station_0_15' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_station_0_16' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_station_0_17' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='384,384' Source='ui_building_station_0_18' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='512,384' Source='ui_building_station_0_19' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='640,384' Source='ui_building_station_0_20' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='768,384' Source='ui_building_station_0_21' SourceRect='0,0,128,64'/>
-<ImageFragment Offset='896,384' Source='ui_building_station_0_22' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='768,0' Source='ui_building_station_0_03' SourceRect='0,0,160,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_station_0_04' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='256,256' Source='ui_building_station_0_05' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='512,256' Source='ui_building_station_0_06' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='768,256' Source='ui_building_station_0_07' SourceRect='0,0,160,192'/>
+</ImageFrame>
+</ImageStyle>
+<ImageStyle Name='Map_station_1'>
+<ImageFrame>
+<ImageFragment Source='ui_building_station_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_station_1_01' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='512,0' Source='ui_building_station_1_02' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='768,0' Source='ui_building_station_1_03' SourceRect='0,0,160,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_station_1_04' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='256,256' Source='ui_building_station_1_05' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='512,256' Source='ui_building_station_1_06' SourceRect='0,0,256,192'/>
+<ImageFragment Offset='768,256' Source='ui_building_station_1_07' SourceRect='0,0,160,192'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_orbital_0'>
@@ -1940,29 +2030,21 @@ $displayname$
 <ImageFragment Source='ui_building_orbital_0_00' SourceRect='0,0,128,128'/>
 <ImageFragment Offset='0,128' Source='ui_building_orbital_0_01' SourceRect='0,0,128,128'/>
 <ImageFragment Offset='128,0' Source='ui_building_orbital_0_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_orbital_0_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,128' Source='ui_building_orbital_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,192' Source='ui_building_orbital_0_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_orbital_0_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,32' Source='ui_building_orbital_0_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,64' Source='ui_building_orbital_0_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,96' Source='ui_building_orbital_0_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,128' Source='ui_building_orbital_0_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,160' Source='ui_building_orbital_0_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,192' Source='ui_building_orbital_0_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,224' Source='ui_building_orbital_0_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_orbital_0_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_orbital_0_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_orbital_0_16' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_orbital_0_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,288' Source='ui_building_orbital_0_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,320' Source='ui_building_orbital_0_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_orbital_0_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_orbital_0_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_orbital_0_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_orbital_0_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_orbital_0_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_orbital_0_25' SourceRect='0,0,32,32'/>
+<ImageFragment Offset='192,0' Source='ui_building_orbital_0_03' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,64' Source='ui_building_orbital_0_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,64' Source='ui_building_orbital_0_05' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,128' Source='ui_building_orbital_0_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,128' Source='ui_building_orbital_0_07' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,192' Source='ui_building_orbital_0_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,192' Source='ui_building_orbital_0_09' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_orbital_0_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_orbital_0_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_orbital_0_12' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_orbital_0_13' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_orbital_0_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_orbital_0_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_orbital_0_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_orbital_0_17' SourceRect='0,0,48,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_orbital_1'>
@@ -1970,570 +2052,379 @@ $displayname$
 <ImageFragment Source='ui_building_orbital_1_00' SourceRect='0,0,128,128'/>
 <ImageFragment Offset='0,128' Source='ui_building_orbital_1_01' SourceRect='0,0,128,128'/>
 <ImageFragment Offset='128,0' Source='ui_building_orbital_1_02' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,64' Source='ui_building_orbital_1_03' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,128' Source='ui_building_orbital_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,192' Source='ui_building_orbital_1_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,0' Source='ui_building_orbital_1_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,32' Source='ui_building_orbital_1_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,64' Source='ui_building_orbital_1_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,96' Source='ui_building_orbital_1_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,128' Source='ui_building_orbital_1_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,160' Source='ui_building_orbital_1_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,192' Source='ui_building_orbital_1_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,224' Source='ui_building_orbital_1_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_orbital_1_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_orbital_1_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_orbital_1_16' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_orbital_1_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,288' Source='ui_building_orbital_1_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,320' Source='ui_building_orbital_1_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_orbital_1_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_orbital_1_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_orbital_1_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_orbital_1_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_orbital_1_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_orbital_1_25' SourceRect='0,0,32,32'/>
+<ImageFragment Offset='192,0' Source='ui_building_orbital_1_03' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,64' Source='ui_building_orbital_1_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,64' Source='ui_building_orbital_1_05' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,128' Source='ui_building_orbital_1_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,128' Source='ui_building_orbital_1_07' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='128,192' Source='ui_building_orbital_1_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,192' Source='ui_building_orbital_1_09' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_orbital_1_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_orbital_1_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_orbital_1_12' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_orbital_1_13' SourceRect='0,0,48,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_orbital_1_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_orbital_1_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_orbital_1_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_orbital_1_17' SourceRect='0,0,48,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_drop_0'>
 <ImageFrame>
-<ImageFragment Source='ui_building_dropship_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_dropship_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_dropship_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_dropship_0_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_0_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_0_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_0_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_0_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_0_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_0_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_0_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_0_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_0_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_0_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_0_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,448' Source='ui_building_dropship_0_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_0_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,448' Source='ui_building_dropship_0_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_0_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,448' Source='ui_building_dropship_0_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_0_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,448' Source='ui_building_dropship_0_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_0_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='288,448' Source='ui_building_dropship_0_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_0_25' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='352,448' Source='ui_building_dropship_0_26' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_dropship_0_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_dropship_0_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,128' Source='ui_building_dropship_0_02' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,256' Source='ui_building_dropship_0_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_dropship_0_04' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_dropship_0_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,384' Source='ui_building_dropship_0_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,384' Source='ui_building_dropship_0_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,384' Source='ui_building_dropship_0_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,384' Source='ui_building_dropship_0_09' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,384' Source='ui_building_dropship_0_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='320,384' Source='ui_building_dropship_0_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,448' Source='ui_building_dropship_0_12' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,448' Source='ui_building_dropship_0_13' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,448' Source='ui_building_dropship_0_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,448' Source='ui_building_dropship_0_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,448' Source='ui_building_dropship_0_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='320,448' Source='ui_building_dropship_0_17' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_drop_1'>
 <ImageFrame>
-<ImageFragment Source='ui_building_dropship_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_dropship_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_dropship_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_dropship_1_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_1_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_1_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_1_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_1_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_1_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_1_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_1_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_1_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_1_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_1_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_1_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,448' Source='ui_building_dropship_1_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_1_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,448' Source='ui_building_dropship_1_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_1_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,448' Source='ui_building_dropship_1_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_1_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,448' Source='ui_building_dropship_1_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_1_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='288,448' Source='ui_building_dropship_1_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_1_25' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='352,448' Source='ui_building_dropship_1_26' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_dropship_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_dropship_1_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,128' Source='ui_building_dropship_1_02' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,256' Source='ui_building_dropship_1_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_dropship_1_04' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_dropship_1_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,384' Source='ui_building_dropship_1_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,384' Source='ui_building_dropship_1_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,384' Source='ui_building_dropship_1_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,384' Source='ui_building_dropship_1_09' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,384' Source='ui_building_dropship_1_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='320,384' Source='ui_building_dropship_1_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,448' Source='ui_building_dropship_1_12' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,448' Source='ui_building_dropship_1_13' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,448' Source='ui_building_dropship_1_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,448' Source='ui_building_dropship_1_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,448' Source='ui_building_dropship_1_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='320,448' Source='ui_building_dropship_1_17' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_drop_2'>
 <ImageFrame>
-<ImageFragment Source='ui_building_dropship_2_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_dropship_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_dropship_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_dropship_2_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_2_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_2_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_2_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_2_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_2_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_2_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_2_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_2_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_2_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_2_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_2_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,448' Source='ui_building_dropship_2_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_2_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,448' Source='ui_building_dropship_2_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_2_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,448' Source='ui_building_dropship_2_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_2_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,448' Source='ui_building_dropship_2_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_2_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='288,448' Source='ui_building_dropship_2_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_2_25' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='352,448' Source='ui_building_dropship_2_26' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_dropship_2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_dropship_2_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,128' Source='ui_building_dropship_2_02' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,256' Source='ui_building_dropship_2_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_dropship_2_04' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_dropship_2_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,384' Source='ui_building_dropship_2_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,384' Source='ui_building_dropship_2_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,384' Source='ui_building_dropship_2_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,384' Source='ui_building_dropship_2_09' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,384' Source='ui_building_dropship_2_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='320,384' Source='ui_building_dropship_2_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,448' Source='ui_building_dropship_2_12' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,448' Source='ui_building_dropship_2_13' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,448' Source='ui_building_dropship_2_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,448' Source='ui_building_dropship_2_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,448' Source='ui_building_dropship_2_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='320,448' Source='ui_building_dropship_2_17' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_drop_3'>
 <ImageFrame>
-<ImageFragment Source='ui_building_dropship_3_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_dropship_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_dropship_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_dropship_3_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_3_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_3_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_3_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_3_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_3_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_3_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_3_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_3_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_3_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_3_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_3_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,448' Source='ui_building_dropship_3_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_3_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,448' Source='ui_building_dropship_3_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_3_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,448' Source='ui_building_dropship_3_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_3_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,448' Source='ui_building_dropship_3_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_3_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='288,448' Source='ui_building_dropship_3_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_3_25' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='352,448' Source='ui_building_dropship_3_26' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_dropship_3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_dropship_3_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,128' Source='ui_building_dropship_3_02' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,256' Source='ui_building_dropship_3_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_dropship_3_04' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_dropship_3_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,384' Source='ui_building_dropship_3_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,384' Source='ui_building_dropship_3_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,384' Source='ui_building_dropship_3_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,384' Source='ui_building_dropship_3_09' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,384' Source='ui_building_dropship_3_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='320,384' Source='ui_building_dropship_3_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,448' Source='ui_building_dropship_3_12' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,448' Source='ui_building_dropship_3_13' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,448' Source='ui_building_dropship_3_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,448' Source='ui_building_dropship_3_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,448' Source='ui_building_dropship_3_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='320,448' Source='ui_building_dropship_3_17' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_drop_4'>
 <ImageFrame>
-<ImageFragment Source='ui_building_dropship_4_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_dropship_4_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_dropship_4_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_dropship_4_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_dropship_4_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,128' Source='ui_building_dropship_4_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_dropship_4_06' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_dropship_4_07' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,256' Source='ui_building_dropship_4_08' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,384' Source='ui_building_dropship_4_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,384' Source='ui_building_dropship_4_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,384' Source='ui_building_dropship_4_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,384' Source='ui_building_dropship_4_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,384' Source='ui_building_dropship_4_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='320,384' Source='ui_building_dropship_4_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,448' Source='ui_building_dropship_4_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,448' Source='ui_building_dropship_4_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,448' Source='ui_building_dropship_4_17' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,448' Source='ui_building_dropship_4_18' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,448' Source='ui_building_dropship_4_19' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,448' Source='ui_building_dropship_4_20' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,448' Source='ui_building_dropship_4_21' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,448' Source='ui_building_dropship_4_22' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,448' Source='ui_building_dropship_4_23' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='288,448' Source='ui_building_dropship_4_24' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='320,448' Source='ui_building_dropship_4_25' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='352,448' Source='ui_building_dropship_4_26' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_dropship_4_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_dropship_4_01' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,128' Source='ui_building_dropship_4_02' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,256' Source='ui_building_dropship_4_03' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_dropship_4_04' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_dropship_4_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='0,384' Source='ui_building_dropship_4_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,384' Source='ui_building_dropship_4_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,384' Source='ui_building_dropship_4_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,384' Source='ui_building_dropship_4_09' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,384' Source='ui_building_dropship_4_10' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='320,384' Source='ui_building_dropship_4_11' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,448' Source='ui_building_dropship_4_12' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,448' Source='ui_building_dropship_4_13' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,448' Source='ui_building_dropship_4_14' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,448' Source='ui_building_dropship_4_15' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='256,448' Source='ui_building_dropship_4_16' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='320,448' Source='ui_building_dropship_4_17' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_tech_0'>
 <ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_tech_plant_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_tech_plant_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_tech_plant_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_0_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_0_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_0_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_0_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_0_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_0_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_0_12' SourceRect='0,0,64,64'/>
+<ImageFragment Source='ui_building_tech_plant_0_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_tech_plant_0_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_tech_plant_0_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_tech_plant_0_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_tech_plant_0_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_tech_plant_0_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_tech_plant_0_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_tech_plant_0_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_tech_plant_0_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_tech_plant_0_09' SourceRect='0,0,64,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_tech_1'>
 <ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_tech_plant_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_tech_plant_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_tech_plant_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_1_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_1_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_1_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_1_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_1_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_1_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_1_12' SourceRect='0,0,64,64'/>
+<ImageFragment Source='ui_building_tech_plant_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_tech_plant_1_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_tech_plant_1_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_tech_plant_1_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_tech_plant_1_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_tech_plant_1_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_tech_plant_1_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_tech_plant_1_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_tech_plant_1_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_tech_plant_1_09' SourceRect='0,0,64,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_tech_2'>
 <ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_2_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_tech_plant_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_tech_plant_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_tech_plant_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_2_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_2_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_2_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_2_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_2_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_2_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_2_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_2_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_2_12' SourceRect='0,0,64,64'/>
+<ImageFragment Source='ui_building_tech_plant_2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_tech_plant_2_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_tech_plant_2_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_tech_plant_2_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_tech_plant_2_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_tech_plant_2_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_tech_plant_2_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_tech_plant_2_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_tech_plant_2_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_tech_plant_2_09' SourceRect='0,0,64,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_tech_3'>
 <ImageFrame>
-<ImageFragment Source='ui_building_tech_plant_3_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_tech_plant_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_tech_plant_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_tech_plant_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_tech_plant_3_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,64' Source='ui_building_tech_plant_3_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,128' Source='ui_building_tech_plant_3_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,192' Source='ui_building_tech_plant_3_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,256' Source='ui_building_tech_plant_3_08' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_tech_plant_3_09' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_tech_plant_3_10' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_tech_plant_3_11' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_tech_plant_3_12' SourceRect='0,0,64,64'/>
+<ImageFragment Source='ui_building_tech_plant_3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_tech_plant_3_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_tech_plant_3_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_tech_plant_3_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_tech_plant_3_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_tech_plant_3_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_tech_plant_3_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_tech_plant_3_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_tech_plant_3_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_tech_plant_3_09' SourceRect='0,0,64,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_bio_0'>
 <ImageFrame>
-<ImageFragment Source='ui_building_cyro_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_cyro_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_cyro_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_cyro_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_0_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_0_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_0_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_0_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_0_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_cyro_0_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_0_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_cyro_0_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_0_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_cyro_0_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_0_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,320' Source='ui_building_cyro_0_15' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_cyro_0_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_cyro_0_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_cyro_0_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_cyro_0_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_cyro_0_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_cyro_0_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_cyro_0_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_cyro_0_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_cyro_0_08' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_bio_1'>
 <ImageFrame>
-<ImageFragment Source='ui_building_cyro_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_cyro_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_cyro_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_cyro_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_1_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_1_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_1_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_1_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_1_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_cyro_1_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_1_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_cyro_1_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_1_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_cyro_1_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_1_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,320' Source='ui_building_cyro_1_15' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_cyro_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_cyro_1_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_cyro_1_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_cyro_1_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_cyro_1_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_cyro_1_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_cyro_1_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_cyro_1_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_cyro_1_08' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_bio_2'>
 <ImageFrame>
-<ImageFragment Source='ui_building_cyro_2_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_cyro_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_cyro_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_cyro_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_2_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_2_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_2_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_2_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_2_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_cyro_2_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_2_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_cyro_2_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_2_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_cyro_2_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_2_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,320' Source='ui_building_cyro_2_15' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_cyro_2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_cyro_2_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_cyro_2_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_cyro_2_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_cyro_2_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_cyro_2_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_cyro_2_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_cyro_2_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_cyro_2_08' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_bio_3'>
 <ImageFrame>
-<ImageFragment Source='ui_building_cyro_3_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_cyro_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_cyro_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_cyro_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_cyro_3_04' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_cyro_3_05' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_cyro_3_06' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_cyro_3_07' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='0,320' Source='ui_building_cyro_3_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='32,320' Source='ui_building_cyro_3_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='64,320' Source='ui_building_cyro_3_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='96,320' Source='ui_building_cyro_3_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='128,320' Source='ui_building_cyro_3_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='160,320' Source='ui_building_cyro_3_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='192,320' Source='ui_building_cyro_3_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='224,320' Source='ui_building_cyro_3_15' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_cyro_3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='0,256' Source='ui_building_cyro_3_01' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_cyro_3_02' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_cyro_3_03' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_cyro_3_04' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='0,320' Source='ui_building_cyro_3_05' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='64,320' Source='ui_building_cyro_3_06' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='128,320' Source='ui_building_cyro_3_07' SourceRect='0,0,64,32'/>
+<ImageFragment Offset='192,320' Source='ui_building_cyro_3_08' SourceRect='0,0,64,32'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_comm_0'>
 <ImageFrame>
-<ImageFragment Source='ui_building_comm_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_comm_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_comm_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_comm_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_0_04' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_comm_0_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_0_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_comm_0_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_0_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_comm_0_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_0_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_comm_0_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_0_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_0_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_0_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_0_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_0_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_comm_0_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_comm_0_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_comm_0_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_comm_0_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_comm_0_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_comm_0_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_comm_0_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_comm_0_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_comm_0_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_comm_0_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_comm_0_09' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_comm_1'>
 <ImageFrame>
-<ImageFragment Source='ui_building_comm_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_comm_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_comm_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_comm_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_1_04' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_comm_1_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_1_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_comm_1_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_1_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_comm_1_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_1_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_comm_1_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_1_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_1_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_1_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_1_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_1_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_comm_1_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_comm_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_comm_1_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_comm_1_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_comm_1_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_comm_1_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_comm_1_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_comm_1_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_comm_1_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_comm_1_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_comm_1_09' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_comm_2'>
 <ImageFrame>
-<ImageFragment Source='ui_building_comm_2_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_comm_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_comm_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_comm_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_2_04' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_comm_2_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_2_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_comm_2_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_2_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_comm_2_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_2_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_comm_2_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_2_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_2_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_2_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_2_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_2_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_comm_2_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_comm_2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_comm_2_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_comm_2_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_comm_2_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_comm_2_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_comm_2_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_comm_2_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_comm_2_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_comm_2_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_comm_2_09' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_comm_3'>
 <ImageFrame>
-<ImageFragment Source='ui_building_comm_3_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_comm_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_comm_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_comm_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_3_04' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_comm_3_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_3_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_comm_3_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_3_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_comm_3_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_3_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_comm_3_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_3_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_3_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_3_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_3_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_3_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_comm_3_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_comm_3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_comm_3_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_comm_3_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_comm_3_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_comm_3_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_comm_3_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_comm_3_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_comm_3_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_comm_3_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_comm_3_09' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_comm_4'>
 <ImageFrame>
-<ImageFragment Source='ui_building_comm_4_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_comm_4_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_comm_4_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_comm_4_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_comm_4_04' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_comm_4_05' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_comm_4_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_comm_4_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_comm_4_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_comm_4_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_comm_4_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_comm_4_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='0,256' Source='ui_building_comm_4_12' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='64,256' Source='ui_building_comm_4_13' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='128,256' Source='ui_building_comm_4_14' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='192,256' Source='ui_building_comm_4_15' SourceRect='0,0,64,64'/>
-<ImageFragment Offset='256,256' Source='ui_building_comm_4_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_comm_4_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_comm_4_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_comm_4_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_comm_4_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_comm_4_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_comm_4_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_comm_4_05' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='64,256' Source='ui_building_comm_4_06' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='128,256' Source='ui_building_comm_4_07' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='192,256' Source='ui_building_comm_4_08' SourceRect='0,0,64,64'/>
+<ImageFragment Offset='256,256' Source='ui_building_comm_4_09' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_amp_0'>
 <ImageFrame>
-<ImageFragment Source='ui_building_amp_0_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_amp_0_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_amp_0_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_amp_0_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_0_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_0_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_0_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_amp_0_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_0_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_amp_0_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_0_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_amp_0_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_0_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_amp_0_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_0_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_amp_0_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_0_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,352' Source='ui_building_amp_0_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_amp_0_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_amp_0_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_amp_0_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_amp_0_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_amp_0_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_amp_0_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_amp_0_06' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_amp_0_07' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,320' Source='ui_building_amp_0_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_amp_1'>
 <ImageFrame>
-<ImageFragment Source='ui_building_amp_1_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_amp_1_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_amp_1_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_amp_1_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_1_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_1_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_1_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_amp_1_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_1_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_amp_1_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_1_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_amp_1_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_1_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_amp_1_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_1_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_amp_1_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_1_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,352' Source='ui_building_amp_1_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_amp_1_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_amp_1_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_amp_1_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_amp_1_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_amp_1_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_amp_1_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_amp_1_06' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_amp_1_07' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,320' Source='ui_building_amp_1_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_amp_2'>
 <ImageFrame>
-<ImageFragment Source='ui_building_amp_2_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_amp_2_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_amp_2_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_amp_2_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_2_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_2_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_2_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_amp_2_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_2_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_amp_2_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_2_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_amp_2_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_2_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_amp_2_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_2_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_amp_2_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_2_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,352' Source='ui_building_amp_2_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_amp_2_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_amp_2_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_amp_2_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_amp_2_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_amp_2_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_amp_2_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_amp_2_06' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_amp_2_07' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,320' Source='ui_building_amp_2_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_amp_3'>
 <ImageFrame>
-<ImageFragment Source='ui_building_amp_3_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_amp_3_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_amp_3_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_amp_3_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_3_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_3_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_3_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_amp_3_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_3_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_amp_3_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_3_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_amp_3_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_3_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_amp_3_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_3_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_amp_3_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_3_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,352' Source='ui_building_amp_3_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_amp_3_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_amp_3_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_amp_3_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_amp_3_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_amp_3_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_amp_3_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_amp_3_06' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_amp_3_07' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,320' Source='ui_building_amp_3_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 <ImageStyle Name='Map_amp_4'>
 <ImageFrame>
-<ImageFragment Source='ui_building_amp_4_00' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,0' Source='ui_building_amp_4_01' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,128' Source='ui_building_amp_4_02' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,128' Source='ui_building_amp_4_03' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='0,256' Source='ui_building_amp_4_04' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='128,256' Source='ui_building_amp_4_05' SourceRect='0,0,128,128'/>
-<ImageFragment Offset='256,0' Source='ui_building_amp_4_06' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,32' Source='ui_building_amp_4_07' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,64' Source='ui_building_amp_4_08' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,96' Source='ui_building_amp_4_09' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,128' Source='ui_building_amp_4_10' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,160' Source='ui_building_amp_4_11' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,192' Source='ui_building_amp_4_12' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,224' Source='ui_building_amp_4_13' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,256' Source='ui_building_amp_4_14' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,288' Source='ui_building_amp_4_15' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,320' Source='ui_building_amp_4_16' SourceRect='0,0,32,32'/>
-<ImageFragment Offset='256,352' Source='ui_building_amp_4_17' SourceRect='0,0,32,32'/>
+<ImageFragment Source='ui_building_amp_4_00' SourceRect='0,0,256,256'/>
+<ImageFragment Offset='256,0' Source='ui_building_amp_4_01' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,64' Source='ui_building_amp_4_02' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,128' Source='ui_building_amp_4_03' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,192' Source='ui_building_amp_4_04' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='0,256' Source='ui_building_amp_4_05' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='128,256' Source='ui_building_amp_4_06' SourceRect='0,0,128,128'/>
+<ImageFragment Offset='256,256' Source='ui_building_amp_4_07' SourceRect='0,0,32,64'/>
+<ImageFragment Offset='256,320' Source='ui_building_amp_4_08' SourceRect='0,0,32,64'/>
 </ImageFrame>
 </ImageStyle>
 </Namespace>
 </Page>
-<Page Location='64,8' Name='HeadingPage' ScrollExtent='80,18' Size='80,18' Visible='false'>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='-60,0' Name='Heading' RStyleActivated=' ' ScrollExtent='662,18' Size='662,18' Stretch='false' Style='/Icons.HUD.Radar_directions'/>
-</Page>
-<Page Name='Control' PackSize='absolute,fixed' PackSizeProp='0000/0001,0002/0003' ScrollExtent='220,30' Size='220,30'>
-<Page Location='58,2' Name='MainControl' ScrollExtent='97,27' Size='97,27'>
-<Button LocalTooltip='[@IncreaseRangeTooltip]' Location='31,3' Name='Up' PackLocation='right,top' PackLocationProp='-066/0001,0003/0001' ScrollExtent='41,12' Size='41,12' Style='/Buttons.Radar_Up.style' Tooltip='@IncreaseRangeTooltip'></Button>
-<Button LocalTooltip='[@DecreaseRangeTooltip]' Location='36,15' Name='Down' PackLocation='right,top' PackLocationProp='-061/0001,0015/0001' ScrollExtent='33,12' Size='33,12' Style='/Buttons.Radar_Down.style' Tooltip='@DecreaseRangeTooltip'></Button>
-<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont2' GetsInput='false' LocalText='200' Location='-5,7' Name='Distance' PackLocation='right,top' PackLocationProp='-102/0001,0007/0001' ScrollExtent='46,17' Size='46,17' TextAlignment='Center' TextAlignmentVertical='Center'>200</Text>
-</Page>
-<Button LocalTooltip='[@MinimizeTooltip]' Location='19,2' Name='Minimize' ScrollExtent='37,30' Size='37,30' Style='/Buttons.HUD_Minimize.style' Tooltip='@MinimizeTooltip'></Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@ToggleWindowSizeTooltip]' Location='159,7' Name='ToggleSize' PackLocation='right,top' PackLocationProp='-061/0001,0007/0001' ScrollExtent='9,20' Size='9,20' Style='/Buttons.ActiveItems.checkstyle' Tooltip='@ToggleWindowSizeTooltip'>V</Checkbox>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Enabled='false' Location='32,0' Name='Title' PackLocation='left,top' PackLocationProp='0032/0001,0000/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='165,32' Size='165,32'/>
-</Page>
-<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Enabled='false' Location='0,15' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0015/0001' PackSize='1,absolute' PackSizeProp='0002/0003,0013/0001' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='220,223' Size='220,223' Stretch='false'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Enabled='false' Location='0,9' Name='Background' Opacity='0.700' PackLocation='left,top' PackLocationProp='0000/0001,0009/0001' PackSize='1,absolute' PackSizeProp='0002/0003,0012/0001' RStyleDefault='/WindowPanes.RadarBackground.style' ScrollExtent='212,221' Size='212,221' Stretch='false'/>
 </Page>
 <Page DragAccepts='Divider' DragBadCursor='/Cursors.DividerBad' DragGoodCursor='/Cursors.DividerGood' Location='639,4' MinimumSize='383,180' minsize='383,180' movable='true' Name='Chat' PackLocation='right,top' PackLocationProp='-385/0001,0004/0001' resizable='true' ScrollExtent='383,180' Size='383,180'>
 <DataSource Name='Channels'>
@@ -2857,7 +2748,7 @@ Targeted Object Name
 <Rectangle Location='250,243' ScrollExtent='1,15' Size='1,15'/>
 <Rectangle Location='243,250' ScrollExtent='15,1' Size='15,1'/>
 </Page>
-<Page LocalTooltip='bob' Location='552,332' movable='true' Name='Altimeter' PackLocation='center,center' PackLocationProp='0040/0001,-052/0001' ScrollExtent='29,124' Size='29,124' Tooltip='bob' Visible='false'>
+<Page LocalTooltip='bob' Location='552,332' movable='true' Name='Altimeter' Opacity='0.500' PackLocation='center,center' PackLocationProp='0040/0001,-052/0001' ScrollExtent='29,124' Size='29,124' Tooltip='bob' Visible='false'>
 <Image AbsorbsInput='false' Location='0,6' Name='Top' PackLocation='left,top' PackLocationProp='0000/0001,0006/0001' ScrollExtent='11,6' Size='11,6' Stretch='false' Style='TopStyle'/>
 <Image AbsorbsInput='false' Location='0,11' Name='Ruler0' ScrollExtent='5,21' Size='5,21' Style='RulerStyle'/>
 <Image AbsorbsInput='false' Location='0,31' Name='Ruler1' ScrollExtent='5,21' Size='5,21' Style='RulerStyle'/>
@@ -3278,13 +3169,13 @@ $Name$
 <Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='455,233' Size='455,233' Stretch='false'/>
 </Page>
 </Page>
-<Page Color='#FF0000' GetsInput='false' Location='916,674' Name='CrouchIndicator' PackLocation='Center,Center' PackLocationProp='0404/0001,0290/0001' ScrollExtent='41,40' Size='41,40' Visible='false'>
+<Page Color='#FF0000' GetsInput='false' Location='916,674' Name='CrouchIndicator' PackLocation='right,bottom' PackLocationProp='-108/0001,-094/0001' ScrollExtent='41,40' Size='41,40' Visible='false'>
 <Image AbsorbsInput='false' Name='CrouchIcon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_crouch' Style=' '/>
 </Page>
-<Page Color='#FF0000' GetsInput='false' Location='874,674' Name='RadarIndicator' PackLocation='Center,Center' PackLocationProp='0362/0001,0290/0001' ScrollExtent='41,40' Size='41,40' UserResizable='true' Visible='false'>
+<Page Color='#FF0000' GetsInput='false' Location='874,674' Name='RadarIndicator' PackLocation='right,bottom' PackLocationProp='-150/0001,-094/0001' ScrollExtent='41,40' Size='41,40' UserResizable='true' Visible='false'>
 <Image AbsorbsInput='false' Name='RadarIcon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_radar_detected' Style=' '/>
 </Page>
-<Page Color='#FF0000' GetsInput='false' Location='831,675' Name='MosquitoIndicator' PackLocation='Center,Center' PackLocationProp='0319/0001,0291/0001' ScrollExtent='42,40' Size='42,40' Visible='false'>
+<Page Color='#FF0000' GetsInput='false' Location='831,675' Name='MosquitoIndicator' PackLocation='right,bottom' PackLocationProp='-193/0001,-093/0001' ScrollExtent='42,40' Size='42,40' Visible='false'>
 <Image AbsorbsInput='false' Name='MosquitoIcon' ScrollExtent='40,40' Size='40,40' SourceRect='0,0,64,64' SourceResource='ui_hud_icon_mosquito_overflight' Style=' '/>
 </Page>
 </Page>

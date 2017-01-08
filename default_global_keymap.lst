@@ -1,3 +1,8 @@
+############################################################
+# GLOBAL KEYMAPS
+# This keymap will have either overhead or hud keymaps as a child
+############################################################
+
 # Chat Specific Commands
 #-------------------------------------------
 km_addbinding "Enter" 		"Open Chat"
@@ -25,7 +30,6 @@ km_addbinding "Alt + 9" "Squad Msg 9"
 km_addbinding "Alt + 0" "Squad Msg 10"
 
 
-
 # Bring up overhead map
 #-------------------------------------------
 km_addbinding "M" "Toggle Overhead Map"
@@ -36,9 +40,13 @@ km_addbinding "M" "Toggle Overhead Map"
 km_addbinding "V" "Open Voice Macros"
 
 
+# Voice Chat
+#-------------------------------------------
+km_addbinding "Y" "Voice Transmit"
+
+
 # Misc Controls
 #----------------------------
-
 km_addbinding "Escape" "Clear HUD"
 km_addbinding "=" "Screenshot"
 km_addbinding "H" "Toggle Help Page"

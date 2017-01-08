@@ -1,9 +1,209 @@
-#=======================================================
+  #=======================================================
 # Offline Training Mission 2
-# Interaction
+# Certifications and Equipment
 #=======================================================
 
 $begin OfflineTrainingMission2
-	$levelup
+	
+	$freeze false
+	$wait 10
+	$text_dlg @OfflineMission2_01 30
+	$sync
+
+	#-----------------------------------------
+	# User needs to open thier inventory
+	#-----------------------------------------
+	$set_page SoldierManagement
+	$flash button_inventory
+	$wait_on_show Inventory 1 x
+
+	#-----------------------------------------
+	# User needs to close their inventory
+	#-----------------------------------------
+	$text_dlg @OfflineMission2_02 30
+	$wait_on_show Inventory 0 x
+	$sync
+	
+
+	#------------------------------------------
+	# Go to the waypoint by the HART building...
+	#------------------------------------------
+	$text_dlg @OfflineMission2_03 30
+	$set_waypoint 3067 4822 13
+	$set_waypoint 2916 2996 12
+	$set_waypoint 4761 3434 11
+	$sync
+	$thaw
+	$wait_waypoint 1
+	$freeze false
+		
+	#-------------------------------------------
+	# Enter the building...
+	#-------------------------------------------
+	$text_dlg @OfflineMission2_04 30
+	$set_waypoint 3051 4822 59 13
+	$set_waypoint 2933 2996 38 12
+	$set_waypoint 4773 3446 71 11
+	$sync
+	$thaw
+	$wait_waypoint 1
+	$freeze false
+		
+	#---------------------------------------------
+	# Go to the cert terminal and use it...
+	#---------------------------------------------
+	$text_dlg @OfflineMission2_05 30
+	$set_waypoint 3056 4827 59 13
+	$set_waypoint 2929 2992 38 12
+	$set_waypoint 4766 3446 71 11
+	$sync
+	$thaw
+	$wait_waypoint 1
+	$change_action_lock DAT 4 1
+	$change_action_lock GOT 51 1
+	$wait_on_use 51 4
+	$freeze false
+	
+	
+		
+	#---------------------------------------------
+	# Get Medium Assault...
+	#---------------------------------------------
+	$text_dlg @OfflineMission2_06 30
+	$add_certification medium_assault 1
+	$sync
+	
+	
+	#---------------------------------------------
+	# Go to the equipment terminal and use it...
+	#---------------------------------------------	
+	$text_dlg @OfflineMission2_07 30
+	$set_waypoint 3054 4831 59 13
+	$set_waypoint 2930 2987 38 12
+	$set_waypoint 4765 3450 71 11
+	$thaw
+	$wait_waypoint 1
+	$change_action_lock GOT 51 0
+	$change_action_lock DAT 4 0
+	$change_action_lock DAT 5 1
+	$change_action_lock GOT 18 1
+	$wait_on_use 18 5
+	$freeze false
+	$sync
+	
+		
+	#-----------------------------------------------
+	# Click around a bit....
+	#-----------------------------------------------
+	$text_dlg @OfflineMission2_08 30
+	$set_page EquipmentTerminal
+	$click_item FavoritesTab
+	$wait_click FavoritesTab
+	$click_item WeaponTab
+	$wait_click WeaponTab
+	$sync
+	
+	
+	#----------------------------------------------
+	# Get the punisher...
+	#----------------------------------------------	
+	$text_dlg @OfflineMission2_09 30
+	$get punisher
+	$sync
+	
+		
+	#----------------------------------------------
+	# Get the AMP...
+	#----------------------------------------------	
+	$text_dlg @OfflineMission2_10 30
+	$get ilc9
+	$sync
+	
+		
+	#-----------------------------------------------
+	# Get rid of the AMP
+	#-----------------------------------------------
+	$text_dlg @OfflineMission2_11 30
+	$lose ilc9
+	$sync
+	
+	
+	#-----------------------------------------------
+	# Get some ammo
+	#-----------------------------------------------
+	$text_dlg @OfflineMission2_12 30
+	$get 9mmbullet 9mmbullet 9mmbullet 9mmbullet_AP
+	$sync
+	
+	
+	#-----------------------------------------------
+	# Get a medkit
+	#-----------------------------------------------
+	$text_dlg @OfflineMission2_13 30
+	$get medkit
+	$sync
+	
+
+	#---------------------------------
+	# Clicky da favorites tab....
+	#---------------------------------
+	$text_dlg @OfflineMission2_14 30
+	$click_item FavoritesTab
+	$wait_click FavoritesTab
+	$sync
+
+	#-----------------------------------
+	# Save da favorite...
+	#-------------------------------------
+	$text_dlg @OfflineMission2_15 30
+	$save_favorite
+	$sync
+		
+	#------------------------------------
+	# Clear da inventory...
+	#-------------------------------------
+	$text_dlg @OfflineMission2_16 30
+	$lose ALL
+	$sync
+		
+	#------------------------------------
+	# Close da terminal...
+	#-------------------------------------
+	$text_dlg @OfflineMission2_17 30
+	$wait_on_show EquipmentTerminal 0 x
+	$change_action_lock DAT 5 0
+	$change_action_lock GOT 18 0
+	$sync
+	
+		
+	#---------------------------------------
+	# Open the terminal...
+	#---------------------------------------
+	$text_dlg @OfflineMission2_18 30
+	$change_action_lock DAT 5 1
+	$change_action_lock GOT 18 1
+	$wait_on_use 18 5
+	$sync
+	
+		
+	#---------------------------------------------
+	# Reopen the terminal
+	#-------------------------------------------
+	$text_dlg @OfflineMission2_19 30
+	$wait_on_show EquipmentTerminal 0 x
+	$change_action_lock DAT 5 0
+	$change_action_lock GOT 18 0
+	$sync
+		
+	#----------------------------------
+	# Pick a fav...
+	#------------------------------------
+	$text_dlg @OfflineMission2_20 30
+	$sync
+		
+	$wait 2000
+    $levelup
+	$show_mission_selection
+
 	$quit
 $end

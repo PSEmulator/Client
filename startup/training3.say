@@ -4,6 +4,166 @@
 #=======================================================
 
 $begin OfflineTrainingMission3
-	$levelup
-	$quit
+
+    # Set up our continent
+    $building_info Eadon 3 10
+    
+
+    # Begin the Lesson....
+    $add_certification buggy_light
+
+    # 1st dialogue
+    $freeze false
+    $text_dlg @OfflineMission3_01 25
+    $play Vehicle_01.mp3
+    $sync
+    $thaw
+
+    # Allow the user user to use the vehicle terminal and mount a vehicle as a driver
+    $change_action_lock "DAT" 1 1
+    $change_action_lock "GOT" 16 1
+    $change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+
+    $change_action_lock "DAT" 0 1
+
+    $wait_on_use 16 1
+    $freeze false
+
+    # 2nd dialogue
+    $text_dlg @OfflineMission3_02 25
+    $play Vehicle_02.mp3
+    $sync
+
+    # wait for the user to create the harasser
+    $get two_man_assault_buggy
+
+    # 3rd dialogue
+    $text_dlg @OfflineMission3_03 25
+    $play Vehicle_03.mp3
+    $sync
+    $thaw
+
+    # Wait for the user mount the harasser
+    $mount two_man_assault_buggy
+    $freeze false
+
+    # Don't let the user muck with the vehicle terminal anymore...
+    $change_action_lock "DAT" 1 0
+    $change_action_lock "GOT" 16 0
+
+    # 4th dialogue
+    $text_dlg @OfflineMission3_04 25
+    $play Vehicle_04.mp3
+    $sync
+    $thaw
+
+    # Wait for the user to move off the vehicle pad
+    $move_from_location 25
+
+    # Ok Freeze 'em!
+    $freeze
+
+    # 5th dialogue
+    $text_dlg @OfflineMission3_05 25
+    $play Vehicle_05.mp3
+    $sync
+
+    # Wait for the vehicle info page to show up
+    $wait_on_show KeyCard 1 ""
+    
+    # 6th dialogue
+    $text_dlg @OfflineMission3_06 25
+    $play Vehicle_06.mp3
+    $sync
+
+    # Wait for the vehicle info page to be hidden
+    $wait_on_show KeyCard 0 ""
+    
+    # 7th dialogue
+    $text_dlg @OfflineMission3_07 25
+    $play Vehicle_07.mp3
+    $sync
+
+    # Allow them to move again
+    $thaw
+
+    # Mark a way-point for them to proceed to
+    $set_waypoint 2661 3072 5
+    $wait_waypoint 3
+
+    # Freeze them again
+    $freeze
+    
+    # 8th dialogue
+    $text_dlg @OfflineMission3_08 25
+    $play Vehicle_08.mp3
+    $sync
+
+    # Let 'em rip!
+    $thaw
+
+    # Start our series of bread crumbs for the player to follow
+    $set_waypoint 2594 3094 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2526 3106 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2455 3018 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2456 2899 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2599 2766 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2699 2714 5
+    $wait_waypoint 3
+
+    # Next...
+    $set_waypoint 2862 2802 5
+    $wait_waypoint 3
+
+    # Time to stop again!
+    $freeze
+    
+    # Allow the user access to the trunk
+    $change_action_lock "DAT" 12 1
+    $change_action_lock "GOT" 3 1
+
+    # 9th dialogue
+    $text_dlg @OfflineMission3_09 25
+    $play Vehicle_09.mp3
+    $sync
+
+    # Wait for the user to get out of the harasser
+    $thaw
+    $mount ""
+
+    # 10th dialogue
+    $text_dlg @OfflineMission3_10 25
+    $play Vehicle_10.mp3
+    $sync
+
+    # Wait for them to open the trunk   
+    $wait_on_use 3 12
+
+    # 11th dialogue
+    $text_dlg @OfflineMission3_11 25
+    $play Vehicle_11.mp3
+    $sync
+
+    # We're done
+    $wait 5000
+    $levelup
+    $show_mission_selection
+    $quit
+	
 $end

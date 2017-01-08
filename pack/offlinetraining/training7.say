@@ -1,0 +1,287 @@
+        #=======================================================
+# Offline Training Mission 7
+# Silos and the ANT
+#=======================================================
+
+$begin OfflineTrainingMission7
+	$freeze
+	$building_info Bel 2 1
+	$building_info Pwyll 2 6
+	$building_info Lugh 1 7
+	$building_info Neit 0 9
+	$building_info Dagda 4 4
+	$building_info Gwydion 4 5
+	$building_info Ogma 2 9
+	$building_info Eadon 0 3
+	$building_info Anu 0 5
+	$building_info Eadon 3 1
+	$add_inventory remote_electronics_kit
+	$add_certification buggy_light
+	
+	#-----------------------------------------
+	# Switch to the tac map
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_01 25
+	$play Silo_01.wav
+	$wait_on_show OverheadMap 1 Tactical
+	$sync
+
+	#-----------------------------------------
+	# Close the tac map
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_02 25
+	$play Silo_02.wav
+	$wait_on_show OverheadMap 0 Tactical
+	$sync
+	$thaw
+
+	#-----------------------------------------
+	# Open the vehicle terminal
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_03 25
+	$play Silo_03.wav
+	$set_waypoint 2810 2935 5
+	$wait_waypoint 1
+	$change_action_lock "DAT" 1 1
+    $change_action_lock "GOT" 16 1
+    $wait_on_use 16 1
+	$freeze
+	$change_action_lock "DAT" 1 0
+    $change_action_lock "GOT" 16 0
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$sync
+
+	#-----------------------------------------
+	# Get ANT, drive off pad, stop, facility goes neutral
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_04 25
+	$play Silo_04.wav
+	$sync
+	$thaw
+	$wait_on_use 3 13
+	$change_action_lock "DAT" 13 0
+	$move_from_location 30.0
+	$freeze
+	$building_info Eadon -1 0
+	
+	
+
+	#-----------------------------------------
+	# Go to control console
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_05 25
+	$play Silo_05.wav
+	$sync
+	$thaw
+	$change_action_lock "GOT" 3 1
+	$change_action_lock "DAT" 13 1
+	$change_action_lock "DAT" 0 1
+	$mount ""
+	$change_action_lock "GOT" 3 0
+	$change_action_lock "DAT" 13 0
+	$change_action_lock "DAT" 0 0
+	$set_waypoint 2790 2981 5
+	$wait_waypoint 2
+	$set_waypoint 2816 2967 5
+	$wait_waypoint 2
+	$set_waypoint 2787 2994 5
+	$wait_waypoint 2
+	$set_waypoint 2744 2942 5
+	$wait_waypoint 2
+	$set_waypoint 2717 2958 5
+	$wait_waypoint 10
+
+
+	#-----------------------------------------
+	# Hack it
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_06 25
+	$play Silo_06.wav
+	$equip remote_electronics_kit
+	$wait_until_hacked capture_terminal
+	$sync
+
+	#-----------------------------------------
+	# Board ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_07 25
+	$play Silo_07.wav
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$mount ant
+	$change_action_lock "DAT" 13 0
+    $change_action_lock "GOT" 3 0
+	$sync
+
+	#-----------------------------------------
+	# Drive ANT to warp gate
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_08 25
+	$play Silo_08.wav
+	$set_waypoint 2670 3063 5
+	$wait_waypoint 15
+	$set_waypoint 2477 3237 5
+	$wait_waypoint 15
+	$set_waypoint 2094 3157 5
+	$wait_waypoint 15
+	$set_waypoint 1649 3211 5
+	$wait_waypoint 15
+	$set_waypoint 1574 3506 5
+	$wait_waypoint 15
+	$freeze
+	$sync
+	
+
+	#-----------------------------------------
+	# Exit ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_09 25
+	$play Silo_09.wav
+	$change_action_lock "GOT" 3 1
+	$change_action_lock "DAT" 0 1
+	$thaw
+	$mount ""
+	$change_action_lock "GOT" 3 0
+	$change_action_lock "DAT" 0 0
+	$freeze
+	$sync
+
+	#-----------------------------------------
+	# Deploy ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_10 25
+	$play Silo_10.wav
+	$thaw
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$wait_on_use 3 13
+	$change_action_lock "DAT" 13 0
+    $change_action_lock "GOT" 3 0
+	$freeze false
+	$sync
+
+	#-----------------------------------------
+	# Fill ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_11 25
+	$play Silo_11.wav
+	$sync
+
+	#-----------------------------------------
+	# Board ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_12 25
+	$play Silo_12.wav
+	$thaw
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$mount ant
+	$change_action_lock "DAT" 13 0
+    $change_action_lock "GOT" 3 0
+	$freeze
+	$sync
+	#-----------------------------------------
+	# Wait
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_13 25
+	$play Silo_13.wav
+	$sync
+	$wait 2000
+
+	#-----------------------------------------
+	# Drive ANT to base
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_14 25
+	$play Silo_14.wav
+	$thaw
+	$set_waypoint 1649 3211 5
+	$wait_waypoint 15
+	$set_waypoint 2094 3157 5
+	$wait_waypoint 15
+	$set_waypoint 2477 3237 5
+	$wait_waypoint 15
+	$set_waypoint 2670 3063 5
+	$wait_waypoint 15
+	$freeze
+	$sync
+
+	#-----------------------------------------
+	# Drive ANT to silo
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_15 25
+	$play Silo_15.wav
+	$sync
+	$thaw
+	$set_waypoint 2630 2964 5
+	$wait_waypoint 2
+	$freeze
+
+	#-----------------------------------------
+	# Exit ANT 
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_16 25
+	$play Silo_16.wav
+	$change_action_lock "GOT" 3 1
+	$change_action_lock "DAT" 0 1
+	$thaw
+	$mount ""
+	$freeze false
+	$change_action_lock "GOT" 3 0
+	$change_action_lock "DAT" 0 0
+	$sync
+
+	#-----------------------------------------
+	# Deploy ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_17 25
+	$play Silo_17.wav
+	$thaw
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$wait_on_use 3 13
+	$change_action_lock "DAT" 13 0
+    $change_action_lock "GOT" 3 0
+	$freeze false
+	$sync
+
+	#-----------------------------------------
+	# Fill silo
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_18 25
+	$play Silo_18.wav
+	$sync
+
+	#-----------------------------------------
+	# Capture facility
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_19 25
+	$play Silo_19.wav
+	$sync
+	$wait 5000
+	$building_info Eadon 3 10
+
+	#-----------------------------------------
+	# Board ANT
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_20 25
+	$play Silo_20.wav
+	$sync
+	$thaw
+	$change_action_lock "DAT" 13 1
+    $change_action_lock "GOT" 3 1
+	$mount ant
+	$change_action_lock "DAT" 13 0
+    $change_action_lock "GOT" 3 0
+	$freeze false
+
+	#-----------------------------------------
+	# End
+	#-----------------------------------------
+	$text_dlg @OfflineMission7_21 25
+	$play Silo_21.wav
+	$sync
+
+	$levelup
+	$quit
+$end

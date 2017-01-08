@@ -1,5 +1,10 @@
 #ar_begin
 
+##spitfire_turret+barrels_bone+spitfire_weapon+barrels_bone
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
 ##mb_pad_creation+pad_create_platform+ams+ams_body
 
 ar_rot 00000000 00000000 00000000
@@ -1621,6 +1626,21 @@ ar_rot 00000000 00000000 00000000
 ar_end
 
 ##default+hp_hand_right+ace+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmmed+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 0000016C 00000000 000000E4
+ar_end
+
+##ncmsi+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 000002AB 00000000 000000B6
+ar_end
+
+##default+barrels_bone+spitfire_weapon+barrels_bone
 
 ar_rot 00000000 00000000 00000000
 ar_end

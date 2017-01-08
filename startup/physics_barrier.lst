@@ -60,3 +60,22 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+
+phys_model avatar_animated_barrier_small
+################ Physics Primitive avatar_animated_barrier_small_cdbox0 ###########
+phys_box root 1.0 5.3 2.0 0.7 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+
+phys_model avatar_animated_barrier_large
+################ Physics Primitive avatar_animated_barrier_large_cdbox0 ###########
+phys_box root 1.0 11.0 2.0 0.7 0 0 0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+

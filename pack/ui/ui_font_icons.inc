@@ -13,6 +13,8 @@
 <FontCharacter Advance='34' Code='75' Name='K - Visible' SourceFile='ui_font_misc_1_00' SourceRect='34,78,68,104'/>
 <FontCharacter Advance='34' Code='76' Name='L - Looking' SourceFile='ui_font_misc_1_00' SourceRect='68,78,102,104'/>
 <FontCharacter Advance='34' Code='77' Name='M - Not looking' SourceFile='ui_font_misc_2_00' SourceRect='0,0,34,26'/>
+<FontCharacter Advance='17' Code='78' Name='N - Voice Connected' SourceFile='ui_font_misc_2_00' SourceRect='33,1,50,19'/>
+<FontCharacter Advance='9' Code='79' Name='O - Voice Host' SourceFile='ui_font_misc_2_00' SourceRect='34,26,43,44'/>
 </TextStyle>
 <TextStyle Leading='21' Name='TabIcons'>
 <FontCharacter Advance='42' Code='65' Name='A - Certifications' SourceFile='ui_font_tabs_1_00' SourceRect='0,0,42,21'/>
@@ -120,4 +122,8 @@
 <include>ui_font_eurostile8.inc</include>
 <include>ui_font_eurostile10.inc</include>
 <include>ui_font_eurostile12.inc</include>
+<include>ui_font_agency.inc</include>
+<include>ui_font_agency.inc</include>
+<include>ui_font_agency.inc</include>
+<include>ui_font_agency.inc</include>
 </Namespace>
