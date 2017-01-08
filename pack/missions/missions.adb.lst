@@ -1,0 +1,2160 @@
+#mission_begin
+
+##sample
+
+mission_version 1
+mission_description @mission_sample_description
+mission_battle_xp 147
+mission_trigger player_died
+mission_action chat @mission_sample_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_sample_start
+mission_trigger delay 1000
+mission_action chat @mission_sample_two_seconds true
+mission_trigger delay 2000
+mission_action chat @mission_sample_one_second true
+mission_trigger delay 3000
+mission_action play_audio vvm_male_01.wav
+mission_action goto location
+mission_step location
+mission_action status_message @mission_sample_location
+mission_action create_waypoint uno 11ff11 1050 1150
+mission_trigger location 1050 1150 100 7.5
+mission_action destroy_waypoint uno
+mission_action play_audio vvf_male_01.wav
+mission_action goto location_reverse
+mission_step location_reverse
+mission_action status_message @mission_sample_location_reverse
+mission_action create_waypoint dos ff1111 1050 1150
+mission_trigger location_reverse 1050 1150 100 30
+mission_action destroy_waypoint dos
+mission_action play_audio vvf_male_02.wav
+mission_action goto inspect_object
+mission_step inspect_object
+mission_action status_message @mission_sample_inspect_object
+mission_trigger inspect_object 10 ant ams
+mission_action play_audio vvf_male_03.wav
+mission_action goto add_child
+mission_step add_child
+mission_action status_message @mission_sample_child_added
+mission_trigger add_child bolt_driver
+mission_action play_audio vvf_male_04.wav
+mission_action goto equip_bolt_driver
+mission_trigger add_child heavy_sniper
+mission_action play_audio vvf_male_04.wav
+mission_action goto equip_heavy_sniper
+mission_step equip_bolt_driver
+mission_action status_message @mission_sample_equip_bolt_driver
+mission_trigger equip bolt_driver
+mission_action play_audio vvf_male_05.wav
+mission_action goto reload
+mission_step equip_heavy_sniper
+mission_action status_message @mission_sample_equip_heavy_sniper
+mission_trigger equip heavy_sniper
+mission_action play_audio vvf_male_05.wav
+mission_action goto reload
+mission_step reload
+mission_action status_message @mission_sample_reload
+mission_trigger holster
+mission_action goto error_reequip
+mission_trigger weapon_reload
+mission_action play_audio vvf_female_03.wav
+mission_action goto enter_zone
+mission_step error_reequip
+mission_action play_audio interface_feedback_error.wav
+mission_action chat @mission_sample_reequip true
+mission_trigger equip heavy_sniper bolt_driver
+mission_action step_back
+mission_step enter_zone
+mission_action status_message @mission_sample_enter_zone
+mission_trigger enter_zone z1
+mission_action play_audio vvf_female_01.wav
+mission_action goto rexo_armor
+mission_step rexo_armor
+mission_action status_message @mission_sample_change_armor
+mission_trigger change_armor med
+mission_action play_audio vvf_female_02.wav
+mission_action goto end
+mission_step end
+mission_trigger delay 1000
+mission_action play_audio spawn07.wav
+mission_action status_message @mission_sample_complete
+mission_action complete
+mission_end
+
+##training_armors
+
+mission_version 2
+mission_description @mission_training_armors_description
+mission_prerequisites training_weapons01
+mission_zones tzshnc tzshtr tzshvs
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_armors_error_player_died
+mission_action cancel
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_step start
+mission_action status_message @mission_training_armors_welcome
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto MAX_AA
+mission_step MAX_AA
+mission_action add_objective MAX_AA @mission_training_armors_objective_sparrow
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AA_nc^@ArmorTab~
+mission_action_empire nc
+mission_action add_objective MAX_AA @mission_training_armors_objective_burster
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AA_tr^@ArmorTab~
+mission_action_empire tr
+mission_action add_objective MAX_AA @mission_training_armors_objective_starfire
+mission_action_empire vs
+mission_action status_message @mission_training_armors_MAX_AA_vs^@ArmorTab~
+mission_action_empire vs
+mission_trigger skip_back
+mission_action goto start
+mission_trigger change_armor hev air
+mission_action goto clear_inventory
+mission_step clear_inventory
+mission_action status_message @mission_training_armors_clear_inventory^@ClearInventory~
+mission_action flash_widget_start HUD.Inventory.SoldierHeavyArmor.btn_clear
+mission_trigger ui_button_click HUD.Inventory.SoldierHeavyArmor.btn_clear
+mission_action flash_widget_stop HUD.Inventory.SoldierHeavyArmor.btn_clear
+mission_action goto get_AA_ammo
+mission_step get_AA_ammo
+mission_action status_message @mission_training_armors_get_AA_ammo_nc
+mission_action_empire nc
+mission_action status_message @mission_training_armors_get_AA_ammo_tr
+mission_action_empire tr
+mission_action status_message @mission_training_armors_get_AA_ammo_vs
+mission_action_empire vs
+mission_trigger add_child starfire_ammo sparrow_ammo burster_ammo
+mission_action goto close_equip_term
+mission_step close_equip_term
+mission_action status_message @mission_training_armors_close_equip_term
+mission_trigger ui_hide HUD.EquipmentTerminal
+mission_action goto special
+mission_step special
+mission_action status_message @mission_training_armors_special_nc^$GA_ToggleStealthSuit/max~
+mission_action_empire nc
+mission_action status_message @mission_training_armors_special_tr^$GA_ToggleStealthSuit/max~
+mission_action_empire tr
+mission_action status_message @mission_training_armors_special_vs^$GA_ToggleStealthSuit/max~
+mission_action_empire vs
+mission_trigger player_anchor
+mission_action goto special_tr
+mission_trigger player_shield_on
+mission_action goto special_nc
+mission_trigger player_jumpjet
+mission_action goto special_vs
+mission_step special_nc
+mission_action status_message @mission_training_armors_special_nc2^$GA_ToggleStealthSuit/max~
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.Armor
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.StatusLabel
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.Border
+mission_trigger player_shield_off
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.Armor
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.StatusLabel
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.Border
+mission_action goto MAX_AA_destroy_aircraft
+mission_step special_tr
+mission_action status_message @mission_training_armors_special_tr2^$GA_ToggleStealthSuit/max~
+mission_trigger player_unanchor
+mission_action goto MAX_AA_destroy_aircraft
+mission_step special_vs
+mission_action status_message @mission_training_armors_special_vs2^@MissionStatusSkipForward~
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.Armor
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.StatusLabel
+mission_action flash_widget_start HUD.ActiveItems.HeavyPage.Border
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.Armor
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.StatusLabel
+mission_action flash_widget_stop HUD.ActiveItems.HeavyPage.Border
+mission_action goto MAX_AA_destroy_aircraft
+mission_step MAX_AA_destroy_aircraft
+mission_action status_message @mission_training_armors_MAX_AA_nc_destroy_aircraft
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AA_tr_destroy_aircraft
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AA_vs_destroy_aircraft
+mission_action_empire vs
+mission_trigger skip_back
+mission_action goto special
+mission_trigger kill_type Enemy flightvehicle WITH trhev_burster nchev_sparrow vshev_starfire
+mission_action complete_objective MAX_AA
+mission_action play_audio ping.wav
+mission_action goto MAX_AV
+mission_step MAX_AV
+mission_action status_message @mission_training_armors_MAX_AV_nc
+mission_action_empire nc
+mission_action add_objective MAX_AV @mission_training_armors_objective_falcon
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AV_tr^$GA_ToggleStealthSuit/soldier_max~
+mission_action_empire tr
+mission_action add_objective MAX_AV @mission_training_armors_objective_pounder
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AV_vs
+mission_action_empire vs
+mission_action add_objective MAX_AV @mission_training_armors_objective_Comet
+mission_action_empire vs
+mission_trigger skip_back
+mission_action goto MAX_AA_destroy_aircraft
+mission_trigger change_armor hev veh
+mission_action goto get_AV_ammo
+mission_step get_AV_ammo
+mission_action status_message @mission_training_armors_get_AV_ammo_nc
+mission_action_empire nc
+mission_action status_message @mission_training_armors_get_AV_ammo_tr
+mission_action_empire tr
+mission_action status_message @mission_training_armors_get_AV_ammo_vs
+mission_action_empire vs
+mission_trigger add_child pounder_ammo falcon_ammo comet_ammo
+mission_action goto MAX_AV_destroy_vehicle
+mission_step MAX_AV_destroy_vehicle
+mission_action status_message @mission_training_armors_MAX_AV_nc_destroy_vehicle
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AV_tr_destroy_vehicle
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AV_vs_destroy_vehicle
+mission_action_empire vs
+mission_trigger kill_type Enemy vehicle WITH trhev_pounder nchev_falcon vshev_comet
+mission_action complete_objective MAX_AV
+mission_action play_audio ping.wav
+mission_action goto MAX_AI
+mission_step MAX_AI
+mission_action status_message @mission_training_armors_MAX_AI_nc
+mission_action_empire nc
+mission_action add_objective MAX_AI @mission_training_armors_objective_scattercannon
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AI_tr
+mission_action_empire tr
+mission_action add_objective MAX_AI @mission_training_armors_objective_dualcycler
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AI_vs
+mission_action_empire vs
+mission_action add_objective MAX_AI @mission_training_armors_objective_quasar
+mission_action_empire vs
+mission_trigger skip_back
+mission_action goto MAX_AV_destroy_vehicle
+mission_trigger change_armor hev per
+mission_action goto get_AI_ammo
+mission_step get_AI_ammo
+mission_action status_message @mission_training_armors_get_AI_ammo_nc
+mission_action_empire nc
+mission_action status_message @mission_training_armors_get_AI_ammo_tr
+mission_action_empire tr
+mission_action status_message @mission_training_armors_get_AI_ammo_vs
+mission_action_empire vs
+mission_trigger add_child scattercannon_ammo quasar_ammo dualcycler_ammo
+mission_action goto MAX_AI_kill_bot
+mission_step MAX_AI_kill_bot
+mission_action status_message @mission_training_armors_MAX_AI_nc_kill_bot
+mission_action_empire nc
+mission_action status_message @mission_training_armors_MAX_AI_tr_kill_bot
+mission_action_empire tr
+mission_action status_message @mission_training_armors_MAX_AI_vs_kill_bot
+mission_action_empire vs
+mission_trigger kill_type Enemy avatar WITH nchev_scattercannon vshev_quasar trhev_dualcycler
+mission_action complete_objective MAX_AI
+mission_action play_audio ping.wav
+mission_action add_objective stealth @mission_training_armors_objective_stealth_armor
+mission_action goto move_along
+mission_step move_along
+mission_action status_message @mission_training_armors_move_along
+mission_trigger skip_back
+mission_action goto MAX_AI_kill_bot
+mission_trigger change_armor sth
+mission_action goto close_equip_term2
+mission_step close_equip_term2
+mission_action status_message @mission_training_armors_close_equip_term2
+mission_trigger ui_hide HUD.EquipmentTerminal
+mission_action goto stealth
+mission_step stealth
+mission_action status_message @mission_training_armors_stealth^$GA_ToggleThirdPersonCamera/hud~^$GA_ToggleStealthSuit/soldier~
+mission_trigger skip_back
+mission_action goto move_along
+mission_trigger player_cloak
+mission_action play_audio ping.wav
+mission_action complete_objective stealth
+mission_action goto stealth_info
+mission_step stealth_info
+mission_action status_message @mission_training_armors_stealth_info^@MissionStatusSkipForward~
+mission_trigger skip_forward
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_armors_complete
+mission_action complete
+mission_step error_do_not_leave_tz
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_armors_do_not_leave_tz^@TrainingCancel~
+mission_trigger ui_button_click HUD.TrainingZone.Select.Driving
+mission_action status_message @mission_training_armors_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Home
+mission_action status_message @mission_training_armors_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Cancel
+mission_action step_back
+mission_trigger ui_button_click HUD.TrainingZone.Select.Shooting
+mission_action step_back
+mission_end
+
+##training_certifications
+
+mission_version 2
+mission_description @mission_training_certifications_description
+mission_prerequisites training_weapons01
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_certifications_error_player_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_training_certifications_start^@MissionStatusSkipForward~
+mission_action add_objective find_cert_term @mission_training_certifications_objective_find_cert_term
+mission_action create_waypoint_nearest hart 00ff00 4865.92 3572.99 4882.94 3556.16 4766.16 3439.03 4749.21 3456.02 4234.67 6056.56 4235 6080.76 4069.39 6083.17 4069.18 6059.3 2340.49 5524.61 2340.87 5548.72 2175.63 5551.24 2174.99 5527.39
+mission_action_empire nc
+mission_action create_waypoint_nearest hart 00ff00 5149.05 3919.98 5149.27 3895.99 5314.69 3895.98 5314.79 3920.02 3004.57 5218.21 3004.58 5242.1 2839.36 5241.84 2839.37 5217.94 3088.71 2972.01 3088.73 2996.18 2923.32 2995.9 2923.35 2971.96
+mission_action_empire tr
+mission_action create_waypoint_nearest hart 00ff00 5527.37 4249.91 5527.32 4225.77 5692.65 4226 5692.62 4250.19 3060.76 4822.24 3060.76 4846.09 2895.27 4845.79 2895.24 4821.8 3605.42 2819.8 3605.4 2795.96 3770.67 2796.23 3770.72 2820.1
+mission_action_empire vs
+mission_trigger location_waypoint hart 8
+mission_action destroy_waypoint hart
+mission_action goto goto_cert_term
+mission_trigger skip_forward
+mission_action destroy_waypoint hart
+mission_action goto goto_cert_term
+mission_step goto_cert_term
+mission_action status_message @mission_training_certifications_goto_cert_term
+mission_action create_waypoint3d_nearest cert_term 00ff00 4869.35 3542.31 81.438 4852.29 3559.58 81.438 4779.66 3452.46 81.438 4762.62 3469.75 81.438 4215.29 6056.6 56.5766 4215.83 6080.81 56.5766 4088.59 6083.51 56.5766 4088.13 6059.21 56.5766 2321.58 5549.03 77.9014 2321.15 5524.38 77.9014 2194.57 5551.62 77.9014 2194.07 5527.28 77.9014
+mission_action_empire nc
+mission_action create_waypoint3d_nearest cert_term 00ff00 5168.47 3895.88 48.6291 5168.4 3920.22 48.6291 5295.74 3920.1 48.6291 5295.31 3895.68 48.629 2985.63 5217.77 48.6989 2985.74 5242.22 48.6989 2858.4 5242.15 48.6989 2858.37 5217.95 48.6989 3069.44 2971.76 47.6193 3069.5 2995.86 47.6193 2942.6 2996.21 47.6193 2942.69 2971.82 47.6193
+mission_action_empire tr
+mission_action create_waypoint3d_nearest cert_term 00ff00 5673.62 4249.98 115.929 5673.41 4225.69 115.929 5546.53 4225.9 115.929 5546.35 4250.02 115.929 3041.48 4846.15 68.7853 3041.37 4821.88 68.7853 2914.62 4822 68.7853 2914.32 4846.43 68.7853 3751.42 2820.09 103.553 3751.59 2795.62 103.553 3624.52 2795.86 103.553 3624.29 2820.2 103.553
+mission_action_empire vs
+mission_trigger location_waypoint cert_term 6
+mission_action destroy_waypoint cert_term
+mission_action goto open_cert_term
+mission_trigger skip_back
+mission_action destroy_waypoint cert_term
+mission_action goto start
+mission_trigger skip_forward
+mission_action destroy_waypoint cert_term
+mission_action goto open_cert_term
+mission_step open_cert_term
+mission_action status_message @mission_training_certifications_open_cert_term
+mission_trigger skip_back
+mission_action goto goto_cert_term
+mission_trigger use_object cert_terminal
+mission_action complete_objective find_cert_term
+mission_action play_audio ping.wav
+mission_action goto cert_term_points
+mission_step cert_term_points
+mission_action status_message @mission_training_certifications_cert_term_points
+mission_action flash_widget_start HUD.CertificationTerminal.AvailableCurrency
+mission_action add_objective buy_cert @mission_training_certifications_objective_buy_cert
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_action flash_widget_stop HUD.CertificationTerminal.AvailableCurrency
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CertificationTerminal.AvailableCurrency
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto cert_term_certs
+mission_step cert_term_certs
+mission_action status_message @mission_training_certifications_cert_term_certs
+mission_action flash_widget_start HUD.CertificationTerminal.UnacquiredListbox
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.CertificationTerminal.UnacquiredListbox
+mission_action goto cert_term_points
+mission_trigger delay 5000
+mission_action flash_widget_stop HUD.CertificationTerminal.UnacquiredListbox
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CertificationTerminal.UnacquiredListbox
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto cert_term_description
+mission_step cert_term_description
+mission_action status_message @mission_training_certifications_cert_term_description
+mission_action flash_widget_start HUD.CertificationTerminal.ItemInfoText
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.CertificationTerminal.ItemInfoText
+mission_action goto cert_term_certs
+mission_trigger delay 5000
+mission_action flash_widget_stop HUD.CertificationTerminal.ItemInfoText
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CertificationTerminal.ItemInfoText
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto cert_term_learned
+mission_step cert_term_learned
+mission_action status_message @mission_training_certifications_cert_term_learned
+mission_action flash_widget_start HUD.CertificationTerminal.AcquiredListbox
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.CertificationTerminal.AcquiredListbox
+mission_action goto cert_term_description
+mission_trigger delay 5000
+mission_action flash_widget_stop HUD.CertificationTerminal.AcquiredListbox
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CertificationTerminal.AcquiredListbox
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto learn_cert
+mission_step learn_cert
+mission_action status_message @mission_training_certifications_learn_cert^@CertLearn~
+mission_trigger skip_back
+mission_action goto cert_term_learned
+mission_trigger player_add_certification
+mission_action complete_objective buy_cert
+mission_action play_audio ping.wav
+mission_action goto cert_timer
+mission_step cert_timer
+mission_action status_message @mission_training_certifications_cert_timer
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto cert_timer2
+mission_step cert_timer2
+mission_action status_message @mission_training_certifications_cert_timer2^@CertificationAcquiredTitle~^@CertForget~
+mission_trigger skip_back
+mission_action goto cert_timer
+mission_trigger ui_hide HUD.CertificationTerminal
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_certifications_end
+mission_action complete
+mission_end
+
+##training_hart
+
+mission_version 2
+mission_description @mission_training_hart_description
+mission_prerequisites training_map
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_hart_error_player_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_training_hart_welcome
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto hart_door
+mission_step hart_door
+mission_action status_message @mission_training_hart_hart_door
+mission_action add_objective hart_entrance @mission_training_hart_objective_hart_entrance
+mission_trigger skip_back
+mission_action goto start
+mission_trigger inspect_object 10 gr_door_mb_orb
+mission_action complete_objective hart_entrance
+mission_action play_audio ping.wav
+mission_action goto board_shuttle
+mission_step board_shuttle
+mission_action status_message @mission_training_hart_board_shuttle
+mission_action add_objective board_hart @mission_training_hart_objective_board_hart
+mission_trigger skip_back
+mission_action goto hart_door
+mission_trigger vehicle_mount orbital_shuttle
+mission_action complete_objective board_hart
+mission_action play_audio ping.wav
+mission_action goto hart_wait
+mission_step hart_wait
+mission_action status_message @mission_training_hart_hart_wait^$GA_UseItem/hud~
+mission_trigger vehicle_dismount
+mission_action goto error_reboard
+mission_trigger ui_hide HUD.ProgressView
+mission_action goto hart_launch
+mission_step hart_launch
+mission_trigger ui_show HUD.OverheadMap.DroppodToolbar
+mission_action goto pick_planet
+mission_step pick_planet
+mission_action status_message @mission_training_hart_pick_planet
+mission_action add_objective drop_on_planet @mission_training_hart_objective_drop_on_planet
+mission_trigger ui_hide HUD.OverheadMap.InterstellarMap
+mission_action goto pick_drop_point
+mission_step pick_drop_point
+mission_action status_message @mission_training_hart_pick_drop_point
+mission_trigger enter_zone z1 z2 z3 z4 z5 z6 z7 z8 z9 z10 i1 i2 i3 i4
+mission_action goto load_in_zone
+mission_step load_in_zone
+mission_action status_message @mission_training_hart_load_in_zone^@MissionStatusSkipForward~
+mission_action complete_objective drop_on_planet
+mission_action play_audio ping.wav
+mission_trigger skip_forward
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_hart_complete
+mission_action complete
+mission_step error_reboard
+mission_action status_message @mission_training_hart_error_reboard
+mission_action play_audio interface_feedback_error.wav
+mission_trigger vehicle_mount orbital_shuttle
+mission_action step_back
+mission_end
+
+##training_healing
+
+mission_version 2
+mission_description @mission_training_healing_description
+mission_prerequisites training_weapons01
+mission_zones tzshnc tzshtr tzshvs
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_healing_error_player_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_training_healing_welcome
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto change_armor
+mission_step change_armor
+mission_action status_message @mission_training_healing_change_armor
+mission_trigger skip_back
+mission_action goto start
+mission_trigger change_armor def
+mission_action goto clear_inventory
+mission_trigger change_armor lite
+mission_action goto clear_inventory
+mission_trigger change_armor med
+mission_action goto clear_inventory
+mission_step clear_inventory
+mission_action status_message @mission_training_healing_clear_inventory
+mission_action flash_widget_start HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_trigger ui_button_click HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action flash_widget_stop HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action goto buy_medkit
+mission_trigger ui_button_click HUD.Inventory.SoldierStandardArmor.btn_clear
+mission_action flash_widget_stop HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action goto buy_medkit
+mission_trigger ui_button_click HUD.Inventory.SoldierLightArmor.btn_clear
+mission_action flash_widget_stop HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action goto buy_medkit
+mission_step buy_medkit
+mission_action status_message @mission_training_healing_buy_medkit^@EquipmentTab~
+mission_action add_objective Heal_yourself_medkit @mission_training_healing_objective_heal_medkit
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger add_child medkit
+mission_action goto use_medkit
+mission_step use_medkit
+mission_action status_message @mission_training_healing_use_medkit
+mission_action set_health 10
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger equip medicalapplicator
+mission_action goto error_use_medkit
+mission_trigger use_object medkit
+mission_action complete_objective Heal_yourself_medkit
+mission_action goto buy_applicator
+mission_step buy_applicator
+mission_action status_message @mission_training_healing_buy_applicator^@EquipmentTab~
+mission_action add_objective heal_yourself_medapp @mission_training_healing_objective_heal_medapp
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger add_child medicalapplicator
+mission_action goto equip_applicator
+mission_step equip_applicator
+mission_action status_message @mission_training_healing_equip_applicator
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger equip medicalapplicator
+mission_action goto self_heal_mode
+mission_step self_heal_mode
+mission_action status_message @mission_training_healing_self_heal_mode^$GA_ChangeFireMode/hud~
+mission_trigger holster
+mission_action goto error_reequip_applicator
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger weapon_fire_mode 1
+mission_action goto Heal_yourself
+mission_step Heal_yourself
+mission_action status_message @mission_training_healing_heal_yourself
+mission_action set_health 10
+mission_trigger holster
+mission_action goto error_reequip_applicator
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger self_heal 100
+mission_action complete_objective heal_yourself_medapp
+mission_action play_audio ping.wav
+mission_action goto buy_bank
+mission_step buy_bank
+mission_action status_message @mission_training_healing_buy_bank
+mission_action add_objective repair_yourself @mission_training_healing_objective_repair_yourself
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger add_child bank
+mission_action goto equip_bank
+mission_step equip_bank
+mission_action status_message @mission_training_healing_equip_bank
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger equip bank
+mission_action goto self_repair_mode
+mission_step self_repair_mode
+mission_action status_message @mission_training_healing_self_repair_mode^$GA_ChangeFireMode/hud~
+mission_trigger holster
+mission_action goto error_reequip_bank
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger weapon_fire_mode 1
+mission_action goto repair_yourself
+mission_step repair_yourself
+mission_action status_message @mission_training_healing_repair_yourself
+mission_action set_armor 10
+mission_trigger holster
+mission_action goto error_reequip_bank
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger self_repair 100
+mission_action complete_objective repair_yourself
+mission_action play_audio ping.wav
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_healing_complete
+mission_action complete
+mission_step error_reequip_applicator
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_healing_reequip_applicator
+mission_trigger equip medicalapplicator
+mission_action step_back
+mission_step error_reequip_bank
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_healing_reequip_bank
+mission_trigger equip bank
+mission_action step_back
+mission_step error_do_not_leave_tz
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_healing_do_not_leave_tz^@TrainingCancel~
+mission_trigger ui_button_click HUD.TrainingZone.Select.Driving
+mission_action status_message @mission_training_healing_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Home
+mission_action status_message @mission_training_healing_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Cancel
+mission_action step_back
+mission_trigger ui_button_click HUD.TrainingZone.Select.Shooting
+mission_action step_back
+mission_step error_use_medkit
+mission_action status_message @mission_training_healing_error_use_medkit
+mission_trigger holster
+mission_action set_health 10
+mission_action goto use_medkit
+mission_end
+
+##training_implants
+
+mission_version 2
+mission_description @mission_training_implants_description
+mission_battle_rank 6
+mission_prerequisites training_certifications
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_implants_error_player_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_training_implants_start
+mission_action add_objective find_implant_term @mission_training_implants_objective_find_implant_term
+mission_action create_waypoint3d_nearest implant_term 00ff00 4874.5 3538.42 71.438 4848.42 3564.43 71.438 4757.43 3473.61 71.438 4783.73 3447.54 71.438 4216.08 6050.3 46.5766 4216.58 6087.44 46.5766 4088.02 6089.79 46.5766 4087.36 6052.73 46.5766 2322.01 5518.14 67.9014 2322.49 5555.26 67.9014 2194.06 5557.82 67.9014 2193.5 5520.64 67.9014
+mission_action_empire nc
+mission_action create_waypoint3d_nearest implant_term 00ff00 5167.61 3926.36 38.6291 5167.77 3889.48 38.629 5296.35 3889.79 38.6291 5296.2 3926.36 38.629 2986.35 5211.69 38.6989 2986.18 5248.23 38.6989 2857.7 5248.25 38.6989 2857.84 5211.71 38.6989 2941.71 3002.32 37.6193 2941.79 2965.76 37.6193 3070.41 2965.49 37.6193 3070.18 3002.16 37.6193
+mission_action_empire tr
+mission_action create_waypoint3d_nearest implant_term 00ff00 5545.64 4256.43 105.929 5545.74 4219.58 105.929 5674.37 4219.66 105.929 5674.3 4256.28 105.929 3042.3 4815.57 58.7853 3042.32 4852.38 58.7853 2913.6 4852.35 58.7853 2913.8 4815.55 58.7853 3623.58 2826.32 93.5531 3623.83 2789.8 93.5531 3752.27 2789.72 93.5531 3752.27 2826.29 93.5531
+mission_action_empire vs
+mission_trigger location_waypoint implant_term 6
+mission_action destroy_waypoint implant_term
+mission_action goto mnt_implant_term
+mission_trigger skip_forward
+mission_action destroy_waypoint implant_term
+mission_action goto mnt_implant_term
+mission_step mnt_implant_term
+mission_action status_message @mission_training_implants_mount_implant_term
+mission_trigger skip_back
+mission_action goto start
+mission_trigger vehicle_mount implant_terminal_mech
+mission_action complete_objective find_implant_term
+mission_action play_audio ping.wav
+mission_action goto implant_term_window
+mission_step implant_term_window
+mission_action status_message @mission_training_implants_implant_term_window^@BuyImplant~
+mission_action add_objective install_implant @mission_training_implants_objective_install_implant
+mission_trigger implant_add
+mission_action complete_objective install_implant
+mission_action goto exit_implant_term
+mission_step exit_implant_term
+mission_action status_message @mission_training_implants_exit_implant_term
+mission_trigger vehicle_dismount implant_terminal_mech
+mission_action goto open_char_info
+mission_step open_char_info
+mission_action status_message @mission_training_implants_open_char_info^$GA_ToggleCharacterPane/hud~
+mission_trigger ui_show HUD.CharacterPane
+mission_action goto info_tab
+mission_step info_tab
+mission_action status_message @mission_training_implants_info_tab^@CharacterInfoTab~
+mission_action flash_widget_start HUD.CharacterPane.SoldierTab
+mission_trigger ui_checkbox_checked HUD.CharacterPane.SoldierTab
+mission_action flash_widget_stop HUD.CharacterPane.SoldierTab
+mission_action goto highlight_implants
+mission_step highlight_implants
+mission_action status_message @mission_training_implants_highlight_implants
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant1Rect
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant2Rect
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant3Rect
+mission_trigger delay 7500
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Rect
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Rect
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Rect
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Rect
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Rect
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Rect
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto highlight_progress
+mission_step highlight_progress
+mission_action status_message @mission_training_implants_highlight_progress_bar
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant1Progress
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant2Progress
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant3Progress
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Progress
+mission_action goto highlight_implants
+mission_trigger delay 7500
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Progress
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Progress
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Progress
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto highlight_active
+mission_step highlight_active
+mission_action status_message @mission_training_implants_highlight_implant_active
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant1Check
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant2Check
+mission_action flash_widget_start HUD.CharacterPane.SoldierPage.Implant3Check
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Check
+mission_action goto highlight_progress
+mission_trigger delay 7500
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Check
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant1Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant2Check
+mission_action flash_widget_stop HUD.CharacterPane.SoldierPage.Implant3Check
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto close_char_info
+mission_step close_char_info
+mission_action status_message @mission_training_implants_close_char_info
+mission_trigger ui_hide HUD.CharacterPane
+mission_action goto mount_implant_term2
+mission_step mount_implant_term2
+mission_action status_message @mission_training_implants_mount_implant_term
+mission_trigger vehicle_mount implant_terminal_mech
+mission_action goto remove_implant
+mission_step remove_implant
+mission_action status_message @mission_training_implants_remove_implant^@SellImplant~
+mission_trigger implant_remove
+mission_action goto install_implant2
+mission_step install_implant2
+mission_action status_message @mission_training_implants_install_implant
+mission_trigger implant_add
+mission_action goto exit_implant_term2
+mission_step exit_implant_term2
+mission_action status_message @mission_training_implants_exit_implant_term
+mission_trigger vehicle_dismount implant_terminal_mech
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_implants_end
+mission_action complete
+mission_end
+
+##training_inventory
+
+mission_version 2
+mission_description @mission_training_inventory_description
+mission_prerequisites training_weapons01
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_step start
+mission_action status_message @mission_training_inventory_welcome
+mission_trigger skip_forward
+mission_action goto goto_hart_door
+mission_step goto_hart_door
+mission_action status_message @mission_training_inventory_goto_hart_door^@MissionStatusSkipForward~
+mission_action add_objective use_locker @mission_training_inventory_objective_locker
+mission_action create_waypoint_nearest hart_door 00ff00 4765.79 3438.72 4883.16 3556.4 4235.25 6080.66 4069.47 6083.3 2341.06 5548.65 2175.37 5551.34
+mission_action_empire nc
+mission_action create_waypoint_nearest hart_door 00ff00 5149.08 3919.83 5314.73 3919.98 3004.87 5242.04 2839.31 5241.81 2923.47 2996.13 3088.88 2995.99
+mission_action_empire tr
+mission_action create_waypoint_nearest hart_door 00ff00 3770.81 2796.12 3605.29 2795.82 2895.45 4821.86 3060.78 4822.09 5527.33 4226.01 5692.52 4225.8
+mission_action_empire vs
+mission_trigger location_waypoint hart_door 8
+mission_action destroy_waypoint hart_door
+mission_action goto goto_deck_door
+mission_trigger skip_forward
+mission_action destroy_waypoint hart_door
+mission_action goto goto_deck_door
+mission_step goto_deck_door
+mission_action status_message @mission_training_inventory_goto_deck_door
+mission_action create_waypoint3d_nearest deck_door 00ff00 4872.56 3534.53 81.438 2199.04 5558.92 77.9014 2317.77 5557.03 77.9014 4092.91 6090.84 56.5766 4211.8 6088.9 56.5766 4788.49 3450.15 81.438
+mission_action_empire nc
+mission_action create_waypoint3d_nearest deck_door 00ff00 5172.83 3927.92 48.629 5291.13 3927.95 48.629 2981.02 5250.06 48.6989 2863 5249.92 48.6989 2947.17 3003.91 47.6193 3065.11 3004.07 47.6193
+mission_action_empire tr
+mission_action create_waypoint3d_nearest deck_door 00ff00 3746.89 2788.04 103.553 3629.26 2788.04 103.553 2919.3 4814.07 68.7853 3037.15 4814.03 68.7853 5551.42 4218.02 115.929 5668.48 4218.06 115.929
+mission_action_empire vs
+mission_trigger location_waypoint deck_door 8
+mission_action destroy_waypoint deck_door
+mission_action goto goto_locker
+mission_trigger skip_back
+mission_action destroy_waypoint deck_door
+mission_action goto goto_hart_door
+mission_trigger skip_forward
+mission_action destroy_waypoint deck_door
+mission_action goto goto_locker
+mission_step goto_locker
+mission_action status_message @mission_training_inventory_goto_locker
+mission_action create_waypoint3d_nearest locker 00ff00 4849.89 3472.17 86.438 2258.73 5585.83 82.9014 4152.94 6117.73 61.5766
+mission_action_empire nc
+mission_action create_waypoint3d_nearest locker 00ff00 5232.05 3955.95 53.629 2921.96 5277.93 53.6989 3006.04 3032 52.6193
+mission_action_empire tr
+mission_action create_waypoint3d_nearest locker 00ff00 3687.86 2759.81 108.553 2977.91 4785.51 73.7853 5610.08 4189.48 120.929
+mission_action_empire vs
+mission_trigger location_waypoint locker 8
+mission_action destroy_waypoint locker
+mission_action goto open_locker
+mission_trigger skip_back
+mission_action destroy_waypoint locker
+mission_action goto goto_deck_door
+mission_trigger skip_forward
+mission_action destroy_waypoint locker
+mission_action goto open_locker
+mission_step open_locker
+mission_action status_message @mission_training_inventory_open_locker
+mission_trigger use_object mb_locker
+mission_action complete_objective use_locker
+mission_action play_audio ping.wav
+mission_action goto open_locker2
+mission_step open_locker2
+mission_action status_message @mission_training_inventory_open_locker2
+mission_trigger use_object order_terminal
+mission_action goto equip_term
+mission_step equip_term
+mission_action status_message @mission_training_inventory_equip_term^@FavoritesTab~
+mission_action add_objective save_fave @mission_training_inventory_objective_save_fave
+mission_action flash_widget_start HUD.EquipmentTerminal.FavoritesTab
+mission_trigger ui_checkbox_checked HUD.EquipmentTerminal.FavoritesTab
+mission_action flash_widget_stop HUD.EquipmentTerminal.FavoritesTab
+mission_action goto save_favorite
+mission_step save_favorite
+mission_action status_message @mission_training_inventory_save_favorite^@FavoritesTab~^@SaveFavorite~
+mission_action flash_widget_start HUD.EquipmentTerminal.FavoritesPage.FavoritesListBox
+mission_trigger delay 2000
+mission_action flash_widget_stop HUD.EquipmentTerminal.FavoritesPage.FavoritesListBox
+mission_action goto flash_save_button
+mission_step flash_save_button
+mission_action flash_widget_start HUD.EquipmentTerminal.FavoritesPage.SaveButton
+mission_trigger delay 1500
+mission_action flash_widget_stop HUD.EquipmentTerminal.FavoritesPage.SaveButton
+mission_trigger save_inventory_favorite
+mission_action goto close_equip_term
+mission_step close_equip_term
+mission_action status_message @mission_training_inventory_close_equip_term
+mission_trigger ui_hide HUD.EquipmentTerminal
+mission_action complete_objective save_fave
+mission_action add_objective load_fave @mission_training_inventory_load_fave
+mission_action play_audio ping.wav
+mission_action goto clear_inventory
+mission_step clear_inventory
+mission_action status_message @mission_training_inventory_clear_inventory^@ClearInventory~
+mission_trigger ui_button_click HUD.Inventory.SoldierStandardArmor.btn_clear
+mission_action goto equip_term2
+mission_trigger ui_button_click HUD.Inventory.SoldierLightArmor.btn_clear
+mission_action goto equip_term2
+mission_trigger ui_button_click HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action goto equip_term2
+mission_trigger ui_button_click HUD.Inventory.SoldierHeavyArmor.btn_clear
+mission_action goto equip_term2
+mission_trigger ui_button_click HUD.Inventory.SoldierStealthArmor.btn_clear
+mission_action goto equip_term2
+mission_step equip_term2
+mission_action status_message @mission_training_inventory_equip_term2
+mission_trigger use_object order_terminal
+mission_action goto equip_term3
+mission_step equip_term3
+mission_action status_message @mission_training_inventory_equip_term3^@FavoritesTab~
+mission_trigger load_inventory_favorite
+mission_action complete_objective load_fave
+mission_action play_audio ping.wav
+mission_action goto favorite_loaded
+mission_step favorite_loaded
+mission_action status_message @mission_training_inventory_favorite_loaded^@MissionStatusSkipForward~
+mission_trigger skip_forward
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_inventory_complete
+mission_action complete
+mission_end
+
+##training_map
+
+mission_version 2
+mission_description @mission_training_map_description
+mission_battle_xp 500
+mission_step start
+mission_action status_message @mission_training_map_welcome
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto prox_map
+mission_step prox_map
+mission_action status_message @mission_training_map_prox_map
+mission_action add_objective prox_map @mission_training_map_objective_prox_map
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto prox_map2
+mission_step prox_map2
+mission_action status_message @mission_training_map_prox_map2^$GA_RadarDecrease/hud~^$GA_RadarIncrease/hud~
+mission_trigger skip_back
+mission_action goto prox_map
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action play_audio ping.wav
+mission_action complete_objective prox_map
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto tactical_map
+mission_step tactical_map
+mission_action status_message @mission_training_map_tactical_map^$GA_ToggleOverheadMap/global~
+mission_action add_objective tactical_map @mission_training_map_objective_tactical_map
+mission_trigger ui_show HUD.MapChat
+mission_action goto tactical_map_zoom_in
+mission_step tactical_map_zoom_in
+mission_action status_message @mission_training_map_tactical_map_zoom_in^$GA_ZoomIn/overhead~^$GA_ZoomOut/overhead~
+mission_trigger ui_map_zoom_in
+mission_action goto tactical_map_zoom_out
+mission_step tactical_map_zoom_out
+mission_action status_message @mission_training_map_tactical_map_zoom_out^$GA_ZoomOut/overhead~
+mission_trigger ui_map_zoom_out
+mission_action goto tactical_map3
+mission_step tactical_map3
+mission_action status_message @mission_training_map_tactical_map3
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto tactical_map_toggles
+mission_step tactical_map_toggles
+mission_action status_message @mission_training_map_toggles^@OverheadToggleToolbar~
+mission_action flash_widget_start HUD.OverheadMap.TitleBar.TogglesButton
+mission_trigger ui_button_click HUD.OverheadMap.TitleBar.TogglesButton
+mission_action flash_widget_stop HUD.OverheadMap.TitleBar.TogglesButton
+mission_action goto tactical_map_toggles2
+mission_step tactical_map_toggles2
+mission_action status_message @mission_training_map_toggles2^@OverheadMapLegend~
+mission_action flash_widget_start HUD.OverheadMap.TitleBar.LegendButton
+mission_trigger ui_button_click HUD.OverheadMap.TitleBar.LegendButton
+mission_action flash_widget_stop HUD.OverheadMap.TitleBar.LegendButton
+mission_action goto tactical_map_legend
+mission_step tactical_map_legend
+mission_action status_message @mission_training_map_legend^@OverheadMapToolbar~
+mission_action flash_widget_start HUD.OverheadMap.TitleBar.ActionsButton
+mission_trigger ui_button_click HUD.OverheadMap.TitleBar.ActionsButton
+mission_action flash_widget_stop HUD.OverheadMap.TitleBar.ActionsButton
+mission_action goto tactical_map_actions
+mission_step tactical_map_actions
+mission_action status_message @mission_training_map_actions^$GA_GlobalView/overhead~
+mission_trigger ui_show HUD.OverheadMap.InterstellarMap
+mission_action complete_objective tactical_map
+mission_action play_audio ping.wav
+mission_action goto global_map
+mission_step global_map
+mission_action status_message @mission_training_map_global_map
+mission_action add_objective global_map @mission_training_map_objective_global_map
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto global_map2
+mission_step global_map2
+mission_action status_message @mission_training_map_global_map2
+mission_trigger ui_hide HUD.OverheadMap.InterstellarMap
+mission_action complete_objective global_map
+mission_action play_audio ping.wav
+mission_action goto tactical_map_SOIs
+mission_step tactical_map_SOIs
+mission_action status_message @mission_training_map_tactical_map_SOIs
+mission_action add_objective SOIs @mission_training_map_objective_SOIs
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto tactical_map_SOIs2
+mission_step tactical_map_SOIs2
+mission_action status_message @mission_training_map_tactical_map_SOIs2
+mission_trigger skip_back
+mission_action goto tactical_map_SOIs
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto tactical_map_SOI_symbols
+mission_step tactical_map_SOI_symbols
+mission_action status_message @mission_training_map_SOI_symbols
+mission_trigger ui_show HUD.OverheadMap.FacilityInfo
+mission_action goto base_info
+mission_step base_info
+mission_action status_message @mission_training_map_base_info
+mission_trigger ui_hide HUD.OverheadMap.FacilityInfo
+mission_action complete_objective SOIs
+mission_action play_audio ping.wav
+mission_action goto tactical_map_lattice_links
+mission_step tactical_map_lattice_links
+mission_action status_message @mission_training_map_lattice_links
+mission_action add_objective lattice_links @mission_training_map_objective_lattice_links
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto lattice_link_empires
+mission_step lattice_link_empires
+mission_action status_message @mission_training_map_lattice_link_empires
+mission_trigger skip_back
+mission_action goto tactical_map_lattice_links
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto lattice_link_contested
+mission_step lattice_link_contested
+mission_action status_message @mission_training_map_lattice_link_contested
+mission_trigger skip_back
+mission_action goto lattice_link_empires
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto lattice_link_other
+mission_step lattice_link_other
+mission_action status_message @mission_training_map_lattice_link_other^$GA_ToggleOverheadMap/global~
+mission_trigger skip_back
+mission_action goto lattice_link_contested
+mission_trigger ui_hide HUD.MapChat
+mission_action complete_objective lattice_links
+mission_action play_audio ping.wav
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_map_complete
+mission_action complete
+mission_end
+
+##training_vehicles
+
+mission_version 2
+mission_description @mission_training_vehicles_description
+mission_prerequisites training_inventory training_weapons01
+mission_zones home1 home2 home3 tzdrnc tzdrtr tzdrvs
+mission_battle_xp 500
+mission_step start
+mission_trigger enter_zone home1 home2 home3
+mission_action goto sanctuary
+mission_trigger enter_zone tzdrtr tzdrnc tzdrvs
+mission_action goto goto_vehicle_term
+mission_step sanctuary
+mission_action status_message @mission_training_vehicles_start
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto goto_training_zone
+mission_step goto_training_zone
+mission_action status_message @mission_training_vehicles_goto_training_zone
+mission_action create_waypoint_nearest tz 00ff00 4929.04 3657.91 4965.76 3620.35 4699.53 3361.22 4663.34 3400.47 4692.29 3598.57 4730.41 3636.04 4329.05 5944.37 4275.38 5945.17 4175.25 5918.56 4121.17 5919.16 4023.34 5950.59 3969.07 5951.48 2426.02 5514.78 2424.62 5568.13 2400.19 5439.44 2361.35 5402.51 2196.06 5418.96 2141.73 5418.89
+mission_action_empire nc
+mission_action create_waypoint_nearest tz 00ff00 2727.87 5249.96 2766.97 5288.08 2892.77 5079.15 2947.45 5079.65 3111.87 5247.98 3073.07 5285.79 5053.3 3934.97 5053.81 3880.5 5202.22 3759.29 5257.05 3759.44 5413.12 3879.07 5412.93 3933.31 2825.34 3010.65 2825.47 3065.37 3136.74 3074.99 3191.26 3075.17 3169.19 2909.25 3168.72 2854.79
+mission_action_empire tr
+mission_action create_waypoint_nearest tz 00ff00 5466.84 4366.98 5521.3 4366.51 5757.65 4329.88 5795.82 4291.09 5508.24 4094.35 5470.13 4132.41 2809.52 4948.12 2848.05 4909.54 3116.82 4903.2 3171.92 4901.75 3121.83 4728.34 3082.68 4690.14 3563.97 2939.63 3618.9 2938.22 3760.02 2941.27 3814.56 2940.2 3717.64 2682.51 3662.28 2684.65
+mission_action_empire vs
+mission_action add_objective goto_vr @mission_training_vehicles_objective_goto_vr
+mission_trigger location_waypoint tz 16
+mission_action destroy_waypoint tz
+mission_action goto goto_training_zone2
+mission_trigger skip_forward
+mission_action destroy_waypoint tz
+mission_action goto goto_training_zone2
+mission_step goto_training_zone2
+mission_action status_message @mission_training_vehicles_enter_training_zone
+mission_trigger skip_back
+mission_action goto goto_training_zone
+mission_trigger ui_show HUD.TrainingZone
+mission_action status_message @mission_training_vehicles_tz_ui^@TrainingDriving~
+mission_trigger enter_zone tzdrtr tzdrnc tzdrvs
+mission_action complete_objective goto_vr
+mission_action play_audio ping.wav
+mission_action goto goto_vehicle_term
+mission_step goto_vehicle_term
+mission_action status_message @mission_training_vehicles_goto_vehicle_term
+mission_action create_waypoint veh_term 00ff00 6533.37 1856.53
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint veh_term 8
+mission_action destroy_waypoint veh_term
+mission_action goto open_vehicle_term
+mission_step open_vehicle_term
+mission_action status_message @mission_training_vehicles_open_vehicle_term
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger use_object vehicle_terminal
+mission_action goto get_harasser
+mission_step get_harasser
+mission_action status_message @mission_training_vehicles_get_harasser^@BuyVehicle~
+mission_action add_objective drive_ground_vehicle @mission_training_vehicles_objective_drive_ground_vehicle
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount two_man_assault_buggy Driver
+mission_action goto inside_harasser
+mission_step inside_harasser
+mission_action status_message @mission_training_vehicles_inside_harasser^$GA_Forward/ground~^$GA_TurnLeft/ground~^$GA_Backward/ground~^$GA_TurnRight/ground~^$GA_Brake/ground~^$GA_ToggleThirdPersonCamera/hud~
+mission_action create_waypoint h_wp1 00ff00 6579.95 1975.41
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp1 20
+mission_action goto stop_harasser
+mission_step stop_harasser
+mission_action destroy_waypoint h_wp1
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_stop
+mission_action add_objective learn_veh_ui @mission_training_vehicles_objective_learn_veh_ui
+mission_action goto hud
+mission_step hud
+mission_action status_message @mission_training_vehicles_hud
+mission_action flash_widget_start HUD.ActiveItems.Vehicle.Speedometer.ForwardIndicator
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.ActiveItems.Vehicle.Speedometer.ForwardIndicator
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto hud2
+mission_step hud2
+mission_action status_message @mission_training_vehicles_hud2
+mission_action flash_widget_start HUD.VehicleIcons.two_man_assault_buggy.Progress
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_back
+mission_action flash_widget_stop HUD.VehicleIcons.two_man_assault_buggy.Progress
+mission_action goto hud
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto hud3
+mission_step hud3
+mission_action status_message @mission_training_vehicles_hud3
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_back
+mission_action goto hud2
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto hud4
+mission_step hud4
+mission_action status_message @mission_training_vehicles_hud4^$GA_UseItem/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_back
+mission_action goto hud3
+mission_trigger vehicle_dismount two_man_assault_buggy
+mission_action flash_widget_stop HUD.VehicleIcons.two_man_assault_buggy.Progress
+mission_action goto mount_gunner
+mission_step mount_gunner
+mission_action status_message @mission_training_vehicles_mount_gunner^$GA_UseItem/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount two_man_assault_buggy gunnera
+mission_action goto weapon_hud
+mission_step weapon_hud
+mission_action status_message @mission_training_vehicles_weapon_hud^$GA_UseItem/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount two_man_assault_buggy
+mission_action goto trunk
+mission_step trunk
+mission_action status_message @mission_training_vehicles_trunk^$GA_UseItem/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_open_trunk
+mission_action goto goto_silo
+mission_step goto_silo
+mission_action status_message @mission_training_vehicles_goto_silo
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount two_man_assault_buggy Driver
+mission_action create_waypoint silo 00ff00 6561.35 1845.92
+mission_action complete_objective learn_veh_ui
+mission_action play_audio ping.wav
+mission_action add_objective use_silo @mission_training_vehicles_objective_use_silo
+mission_action goto at_silo
+mission_step at_silo
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint silo 20
+mission_action destroy_waypoint silo
+mission_action goto open_silo
+mission_step open_silo
+mission_action status_message @mission_training_vehicles_open_silo^$GA_UseItem/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_show HUD.RearmTerminal
+mission_action goto silo_delay
+mission_step silo_delay
+mission_trigger delay 100
+mission_action goto close_silo
+mission_step close_silo
+mission_action status_message @mission_training_vehicles_close_silo
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_hide HUD.RearmTerminal
+mission_action complete_objective use_silo
+mission_action play_audio ping.wav
+mission_action goto cruise_desc
+mission_step cruise_desc
+mission_action status_message @mission_training_vehicles_cruise_desc^$GA_Autorun/hud~^$GA_Cruise100PercentPower/vehicle~^$GA_Cruise50PercentPower/vehicle~^$GA_CruiseIncrementPower/vehicle~^$GA_CruiseDecrementPower/vehicle~^$GA_BailVehicle/vehicle~
+mission_action goto h_wp2
+mission_step h_wp2
+mission_action create_waypoint h_wp2 00ff00 6614.84 2086.42
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp2 20
+mission_action destroy_waypoint h_wp2
+mission_action goto h_wp3
+mission_step h_wp3
+mission_action create_waypoint h_wp3 00ff00 6630.77 2228.97
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp3 20
+mission_action destroy_waypoint h_wp3
+mission_action goto h_wp4
+mission_step h_wp4
+mission_action create_waypoint h_wp4 00ff00 6590.48 2369.63
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp4 20
+mission_action destroy_waypoint h_wp4
+mission_action goto h_wp5
+mission_step h_wp5
+mission_action create_waypoint h_wp5 00ff00 6496.49 2526.61
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp5 20
+mission_action destroy_waypoint h_wp5
+mission_action goto h_wp6
+mission_step h_wp6
+mission_action create_waypoint h_wp6 00ff00 6497.38 2723.62
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp6 20
+mission_action destroy_waypoint h_wp6
+mission_action goto h_wp7
+mission_step h_wp7
+mission_action create_waypoint h_wp7 00ff00 6579.42 2856.76
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp7 20
+mission_action destroy_waypoint h_wp7
+mission_action goto h_wp8
+mission_step h_wp8
+mission_action create_waypoint h_wp8 00ff00 6559.92 2959.46
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint h_wp8 20
+mission_action destroy_waypoint h_wp8
+mission_action goto exit_harasser
+mission_step exit_harasser
+mission_action status_message @mission_training_vehicles_exit_harasser
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount two_man_assault_buggy
+mission_action create_waypoint veh_term2 00ff00 6546.03 2986.68
+mission_action complete_objective drive_ground_vehicle
+mission_action play_audio ping.wav
+mission_action goto goto_vehicle_term2
+mission_step goto_vehicle_term2
+mission_action status_message @mission_training_vehicles_goto_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint veh_term2 8
+mission_action destroy_waypoint veh_term2
+mission_action goto open_vehicle_term2
+mission_trigger skip_forward
+mission_action destroy_waypoint veh_term2
+mission_action goto open_vehicle_term2
+mission_step open_vehicle_term2
+mission_action status_message @mission_training_vehicles_open_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger use_object vehicle_terminal
+mission_action goto get_switchblade
+mission_step get_switchblade
+mission_action status_message @mission_training_vehicles_get_switchblade
+mission_action add_objective drive_hover_vehicle @mission_training_vehicles_objective_drive_hover_vehicle
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount switchblade
+mission_action create_waypoint s_wp1 00ff00 6418.93 2913.76
+mission_action goto hover_controls
+mission_step hover_controls
+mission_action status_message @mission_training_vehicles_hover_controls^$GA_StrafeLeft/air~^$GA_StrafeRight/air~^$GA_Forward/air~^$GA_Backward/air~^$GA_FlightAfterburners/air~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint s_wp1 20
+mission_action destroy_waypoint s_wp1
+mission_action goto s_wp2
+mission_step s_wp2
+mission_action create_waypoint s_wp2 00ff00 6258.92 2943.42
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint s_wp2 20
+mission_action destroy_waypoint s_wp2
+mission_action goto s_wp3
+mission_step s_wp3
+mission_action create_waypoint s_wp3 00ff00 6111.24 3005.4
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint s_wp3 20
+mission_action destroy_waypoint s_wp3
+mission_action goto s_wp4
+mission_step s_wp4
+mission_action create_waypoint s_wp4 00ff00 6016.77 3161.23
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint s_wp4 20
+mission_action destroy_waypoint s_wp4
+mission_action goto s_wp5
+mission_step s_wp5
+mission_action create_waypoint s_wp5 00ff00 5834.92 3153.26
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint s_wp5 20
+mission_action destroy_waypoint s_wp5
+mission_action goto exit_switchblade
+mission_step exit_switchblade
+mission_action status_message @mission_training_vehicles_exit_switchblade
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount switchblade
+mission_action create_waypoint veh_term3 00ff00 5808.18 3179.96
+mission_action complete_objective drive_hover_vehicle
+mission_action play_audio ping.wav
+mission_action goto goto_vehicle_term3
+mission_step goto_vehicle_term3
+mission_action status_message @mission_training_vehicles_goto_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint veh_term3 8
+mission_action destroy_waypoint veh_term3
+mission_action goto open_vehicle_term3
+mission_step open_vehicle_term3
+mission_action status_message @mission_training_vehicles_open_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger use_object vehicle_terminal
+mission_action goto get_ams
+mission_step get_ams
+mission_action status_message @mission_training_vehicles_get_ams
+mission_action add_objective deploy_vehicle @mission_training_vehicles_objective_deploy_vehicle
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount ams
+mission_action goto deploy_ams
+mission_step deploy_ams
+mission_action status_message @mission_training_vehicles_deploy_ams^$GA_VehicleSpecial/vehicle~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_deploy
+mission_action complete_objective deploy_vehicle
+mission_action play_audio ping.wav
+mission_action goto exit_ams
+mission_step exit_ams
+mission_action status_message @mission_training_vehicles_exit_ams
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount ams
+mission_action goto deployed_features
+mission_step deployed_features
+mission_action status_message @mission_training_vehicles_deployed_features
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto deployed_features2
+mission_step deployed_features2
+mission_action status_message @mission_training_vehicles_deployed_features2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount
+mission_action create_waypoint x_wp1 00ff00 5964.84 2807.79
+mission_action add_objective find_air_term @mission_training_vehicles_objective_find_air_term
+mission_action goto x_wp1
+mission_step x_wp1
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp1 20
+mission_action destroy_waypoint x_wp1
+mission_action goto x_wp2
+mission_step x_wp2
+mission_action create_waypoint x_wp2 00ff00 5906.21 2691.22
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp2 20
+mission_action destroy_waypoint x_wp2
+mission_action goto x_wp3
+mission_step x_wp3
+mission_action create_waypoint x_wp3 00ff00 5958.38 2434.76
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp3 20
+mission_action destroy_waypoint x_wp3
+mission_action goto x_wp4
+mission_step x_wp4
+mission_action create_waypoint x_wp4 00ff00 6059.35 2250.36
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp4 20
+mission_action destroy_waypoint x_wp4
+mission_action goto x_wp5
+mission_step x_wp5
+mission_action create_waypoint x_wp5 00ff00 6081.09 2080.28
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp5 20
+mission_action destroy_waypoint x_wp5
+mission_action goto x_wp6
+mission_step x_wp6
+mission_action create_waypoint x_wp6 00ff00 5944.56 1987.57
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp6 20
+mission_action destroy_waypoint x_wp6
+mission_action goto x_wp7
+mission_step x_wp7
+mission_action create_waypoint x_wp7 00ff00 5801.9 1907.08
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint x_wp7 20
+mission_action destroy_waypoint x_wp7
+mission_action goto exit_vehicle
+mission_step exit_vehicle
+mission_action status_message @mission_training_vehicles_exit_vehicle
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount
+mission_action create_waypoint air_term 00ff00 5787.46 1859.85
+mission_action goto goto_vehicle_term4
+mission_step goto_vehicle_term4
+mission_action status_message @mission_training_vehicles_goto_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint air_term 8
+mission_action destroy_waypoint air_term
+mission_action complete_objective find_air_term
+mission_action play_audio ping.wav
+mission_action goto open_vehicle_term4
+mission_step open_vehicle_term4
+mission_action status_message @mission_training_vehicles_open_vehicle_term2
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger use_object dropship_vehicle_terminal
+mission_action goto get_mosquito
+mission_step get_mosquito
+mission_action status_message @mission_training_vehicles_get_mosquito
+mission_action add_objective pilot_air_vehicle @mission_training_vehicles_objective_pilot_air_vehicle
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount mosquito
+mission_action goto flight_controls
+mission_step flight_controls
+mission_action status_message @mission_training_vehicles_flight_controls
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 7500
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto flight_controls2
+mission_step flight_controls2
+mission_action status_message @mission_training_vehicles_flight_controls2^$GA_Forward/air~^$GA_Backward/air~^$GA_StrafeLeft/air~^$GA_StrafeRight/air~^$GA_FlightElevate/air~^$GA_FlightLower/air~^$GA_FlightAfterburners/air~^$GA_BailVehicle/vehicle~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount mosquito
+mission_action complete_objective pilot_air_vehicle
+mission_action play_audio ping.wav
+mission_action goto get_galaxy
+mission_step get_galaxy
+mission_action status_message @mission_training_vehicles_get_galaxy
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount dropship Driver
+mission_action add_objective vehicle_permissions @mission_training_vehicles_objective_vehicle_permissions
+mission_action goto ownership
+mission_step ownership
+mission_action status_message @mission_training_vehicles_ownership
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount dropship
+mission_action goto vehicle_window
+mission_step vehicle_window
+mission_action status_message @mission_training_vehicles_vehicle_window^$GA_ToggleVehiclePane/hud~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_show HUD.Keycard
+mission_action goto vehicle_window2
+mission_step vehicle_window2
+mission_action status_message @mission_training_vehicles_vehicle_window2^@KickPassenger~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto vehicle_window3
+mission_step vehicle_window3
+mission_action status_message @mission_training_vehicles_vehicle_window3
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto vehicle_window4
+mission_step vehicle_window4
+mission_action status_message @mission_training_vehicles_vehicle_window4^@NoAccess~^@SquadAccess~^@EmpireAccess~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto decon
+mission_step decon
+mission_action status_message @mission_training_vehicles_decon^@DeconstructVehicle~
+mission_action flash_widget_start HUD.KeyCard.Deconstruct
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_button_click HUD.KeyCard.Deconstruct
+mission_action flash_widget_stop HUD.KeyCard.Deconstruct
+mission_action play_audio ping.wav
+mission_action complete_objective vehicle_permissions
+mission_action goto vehicle_window5
+mission_step vehicle_window5
+mission_action status_message @mission_training_vehicles_vehicle_window5
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount
+mission_action goto air_wp1
+mission_step air_wp1
+mission_action create_waypoint air_wp1 00ff00 6515.13 2033.59
+mission_action status_message @mission_training_vehicles_air_wp1
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint air_wp1 20
+mission_action destroy_waypoint air_wp1
+mission_action goto exit_air_veh
+mission_step exit_air_veh
+mission_action status_message @mission_training_vehicles_exit_air_veh
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount
+mission_action create_waypoint bfr_term 00ff00 6490.6 1937.04
+mission_action goto at_bfr_term
+mission_step at_bfr_term
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger location_waypoint bfr_term 10
+mission_action destroy_waypoint bfr_term
+mission_action goto open_bfr_term
+mission_step open_bfr_term
+mission_action status_message @mission_training_vehicles_open_bfr_term
+mission_action add_objective pilot_bfr @mission_training_vehicles_objective_pilot_bfr
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_mount aphelion_flight
+mission_action goto bfr_controls
+mission_trigger vehicle_mount aphelion_gunner
+mission_action goto bfr_controls
+mission_trigger vehicle_mount colossus_flight
+mission_action goto bfr_controls
+mission_trigger vehicle_mount colossus_gunner
+mission_action goto bfr_controls
+mission_trigger vehicle_mount peregrine_flight
+mission_action goto bfr_controls
+mission_trigger vehicle_mount peregrine_gunner
+mission_action goto bfr_controls
+mission_step bfr_controls
+mission_action status_message @mission_training_vehicles_bfr_controls^$GA_Forward/bfr~^$GA_Backward/bfr~^$GA_TurnLeft/bfr~^$GA_TurnRight/bfr~^$GA_StrafeLeft/bfr~^$GA_StrafeRight/bfr~^$GA_Autorun/bfr~^$GA_FlightElevate/bfr~^$GA_ToggleCrouch/bfr~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger vehicle_dismount
+mission_action complete_objective pilot_bfr
+mission_action play_audio ping.wav
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_vehicles_end
+mission_action complete
+mission_step error_do_not_leave_tz
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_vehicles_do_not_leave_tz^@TrainingCancel~
+mission_trigger ui_button_click HUD.TrainingZone.Select.Shooting
+mission_action status_message @mission_training_vehicles_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Driving
+mission_action step_back
+mission_trigger ui_button_click HUD.TrainingZone.Select.Home
+mission_action status_message @mission_training_vehicles_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Cancel
+mission_action step_back
+mission_end
+
+##training_warpgates
+
+mission_version 2
+mission_description @mission_training_warpgates_description
+mission_prerequisites training_map
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_warpgates_error_player_died
+mission_action cancel
+mission_step start
+mission_action status_message @mission_training_warpgates_welcome1
+mission_trigger delay 10000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto start2
+mission_step start2
+mission_action status_message @mission_training_warpgates_start2_nc
+mission_action_empire nc
+mission_action status_message @mission_training_warpgates_start2_tr
+mission_action_empire tr
+mission_action status_message @mission_training_warpgates_start2_vs
+mission_action_empire vs
+mission_trigger vehicle_mount orbital_shuttle
+mission_action goto error_dismount_hart
+mission_trigger ui_show HUD.MapChat
+mission_action goto create_waypoint
+mission_step create_waypoint
+mission_action status_message @mission_training_warpgates_create_waypoint
+mission_action add_objective create_wp @mission_training_warpgates_objective_create_wp
+mission_action goto check_wp_nc
+mission_action_empire nc
+mission_action goto check_wp_tr
+mission_action_empire tr
+mission_action goto check_wp_vs
+mission_action_empire vs
+mission_step check_wp_nc
+mission_trigger player_waypoint 5172.44 3175.66 230
+mission_action goto close_map
+mission_trigger player_waypoint 4155.1 6492.27 230
+mission_action goto close_map
+mission_trigger player_waypoint 2189.62 5954.93 230
+mission_action goto close_map
+mission_step check_wp_tr
+mission_trigger player_waypoint 5298.77 4506.11 230
+mission_action goto close_map
+mission_trigger player_waypoint 3253.04 4654.78 230
+mission_action goto close_map
+mission_trigger player_waypoint 3742.88 3078.93 230
+mission_action goto close_map
+mission_step check_wp_vs
+mission_trigger player_waypoint 5655.01 4689.99 230
+mission_action goto close_map
+mission_trigger player_waypoint 2515.25 5308.17 230
+mission_action goto close_map
+mission_trigger player_waypoint 4175.4 2404.06 230
+mission_action goto close_map
+mission_step close_map
+mission_action complete_objective create_wp
+mission_action play_audio ping.wav
+mission_action status_message @mission_training_warpgates_close_map
+mission_trigger ui_hide HUD.MapChat
+mission_action goto go_to_waypoint
+mission_step go_to_waypoint
+mission_action status_message @mission_training_warpgates_go_to_waypoint
+mission_action add_objective goto_warpgate @mission_training_warpgates_objective_goto_warpgate
+mission_action create_waypoint3d_nearest teleporter 00ff00 4816.71 3622.03 76.747 4921.5 3500.57 76.7407 4826.64 3398.37 76.7419 4698.26 3505.86 76.7433 4155.81 6160.46 51.9632 4258.03 6148.36 51.9208 4212.01 5954.62 51.9252 4059.72 5986.2 51.9552 2257.43 5642.91 73.3095 2388.07 5619.2 73.2059 2241.73 5432.68 73.3012 2131.95 5532.31 73.3476
+mission_action_empire nc
+mission_action goto at_warpgate_nc
+mission_action_empire nc
+mission_action create_waypoint3d_nearest teleporter 00ff00 5164.15 3982.54 43.9804 5302.12 3982.35 43.9224 5309.66 3834.72 44.0508 5154.08 3834.47 43.9724 2852.1 5311.96 44.0297 2990.01 5312.31 43.9933 2998.12 5166.87 44.0137 2842.21 5166.49 44.0454 2938.01 3056.6 42.9273 3075.92 3056.59 42.923 3083.82 2910.75 42.9278 2928.05 2910.4 43.0049
+mission_action_empire tr
+mission_action goto at_warpgate_tr
+mission_action_empire tr
+mission_action create_waypoint3d_nearest teleporter 00ff00 5551.9 4344.71 111.363 5691.95 4312.87 111.259 5690.07 4164.8 111.229 5484.33 4208.73 111.322 2940.11 4932.4 64.1297 3059.95 4908.94 64.1011 3124.05 4777.11 64.1221 2900.23 4758.6 64.1643 3651.93 2909.28 98.9258 3729.92 2909.36 98.865 3765.78 2732.61 98.8473 3610.61 2732.06 98.8771
+mission_action_empire vs
+mission_action goto at_warpgate_vs
+mission_action_empire vs
+mission_step at_warpgate_nc
+mission_trigger location 5172.44 3175.66 65.4054 230
+mission_action goto BWG
+mission_trigger location 4155.1 6492.27 53.2297 230
+mission_action goto BWG
+mission_trigger location 2189.62 5954.93 56.2015 230
+mission_action goto BWG
+mission_step at_warpgate_tr
+mission_trigger location 5298.77 4506.11 49.5571 230
+mission_action goto BWG
+mission_trigger location 3253.04 4654.78 47.2716 230
+mission_action goto BWG
+mission_trigger location 3742.88 3078.93 36.404 230
+mission_action goto BWG
+mission_step at_warpgate_vs
+mission_trigger location 5655.01 4869.99 106.622 230
+mission_action goto BWG
+mission_trigger location 2515.25 5308.17 65.9883 230
+mission_action goto BWG
+mission_trigger location 4175.4 2404.06 163.935 230
+mission_action goto BWG
+mission_step BWG
+mission_action status_message @mission_training_warpgates_bwg
+mission_action destroy_waypoint teleporter
+mission_action complete_objective goto_warpgate
+mission_action add_objective go_to_the_white_light @mission_training_warpgates_objective_go_to_the_white_light
+mission_action goto bwg_beam_nc
+mission_action_empire nc
+mission_action goto bwg_beam_tr
+mission_action_empire tr
+mission_action goto bwg_beam_vs
+mission_action_empire vs
+mission_step bwg_beam_nc
+mission_trigger location 5172.44 3175.66 65.4054 60
+mission_action goto bwg2
+mission_trigger location 4155.1 6492.27 53.2297 60
+mission_action goto bwg2
+mission_trigger location 2189.62 5954.93 56.2015 60
+mission_action goto bwg2
+mission_step bwg_beam_tr
+mission_trigger location 5298.77 4506.11 49.5571 60
+mission_action goto bwg2
+mission_trigger location 3253.04 4654.78 47.2716 60
+mission_action goto bwg2
+mission_trigger location 3742.88 3078.93 36.404 60
+mission_action goto bwg2
+mission_step bwg_beam_vs
+mission_trigger location 5655.01 4869.99 106.622 60
+mission_action goto bwg2
+mission_trigger location 2515.25 5308.17 65.9883 60
+mission_action goto bwg2
+mission_trigger location 4175.4 2404.06 163.935 60
+mission_action goto bwg2
+mission_step bwg2
+mission_action status_message @mission_training_warpgates_bwg2
+mission_trigger vehicle_mount orbital_shuttle
+mission_action goto error_dismount_hart
+mission_trigger ui_show HUD.OverheadMap.InterstellarMap
+mission_action complete_objective go_to_the_white_light
+mission_action play_audio ping.wav
+mission_action goto BWG3
+mission_trigger ui_hide HUD.MapChat
+mission_action goto error_reenter_wg
+mission_step BWG3
+mission_action status_message @mission_training_warpgates_bwg3
+mission_action add_objective warp_to_planet @mission_training_warpgates_objective_warp_to_planet
+mission_trigger ui_hide HUD.OverheadMap.InterstellarMap
+mission_action goto bwg4
+mission_trigger ui_hide HUD.MapChat
+mission_action goto error_reenter_wg
+mission_step bwg4
+mission_action status_message @mission_training_warpgates_bwg4
+mission_trigger enter_zone z1 z2 z3 z4 z5 z6 z7 z8 z9 z10 i1 i2 i3 i4
+mission_action goto other_side
+mission_step other_side
+mission_action status_message @mission_training_warpgates_other_side^@MissionStatusSkipForward~
+mission_action complete_objective warp_to_planet
+mission_action play_audio ping.wav
+mission_trigger skip_forward
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_warpgates_complete
+mission_action complete
+mission_step error_dismount_hart
+mission_action status_message @mission_training_warpgates_error_dismount_hart^$GA_UseItem/hud~
+mission_trigger vehicle_dismount orbital_shuttle
+mission_action step_back
+mission_step error_reenter_wg
+mission_action status_message @mission_training_warpgates_error_reenter_wg
+mission_trigger ui_show HUD.OverheadMap.InterstellarMap
+mission_action step_back
+mission_end
+
+##training_weapons01
+
+mission_version 2
+mission_description @mission_training_weapons01_description
+mission_zones home1 home2 home3 tzshnc tzshtr tzshvs
+mission_battle_xp 500
+mission_trigger player_died
+mission_action status_message @mission_training_weapons01_player_died
+mission_action cancel
+mission_step start
+mission_trigger enter_zone home1 home2 home3
+mission_action goto sanctuary
+mission_trigger enter_zone tzshtr tzshnc tzshvs
+mission_action goto equip_terminal
+mission_step sanctuary
+mission_action status_message @mission_training_weapons01_welcome
+mission_trigger delay 5000
+mission_action flash_widget_start HUD.MissionStatus.ButtonPage.SkipForward
+mission_trigger skip_forward
+mission_action flash_widget_stop HUD.MissionStatus.ButtonPage.SkipForward
+mission_action goto go_outside
+mission_step go_outside
+mission_action status_message @mission_training_weapons01_welcome2
+mission_action add_objective shooting_zone @mission_training_weapons01_shooting_zone
+mission_trigger outside
+mission_action goto goto_training_zone
+mission_step goto_training_zone
+mission_action status_message @mission_training_weapons01_goto_training_zone
+mission_action create_waypoint_nearest tz 00ff00 4929.04 3657.91 4965.76 3620.35 4699.53 3361.22 4663.34 3400.47 4692.29 3598.57 4730.41 3636.04 4329.05 5944.37 4275.38 5945.17 4175.25 5918.56 4121.17 5919.16 4023.34 5950.59 3969.07 5951.48 2426.02 5514.78 2424.62 5568.13 2400.19 5439.44 2361.35 5402.51 2196.06 5418.96 2141.73 5418.89
+mission_action_empire nc
+mission_action create_waypoint_nearest tz 00ff00 2727.87 5249.96 2766.97 5288.08 2892.77 5079.15 2947.45 5079.65 3111.87 5247.98 3073.07 5285.79 5053.3 3934.97 5053.81 3880.5 5202.22 3759.29 5257.05 3759.44 5413.12 3879.07 5412.93 3933.31 2825.34 3010.65 2825.47 3065.37 3136.74 3074.99 3191.26 3075.17 3169.19 2909.25 3168.72 2854.79
+mission_action_empire tr
+mission_action create_waypoint_nearest tz 00ff00 5466.84 4366.98 5521.3 4366.51 5757.65 4329.88 5795.82 4291.09 5508.24 4094.35 5470.13 4132.41 2809.52 4948.12 2848.05 4909.54 3116.82 4903.2 3171.92 4901.75 3121.83 4728.34 3082.68 4690.14 3563.97 2939.63 3618.9 2938.22 3760.02 2941.27 3814.56 2940.2 3717.64 2682.51 3662.28 2684.65
+mission_action_empire vs
+mission_trigger location_waypoint tz 16
+mission_action destroy_waypoint tz
+mission_action goto goto_training_zone2
+mission_trigger skip_forward
+mission_action destroy_waypoint tz
+mission_action goto goto_training_zone2
+mission_step goto_training_zone2
+mission_action status_message @mission_training_weapons01_enter_training_zone
+mission_trigger ui_show HUD.TrainingZone
+mission_action status_message @mission_training_weapons01_tz_ui^@TrainingShooting~
+mission_trigger enter_zone tzshtr tzshnc tzshvs
+mission_action complete_objective shooting_zone
+mission_action play_audio ping.wav
+mission_action add_objective rexo_armor @mission_training_weapons01_objective_med_armor
+mission_action goto equip_terminal
+mission_step equip_terminal
+mission_action status_message @mission_training_weapons01_equip1
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger use_object order_terminal
+mission_action goto equip_terminal2
+mission_step equip_terminal2
+mission_action status_message @mission_training_weapons01_equip3^@ArmorTab~
+mission_action goto equip_terminal3
+mission_step equip_terminal3
+mission_action flash_widget_start HUD.EquipmentTerminal.ArmorTab
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_checkbox_checked HUD.EquipmentTerminal.ArmorTab
+mission_action flash_widget_stop HUD.EquipmentTerminal.ArmorTab
+mission_action goto rexo_armor
+mission_step rexo_armor
+mission_action status_message @mission_training_weapons01_rexo_armor^@BuyItem~
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger change_armor med
+mission_action complete_objective rexo_armor
+mission_action play_audio ping.wav
+mission_action add_objective buy_punisher @mission_training_weapons01_objective_punisher
+mission_action goto clear_inventory
+mission_step clear_inventory
+mission_action status_message @mission_training_weapons01_clear_inventory^@ClearInventory~
+mission_action flash_widget_start HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_trigger ui_button_click HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action flash_widget_stop HUD.Inventory.SoldierMediumArmor.btn_clear
+mission_action goto buy_punisher
+mission_step buy_punisher
+mission_action status_message @mission_training_weapons01_buy_punisher^@WeaponTab~
+mission_action flash_widget_start HUD.EquipmentTerminal.WeaponTab
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger ui_checkbox_checked HUD.EquipmentTerminal.WeaponTab
+mission_action flash_widget_stop HUD.EquipmentTerminal.WeaponTab
+mission_action status_message @mission_training_weapons01_buy_punisher2
+mission_trigger add_child punisher
+mission_action complete_objective buy_punisher
+mission_action play_audio ping.wav
+mission_action add_objective buy_ammo @mission_training_weapons01_objective_ammo
+mission_action goto buy_9mm
+mission_step buy_9mm
+mission_action status_message @mission_training_weapons01_buy_ammo
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action status_message @mission_training_weapons01_buy_9mm
+mission_trigger add_child 9mmbullet
+mission_action goto buy_9mmAP
+mission_step buy_9mmAP
+mission_action status_message @mission_training_weapons01_buy_9mmAP
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto buy_rockets
+mission_trigger add_child 9mmbullet_AP
+mission_action goto buy_another_9mmAP
+mission_step buy_another_9mmAP
+mission_trigger delay 3000
+mission_action status_message @mission_training_weapons01_buy_another_9mmAP
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto buy_rockets
+mission_trigger add_child 9mmbullet_AP
+mission_action goto buy_rockets
+mission_step buy_rockets
+mission_action status_message @mission_training_weapons01_buy_rockets
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto buy_frags
+mission_trigger add_child rocket
+mission_action goto buy_frags
+mission_step buy_frags
+mission_action status_message @mission_training_weapons01_buy_frags
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto buy_jammers
+mission_trigger add_child frag_cartridge
+mission_action goto buy_jammers
+mission_step buy_jammers
+mission_action status_message @mission_training_weapons01_buy_jammers
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto buy_plasma
+mission_trigger add_child jammer_cartridge
+mission_action goto buy_plasma
+mission_step buy_plasma
+mission_action status_message @mission_training_weapons01_buy_plasma
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger skip_forward
+mission_action goto close_terminal
+mission_trigger add_child plasma_cartridge
+mission_action complete_objective buy_ammo
+mission_action play_audio ping.wav
+mission_action goto close_terminal
+mission_step close_terminal
+mission_action status_message @mission_training_weapons01_close_terminal
+mission_trigger ui_hide HUD.EquipmentTerminal
+mission_action goto equip_punisher
+mission_step equip_punisher
+mission_action status_message @mission_training_weapons01_equip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger equip punisher
+mission_action add_objective kill_bot @mission_training_weapons01_objective_kill
+mission_action goto kill_soldier
+mission_step kill_soldier
+mission_action status_message @mission_training_weapons01_kill_soldier
+mission_trigger holster
+mission_action goto error_reequip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger kill_avatar Enemy def lite med sth WITH punisher
+mission_action complete_objective kill_bot
+mission_action play_audio ping.wav
+mission_action goto change_ammo_AP
+mission_step change_ammo_AP
+mission_action status_message @mission_training_weapons01_change_ammo_AP^$GA_ChangeAmmunition/hud~
+mission_trigger holster
+mission_action goto error_reequip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger weapon_change_ammo 9mmbullet_AP
+mission_action add_objective kill_MAX @mission_training_weapons01_objective_kill_MAX
+mission_action goto kill_MAX
+mission_step kill_MAX
+mission_action status_message @mission_training_weapons01_kill_MAX
+mission_trigger holster
+mission_action goto error_reequip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger kill_avatar Enemy air veh per WITH punisher
+mission_action complete_objective kill_MAX
+mission_action play_audio ping.wav
+mission_action goto change_fire_mode
+mission_step change_fire_mode
+mission_action status_message @mission_training_weapons01_change_fire_mode^$GA_ChangeFireMode/hud~
+mission_trigger holster
+mission_action goto error_reequip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger weapon_fire_mode 1
+mission_action add_objective destroy_vehicle @mission_training_weapons01_objective_destroy_vehicle
+mission_action goto destroy_vehicle
+mission_step destroy_vehicle
+mission_action status_message @mission_training_weapons01_destroy_vehicle
+mission_trigger holster
+mission_action goto error_reequip_punisher
+mission_trigger ui_show HUD.TrainingZone
+mission_action goto error_do_not_leave_tz
+mission_trigger weapon_change_ammo frag_cartridge
+mission_action status_message @mission_training_weapons01_destroy_vehicle_frag
+mission_trigger weapon_change_ammo jammer_cartridge
+mission_action status_message @mission_training_weapons01_destroy_vehicle_jammer
+mission_trigger weapon_change_ammo plasma_cartridge
+mission_action status_message @mission_training_weapons01_destroy_vehicle_plasma
+mission_trigger kill_type Enemy vehicle WITH punisher
+mission_action complete_objective destroy_vehicle
+mission_action play_audio ping.wav
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_weapons01_complete
+mission_action complete
+mission_step error_do_not_leave_tz
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_weapons01_do_not_leave_tz^@TrainingCancel~
+mission_trigger ui_button_click HUD.TrainingZone.Select.Driving
+mission_action status_message @mission_training_weapons01_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Home
+mission_action status_message @mission_training_weapons01_left_training_zone
+mission_action cancel
+mission_trigger ui_button_click HUD.TrainingZone.Select.Cancel
+mission_action step_back
+mission_trigger ui_button_click HUD.TrainingZone.Select.Shooting
+mission_action step_back
+mission_step error_reequip_punisher
+mission_action play_audio interface_feedback_error.wav
+mission_action status_message @mission_training_weapons01_reequip_punisher
+mission_trigger equip punisher
+mission_action step_back
+mission_end
+
+##training_welcome
+
+mission_version 2
+mission_description @mission_training_welcome_description
+mission_zones home1 home2 home3
+mission_battle_xp 500
+mission_step start
+mission_action lock_warpgates
+mission_action status_message @mission_training_welcome_start^$GA_Forward~^$GA_StrafeLeft~^$GA_Backward~^$GA_StrafeRight~
+mission_action play_audio ping.wav
+mission_action add_objective @mission_training_welcome_objective_use_equipment_terminal @mission_training_welcome_objective_use_equipment_terminal
+mission_trigger use_object order_terminal
+mission_action play_audio ping.wav
+mission_action add_objective @mission_training_welcome_objective_use_favorite @mission_training_welcome_objective_use_favorite
+mission_action goto gear_up
+mission_step gear_up
+mission_action status_message @mission_training_welcome_gear_up
+mission_trigger delay 400
+mission_action complete_objective @mission_training_welcome_objective_use_equipment_terminal
+mission_action select_objective @mission_training_welcome_objective_use_favorite
+mission_action goto close_equipment_terminal
+mission_step close_equipment_terminal
+mission_trigger load_inventory_favorite
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_use_favorite
+mission_action add_objective @mission_training_welcome_objective_third_person @mission_training_welcome_objective_third_person
+mission_action goto third_person
+mission_step third_person
+mission_action status_message @mission_training_welcome_third_person^$GA_ToggleThirdPersonCamera~
+mission_trigger third_person
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_third_person
+mission_action add_objective @mission_training_welcome_objective_first_person @mission_training_welcome_objective_first_person
+mission_action goto first_person
+mission_step first_person
+mission_action status_message @mission_training_welcome_first_person^$GA_ToggleThirdPersonCamera~
+mission_trigger first_person
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_first_person
+mission_action add_objective @mission_training_welcome_objective_use_map @mission_training_welcome_objective_use_map
+mission_action goto use_map
+mission_step use_map
+mission_action status_message @mission_training_welcome_use_map^$GA_ToggleOverheadMap/global~
+mission_trigger ui_show HUD.MapChat
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_use_map
+mission_action goto close_map
+mission_step close_map
+mission_action status_message @mission_training_welcome_close_map^$GA_ClearHUD/global~
+mission_trigger ui_hide HUD.MapChat
+mission_action play_audio ping.wav
+mission_action add_objective @mission_training_welcome_objective_toggle_mouselook_off @mission_training_welcome_objective_toggle_mouselook_off
+mission_action goto toggle_mouselook_off
+mission_step toggle_mouselook_off
+mission_action status_message @mission_training_welcome_toggle_mouselook_off^$GA_ToggleMouseLook~
+mission_trigger ui_show_cursor
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_toggle_mouselook_off
+mission_action add_objective @mission_training_welcome_objective_toggle_mouselook_on @mission_training_welcome_objective_toggle_mouselook_on
+mission_action goto toggle_mouselook_on
+mission_step toggle_mouselook_on
+mission_action status_message @mission_training_welcome_toggle_mouselook_on^$GA_ToggleMouseLook~
+mission_trigger ui_hide_cursor
+mission_action play_audio ping.wav
+mission_action add_objective @mission_training_welcome_objective_use_help @mission_training_welcome_objective_use_help
+mission_action complete_objective @mission_training_welcome_objective_toggle_mouselook_on
+mission_action goto open_field_manual
+mission_step open_field_manual
+mission_action status_message @mission_training_welcome_open_field_manual^$GA_ToggleHelpPage~
+mission_trigger show_help_window
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_use_help
+mission_action goto close_field_manual
+mission_step close_field_manual
+mission_action status_message @mission_training_welcome_close_field_manual^$GA_ClearHUD/global~
+mission_trigger ui_hide help
+mission_action add_objective @mission_training_welcome_objective_go_to_battle @mission_training_welcome_objective_go_to_battle
+mission_action play_audio ping.wav
+mission_action goto go_to_battle
+mission_step go_to_battle
+mission_action status_message @mission_training_welcome_go_to_battle^$GA_ClearHUD/global~
+mission_trigger enter_zone z1 z2 z3 z4 z5 z6 z7 z8 z9 z10 c1 c2 c3 c4 c5 c6 i1 i2 i3 i4
+mission_action play_audio ping.wav
+mission_action complete_objective @mission_training_welcome_objective_go_to_battle
+mission_action goto end
+mission_step end
+mission_action status_message @mission_training_welcome_complete
+mission_action remove_objective @mission_training_welcome_objective_use_equipment_terminal
+mission_action remove_objective @mission_training_welcome_objective_use_favorite
+mission_action remove_objective @mission_training_welcome_objective_use_map
+mission_action remove_objective @mission_training_welcome_objective_use_help
+mission_action remove_objective @mission_training_welcome_objective_go_to_battle
+mission_action unlock_warpgates
+mission_action remove_objective @mission_training_welcome_objective_third_person
+mission_action remove_objective @mission_training_welcome_objective_first_person
+mission_action remove_objective @mission_training_welcome_objective_toggle_mouselook_off
+mission_action remove_objective @mission_training_welcome_objective_toggle_mouselook_on
+mission_action complete
+mission_end

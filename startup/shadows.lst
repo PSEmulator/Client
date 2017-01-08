@@ -48,6 +48,8 @@ coarse Vanu_core              Vanu_core_crp
 coarse vanu_control_point     vanu_control_point_crp
 coarse vanu_vehicle_station   vanu_vehicle_station_crp
 coarse redoubt		   redoubt_crp
+coarse bfr_building        bfr_building_crp
+#coarse repair_silo_veh     repair_silo_veh_crp
 
 coarse rockformationa      rockformationa_crp
 coarse rockformationb      rockformationb_crp
@@ -145,6 +147,7 @@ all_coarse articshrubf    articshrubf_crp
 all_coarse articshrubg    articshrubg_crp
 all_coarse artictreea     artictreea_crp
 all_coarse artictreeb     artictreeb_crp
+all_coarse xmas_artictreeb	artictreeb_crp
 all_coarse artictreec     artictreec_crp
 all_coarse artictreed     artictreed_crp
 all_coarse artictreee     artictreee_crp
@@ -204,6 +207,30 @@ all_coarse ext_barrier_medium        ext_barrier_medium_crp
 all_coarse zipline                   zipline_crp
 all_coarse stationaryteleportpad     stationaryteleportpad_crp
 
+#SRM - adding crystals for expansion pack obj's
+all_coarse crystals_damage_a         crystals_damage_a_crp
+all_coarse crystals_damage_b         crystals_damage_b_crp
+all_coarse crystals_energy_a         crystals_energy_a_crp
+all_coarse crystals_energy_b         crystals_energy_b_crp
+all_coarse crystals_health_a         crystals_health_a_crp
+all_coarse crystals_health_b         crystals_health_b_crp
+all_coarse crystals_repair_a         crystals_repair_a_crp
+all_coarse crystals_repair_b         crystals_repair_b_crp
+all_coarse crystals_vehicle_a        crystals_vehicle_a_crp
+all_coarse crystals_vehicle_b        crystals_vehicle_b_crp
+
+all_coarse gr_door_airlock           gr_door_airlock_crp
+all_coarse gr_door_ext               gr_door_ext_crp
+all_coarse gr_door_garage_ext        gr_door_garage_ext_crp
+all_coarse gr_door_garage_int        gr_door_garage_int_crp
+all_coarse gr_door_int               gr_door_int_crp
+all_coarse gr_door_main              gr_door_main_crp 
+all_coarse gr_door_mb_ext            gr_door_mb_ext_crp
+all_coarse gr_door_mb_int            gr_door_mb_int_crp
+all_coarse gr_door_mb_lrg            gr_door_mb_lrg_crp
+all_coarse gr_door_med               gr_door_med_crp
+all_coarse gr_door_mb_obsd           gr_door_mb_obsd_crp
+all_coarse gr_door_mb_orb            gr_door_mb_orb_crp
 
 shadow_begin ncmsi
 shadow_material ncmlite_shadow
@@ -580,7 +607,31 @@ shadow_bound 8 2 4
 shadow_render_to_texture
 shadow_end
 
+shadow_begin lightgunship_destroyed
+shadow_material lightgunship_shadow
+shadow_scale 14.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_oriented
+shadow_bound 8 2 4
+shadow_render_to_texture
+shadow_end
+
 shadow_begin two_man_assault_buggy
+shadow_material two_man_assault_buggy_shadow
+shadow_scale    10.5
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range    60
+shadow_bound     6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin two_man_assault_buggy_destroyed
 shadow_material two_man_assault_buggy_shadow
 shadow_scale    10.5
 shadow_terrain
@@ -604,9 +655,117 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin ams_destroyed
+shadow_material ams_shadow
+shadow_scale 12.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin apc
 shadow_material apc_shadow
 shadow_scale 18.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin apc_mk2
+shadow_material apc_shadow
+shadow_scale 18.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin apc_destroyed
+shadow_material apc_shadow
+shadow_scale 18.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin aphelion
+shadow_material aphelion_shadow
+shadow_scale 10.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin aphelion_des
+shadow_material aphelion_shadow
+shadow_scale 10.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin peregrine
+shadow_material peregrine_shadow
+shadow_scale 15.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin peregrine_des
+shadow_material peregrine_shadow
+shadow_scale 15.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin colossus
+shadow_material colossus_shadow
+shadow_scale 15.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin colossus_des
+shadow_material colossus_shadow
+shadow_scale 15.0
 shadow_terrain
 shadow_objects
 shadow_outside
@@ -642,7 +801,55 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin galaxy_gunship
+shadow_material dropship_shadow
+shadow_scale 69.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  100
+shadow_bound 14 4 4
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin galaxy_gunship_destroyed
+shadow_material dropship_shadow
+shadow_scale 69.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  100
+shadow_bound 14 4 4
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin dropship_destroyed
+shadow_material dropship_shadow
+shadow_scale 69.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  100
+shadow_bound 14 4 4
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin lightning
+shadow_material lightning_shadow
+shadow_scale 11.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin lightning_destroyed
 shadow_material lightning_shadow
 shadow_scale 11.1
 shadow_terrain
@@ -666,7 +873,31 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin magrider_destroyed
+shadow_material magrider_shadow
+shadow_scale 17.1
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin mediumtransport
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin mediumtransport_destroyed
 shadow_material mediumtransport_shadow
 shadow_scale 13
 shadow_terrain
@@ -690,7 +921,31 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin ant_destroyed
+shadow_material ant_shadow
+shadow_scale 9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin mosquito
+shadow_material mosquito_shadow
+shadow_scale 14.2
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin mosquito_destroyed
 shadow_material mosquito_shadow
 shadow_scale 14.2
 shadow_terrain
@@ -714,7 +969,31 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin prowler_destroyed
+shadow_material prowler_shadow
+shadow_scale 17.4
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin quadassault
+shadow_material quadassault_shadow
+shadow_scale 4.9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin quadassault_destroyed
 shadow_material quadassault_shadow
 shadow_scale 4.9
 shadow_terrain
@@ -738,7 +1017,55 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin quadstealth_destroyed
+shadow_material quadstealth_shadow
+shadow_scale 4.9
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin fury
+shadow_material quadassault_shadow
+shadow_scale 4.7
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin fury_destroyed
+shadow_material quadassault_shadow
+shadow_scale 4.7
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin threemanheavybuggy
+shadow_material threemanheavybuggy_shadow
+shadow_scale 9.5
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin threemanheavybuggy_destroyed
 shadow_material threemanheavybuggy_shadow
 shadow_scale 9.5
 shadow_terrain
@@ -762,7 +1089,31 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin twomanheavybuggy_destroyed
+shadow_material twomanheavybuggy_shadow
+shadow_scale 10.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin twomanhoverbuggy
+shadow_material twomanhoverbuggy_shadow
+shadow_scale 10.8
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin twomanhoverbuggy_destroyed
 shadow_material twomanhoverbuggy_shadow
 shadow_scale 10.8
 shadow_terrain
@@ -786,7 +1137,31 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin vanguard_destroyed
+shadow_material vanguard_shadow
+shadow_scale 17.6
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
 shadow_begin liberator
+shadow_material liberator_shadow
+shadow_scale 18.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin liberator_destroyed
 shadow_material liberator_shadow
 shadow_scale 18.0
 shadow_terrain
@@ -810,3 +1185,175 @@ shadow_oriented
 shadow_render_to_texture
 shadow_end
 
+shadow_begin skyguard_destroyed
+shadow_material skyguard_shadow
+shadow_scale 8.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 12 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin battlewagonTR
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin battlewagonTR_destroyed
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin delivererv
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin delivererv_destroyed
+shadow_material mediumtransport_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin flail
+shadow_material flail_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin flail_destroyed
+shadow_material flail_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin router
+shadow_material router_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin router_destroyed
+shadow_material router_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin switchblade
+shadow_material switchblade_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin switchblade_destroyed
+shadow_material switchblade_shadow
+shadow_scale 13
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin lodestar
+shadow_material vanguard_shadow
+shadow_scale 30
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin lodestar_destroyed
+shadow_material vanguard_shadow
+shadow_scale 30
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+shadow_begin phantasm
+shadow_material phantasm_shadow
+shadow_scale 19.5.0
+shadow_terrain
+shadow_objects
+shadow_outside
+shadow_range  60
+shadow_bound 6 2 2
+shadow_oriented
+shadow_render_to_texture
+shadow_end
+
+facade    gr_door_main  gr_door_main_facade
+facade    gr_door_ext   gr_door_ext_facade
+facade	  gr_door_garage_ext  gr_door_garage_ext_facade
+facade    gr_door_mb_ext   gr_door_mb_ext_facade

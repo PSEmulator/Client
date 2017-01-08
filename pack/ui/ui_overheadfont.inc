@@ -1,4 +1,4 @@
-<TextStyle Leading='30' Name='OverheadFont'>
+<TextStyle CachedStyle='7' Leading='30' Name='OverheadFont' UseCachedFont='true'>
 <FontCharacter Advance='7' Code='32' SourceFile='OverheadFont_0' SourceRect='1,1,9,31'/>
 <FontCharacter Advance='7' Code='33' SourceFile='OverheadFont_0' SourceRect='11,1,19,31'/>
 <FontCharacter Advance='12' Code='34' SourceFile='OverheadFont_0' SourceRect='21,1,34,31'/>

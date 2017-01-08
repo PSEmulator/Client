@@ -1,3 +1,23 @@
+### Decal parameter definitions:
+
+## decal_begin = Name of the decal
+## decal_material = Material applied to decal (multiple entries allowed)
+## decal_cell = Total number of frames (cells) on decal texture sheet (used for standard decals)
+## decal_fade = Decal fade out (in seconds)
+## decal_framerate = Animated material playback rate (in frames per second; used for animated decals)
+## decal_freeze = Playback an animated material on a decal, and freeze on the last frame of the animation (used for animated decals)
+## decal_size = Decal size (in meters)
+## decal_random_orientation = Applies a random orientation to the decal when triggered
+## decal_spacing = Distance between decals (in meters)???
+## decal_range = Maximum distance from camera decal is visible (in meters)
+## decal_color = Color and alpha values of decal (in hex)
+## decal_effect = Effect that triggers simultaneously with decal
+## decal_include = Valid surfaces for decal 
+## decal_exclude = Invalid surfaces for decal
+## decal_infinite = Infinite lifespan
+## decal_range = How far from camera decal is visible
+## decal_end = End of current decal parameter set
+
 ### Conditional surface properties are listed below:
 
 ## TERRAIN
@@ -41,6 +61,8 @@
 ## LAVA
 ## SAND
 ## SNOW
+## FORCE DOME
+## FORCE FIELD
 ##############################################
 
 ## Standard bullet impact
@@ -50,15 +72,17 @@ decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
 decal_exclude   soldier
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      2
+decal_size      1.0:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  none
 decal_include   door
@@ -178,16 +202,18 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      1.0:0.1<0.2:0.4>
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
 decal_size      0.3:0.1<0.2:0.4>
@@ -206,15 +232,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      6
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_bloody
 decal_size      4
@@ -233,15 +261,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      3
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
 decal_size      1
@@ -260,15 +290,7 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
-
-decal_material  decal_warp_impact
-decal_normal_only
-decal_include   warpgate_dome
-decal_framerate 90
-decal_size      10
-decal_random_orientation
-decal_spacing   0.5
-decal_range     200
+decal_exclude   water
 
 decal_material  decal_skull
 decal_size      1
@@ -285,15 +307,17 @@ decal_begin     decal_sun
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      3.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_sun
 decal_include   door leaves
@@ -323,15 +347,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_sun
 decal_include   terrain dirt grass lava sand
@@ -380,6 +406,7 @@ decal_spacing   0.5
 decal_range     200
 decal_fade      0.8
 decal_color     FF28EEF9
+decal_effect    impact_energybullet
 
 decal_end
 
@@ -391,15 +418,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_sun
 decal_include   terrain dirt grass lava sand
@@ -448,6 +477,7 @@ decal_spacing   0.5
 decal_range     200
 decal_fade      1.0
 decal_color     FFE432B4
+decal_effect    impact_energybullet
 
 decal_end
 
@@ -459,15 +489,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      4.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_sun
 decal_include   terrain dirt grass lava sand
@@ -528,15 +560,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      4.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
 decal_size      3.5:0.1
@@ -554,15 +588,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      4.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
 decal_include   terrain dirt grass lava sand
@@ -630,15 +666,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      4.5:0.1
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
 decal_size      3.5:0.1
@@ -653,15 +691,17 @@ decal_end
 decal_begin     decal_knife_hit_effect
 
 decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  none
 decal_include   bridge concrete rock
@@ -687,15 +727,17 @@ decal_end
 decal_begin     decal_chainblade
 
 decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  none
 decal_include   bridge concrete rock
@@ -721,15 +763,17 @@ decal_end
 decal_begin     decal_magcutter
 
 decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  none
 decal_include   bridge concrete rock
@@ -755,15 +799,17 @@ decal_end
 decal_begin     decal_forceblade
 
 decal_exclude   leaves no_decals soldier terrain dirt grass lava sand snow
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  none
 decal_include   bridge concrete rock
@@ -793,15 +839,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_sun
 decal_include   terrain dirt grass lava sand
@@ -862,20 +910,71 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      2.5:0.2
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_scorch1
-decal_size      3.5:0.1
+decal_include   terrain dirt grass lava sand
+decal_size      1.5:0.1
 decal_random_orientation
-decal_spacing   3.5
+decal_spacing   1.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_dirt_big
+
+decal_material  decal_scorch1
+decal_include   snow
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   1.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_snow_big
+
+decal_material  decal_scorch1
+decal_include   rock concrete bridge
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   1.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_rock_big
+
+decal_material  decal_scorch1
+decal_include   snow
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   1.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_snow_big
+
+decal_material  decal_scorch1
+decal_include   tree
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   1.5
+decal_range     200
+decal_color     FFFFFFFF
+decal_effect    impact_tree_big
+
+decal_material  none
+decal_include   water
+decal_effect    impact_water_big
+
+decal_material  decal_scorch1
+decal_size      1.5:0.1
+decal_random_orientation
+decal_spacing   1.5
 decal_range     200
 decal_color     FFFFFFFF
 
@@ -902,12 +1001,13 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      6
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
@@ -929,15 +1029,17 @@ decal_exclude   leaves
 decal_exclude   wheel
 decal_exclude   no_decals
 decal_exclude   generator
+decal_exclude   water
 
 decal_material  decal_warp_impact
 decal_normal_only
-decal_include   warpgate_dome
+decal_include   warpgate_dome force_dome force_field
 decal_framerate 90
-decal_size      10
+decal_size      6
 decal_random_orientation
 decal_spacing   0.5
 decal_range     200
+decal_effect    impact_shield
 
 decal_material  decal_lasher_hit
 decal_include   terrain dirt grass lava sand
@@ -1002,14 +1104,25 @@ decal_begin     decal_grenade_bounce
 
 decal_exclude   leaves
 
-decal_include   terrain dirt grass lava sand snow
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome force_dome force_field
+decal_framerate 90
+decal_size      2
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_effect    impact_shield
+
 decal_material  none
+decal_include   terrain dirt grass lava sand snow
 decal_effect    grenade_bounce_dirt
 
 decal_material  none
 decal_effect    grenade_bounce_rock
 
 decal_end
+##############################################
 
 ### Playback an animated texture on a decal, and freeze on the last frame of the animation
 decal_begin     decal_water_ripple_freeze
@@ -1024,9 +1137,7 @@ decal_range     200
 
 decal_end
 
-
 ### Playback an animated texture on a decal, and freeze on the last frame of the animation
-
 
 ### Standard pass through decal for an avatar passing through a warpgate dome
 decal_begin     decal_warpgate_pass
@@ -1115,7 +1226,6 @@ decal_material  none
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_lava_splash
 
@@ -1128,7 +1238,6 @@ decal_fade      2.0
 decal_color     FFFFC000
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_bailout_splash_glow
@@ -1144,7 +1253,6 @@ decal_color     AF00BFBF
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_bailout_splash_ripple
 
@@ -1158,7 +1266,6 @@ decal_range     200
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_waypoint_nc
 
@@ -1170,7 +1277,6 @@ decal_color     AF0000A0
 decal_infinite
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_waypoint_tr
@@ -1184,7 +1290,6 @@ decal_infinite
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_waypoint_vs
 
@@ -1197,7 +1302,6 @@ decal_infinite
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_strike_nc
 
@@ -1208,7 +1312,6 @@ decal_color     AF0000A0
 decal_infinite
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_strike_tr
@@ -1221,7 +1324,6 @@ decal_infinite
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_strike_vs
 
@@ -1229,6 +1331,17 @@ decal_material  decal_strike
 decal_size      2.5
 decal_range     500
 decal_color     AF4B0096
+decal_infinite
+
+decal_end
+
+##############################################
+decal_begin     decal_strike_bo
+
+decal_material  decal_strike
+decal_size      2.5
+decal_range     500
+decal_color     AF59AE34
 decal_infinite
 
 decal_end
@@ -1244,7 +1357,6 @@ decal_color     AF00FF00
 decal_infinite
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_deploy_failure
@@ -1283,7 +1395,6 @@ decal_effect    ef_water_explosion
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_footprint
 
@@ -1294,7 +1405,6 @@ decal_range     50
 decal_fade      2.0
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_em_yellow
@@ -1320,7 +1430,6 @@ decal_infinite
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_bluedeath_nc
 
@@ -1334,7 +1443,6 @@ decal_fade      1
 decal_color     AF0000A0 FFFFFFFF
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_bluedeath_tr
@@ -1350,7 +1458,6 @@ decal_color     AFBE0000 FFFFFFFF
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_bluedeath_vs
 
@@ -1364,7 +1471,6 @@ decal_fade      1
 decal_color     AF4B0096 FFFFFFFF
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_bluedeath_lrg_nc
@@ -1380,7 +1486,6 @@ decal_color     AF0000A0 FFFFFFFF
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_bluedeath_lrg_tr
 
@@ -1394,7 +1499,6 @@ decal_fade      1
 decal_color     AFBE0000 FFFFFFFF
 
 decal_end
-
 
 ##############################################
 decal_begin     decal_bluedeath_lrg_vs
@@ -1410,7 +1514,6 @@ decal_color     AF4B0096 FFFFFFFF
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_bluedeath_exp_small
 
@@ -1422,6 +1525,16 @@ decal_range     500
 
 decal_end
 
+##############################################
+decal_begin     decal_radbomb
+
+decal_material  decal_warp_impact
+decal_framerate 60
+decal_size      10
+decal_random_orientation
+decal_range     150
+
+decal_end
 
 ##############################################
 decal_begin     decal_bluedeath_exp_lrg
@@ -1434,7 +1547,6 @@ decal_range     500
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_deres_small
 
@@ -1445,8 +1557,6 @@ decal_color     AF0000A0
 decal_fade      2
 
 decal_end
-
-
 
 ##############################################
 decal_begin     decal_deres_medium
@@ -1459,7 +1569,6 @@ decal_fade      2
 
 decal_end
 
-
 ##############################################
 decal_begin     decal_deres_large
 
@@ -1471,5 +1580,46 @@ decal_fade      2
 
 decal_end
 
+##############################################
+decal_begin     decal_frame_shield
+
+decal_material  decal_frame_shield
+decal_normal_only
+decal_framerate 90
+###decal_include   aphelion_shield colossus_shield peregrine_shield
+decal_size      2.0:0.5
+decal_random_orientation
+decal_range     150
+decal_fade      0.5
+
+decal_end
 
 ##############################################
+decal_begin     decal_aph_laser_impact
+
+decal_exclude   door
+decal_exclude   leaves
+decal_exclude   wheel
+decal_exclude   no_decals
+decal_exclude   generator
+decal_exclude   water
+
+decal_material  decal_warp_impact
+decal_normal_only
+decal_include   warpgate_dome force_dome force_field
+decal_framerate 90
+decal_size      3
+decal_random_orientation
+decal_spacing   0.5
+decal_range     200
+decal_effect    impact_shield
+
+decal_material  decal_scorch1
+decal_size      1.5:0.25<1.5:2.0>
+decal_fade      0.5
+decal_random_orientation
+decal_spacing   0.1
+decal_range     40
+decal_color     FFFFFFFF
+
+decal_end

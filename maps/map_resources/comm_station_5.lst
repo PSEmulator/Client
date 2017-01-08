@@ -11,7 +11,6 @@ pse_relativeobject ext_barrier_heavy -44.7004 59.2749 -0.2300 1 1 1 0 0 0
 pse_relativeobject ext_barrier_heavy 47.4129 -55.8719 -0.2300 1 1 1 0 0 2048
 pse_relativeobject ext_sandbags_a 39.4258 83.5590 -0.2300 1 1 1 0 0 4619
 pse_relativeobject ext_sandbags_a 31.4007 83.4872 -0.2300 1 1 1 0 0 -6758
-pse_relativeobject ext_sandbags_a -22.1258 -4.1184 12.6538 1 1 1 0 0 -5233
 pse_relativeobject ext_sandbags_a 59.5558 -31.5616 -0.2300 1 1 1 0 0 -7509
 pse_relativeobject ext_sandbags_a -69.6518 11.9663 8.1867 1 1 1 0 0 7236
 pse_relativeobject ext_sandbags_a 66.2829 33.4362 8.2016 1 1 1 0 0 -841
@@ -30,7 +29,6 @@ pse_relativeobject ext_sandbags_a -8.7185 66.8537 8.2058 1 1 1 0 0 7236
 pse_relativeobject ext_sandbags_b 67.0419 -18.5168 8.1951 1 1 1 0 0 -1956
 pse_relativeobject ext_sandbags_b -29.7387 20.9283 -0.2300 1 1 1 0 0 -8192
 pse_relativeobject ext_sandbags_a 4.3517 29.9876 -0.2300 1 1 1 0 0 -6826
-pse_relativeobject ext_sandbags_a -3.3460 -52.7399 -0.2300 1 1 1 0 0 3026
 pse_relativeobject ext_sandbags_a -12.6265 49.2735 6.7089 1 1 1 -309 -143 7062
 pse_relativeobject ext_sandbags_a -69.6518 -62.2361 8.1867 1 1 1 0 0 7236
 pse_relativeobject ext_sandbags_a 12.0075 -74.2172 8.1969 1 1 1 0 0 -4983
@@ -51,3 +49,4 @@ pse_relativeobject ext_sandbags_a -29.8501 -23.4418 5.1954 1 1 1 0 0 -3185
 pse_relativeobject ext_sandbags_a -29.8501 14.7818 5.1954 1 1 1 0 0 -7122
 pse_relativeobject ext_sandbags_a -19.9870 4.5871 5.1954 1 1 1 0 0 7190
 pse_relativeobject ext_sandbags_a 5.6917 22.7450 5.1954 1 1 1 0 0 -7714
+pse_relativeobject BFR_building 3.4041 -63.2597 0.0000 1 1 1 0 0 6144

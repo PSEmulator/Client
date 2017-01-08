@@ -1,49 +1,30 @@
 <Page Name='Login' PackLocation='center,center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false' visualeditlock='true'>
-<Page BackgroundOpacity='0.800' Name='OBSOLETE_Login_Failed' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/Fonts.HudFont3' LocalText='[@loginconnectionfailed]' Location='333,279' PackLocation='center,center' PackLocationProp='-179/0001,-105/0001' ScrollExtent='357,169' Size='357,169' TextAlignment='Center' TextAlignmentVertical='Center'>@loginconnectionfailed</Text>
-<Button IsCancelButton='true' IsDefaultButton='true' Location='487,461' Name='OK' PackLocation='center,center' PackLocationProp='-025/0001,0077/0001' ScrollExtent='51,29' Size='51,29' Style='/Buttons.OK_Text.style'></Button>
-<Image BackgroundOpacity='1.000' Location='312,254' Name='background' PackLocation='left,top' PackLocationProp='0312/0001,0254/0001' PackSize='absolute,absolute' PackSizeProp='0624/0001,0488/0001' RStyleDefault='style' ScrollExtent='400,280' Size='400,280' Stretch='false' Style=' '/>
-</Page>
-<Page BackgroundOpacity='0.800' Name='OBSOLETE_Login_Invalid' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/Fonts.HudFont3' LocalText='[@badusernameorpassword]' Location='333,279' Name='Error' PackLocation='center,center' PackLocationProp='-179/0001,-105/0001' ScrollExtent='357,169' Size='357,169' TextAlignment='Center' TextAlignmentVertical='Center'>@badusernameorpassword</Text>
-<Button IsCancelButton='true' IsDefaultButton='true' Location='487,461' Name='OK' PackLocation='center,center' PackLocationProp='-025/0001,0077/0001' ScrollExtent='51,29' Size='51,29' Style='/Buttons.OK_Text.style'></Button>
-<Image BackgroundOpacity='1.000' Location='312,254' Name='background' PackLocation='left,top' PackLocationProp='0312/0001,0254/0001' PackSize='absolute,absolute' PackSizeProp='0624/0001,0488/0001' RStyleDefault='/WindowPanes.Small.style' ScrollExtent='400,280' Size='400,280' Stretch='false' Style=' '/>
-</Page>
-<Page BackgroundOpacity='0.800' Name='OBSOLETE_Login_Too_Many_Fails' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/Fonts.HudFont3' LocalText='[@toomanyfailedlogins]' Location='333,279' PackLocation='center,center' PackLocationProp='-179/0001,-105/0001' ScrollExtent='357,169' Size='357,169' TextAlignment='Center' TextAlignmentVertical='Center'>@toomanyfailedlogins</Text>
-<Button IsCancelButton='true' IsDefaultButton='true' Location='487,461' Name='OK' OnPress='quit' PackLocation='center,center' PackLocationProp='-025/0001,0077/0001' ScrollExtent='51,29' Size='51,29' Style='/Buttons.OK_Text.style'></Button>
-<Image BackgroundOpacity='1.000' Location='312,254' Name='background' PackLocation='left,top' PackLocationProp='0312/0001,0254/0001' PackSize='absolute,absolute' PackSizeProp='0624/0001,0488/0001' RStyleDefault='/WindowPanes.Small.style' ScrollExtent='400,280' Size='400,280' Stretch='false' Style=' '/>
-</Page>
-<Page BackgroundOpacity='0.800' Name='OBSOLETE_Invalid_Version' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/Fonts.HudFont3' LocalText='[@invalidserverversion]' Location='333,279' PackLocation='center,center' PackLocationProp='-179/0001,-105/0001' ScrollExtent='357,169' Size='357,169' TextAlignment='Center' TextAlignmentVertical='Center'>@invalidserverversion</Text>
-<Button IsCancelButton='true' IsDefaultButton='true' Location='487,461' Name='OK' OnPress='quit' PackLocation='center,center' PackLocationProp='-025/0001,0077/0001' ScrollExtent='51,29' Size='51,29' Style='/Buttons.OK_Text.style'></Button>
-<Image BackgroundOpacity='1.000' Location='312,254' Name='background' PackLocation='left,top' PackLocationProp='0312/0001,0254/0001' PackSize='absolute,absolute' PackSizeProp='0624/0001,0488/0001' RStyleDefault='/WindowPanes.Small.style' ScrollExtent='400,280' Size='400,280' Stretch='false' Style=' '/>
-</Page>
-<Page BackgroundOpacity='0.800' Name='OBSOLETE_Check_Quit' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Text Font='/Fonts.HudFont3' LocalText='[@checkquit]' Location='333,279' PackLocation='center,center' PackLocationProp='-179/0001,-105/0001' ScrollExtent='357,169' Size='357,169' TextAlignment='Center' TextAlignmentVertical='Center'>@checkquit</Text>
-<Button IsDefaultButton='true' LocalText='i' Location='437,465' Name='Yes' PackLocation='center,center' PackLocationProp='-075/0001,0081/0001' ScrollExtent='38,20' Size='38,20' Style='/Buttons.IconButton.style'>i</Button>
-<Button IsCancelButton='true' LocalText='j' Location='541,465' Name='No' PackLocation='center,center' PackLocationProp='0029/0001,0081/0001' ScrollExtent='38,20' Size='38,20' Style='/Buttons.IconButton.style'>j</Button>
-<Image BackgroundOpacity='1.000' Location='312,254' Name='background' PackLocation='left,top' PackLocationProp='0312/0001,0254/0001' PackSize='absolute,absolute' PackSizeProp='0624/0001,0488/0001' RStyleDefault='/WindowPanes.Small.style' ScrollExtent='400,280' Size='400,280' Stretch='false' Style=' '/>
-</Page>
-<Page BackgroundOpacity='0.475' Location='236,554' Name='Login_Progress' PackLocation='center,center' PackLocationProp='-276/0001,0170/0001' ScrollExtent='557,112' Size='557,112' Visible='false'>
-<Rectangle Color='#000000' ScrollExtent='557,112' Size='557,112'/>
-<Text Font='/Fonts.Agency24' LocalText='[@LoginProgress]' Location='47,15' Name='Text' ScrollExtent='462,40' Size='462,40' TextAlignment='Center'>@LoginProgress</Text>
-<Text Font='/Fonts.HudFont1' LocalText='[@LoginStatus]' Location='105,58' Name='Status_Message' ScrollExtent='343,14' Size='343,14' TextAlignment='Center'>@LoginStatus</Text>
+<Page Location='236,537' Name='Login_Progress' PackLocation='center,center' PackLocationProp='-276/0001,0158/0001' ScrollExtent='557,112' Size='557,112' Visible='false'>
+<Text Font='/Fonts.Agency24' LocalText='[@LoginProgress]' Location='47,23' Name='Text' ScrollExtent='462,36' Size='462,36' TextAlignment='Center' TextColor='#72C9D1'>@LoginProgress</Text>
+<Text Font='/Fonts.HudFont1' LocalText='[@LoginStatus]' Location='105,58' Name='Status_Message' ScrollExtent='343,14' Size='343,14' TextAlignment='Center' TextColor='#72C9D1'>@LoginStatus</Text>
 <Progressbar Location='24,74' Name='Login_Progress_Bar' Progress='1.000' ScrollExtent='504,16' Size='504,16' Style='/ProgressBars.Default.style'/>
+<Image BackgroundOpacity='1.000' Name='Bkg' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='557,112' Size='557,112' Stretch='false' Style=' '/>
 </Page>
-<Button IsDefaultButton='true' LocalTooltip='[@LoginEnterButtonTooltip]' Location='401,652' Name='EnterButton' PackLocation='center,center' PackLocationProp='-111/0001,0268/0001' ScrollExtent='222,41' Size='222,41' Style='/Buttons.Launch_Text.style' Tooltip='@LoginEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Button IsCancelButton='true' LocalTooltip='[@LoginExitButtonTooltip]' Location='446,702' Name='ExitButton' PackLocation='center,center' PackLocationProp='-066/0001,0318/0001' ScrollExtent='132,42' Size='132,42' Style='/Buttons.Quit_Text_2.style' Tooltip='@LoginExitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
-<Textbox LocalTooltip='[@LoginUsernameTooltip]' Location='524,562' MaxLength='32' Name='Username' PackLocation='center,center' PackLocationProp='0012/0001,0178/0001' ScrollExtent='293,30' Size='293,30' Style='/Textboxes.Clear' Tooltip='@LoginUsernameTooltip' TooltipStyle='/Tooltips.Default'></Textbox>
-<Textbox LocalTooltip='[@LoginPasswordTooltip]' Location='524,599' MaxLength='16' Name='Password' PackLocation='center,center' PackLocationProp='0012/0001,0215/0001' Password='true' ScrollExtent='293,30' Size='293,30' Style='/Textboxes.Clear' Tooltip='@LoginPasswordTooltip'></Textbox>
-<Image Location='521,557' Name='G1' PackLocation='center,center' PackLocationProp='0009/0001,0173/0001' ScrollExtent='304,30' Size='304,30' SourceRect='0,50,300,79' SourceResource='ps_login_art' Stretch='false'/>
-<Image Location='521,594' Name='G2' PackLocation='center,center' PackLocationProp='0009/0001,0210/0001' ScrollExtent='304,30' Size='304,30' SourceRect='0,50,300,79' SourceResource='ps_login_art' Stretch='false'/>
-<Image Location='349,559' Name='G3' PackLocation='center,center' PackLocationProp='-163/0001,0175/0001' ScrollExtent='170,26' Size='170,26' SourceRect='0,0,159,25' SourceResource='ps_login_art' Stretch='false'/>
-<Image Location='209,596' Name='G4' PackLocation='center,center' PackLocationProp='-303/0001,0212/0001' ScrollExtent='310,24' Size='310,24' SourceRect='0,25,300,50' SourceResource='ps_login_art' Stretch='false'/>
-<Image Name='Logo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0384/0768' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.CoreCombatLogo'/>
-<ImageStyle Name='PopupImage'>
-<ImageFrame>
-<ImageFragment Source='ps_login_popups_00' SourceRect='0,0,256,256'/>
-<ImageFragment Offset='256,0' Source='ps_login_popups_01' SourceRect='0,0,256,256'/>
-</ImageFrame>
-</ImageStyle>
+<Image Location='62,60' Name='Logo' PackLocation='center,center' PackLocationProp='-450/0001,-324/0001' ScrollExtent='900,450' Size='900,450' Style='/Plates.PSLogoFreeplay'/>
+<Image Color='#000000' Location='67,65' Name='LogoShadow1' Opacity='0.300' PackLocation='center,center' PackLocationProp='-447/0001,-321/0001' ScrollExtent='900,450' Size='900,450' Style='/Plates.PSLogoFreeplay'/>
+<Image Color='#000000' Location='68,66' Name='LogoShadow2' Opacity='0.300' PackLocation='center,center' PackLocationProp='-446/0001,-320/0001' ScrollExtent='900,450' Size='900,450' Style='/Plates.PSLogoFreeplay'/>
+<Button IsDefaultButton='true' LocalTooltip='[@LoginEnterButtonTooltip]' Location='401,642' Name='EnterButton' PackLocation='center,center' PackLocationProp='-111/0001,0258/0001' ScrollExtent='222,41' Size='222,41' Style='/Buttons.Launch_Text.style' Tooltip='@LoginEnterButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
+<Button IsCancelButton='true' LocalTooltip='[@LoginExitButtonTooltip]' Location='446,687' Name='ExitButton' PackLocation='center,center' PackLocationProp='-066/0001,0308/0001' ScrollExtent='132,42' Size='132,42' Style='/Buttons.Quit_Text_2.style' Tooltip='@LoginExitButtonTooltip' TooltipStyle='/Tooltips.Default'></Button>
+<Textbox LocalTooltip='[@LoginUsernameTooltip]' Location='514,562' MaxLength='32' Name='Username' PackLocation='center,center' PackLocationProp='0002/0001,0178/0001' ScrollExtent='293,30' Size='293,30' Style='/Textboxes.Clear' Tooltip='@LoginUsernameTooltip' TooltipStyle='/Tooltips.Default'></Textbox>
+<Textbox LocalTooltip='[@LoginPasswordTooltip]' Location='514,599' MaxLength='16' Name='Password' PackLocation='center,center' PackLocationProp='0002/0001,0215/0001' Password='true' ScrollExtent='293,30' Size='293,30' Style='/Textboxes.Clear' Tooltip='@LoginPasswordTooltip'></Textbox>
+<Image Location='511,557' Name='G1' PackLocation='center,center' PackLocationProp='-001/0001,0173/0001' ScrollExtent='304,30' Size='304,30' SourceRect='0,50,300,79' SourceResource='ps_login_art' Stretch='false'/>
+<Image Location='511,594' Name='G2' PackLocation='center,center' PackLocationProp='-001/0001,0210/0001' ScrollExtent='304,30' Size='304,30' SourceRect='0,50,300,79' SourceResource='ps_login_art' Stretch='false'/>
+<Image Location='339,559' Name='G3' PackLocation='center,center' PackLocationProp='-173/0001,0175/0001' ScrollExtent='170,26' Size='170,26' SourceRect='0,0,159,25' SourceResource='ps_login_art' Stretch='false'/>
+<Image Location='199,596' Name='G4' PackLocation='center,center' PackLocationProp='-313/0001,0212/0001' ScrollExtent='310,24' Size='310,24' SourceRect='0,25,300,50' SourceResource='ps_login_art' Stretch='false'/>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Image BackgroundOpacity='1.000' Location='15,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0015/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0029/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='995,4' Size='995,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='15,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0010/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0029/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='995,4' Size='995,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,10' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,748' Size='4,748' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,10' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0020/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,748' Size='4,748' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,37' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0065/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,703' Size='21,703' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,28' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0028/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0065/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,703' Size='21,703' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='33,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0033/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0057/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='967,22' Size='967,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0024/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0057/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='967,22' Size='967,22' Stretch='false' Style=' '/>
+<Image Color='#E9DAC0' Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>

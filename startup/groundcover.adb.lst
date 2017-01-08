@@ -1,54 +1,14 @@
 #add_resource
 
-##shoregrass1
+##articclutterd
 
-add_property shoregrass1 20
-add_property shoregrass1 texture shoregrass1
-add_property shoregrass1 cellcount 4
-add_property shoregrass1 distribution 25 25 25 25
-add_property shoregrass1 cross 0 0 0 0
-add_property shoregrass1 width 1 1 1 1
-add_property shoregrass1 height 1 1 1 1
-
-##articcultterf
-
-add_property articcultterf 20
-add_property articcultterf texture articcultterf
-add_property articcultterf cellcount 4
-add_property articcultterf distribution 25 25 25 25
-add_property articcultterf cross 0 0 0 0
-add_property articcultterf width 1 1 1 1
-add_property articcultterf height 1 1 1 1
-
-##articclutterg
-
-add_property articclutterg density 100
-add_property articclutterg texture articclutterg
-add_property articclutterg cellcount 4
-add_property articclutterg distribution 25 25 25 25
-add_property articclutterg cross 0 0 0 0
-add_property articclutterg width 1 1 1 1
-add_property articclutterg height 1 1 1 1
-
-##jgrass14
-
-add_property jgrass14 density 200
-add_property jgrass14 texture jgrass14
-add_property jgrass14 cellcount 4
-add_property jgrass14 distribution 25 25 25 25
-add_property jgrass14 cross 0 0 0 0
-add_property jgrass14 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass14 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-
-##earth01
-
-add_property earth01 density 100:50<0:200>
-add_property earth01 texture earth01
-add_property earth01 cellcount 4
-add_property earth01 distribution 25 25 25 25
-add_property earth01 cross 0 0 0 0
-add_property earth01 width 0.8:0.1 0.8:0.1 0.8:0.1 0.8:0.1
-add_property earth01 height 1 1 1 1
+add_property articclutterd density 100
+add_property articclutterd texture articclutterd
+add_property articclutterd cellcount 4
+add_property articclutterd distribution 25 25 25 25
+add_property articclutterd cross 0 0 0 0
+add_property articclutterd width 1 1 1 1
+add_property articclutterd height 1 1 1 1
 
 ##articcluttere
 
@@ -70,109 +30,39 @@ add_property articclutterf cross 0 0 0 0
 add_property articclutterf width 1 1 1 1
 add_property articclutterf height 1 1 1 1
 
-##articclutterd
+##articclutterg
 
-add_property articclutterd density 100
-add_property articclutterd texture articclutterd
-add_property articclutterd cellcount 4
-add_property articclutterd distribution 25 25 25 25
-add_property articclutterd cross 0 0 0 0
-add_property articclutterd width 1 1 1 1
-add_property articclutterd height 1 1 1 1
+add_property articclutterg density 100
+add_property articclutterg texture articclutterg
+add_property articclutterg cellcount 4
+add_property articclutterg distribution 25 25 25 25
+add_property articclutterg cross 0 0 0 0
+add_property articclutterg width 1 1 1 1
+add_property articclutterg height 1 1 1 1
 
-##jgrass5
+##articcultterf
 
-add_property jgrass5 density 80
-add_property jgrass5 texture jgrass5
-add_property jgrass5 cellcount 4
-add_property jgrass5 distribution 25 25 25 25
-add_property jgrass5 cross 1 0 0 0
-add_property jgrass5 width 1.000:0.100<0.900:1.100> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass5 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property articcultterf 20
+add_property articcultterf texture articcultterf
+add_property articcultterf cellcount 4
+add_property articcultterf distribution 25 25 25 25
+add_property articcultterf cross 0 0 0 0
+add_property articcultterf width 1 1 1 1
+add_property articcultterf height 1 1 1 1
 
-##grassswatch2
+##articrock1_256
 
-add_property grassswatch2 density 200
-add_property grassswatch2 texture grassswatch2
-add_property grassswatch2 cellcount 4
-add_property grassswatch2 distribution 25 25 25 25
-add_property grassswatch2 cross 0 0 0 0
-add_property grassswatch2 width 0.816:0.100<0.700:0.900> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9>
-add_property grassswatch2 height 1 1 1 1
-
-##deserttreej
-
-add_property deserttreej density 0
-add_property deserttreej texture deserttreej
-add_property deserttreej cellcount 4
-add_property deserttreej distribution 25 25 25 25
-add_property deserttreej cross 0 0 0 0
-add_property deserttreej width 1 1 1 1
-add_property deserttreej height 1 1 1 1
-add_property deserttreej detail_mesh deserttreej 5:5<0:10>
-add_property deserttreej mesh1 desertshrubc 1:0.1<0.9:1.1> 1 2
-add_property deserttreej mesh2 desertshrubd 1:0.1<0.9:1.1> 1 2
-add_property deserttreej mesh3 desertcluttera 1:0.1<0.9:1.1> 1 2
-
-##volcanicgroundcoverc
-
-add_property volcanicgroundcoverc density 200
-add_property volcanicgroundcoverc texture volcanicgroundcoverc
-add_property volcanicgroundcoverc cellcount 4
-add_property volcanicgroundcoverc distribution 25 25 25 25
-add_property volcanicgroundcoverc cross 0 0 0 0
-add_property volcanicgroundcoverc width 1 1 1 1
-add_property volcanicgroundcoverc height 1 1 1 1
-
-##volcanicgroundcovere
-
-add_property volcanicgroundcovere density 200
-add_property volcanicgroundcovere texture volcanicgroundcovere
-add_property volcanicgroundcovere cellcount 4
-add_property volcanicgroundcovere distribution 25 25 25 25
-add_property volcanicgroundcovere cross 0 0 0 0
-add_property volcanicgroundcovere width 1 1 1 1
-add_property volcanicgroundcovere height 1 1 1 1
-
-##volcanicgroundcoverg
-
-add_property volcanicgroundcoverg density 200
-add_property volcanicgroundcoverg texture volcanicgroundcoverg
-add_property volcanicgroundcoverg cellcount 4
-add_property volcanicgroundcoverg distribution 25 25 25 25
-add_property volcanicgroundcoverg cross 0 0 0 0
-add_property volcanicgroundcoverg width 1 1 1 1
-add_property volcanicgroundcoverg height 1 1 1 1
-
-##volcanicgroundcoverf
-
-add_property volcanicgroundcoverf density 200
-add_property volcanicgroundcoverf texture volcanicgroundcoverf
-add_property volcanicgroundcoverf cellcount 4
-add_property volcanicgroundcoverf distribution 25 25 25 25
-add_property volcanicgroundcoverf cross 0 0 0 0
-add_property volcanicgroundcoverf width 1 1 1 1
-add_property volcanicgroundcoverf height 1 1 1 1
-
-##volcanic_grounddetail_1
-
-add_property volcanic_grounddetail_1 density 200:100
-add_property volcanic_grounddetail_1 texture volcanic_grounddetail_1
-add_property volcanic_grounddetail_1 cellcount 4
-add_property volcanic_grounddetail_1 distribution 25 25 25 25
-add_property volcanic_grounddetail_1 cross 1 0 0 0
-add_property volcanic_grounddetail_1 width 0.864:0.648<0.648:0.864> 0.8:0.2 0.8:0.2 0.8:0.2
-add_property volcanic_grounddetail_1 height 1 1 1 1
-
-##desertdetailcoveri
-
-add_property desertdetailcoveri density 100
-add_property desertdetailcoveri texture desertdetailcoveri
-add_property desertdetailcoveri cellcount 4
-add_property desertdetailcoveri distribution 5 65 25 5
-add_property desertdetailcoveri cross 1 0 1 0
-add_property desertdetailcoveri width 0.4:0.1 0.8:0.2 0.5:0.1 0.440:0.000<0.000:10.000>
-add_property desertdetailcoveri height 1:0.2 1.8:0.2 1.8:0.2 1
+add_property articrock1_256 density 0
+add_property articrock1_256 texture articrock1_256
+add_property articrock1_256 cellcount 4
+add_property articrock1_256 distribution 25 25 25 25
+add_property articrock1_256 cross 0 0 0 0
+add_property articrock1_256 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property articrock1_256 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property articrock1_256 detail_mesh articrock1_256 5:10<0:15>
+add_property articrock1_256 mesh1 articcluttera 1:2<1:3> 1 2
+add_property articrock1_256 mesh2 articclutterb 1:2<1:3> 1 2
+add_property articrock1_256 mesh3 articclutterc 1:2<1:3> 1 2
 
 ##desertclutterb
 
@@ -204,18 +94,15 @@ add_property desertcover mesh7 desertdetail_rg 1:1<1:2> 1 2
 add_property desertcover mesh8 desertdetail_sa 1:1<1:2> 1 2
 add_property desertcover mesh9 desertdetail_sb 1:1<1:2> 1 2
 
-##desertshrubg
+##desertdetailcoveri
 
-add_property desertshrubg density 0
-add_property desertshrubg texture desertshrubg
-add_property desertshrubg cellcount 4
-add_property desertshrubg distribution 25 25 25 25
-add_property desertshrubg cross 0 0 0 0
-add_property desertshrubg width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property desertshrubg height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property desertshrubg detail_mesh desertshrubg 5:10<0:15>
-add_property desertshrubg mesh1 desertshrubg 1:0.1<0.9:1.1> 1 1
-add_property desertshrubg mesh2 desertshrubh 1:0.1<0.9:1.1> 1 1
+add_property desertdetailcoveri density 100
+add_property desertdetailcoveri texture desertdetailcoveri
+add_property desertdetailcoveri cellcount 4
+add_property desertdetailcoveri distribution 5 65 25 5
+add_property desertdetailcoveri cross 1 0 1 0
+add_property desertdetailcoveri width 0.4:0.1 0.8:0.2 0.5:0.1 0.440:0.000<0.000:10.000>
+add_property desertdetailcoveri height 1:0.2 1.8:0.2 1.8:0.2 1
 
 ##desertshrube
 
@@ -230,45 +117,31 @@ add_property desertshrube detail_mesh desertshrube 20
 add_property desertshrube mesh1 desertshrube 1:0.1<0.9:1.1> 1 2
 add_property desertshrube mesh2 desertshrubf 1:0.1<0.9:1.1> 1 2
 
-##volcanicgroundcoverh
+##desertshrubg
 
-add_property volcanicgroundcoverh density 200
-add_property volcanicgroundcoverh texture volcanicgroundcoverh
-add_property volcanicgroundcoverh cellcount 4
-add_property volcanicgroundcoverh distribution 25 25 25 25
-add_property volcanicgroundcoverh cross 0 0 0 0
-add_property volcanicgroundcoverh width 1 1 1 1
-add_property volcanicgroundcoverh height 1 1 1 1
+add_property desertshrubg density 0
+add_property desertshrubg texture desertshrubg
+add_property desertshrubg cellcount 4
+add_property desertshrubg distribution 25 25 25 25
+add_property desertshrubg cross 0 0 0 0
+add_property desertshrubg width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property desertshrubg height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property desertshrubg detail_mesh desertshrubg 5:10<0:15>
+add_property desertshrubg mesh1 desertshrubg 1:0.1<0.9:1.1> 1 1
+add_property desertshrubg mesh2 desertshrubh 1:0.1<0.9:1.1> 1 1
 
-##volcanicgroundcoverd
+##desertshrubi
 
-add_property volcanicgroundcoverd density 200
-add_property volcanicgroundcoverd texture volcanicgroundcoverd
-add_property volcanicgroundcoverd cellcount 4
-add_property volcanicgroundcoverd distribution 25 25 25 25
-add_property volcanicgroundcoverd cross 0 0 0 0
-add_property volcanicgroundcoverd width 1 1 1 1
-add_property volcanicgroundcoverd height 1 1 1 1
-
-##volcanicgroundcoverb
-
-add_property volcanicgroundcoverb density 200
-add_property volcanicgroundcoverb texture volcanicgroundcoverb
-add_property volcanicgroundcoverb cellcount 4
-add_property volcanicgroundcoverb distribution 25 25 25 25
-add_property volcanicgroundcoverb cross 0 0 0 0
-add_property volcanicgroundcoverb width 1 1 1 1
-add_property volcanicgroundcoverb height 1 1 1 1
-
-##jdesertswatch
-
-add_property jdesertswatch density 80
-add_property jdesertswatch texture jdesertswatch
-add_property jdesertswatch cellcount 4
-add_property jdesertswatch distribution 60 20 10 10
-add_property jdesertswatch cross 0 1 1 0
-add_property jdesertswatch width 0.8:0.05 0.528:0.099<0.000:3.300> 0.900:0.050<0.000:10.000> 0.6:0.1
-add_property jdesertswatch height 1:0.1 1.4 1.2:0.05 1
+add_property desertshrubi density 0
+add_property desertshrubi texture desertshrubi
+add_property desertshrubi cellcount 4
+add_property desertshrubi distribution 25 25 25 25
+add_property desertshrubi cross 0 0 0 0
+add_property desertshrubi width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property desertshrubi height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property desertshrubi detail_mesh desertshrubi 1
+add_property desertshrubi mesh1 desertshrubi 1.5:0.5<0.9:2.1> 1 2
+add_property desertshrubi mesh2 desertshrubj 1.5:0.5<0.9:2.1> 1 2
 
 ##desertswatch
 
@@ -290,79 +163,29 @@ add_property desertswatch2 cross 0 1 0 0
 add_property desertswatch2 width 1.2:0.2 1.2:0.2 1.2:0.2 1.2:0.2
 add_property desertswatch2 height 1:0.2 1:0.2 1:0.2 1:0.2
 
-##earthshrubg
+##deserttreej
 
-add_property earthshrubg density 0
-add_property earthshrubg texture earthshrubg
-add_property earthshrubg cellcount 4
-add_property earthshrubg distribution 25 25 25 25
-add_property earthshrubg cross 0 0 0 0
-add_property earthshrubg width 1 1 1 1
-add_property earthshrubg height 1 1 1 1
-add_property earthshrubg detail_mesh earthshrubg 5:10<0:20>
-add_property earthshrubg mesh1 earthshrubg 1:0.4<0.5:1.1> 1 2
-add_property earthshrubg mesh2 earthshrubh 1:0.4<0.5:1.1> 1 2
-add_property earthshrubg mesh3 earthshrubi 1:0.4<0.5:1.1> 1 2
+add_property deserttreej density 0
+add_property deserttreej texture deserttreej
+add_property deserttreej cellcount 4
+add_property deserttreej distribution 25 25 25 25
+add_property deserttreej cross 0 0 0 0
+add_property deserttreej width 1 1 1 1
+add_property deserttreej height 1 1 1 1
+add_property deserttreej detail_mesh deserttreej 5:5<0:10>
+add_property deserttreej mesh1 desertshrubc 1:0.1<0.9:1.1> 1 2
+add_property deserttreej mesh2 desertshrubd 1:0.1<0.9:1.1> 1 2
+add_property deserttreej mesh3 desertcluttera 1:0.1<0.9:1.1> 1 2
 
-##desertshrubi
+##earth01
 
-add_property desertshrubi density 0
-add_property desertshrubi texture desertshrubi
-add_property desertshrubi cellcount 4
-add_property desertshrubi distribution 25 25 25 25
-add_property desertshrubi cross 0 0 0 0
-add_property desertshrubi width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property desertshrubi height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property desertshrubi detail_mesh desertshrubi 1
-add_property desertshrubi mesh1 desertshrubi 1.5:0.5<0.9:2.1> 1 2
-add_property desertshrubi mesh2 desertshrubj 1.5:0.5<0.9:2.1> 1 2
-
-##volcanicshruba
-
-add_property volcanicshruba density 0
-add_property volcanicshruba texture volcanicshruba
-add_property volcanicshruba cellcount 4
-add_property volcanicshruba distribution 25 25 25 25
-add_property volcanicshruba cross 0 0 0 0
-add_property volcanicshruba width 1 1 1 1
-add_property volcanicshruba height 1 1 1 1
-add_property volcanicshruba detail_mesh volcanicshruba 5:10<0:15>
-add_property volcanicshruba mesh1 volcanicshrub_a 1:0.1<0.9:1.1> 1 2
-add_property volcanicshruba mesh2 volcanicshrub_b 1:0.1<0.9:1.1> 1 2
-add_property volcanicshruba mesh3 volcanicshrub_c 1:0.1<0.9:1.1> 1 2
-
-##jgrass21
-
-add_property jgrass21 density 200
-add_property jgrass21 texture jgrass21
-add_property jgrass21 cellcount 4
-add_property jgrass21 distribution 25 25 25 25
-add_property jgrass21 cross 0 0 0 0
-add_property jgrass21 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass21 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-
-##jtwigs1
-
-add_property jtwigs1 density 40
-add_property jtwigs1 texture jtwigs1
-add_property jtwigs1 cellcount 4
-add_property jtwigs1 distribution 25 25 25 25
-add_property jtwigs1 cross 1 1 1 1
-add_property jtwigs1 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jtwigs1 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-
-##earthshrub2
-
-add_property earthshrub2 density 0
-add_property earthshrub2 texture earthshrub2
-add_property earthshrub2 cellcount 4
-add_property earthshrub2 distribution 25 25 25 25
-add_property earthshrub2 cross 0 0 0 0
-add_property earthshrub2 width 1 1 1 1
-add_property earthshrub2 height 1 1 1 1
-add_property earthshrub2 detail_mesh earthshrub2 5:10<0:15>
-add_property earthshrub2 mesh1 earthshrubc 1:0.5<0.9:1.9> 1 2
-add_property earthshrub2 mesh2 earthshrubd 1:0.5<0.9:1.9> 1 2
+add_property earth01 density 100:50<0:200>
+add_property earth01 texture earth01
+add_property earth01 cellcount 4
+add_property earth01 distribution 25 25 25 25
+add_property earth01 cross 0 0 0 0
+add_property earth01 width 0.8:0.1 0.8:0.1 0.8:0.1 0.8:0.1
+add_property earth01 height 1 1 1 1
 
 ##earthshrub1
 
@@ -377,25 +200,47 @@ add_property earthshrub1 detail_mesh earthshrub1 5:15<0:15>
 add_property earthshrub1 mesh1 earthshruba 1:0.5<0.9:2.1> 1 2
 add_property earthshrub1 mesh2 earthshrubb 1:0.5<0.9:2.1> 1 2
 
-##jflowers1
+##earthshrub2
 
-add_property jflowers1 density 40
-add_property jflowers1 texture jflowers1
-add_property jflowers1 cellcount 4
-add_property jflowers1 distribution 25 25 25 25
-add_property jflowers1 cross 0 0 0 0
-add_property jflowers1 width 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000>
-add_property jflowers1 height 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000>
+add_property earthshrub2 density 0
+add_property earthshrub2 texture earthshrub2
+add_property earthshrub2 cellcount 4
+add_property earthshrub2 distribution 25 25 25 25
+add_property earthshrub2 cross 0 0 0 0
+add_property earthshrub2 width 1 1 1 1
+add_property earthshrub2 height 1 1 1 1
+add_property earthshrub2 detail_mesh earthshrub2 5:10<0:15>
+add_property earthshrub2 mesh1 earthshrubc 1:0.5<0.9:1.9> 1 2
+add_property earthshrub2 mesh2 earthshrubd 1:0.5<0.9:1.9> 1 2
 
-##jgrass22
+##earthshrubg
 
-add_property jgrass22 density 100
-add_property jgrass22 texture jgrass22
-add_property jgrass22 cellcount 4
-add_property jgrass22 distribution 25 25 25 25
-add_property jgrass22 cross 0 0 0 0
-add_property jgrass22 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass22 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property earthshrubg density 0
+add_property earthshrubg texture earthshrubg
+add_property earthshrubg cellcount 4
+add_property earthshrubg distribution 25 25 25 25
+add_property earthshrubg cross 0 0 0 0
+add_property earthshrubg width 1 1 1 1
+add_property earthshrubg height 1 1 1 1
+add_property earthshrubg detail_mesh earthshrubg 5:10<0:20>
+add_property earthshrubg mesh1 earthshrubg 1:0.4<0.5:1.1> 1 2
+add_property earthshrubg mesh2 earthshrubh 1:0.4<0.5:1.1> 1 2
+add_property earthshrubg mesh3 earthshrubi 1:0.4<0.5:1.1> 1 2
+
+##gc_earthfungis_1
+
+add_property gc_earthfungis_1 density 0
+add_property gc_earthfungis_1 texture gc_earthfungis_1
+add_property gc_earthfungis_1 cellcount 4
+add_property gc_earthfungis_1 distribution 25 25 25 25
+add_property gc_earthfungis_1 cross 0 0 0 0
+add_property gc_earthfungis_1 width 1 1 1 1
+add_property gc_earthfungis_1 height 1 1 1 1
+add_property gc_earthfungis_1 detail_mesh gc_earthfungis_1 5:10<0:20>
+add_property gc_earthfungis_1 mesh1 earthclutter_q 1.5:2<0.9:2.5> 1 2
+add_property gc_earthfungis_1 mesh2 earthclutter_r 1.5:2<0.9:2.5> 1 2
+add_property gc_earthfungis_1 mesh3 earthclutter_s 1.5:2<0.9:2.5> 1 2
+add_property gc_earthfungis_1 mesh4 earthclutter_t 1.5:2<0.9:2.5> 1 2
 
 ##grassswatch
 
@@ -413,6 +258,184 @@ add_property grassswatch mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
 add_property grassswatch mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
 add_property grassswatch mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
 add_property grassswatch mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+
+##grassswatch2
+
+add_property grassswatch2 density 200
+add_property grassswatch2 texture grassswatch2
+add_property grassswatch2 cellcount 4
+add_property grassswatch2 distribution 25 25 25 25
+add_property grassswatch2 cross 0 0 0 0
+add_property grassswatch2 width 0.816:0.100<0.700:0.900> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9>
+add_property grassswatch2 height 1 1 1 1
+
+##jdesertswatch
+
+add_property jdesertswatch density 80
+add_property jdesertswatch texture jdesertswatch
+add_property jdesertswatch cellcount 4
+add_property jdesertswatch distribution 60 20 10 10
+add_property jdesertswatch cross 0 1 1 0
+add_property jdesertswatch width 0.8:0.05 0.528:0.099<0.000:3.300> 0.900:0.050<0.000:10.000> 0.6:0.1
+add_property jdesertswatch height 1:0.1 1.4 1.2:0.05 1
+
+##jflowers1
+
+add_property jflowers1 density 40
+add_property jflowers1 texture jflowers1
+add_property jflowers1 cellcount 4
+add_property jflowers1 distribution 25 25 25 25
+add_property jflowers1 cross 0 0 0 0
+add_property jflowers1 width 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000> 0.800:0.200<0.000:10.000>
+add_property jflowers1 height 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000> 1.000:0.100<0.000:10.000>
+
+##jgrass1
+
+add_property jgrass1 density 100
+add_property jgrass1 texture jgrass1
+add_property jgrass1 cellcount 4
+add_property jgrass1 distribution 25 15 25 35
+add_property jgrass1 cross 1 1 1 0
+add_property jgrass1 width 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9>
+add_property jgrass1 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass1 detail_mesh pleaves01 5:10<0:20>
+add_property jgrass1 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
+add_property jgrass1 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
+add_property jgrass1 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
+add_property jgrass1 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
+add_property jgrass1 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
+add_property jgrass1 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+
+##jgrass14
+
+add_property jgrass14 density 200
+add_property jgrass14 texture jgrass14
+add_property jgrass14 cellcount 4
+add_property jgrass14 distribution 25 25 25 25
+add_property jgrass14 cross 0 0 0 0
+add_property jgrass14 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass14 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##jgrass17
+
+add_property jgrass17 density 150
+add_property jgrass17 texture jgrass17
+add_property jgrass17 cellcount 4
+add_property jgrass17 distribution 0 50 50 0
+add_property jgrass17 cross 1 0 0 0
+add_property jgrass17 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass17 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##jgrass18
+
+add_property jgrass18 density 150
+add_property jgrass18 texture jgrass18
+add_property jgrass18 cellcount 4
+add_property jgrass18 distribution 0 90 5 5
+add_property jgrass18 cross 1 0 1 1
+add_property jgrass18 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass18 height 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1>
+add_property jgrass18 detail_mesh pleaves01 5:10<0:15>
+add_property jgrass18 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
+add_property jgrass18 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
+add_property jgrass18 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
+add_property jgrass18 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
+add_property jgrass18 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
+add_property jgrass18 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+
+##jgrass19
+
+add_property jgrass19 density 100
+add_property jgrass19 texture jgrass19
+add_property jgrass19 cellcount 4
+add_property jgrass19 distribution 25 25 25 25
+add_property jgrass19 cross 0 0 1 1
+add_property jgrass19 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass19 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass19 detail_mesh pleaves01 5:10<0:15>
+add_property jgrass19 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
+add_property jgrass19 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
+add_property jgrass19 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
+add_property jgrass19 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
+add_property jgrass19 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
+add_property jgrass19 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+
+##jgrass21
+
+add_property jgrass21 density 200
+add_property jgrass21 texture jgrass21
+add_property jgrass21 cellcount 4
+add_property jgrass21 distribution 25 25 25 25
+add_property jgrass21 cross 0 0 0 0
+add_property jgrass21 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass21 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##jgrass22
+
+add_property jgrass22 density 100
+add_property jgrass22 texture jgrass22
+add_property jgrass22 cellcount 4
+add_property jgrass22 distribution 25 25 25 25
+add_property jgrass22 cross 0 0 0 0
+add_property jgrass22 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass22 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##jgrass5
+
+add_property jgrass5 density 80
+add_property jgrass5 texture jgrass5
+add_property jgrass5 cellcount 4
+add_property jgrass5 distribution 25 25 25 25
+add_property jgrass5 cross 1 0 0 0
+add_property jgrass5 width 1.000:0.100<0.900:1.100> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jgrass5 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##jgrassy
+
+add_property jgrassy density 200
+add_property jgrassy texture jgrassy
+add_property jgrassy cellcount 4
+add_property jgrassy distribution 25 25 25 25
+add_property jgrassy cross 0 0 0 0
+add_property jgrassy width 0.8:0.1<0.9:1.1> 0.80.1<0.9:1.1> 0.8:0.1<0.9:1.1> 0.80.1<0.9:1.1>
+add_property jgrassy height 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1>
+
+##jthickgrass
+
+add_property jthickgrass density 400
+add_property jthickgrass texture jthickgrass
+add_property jthickgrass cellcount 4
+add_property jthickgrass distribution 25 25 25 25
+add_property jthickgrass cross 0 0 0 0
+add_property jthickgrass width 0.911:0.047<0.471:0.879> 0.761:0.117<0.000:0.902> 0.778:0.100<0.167:0.905> 0.724:0.332<0.528:0.860>
+add_property jthickgrass height 0.120:0.840<0.660:0.960> 1.092:0.374<0.560:1.186> 0.780:0.580<0.480:1.100> 1.000:0.520<0.580:1.220>
+
+##jtwigs1
+
+add_property jtwigs1 density 40
+add_property jtwigs1 texture jtwigs1
+add_property jtwigs1 cellcount 4
+add_property jtwigs1 distribution 25 25 25 25
+add_property jtwigs1 cross 1 1 1 1
+add_property jtwigs1 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property jtwigs1 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+
+##pleaves01
+
+add_property pleaves01 density 0
+add_property pleaves01 texture pleaves01
+add_property pleaves01 cellcount 4
+add_property pleaves01 distribution 25 25 25 25
+add_property pleaves01 cross 0 0 0 0
+add_property pleaves01 width 1 1 1 1
+add_property pleaves01 height 1 1 1 1
+add_property pleaves01 detail_mesh pleaves01 5:10<0:15>
+add_property pleaves01 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
+add_property pleaves01 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
+add_property pleaves01 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
+add_property pleaves01 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
+add_property pleaves01 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
+add_property pleaves01 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
 
 ##rock_clutter
 
@@ -445,61 +468,15 @@ add_property rock_clutter mesh18 volcanicclutter_b 4:2<1:6> 1 2
 add_property rock_clutter mesh19 volcanicclutter_c 4:2<1:6> 1 2
 add_property rock_clutter mesh20 volcanicclutter_d 4:2<1:6> 1 2
 
-##articrock1_256
+##shoregrass1
 
-add_property articrock1_256 density 0
-add_property articrock1_256 texture articrock1_256
-add_property articrock1_256 cellcount 4
-add_property articrock1_256 distribution 25 25 25 25
-add_property articrock1_256 cross 0 0 0 0
-add_property articrock1_256 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property articrock1_256 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property articrock1_256 detail_mesh articrock1_256 5:10<0:15>
-add_property articrock1_256 mesh1 articcluttera 1:2<1:3> 1 2
-add_property articrock1_256 mesh2 articclutterb 1:2<1:3> 1 2
-add_property articrock1_256 mesh3 articclutterc 1:2<1:3> 1 2
-
-##pleaves01
-
-add_property pleaves01 density 0
-add_property pleaves01 texture pleaves01
-add_property pleaves01 cellcount 4
-add_property pleaves01 distribution 25 25 25 25
-add_property pleaves01 cross 0 0 0 0
-add_property pleaves01 width 1 1 1 1
-add_property pleaves01 height 1 1 1 1
-add_property pleaves01 detail_mesh pleaves01 5:10<0:15>
-add_property pleaves01 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
-add_property pleaves01 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
-add_property pleaves01 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
-add_property pleaves01 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
-add_property pleaves01 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
-add_property pleaves01 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
-
-##gc_earthfungis_1
-
-add_property gc_earthfungis_1 density 0
-add_property gc_earthfungis_1 texture gc_earthfungis_1
-add_property gc_earthfungis_1 cellcount 4
-add_property gc_earthfungis_1 distribution 25 25 25 25
-add_property gc_earthfungis_1 cross 0 0 0 0
-add_property gc_earthfungis_1 width 1 1 1 1
-add_property gc_earthfungis_1 height 1 1 1 1
-add_property gc_earthfungis_1 detail_mesh gc_earthfungis_1 5:10<0:20>
-add_property gc_earthfungis_1 mesh1 earthclutter_q 1.5:2<0.9:2.5> 1 2
-add_property gc_earthfungis_1 mesh2 earthclutter_r 1.5:2<0.9:2.5> 1 2
-add_property gc_earthfungis_1 mesh3 earthclutter_s 1.5:2<0.9:2.5> 1 2
-add_property gc_earthfungis_1 mesh4 earthclutter_t 1.5:2<0.9:2.5> 1 2
-
-##vanu_flowers_2
-
-add_property vanu_flowers_2 density 200
-add_property vanu_flowers_2 texture vanu_flowers_2
-add_property vanu_flowers_2 cellcount 4
-add_property vanu_flowers_2 distribution 5 45 45 5
-add_property vanu_flowers_2 cross 0 0 0 0
-add_property vanu_flowers_2 width 0.5 1 0.800:0.200<0.000:10.000> 0.8
-add_property vanu_flowers_2 height 1.8 1 1 1
+add_property shoregrass1 20
+add_property shoregrass1 texture shoregrass1
+add_property shoregrass1 cellcount 4
+add_property shoregrass1 distribution 25 25 25 25
+add_property shoregrass1 cross 0 0 0 0
+add_property shoregrass1 width 1 1 1 1
+add_property shoregrass1 height 1 1 1 1
 
 ##vanu_flowers_1
 
@@ -511,83 +488,106 @@ add_property vanu_flowers_1 cross 0 0 0 0
 add_property vanu_flowers_1 width 0.5 1 0.800:0.200<0.000:10.000> 0.8
 add_property vanu_flowers_1 height 1.8 1 1 1
 
-##jgrassy
+##vanu_flowers_2
 
-add_property jgrassy density 200
-add_property jgrassy texture jgrassy
-add_property jgrassy cellcount 4
-add_property jgrassy distribution 25 25 25 25
-add_property jgrassy cross 0 0 0 0
-add_property jgrassy width 0.8:0.1<0.9:1.1> 0.80.1<0.9:1.1> 0.8:0.1<0.9:1.1> 0.80.1<0.9:1.1>
-add_property jgrassy height 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1>
+add_property vanu_flowers_2 density 200
+add_property vanu_flowers_2 texture vanu_flowers_2
+add_property vanu_flowers_2 cellcount 4
+add_property vanu_flowers_2 distribution 5 45 45 5
+add_property vanu_flowers_2 cross 0 0 0 0
+add_property vanu_flowers_2 width 0.5 1 0.800:0.200<0.000:10.000> 0.8
+add_property vanu_flowers_2 height 1.8 1 1 1
 
-##jthickgrass
+##volcanic_grounddetail_1
 
-add_property jthickgrass density 400
-add_property jthickgrass texture jthickgrass
-add_property jthickgrass cellcount 4
-add_property jthickgrass distribution 25 25 25 25
-add_property jthickgrass cross 0 0 0 0
-add_property jthickgrass width 0.911:0.047<0.471:0.879> 0.761:0.117<0.000:0.902> 0.778:0.100<0.167:0.905> 0.724:0.332<0.528:0.860>
-add_property jthickgrass height 0.120:0.840<0.660:0.960> 1.092:0.374<0.560:1.186> 0.780:0.580<0.480:1.100> 1.000:0.520<0.580:1.220>
+add_property volcanic_grounddetail_1 density 200:100
+add_property volcanic_grounddetail_1 texture volcanic_grounddetail_1
+add_property volcanic_grounddetail_1 cellcount 4
+add_property volcanic_grounddetail_1 distribution 25 25 25 25
+add_property volcanic_grounddetail_1 cross 1 0 0 0
+add_property volcanic_grounddetail_1 width 0.864:0.648<0.648:0.864> 0.8:0.2 0.8:0.2 0.8:0.2
+add_property volcanic_grounddetail_1 height 1 1 1 1
 
-##jgrass19
+##volcanicgroundcoverb
 
-add_property jgrass19 density 100
-add_property jgrass19 texture jgrass19
-add_property jgrass19 cellcount 4
-add_property jgrass19 distribution 25 25 25 25
-add_property jgrass19 cross 0 0 1 1
-add_property jgrass19 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass19 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass19 detail_mesh pleaves01 5:10<0:15>
-add_property jgrass19 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
-add_property jgrass19 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
-add_property jgrass19 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
-add_property jgrass19 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
-add_property jgrass19 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
-add_property jgrass19 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+add_property volcanicgroundcoverb density 200
+add_property volcanicgroundcoverb texture volcanicgroundcoverb
+add_property volcanicgroundcoverb cellcount 4
+add_property volcanicgroundcoverb distribution 25 25 25 25
+add_property volcanicgroundcoverb cross 0 0 0 0
+add_property volcanicgroundcoverb width 1 1 1 1
+add_property volcanicgroundcoverb height 1 1 1 1
 
-##jgrass18
+##volcanicgroundcoverc
 
-add_property jgrass18 density 150
-add_property jgrass18 texture jgrass18
-add_property jgrass18 cellcount 4
-add_property jgrass18 distribution 0 90 5 5
-add_property jgrass18 cross 1 0 1 1
-add_property jgrass18 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass18 height 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1> 1:0.4<0.9:1.1>
-add_property jgrass18 detail_mesh pleaves01 5:10<0:15>
-add_property jgrass18 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
-add_property jgrass18 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
-add_property jgrass18 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
-add_property jgrass18 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
-add_property jgrass18 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
-add_property jgrass18 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+add_property volcanicgroundcoverc density 200
+add_property volcanicgroundcoverc texture volcanicgroundcoverc
+add_property volcanicgroundcoverc cellcount 4
+add_property volcanicgroundcoverc distribution 25 25 25 25
+add_property volcanicgroundcoverc cross 0 0 0 0
+add_property volcanicgroundcoverc width 1 1 1 1
+add_property volcanicgroundcoverc height 1 1 1 1
 
-##jgrass17
+##volcanicgroundcoverd
 
-add_property jgrass17 density 150
-add_property jgrass17 texture jgrass17
-add_property jgrass17 cellcount 4
-add_property jgrass17 distribution 0 50 50 0
-add_property jgrass17 cross 1 0 0 0
-add_property jgrass17 width 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass17 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
+add_property volcanicgroundcoverd density 200
+add_property volcanicgroundcoverd texture volcanicgroundcoverd
+add_property volcanicgroundcoverd cellcount 4
+add_property volcanicgroundcoverd distribution 25 25 25 25
+add_property volcanicgroundcoverd cross 0 0 0 0
+add_property volcanicgroundcoverd width 1 1 1 1
+add_property volcanicgroundcoverd height 1 1 1 1
 
-##jgrass1
+##volcanicgroundcovere
 
-add_property jgrass1 density 100
-add_property jgrass1 texture jgrass1
-add_property jgrass1 cellcount 4
-add_property jgrass1 distribution 25 15 25 35
-add_property jgrass1 cross 1 1 1 0
-add_property jgrass1 width 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9> 0.8:0.1<0.7:0.9>
-add_property jgrass1 height 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1> 1:0.1<0.9:1.1>
-add_property jgrass1 detail_mesh pleaves01 5:10<0:20>
-add_property jgrass1 mesh1 earth_shrub1 1:0.1<0.9:1.1> 1 0
-add_property jgrass1 mesh2 earth_shrub2 1:0.1<0.9:1.1> 1 0
-add_property jgrass1 mesh3 earth_shrub3 1:0.1<0.9:1.1> 1 0
-add_property jgrass1 mesh4 earth_shrub4 1:0.1<0.9:1.1> 1 0
-add_property jgrass1 mesh5 earth_shrub5 1:0.1<0.9:1.1> 1 0
-add_property jgrass1 mesh6 earth_shrub6 1:0.1<0.9:1.1> 1 0
+add_property volcanicgroundcovere density 200
+add_property volcanicgroundcovere texture volcanicgroundcovere
+add_property volcanicgroundcovere cellcount 4
+add_property volcanicgroundcovere distribution 25 25 25 25
+add_property volcanicgroundcovere cross 0 0 0 0
+add_property volcanicgroundcovere width 1 1 1 1
+add_property volcanicgroundcovere height 1 1 1 1
+
+##volcanicgroundcoverf
+
+add_property volcanicgroundcoverf density 200
+add_property volcanicgroundcoverf texture volcanicgroundcoverf
+add_property volcanicgroundcoverf cellcount 4
+add_property volcanicgroundcoverf distribution 25 25 25 25
+add_property volcanicgroundcoverf cross 0 0 0 0
+add_property volcanicgroundcoverf width 1 1 1 1
+add_property volcanicgroundcoverf height 1 1 1 1
+
+##volcanicgroundcoverg
+
+add_property volcanicgroundcoverg density 200
+add_property volcanicgroundcoverg texture volcanicgroundcoverg
+add_property volcanicgroundcoverg cellcount 4
+add_property volcanicgroundcoverg distribution 25 25 25 25
+add_property volcanicgroundcoverg cross 0 0 0 0
+add_property volcanicgroundcoverg width 1 1 1 1
+add_property volcanicgroundcoverg height 1 1 1 1
+
+##volcanicgroundcoverh
+
+add_property volcanicgroundcoverh density 200
+add_property volcanicgroundcoverh texture volcanicgroundcoverh
+add_property volcanicgroundcoverh cellcount 4
+add_property volcanicgroundcoverh distribution 25 25 25 25
+add_property volcanicgroundcoverh cross 0 0 0 0
+add_property volcanicgroundcoverh width 1 1 1 1
+add_property volcanicgroundcoverh height 1 1 1 1
+
+##volcanicshruba
+
+add_property volcanicshruba density 0
+add_property volcanicshruba texture volcanicshruba
+add_property volcanicshruba cellcount 4
+add_property volcanicshruba distribution 25 25 25 25
+add_property volcanicshruba cross 0 0 0 0
+add_property volcanicshruba width 1 1 1 1
+add_property volcanicshruba height 1 1 1 1
+add_property volcanicshruba detail_mesh volcanicshruba 5:10<0:15>
+add_property volcanicshruba mesh1 volcanicshrub_a 1:0.1<0.9:1.1> 1 2
+add_property volcanicshruba mesh2 volcanicshrub_b 1:0.1<0.9:1.1> 1 2
+add_property volcanicshruba mesh3 volcanicshrub_c 1:0.1<0.9:1.1> 1 2

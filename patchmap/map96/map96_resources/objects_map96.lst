@@ -1,0 +1,6 @@
+pse_link Nexus_Base comm_station_dsp_6
+pse_link North_Rim_Tower tower_a_1
+pse_link East_Rim_Tower tower_a_1
+pse_link South_Rim_Tower tower_a_1
+pse_link North_Gate_Tower tower_b_1
+pse_link South_Gate_Tower tower_b_1

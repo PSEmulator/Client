@@ -1,0 +1,1 @@
+<Progressbar BackgroundColor='#425063' BackgroundOpacity='1.000' BarBackgroundColor='#0099C5' Color='#777777' Location='260,287' Name='Hack' PackLocation='Center,Center' PackLocationProp='-252/0001,-097/0001' Progress='0.500' ScrollExtent='504,30' Size='504,30' Style='/ProgressBars.HUD.Style' TooltipStyle='/Fonts.DefaultFont' Visible='false'/>

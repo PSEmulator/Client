@@ -1,0 +1,2104 @@
+########### Record 'ams' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ams
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'ams_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ams_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ant
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'ant_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ant_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'apc' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction apc
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0
+phys_material_adhesion 1
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.0001
+
+########### Record 'apc_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction apc_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'barrier' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction barrier
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.00001
+
+########### Record 'corpse' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction corpse
+phys_material_dimensions 2
+phys_material_friction 100000
+phys_material_softness 0.0005
+phys_material_adhesion 2
+phys_material_restitution 0.0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+phys_material_tensilestrength 1
+
+########### Record 'droppod' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction droppod
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.002
+phys_material_adhesion 400000
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction dropship
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'dropship_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction dropship_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.001
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'flail_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 1000000
+phys_material_restitution 0
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'framefeet' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction framefeet
+phys_material_dimensions 2
+phys_material_friction 300
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'frontrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frontrubber
+phys_material_dimensions 2
+phys_material_friction 800
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'frontrubber+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frontrubber+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'frontrubber+rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frontrubber+rubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.09
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'hovertires' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction hovertires
+phys_material_dimensions 2
+phys_material_friction 800
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.0005
+phys_material_primaryslip 0.00005
+phys_material_secondaryslip 0.0015
+
+########### Record 'implant_terminal_mech' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction implant_terminal_mech
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0.0001
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.0005
+
+########### Record 'liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction liberator
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'liberator_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction liberator_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightgunship
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'lightgunship_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightgunship_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightning
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'lightning_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightning_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'lodestar' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lodestar
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'lodestar_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lodestar_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction magrider
+phys_material_dimensions 2
+phys_material_friction 500
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.01
+
+########### Record 'magrider_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction magrider_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0.01
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'magridertires' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction magridertires
+phys_material_dimensions 2
+phys_material_friction 2000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0005
+phys_material_secondaryslip 0.0001
+
+########### Record 'manned_turret' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction manned_turret
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0005
+phys_material_adhesion 0.0001
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.0005
+
+########### Record 'mediumtransport' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mediumtransport
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0.0001
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.0005
+
+########### Record 'mediumtransport_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mediumtransport_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0.0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction metal
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'metal+metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction metal+metal
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'metal+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction metal+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'metal+secondary' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction metal+secondary
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mosquito
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'mosquito_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mosquito_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'orbital_shuttle' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction orbital_shuttle
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0008
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+frontrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+frontrubber
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+hovertires' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+hovertires
+phys_material_dimensions 2
+phys_material_friction 1
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'plastic+rearquadrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+rearquadrubber
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+rearrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+rearrubber
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+rubber
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+rubber2' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+rubber2
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'plastic+twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction plastic+twomanhoverbuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 1
+phys_material_secondaryslip 1
+
+########### Record 'player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 1
+phys_material_secondaryslip 1
+phys_material_tensilestrength 60
+
+########### Record 'prowler' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler
+phys_material_dimensions 2
+phys_material_friction 400
+phys_material_softness 0
+phys_material_adhesion 0.0001
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.05
+
+########### Record 'prowler_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 100000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction quadassault
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'quadassault_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction quadassault_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 900000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'rearquadrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rearquadrubber
+phys_material_dimensions 2
+phys_material_friction 3600
+phys_material_softness 0.0002
+phys_material_adhesion 0
+phys_material_restitution 0.09
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+phys_material_tensilestrength 80
+
+########### Record 'rearquadrubber+rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rearquadrubber+rubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.09
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rearrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rearrubber
+phys_material_dimensions 2
+phys_material_friction 800
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'rearrubber+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rearrubber+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.01
+
+########### Record 'reinforcedmetal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction reinforcedmetal
+phys_material_dimensions 2
+phys_material_friction 400
+phys_material_softness 0.000005
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.00001
+
+########### Record 'router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction router
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'router_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction router_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 900000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber
+phys_material_dimensions 2
+phys_material_friction 100
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber+frontrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber+frontrubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber+rearquadrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber+rearquadrubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber+rearrubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber+rearrubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber+rubber' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber+rubber
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber+rubber2' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber+rubber2
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'rubber2' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction rubber2
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+phys_material_tensilestrength 80
+
+########### Record 'secondary' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction secondary
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'skimmer' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skimmer
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+phys_material_tensilestrength 150
+
+########### Record 'skimmer+metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skimmer+metal
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 0.1
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skyguard
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'skyguard_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skyguard_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction switchblade
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'switchblade_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction switchblade_destroyed
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction threemanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'threemanheavybuggy_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction threemanheavybuggy_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'tread' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction tread
+phys_material_dimensions 2
+phys_material_friction 3000
+phys_material_softness 0.00003
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.0002
+phys_material_secondaryslip 0.0008
+
+########### Record 'largetread' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction largetread
+phys_material_dimensions 2
+phys_material_friction 3000
+phys_material_softness 0.00003
+phys_material_adhesion 0
+phys_material_restitution 0.01
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.000001
+
+########### Record 'two_man_assault_buggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction two_man_assault_buggy
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'two_man_assault_buggy_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction two_man_assault_buggy_destroyed
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.00001
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'twomanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 5000
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'twomanheavybuggy_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanheavybuggy_destroyed
+phys_material_dimensions 2
+phys_material_friction 60000
+phys_material_softness 0.0005
+phys_material_adhesion 850000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanhoverbuggy
+phys_material_dimensions 2
+phys_material_friction 500
+phys_material_softness 0.0005
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'twomanhoverbuggy_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanhoverbuggy_destroyed
+phys_material_dimensions 2
+phys_material_friction 55000
+phys_material_softness 0.0005
+phys_material_adhesion 1100000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'vanguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard
+phys_material_dimensions 2
+phys_material_friction 400
+phys_material_softness 0
+phys_material_adhesion 0.0001
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.05
+
+########### Record 'vanguard+ams' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+ams
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+ant
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+apc' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+apc
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+dropship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+liberator
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+lightgunship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+lightning
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+mediumtransport
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+mosquito
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+prowler' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+prowler
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+quadassault
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+quadstealth' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+quadstealth
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+skyguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+threemanheavybuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+two_man_assault_buggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+two_man_assault_buggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+twomanhoverbuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+twomanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+twomanheavybuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+vanguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+vanguard
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+flail
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+flail_deployed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+flail_deployed
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+router
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction vanguard+switchblade
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+lodestar' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+lodestar
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'vanguard+tread' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+tread
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'vanguard_destroyed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard_destroyed
+phys_material_dimensions 2
+phys_material_friction 40000
+phys_material_softness 0.0001
+phys_material_adhesion 10000000
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'prowler+ams' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+ams
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+ant
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+apc' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+apc
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+dropship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+liberator
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+lightgunship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+lightning
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+mediumtransport
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+mosquito
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+prowler' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+prowler
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+quadassault
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+quadstealth' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+quadstealth
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+skyguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+threemanheavybuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+two_man_assault_buggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+two_man_assault_buggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+twomanhoverbuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+twomanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+twomanheavybuggy
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+vanguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+vanguard
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+flail
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+flail_deployed' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+flail_deployed
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+router
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+#phys_material_interaction prowler+switchblade
+#phys_material_dimensions 2
+#phys_material_friction 0
+#phys_material_softness 0
+#phys_material_adhesion 0
+#phys_material_restitution 0
+#phys_material_primaryslip 0.1
+#phys_material_secondaryslip 0.1
+
+########### Record 'prowler+lodestar' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+lodestar
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.1
+phys_material_secondaryslip 0.1
+
+########### Record 'prowler+tread' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+tread
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.001
+phys_material_secondaryslip 0.001
+
+########### Record 'wardog' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction wardog
+phys_material_dimensions 2
+phys_material_friction 500000
+phys_material_softness 0.0005
+phys_material_adhesion 10
+phys_material_restitution 0
+phys_material_primaryslip 0
+phys_material_secondaryslip 0
+
+########### Record 'ams+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ams+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'ant+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction ant+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'apc+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction apc+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'dropship+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction dropship+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'liberator+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction liberator+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'lightgunship+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightgunship+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'lightning+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lightning+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'magrider+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction magrider+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'mediumtransport+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mediumtransport+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'mosquito+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction mosquito+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'prowler+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction prowler+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'quadassault+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction quadassault+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'quadstealth+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction quadstealth+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'skyguard+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction skyguard+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'threemanheavybuggy+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction threemanheavybuggy+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'twomanheavybuggy+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanheavybuggy+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'twomanhoverbuggy+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction twomanhoverbuggy+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'two_man_assault_buggy+player' of Database 'physmaterial' using Keyword phys_material_interaction two_man_assault_buggy+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'vanguard+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction vanguard+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'flail+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'flail_deployed+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction flail_deployed+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'router+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction router+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'switchblade+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction switchblade+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'lodestar+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction lodestar+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'phantasm' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction phantasm
+phys_material_dimensions 2
+phys_material_friction 4000
+phys_material_softness 0.0001
+phys_material_adhesion 0
+phys_material_restitution 0.001
+phys_material_primaryslip 0.00001
+phys_material_secondaryslip 0.0001
+
+########### Record 'frame_feet' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet
+phys_material_dimensions 2
+phys_material_friction 800
+phys_material_softness 0.005
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.0001
+phys_material_secondaryslip 0.001
+
+########### Record 'frame_metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 0.000001
+phys_material_primaryslip 0.01
+phys_material_secondaryslip 0.01
+
+########### Record 'frame_metal+frame_metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+frame_metal
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 1
+phys_material_primaryslip 1.0
+phys_material_secondaryslip 10000.0
+
+########### Record 'frame_feet+frame_metal' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+frame_metal
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 1
+phys_material_primaryslip 1.0
+phys_material_secondaryslip 10000.0
+
+########### Record 'frame_feet+frame_feet' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+frame_feet
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0.00001
+phys_material_adhesion 0
+phys_material_restitution 1
+phys_material_primaryslip 1.0
+phys_material_secondaryslip 10000.0
+
+########### Record 'frame_feet+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 1.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+player' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+player
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 1.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_shield' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_shield
+phys_material_dimensions 2
+phys_material_friction 50000
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 0.0
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+dropship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+dropship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+dropship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+liberator
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+liberator' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+liberator
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+lightgunship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+lightgunship' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+lightgunship
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+lodestar' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+lodestar
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+lodestar' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+lodestar
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+mosquito
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+mosquito' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+mosquito
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+ant
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+ant' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+ant
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+apc' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+apc
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+apc' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+apc
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+lightning
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+lightning' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+lightning
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+magrider
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+magrider' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+magrider
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+mediumtransport' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+mediumtransport
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+mediumtransport' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+mediumtransport
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+prowler' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+prowler
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+prowler' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+prowler
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+quadassault
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+quadassault' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+quadassault
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+skyguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+skyguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+skyguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+threemanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+threemanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+threemanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+two_man_assault_buggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+two_man_assault_buggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+two_man_assault_buggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+two_man_assault_buggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+twomanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+twomanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+twomanheavybuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+twomanheavybuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+twomanhoverbuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+twomanhoverbuggy' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+twomanhoverbuggy
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+vanguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+vanguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+vanguard' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+vanguard
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+flail
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+flail' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+flail
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+router
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+router' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+router
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_metal+switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_metal+switchblade
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+
+########### Record 'frame_feet+switchblade' of Database 'physmaterial' using Keyword 'phys_material_interaction'
+phys_material_interaction frame_feet+switchblade
+phys_material_dimensions 2
+phys_material_friction 0
+phys_material_softness 0
+phys_material_adhesion 0
+phys_material_restitution 0
+phys_material_primaryslip 100.00
+phys_material_secondaryslip 100.0
+

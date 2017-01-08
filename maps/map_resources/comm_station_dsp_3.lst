@@ -45,3 +45,4 @@ pse_relativeobject ext_sandbags_b 115.9610 39.8272 8.0000 1 1 1 0 0 -2025
 pse_relativeobject ext_sandbags_b 45.2136 -53.6034 13.2090 1 1 1 0 0 8146
 pse_relativeobject ext_sandbags_a -40.1237 34.1665 -0.2300 1 1 1 0 0 -6599
 pse_relativeobject ext_sandbags_a 21.7103 -11.4147 -0.1488 1 1 1 0 0 -1023
+pse_relativeobject BFR_building 8.9702 -62.8321 0.0000 1 1 1 0 0 6144

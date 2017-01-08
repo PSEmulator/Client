@@ -1,13 +1,127 @@
-<Page Name='CreateCharacter' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = false' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CreateCharacterMaleButtonTooltip]' Location='505,59' Name='Male' PackLocation='right,top' PackLocationProp='-519/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' TextColor='#72C9D1' Tooltip='@CreateCharacterMaleButtonTooltip' TooltipStyle='/Tooltips.Default'>@CreateCharacterMale</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CreateCharacterFemaleButtonTooltip]' Location='747,59' Name='Female' PackLocation='right,top' PackLocationProp='-277/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' TextColor='#72C9D1' Tooltip='@CreateCharacterFemaleButtonTooltip' TooltipStyle='/Tooltips.Default'>@CreateCharacterFemale</Checkbox>
+<Page Name='CreateCharacter' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<DataSource Name='MaleHeads'>
+<Data e='1,1' l='0,0' Name='Male01a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,0' Name='Male01b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,0' Name='Male01c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,0' Name='Male01d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,0' Name='Male01e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,1' Name='Male02a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,1' Name='Male02b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,1' Name='Male02c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,1' Name='Male02d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,1' Name='Male02e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,2' Name='Male03a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,2' Name='Male03b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,2' Name='Male03c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,2' Name='Male03d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,2' Name='Male03e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,3' Name='Male04a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,3' Name='Male04b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,3' Name='Male04c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,3' Name='Male04d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,3' Name='Male04e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,4' Name='Male05a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,4' Name='Male05b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,4' Name='Male05c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,4' Name='Male05d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,4' Name='Male05e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,5' Name='Male06a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,5' Name='Male06b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,5' Name='Male06c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,5' Name='Male06d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,5' Name='Male06e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,6' Name='Male07a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,6' Name='Male07b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,6' Name='Male07c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,6' Name='Male07d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,6' Name='Male07e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,7' Name='Male08a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,7' Name='Male08b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,7' Name='Male08c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,7' Name='Male08d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,7' Name='Male08e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,8' Name='Male09a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,8' Name='Male09b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,8' Name='Male09c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,8' Name='Male09d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,8' Name='Male09e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,9' Name='Male10a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,9' Name='Male10b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,9' Name='Male10c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,9' Name='Male10d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,9' Name='Male10e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,10' Name='Male11a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,10' Name='Male11b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,10' Name='Male11c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,10' Name='Male11d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,10' Name='Male11e' t='/CreateCharacter.GridElement'/>
+</DataSource>
+<DataSource Name='FemaleHeads'>
+<Data e='1,1' l='0,0' Name='Female01a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,0' Name='Female01b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,0' Name='Female01c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,0' Name='Female01d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,0' Name='Female01e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,1' Name='Female02a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,1' Name='Female02b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,1' Name='Female02c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,1' Name='Female02d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,1' Name='Female02e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,2' Name='Female03a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,2' Name='Female03b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,2' Name='Female03c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,2' Name='Female03d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,2' Name='Female03e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,3' Name='Female04a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,3' Name='Female04b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,3' Name='Female04c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,3' Name='Female04d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,3' Name='Female04e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,4' Name='Female05a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,4' Name='Female05b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,4' Name='Female05c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,4' Name='Female05d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,4' Name='Female05e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,5' Name='Female06a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,5' Name='Female06b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,5' Name='Female06c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,5' Name='Female06d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,5' Name='Female06e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,6' Name='Female07a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,6' Name='Female07b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,6' Name='Female07c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,6' Name='Female07d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,6' Name='Female07e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,7' Name='Female08a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,7' Name='Female08b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,7' Name='Female08c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,7' Name='Female08d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,7' Name='Female08e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,8' Name='Female09a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,8' Name='Female09b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,8' Name='Female09c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,8' Name='Female09d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,8' Name='Female09e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,9' Name='Female10a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,9' Name='Female10b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,9' Name='Female10c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,9' Name='Female10d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,9' Name='Female10e' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='0,10' Name='Female11a' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='1,10' Name='Female11b' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='2,10' Name='Female11c' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='3,10' Name='Female11d' t='/CreateCharacter.GridElement'/>
+<Data e='1,1' l='4,10' Name='Female11e' t='/CreateCharacter.GridElement'/>
+</DataSource>
+<Checkbox BackgroundOpacity='1.000' Location='505,59' Name='Male' PackLocation='right,top' PackLocationProp='-519/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' Radio='true' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' textcolor='#72C9D1' TooltipStyle='/Tooltips.Default'>@CreateCharacterMale</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='747,59' Name='Female' PackLocation='right,top' PackLocationProp='-277/0001,0059/0001' PackSize='proportional,fixed' PackSizeProp='0220/1024,0002/0003' Radio='true' ScrollExtent='220,40' Size='220,40' Style='/Buttons.FrontendButton.checkstyle' textcolor='#72C9D1' TooltipStyle='/Tooltips.Default'>@CreateCharacterFemale</Checkbox>
 <Page Location='60,59' Name='CharacterView' PackLocation='left,cfc' PackLocationProp='0060/0001,0000/0001' PackSize='proportional,proportional' PackSizeProp='0425/1024,0650/0768' ScrollExtent='425,650' Size='425,650'>
-<Textbox Activated='true' LocalTooltip='[@CreateCharacterNameTooltip]' Location='20,13' Name='Name' PackSize='absolute,fixed' PackSizeProp='0040/0001,0002/0003' ScrollExtent='385,29' Size='385,29' Style='/Textboxes.Frontend' Tooltip='@CreateCharacterNameTooltip' TooltipStyle='/Tooltips.Default'>sample</Textbox>
+<Textbox Activated='true' IME='true' Location='20,13' Name='Name' PackSize='absolute,fixed' PackSizeProp='0040/0001,0002/0003' ScrollExtent='385,29' Size='385,29' Style='/Textboxes.Frontend' TooltipStyle='/Tooltips.Default'>sample</Textbox>
 <Button Enabled='false' Location='10,10' Name='NameHeading' PackSize='absolute,fixed' PackSizeProp='0020/0001,0002/0003' ScrollExtent='405,30' Size='405,30' Style='/Buttons.FrontendTitleButton.style' TooltipStyle='/Tooltips.Default'></Button>
-<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateLeftButtonTooltip]' Location='114,602' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-098/0001,-048/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' Tooltip='@CreateCharacterRotateLeftButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
-<Button LocalText='New Button' LocalTooltip='[@CreateCharacterRotateRightButtonTooltip]' Location='289,602' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='0077/0001,-048/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' Tooltip='@CreateCharacterRotateRightButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
-<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomInButtonTooltip]' Location='190,601' Name='ZoomIn' PackLocation='center,bottom' PackLocationProp='-022/0001,-049/0001' ScrollExtent='15,15' Size='15,15' Style='/Buttons.CharacterCreateZoomIn.style' Tooltip='@CreateCharacterZoomInButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
-<Button LocalText='New Button' LocalTooltip='[@CreateCharacterZoomOutButtonTooltip]' Location='219,605' Name='ZoomOut' PackLocation='center,bottom' PackLocationProp='0007/0001,-045/0001' ScrollExtent='16,6' Size='16,6' Style='/Buttons.CharacterCreateZoomOut.style' Tooltip='@CreateCharacterZoomOutButtonTooltip' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' Location='114,602' Name='RotateLeft' PackLocation='center,bottom' PackLocationProp='-098/0001,-048/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateLeft.style' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' Location='289,602' Name='RotateRight' PackLocation='center,bottom' PackLocationProp='0077/0001,-048/0001' ScrollExtent='17,12' Size='17,12' Style='/Buttons.CharacterCreateRotateRight.style' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' Location='190,601' Name='ZoomIn' PackLocation='center,bottom' PackLocationProp='-022/0001,-049/0001' ScrollExtent='15,15' Size='15,15' Style='/Buttons.CharacterCreateZoomIn.style' TooltipStyle='/Tooltips.Default'>New Button</Button>
+<Button LocalText='New Button' Location='219,605' Name='ZoomOut' PackLocation='center,bottom' PackLocationProp='0007/0001,-045/0001' ScrollExtent='16,6' Size='16,6' Style='/Buttons.CharacterCreateZoomOut.style' TooltipStyle='/Tooltips.Default'>New Button</Button>
 <GameObjectView Location='10,10' Name='3DCharacterView' PackSize='absolute,absolute' PackSizeProp='0020/0001,0020/0001' ScrollExtent='405,630' Size='405,630'/>
 <Image Location='-11,34' Name='VSBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,0049/0001' ScrollExtent='451,601' Size='451,601' Style='/Plates.ShellVSBackground' Visible='false'/>
 <Image Location='-8,10' Name='TRBackground' Opacity='0.300' PackSize='absolute,absolute' PackSizeProp='-026/0001,-026/0001' ScrollExtent='451,676' Size='451,676' Style='/Plates.ShellTRBackground'/>
@@ -15,7 +129,7 @@
 <Image BackgroundOpacity='1.000' Name='Box' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='425,650' Size='425,650' Stretch='false' Style=' '/>
 </Page>
 <Page Location='505,119' MaximumSize='460,10000' Name='Heads' PackLocation='fff,top' PackLocationProp='-059/0001,0119/0001' PackSize='proportional,absolute' PackSizeProp='0460/1024,0352/0001' ScrollExtent='460,416' Size='460,416'>
-<Grid CellCount='5,11' CellSize='85,130' DataSource='/DataSources.MaleHeads' Location='10,10' Name='HeadGrid' PackSize='absolute,absolute' PackSizeProp='0030/0001,0020/0001' ScrollExtent='425,1430' Size='430,396' Style='/Grids.FrontendGrid.style'/>
+<Grid CellCount='5,11' CellSize='85,130' DataSource='MaleHeads' Location='10,10' Name='HeadGrid' PackSize='absolute,absolute' PackSizeProp='0030/0001,0020/0001' ScrollExtent='425,1430' Size='430,396' Style='/Grids.FrontendGrid.style'/>
 <Scrollbar Control='HeadGrid' Location='441,10' Name='HeadScrollbar' PackLocation='right,top' PackLocationProp='-019/0001,0010/0001' ScrollExtent='10,396' Size='10,396' Style='/ScrollBars.frontend_vertical.style'/>
 <ImageStyle Name='HeadSelectionStyle'>
 <ImageFrame SourceRect='0,0,66,98'>
@@ -30,35 +144,34 @@
 <Image BackgroundOpacity='1.000' Name='HeadBox' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='460,416' Size='460,416' Stretch='false' Style=' '/>
 </Page>
 <Page Location='505,555' MaximumSize='460,154' Name='SoundPage' PackLocation='fff,bottom' PackLocationProp='-059/0001,-213/0001' PackSize='proportional,fixed' PackSizeProp='0460/1024,0002/0003' ScrollExtent='460,154' Size='460,154'>
-<Button LocalText='ROUGHNECK' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='176,15' Name='Voice0Text' PackLocation='cfc,top' PackLocationProp='0021/0001,0015/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.selected' Tooltip='@CreateCharacterVoiceButtonTooltip'>ROUGHNECK</Button>
-<Button LocalText='ROUGHNECK' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='52,60' Name='Voice1Text' PackLocation='left,top' PackLocationProp='0052/0001,0060/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterVoiceButtonTooltip'>ROUGHNECK</Button>
-<Button LocalText='[@MaleVoice3]' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='52,110' Name='Voice2Text' PackLocation='left,top' PackLocationProp='0052/0001,0110/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterVoiceButtonTooltip'>@MaleVoice3</Button>
-<Button LocalText='[@MaleVoice4]' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='298,60' Name='Voice3Text' PackLocation='right,top' PackLocationProp='-162/0001,0060/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterVoiceButtonTooltip'>@MaleVoice4</Button>
-<Button LocalText='[@MaleVoice5]' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='298,110' Name='Voice4Text' PackLocation='right,top' PackLocationProp='-162/0001,0110/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterVoiceButtonTooltip'>@MaleVoice5</Button>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='134,10' Name='Voice0' PackLocation='cfc,top' PackLocationProp='-075/0001,0010/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' Tooltip='@CreateCharacterVoiceButtonTooltip' TooltipStyle='/Tooltips.Default'>@MaleVoice0</Checkbox>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='10,55' Name='Voice1' PackLocation='left,top' PackLocationProp='0010/0001,0055/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' Tooltip='@CreateCharacterVoiceButtonTooltip' TooltipStyle='/Tooltips.Default'>@MaleVoice1</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='10,105' Name='Voice2' PackLocation='left,top' PackLocationProp='0010/0001,0105/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' Tooltip='@CreateCharacterVoiceButtonTooltip' TooltipStyle='/Tooltips.Default'>@MaleVoice2</Checkbox>
-<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='256,55' Name='Voice3' PackLocation='right,top' PackLocationProp='-204/0001,0055/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' Tooltip='@CreateCharacterVoiceButtonTooltip' TooltipStyle='/Tooltips.Default'>@MaleVoice3</Checkbox>
-<Checkbox BackgroundOpacity='1.000' LocalTooltip='[@CreateCharacterVoiceButtonTooltip]' Location='256,105' Name='Voice4' PackLocation='right,top' PackLocationProp='-204/0001,0105/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' Tooltip='@CreateCharacterVoiceButtonTooltip' TooltipStyle='/Tooltips.Default'>@MaleVoice4</Checkbox>
+<Button LocalText='ROUGHNECK' Location='176,15' Name='Voice0Text' PackLocation='cfc,top' PackLocationProp='0021/0001,0015/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.selected'>ROUGHNECK</Button>
+<Button LocalText='ROUGHNECK' Location='52,60' Name='Voice1Text' PackLocation='left,top' PackLocationProp='0052/0001,0060/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style'>ROUGHNECK</Button>
+<Button LocalText='[@MaleVoice3]' Location='52,110' Name='Voice2Text' PackLocation='left,top' PackLocationProp='0052/0001,0110/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style'>@MaleVoice3</Button>
+<Button LocalText='[@MaleVoice4]' Location='298,60' Name='Voice3Text' PackLocation='right,top' PackLocationProp='-162/0001,0060/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style'>@MaleVoice4</Button>
+<Button LocalText='[@MaleVoice5]' Location='298,110' Name='Voice4Text' PackLocation='right,top' PackLocationProp='-162/0001,0110/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='150,30' Size='150,30' Style='/Buttons.FrontendButton.style'>@MaleVoice5</Button>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='134,10' Name='Voice0' PackLocation='cfc,top' PackLocationProp='-075/0001,0010/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' TooltipStyle='/Tooltips.Default'>@MaleVoice0</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='10,55' Name='Voice1' PackLocation='left,top' PackLocationProp='0010/0001,0055/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' TooltipStyle='/Tooltips.Default'>@MaleVoice1</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='10,105' Name='Voice2' PackLocation='left,top' PackLocationProp='0010/0001,0105/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' TooltipStyle='/Tooltips.Default'>@MaleVoice2</Checkbox>
+<Checkbox Activated='true' BackgroundOpacity='1.000' Checked='true' Location='256,55' Name='Voice3' PackLocation='right,top' PackLocationProp='-204/0001,0055/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' TooltipStyle='/Tooltips.Default'>@MaleVoice3</Checkbox>
+<Checkbox BackgroundOpacity='1.000' Location='256,105' Name='Voice4' PackLocation='right,top' PackLocationProp='-204/0001,0105/0001' ScrollExtent='42,42' Size='42,42' Style='/Buttons.CharacaterCreateVoice.style' TooltipStyle='/Tooltips.Default'>@MaleVoice4</Checkbox>
 <Image BackgroundOpacity='1.000' Name='SoundBox' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='460,154' Size='460,154' Stretch='false' Style=' '/>
 </Page>
 <Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
-<Image BackgroundOpacity='1.000' Location='949,10' Name='ThickTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='20,4' Size='20,4' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='949,25' Name='ThinTopSide' PackLocation='left,top' PackLocationProp='0949/0001,0025/0001' PackSize='absolute,fixed' PackSizeProp='1004/0001,0002/0003' RStyleDefault='/Frontend.Thin.style' ScrollExtent='20,22' Size='20,22' Stretch='false' Style=' '/>
-<Button LocalText='[@FrontendBackButton]' LocalTooltip='[@CreateCharacterAbortButtonTooltip]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterAbortButtonTooltip'>@FrontendBackButton</Button>
-<Button IsDefaultButton='true' LocalText='[@FrontendNextButton]' LocalTooltip='[@CreateCharacterSaveButtonTooltip]' Location='944,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-080/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='75,40' Size='75,40' Style='/Buttons.FrontendButton.style' Tooltip='@CreateCharacterSaveButtonTooltip'>@FrontendNextButton</Button>
-<Button LocalText='?' LocalTooltip='[@HelpTooltip]' Location='5,5' Name='HelpButton' PackLocation='left,top' PackLocationProp='0005/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@HelpTooltip'>?</Button>
-<Button LocalText='[@FrontendOptionButton]' LocalTooltip='[@FrontendOptionTooltip]' Location='849,5' Name='OptionsButton' PackLocation='right,top' PackLocationProp='-175/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,40' Size='100,40' Style='/Buttons.FrontendButton.style' Tooltip='@FrontendOptionTooltip'>@FrontendOptionButton</Button>
-<Button IsCancelButton='true' LocalText='X' LocalTooltip='[@FrontendCloseTooltip]' Location='969,5' Name='CloseButton' PackLocation='right,top' PackLocationProp='-055/0001,0005/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,40' Size='50,40' Style='/Buttons.FrontendButton.iconstyle' Tooltip='@FrontendCloseTooltip'>X</Button>
-<Image BackgroundOpacity='1.000' Location='55,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0055/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='794,4' Size='794,4' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='80,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0080/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='864,4' Size='864,4' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='11,44' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0044/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='1010,45' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,678' Size='4,678' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='979,45' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='24,45' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0090/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,678' Size='21,678' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='80,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0080/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0160/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='864,22' Size='864,22' Stretch='false' Style=' '/>
-<Image BackgroundOpacity='1.000' Location='55,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0055/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0230/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='794,22' Size='794,22' Stretch='false' Style=' '/>
-<Image Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+<Button LocalText='[@FrontendBackButton]' Location='5,723' Name='BackButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='120,40' Size='120,40' Style='/Buttons.FrontendButton.style'>@FrontendBackButton</Button>
+<Button IsDefaultButton='true' LocalText='[@FrontendFinishButton]' Location='899,723' Name='NextButton' PackLocation='right,bottom' PackLocationProp='-125/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='120,40' Size='120,40' Style='/Buttons.FrontendButton.style'>@FrontendFinishButton</Button>
+<Button LocalText='?' Location='487,728' Name='HelpButton' PackLocation='left,top' PackLocationProp='0487/0001,0728/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='50,35' Size='50,35' Style='/Buttons.FrontendButton.iconstyle' Visible='false'>?</Button>
+<Button LocalText='[@FrontendOptionButton]' Location='562,728' Name='OptionsButton' PackLocation='cfc,bottom' PackLocationProp='0100/0001,-040/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='100,35' Size='100,35' Style='/Buttons.FrontendButton.style' Visible='false'>@FrontendOptionButton</Button>
+<Button LocalText='EXIT' Location='5,723' Name='CloseButton' PackLocation='left,bottom' PackLocationProp='0005/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='120,40' Size='120,40' Style='/Buttons.FrontendButton.style' Visible='false'>EXIT</Button>
+<Image BackgroundOpacity='1.000' Location='15,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0015/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0029/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='995,4' Size='995,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='125,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0125/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0612/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='412,4' Size='412,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='537,754' Name='ThickBottom2' PackLocation='left,bottom' PackLocationProp='0537/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0662/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='362,4' Size='362,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,10' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0056/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,712' Size='4,712' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,10' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0056/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,712' Size='4,712' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,37' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0083/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,685' Size='21,685' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,28' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0028/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0073/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,695' Size='21,695' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='125,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0125/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0250/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='774,22' Size='774,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0024/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0057/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='967,22' Size='967,22' Stretch='false' Style=' '/>
+<Image Color='#E9DAC0' Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
 </Page>
 <Namespace Name='Faces'>
 <ImageStyle Name='Male01a'>

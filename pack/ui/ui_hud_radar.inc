@@ -1,0 +1,13 @@
+<Page BackgroundColor='#0000FF' Location='792,0' MaximumSize='500,550' maxsize='500,550' MinimumSize='200,210' minsize='200,210' movable='true' Name='Radar' PackLocation='right,top' PackLocationProp='-232/0001,0000/0001' preserveaspectratio='true' resizable='true' ScrollExtent='232,242' Size='232,242'>
+<Page Location='14,20' MinimumSize='100,100' Name='MapPage' PackSize='absolute,absolute' PackSizeProp='0028/0001,0038/0001' ScrollExtent='204,204' Size='204,204'>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='A10' Location='4,0' MaxLines='1' Name='GridLocation' PackLocation='left,top' PackLocationProp='0004/0001,0000/0001' ScrollExtent='43,17' Size='43,17'>A10</Text>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont1' GetsInput='false' LocalText='50m' Location='148,0' Name='Range' PackLocation='right,top' PackLocationProp='-056/0001,0000/0001' ScrollExtent='53,17' Size='53,17' TextAlignment='Right'>50m</Text>
+<Image Enabled='false' Location='95,94' Name='PlayerBlip' PackLocation='center,center' PackLocationProp='-007/0001,-008/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='14,16' Size='14,16' Stretch='false' Style='/Icons.HUD.Radar_avatar_blip'/>
+<Image AbsorbsInput='false' Enabled='false' Name='Compass' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='204,204' Size='204,204' Style='/Icons.HUD.Radar_compass'/>
+<Image AbsorbsInput='false' MinimumSize='100,100' Name='RadarGlow' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='204,204' Size='204,204' Style='/Icons.HUD.Radar_squad_glow' Visible='false'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.740' ArcEnd='0.760' Color='#FFFF00' Enabled='false' GetsInput='false' InnerRadiusColor='#FFFF00' Name='VehicleFinder' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='204,204' Size='204,204' Thickness='5.000'/>
+<Ellipse AbsorbsInput='false' ArcBegin='0.600' ArcEnd='0.900' Color='#7AAACB' Enabled='false' GetsInput='false' InnerRadiusColor='#7AAACB' Name='FOV' Opacity='0.500' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' Rotation='0.750' ScrollExtent='204,204' Size='204,204' Thickness='600.000' Visible='false'/>
+<OverheadMap AbsorbsInput='false' Enabled='false' GetsInput='false' Name='OverheadMap' Opacity='0.500' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='204,204' Size='204,204'/>
+</Page>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Dragable='true' Enabled='false' Name='Background' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.DialogBackground.style' ScrollExtent='232,242' Size='232,242' Stretch='false'/>
+</Page>

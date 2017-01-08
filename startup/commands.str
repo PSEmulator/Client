@@ -1,0 +1,7 @@
+@CMT_MODULE_FACTORY_LOCK_cmd=/lockmoduletype
+@CMT_MODULE_FACTORY_ROTATE_cmd=/rotatemoduletype
+@CMT_MODULE_FACTORY_UNLOCK_cmd=/unlockmoduletype
+@CMT_BENDING_END_cmd=/end_bending
+
+
+

@@ -1,0 +1,72 @@
+#Welcome
+@timedhelp_welcome=Welcome to PlanetSide!\n\nYou are in your empire's sanctuary.  This is a safe area that serves as a training center and staging grounds for assaults.\n\nHint:  You can press \\#FFFFAAEsc\\#D5FFFF to close help windows, like this one.
+@timedhelp_find_equipment_terminal=Your empire's standard issue armor and weapons are relatively weak.\n\nTo get better weapons and armor, look for an \\#FFFFAAEquipment Terminal\\#D5FFFF.
+@timedhelp_vr_training=You can experiment with weapons and vehicles in the \\#FFFFAAVirtual Reality Training Center\\#D5FFFF.\n\nThe entrances to VR training are behind the Respawn building in your empire's sanctuary.\n\nHint:  You can reach Battle Rank 4 simply by trying out all the gear there!
+@timedhelp_find_fight=From sanctuary, there are two ways to join the battle:  take a \\#FFFFAAshuttle\\#D5FFFF, or use a \\#FFFFAAwarpgate\\#D5FFFF.\n\nShuttles depart every five minutes from the Shuttle Building.\n\nWarpgates are huge shimmering bubbles, located just outside the sanctuary compound.  To use a warpgate, drive or fly a vehicle into the bright cone at its center.
+@timedhelp_shuttle_info=You can board a shuttle in the \\#FFFFAAShuttle Building\\#D5FFFF.\n\nShuttles depart every five minutes.
+@timedhelp_warpgate_info=\\#FFFFAAWarpgates\\#D5FFFF are huge structures that produce a shimmering bubble.  To use a warpgate, enter the bright cone at its center.\n\nHint:  It is recommended you take a vehicle, as warpgate destinations can be far from combat.
+@timedhelp_begin_chat=Press \\#FFFFAA%1\\#D5FFFF to chat with other players.
+@timedhelp_direct_chat=You can direct your chat by using these commands:\n\n\\#FFFFAA/b\\#D5FFFF = broadcast\n\n\\#FFFFAA/tell playername\\#D5FFFF = send to playername only
+@timedhelp_join_squad=Joining a squad is the best way to learn tactics, coordinate attacks, and earn experience.\n\nTo find a squad, open the Find Squad pane by pressing \\#FFFFAA%1\\#D5FFFF.
+@timedhelp_start_squad=You can start your own squad by typing \\#FFFFAA/invite playername\\#D5FFFF.\n\nLook for players that have Looking for Squad over their head --they want to be invited!
+@timedhelp_getting_more_help=To get more help at any time, press \\#FFFFAA%1\\#D5FFFF to open the Help window.\n\nHint:  Veteran soldiers can teach you tactics and lore not found in the Help window.  Don't hesitate to ask them for advice.\n\nGood luck, soldier, and good hunting!
+
+#Basic Controls
+@timedhelp_movement=Use \\#FFFFAA%1\\#D5FFFF, \\#FFFFAA%2\\#D5FFFF, \\#FFFFAA%3\\#D5FFFF, and \\#FFFFAA%4\\#D5FFFF to move.\n\nMove the mouse to look around.
+@timedhelp_camera_toggle=Press \\#FFFFAA%1\\#D5FFFF to switch between first and third person views.
+
+#First Squad
+@timedhelp_first_squad_chat=Type /s to chat with your squad
+
+#First Nonsanc Zone
+@timedhelp_first_nonsanc_zone_recall=If at any time you want to return to sanctuary, press Esc to open the Game Menu and select \\#FFFFAARecall to Sanctuary\\#D5FFFF.
+@timedhelp_use_weapons=Press keys \\#FFFFAA1\\#D5FFFF through \\#FFFFAA5\\#D5FFFF to draw a weapon. Press the key again to holster it.\n\nHint:  You run faster when you don't have a weapon drawn.
+@timedhelp_use_medkits=When you are injured, press \\#FFFFAAF1\\#D5FFFF to use a medkit.\n\nYou can see the number of medkits you currently have on the status bar.
+@timedhelp_mouse_toggle=Press \\#FFFFAA%1\\#D5FFFF to toggle mouselook on and off.\n\nHint:  Use this to interact with your HUD.
+
+#First Enemy Tower SOI
+@timedhelp_first_enemy_tower_soi_capture=To capture a tower, hack its \\#FFFFAAcontrol console\\#D5FFFF.
+
+#First Enemy Facility SOI
+@timedhelp_first_enemy_facility_soi_capture=To capture a facility, locate its \\#FFFFAAcontrol console\\#D5FFFF and hack it.
+@timedhelp_first_enemy_facility_soi_generator=To cripple a facility, destroy its \\#FFFFAAgenerator\\#D5FFFF.
+
+#First Spawn At AMS
+@timedhelp_first_spawn_at_ams_reequip=You can reequip from the AMS' equipment terminals, located on either side.
+
+#First Driver
+@timedhelp_first_drive_land_vehicle_driving=DRIVING CONTROLS\n\n\\#FFFFAA%1\\#D5FFFF = Accelerate\n\n\\#FFFFAA%2\\#D5FFFF = Decelerate\n\n\\#FFFFAA%3\\#D5FFFF = Turn Left\n\n\\#FFFFAA%4\\#D5FFFF = Turn Right\n\n\\#FFFFAA%5\\#D5FFFF = Brake
+@timedhelp_first_drive_hover_vehicle_driving=HOVER CONTROLS\n\n\\#FFFFAA%1\\#D5FFFF = Accelerate\n\n\\#FFFFAA%2\\#D5FFFF = Decelerate\n\n\\#FFFFAA%3\\#D5FFFF = Strafe Left\n\n\\#FFFFAA%4\\#D5FFFF = Strafe Right\n\n\\#FFFFAA%5\\#D5FFFF = Brake
+@timedhelp_first_drive_air_vehicle_driving=FLIGHT CONTROLS\n\n\\#FFFFAA%1\\#D5FFFF = Take Off / Ascend\n\n\\#FFFFAA%2\\#D5FFFF = Land / Descend\n\n\\\#FFFFAA%3\\#D5FFFF = Accelerate\n\n\\#FFFFAA%4\\#D5FFFF = Decelerate\n\n\\#FFFFAA%5\\#D5FFFF = Strafe Left\n\n\\#FFFFAA%6\\#D5FFFF = Strafe Right
+@timedhelp_first_drive_air_vehicle_afterburner=Press \\#FFFFAA%1\\#D5FFFF to activate the afterburners.
+@timedhelp_first_drive_bfr_driving=BFR CONTROLS\n\n\\#FFFFAA%1\\#D5FFFF = Forward\n\n\\#FFFFAA%2\\#D5FFFF = Backward\n\n\\#FFFFAA%3\\#D5FFFF = Turn Left\n\n\\#FFFFAA%4\\#D5FFFF = Turn Right\n\n\\#FFFFAA%5\\#D5FFFF = Crouch\n\n\\#FFFFAA%6\\#D5FFFF = Run Mode
+
+#First Passenger
+@timedhelp_first_air_passenger=Press \\#FFFFAA%1\\#D5FFFF to eject from the aircraft at any time.\n\nWarning: the ejection mechanism may fail for heavily damaged aircraft!
+@timedhelp_first_ground_passenger=Press \\#FFFFAA%1\\#D5FFFF to bail from the vehicle at any time.\n\nNote that drivers cannot bail from some ground vehicles.
+
+#First Vehicle In Sanc
+@timedhelp_first_vehicle_in_sanc=To leave sanctuary in a vehicle, you must pass through a warpgate.\n\nTo locate a warpgate, press \\#FFFFAA%1\\#D5FFFF to view the map.
+
+#First vehicle acquire
+@timedhelp_first_ams=Press \\#FFFFAA%1\\#D5FFFF to deploy (or undeploy) the AMS' cloaking bubble.\n\nYou must be completely stopped in order to deploy.
+@timedhelp_first_ant=Press \\#FFFFAA%1\\#D5FFFF to deploy the ANT's collector vanes inside a warp bubble.
+@timedhelp_first_flail=Press \\#FFFFAA%1\\#D5FFFF to anchor the flail for firing.
+@timedhelp_first_router=Press \\#FFFFAA%1\\#D5FFFF to deploy the router
+@timedhelp_first_switchblade=Press \\#FFFFAA%1\\#D5FFFF to toggle between driving and turret modes
+
+#First MAX acquire
+@timedhelp_first_max_common=Press \\#FFFFAA%1\\#D5FFFF to activate MAX run mode.
+@timedhelp_first_max_vs=Hold \\#FFFFAA%1\\#D5FFFF to fire the VS MAX jump jets.
+@timedhelp_first_max_nc=Press \\#FFFFAA%1\\#D5FFFF to toggle the NC MAX shield on/off.\n\nBe careful: the shield will lower while you are firing.
+@timedhelp_first_max_tr=Press \\#FFFFAA%1\\#D5FFFF to engage or disengage the TR MAX anchors.\n\nYou fire much faster while anchored, but cannot move.
+
+#First Infil Suit
+@timedhelp_first_infil_suit=Press \\#FFFFAA%1\\#D5FFFF to toggle the infiltration suit's cloaking ability.\n\nHint:  Your current visibility level is shown on the status bar.
+
+#First Equip Multiple Fire Modes
+@timedhelp_first_equip_multiple_fire_modes=Many weapons have multiple fire modes.\n\nPress \\#FFFFAA%1\\#D5FFFF to change fire modes.
+
+#First Equip Multiple Ammo Types
+@timedhelp_first_equip_multiple_ammo_types=Some weapons can use multiple types of ammo.\n\nPress \\#FFFFAA%1\\#D5FFFF to change ammo types.
+

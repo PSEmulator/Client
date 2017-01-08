@@ -1,48 +1,52 @@
-########### Record 'barrier' of Database 'physmaterial' using Keyword 'phys_material_interaction'
-phys_material_interaction barrier
-phys_material_dimensions 2
-phys_material_friction 0
-phys_material_softness 0.0005
-phys_material_adhesion 0
-phys_material_restitution 0.01
-phys_material_primaryslip 0.00001
-phys_material_secondaryslip 0.00001
-
 phys_model avatar_barrier
 ################ Physics Primitive avatar_barrier_cdbox0 ###########
-phys_box root 10 0.5 5.0 5.0 0 0 0
+phys_box root 1 0.5 5.0 5.0 0 0 0
 phys_orientation 0 0 0 
 phys_cookie root 
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model avatar_barrier_orbital_building
 ################ Physics Primitive avatar_barrier_orbital_building_cdbox0 ###########
-phys_box root 10 0.5 5.0 5.0 0 0 0
+phys_box root 1 16.0 5.0 5.0 0 0 0
 phys_orientation 0 0 0 
 phys_cookie root 
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model vehicle_barrier
 ################ Physics Primitive vehicle_barrier_cdbox0 ###########
-phys_box root 10 1.0 10.0 7.0 0 0 0
+phys_box root 1 1.0 10.0 7.0 0 0 0
 phys_orientation 0 0 0 
 phys_cookie root 
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
+
+phys_model vehicle_barrier_top_level
+################ Physics Primitive vehicle_barrier_top_level_cdbox0 ###########
+phys_box root 1 5.0 10.0 1.0 0 0.0 1.0
+phys_orientation 0 0 0 
+phys_cookie root 
+phys_material barrier
+phys_collisionboneoffset 0 0 0
+phys_com_offset 0 0 0
+phys_end_info
 
 phys_model vanu_vehicle_barrier
 ################ Physics Primitive vanu_vehicle_barrier_cdbox0 ###########
-phys_box root 10 3.0 14.0 8.5 0 0 0
+phys_box root 1 3.0 14.0 8.5 0 0 0
 phys_orientation 0 0 0 
 phys_cookie root 
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model avatar_barrier_virtual_training
 ################ Physics Primitive avatar_barrier_virtual_training_cdbox0 ###########
@@ -52,6 +56,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model warpgate_barrier
 ################ Physics Primitive warpgate_barrier_cdsph0 ###########
@@ -60,6 +65,17 @@ phys_cookie warp_gate_barrier
 phys_collisionboneoffset 0 0 0
 phys_material barrier
 phys_com_offset 0 0 0
+phys_end_info
+
+phys_model warpgate_small_barrier
+################ Physics Primitive warpgate_small_barrier_root ###########
+#phys_sphere root 0.000 103.000 0.000 0.000 0.000
+phys_sphere root 0.000 90.500 0.000 0.000 0.000
+phys_orientation 0 0 0
+phys_cookie warp_gate_small_barrier
+phys_material barrier
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
 
 phys_model pad_landing_barrier
 ################ Physics Primitive pad_landing_barrier_cdbox0 ###########
@@ -69,6 +85,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model avatar_animated_barrier_small
 ################ Physics Primitive avatar_animated_barrier_small_cdbox0 ###########
@@ -78,6 +95,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model avatar_animated_barrier_large
 ################ Physics Primitive avatar_animated_barrier_large_cdbox0 ###########
@@ -87,6 +105,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model expansion_barrier_force_field
 ################ Physics Primitive expansion_barrier_force_field_cdbox0 ###########
@@ -97,6 +116,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox1 ###########
 phys_box cdbox1 1.0 2.0 8.5 10.0 1.3 -16.0 -1
@@ -105,6 +125,7 @@ phys_cookie right_side
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox2 ###########
 phys_box cdbox2 1.0 2.0 8.5 10.0 1.3 16.0 -1
@@ -113,6 +134,7 @@ phys_cookie left_side
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox3 ###########
 phys_box cdbox3 1.0 2.0 3.0 12.0 0.65 -10.75 0
@@ -121,6 +143,7 @@ phys_cookie right_side_angled
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox4 ###########
 phys_box cdbox4 1.0 2.0 3.0 12.0 0.65 10.75 0
@@ -129,6 +152,7 @@ phys_cookie left_side_angled
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox5 ###########
 phys_box cdbox5 1.0 2.0 4.0 2.0 1.3 -14.5 4.5
@@ -137,6 +161,7 @@ phys_cookie right_side_uppersmall
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive expansion_barrier_force_field_cdbox6 ###########
 phys_box cdbox6 1.0 2.0 4.0 2.0 1.3 14.5 4.5
@@ -145,6 +170,7 @@ phys_cookie left_side_uppersmall
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model warpgate_cavern_barrier
 ################ Physics Primitive warpgate_cavern_barrier_cdbox0 ###########
@@ -154,6 +180,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive warpgate_cavern_barrier_cdbox1 ###########
 phys_cylinder cdbox1 1.0 8.5 1.0 0 0 46.5
@@ -162,6 +189,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive warpgate_cavern_barrier_cdbox2 ###########
 phys_cylinder cdbox2 1.0 11.0 1.0 0 0 45.5
@@ -170,6 +198,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 phys_model warpgate_cavern_aboveground_barrier
 ################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox0 ###########
@@ -179,6 +208,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox1 ###########
 phys_cylinder cdbox1 1.0 18.0 3.0 -0.792 1.386 92.0
@@ -187,6 +217,7 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
 ################ Physics Primitive warpgate_cavern_aboveground_barrier_cdbox2 ###########
 phys_cylinder cdbox2 1.0 20.5 3.0 -0.792 1.386 90.0
@@ -195,5 +226,115 @@ phys_cookie root
 phys_material barrier
 phys_collisionboneoffset 0 0 0
 phys_com_offset 0 0 0
+phys_end_info
 
+phys_model warpgate_alt_barrier
+################ Physics Primitive warpgate_alt_barrier_cdsph0 ###########
+phys_sphere root 5.0 50 0 0 0.3
+phys_cookie warp_gate_alt_barrier 
+phys_collisionboneoffset 0 0 0
+phys_material barrier
+phys_com_offset 0 0 0
+phys_end_info
 
+phys_model force_dome_generator_barrier
+################ Physics Primitive force_dome_generator_barrier_cdbox0 ###########
+phys_box root 1 6.6 6.6 12.0 0 0 0.0
+phys_cookie force_dome_generator_barrier
+phys_collisionboneoffset 0 0 0
+phys_material barrier
+phys_com_offset 0 0 0
+phys_end_info
+
+phys_model force_dome_generator_top_barrier
+################ Physics Primitive force_dome_generator_top_barrier_cdbox0 ###########
+phys_box root 1 11.4 11.4 5.0 0 0 0
+phys_cookie force_dome_generator_top_barrier
+phys_collisionboneoffset 0 0 0
+phys_material barrier
+phys_com_offset 0 0 0
+phys_end_info
+
+phys_model bfr_door_barrier
+################ Physics Primitive bfr_door_barrier_cdbox0 ###########
+phys_box root 1 0.5 11.0 11.0 0 0 0
+phys_cookie bfr_door_barrier
+phys_collisionboneoffset 0 0 0
+phys_material barrier
+phys_com_offset 0 0 0
+phys_end_info
+
+phys_model monolith_barrier
+################ Physics Primitive monolith_barrier_root ###########
+phys_box root 0.000 1.000 1.000 1.000 0.000 0.000 0.000
+phys_orientation 0 0 0
+phys_cookie root
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdbox1 ###########
+phys_box cdbox1 0.000 2.600 2.750 9.530 0.500 -0.030 4.000
+phys_orientation 0 906 0
+phys_cookie long_arm
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdbox2 ###########
+phys_box cdbox2 0.000 2.000 2.000 6.500 0.270 1.230 2.600
+phys_orientation -682 0 0
+phys_cookie front_box
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdbox3 ###########
+phys_box cdbox3 0.000 3.000 3.000 3.750 -1.050 1.840 1.840
+phys_orientation 0 0 0
+phys_cookie remaining_box
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdsph1 ###########
+phys_sphere cdsph1 0.000 5.000 -1.750 1.750 -4.500
+phys_orientation 0 0 0
+phys_cookie base1
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdsph2 ###########
+phys_sphere cdsph2 0.000 5.000 -1.750 -1.750 -4.650
+phys_orientation 0 0 0
+phys_cookie base2
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdsph3 ###########
+phys_sphere cdsph3 0.000 5.000 1.750 1.750 -4.750
+phys_orientation 0 0 0
+phys_cookie base3
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+################ Physics Primitive monolith_barrier_cdsph4 ###########
+phys_sphere cdsph4 0.000 5.000 1.750 -1.750 -4.500
+phys_orientation 0 0 0
+phys_cookie base4
+phys_material null
+phys_com_offset 0.000 0.000 0.000
+phys_end_info
+
+phys_model cloaking_shield_barrier
+################ Physics Primitive cloaking_shield_barrier_root ###########
+phys_sphere root 0.000 11.000 0.000 0.000 0.000
+phys_orientation 0 0 0
+phys_cookie root
+phys_model_collides_with_terrain false
+phys_material barrier
+phys_com_offset 0.000 0.000 0.000
+phys_end_info

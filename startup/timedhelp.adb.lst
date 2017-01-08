@@ -1,0 +1,151 @@
+#timedhelp_begin
+
+##basic_controls
+
+timedhelp_step @timedhelp_movement^$GA_Forward~^$GA_StrafeLeft~^$GA_Backward~^$GA_StrafeRight~ 3.0 60.0
+timedhelp_end
+
+##camera_toggle
+
+timedhelp_step @timedhelp_camera_toggle^$GA_ToggleThirdPersonCamera~ 2.0 15.0
+timedhelp_end
+
+##first_air_passenger
+
+timedhelp_step @timedhelp_first_air_passenger^$GA_BailVehicle/vehicle~ 1.0 10.0
+timedhelp_end
+
+##first_ams
+
+timedhelp_step @timedhelp_first_ams^$GA_VehicleSpecial/vehicle~ 1.0 15.0
+timedhelp_end
+
+##first_ant
+
+timedhelp_step @timedhelp_first_ant^$GA_VehicleSpecial/vehicle~ 1.0 15.0
+timedhelp_end
+
+##first_drive_air_vehicle
+
+timedhelp_step @timedhelp_first_drive_air_vehicle_driving^$GA_FlightElevate/air~^$GA_FlightLower/air~^$GA_Forward/air~^$GA_Backward/air~^$GA_StrafeLeft/air~^$GA_StrafeRight/air~ 1.0 20.0
+timedhelp_end
+
+##first_drive_air_vehicle_afterburners
+
+timedhelp_step @timedhelp_first_drive_air_vehicle_afterburner^$GA_FlightAfterburners/air~ 1.0 10.0
+timedhelp_end
+
+##first_drive_bfr
+
+timedhelp_step @timedhelp_first_drive_bfr_driving^$GA_Forward/frame~^$GA_Backward/frame~^$GA_TurnLeft/frame~^$GA_TurnRight/frame~^$GA_ToggleCrouch/frame~^$GA_Autorun~ 1.0 15.0
+timedhelp_end
+
+##first_drive_hover_vehicle
+
+timedhelp_step @timedhelp_first_drive_hover_vehicle_driving^$GA_Forward/air~^$GA_Backward/air~^$GA_StrafeLeft/air~^$GA_StrafeRight/air~^$GA_FlightAfterburners/air~ 1.0 15.0
+timedhelp_end
+
+##first_drive_land_vehicle
+
+timedhelp_step @timedhelp_first_drive_land_vehicle_driving^$GA_Forward/ground~^$GA_Backward/ground~^$GA_TurnLeft/ground~^$GA_TurnRight/ground~^$GA_Brake/ground~ 1.0 15.0
+timedhelp_end
+
+##first_enemy_facility_soi
+
+timedhelp_step @timedhelp_first_enemy_facility_soi_capture 3.0 15.0
+timedhelp_step @timedhelp_first_enemy_facility_soi_generator 5.0 15.0
+timedhelp_end
+
+##first_enemy_tower_soi
+
+timedhelp_step @timedhelp_first_enemy_tower_soi_capture 3.0 15.0
+timedhelp_end
+
+##first_equip_multiple_ammo_types
+
+timedhelp_step @timedhelp_first_equip_multiple_ammo_types^$GA_ChangeAmmunition~ 1.0 15.0
+timedhelp_end
+
+##first_equip_multiple_fire_modes
+
+timedhelp_step @timedhelp_first_equip_multiple_fire_modes^$GA_ChangeFireMode~ 1.0 15.0
+timedhelp_end
+
+##first_flail
+
+timedhelp_step @timedhelp_first_flail^$GA_VehicleSpecial/vehicle~ 1.0 15.0
+timedhelp_end
+
+##first_ground_passenger
+
+timedhelp_step @timedhelp_first_ground_passenger^$GA_BailVehicle/vehicle~ 1.0 10.0
+timedhelp_end
+
+##first_infil_suit
+
+timedhelp_step @timedhelp_first_infil_suit^$GA_ToggleStealthSuit~ 1.0 15.0
+timedhelp_end
+
+##first_max_common
+
+timedhelp_step @timedhelp_first_max_common^$GA_Autorun~ 1.0 15.0
+timedhelp_end
+
+##first_max_nc
+
+timedhelp_step @timedhelp_first_max_nc^$GA_ToggleStealthSuit~ 1.0 15.0
+timedhelp_end
+
+##first_max_tr
+
+timedhelp_step @timedhelp_first_max_tr^$GA_ToggleStealthSuit~ 1.0 15.0
+timedhelp_end
+
+##first_max_vs
+
+timedhelp_step @timedhelp_first_max_vs^$GA_ToggleStealthSuit~ 1.0 15.0
+timedhelp_end
+
+##first_nonsanc_zone
+
+timedhelp_step @timedhelp_use_weapons 3.0 40.0
+timedhelp_step @timedhelp_use_medkits 3.0 40.0
+timedhelp_end
+
+##first_router
+
+timedhelp_step @timedhelp_first_router^$GA_VehicleSpecial/vehicle~ 1.0 15.0
+timedhelp_end
+
+##first_spawn_at_ams
+
+timedhelp_step @timedhelp_first_spawn_at_ams_reequip 1.0 15.0
+timedhelp_end
+
+##first_squad
+
+timedhelp_step @timedhelp_first_squad_chat 1.0 15.0
+timedhelp_end
+
+##first_switchblade
+
+timedhelp_step @timedhelp_first_switchblade^$GA_VehicleSpecial/vehicle~ 1.0 15.0
+timedhelp_end
+
+##first_vehicle_in_sanc
+
+timedhelp_step @timedhelp_first_vehicle_in_sanc^$GA_ToggleOverheadMap~ 5.0 15.0
+timedhelp_end
+
+##welcome
+
+timedhelp_step @timedhelp_welcome 1.0 15.0
+timedhelp_step @timedhelp_movement^$GA_Forward~^$GA_StrafeLeft~^$GA_Backward~^$GA_StrafeRight~ 1.0 10.0
+timedhelp_step @timedhelp_mouse_toggle^$GA_ToggleMouseLook~ 5.0 10.0
+timedhelp_step @timedhelp_camera_toggle^$GA_ToggleThirdPersonCamera~ 5.0 10.0
+timedhelp_step @timedhelp_vr_training 10.0 60.0
+timedhelp_step @timedhelp_find_fight 20.0 60.0
+timedhelp_step @timedhelp_join_squad^$GA_TogglePlayerPane~ 20.0 30.0
+timedhelp_step @timedhelp_start_squad 1.0 30.0
+timedhelp_step @timedhelp_getting_more_help^$GA_ToggleHelpPage~ 1.0 60.0
+timedhelp_end

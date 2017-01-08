@@ -1,0 +1,8 @@
+<Page Name='RespawnMenu' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768' Visible='false' visualeditlock='true'>
+<Page Location='285,305' Name='Release' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0000/0001' ScrollExtent='455,159' Size='455,159'>
+<Text AbsorbsInput='false' BackgroundColor='#00F2C9' Font='/Fonts.HudFont3' LocalText='[@ReleaseCountdownText]' Location='27,11' Name='ReleaseCountdownText' PackLocation='center,top' PackLocationProp='-200/0001,0011/0001' PackSize='absolute,absolute' PackSizeProp='0055/0001,0082/0001' ScrollExtent='400,77' Size='400,77' TextAlignment='Center' TextAlignmentVertical='Center'>@ReleaseCountdownText</Text>
+<Progressbar AbsorbsInput='false' BarBackgroundColor='#00F2C9' Color='#777777' Location='27,96' Name='ReleaseProgress' PackLocation='center,bottom' PackLocationProp='-200/0001,-063/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' Progress='1.000' ScrollExtent='400,13' Size='400,13' Style='/ProgressBars.Health.style' TooltipStyle='/Fonts.DefaultFont'/>
+<Button LocalText='[@ReleaseButtonText]' Location='27,116' Name='OK' PackLocation='center,bottom' PackLocationProp='-200/0001,-043/0001' PackSize='absolute,fixed' PackSizeProp='0055/0001,0002/0003' ScrollExtent='400,20' Size='400,20' Style='/Buttons.TextButton.style'>@ReleaseButtonText</Button>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Name='Background' Opacity='0.700' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/WindowPanes.SmallBackground.style' ScrollExtent='455,159' Size='455,159' Stretch='false'/>
+</Page>
+</Page>

@@ -1,421 +1,36 @@
 #ar_begin
 
-##default+hp_hip_right+router_telepad+hp_hip_right
+##bfr_building+bfr_building+aphelion+aphelion
 
-ar_rot 00001000 00003F1D 00000000
+ar_rot 00000000 00003000 00000000
 ar_end
 
-##default+hp_hip_left+router_telepad+hp_hip_left
+##bfr_building+root+aphelion+aphelion
 
-ar_rot 00003000 000000E3 00000000
+ar_rot 00000000 00003000 00000000
 ar_end
 
-##default+hp_shoulder_right+maelstrom+hp_shoulder_right
-
-ar_rot 00000000 00002000 00003DB1
-ar_end
-
-##default+hp_shoulder_left+radiator+hp_shoulder_left
+##colossus+hp_body+colossus_gunnerpak+colossus_gunnerpak
 
 ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmmed+hp_shoulder_left+radiator+hp_shoulder_left
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+radiator+hp_shoulder_right
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+maelstrom+hp_shoulder_left
-
-ar_rot 00000000 00001F49 00003DB1
 ar_end
 
 ##default+barrels_bone+spitfire_weapon+barrels_bone
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00002000 00002000 00002000
 ar_end
 
-##ncmsi+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 000002AB 00000000 000000B6
-ar_end
-
-##ncmmed+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 0000016C 00000000 000000E4
-ar_end
-
-##default+hp_hand_right+ace+hp_hand
+##default+bip01_l_calf+ncm_left_shinpad+hp_l_calf
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+remote_electronics_kit+hp_hand
+##default+bip01_l_forearm+ncm_left_forearm+hp_l_forearm
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##vsfmed+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##ncfsth+hp_hip_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##ncfmed+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##trflite+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##vsflite+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##ncfsi+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##vsfsi+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##ncflite+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##vsfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+pulsar+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##obbasemesh+ob_platform+orbital_shuttle+orbital_shuttle
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trmlite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##trhev+hp_hand_right+trhev_pounder_r+hp_handright
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+flechette_rifle+hp_shoulder_left
-
-ar_rot 00003000 00003EB9 00000000
-ar_end
-
-##default+hp_shoulder_left+pulsar+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncfmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+thumper+hp_shoulder_left
-
-ar_rot 000028F6 00000000 00000000
-ar_end
-
-##trmlite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+flechette+hp_shoulder_left
-
-ar_rot 00002EB9 00000000 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_right+pulsar+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+striker+hp_shoulder_right
-
-ar_rot 00000666 00002000 00000000
-ar_end
-
-##trmmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+cycler+hp_shoulder_right
-
-ar_rot 00003000 000000A3 00000000
-ar_end
-
-##default+hp_shoulder_right+lasher+hp_shoulder_right
-
-ar_rot 00001851 00000000 00000000
-ar_end
-
-##default+hp_hand_right+trhev_burster_r+hp_handright
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##trflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+thumper+hp_shoulder_left
-
-ar_rot 000028F6 00000000 00000000
-ar_end
-
-##ncflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+rocklet+hp_shoulder_right
-
-ar_rot 000015C2 00003F5D 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_right+lancer+hp_shoulder_right
-
-ar_rot 000008F5 00002000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+spitfire+hp_shoulder_right
-
-ar_rot 00003148 00000D70 00000147
-ar_end
-
-##default+hp_shoulder_left+lasher+hp_shoulder_left
-
-ar_rot 00002A3E 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+hunterseeker+hp_shoulder_left
-
-ar_rot 00000851 000020A4 000020A4
-ar_end
-
-##ncmlite+hp_shoulder_right+bolt_driver+hp_shoulder_right
-
-ar_rot 00003667 00000000 000000A3
-ar_end
-
-##dropship+hp_gunb+105mm_cannon_dropship_l+hp_guna
-
-ar_rot 00000000 00000000 00001FFF
-ar_end
-
-##default+hp_shoulder_right+punisher+hp_shoulder_right
-
-ar_rot 00003334 00000000 00000000
-ar_end
-
-##trhev+hp_hand_right+trhev_burster_r+hp_handright
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##ncfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+cycler+hp_shoulder_left
-
-ar_rot 00001000 00003F5D 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+lancer+hp_shoulder_left
-
-ar_rot 0000370B 00002000 00000000
-ar_end
-
-##default+hp_shoulder_right+lancer+hp_shoulder_right
-
-ar_rot 000008F5 00002000 00000000
-ar_end
-
-##default+hp_shoulder_left+bolt_driver+hp_shoulder_left
-
-ar_rot 00000999 00000000 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_left+pulsar+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+cycler+hp_shoulder_left
-
-ar_rot 00001000 00003F5D 00000000
-ar_end
-
-##trhev+hp_hand_right+trhev_dualcycler_r+hp_handright
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+ncf_left_sholder+hp_shoulder_left
-
-ar_rot 00003000 00001000 00000000
-ar_end
-
-##default+hp_shoulder_right+phoenix+hp_shoulder_right
-
-ar_rot 00000F5C 00003EB9 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+gauss+hp_shoulder_right
-
-ar_rot 000011EB 00002000 00002001
-ar_end
-
-##vsfmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+lasher+hp_shoulder_right
-
-ar_rot 00001851 00000000 00000000
-ar_end
-
-##default+bip01_r_forearm+ncm_right_forearm+hp_r_forearm
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+rocklet+hp_shoulder_left
-
-ar_rot 000028F6 000000A3 00000000
-ar_end
-
-##default+hp_shoulder_right+flechette+hp_shoulder_right
-
-ar_rot 000015C2 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+punisher+hp_shoulder_left
-
-ar_rot 00000CCC 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+punisher+hp_shoulder_left
-
-ar_rot 00000CCC 00000000 00000000
-ar_end
-
-##ncfmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+lancer+hp_shoulder_left
-
-ar_rot 0000370B 00002000 00000000
-ar_end
-
-##ncmmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+striker+hp_shoulder_left
-
-ar_rot 00002CCD 00001F5C 00000147
-ar_end
-
-##default+hp_shoulder_right+gauss+hp_shoulder_right
-
-ar_rot 000011EB 00002000 00002001
-ar_end
-
-##ncmlite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+r_shotgun+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+thumper+hp_shoulder_right
-
-ar_rot 0000170A 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+thumper+hp_shoulder_right
-
-ar_rot 0000170A 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+phoenix+hp_shoulder_right
-
-ar_rot 00000F5C 00003EB9 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+mini_chaingun+hp_shoulder_left
-
-ar_rot 00000EB8 00003E15 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+suppressor+hp_shoulder_right
-
-ar_rot 000031EC 00000000 00000000
-ar_end
-
-##ncflite+bip01_r_finger11+fraggrenade+fraggrenade
-
-ar_rot 0000051F 000003D7 00002F5C
-ar_end
-
-##trhev+hp_hand_left+trhev_dualcycler_l+hp_handleft
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##default+bip01_r_finger01+mine_sweeper+hp_hand
+##default+bip01_r_calf+ncm_right_shinpad+hp_r_calf
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -425,9 +40,59 @@ ar_end
 ar_rot 0000128F 0000147A 00000000
 ar_end
 
+##default+bip01_r_finger01+jammer_grenade+hp_hand
+
+ar_rot 00001A3D 00000666 00000000
+ar_end
+
+##default+bip01_r_finger01+mine_sweeper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
 ##default+bip01_r_finger01+plasma_grenade+hp_hand
 
 ar_rot 00001A3D 000005C2 00000000
+ar_end
+
+##default+bip01_r_forearm+ncm_right_forearm+hp_r_forearm
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+bip01_spine1+ncm_backplate+hp_spine_a
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_left+trhev_pounder_l+hp_handleft
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+ace+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+advanced_ace+hp_hand
+
+ar_rot 00000000 00001000 00000000
+ar_end
+
+##default+hp_hand_right+anniv_gun_nc+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+anniv_gun_tr+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+anniv_gun_vs+hp_hand
+
+ar_rot 00000000 00000000 00000000
 ar_end
 
 ##default+hp_hand_right+bank+hp_hand
@@ -435,17 +100,607 @@ ar_end
 ar_rot 00000000 00000000 00001000
 ar_end
 
+##default+hp_hand_right+beamer+hp_hand
+
+ar_rot 000000A3 00000000 00003E15
+ar_end
+
+##default+hp_hand_right+bolt_driver+hp_hand
+
+ar_rot 00000000 000000A4 00000000
+ar_end
+
+##default+hp_hand_right+chainblade+hp_hand
+
+ar_rot 0000051E 00003F5D 00003D71
+ar_end
+
+##default+hp_hand_right+command_detonater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+cycler+hp_hand
+
+ar_rot 00000000 000000A4 00000000
+ar_end
+
+##default+hp_hand_right+ff_talon+hp_hand
+
+ar_rot 00000000 00003000 00000000
+ar_end
+
+##default+hp_hand_right+flail_targeting_laser+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##default+hp_hand_right+flamethrower2_sm+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+flechette+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+forceblade+hp_hand
+
+ar_rot 00002290 00002CCD 00001FFF
+ar_end
+
+##default+hp_hand_right+gauss+hp_hand
+
+ar_rot 00000000 00003F5C 00000000
+ar_end
+
+##default+hp_hand_right+hunterseeker+hp_hand
+
+ar_rot 00000000 000000A3 00000000
+ar_end
+
+##default+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+iocw_sm+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
 ##default+hp_hand_right+isp+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trflite+hp_hip_right+bank+hp_hip_right
+##default+hp_hand_right+lancer+hp_hand
 
-ar_rot 00000000 00001000 00001000
+ar_rot 00000000 000000A4 00000000
 ar_end
 
-##vsfsi+hp_hand_right+isp+hp_hand
+##default+hp_hand_right+lasher+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+maelstrom+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+magcutter+hp_hand
+
+ar_rot 00000000 00003000 00000000
+ar_end
+
+##default+hp_hand_right+medical_applicator+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+mini_chaingun+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+nano_dispenser+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+phoenix+hp_hand
+
+ar_rot 000000A3 00000000 00000000
+ar_end
+
+##default+hp_hand_right+pulsar+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+punisher+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00003EB8 00000000
+ar_end
+
+##default+hp_hand_right+remote_electronics_kit+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+rocklet+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+spiker+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+striker+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+suppressor+hp_hand
+
+ar_rot 00000000 00000148 00000000
+ar_end
+
+##default+hp_hand_right+t_remote_electronics_kit+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hand_right+thumper+hp_hand
+
+ar_rot 000000A3 00000147 00003EB9
+ar_end
+
+##default+hp_hand_right+trhev_burster_r+hp_handright
+
+ar_rot 00000000 00001000 00000000
+ar_end
+
+##default+hp_hip_left+ace+hp_hip_left
+
+ar_rot 00000000 00000999 00002EB9
+ar_end
+
+##default+hp_hip_left+anniv_gun_nc+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+anniv_gun_tr+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+anniv_gun_vs+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00003AE2
+ar_end
+
+##default+hp_hip_left+flail_targeting_laser+hp_hip_left
+
+ar_rot 00002C72 00000000 00003000
+ar_end
+
+##default+hp_hip_left+ilc9+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+isp+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+remote_electronics_kit+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_left+router_telepad+hp_hip_left
+
+ar_rot 00003000 000000E3 00000000
+ar_end
+
+##default+hp_hip_left+spiker+hp_hip_left
+
+ar_rot 00003000 00000199 00000000
+ar_end
+
+##default+hp_hip_left+t_remote_electronics_kit+hp_hip_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+ace+hp_hip_right
+
+ar_rot 00000000 00000999 00002EB9
+ar_end
+
+##default+hp_hip_right+anniv_gun_nc+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+anniv_gun_tr+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+anniv_gun_vs+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00003AE2
+ar_end
+
+##default+hp_hip_right+flail_targeting_laser+hp_hip_right
+
+ar_rot 00000C71 00000000 00001000
+ar_end
+
+##default+hp_hip_right+ilc9+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+isp+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+remote_electronics_kit+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_hip_right+router_telepad+hp_hip_right
+
+ar_rot 00001000 00003F1D 00000000
+ar_end
+
+##default+hp_hip_right+spiker+hp_hip_right
+
+ar_rot 00001000 00003E67 00000000
+ar_end
+
+##default+hp_hip_right+t_remote_electronics_kit+hp_hip_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+advanced_ace+hp_shoulder_left
+
+ar_rot 00000000 00000000 00003000
+ar_end
+
+##default+hp_shoulder_left+bolt_driver+hp_shoulder_left
+
+ar_rot 00000999 00000000 000000A3
+ar_end
+
+##default+hp_shoulder_left+cycler+hp_shoulder_left
+
+ar_rot 00001000 00003F5D 00000000
+ar_end
+
+##default+hp_shoulder_left+flamethrower2_sm+hp_shoulder_left
+
+ar_rot 00001638 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+flechette+hp_shoulder_left
+
+ar_rot 00002EB9 00000000 000000A3
+ar_end
+
+##default+hp_shoulder_left+gauss+hp_shoulder_left
+
+ar_rot 00002E15 00002000 00002001
+ar_end
+
+##default+hp_shoulder_left+hunterseeker+hp_shoulder_left
+
+ar_rot 00000851 000020A4 000020A4
+ar_end
+
+##default+hp_shoulder_left+iocw_sm+hp_shoulder_left
+
+ar_rot 00002D28 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+lancer+hp_shoulder_left
+
+ar_rot 0000370B 00002000 00000000
+ar_end
+
+##default+hp_shoulder_left+lasher+hp_shoulder_left
+
+ar_rot 00002A3E 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+maelstrom+hp_shoulder_left
+
+ar_rot 00000000 00001F49 00003DB1
+ar_end
+
+##default+hp_shoulder_left+mini_chaingun+hp_shoulder_left
+
+ar_rot 00000EB8 00003E15 00000000
+ar_end
+
+##default+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+ncf_left_sholder+hp_shoulder_left
+
+ar_rot 00003000 00001000 00000000
+ar_end
+
+##default+hp_shoulder_left+phoenix+hp_shoulder_left
+
+ar_rot 00003000 00000147 00000000
+ar_end
+
+##default+hp_shoulder_left+pulsar+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+punisher+hp_shoulder_left
+
+ar_rot 00000CCC 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+r_shotgun+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+radiator+hp_shoulder_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+radiator+hp_shoulder_right
+
+ar_rot 00000000 00003DDE 00000000
+ar_end
+
+##default+hp_shoulder_left+rocklet+hp_shoulder_left
+
+ar_rot 000028F6 000000A3 00000000
+ar_end
+
+##default+hp_shoulder_left+striker+hp_shoulder_left
+
+ar_rot 00003852 00002000 000000A3
+ar_end
+
+##default+hp_shoulder_left+suppressor+hp_shoulder_left
+
+ar_rot 00000D70 00000000 00000000
+ar_end
+
+##default+hp_shoulder_left+thumper+hp_shoulder_left
+
+ar_rot 000028F6 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+advanced_ace+hp_shoulder_right
+
+ar_rot 00000000 00000000 00003000
+ar_end
+
+##default+hp_shoulder_right+bolt_driver+hp_shoulder_right
+
+ar_rot 00003667 00000000 000000A3
+ar_end
+
+##default+hp_shoulder_right+cycler+hp_shoulder_right
+
+ar_rot 00003000 000000A3 00000000
+ar_end
+
+##default+hp_shoulder_right+flamethrower2_sm+hp_shoulder_right
+
+ar_rot 00002C72 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+flechette+hp_shoulder_right
+
+ar_rot 000015C2 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+gauss+hp_shoulder_right
+
+ar_rot 000011EB 00002000 00002001
+ar_end
+
+##default+hp_shoulder_right+hunterseeker+hp_shoulder_right
+
+ar_rot 000015C2 000000A3 000000A3
+ar_end
+
+##default+hp_shoulder_right+iocw_sm+hp_shoulder_right
+
+ar_rot 00000F77 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+lancer+hp_shoulder_right
+
+ar_rot 000008F5 00002000 00000000
+ar_end
+
+##default+hp_shoulder_right+lasher+hp_shoulder_right
+
+ar_rot 00001851 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+maelstrom+hp_shoulder_right
+
+ar_rot 00000000 00002000 00003DB1
+ar_end
+
+##default+hp_shoulder_right+mini_chaingun+hp_shoulder_right
+
+ar_rot 00003148 00000147 00000000
+ar_end
+
+##default+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+phoenix+hp_shoulder_right
+
+ar_rot 00000F5C 00003EB9 00000000
+ar_end
+
+##default+hp_shoulder_right+pulsar+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+punisher+hp_shoulder_right
+
+ar_rot 00003334 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+r_shotgun+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+radiator+hp_shoulder_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+rocklet+hp_shoulder_right
+
+ar_rot 000015C2 00003F5D 000000A3
+ar_end
+
+##default+hp_shoulder_right+striker+hp_shoulder_right
+
+ar_rot 00000666 00002000 00000000
+ar_end
+
+##default+hp_shoulder_right+suppressor+hp_shoulder_right
+
+ar_rot 000031EC 00000000 00000000
+ar_end
+
+##default+hp_shoulder_right+thumper+hp_shoulder_right
+
+ar_rot 0000170A 00000000 00000000
+ar_end
+
+##delivererv+delivererv_turret_rear+fluxpod+hp_guna
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##delivererv+hp_gunb+fluxpod+hp_guna
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##dropship+hp_guna+105mm_cannon_dropship+hp_guna
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##dropship+hp_gunb+105mm_cannon_dropship+hp_guna
+
+ar_rot 00000000 00000000 00001FFF
+ar_end
+
+##dropship+hp_gunb+105mm_cannon_dropship_l+hp_guna
+
+ar_rot 00000000 00000000 00001FFF
+ar_end
+
+##dropship+hp_gunb+20mm_cannon_dropship_l+hp_20mm
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##manned_turret+hp_guna+phalanx_sgl_hevgatcan+hp_phlsing
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##mb_pad_creation+hp_vehicle+ams+ams_body
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##mb_pad_creation+pad_create_platform+ams+ams_body
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+bip01_r_finger01+fraggrenade+hp_hand
+
+ar_rot 00001A3D 000010A3 00000B85
+ar_end
+
+##ncflite+bip01_r_finger01+jammer_grenade+hp_hand
+
+ar_rot 000018F5 000000A3 00000000
+ar_end
+
+##ncflite+bip01_r_finger01+mine_sweeper+hp_hand
+
+ar_rot 00001A3D 00003F5D 00000000
+ar_end
+
+##ncflite+bip01_r_finger01+plasma_grenade+hp_hand
+
+ar_rot 000017AE 00000000 00000000
+ar_end
+
+##ncflite+bip01_r_finger1+fraggrenade+fraggrenade
+
+ar_rot 00002E14 00003B85 00002000
+ar_end
+
+##ncflite+bip01_r_finger11+fraggrenade+fraggrenade
+
+ar_rot 0000051F 000003D7 00002F5C
+ar_end
+
+##ncflite+bip01_spine1+ncfl_award_holster+ncfl_award_holster
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -455,12 +710,62 @@ ar_end
 ar_rot 00000000 00000000 00001000
 ar_end
 
-##trflite+hp_hand_right+bank+hp_hand
+##ncflite+hp_hand_right+fraggrenade+fraggrenade
 
-ar_rot 00000000 00000000 00001000
+ar_rot 00000CCD 00000666 0000370A
 ar_end
 
-##trflite+hp_hip_left+bank+hp_hip_left
+##ncflite+hp_hand_right+fraggrenade+hp_hand
+
+ar_rot 000003D7 000038F6 00003290
+ar_end
+
+##ncflite+hp_hand_right+gauss+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+jammer_grenade+hp_hand
+
+ar_rot 00000333 000003D7 00000000
+ar_end
+
+##ncflite+hp_hand_right+lancer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+pulsar+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##ncflite+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hand_right+suppressor+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncflite+hp_hip_left+bank+hp_hip_left
 
 ar_rot 00000000 00001000 00001000
 ar_end
@@ -470,74 +775,39 @@ ar_end
 ar_rot 00000000 00001000 00001000
 ar_end
 
-##vsfsth+hp_hand_right+repeater+hp_hand
+##ncflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00001000 00000000 00000000
 ar_end
 
-##vsfsth+hp_hand_right+isp+hp_hand
+##ncflite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
 
-ar_rot 00000000 00000000 00000000
+ar_rot 000030E4 00000000 00000000
 ar_end
 
-##ncmmed+hp_hand_right+bank+hp_hand
+##ncflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncfmed+hp_hand_right+bank+hp_hand
 
 ar_rot 00000000 00000000 00001000
 ar_end
 
-##vsfsi+hp_hand_right+beamer+hp_hand
+##ncfmed+hp_hand_right+beamer+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trflite+hp_hand_right+beamer+hp_hand
+##ncfmed+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trfsi+hp_hand_right+ilc9+hp_hand
+##ncfmed+hp_hand_right+ilc9+hp_hand
 
 ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsi+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##default+hp_hand_right+nano_dispenser+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+lasher+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_right+gauss+hp_hand
-
-ar_rot 00000000 00003F5C 00000000
-ar_end
-
-##ncmlite+hp_hand_right+gauss+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+nano_dispenser+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfmed+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##trhev+hp_handright+trhev_pounder_r+hp_handright
-
-ar_rot 00000000 00001000 00000000
 ar_end
 
 ##ncfmed+hp_hand_right+isp+hp_hand
@@ -545,7 +815,207 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncflite+hp_hand_right+repeater+hp_hand
+##ncfmed+hp_hand_right+lancer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfmed+hp_hand_right+pulsar+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfmed+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##ncfmed+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfmed+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfmed+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##ncfmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncfmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##ncfmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##ncfsi+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+lancer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+pulsar+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##ncfsi+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsi+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfsi+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncfsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##ncfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncfsth+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##ncfsth+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsth+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsth+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsth+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncfsth+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfsth+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##ncfsth+hp_hip_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##ncmlite+bip01_spine+ncm_backplate+hp_spine
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+bip01_spine1+ncm_backplate+hp_spine
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+bip01_spine1+ncm_backplate+hp_spine_a
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+bip01_spine1+ncml_award_holster+ncml_award_holster
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##ncmlite+hp_hand_right+beamer+hp_hand
+
+ar_rot 000000A3 00000000 00003E15
+ar_end
+
+##ncmlite+hp_hand_right+bolt_driver+hp_hand
+
+ar_rot 000000A3 000000A3 00000000
+ar_end
+
+##ncmlite+hp_hand_right+chainblade+hp_hand
+
+ar_rot 0000051E 00003F5D 00003D71
+ar_end
+
+##ncmlite+hp_hand_right+cycler+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -560,57 +1030,292 @@ ar_end
 ar_rot 00002290 00002CCD 00001FFF
 ar_end
 
-##dropship+hp_guna+105mm_cannon_dropship+hp_guna
+##ncmlite+hp_hand_right+gauss+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+striker+hp_hand
+##ncmlite+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trfmed+hp_hip_right+bank+hp_hip_right
+##ncmlite+hp_hand_right+hunterseeker+hp_hand
 
-ar_rot 00000000 00001000 00001000
+ar_rot 00000000 000000A3 00000000
 ar_end
 
-##vsflite+hp_hand_right+nano_dispenser+hp_hand
+##ncmlite+hp_hand_right+lasher+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncflite+bip01_r_finger1+fraggrenade+fraggrenade
+##ncmlite+hp_hand_right+magcutter+hp_hand
 
-ar_rot 00002E14 00003B85 00002000
+ar_rot 00000000 00003000 00000000
 ar_end
 
-##ncflite+hp_hand_right+fraggrenade+fraggrenade
+##ncmlite+hp_hand_right+mini_chaingun+hp_hand
 
-ar_rot 00000CCD 00000666 0000370A
+ar_rot 00000000 000000A3 00003EB9
 ar_end
 
-##default+hp_hand_right+chainblade+hp_hand
-
-ar_rot 0000051E 00003F5D 00003D71
-ar_end
-
-##ncmmed+hp_hand_right+suppressor+hp_hand
+##ncmlite+hp_hand_right+nano_dispenser+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trmmed+hp_hand_right+nano_dispenser+hp_hand
+##ncmlite+hp_hand_right+phoenix+hp_hand
+
+ar_rot 000000A3 00000000 00000000
+ar_end
+
+##ncmlite+hp_hand_right+punisher+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hip_left+isp+hp_hip_left
+##ncmlite+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 000000A3 000000A3 00003EB9
+ar_end
+
+##ncmlite+hp_hand_right+rocklet+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+pulsar+hp_hand
+##ncmlite+hp_hand_right+striker+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+hp_hand_right+suppressor+hp_hand
+
+ar_rot 00000000 000000A3 00000000
+ar_end
+
+##ncmlite+hp_hand_right+thumper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+bolt_driver+hp_shoulder_left
+
+ar_rot 00000999 00000000 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_left+cycler+hp_shoulder_left
+
+ar_rot 00001000 00003F5D 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+flechette+hp_hand
+
+ar_rot 00001000 00000147 00000147
+ar_end
+
+##ncmlite+hp_shoulder_left+flechette+hp_shoulder_left
+
+ar_rot 00002EB9 00000000 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_left+flechette_rifle+hp_shoulder_left
+
+ar_rot 00003000 00003EB9 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+gauss+hp_shoulder_left
+
+ar_rot 00002E15 00002000 00002001
+ar_end
+
+##ncmlite+hp_shoulder_left+hunterseeker+hp_shoulder_left
+
+ar_rot 00000851 000020A4 000020A4
+ar_end
+
+##ncmlite+hp_shoulder_left+lancer+hp_shoulder_left
+
+ar_rot 0000370B 00002000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+lasher+hp_shoulder_left
+
+ar_rot 00002A3E 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+mini_chaingun+hp_shoulder_left
+
+ar_rot 00000EB8 00003E15 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+ncf_left_sholder+hp_shoulder_left
+
+ar_rot 00003000 00001000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+phoenix+hp_shoulder_left
+
+ar_rot 00003000 00000147 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+pulsar+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+punisher+hp_shoulder_left
+
+ar_rot 00000CCC 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+r_shotgun+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+rocklet+hp_shoulder_left
+
+ar_rot 000028F6 000000A3 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+striker+hp_shoulder_left
+
+ar_rot 00003852 00002000 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_left+suppressor+hp_shoulder_left
+
+ar_rot 00000D70 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_left+thumper+hp_shoulder_left
+
+ar_rot 000028F6 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+bolt_driver+hp_shoulder_right
+
+ar_rot 00003667 00000000 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_right+cycler+hp_shoulder_right
+
+ar_rot 00003000 000000A3 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+flechette+hp_shoulder_right
+
+ar_rot 000015C2 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+flechette_rifle+hp_shoulder_right
+
+ar_rot 00001000 00000147 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+gauss+hp_shoulder_right
+
+ar_rot 000011EB 00002000 00002001
+ar_end
+
+##ncmlite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+hunterseeker+hp_shoulder_right
+
+ar_rot 000015C2 000000A3 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_right+lancer+hp_shoulder_right
+
+ar_rot 000008F5 00002000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+lasher+hp_shoulder_right
+
+ar_rot 00001851 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+mini_chaingun+hp_shoulder_right
+
+ar_rot 00003148 00000147 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+phoenix+hp_shoulder_right
+
+ar_rot 00000F5C 00003EB9 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+pulsar+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+punisher+hp_shoulder_right
+
+ar_rot 00003334 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+r_shotgun+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+rocklet+hp_shoulder_right
+
+ar_rot 000015C2 00003F5D 000000A3
+ar_end
+
+##ncmlite+hp_shoulder_right+spitfire+hp_shoulder_right
+
+ar_rot 00003148 00000D70 00000147
+ar_end
+
+##ncmlite+hp_shoulder_right+striker+hp_shoulder_left
+
+ar_rot 00002CCD 00001F5C 00000147
+ar_end
+
+##ncmlite+hp_shoulder_right+striker+hp_shoulder_right
+
+ar_rot 00000666 00002000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+suppressor+hp_shoulder_right
+
+ar_rot 000031EC 00000000 00000000
+ar_end
+
+##ncmlite+hp_shoulder_right+thumper+hp_shoulder_right
+
+ar_rot 0000170A 00000000 00000000
+ar_end
+
+##ncmmed+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##ncmmed+hp_hand_right+gauss+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmmed+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -620,107 +1325,137 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncmlite+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00003AE2
-ar_end
-
-##ncflite+hp_hand_right+fraggrenade+hp_hand
-
-ar_rot 000003D7 000038F6 00003290
-ar_end
-
-##mb_pad_creation+hp_vehicle+ams+ams_body
+##ncmmed+hp_hand_right+nano_dispenser+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncfmed+hp_hip_right+bank+hp_hip_right
+##ncmmed+hp_hand_right+pulsar+hp_hand
 
-ar_rot 00000000 00001000 00001000
+ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncfsi+hp_hand_right+bank+hp_hand
+##ncmmed+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 0000016C 00000000 000000E4
+ar_end
+
+##ncmmed+hp_hand_right+suppressor+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_left+radiator+hp_shoulder_left
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_right+advanced_ace+advanced_ace
+
+ar_rot 00000000 00000000 00003223
+ar_end
+
+##ncmmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##ncmmed+hp_shoulder_right+radiator+hp_shoulder_right
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmsi+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00000FFF
+ar_end
+
+##ncmsi+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##ncmsi+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 000002AB 00000000 000000B6
+ar_end
+
+##ncmsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##ncmsth+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00000FFF
+ar_end
+
+##obbasemesh+hp_shuttle+orbital_shuttle+orbital_shuttle
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##obbasemesh+ob_platform+orbital_shuttle+orbital_shuttle
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##pad_creation+hp_vehicle+ams+ams_body
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##portable_manned_turret+hp_energy_gun+energy_gun+hp_energy_gun
+
+ar_rot 00000000 00000000 00002000
+ar_end
+
+##portable_manned_turret+hp_energy_gun+energy_gun_nc+hp_energy_gun
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##portable_manned_turret+hp_energy_gun+energy_gun_vs+hp_energy_gun
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##portble_manned_turret+hp_energy_gun+energy_gun+hp_energy_gun
+
+ar_rot 00002000 00002000 00000000
+ar_end
+
+##spitfire_turret+barrels_bone+spitfire_weapon+barrels_bone
+
+ar_rot 00002000 00002000 00002000
+ar_end
+
+##trflite+hp_hand_right+bank+hp_hand
 
 ar_rot 00000000 00000000 00001000
 ar_end
 
-##ncflite+hp_hand_right+suppressor+hp_hand
+##trflite+hp_hand_right+beamer+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncmlite+hp_shoulder_left+gauss+hp_shoulder_left
-
-ar_rot 00002E15 00002000 00002001
-ar_end
-
-##ncmlite+hp_hand_right+phoenix+hp_hand
-
-ar_rot 000000A3 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##trfmed+hp_hand_right+isp+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsth+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+isp+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsi+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfmed+hp_hand_right+isp+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsflite+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsflite+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfmed+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsth+hp_hand_right+isp+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsth+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfmed+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trflite+hp_hand_right+isp+hp_hand
+##trflite+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -730,7 +1465,177 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##trfsth+hp_hand_right+repeater+hp_hand
+##trflite+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trflite+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##trflite+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trflite+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trflite+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##trflite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##trflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##trfmed+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##trfmed+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfmed+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfmed+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfmed+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfmed+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfmed+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trfmed+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trfmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##trfmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##trfsi+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##trfsi+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsi+hp_hand_right+rocklet+hp_hand
+
+ar_rot 00000000 00000000 00003EB8
+ar_end
+
+##trfsi+hp_hand_right+thumper+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##trfsi+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trfsi+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##trfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##trfsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##trfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##trfsth+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##trfsth+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trfsth+hp_hand_right+ilc9+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -740,179 +1645,9 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##vsflite+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##ncfmed+hp_hand_right+lancer+hp_hand
+##trfsth+hp_hand_right+repeater+hp_hand
 
 ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsth+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+mini_chaingun+hp_hand
-
-ar_rot 00000000 000000A3 00003EB9
-ar_end
-
-##default+hp_hand_right+forceblade+hp_hand
-
-ar_rot 00002290 00002CCD 00001FFF
-ar_end
-
-##trmmed+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##vsmlite+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##trmlite+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##vsmmed+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##ncfsth+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsth+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsth+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trflite+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsi+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfmed+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsi+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsflite+hp_hand_right+isp+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsth+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##vsflite+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##ncmlite+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00003AE2
-ar_end
-
-##default+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00003AE2
-ar_end
-
-##ncmlite+bip01_spine1+ncm_backplate+hp_spine_a
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##dropship+hp_gunb+105mm_cannon_dropship+hp_guna
-
-ar_rot 00000000 00000000 00001FFF
-ar_end
-
-##default+hp_hand_right+cycler+hp_hand
-
-ar_rot 00000000 000000A4 00000000
-ar_end
-
-##ncmlite+hp_hand_right+cycler+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+bip01_l_calf+ncm_left_shinpad+hp_l_calf
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##dropship+hp_gunb+20mm_cannon_dropship_l+hp_20mm
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfmed+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##vsflite+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##ncfsi+hp_hand_right+lancer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsi+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##ncfsth+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##ncfmed+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##ncmlite+hp_hand_right+magcutter+hp_hand
-
-ar_rot 00000000 00003000 00000000
 ar_end
 
 ##trfsth+hp_hip_left+bank+hp_hip_left
@@ -925,74 +1660,14 @@ ar_end
 ar_rot 00000000 00001000 00001000
 ar_end
 
-##ncflite+hp_hand_right+pulsar+hp_hand
+##trhev+hp_hand_left+trhev_burster_l+hp_handleft
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00000000 00001000 00000000
 ar_end
 
-##trmsi+hp_hand_right+bank+hp_hand
+##trhev+hp_hand_left+trhev_dualcycler_l+hp_handleft
 
-ar_rot 00000000 00000000 00000FFF
-ar_end
-
-##ncmlite+hp_hand_right+bolt_driver+hp_hand
-
-ar_rot 000000A3 000000A3 00000000
-ar_end
-
-##default+hp_shoulder_left+gauss+hp_shoulder_left
-
-ar_rot 00002E15 00002000 00002001
-ar_end
-
-##trfmed+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncflite+bip01_r_finger01+plasma_grenade+hp_hand
-
-ar_rot 000017AE 00000000 00000000
-ar_end
-
-##trfmed+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##vsfmed+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##default+hp_hand_right+flechette+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+thumper+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_right+mini_chaingun+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##ncfsth+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
+ar_rot 00000000 00001000 00000000
 ar_end
 
 ##trhev+hp_hand_left+trhev_pounder_l+hp_handleft
@@ -1000,154 +1675,29 @@ ar_end
 ar_rot 00000000 00001000 00000000
 ar_end
 
-##ncfmed+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncflite+bip01_r_finger01+mine_sweeper+hp_hand
-
-ar_rot 00001A3D 00003F5D 00000000
-ar_end
-
-##ncflite+bip01_r_finger01+fraggrenade+hp_hand
-
-ar_rot 00001A3D 000010A3 00000B85
-ar_end
-
-##default+hp_hand_right+bolt_driver+hp_hand
-
-ar_rot 00000000 000000A4 00000000
-ar_end
-
-##default+hp_hand_right+rocklet+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trhev+hp_hand_left+trhev_burster_l+hp_handleft
+##trhev+hp_hand_right+trhev_burster_r+hp_handright
 
 ar_rot 00000000 00001000 00000000
 ar_end
 
-##ncmlite+hp_hand_right+striker+hp_hand
+##trhev+hp_hand_right+trhev_dualcycler_r+hp_handright
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00000000 00001000 00000000
 ar_end
 
-##ncflite+hp_hand_right+gauss+hp_hand
+##trhev+hp_hand_right+trhev_pounder_r+hp_handright
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00000000 00001000 00000000
 ar_end
 
-##vsfsi+hp_hand_right+bank+hp_hand
+##trhev+hp_handleft+trhev_burster_l+tr_hev_burster_l
 
-ar_rot 00000000 00000000 00001000
+ar_rot 00000000 00001000 00000000
 ar_end
 
-##default+hp_hand_right+magcutter+hp_hand
+##trhev+hp_handleft+trhev_pounder_l+hp_handleft
 
-ar_rot 00000000 00003000 00000000
-ar_end
-
-##ncmmed+hp_hand_right+gauss+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmmed+hp_hand_right+nano_dispenser+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_right+thumper+hp_hand
-
-ar_rot 000000A3 00000147 00003EB9
-ar_end
-
-##default+hp_hand_right+hunterseeker+hp_hand
-
-ar_rot 00000000 000000A3 00000000
-ar_end
-
-##default+hp_hand_right+suppressor+hp_hand
-
-ar_rot 00000000 00000148 00000000
-ar_end
-
-##default+hp_hand_right+lasher+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+suppressor+hp_hand
-
-ar_rot 00000000 000000A3 00000000
-ar_end
-
-##default+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00003EB8 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+flechette+hp_hand
-
-ar_rot 00001000 00000147 00000147
-ar_end
-
-##pad_creation+hp_vehicle+ams+ams_body
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+beamer+hp_hand
-
-ar_rot 000000A3 00000000 00003E15
-ar_end
-
-##ncmlite+hp_hand_right+chainblade+hp_hand
-
-ar_rot 0000051E 00003F5D 00003D71
-ar_end
-
-##ncfsth+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##vsfsi+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##default+hp_hand_right+lancer+hp_hand
-
-ar_rot 00000000 000000A4 00000000
-ar_end
-
-##vsmlite+hp_hand_right+thumper+hp_hand
-
-ar_rot 00000000 00003F5D 00003EB9
-ar_end
-
-##default+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00003AE2
-ar_end
-
-##default+hp_hand_right+beamer+hp_hand
-
-ar_rot 000000A3 00000000 00003E15
-ar_end
-
-##ncfsi+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##vsfsth+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
+ar_rot 00000000 00001000 00000000
 ar_end
 
 ##trhev+hp_handright+trhev_burster_r+hp_handright
@@ -1155,7 +1705,22 @@ ar_end
 ar_rot 00000000 00001000 00000000
 ar_end
 
-##default+hp_hand_right+punisher+hp_hand
+##trhev+hp_handright+trhev_burster_r+tr_hev_burster_r
+
+ar_rot 00000000 00001000 00000000
+ar_end
+
+##trhev+hp_handright+trhev_pounder_r+hp_handright
+
+ar_rot 00000000 00001000 00000000
+ar_end
+
+##trmlite+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##trmlite+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -1165,474 +1730,34 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+bip01_spine1+ncm_backplate+hp_spine_a
+##trmlite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00001000 00000000 00000000
 ar_end
 
-##ncmsi+hp_hand_right+bank+hp_hand
+##trmlite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
 
-ar_rot 00000000 00000000 00000FFF
+ar_rot 000030E4 00000000 00000000
 ar_end
 
-##trmmed+hp_hand_right+suppressor+hp_hand
+##trmlite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
 
-ar_rot 00000000 00000000 00000000
+ar_rot 00003000 00000000 00000000
 ar_end
 
-##ncmlite+hp_hand_right+rocklet+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trhev+hp_handleft+trhev_pounder_l+hp_handleft
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##trfsth+hp_hand_right+bank+hp_hand
+##trmmed+hp_hand_right+bank+hp_hand
 
 ar_rot 00000000 00000000 00001000
 ar_end
 
-##default+hp_hip_left+ilc9+hp_hip_left
+##trmmed+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##ncfsi+hp_hand_right+isp+hp_hand
+##trmmed+hp_hand_right+nano_dispenser+hp_hand
 
 ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##vsflite+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncflite+bip01_r_finger01+jammer_grenade+hp_hand
-
-ar_rot 000018F5 000000A3 00000000
-ar_end
-
-##vshev+hp_hand+vs_hev_starfire+hp_hand
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##vshev+hp_hand+vs_hev_quasar+hp_hand
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##vshev+hp_hand+vs_hev_comet+hp_hand
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfmed+hp_hand_right+beamer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfmed+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_right+phoenix+hp_hand
-
-ar_rot 000000A3 00000000 00000000
-ar_end
-
-##vsfmed+hp_hip_right+bank+hp_hip_right
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##vsfmed+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00001000
-ar_end
-
-##default+hp_hip_right+isp+hp_hip_right
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hip_right+ilc9+hp_hip_right
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfmed+hp_hand_right+pulsar+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncmmed+hp_hand_right+pulsar+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsi+hp_hand_right+pulsar+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_hand_left+trhev_pounder_l+hp_handleft
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##vsfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+rocklet+hp_shoulder_left
-
-ar_rot 000028F6 000000A3 00000000
-ar_end
-
-##default+hp_shoulder_right+hunterseeker+hp_shoulder_right
-
-ar_rot 000015C2 000000A3 000000A3
-ar_end
-
-##trhev+hp_handleft+trhev_burster_l+tr_hev_burster_l
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+mini_chaingun+hp_shoulder_right
-
-ar_rot 00003148 00000147 00000000
-ar_end
-
-##vsmlite+hp_hand_right+jammer_grenade+jammer_grenade
-
-ar_rot 0000128F 00000000 00003852
-ar_end
-
-##ncmlite+hp_shoulder_left+lasher+hp_shoulder_left
-
-ar_rot 00002A3E 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_left+striker+hp_shoulder_left
-
-ar_rot 00003852 00002000 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_right+r_shotgun+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+bip01_l_forearm+ncm_left_forearm+hp_l_forearm
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsmlite+hp_shoulder_right+thumper+hp_shoulder_right
-
-ar_rot 000011EB 00003EB9 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_right+flechette_rifle+hp_shoulder_right
-
-ar_rot 00001000 00000147 00000000
-ar_end
-
-##trfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+flechette+hp_shoulder_left
-
-ar_rot 00002EB9 00000000 000000A3
-ar_end
-
-##default+hp_shoulder_left+striker+hp_shoulder_left
-
-ar_rot 00003852 00002000 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_left+suppressor+hp_shoulder_left
-
-ar_rot 00000D70 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+phoenix+hp_shoulder_left
-
-ar_rot 00003000 00000147 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+rocklet+hp_shoulder_right
-
-ar_rot 000015C2 00003F5D 000000A3
-ar_end
-
-##vsflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+suppressor+hp_shoulder_left
-
-ar_rot 00000D70 00000000 00000000
-ar_end
-
-##trflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+bip01_r_calf+ncm_right_shinpad+hp_r_calf
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+r_shotgun+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+mini_chaingun+hp_shoulder_right
-
-ar_rot 00003148 00000147 00000000
-ar_end
-
-##default+hp_shoulder_left+mini_chaingun+hp_shoulder_left
-
-ar_rot 00000EB8 00003E15 00000000
-ar_end
-
-##ncmmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##vsmlite+hp_hand_right+plasma_grenade+plasma_grenade
-
-ar_rot 00000000 00003000 00000851
-ar_end
-
-##ncmlite+hp_shoulder_left+bolt_driver+hp_shoulder_left
-
-ar_rot 00000999 00000000 000000A3
-ar_end
-
-##trhev+hp_handright+trhev_burster_r+tr_hev_burster_r
-
-ar_rot 00000000 00001000 00000000
-ar_end
-
-##default+hp_shoulder_left+r_shotgun+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##ncflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##obbasemesh+hp_shuttle+orbital_shuttle+orbital_shuttle
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trmmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+nano_dispenser+hp_shoulder_left
-
-ar_rot 00001000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_right+bolt_driver+hp_shoulder_right
-
-ar_rot 00003667 00000000 000000A3
-ar_end
-
-##default+hp_shoulder_right+cycler+hp_shoulder_right
-
-ar_rot 00003000 000000A3 00000000
-ar_end
-
-##default+hp_shoulder_left+ncf_left_sholder+hp_shoulder_left
-
-ar_rot 00003000 00001000 00000000
-ar_end
-
-##default+hp_shoulder_right+suppressor+hp_shoulder_right
-
-ar_rot 000031EC 00000000 00000000
-ar_end
-
-##vsfmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##default+hp_shoulder_left+hunterseeker+hp_shoulder_left
-
-ar_rot 00000851 000020A4 000020A4
-ar_end
-
-##ncmlite+hp_shoulder_left+phoenix+hp_shoulder_left
-
-ar_rot 00003000 00000147 00000000
-ar_end
-
-##vsflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
-
-ar_rot 00003000 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+striker+hp_shoulder_right
-
-ar_rot 00000666 00002000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+flechette+hp_shoulder_right
-
-ar_rot 000015C2 00000000 00000000
-ar_end
-
-##ncmlite+hp_shoulder_right+hunterseeker+hp_shoulder_right
-
-ar_rot 000015C2 000000A3 000000A3
-ar_end
-
-##ncmlite+hp_shoulder_right+punisher+hp_shoulder_right
-
-ar_rot 00003334 00000000 00000000
-ar_end
-
-##ncmlite+hp_hand_right+hunterseeker+hp_hand
-
-ar_rot 00000000 000000A3 00000000
-ar_end
-
-##ncmlite+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 000000A3 000000A3 00003EB9
-ar_end
-
-##ncmsth+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00000FFF
-ar_end
-
-##trmsth+hp_hand_right+bank+hp_hand
-
-ar_rot 00000000 00000000 00000FFF
-ar_end
-
-##ncmlite+hp_hand_right+punisher+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##default+bip01_r_finger01+jammer_grenade+hp_hand
-
-ar_rot 00001A3D 00000666 00000000
-ar_end
-
-##ncfmed+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##ncflite+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##default+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##vsfsth+hp_hip_left+bank+hp_hip_left
-
-ar_rot 00000000 00001000 00001000
-ar_end
-
-##ncflite+hp_hand_right+jammer_grenade+hp_hand
-
-ar_rot 00000333 000003D7 00000000
-ar_end
-
-##trfsi+hp_hand_right+rocklet+hp_hand
-
-ar_rot 00000000 00000000 00003EB8
-ar_end
-
-##ncfsi+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfmed+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncfsi+hp_hand_right+repeater+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##ncflite+hp_hand_right+lancer+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+thumper+hp_hand
-
-ar_rot 00000000 00000000 00003E14
-ar_end
-
-##ncflite+hp_hand_right+ilc9+hp_hand
-
-ar_rot 00000000 00000000 00000000
-ar_end
-
-##trfsi+hp_hand_right+r_shotgun+hp_hand
-
-ar_rot 00000000 00000000 00003E14
 ar_end
 
 ##trmmed+hp_hand_right+r_shotgun+hp_hand
@@ -1640,7 +1765,37 @@ ar_end
 ar_rot 00000000 00000000 00003E14
 ar_end
 
-##manned_turret+hp_guna+phalanx_sgl_hevgatcan+hp_phlsing
+##trmmed+hp_hand_right+suppressor+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##trmmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##trmmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##trmmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##trmmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##trmsi+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00000FFF
+ar_end
+
+##trmsi+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
@@ -1650,52 +1805,312 @@ ar_end
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+medical_applicator+hp_hand
+##trmsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##trmsth+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00000FFF
+ar_end
+
+##vsflite+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsflite+hp_hand_right+beamer+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+command_detonater+hp_hand
+##vsflite+hp_hand_right+heavy_sniper+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hip_left+ace+hp_hip_left
-
-ar_rot 00000000 00000999 00002EB9
-ar_end
-
-##default+hp_hip_right+ace+hp_hip_right
-
-ar_rot 00000000 00000999 00002EB9
-ar_end
-
-##mb_pad_creation+pad_create_platform+ams+ams_body
+##vsflite+hp_hand_right+ilc9+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##spitfire_turret+barrels_bone+spitfire_weapon+barrels_bone
+##vsflite+hp_hand_right+isp+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+maelstrom+hp_hand
+##vsflite+hp_hand_right+nano_dispenser+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_shoulder_left+radiator+hp_shoulder_right
+##vsflite+hp_hand_right+r_shotgun+hp_hand
 
-ar_rot 00000000 00003DDE 00000000
+ar_rot 00000000 00000000 00003E14
 ar_end
 
-##ncmmed+hp_shoulder_right+radiator+hp_shoulder_right
+##vsflite+hp_hand_right+repeater+hp_hand
 
 ar_rot 00000000 00000000 00000000
 ar_end
 
-##default+hp_hand_right+flail_targeting_laser+hp_hand
+##vsflite+hp_hip_left+bank+hp_hip_left
 
-ar_rot 00000000 00002FD3 00001000
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsflite+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsflite+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##vsflite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##vsflite+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsfmed+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##vsfmed+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfmed+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsfmed+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsfmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##vsfmed+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##vsfmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##vsfmed+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsfsi+hp_hand_right+beamer+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hand_right+r_shotgun+hp_hand
+
+ar_rot 00000000 00000000 00003E14
+ar_end
+
+##vsfsi+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsi+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsfsi+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsfsi+hp_shoulder_left+nano_dispenser+hp_shoulder_left
+
+ar_rot 00001000 00000000 00000000
+ar_end
+
+##vsfsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##vsfsi+hp_shoulder_right+nano_dispenser+hp_shoulder_right
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vsfsth+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsfsth+hp_hand_right+ilc9+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsth+hp_hand_right+isp+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsth+hp_hand_right+repeater+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsfsth+hp_hip_left+bank+hp_hip_left
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vsfsth+hp_hip_right+bank+hp_hip_right
+
+ar_rot 00000000 00001000 00001000
+ar_end
+
+##vshev+hp_hand+vs_hev_comet+hp_hand
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vshev+hp_hand+vs_hev_quasar+hp_hand
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vshev+hp_hand+vs_hev_starfire+hp_hand
+
+ar_rot 00003000 00000000 00000000
+ar_end
+
+##vsmlite+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsmlite+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsmlite+hp_hand_right+jammer_grenade+jammer_grenade
+
+ar_rot 0000128F 00000000 00003852
+ar_end
+
+##vsmlite+hp_hand_right+plasma_grenade+plasma_grenade
+
+ar_rot 00000000 00003000 00000851
+ar_end
+
+##vsmlite+hp_hand_right+thumper+hp_hand
+
+ar_rot 00000000 00003F5D 00003EB9
+ar_end
+
+##vsmlite+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##vsmlite+hp_shoulder_right+thumper+hp_shoulder_right
+
+ar_rot 000011EB 00003EB9 000000A3
+ar_end
+
+##vsmmed+hp_hand_right+bank+hp_hand
+
+ar_rot 00000000 00000000 00001000
+ar_end
+
+##vsmmed+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsmmed+hp_shoulder_left+heavy_sniper+hp_shoulder_left
+
+ar_rot 00000F1C 00000000 00000000
+ar_end
+
+##vsmmed+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
+ar_end
+
+##vsmsi+hp_hand_right+heavy_sniper+hp_hand
+
+ar_rot 00000000 00000000 00000000
+ar_end
+
+##vsmsi+hp_shoulder_right+heavy_sniper+hp_shoulder_right
+
+ar_rot 000030E4 00000000 00000000
 ar_end

@@ -1,0 +1,23 @@
+<Page BackgroundColor='#FFFFFF' Location='340,110' movable='true' Name='BFRView' PackLocation='cfc,cfc' PackLocationProp='0000/0001,0001/0001' ScrollExtent='344,551' Size='344,551' Visible='false'>
+<Text Font='/Fonts.HudFont1' LocalText='[@BFRPilotHeader]' Location='91,33' Name='PilotHeader' ScrollExtent='210,18' Size='210,18' TextAlignment='Right'>@BFRPilotHeader</Text>
+<Image BackgroundOpacity='1.000' Location='24,41' Name='PilotDivider' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='296,8' Size='296,8'/>
+<Rectangle AbsorbsInput='false' Color='#81C9D4' Enabled='false' GetsInput='false' Location='60,52' Name='PilotMount1Rect' ScrollExtent='81,41' Size='81,41'/>
+<Grid CellCount='8,4' CellSize='10,10' DragAccepts='Item' LocalTooltip='None' Location='60,52' Name='PilotMount1' ScrollExtent='80,40' Size='81,41' Style='/DefaultGrid.style' Tooltip='None'/>
+<Rectangle AbsorbsInput='false' Color='#81C9D4' Enabled='false' GetsInput='false' Location='203,52' Name='PilotMount2Rect' ScrollExtent='81,41' Size='81,41'/>
+<Grid CellCount='8,4' CellSize='10,10' DragAccepts='Item' LocalTooltip='None' Location='203,52' Name='PilotMount2' ScrollExtent='80,40' Size='81,41' Style='/DefaultGrid.style' Tooltip='None'/>
+<Text Font='/Fonts.HudFont1' LocalText='[@BFRGunnerHeader]' Location='91,100' Name='GunnerHeader' ScrollExtent='210,18' Size='210,18' TextAlignment='Right'>@BFRGunnerHeader</Text>
+<Image BackgroundOpacity='1.000' Location='24,108' Name='GunnerDivider' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='296,8' Size='296,8'/>
+<Rectangle AbsorbsInput='false' Color='#81C9D4' Enabled='false' GetsInput='false' Location='122,119' Name='GunnerMountRect' ScrollExtent='101,41' Size='101,41'/>
+<Grid CellCount='10,4' CellSize='10,10' DragAccepts='Item' LocalTooltip='None' Location='122,119' Name='GunnerMount' ScrollExtent='100,40' Size='101,41' Style='/DefaultGrid.style' Tooltip='None'/>
+<Text Font='/Fonts.HudFont1' LocalText='[@Trunk]' Location='91,167' Name='TrunkHeader' ScrollExtent='210,18' Size='210,18' TextAlignment='Right'>@Trunk</Text>
+<Image BackgroundOpacity='1.000' Location='24,175' Name='TrunkDivider' RStyleDefault='/Listboxes.ListboxContentHeader.style' ScrollExtent='296,8' Size='296,8'/>
+<Grid CellCount='15,18' CellSize='17,17' DataSource='/DataSources.TargetInventory' DragAccepts='Item' Location='44,186' Name='Trunk' PackLocation='center,top' PackLocationProp='-128/0001,0186/0001' ScrollExtent='255,306' Size='256,307' Style='/DefaultGrid.style'/>
+<Button LocalText='[@ClearTrunk]' Location='50,506' Name='ClearTrunkButton' PackLocation='center,bottom' PackLocationProp='-122/0001,-045/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@ClearTrunk</Button>
+<Button LocalText='[@ClearBFRInventory]' Location='135,506' Name='ClearAllButton' PackLocation='center,bottom' PackLocationProp='-037/0001,-045/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@ClearBFRInventory</Button>
+<Button LocalText='[@DestroyItem]' Location='220,506' Name='DestroyButton' PackLocation='center,bottom' PackLocationProp='0048/0001,-045/0001' ScrollExtent='75,20' Size='75,20' Style='/Buttons.TextButton.style'>@DestroyItem</Button>
+<Button LocalText='[@Cancel]' Location='62,8' Name='HelpButton' PackLocation='left,top' PackLocationProp='0062/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowHelp.style'>@Cancel</Button>
+<Button Location='266,8' Name='Close' PackLocation='right,top' PackLocationProp='-078/0001,0008/0001' ScrollExtent='16,16' Size='16,16' Style='/Buttons.WindowClose.style'></Button>
+<Text AbsorbsInput='false' Enabled='false' Font='/Fonts.HudFont3' LocalText='[@BFRViewTitle]' Location='79,4' Name='TitleText' PackLocation='Left,Top' PackLocationProp='0079/0001,0004/0001' PackSize='Absolute,fixed' PackSizeProp='0159/0001,0002/0003' ScrollExtent='185,23' Size='185,23' TextAlignment='Center' TextAlignmentVertical='Center'>@BFRViewTitle</Text>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='33,-1' Name='Title' PackLocation='left,top' PackLocationProp='0033/0001,-001/0001' PackSize='absolute,fixed' PackSizeProp='0062/0001,0002/0003' RStyleActivated='/WindowPanes.TitleBarFocus.style' RStyleDefault='/WindowPanes.TitleBarNoFocus.style' ScrollExtent='282,32' Size='282,32'/>
+<Image AbsorbsInput='false' BackgroundOpacity='1.000' Location='0,12' Name='Background' PackSize='absolute,absolute' PackSizeProp='0000/0001,0014/0001' RStyleDefault='/WindowPanes.BigBackground.style' ScrollExtent='344,537' Size='344,537' Stretch='false' Style=' '/>
+</Page>

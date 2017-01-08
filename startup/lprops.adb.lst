@@ -1,5 +1,49 @@
 #lpc_begin
 
+##brown_tint
+
+lpc_set FFE2C5C5 FFFFAEAE FFFFFFFF FF000000 0
+
+##cs8_105mm_cannon
+
+lpc_set FFFFFFFF FF707070 FF9A9A9A FF000000 65
+
+##cs8_2d
+
+lpc_set FFF00000 FFF88F92 FFFFFFFF 00000000 0
+
+##cs8_3manbuggy_bodya
+
+lpc_set FFFFFFFF FFFFFFFF FF646665 00000000 105
+
+##cs8__skin
+
+lpc_set FFFFFFFF FF585858 FFFFFFFF 00595959 125
+
+##cs8_ad_term
+
+lpc_set 003FB5DC 00BEC8EF 00FFFFFF 00858585 0
+
+##cs8_amerish_cflora
+
+lpc_set FF77532F FF707070 FFFFFFFF FF000000 0
+
+##cs8_amp_term2_asmr_amp_power_monitor_01_lm_gf3
+
+lpc_set FF363636 FFBCCDC4 FFFFFFFF 00000000 0
+
+##cs8_artictree1
+
+lpc_set FFE7E4ED FF4E4E4E FFECEDF2 00141414 0
+
+##cs8_bark01_null
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0.00
+
+##cs8_beamer
+
+lpc_set FFFFFFFF FF8B8B8B FFFFFFFF FF000000 0
+
 ##cs8_blackmarble__exp_controlpoint_ul02
 
 lpc_set FFB6B6B6 FF828282 FFFFFFFF 00000000 0
@@ -8,145 +52,85 @@ lpc_set FFB6B6B6 FF828282 FFFFFFFF 00000000 0
 
 lpc_set FFB7B7B7 FF838383 FFFFFFFF 00000000 0
 
-##cs8_solsar_pillara
+##cs8_blockmarble_mono
 
-lpc_set FF7D2E20 FF5E483E FFFFFFFF FF230C0C 0
+lpc_set 00F3696C 00454545 006BD0ED 00000000 15
 
-##cs8_tunnelsuspensionbeam
+##cs8_blockmarble_mono_gf3
 
-lpc_set FFFFFFFF FF151515 FFFFFFFF FF122916 0
+lpc_set 00818354 00171A1E 002468D9 00000000 0
 
-##cs8_crystal_energy
+##cs8_bogus_mat2
 
-lpc_set FFFFFFFF FF707070 FFEDFF0D FF000000 95
+lpc_set 00FFFFFF 0003158F 0091CE53 001F2132 99
+
+##cs8_capture_terminal
+
+lpc_set FFE1E1E1 FF000000 FFFFFFFF 007C7C7C 0
+
+##cs8_capture_terminal__lmap
+
+lpc_set FFACACAC FF7C7C7C FF535353 FF000000 20
+
+##cs8_capture_terminal_innercore_null
+
+lpc_set FFFFFFFF FF165614 FFFFFFFF 00009F00 100
+
+##cs8_capture_terminal_outercore__lmap
+
+lpc_set FFFFFFFF FF58F850 FFFFFFFF 0000F900 0
+
+##cs8_ceryshenicetexture_gf3
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
+
+##cs8_chameleonelder
+
+lpc_set FFFFAF9B FFFFFFFF FF320101 00000000 8
 
 ##cs8_concrete10b_hive_
 
 lpc_set FFFFFFFF FF707070 FFBCBCBC FF000000 50
 
-##cs8_flail_laser
+##cs8_copperox_piece_02_gf3
 
-lpc_set FFFFFFFF FF191919 FFA53A5A FF000000 95
+lpc_set FFFFFFFF FF9E8934 FFFFFFFF 004F3615 0
 
-##cs8_flail_laser_gf3
+##cs8_copperox_pole
 
-lpc_set FFFFFFFF FF1D1D1D FFAF3A8C FF000000 90
+lpc_set FF85EC53 FFC48526 FF483713 004A3D37 350
 
-##cs8_flail1
+##cs8_copperox_pole_gf3
 
-lpc_set FFFFFFFF FF707070 FF404316 FF000000 99
+lpc_set FFFF8040 FFA08634 FFCEAD68 FF583D21 50
 
-##cs8_radiator
+##cs8_cryo_corner_term_null
 
-lpc_set FFFFFFFF FF707070 FF142070 FF000000 99
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
 
-##cs8_spiker_gf3
+##cs8_crystal1
 
-lpc_set FFFFFFFF FF707070 FF222E73 FF000000 99
+lpc_set FFFFFFFF FFB2B2B2 FFD6F948 FF000000 15
 
-##cs8_lava_tiled
+##cs8_crystal_energy
 
-lpc_set FF770300 FF590000 FFFFFFFF FF2C2C2C 0
+lpc_set FFFFFFFF FF707070 FFEDFF0D FF000000 95
 
-##cs8_earthbark1
+##cs8_desertrock1_128
 
-lpc_set FFCFCFCF FF272727 FFFFFFFF FF000000 0
+lpc_set FFFFFFFF FF787878 FFFFFFFF 00000000 0
 
-##cs8_two_man_heavy_buggy_nc2_alpha
+##cs8_desertrock2_256
 
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 1
+lpc_set FFFFFFFF FF5B5B5B FFFFFFFF 00000000 0
+
+##cs8_desertrockeflip
+
+lpc_set FF000000 FFFFFFFF FFFFFFFF FFCDAE70 0
 
 ##cs8_desertshrubaflip
 
 lpc_set FF000000 FFE7DBB6 FFFFFFFF FF000000 0
-
-##cs8_swamptreeb
-
-lpc_set FFFFFFFF FFA0A0A0 FF44442D 00000000 150
-
-##cs8_swamptreea
-
-lpc_set FFFDFDFD FFA0A0A0 FF264422 00000000 150
-
-##cs8_3manbuggy_bodya
-
-lpc_set FFFFFFFF FFFFFFFF FF646665 00000000 105
-
-##desert_tree
-
-lpc_set FFFFFFFF FF3B3B3B FFFFFFFF FF000000 0
-
-##cs8_earthleaf_pods
-
-lpc_set FFFFFFFF FF959595 FFFFFFFF FF000000 0
-
-##cs8_window
-
-lpc_set 789C99BF FFFFFFFF FFFFFFFF 00000000 0
-
-##vehicles_vanu
-
-lpc_set FFFFFFFF FFB7B7B7 FFFFFFFF FF000000 0
-
-##cs8_map14
-
-lpc_set FFBB9D24 FF858585 FFAFCE93 00090C20 99
-
-##brown_tint
-
-lpc_set FFE2C5C5 FFFFAEAE FFFFFFFF FF000000 0
-
-##cs8_trvisor
-
-lpc_set FF9D0206 FFBA050A C8FFFFFF 00130457 150
-
-##cs8_spawn_wall2_null
-
-lpc_set FFFFFFFF 00232636 FF324394 00050505 10
-
-##cs8_bark01_null
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0.00
-
-##cs8_map06
-
-lpc_set FF00FFFF FF00B1BD FF00DFE7 00000000 90
-
-##ropetree
-
-lpc_set FFFFFFFF FF6A6A6A FFFFFFFF FF000000 0
-
-##cs8_lightning_miny
-
-lpc_set FFFFFFFF FF747474 FFB0BCD0 FF000000 85
-
-##cs8__skin
-
-lpc_set FFFFFFFF FF585858 FFFFFFFF 00595959 125
-
-##cs8_op_warninglightbulb
-
-lpc_set FFFF0909 FFFF1A1A FFFACD32 00FFFFFF 0
-
-##cs8_stealthtr_1_gf3
-
-lpc_set FFFF5559 FF707070 FFFF1117 00000000 185
-
-##cs8_stealthnc_1_gf3
-
-lpc_set FF8494FF FF707070 FFFFF3B3 00000000 185
-
-##cs8_gunshipgen_1_alpha_gf3
-
-lpc_set FF15D278 FFF90000 FFFFEE17 FF000000 1
-
-##flat_flora
-
-lpc_set FF000000 FFFFFFFF FFFFFFFF FF000000 0
-
-##cs8_earthtreea_lod
-
-lpc_set FF000000 FFFFFFFF FFFFFFFF FF000000 0
 
 ##cs8_desertshrube
 
@@ -156,385 +140,89 @@ lpc_set FFFFFFFF FFBCBCBC FFFFFFFF FF000000 0
 
 lpc_set FFFFFFFF FF818181 FFFFFFFF 00000000 0
 
-##cs8_phalanx256
-
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
-
-##cs8_shuttle_nc_1
-
-lpc_set FFFFFFFF FF8B8B8B FF626262 00000000 95
-
-##cs8_phalanx128lod
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FF000000 0
-
-##cs8_amp_term2_asmr_amp_power_monitor_01_lm_gf3
-
-lpc_set FF363636 FFBCCDC4 FFFFFFFF 00000000 0
-
-##cs8_earthtreef_lod
-
-lpc_set FFFFFFFF FFE2E2E2 FFFFFFFF FF000000 0
-
-##cs8_medical_applicator_screen
-
-lpc_set FFFFFFFF FFFFFFFF FF1892EB 00B2B2B2 80
-
-##cs8_deserttreei
-
-lpc_set FF797979 FF525252 FFFFFFFF 00000000 0
-
-##cs8_neutral_warp_base_gf3
-
-lpc_set FFFFFFFF FFD0D8EA FFB1CCF8 00000000 20
-
-##cs8_galvanzd_arm_base_gf3
-
-lpc_set FFFFFFFF FFB7D6EE FFDAE7F1 00313131 50
-
-##cs8_galvanzd_pole_gf3
-
-lpc_set FFFFFFFF FFD5DADD FFE6EAFF 00000000 50
-
-##cs8_earthshrub2
-
-lpc_set FFFFFFFF FF595959 FFFFFFFF FF000000 0
-
-##cs8_quadgen_1_alpha_gf3
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 180
-
-##cs8_nc_rotary_main
-
-lpc_set FFA3A3A3 FFE5E5E5 FFFFFFFF 00000000 0
-
-##cs8_deserttreek
-
-lpc_set FFDED0CF FF5B4544 FFBC9D87 00000000 0
-
-##cs8_nc_frame_main_ncfe1_frame_mb_rotating2_01_lm
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0
-
-##cs8_top_detail_warp_arm_top
-
-lpc_set FFFFFFFF FFD3D3D3 FFFFFFFF FF000000 0
-
-##cs8_map12
-
-lpc_set FF6B6B6B FF626262 FFFFFFFF 00000000 0
-
-##cs8_stealthtr_1_alpha_gf3
-
-lpc_set FFFFFFFF FFFFFFFF FF9C7475 00000000 185
-
-##cs8_stealthtr_1_alpha
-
-lpc_set FFFFFFFF FFFFFFFF FF9C7475 00000000 185
-
-##cs8_stealthvs_1_alpha
-
-lpc_set FFFFFFFF FFFFFFFF FF9975DD 00000000 185
-
-##cs8_stealthnc_1_alpha_gf3
-
-lpc_set FFFFFFFF FFFFFFFF FF2D81FF 00000000 185
-
-##cs8_stealthnc_1_alpha
-
-lpc_set FFFFFFFF FFFFFFFF FF2D81FF 00000000 185
-
-##cs8_stealthgen_1_alpha_gf3
-
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 185
-
-##cs8_ice
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 009393FF 0
-
-##cs8_earthrockc_lod
-
-lpc_set FFFFFFFF FFE5E5E5 FFFFFFFF FFE2E2E2 0
-
-##cs8_earthrocka_lod
-
-lpc_set FFFFFFFF FF515151 FFFFFFFF FF8B8B8B 0
-
-##cs8_artictree1
-
-lpc_set FFE7E4ED FF4E4E4E FFECEDF2 00141414 0
-
-##cs8_shld001
-
-lpc_set FFFFFFFF FFFF0000 FFFFFFFF 14FF4040 0.00
-
-##cs8_earthtree_cde_lod
-
-lpc_set FFFFFFFF FF232323 FFFFFFFF 00606060 0
-
-##default_specular
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FF000000 16
-
-##cs8_terramat2_null
-
-lpc_set FFEBD381 FF0F0F0F FF635A3A FF000000 16
-
-##cs8_top_detail_warp_base
-
-lpc_set FFFFFFFF FFBFC9DB FFFFFFFF 004F4D51 2
-
-##cs8_desertrock1_128
-
-lpc_set FFFFFFFF FF787878 FFFFFFFF 00000000 0
-
-##cs8_shuttle_nc_2
-
-lpc_set FFFFFFFF FF707070 FF3F3F3F FF000000 95
-
-##cs8_shld001_ot3
-
-lpc_set FF0080C0 FFFFFFFF FF0080FF 00000000 0.00
-
 ##cs8_deserttreea
 
 lpc_set FFA6A49F FF463E31 FFFFFFFF FF000000 0
-
-##cs8_lightning_cannon
-
-lpc_set FFFFFFFF FF707070 FF9FEAE7 FF000000 105
-
-##cs8_stealthgen_1
-
-lpc_set FFF2B5EE FF707070 FF029B71 FF000000 185
-
-##cs8_trhev_dualcycler256
-
-lpc_set FFFFFFFF FF707070 FF495869 FF000000 85
 
 ##cs8_deserttreeb
 
 lpc_set FF5F5958 FF4A362D FFFFFFFF FF000000 0
 
-##cs8_chameleonelder
+##cs8_deserttreef
 
-lpc_set FFFFAF9B FFFFFFFF FF320101 00000000 8
-
-##tree_lighting
-
-lpc_set FFFFFFFF FF272727 FFFFFFFF FF000000 0
-
-##cs8_warp_gate_metal01_null
-
-lpc_set FFFFFFFF FF0C0C0C FFC0C0C0 FF000000 16
-
-##cs8_window_tintvs
-
-lpc_set 00FFFFFF FFFFFFFF FFFFFFFF 00000000 0
-
-##cs8_beamer
-
-lpc_set FFFFFFFF FF8B8B8B FFFFFFFF FF000000 0
-
-##cs8_flatblder_null
-
-lpc_set FFFFFFFF FF0D0D0D FF56531F 00000000 0
-
-##rock
-
-lpc_set FFFFFFFF FF515151 FFFFFFFF FF000000 0
-
-##cs8_desrocktex4_gf3
-
-lpc_set FFFFFECC FF252525 FF4E4E4E FF151515 100
-
-##cs8_nc1msth_gf3
-
-lpc_set FF9E9E9E FFC7C7C7 00000000 00000000 2
-
-##cs8_earthrockb_lod
-
-lpc_set FFFFFFFF FF747474 FFFFFFFF FFB7B7B7 0
-
-##cs8_limesto3_null
-
-lpc_set FFC4BAEF FFFFFFFF FF035987 00FFFFFF 45
-
-##cs8_j_rock2_256
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 0
+lpc_set FFFFFFFF FF333333 FFFFFFFF FF000000 0
 
 ##cs8_deserttreeg
 
 lpc_set FFFDFCE1 FF3C3C3C FF937455 FF000000 0
 
-##cs8_desertrock2_256
+##cs8_deserttreei
 
-lpc_set FFFFFFFF FF5B5B5B FFFFFFFF 00000000 0
-
-##cs8_vs3mmed
-
-lpc_set FF00FF80 FF80FF80 FFFFFFFF FF000000 0
-
-##cs8_map03
-
-lpc_set FFFFFFFF FF333333 FFFFFFFF 00000000 0
-
-##cs8_deserttreef
-
-lpc_set FFFFFFFF FF333333 FFFFFFFF FF000000 0
-
-##cs8_capture_terminal
-
-lpc_set FFE1E1E1 FF000000 FFFFFFFF 007C7C7C 0
-
-##cs8_earthbark2
-
-lpc_set FFFFFFFF FF838383 FFFFFFFF 00000000 0
-
-##cs8_capture_terminal_innercore_null
-
-lpc_set FFFFFFFF FF165614 FFFFFFFF 00009F00 100
-
-##cs8_105mm_cannon
-
-lpc_set FFFFFFFF FF707070 FF9A9A9A FF000000 65
-
-##cs8_copperox_pole_gf3
-
-lpc_set FFFF8040 FFA08634 FFCEAD68 FF583D21 50
-
-##cs8_trhev_burster256
-
-lpc_set FFFFFFFF FF707070 FF585858 FF000000 98
-
-##cs8_trhev_pounder256
-
-lpc_set FFFFFFFF FF707070 FF676767 FF000000 75
-
-##cs8_copperox_pole
-
-lpc_set FF85EC53 FFC48526 FF483713 004A3D37 350
-
-##cs8_swampbarka
-
-lpc_set FFF4FDE1 FF3E3E3E FF565937 FF000000 100
-
-##cs8_capture_terminal__lmap
-
-lpc_set FFACACAC FF7C7C7C FF535353 FF000000 20
-
-##cs8_generic_terrain
-
-lpc_set FFBB9D24 FF858585 FFAFCE93 00090C20 99
-
-##cs8_lava_lavalayer09_gf3
-
-lpc_set FFFEDC1D FFFFE96A FFFFFFFF 00A31F07 0
-
-##cs8_tubeworm
-
-lpc_set FFA5A2DD FFBAAEFF FFFFFFFF FF000000 0
-
-##cs8_map06_map060906
-
-lpc_set FFFFFFFF FFFFFFFF FFD5EEFD 00FFFFFF 50
+lpc_set FF797979 FF525252 FFFFFFFF 00000000 0
 
 ##cs8_deserttreej
 
 lpc_set FF231B07 FF261806 FF606060 003B3B3B 0
 
-##cs8_earth_rock1_earth_rock3_lmap
+##cs8_deserttreek
 
-lpc_set FFFFFFFF FF282828 FFFFFFFF 00000000 0
-
-##cs8_cryo_corner_term_null
-
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
-
-##cs8_nc3mmed
-
-lpc_set FF00FF00 FF00FF00 FFFFFFFF 00000000 0
-
-##cs8_punisher
-
-lpc_set FFFFFFFF FF828282 FFAA8F51 FF000000 75
-
-##cs8_earthshrub1
-
-lpc_set FFFFFFFF FF272727 FFFFFFFF FF000000 0
-
-##cs8_tr1msi
-
-lpc_set FFFFFFFF FFFFFFFF FF464646 FF000000 76
-
-##cs8_copperox_piece_02_gf3
-
-lpc_set FFFFFFFF FF9E8934 FFFFFFFF 004F3615 0
-
-##cs8_capture_terminal_outercore__lmap
-
-lpc_set FFFFFFFF FF58F850 FFFFFFFF 0000F900 0
-
-##cs8_he_mine_light
-
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00FFFFFF 0
-
-##cs8_desertrockeflip
-
-lpc_set FF000000 FFFFFFFF FFFFFFFF FFCDAE70 0
+lpc_set FFDED0CF FF5B4544 FFBC9D87 00000000 0
 
 ##cs8_deserttreem
 
 lpc_set FFFFFFFF FF8F8F8F FFFFFFFF 00000000 0
 
-##cs8_new_water
+##cs8_desrocktex4_gf3
 
-lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0.8
+lpc_set FFFFFECC FF252525 FF4E4E4E FF151515 100
 
-##cs8_phantasm_test_material
+##cs8_earth_rock1_earth_rock3_lmap
 
-lpc_set FF2935C0 FF652FCA FF89E820 FF20DF29 1
+lpc_set FFFFFFFF FF282828 FFFFFFFF 00000000 0
 
-##cs8_gry_4_gf3
+##cs8_earthbark1
 
-lpc_set FFFFFFFF FF3E3E3E FF34478B FF000000 85
+lpc_set FFCFCFCF FF272727 FFFFFFFF FF000000 0
 
-##cs8_maelstrom_gf3
+##cs8_earthbark2
 
-lpc_set FFFFFFFF FF292B45 FF64602D FF000000 99
+lpc_set FFFFFFFF FF838383 FFFFFFFF 00000000 0
 
-##cs8_gry_3_gf3
+##cs8_earthleaf_pods
 
-lpc_set FFFFFFFF FF383838 FFA92E59 FF000000 85
+lpc_set FFFFFFFF FF959595 FFFFFFFF FF000000 0
 
-##cs8_maelstrom_orb_gf3
+##cs8_earthrocka_lod
 
-lpc_set FFFFFFFF FF707070 FFFF1A1A FF000000 99
+lpc_set FFFFFFFF FF515151 FFFFFFFF FF8B8B8B 0
 
-##cs8_zipline
+##cs8_earthrockb_lod
 
-lpc_set FFFFFFFF FF707070 FF7185BB FF000000 97
+lpc_set FFFFFFFF FF747474 FFFFFFFF FFB7B7B7 0
 
-##cs8_vanu_vehicle_creation_pad
+##cs8_earthrockc_lod
 
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 0
+lpc_set FFFFFFFF FFE5E5E5 FFFFFFFF FFE2E2E2 0
 
-##cs8_vanu_sentry_turret_gf3
+##cs8_earthshrub1
 
-lpc_set FF9FA2B5 FF444444 FF3A2F80 FF616C81 95
+lpc_set FFFFFFFF FF272727 FFFFFFFF FF000000 0
 
-##cs8_crystal1
+##cs8_earthshrub2
 
-lpc_set FFFFFFFF FFB2B2B2 FFD6F948 FF000000 15
+lpc_set FFFFFFFF FF595959 FFFFFFFF FF000000 0
 
-##cs8_ceryshenicetexture_gf3
+##cs8_earthtree_cde_lod
 
-lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
+lpc_set FFFFFFFF FF232323 FFFFFFFF 00606060 0
 
-##cs8_amerish_cflora
+##cs8_earthtreea_lod
 
-lpc_set FF77532F FF707070 FFFFFFFF FF000000 0
+lpc_set FF000000 FFFFFFFF FFFFFFFF FF000000 0
+
+##cs8_earthtreef_lod
+
+lpc_set FFFFFFFF FFE2E2E2 FFFFFFFF FF000000 0
 
 ##cs8_ef_vanu_core_crystals
 
@@ -544,10 +232,386 @@ lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0
 
 lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00FFFFFF 0
 
+##cs8_fakey
+
+lpc_set 00FFFFFF 00707070 00EA0B75 00000000 50
+
+##cs8_flail1
+
+lpc_set FFFFFFFF FF707070 FF404316 FF000000 99
+
+##cs8_flail_laser
+
+lpc_set FFFFFFFF FF191919 FFA53A5A FF000000 95
+
+##cs8_flail_laser_gf3
+
+lpc_set FFFFFFFF FF1D1D1D FFAF3A8C FF000000 90
+
+##cs8_flatblder_null
+
+lpc_set FFFFFFFF FF0D0D0D FF56531F 00000000 0
+
+##cs8_galvanzd_arm_base_gf3
+
+lpc_set FFFFFFFF FFB7D6EE FFDAE7F1 00313131 50
+
+##cs8_galvanzd_pole_gf3
+
+lpc_set FFFFFFFF FFD5DADD FFE6EAFF 00000000 50
+
+##cs8_generic_terrain
+
+lpc_set FFBB9D24 FF858585 FFAFCE93 00090C20 99
+
+##cs8_gry_3_gf3
+
+lpc_set FFFFFFFF FF383838 FFA92E59 FF000000 85
+
+##cs8_gry_4_gf3
+
+lpc_set FFFFFFFF FF3E3E3E FF34478B FF000000 85
+
+##cs8_gunshipgen_1_alpha_gf3
+
+lpc_set FF15D278 FFF90000 FFFFEE17 FF000000 1
+
+##cs8_he_mine_light
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00FFFFFF 0
+
+##cs8_ice
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 009393FF 0
+
+##cs8_j_rock2_256
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF 0
+
+##cs8_lava_lavalayer09_gf3
+
+lpc_set FFFEDC1D FFFFE96A FFFFFFFF 00A31F07 0
+
+##cs8_lava_tiled
+
+lpc_set FF770300 FF590000 FFFFFFFF FF2C2C2C 0
+
+##cs8_lightning_cannon
+
+lpc_set FFFFFFFF FF707070 FF9FEAE7 FF000000 105
+
+##cs8_lightning_miny
+
+lpc_set FFFFFFFF FF747474 FFB0BCD0 FF000000 85
+
+##cs8_limesto3_null
+
+lpc_set FFC4BAEF FFFFFFFF FF035987 00FFFFFF 45
+
+##cs8_maelstrom_gf3
+
+lpc_set FFFFFFFF FF292B45 FF64602D FF000000 99
+
+##cs8_maelstrom_orb_gf3
+
+lpc_set FFFFFFFF FF707070 FFFF1A1A FF000000 99
+
+##cs8_map03
+
+lpc_set FFFFFFFF FF333333 FFFFFFFF 00000000 0
+
+##cs8_map06
+
+lpc_set FF00FFFF FF00B1BD FF00DFE7 00000000 90
+
+##cs8_map06_map060906
+
+lpc_set FFFFFFFF FFFFFFFF FFD5EEFD 00FFFFFF 50
+
+##cs8_map12
+
+lpc_set FF6B6B6B FF626262 FFFFFFFF 00000000 0
+
+##cs8_map14
+
+lpc_set FFBB9D24 FF858585 FFAFCE93 00090C20 99
+
+##cs8_medical_applicator_screen
+
+lpc_set FFFFFFFF FFFFFFFF FF1892EB 00B2B2B2 80
+
+##cs8_mono_crystal
+
+lpc_set 0037FD46 00A231AE 00BDF10A 0049D851 15
+
+##cs8_nc1msth_gf3
+
+lpc_set FF9E9E9E FFC7C7C7 00000000 00000000 2
+
+##cs8_nc3mmed
+
+lpc_set FF00FF00 FF00FF00 FFFFFFFF 00000000 0
+
+##cs8_nc_frame_main_ncfe1_frame_mb_rotating2_01_lm
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0
+
+##cs8_nc_rotary_main
+
+lpc_set FFA3A3A3 FFE5E5E5 FFFFFFFF 00000000 0
+
+##cs8_neutral_warp_base_gf3
+
+lpc_set FFFFFFFF FFD0D8EA FFB1CCF8 00000000 20
+
+##cs8_new_water
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0.8
+
+##cs8_op_warninglightbulb
+
+lpc_set FFFF0909 FFFF1A1A FFFACD32 00FFFFFF 0
+
+##cs8_oshurcactustexture
+
+lpc_set 00E3E981 00292929 00BFDA6D 000C0F0B 0
+
+##cs8_phalanx128lod
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FF000000 0
+
+##cs8_phalanx256
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 95
+
+##cs8_phantasm_test_material
+
+lpc_set FF2935C0 FF652FCA FF89E820 FF20DF29 1
+
+##cs8_planet_home1
+
+lpc_set 00FFFFFF 00272727 0083C7FA 00242424 98
+
+##cs8_planet_home2
+
+lpc_set 00FFFFFF 00808080 00B9DCFF 00000000 98
+
+##cs8_planet_home3
+
+lpc_set 00FFFFFF 00808080 00CBB3FF 00000000 98
+
+##cs8_planet_z2
+
+lpc_set 00FFFFFF 00808080 00FFEDCA 00000000 98
+
+##cs8_planet_z4
+
+lpc_set 00FFFFFF 00808080 0080BFFF 00000000 98
+
+##cs8_planet_z5
+
+lpc_set 00FFFFFF 00808080 00E7CEFF 00000000 98
+
+##cs8_pumpkin_t
+
+lpc_set 00B15C1D 00391B0D 00F5DF9A 00000000 89
+
+##cs8_punisher
+
+lpc_set FFFFFFFF FF828282 FFAA8F51 FF000000 75
+
+##cs8_quadgen_1_alpha_gf3
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 180
+
+##cs8_radiator
+
+lpc_set FFFFFFFF FF707070 FF142070 FF000000 99
+
+##cs8_shld001
+
+lpc_set FFFFFFFF FFFF0000 FFFFFFFF 14FF4040 0.00
+
+##cs8_shld001_ot3
+
+lpc_set FF0080C0 FFFFFFFF FF0080FF 00000000 0.00
+
+##cs8_shuttle_nc_1
+
+lpc_set FFFFFFFF FF8B8B8B FF626262 00000000 95
+
+##cs8_shuttle_nc_2
+
+lpc_set FFFFFFFF FF707070 FF3F3F3F FF000000 95
+
+##cs8_solsar_pillara
+
+lpc_set FF7D2E20 FF5E483E FFFFFFFF FF230C0C 0
+
+##cs8_spawn_wall2_null
+
+lpc_set FFFFFFFF 00232636 FF324394 00050505 10
+
+##cs8_spiker_gf3
+
+lpc_set FFFFFFFF FF707070 FF222E73 FF000000 99
+
+##cs8_stealthgen_1
+
+lpc_set FFF2B5EE FF707070 FF029B71 FF000000 185
+
+##cs8_stealthgen_1_alpha_gf3
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 185
+
+##cs8_stealthnc_1_alpha
+
+lpc_set FFFFFFFF FFFFFFFF FF2D81FF 00000000 185
+
+##cs8_stealthnc_1_alpha_gf3
+
+lpc_set FFFFFFFF FFFFFFFF FF2D81FF 00000000 185
+
+##cs8_stealthnc_1_gf3
+
+lpc_set FF8494FF FF707070 FFFFF3B3 00000000 185
+
+##cs8_stealthtr_1_alpha
+
+lpc_set FFFFFFFF FFFFFFFF FF9C7475 00000000 185
+
+##cs8_stealthtr_1_alpha_gf3
+
+lpc_set FFFFFFFF FFFFFFFF FF9C7475 00000000 185
+
+##cs8_stealthtr_1_gf3
+
+lpc_set FFFF5559 FF707070 FFFF1117 00000000 185
+
+##cs8_stealthvs_1_alpha
+
+lpc_set FFFFFFFF FFFFFFFF FF9975DD 00000000 185
+
+##cs8_swampbarka
+
+lpc_set FFF4FDE1 FF3E3E3E FF565937 FF000000 100
+
+##cs8_swamptreea
+
+lpc_set FFFDFDFD FFA0A0A0 FF264422 00000000 150
+
+##cs8_swamptreeb
+
+lpc_set FFFFFFFF FFA0A0A0 FF44442D 00000000 150
+
+##cs8_terramat2_null
+
+lpc_set FFEBD381 FF0F0F0F FF635A3A FF000000 16
+
+##cs8_test_light_projection_t4_st_dropoff_lm
+
+lpc_set 00583CDD 00FFF540 00FFFFFF 00FF8C8F 0
+
+##cs8_top_detail_warp_arm_top
+
+lpc_set FFFFFFFF FFD3D3D3 FFFFFFFF FF000000 0
+
+##cs8_top_detail_warp_base
+
+lpc_set FFFFFFFF FFBFC9DB FFFFFFFF 004F4D51 2
+
+##cs8_tr1msi
+
+lpc_set FFFFFFFF FFFFFFFF FF464646 FF000000 76
+
+##cs8_trhev_burster256
+
+lpc_set FFFFFFFF FF707070 FF585858 FF000000 98
+
+##cs8_trhev_dualcycler256
+
+lpc_set FFFFFFFF FF707070 FF495869 FF000000 85
+
+##cs8_trhev_pounder256
+
+lpc_set FFFFFFFF FF707070 FF676767 FF000000 75
+
+##cs8_trvisor
+
+lpc_set FF9D0206 FFBA050A C8FFFFFF 00130457 150
+
+##cs8_tubeworm
+
+lpc_set FFA5A2DD FFBAAEFF FFFFFFFF FF000000 0
+
+##cs8_tunnelsuspensionbeam
+
+lpc_set FFFFFFFF FF151515 FFFFFFFF FF122916 0
+
+##cs8_two_man_heavy_buggy_nc2_alpha
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 1
+
+##cs8_vanu_sentry_turret_gf3
+
+lpc_set FF9FA2B5 FF444444 FF3A2F80 FF616C81 95
+
+##cs8_vanu_vehicle_creation_pad
+
+lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 0
+
+##cs8_vs3mmed
+
+lpc_set FF00FF80 FF80FF80 FFFFFFFF FF000000 0
+
+##cs8_warp_gate_metal01_null
+
+lpc_set FFFFFFFF FF0C0C0C FFC0C0C0 FF000000 16
+
+##cs8_window
+
+lpc_set 789C99BF FFFFFFFF FFFFFFFF 00000000 0
+
+##cs8_window_tintvs
+
+lpc_set 00FFFFFF FFFFFFFF FFFFFFFF 00000000 0
+
+##cs8_zipline
+
+lpc_set FFFFFFFF FF707070 FF7185BB FF000000 97
+
 ##default_lighting
 
 lpc_set FFFFFFFF FFFFFFFF FFFFFFFF 00000000 0
 
+##default_specular
+
+lpc_set FFFFFFFF FFFFFFFF FFFFFFFF FF000000 16
+
+##desert_tree
+
+lpc_set FFFFFFFF FF3B3B3B FFFFFFFF FF000000 0
+
+##flat_flora
+
+lpc_set FF000000 FFFFFFFF FFFFFFFF FF000000 0
+
+##rock
+
+lpc_set FFFFFFFF FF515151 FFFFFFFF FF000000 0
+
+##ropetree
+
+lpc_set FFFFFFFF FF6A6A6A FFFFFFFF FF000000 0
+
+##tree_lighting
+
+lpc_set FFFFFFFF FF272727 FFFFFFFF FF000000 0
+
 ##vehicles
 
 lpc_set FFFFFFFF FF707070 FFFFFFFF FF000000 0
+
+##vehicles_vanu
+
+lpc_set FFFFFFFF FFB7B7B7 FFFFFFFF FF000000 0

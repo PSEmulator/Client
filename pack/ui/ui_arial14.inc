@@ -1,4 +1,4 @@
-<TextStyle Leading='14' Name='ChatFont'>
+<TextStyle Leading='14' Name='ChatFont' UseCachedFont='true'>
 <FontCharacter Advance='3' Code='32' SourceFile='arial8_0' SourceRect='0,0,4,14'/>
 <FontCharacter Advance='2' Code='33' SourceFile='arial8_0' SourceRect='4,0,7,14'/>
 <FontCharacter Advance='4' Code='34' SourceFile='arial8_0' SourceRect='7,0,12,14'/>
@@ -246,7 +246,7 @@
 <FontCharacter Advance='37' Code='57369' Name='thumper' SourceFile='ui_kill_echo_lasher_pulsar_thumper_guass' SourceRect='0,32,37,48'/>
 <FontCharacter Advance='44' Code='57370' Name='gauss' SourceFile='ui_kill_echo_lasher_pulsar_thumper_guass' SourceRect='0,48,44,64'/>
 <FontCharacter Advance='44' Code='57371' Name='lightning' SourceFile='ui_kill_echo_lightning_galaxy_prowler_vanguard' SourceRect='0,0,44,16'/>
-<FontCharacter Advance='47' Code='57372' Name='dropship' SourceFile='ui_kill_echo_lightning_galaxy_prowler_vanguard' SourceRect='0,16,47,32'/>
+<FontCharacter Advance='47' Code='57451' Name='galaxy_gunship' SourceFile='ui_kill_echo_lightning_galaxy_prowler_vanguard' SourceRect='0,16,47,32'/>
 <FontCharacter Advance='36' Code='57373' Name='prowler' SourceFile='ui_kill_echo_lightning_galaxy_prowler_vanguard' SourceRect='0,32,36,48'/>
 <FontCharacter Advance='48' Code='57374' Name='vanguard' SourceFile='ui_kill_echo_lightning_galaxy_prowler_vanguard' SourceRect='0,48,48,64'/>
 <FontCharacter Advance='28' Code='57375' Name='threemanheavybuggy' SourceFile='ui_kill_echo_marauder_deliverer_enforcer_harraser' SourceRect='0,0,28,16'/>
@@ -297,5 +297,36 @@
 <FontCharacter Advance='59' Code='57420' Name='radiator' SourceFile='ui_kill_echo_expansion_00' SourceRect='0,17,59,33'/>
 <FontCharacter Advance='22' Code='57421' Name='manned_turret' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='0,34,22,50'/>
 <FontCharacter Advance='23' Code='57422' Name='router_telepad_deployable' SourceFile='ui_kill_echo_expansion_00' SourceRect='0,68,23,84'/>
-<FontCharacter Advance='21' Code='57423' Name='vanu_module' SourceFile='ui_kill_echo_expansion_00' SourceRect='24,68,45,84'/>
+<FontCharacter Advance='23' Code='57423' Name='lodestar' SourceFile='ui_kill_echo_expansion_00' SourceRect='67,33,90,50'/>
+<FontCharacter Advance='36' Code='57424' Name='fury' SourceFile='ui_kill_echo_ams_sunder_stealthquad_basilisk' SourceRect='0,48,36,64'/>
+<FontCharacter Advance='34' Code='57425' Name='aurora' SourceFile='ui_kill_echo_marauder_deliverer_enforcer_harraser' SourceRect='0,16,34,32'/>
+<FontCharacter Advance='34' Code='57426' Name='battlewagon' SourceFile='ui_kill_echo_marauder_deliverer_enforcer_harraser' SourceRect='0,16,34,32'/>
+<FontCharacter Advance='34' Code='57427' Name='thunderer' SourceFile='ui_kill_echo_marauder_deliverer_enforcer_harraser' SourceRect='0,16,34,32'/>
+<FontCharacter Advance='52' Code='57428' Name='fluxpod' SourceFile='ui_kill_echo_expansion_00' SourceRect='0,84,52,96'/>
+<FontCharacter Advance='55' Code='57429' Name='gauss_cannon' SourceFile='ui_kill_echo_expansion_00' SourceRect='41,97,96,112'/>
+<FontCharacter Advance='36' Code='57430' Name='20mm_cannon_deliverer' SourceFile='ui_kill_echo_expansion_00' SourceRect='0,101,36,112'/>
+<FontCharacter Advance='39' Code='57431' Name='hellfire' SourceFile='ui_kill_echo_expansion_00' SourceRect='56,76,95,94'/>
+<FontCharacter Advance='2' Code='8217' SourceFile='arial8_0' SourceRect='45,0,48,14'/>
+<FontCharacter Advance='16' Code='57432' Name='peregrine' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='46,0,64,19'/>
+<FontCharacter Advance='16' Code='57433' Name='peregrine_flight' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='46,0,64,19'/>
+<FontCharacter Advance='16' Code='57434' Name='peregrine_gunner' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='46,0,64,19'/>
+<FontCharacter Advance='18' Code='57435' Name='colossus' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='22,18,42,34'/>
+<FontCharacter Advance='18' Code='57436' Name='colossus_flight' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='22,18,42,34'/>
+<FontCharacter Advance='18' Code='57437' Name='colossus_gunner' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='22,18,42,34'/>
+<FontCharacter Advance='11' Code='57438' Name='aphelion' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='19,47,28,63'/>
+<FontCharacter Advance='11' Code='57439' Name='aphelion_flight' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='19,47,28,63'/>
+<FontCharacter Advance='11' Code='57440' Name='aphelion_gunner' SourceFile='ui_kill_echo_ant_uplink_turret_00' SourceRect='19,47,28,63'/>
+<FontCharacter Advance='38' Code='57441' Name='heavy_sniper' SourceFile='ui_kill_echo_ant_uplink' SourceRect='26,55,64,64'/>
+<FontCharacter Advance='2' Code='700' SourceFile='arial8_0' SourceRect='45,0,48,14'/>
+<FontCharacter Advance='45' Code='57442' Name='vulture' SourceFile='ui_kill_echo_liberator_skyguard_00' SourceRect='0,0,45,16'/>
+<FontCharacter Advance='46' Code='57443' Name='wasp' SourceFile='ui_kill_echo_thresher_magrider_reaver_mosquito' SourceRect='0,48,46,64'/>
+<FontCharacter Advance='16' Code='57444' Name='anniversary_gun' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='0,32,16,48'/>
+<FontCharacter Advance='16' Code='57445' Name='anniversary_guna' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='0,48,16,64'/>
+<FontCharacter Advance='16' Code='57446' Name='anniversary_gunb' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='16,48,32,64'/>
+<FontCharacter Advance='60' Code='57447' Name='oicw' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='0,16,60,32'/>
+<FontCharacter Advance='59' Code='57448' Name='flamethrower' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='0,0,59,16'/>
+<FontCharacter Advance='41' Code='57449' Name='phantasm' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='23,32,64,47'/>
+<FontCharacter Advance='28' Code='57450' Name='katana' SourceFile='ui_kill_echo_flamer_oicw_anniv_pistols' SourceRect='34,49,62,62'/>
+<FontCharacter Advance='2' Code='65425' SourceFile='arial8_0' SourceRect='45,0,48,14'/>
+<FontCharacter Advance='2' Code='65426' SourceFile='arial8_0' SourceRect='45,0,48,14'/>
 </TextStyle>

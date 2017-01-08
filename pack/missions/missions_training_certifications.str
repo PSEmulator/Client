@@ -1,0 +1,17 @@
+@mission_training_certifications=Certifications
+@mission_training_certifications_cert_term_certs=This is the list of all available certifications and their costs. The dimmed items indicate certifications that have prerequisites that you do not yet meet.
+@mission_training_certifications_cert_term_description=The description pane lists more information about the selected certification, along with any prerequisites needed.
+@mission_training_certifications_cert_term_learned=This pane lists all the certifications that you have currently learned.
+@mission_training_certifications_cert_term_points=The Certification Terminal window is divided into four sections. The number of available certification points to spend can be found at the top.
+@mission_training_certifications_cert_timer=If you want to change your role in the game, but do not have the certification points required to learn it, you have the option to unlearn a cert and free up those points to learn another. \n\nWhen you create a new character, you can unlearn certifications without penalty for seven days.  After that grace period has passed you will only be able to unlearn one certification (or branch of certifications) every six hours.
+@mission_training_certifications_cert_timer2=To unlearn a cert, click on a cert listed in the \\#72C9D1%1\\#FFFFFF pane and click on the \\#72C9D1%2\\#FFFFFF button. \n\nIf your character is more than a week old, a six hour countdown window will appear at the bottom of the pane after forgetting a certification.\n\nClose the Certification Terminal window to complete this mission.
+@mission_training_certifications_description=This mission will show you how to use Certification Terminals to learn and unlearn certifications.
+@mission_training_certifications_end=Mission complete.\n\nCongratulations! You have completed the Certification training mission.
+@mission_training_certifications_error_player_died=Mission canceled.\n\nDying has canceled your mission.  Please try again.
+@mission_training_certifications_error_reopen_cert_term=Please reopen the Certification Terminal.
+@mission_training_certifications_goto_cert_term=Follow the waypoint upstairs to the Certification Terminals.
+@mission_training_certifications_learn_cert=Read through each of the Certifications.\n\nWhen you are ready to acquire a certification, select it and click on the \\#72C9D1%1\\#FFFFFF button.\n\nIf you don't have enough certification points available to purchase any new certifications, you will have to forget one of your learned certifications to proceed with this mission.
+@mission_training_certifications_objective_buy_cert=Learn a certification
+@mission_training_certifications_objective_find_cert_term=Find a Certification Terminal
+@mission_training_certifications_open_cert_term=Open one of the Certification Terminals.
+@mission_training_certifications_start=After trying out the various weapons available to you in the VR Training area, it's now time to learn some certifications. This is done at a Certification Terminal, found in all Sanctuaries and Bio Labs.\n\nGo to the HART building, as indicated by the green waypoint (if you are already in a HART building, press \\#72C9D1%1\\#FFFFFF to advance to the next step).

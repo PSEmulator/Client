@@ -19,16 +19,16 @@ ic_setface 15010 1
 # for NC lights
 ic_create repeater 0 0 0 15011
 ic_attach_holster 15011 15010 RightHip
-ic_create_attach 9mmbullet 16000 15011 99999
+ic_create_attach 9mmbullet 16000 15011 3500
 
 ic_create beamer 0 0 0 15013
 ic_attach_holster 15013 15010 LeftHip
 ic_create_attach energy_cell 16004 15013 3500
 
-ic_create punisher 0 0 0 15012
-ic_attach_holster 15012 15010 LeftBack
-ic_create_attach 9mmbullet 16001 15012 3500 0
-ic_create_attach rocket 16002 15012 3500 1
+ic_create mini_chaingun 0 0 0 15012
+ic_attach_holster 15012 15010 RightBack
+ic_create_attach 9mmbullet 16001 15012 3500
+ic_create_attach rocket 16002 15012 1 1
 
 #ic_create jammer_grenade 0 0 0 15011
 #ic_attach_holster 15011 15010 RightHip
@@ -38,7 +38,7 @@ ic_create_attach rocket 16002 15012 3500 1
 #ic_attach_holster 15014 15010 RightBack
 #ic_create_attach rocket 16003 15014 3500
 
-ic_create mag_cutter 0 0 0 15015
+ic_create magcutter 0 0 0 15015
 ic_attach_holster 15015 15010 Knife
 ic_create_attach melee_ammo 16005 15015 1
 

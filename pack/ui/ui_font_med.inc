@@ -1,4 +1,4 @@
-<TextStyle Leading='20' Name='Medium'>
+<TextStyle CachedStyle='6' Leading='20' Name='Medium' UseCachedFont='true'>
 <FontCharacter Advance='8' Code='32' SourceFile='ps_interface_font_med' SourceRect='230,80,235,100'/>
 <FontCharacter Advance='7' Code='33' SourceFile='ps_interface_font_med' SourceRect='69,60,76,80'/>
 <FontCharacter Advance='11' Code='34' SourceFile='ps_interface_font_med' SourceRect='35,80,46,100'/>

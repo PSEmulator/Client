@@ -1,20 +1,84 @@
 #anc_begin
 
-##decal_strike
+##amp_sidescreen_
 
-anc_anim 16 4 4 60 true
+anc_anim 4 2 2 1 false
 
-##em_star_
+##anima
 
-anc_anim 4 2 2 10 true
+anc_anim 60 2 2 30 false
 
-##decal_em_red
+##biomatter
 
-anc_anim 15 4 4 30 false
+anc_anim 20 2 2 15 false
 
-##decal_em_yellow
+##blucld
 
-anc_anim 15 4 4 30 false
+anc_anim 17 4 4 60 false
+
+##blupuf
+
+anc_anim 20 4 4 60 false
+
+##bubb0
+
+anc_anim 20 1 1 30 false
+
+##buggymuzzflash
+
+anc_anim 16 4 4 30 false
+
+##burst
+
+anc_anim 30 4 4 60 false
+
+##capterm_active_
+
+anc_anim 4 1 1 15 false
+
+##cas
+
+anc_anim 15 1 1 15 false
+
+##cas_b
+
+anc_anim 17 1 1 30 false
+
+##caus
+
+anc_anim 32 1 1 60 false
+
+##caust
+
+anc_anim 23 1 1 30 true
+
+##cell_chain_muzl_head
+
+anc_anim 4 2 2 30 false
+
+##cell_ef_dropship_engine
+
+anc_anim 4 2 2 32 false
+
+##cell_ef_electric
+
+anc_anim 16 4 4 16 true
+
+##cell_ef_exp_engy_c
+
+anc_anim 32 4 4 20 false
+
+##cell_ef_lzr_b
+
+anc_anim 15 4 4 30 true
+
+##cell_ef_lzr_c
+
+anc_anim 15 4 4 30 true
+
+##cell_ef_vs_exp
+
+anc_anim 4 2 2 30 true
 
 ##cell_ef_vs_muzl_side
 
@@ -24,115 +88,127 @@ anc_anim 4 2 2 15 false
 
 anc_anim 4 2 2 15 false
 
-##cell_explosion
+##cell_ef_vsfb_goo
 
-anc_anim 53 2 2 30 false
+anc_anim 16 4 4 30 true
+
+##cell_ef_warpgate_pass
+
+anc_anim 31 4 4 60 false
 
 ##cell_ef_water_ripple
 
 anc_anim 30 4 4 30 false
 
-##static
+##cell_explosion
 
-anc_anim 4 1 1 20 false
+anc_anim 53 2 2 30 false
 
-##cas
+##cell_rail_sprite
 
-anc_anim 15 1 1 15 false
-
-##ef_vroutline
-
-anc_anim 16 4 4 15 true
-
-##ef_exp_b
-
-anc_anim 60 4 4 30 false
-
-##ef_clwd_b
-
-anc_anim 20 4 4 30 false
-
-##ef_lzr_a
-
-anc_anim 15 1 1 30 false
-
-##ef_exp_engy_a
-
-anc_anim 22 4 4 30 false
-
-##ef_exp_d
-
-anc_anim 55 4 4 30 false
-
-##flamesb
-
-anc_anim 4 2 2 30 false
-
-##fire
-
-anc_anim 4 2 2 60 false
-
-##ef_repeater_muzzle_glow
-
-anc_anim 4 2 2 30 false
-
-##vrtgrid
-
-anc_anim 16 1 1 5 true
-
-##ef_105mm_muzzle_glow
-
-anc_anim 4 2 2 30 false
-
-##firjet
-
-anc_anim 21 4 4 60 false
-
-##deimos
-
-anc_anim 37 4 4 60 false
-
-##ef_punisher_muzzle_head_on
-
-anc_anim 4 2 2 30 false
-
-##flames
-
-anc_anim 4 2 2 30 false
-
-##ef_warp_impact
-
-anc_anim 28 1 1 90 false
-
-##ef_beamer
-
-anc_anim 4 2 2 30 false
-
-##scanline
-
-anc_anim 4 1 1 20 false
-
-##ef_engine
-
-anc_anim 4 2 2 30 true
-
-##firdeb
-
-anc_anim 24 4 4 60 false
+anc_anim 16 4 4 32 false
 
 ##cell_shotgun_muzl_head
 
 anc_anim 4 2 2 15 false
 
-##electricity
-
-anc_anim 15 1 1 30 true
-
-##amp_sidescreen_
+##cfmr_screens_
 
 anc_anim 4 2 2 1 false
 
+##comm_screens_
+
+anc_anim 4 2 2 1 false
+
+##comm_servdecoder_
+
+anc_anim 16 8 2 4 false
+
+##cryo_mon1_0
+
+anc_anim 4 2 2 1 false
+
+##cryo_mon2_0
+
+anc_anim 4 2 2 1 false
+
+##decal_bluedeath
+
+anc_anim 32 4 4 30 false
+
+##decal_em_red
+
+anc_anim 15 4 4 30 false
+
+##decal_em_yellow
+
+anc_anim 15 4 4 30 false
+
+##decal_strike
+
+anc_anim 16 4 4 60 true
+
+##decal_warp_impact
+
+anc_anim 30 4 4 60 false
+
+##decal_warpgate_pass
+
+anc_anim 32 4 4 30 false
+
+##decal_waypoint
+
+anc_anim 32 4 4 30 false
+
+##deimos
+
+anc_anim 37 4 4 60 false
+
+##drivermount
+
+anc_anim 16 4 4 10 false
+
+##driverside
+
+anc_anim 16 4 4 15 false
+
+##ef_105mm_muzzle_flash_side
+
+anc_anim 4 2 2 30 false
+
+##ef_105mm_muzzle_glow
+
+anc_anim 4 2 2 30 false
+
+##ef_105mm_muzzle_head_on
+
+anc_anim 4 2 2 30 false
+
+##ef_105mm_muzzle_side
+
+anc_anim 4 2 2 30 false
+
+##ef_afterburner
+
+anc_anim 16 4 4 30 true
+
+##ef_afterburner_dp
+
+anc_anim 16 4 4 30 true
+
+##ef_anim_noise_tiled
+
+anc_anim 16 1 1 30 false
+
+##ef_beamer
+
+anc_anim 4 2 2 30 false
+
 ##ef_chaingun_muzzle_flash_side
+
+anc_anim 4 2 2 30 false
+
+##ef_chaingun_muzzle_glow
 
 anc_anim 4 2 2 30 false
 
@@ -140,73 +216,217 @@ anc_anim 4 2 2 30 false
 
 anc_anim 4 2 2 30 false
 
-##medterm_idle
+##ef_clwd_a
 
-anc_anim 2 1 1 10 false
+anc_anim 20 4 4 30 false
 
-##expb
+##ef_clwd_b
 
-anc_anim 27 2 2 30 false
+anc_anim 20 4 4 30 false
 
-##cell_chain_muzl_head
+##ef_dirt
 
 anc_anim 4 2 2 30 false
+
+##ef_droppod_entry
+
+anc_anim 15 4 4 60 true
+
+##ef_droppod_entry_bits
+
+anc_anim 4 2 2 15 false
+
+##ef_dropship_engine
+
+anc_anim 4 2 2 15 false
+
+##ef_engine
+
+anc_anim 4 2 2 30 true
+
+##ef_exp_b
+
+anc_anim 60 4 4 30 false
+
+##ef_exp_b_alpha1
+
+anc_anim 60 4 4 30 false
+
+##ef_exp_c
+
+anc_anim 55 2 2 30 false
+
+##ef_exp_c_alpha1
+
+anc_anim 55 2 2 30 false
+
+##ef_exp_d
+
+anc_anim 55 4 4 30 false
+
+##ef_exp_d_alpha1
+
+anc_anim 55 4 4 30 false
+
+##ef_exp_e
+
+anc_anim 60 4 4 30 false
+
+##ef_exp_e_alpha1
+
+anc_anim 60 4 4 30 false
+
+##ef_exp_engy_a
+
+anc_anim 22 4 4 30 false
+
+##ef_exp_engy_a_alpha1
+
+anc_anim 22 4 4 30 false
+
+##ef_exp_engy_b
+
+anc_anim 22 4 4 30 false
+
+##ef_exp_engy_b_alpha1
+
+anc_anim 22 4 4 30 false
+
+##ef_exp_f
+
+anc_anim 60 4 4 30 false
+
+##ef_exp_f_alpha1
+
+anc_anim 60 4 4 30 false
 
 ##ef_exp_plzma
 
 anc_anim 48 4 4 30 false
 
-##trya
+##ef_expl_a
 
-anc_anim 8 1 1 16 false
+anc_anim 60 4 4 30 false
 
-##ef_repeater_muzzle_flash_side
+##ef_explosion
 
-anc_anim 4 2 2 30 false
-
-##cas_b
-
-anc_anim 17 1 1 30 false
-
-##ef_smoke
-
-anc_anim 4 2 2 1 true
-
-##ef_siren
-
-anc_anim 16 4 4 15 false
-
-##caus
-
-anc_anim 32 1 1 60 false
-
-##scroll
-
-anc_anim 8 1 1 30 false
-
-##ef_105mm_muzzle_side
-
-anc_anim 4 2 2 30 false
-
-##vrgrid
-
-anc_anim 16 4 4 15 false
+anc_anim 53 1 1 30 false
 
 ##ef_explosion_flash
 
 anc_anim 4 2 2 30 false
 
-##blupuf
+##ef_flame
 
-anc_anim 20 4 4 60 false
+anc_anim 30 4 4 30 true
 
-##plas
+##ef_flame_meat
 
-anc_anim 14 4 4 60 false
+anc_anim 30 4 4 30 true
 
-##driverside
+##ef_flame_test
+
+anc_anim 30 1 1 30 false
+
+##ef_lzr_a
+
+anc_anim 15 1 1 30 false
+
+##ef_muzzel_a
+
+anc_anim 4 2 2 15 false
+
+##ef_muzzel_a_front
+
+anc_anim 4 2 2 30 false
+
+##ef_punisher_muzzle_flash_side
+
+anc_anim 4 2 2 30 false
+
+##ef_punisher_muzzle_glow
+
+anc_anim 4 2 2 30 false
+
+##ef_punisher_muzzle_head_on
+
+anc_anim 4 2 2 30 false
+
+##ef_repeater_muzzle_flash_side
+
+anc_anim 4 2 2 30 false
+
+##ef_repeater_muzzle_glow
+
+anc_anim 4 2 2 30 false
+
+##ef_repeater_muzzle_head_on
+
+anc_anim 4 2 2 30 false
+
+##ef_ring_clwd_a
+
+anc_anim 30 4 4 30 false
+
+##ef_shockwave_small_anim
 
 anc_anim 16 4 4 15 false
+
+##ef_siren
+
+anc_anim 16 4 4 15 false
+
+##ef_smoke
+
+anc_anim 4 2 2 1 true
+
+##ef_snow
+
+anc_anim 4 2 2 1 false
+
+##ef_tide
+
+anc_anim 30 1 1 15 false
+
+##ef_tide_out
+
+anc_anim 30 1 1 15 false
+
+##ef_vroutline
+
+anc_anim 16 4 4 15 true
+
+##ef_warp_impact
+
+anc_anim 28 1 1 90 false
+
+##ef_warpgate_pass
+
+anc_anim 30 1 1 30 false
+
+##ef_water_flash
+
+anc_anim 4 2 2 30 false
+
+##electricity
+
+anc_anim 15 1 1 30 true
+
+##em_star_
+
+anc_anim 4 2 2 10 true
+
+##expa
+
+anc_anim 49 2 2 30 false
+
+##expb
+
+anc_anim 27 2 2 30 false
+
+##expc
+
+anc_anim 99 2 2 30 false
 
 ##expd
 
@@ -216,167 +436,63 @@ anc_anim 41 2 2 30 false
 
 anc_anim 23 2 2 30 false
 
-##ef_punisher_muzzle_glow
+##expf
 
-anc_anim 4 2 2 30 false
+anc_anim 27 2 2 69 false
 
-##ef_exp_f
+##explosion
 
-anc_anim 60 4 4 30 false
+anc_anim 53 2 2 60 false
 
-##ef_exp_c
+##firdeb
 
-anc_anim 55 2 2 30 false
+anc_anim 24 4 4 60 false
 
-##buggymuzzflash
+##fire
 
-anc_anim 16 4 4 30 false
+anc_anim 4 2 2 60 false
 
-##warp0
+##firjet
 
-anc_anim 60 2 2 30 false
-
-##drivermount
-
-anc_anim 16 4 4 10 false
-
-##ef_droppod_entry_bits
-
-anc_anim 4 2 2 15 false
-
-##ef_flame_test
-
-anc_anim 30 1 1 30 false
-
-##anima
-
-anc_anim 60 2 2 30 false
-
-##cell_ef_dropship_engine
-
-anc_anim 4 2 2 32 false
-
-##redpop
-
-anc_anim 28 4 4 60 false
-
-##ef_muzzel_a_front
-
-anc_anim 4 2 2 30 false
-
-##cell_ef_lzr_b
-
-anc_anim 15 4 4 30 true
+anc_anim 21 4 4 60 false
 
 ##firnew
 
 anc_anim 41 4 4 60 false
 
+##flames
+
+anc_anim 4 2 2 30 false
+
+##flamesb
+
+anc_anim 4 2 2 30 false
+
 ##gensmall_scroll_
 
 anc_anim 4 1 1 1 false
 
-##blucld
+##inner_cam_
 
-anc_anim 17 4 4 60 false
+anc_anim 4 2 2 1 false
 
-##ef_105mm_muzzle_flash_side
-
-anc_anim 4 2 2 30 false
-
-##watr
-
-anc_anim 30 1 1 20 false
-
-##cell_ef_vs_exp
-
-anc_anim 4 2 2 30 true
-
-##ef_105mm_muzzle_head_on
-
-anc_anim 4 2 2 30 false
-
-##ef_afterburner_dp
-
-anc_anim 16 4 4 30 true
-
-##ef_water_flash
-
-anc_anim 4 2 2 30 false
-
-##passengermount
-
-anc_anim 16 4 4 10 false
-
-##ef_exp_engy_b
-
-anc_anim 22 4 4 30 false
-
-##ef_afterburner
-
-anc_anim 16 4 4 30 true
-
-##sparks
+##locks_hack
 
 anc_anim 16 4 4 30 false
 
-##ef_ring_clwd_a
+##main_term_panel
 
-anc_anim 30 4 4 30 false
+anc_anim 8 1 1 10 false
 
-##ef_flame_meat
+##medterm_idle
 
-anc_anim 30 4 4 30 true
+anc_anim 2 1 1 10 false
+
+##medterm_lm
+
+anc_anim 6 1 1 10 false
 
 ##muzzf
-
-anc_anim 4 2 2 30 false
-
-##ef_muzzel_a
-
-anc_anim 4 2 2 15 false
-
-##ef_clwd_a
-
-anc_anim 20 4 4 30 false
-
-##ef_expl_a
-
-anc_anim 60 4 4 30 false
-
-##room_cam_
-
-anc_anim 4 2 2 1 false
-
-##tank_ortho_
-
-anc_anim 4 2 2 1 false
-
-##comm_servdecoder_
-
-anc_anim 16 8 2 4 false
-
-##cell_ef_warpgate_pass
-
-anc_anim 31 4 4 60 false
-
-##ef_tide_out
-
-anc_anim 30 1 1 15 false
-
-##cryo_mon2_0
-
-anc_anim 4 2 2 1 false
-
-##test_anim
-
-anc_anim 40 1 1 30 false
-
-##expc
-
-anc_anim 99 2 2 30 false
-
-##ef_chaingun_muzzle_glow
 
 anc_anim 4 2 2 30 false
 
@@ -384,178 +500,98 @@ anc_anim 4 2 2 30 false
 
 anc_anim 4 2 2 30 false
 
-##scroll_
-
-anc_anim 4 1 1 1 false
-
-##cell_ef_electric
-
-anc_anim 16 4 4 16 true
-
-##decal_warp_impact
-
-anc_anim 30 4 4 60 false
-
-##ef_droppod_entry
-
-anc_anim 15 4 4 60 true
-
-##cryo_mon1_0
-
-anc_anim 4 2 2 1 false
-
-##ef_repeater_muzzle_head_on
+##muzzleflash4side
 
 anc_anim 4 2 2 30 false
-
-##expa
-
-anc_anim 49 2 2 30 false
-
-##ef_dirt
-
-anc_anim 4 2 2 30 false
-
-##ef_tide
-
-anc_anim 30 1 1 15 false
-
-##comm_screens_
-
-anc_anim 4 2 2 1 false
-
-##cfmr_screens_
-
-anc_anim 4 2 2 1 false
-
-##inner_cam_
-
-anc_anim 4 2 2 1 false
-
-##outer_cam_
-
-anc_anim 4 2 2 1 false
-
-##ef_snow
-
-anc_anim 4 2 2 1 false
-
-##caust
-
-anc_anim 23 1 1 30 true
-
-##cell_ef_lzr_c
-
-anc_anim 15 4 4 30 true
-
-##main_term_panel
-
-anc_anim 8 1 1 10 false
-
-##ef_punisher_muzzle_flash_side
-
-anc_anim 4 2 2 30 false
-
-##cell_ef_vsfb_goo
-
-anc_anim 16 4 4 30 true
-
-##medterm_lm
-
-anc_anim 6 1 1 10 false
-
-##ef_warpgate_pass
-
-anc_anim 30 1 1 30 false
 
 ##muzzleflashside
 
 anc_anim 4 2 2 15 false
 
-##cell_ef_exp_engy_c
+##orb_shuttle_lights_
 
-anc_anim 32 4 4 20 false
+anc_anim 4 2 2 8 false
 
-##capterm_active_
+##outer_cam_
 
-anc_anim 4 1 1 15 false
+anc_anim 4 2 2 1 false
 
-##biomatter
+##passengermount
 
-anc_anim 20 2 2 15 false
+anc_anim 16 4 4 10 false
 
-##ef_dropship_engine
+##plas
 
-anc_anim 4 2 2 15 false
+anc_anim 14 4 4 60 false
 
-##zap
+##redpop
 
-anc_anim 20 1 1 20 false
-
-##ef_exp_e
-
-anc_anim 60 4 4 30 false
-
-##ef_shockwave_small_anim
-
-anc_anim 16 4 4 15 false
-
-##bubb0
-
-anc_anim 20 1 1 30 false
-
-##burst
-
-anc_anim 30 4 4 60 false
+anc_anim 28 4 4 60 false
 
 ##redpuf
 
 anc_anim 23 4 4 60 false
 
-##ef_flame
+##room_cam_
 
-anc_anim 30 4 4 30 true
+anc_anim 4 2 2 1 false
 
-##ef_explosion
+##scanline
 
-anc_anim 53 1 1 30 false
+anc_anim 4 1 1 20 false
 
-##locks_hack
+##scroll
+
+anc_anim 8 1 1 30 false
+
+##scroll_
+
+anc_anim 4 1 1 1 false
+
+##sparks
 
 anc_anim 16 4 4 30 false
 
-##muzzleflash4side
+##static
 
-anc_anim 4 2 2 30 false
-
-##expf
-
-anc_anim 27 2 2 69 false
-
-##decal_waypoint
-
-anc_anim 32 4 4 30 false
-
-##cell_rail_sprite
-
-anc_anim 16 4 4 32 false
+anc_anim 4 1 1 20 false
 
 ##swamp_water
 
 anc_anim 15 1 1 8 true
 
-##decal_bluedeath
+##tank_ortho_
 
-anc_anim 32 4 4 30 false
+anc_anim 4 2 2 1 false
 
-##orb_shuttle_lights_
+##test_anim
 
-anc_anim 4 2 2 8 false
+anc_anim 40 1 1 30 false
 
-##decal_warpgate_pass
+##trya
 
-anc_anim 32 4 4 30 false
+anc_anim 8 1 1 16 false
 
-##explosion
+##vrgrid
 
-anc_anim 53 2 2 60 false
+anc_anim 16 4 4 15 false
+
+##vrtgrid
+
+anc_anim 16 1 1 5 true
+
+##warp0
+
+anc_anim 60 2 2 30 false
+
+##watr
+
+anc_anim 30 1 1 20 false
+
+##xmas_tree_lites
+
+anc_anim 4 1 1 8 false
+
+##zap
+
+anc_anim 20 1 1 20 false

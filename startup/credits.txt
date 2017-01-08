@@ -1,3 +1,408 @@
+<heading>PLANETSIDE: AFTERSHOCK CREDITS
+
+<title>Project Manager
+Thom Terrazas
+
+<title>Producer
+Alex von Minden
+
+<title>Associate Producer
+Raja Altenhoff
+
+<title>Creative Director
+Dave Georgeson
+
+<title>Designer
+Terrence Yee
+
+<title>Lead Programmer
+Roy Fleck
+
+<title>Programmers
+Christian Ebbecke, Brad Heinz, Dave Kish
+Scott Musler, Don Neufeld, Adam Polomchak, 
+Matthew Stelzer, Eric Swanson, 
+Robert Trickey, Stephen Wang
+
+<title>Art Director
+Tramell Ray Isaac
+
+<title>Artists
+Fisa Castellanos, Mike Chubb, Patrick Dailey, 
+Niraj Desai, Arash Keissammi, Joe Marullo,
+Scott McDaniel, Victor Soto, Josh Robinson, 
+Lance Thornblad, Ian Wall, Jason Webb
+
+<title>Art Interns
+Dimitri Berman, Victor Soto
+
+<title>Community Relations Manager
+Victor Wachter
+
+<heading>SOUND EFFECTS
+<title>PCB Productions
+
+<title>Director of Audio
+Keith Arem
+
+<title>Sound Design
+Keith Arem
+Stuart Provine
+
+<title>Dialog Editorial
+Jesse Kovarovics
+
+<title>VO Recorded at 
+PCB Studios, California
+
+<heading>MUSIC
+
+Composed and Recorded by Don Ferrone
+Sounds included in this recording are from 
+the Percussive Adventures Sound Library, 
+produced by Christopher Page for 
+East-West Communications, Inc.
+Orchestral samples included in this 
+recording from the Vienna Symphonic Library
+
+<heading>STUDIO MANAGEMENT
+
+<title>Executive Producer
+Nicholas Beliaeff
+
+<title>Vice President, Development
+Rod Humble
+
+<title>Director of Development
+John Donham
+
+<title>Studio One Executive Assistant
+Fannie Gunton, Bianca Diaz
+
+<heading>TECHNICAL OPERATIONS
+
+<title>Executive Director
+Michael Bowen
+
+<title>Project Management
+Cameron Enfinger, Marie Harrington
+
+<title>Director of Production Systems
+Mark Preston
+
+<title>Production Systems Team
+David Corning, Bryan Glogowski, Sid Jaffee, 
+Kirk Lightfoot, Kevin Ying
+
+<title>Director of Network Engineering
+Dani Roisman
+
+<title>Network Engineering Team
+Brett Hawn, Geoff Wade
+
+<title>Director of SOE Security
+Bryan Blank
+
+<title>Manager of Office Operations
+Jeff Bolaris
+
+<title>Office Operations Team
+Lisa Doleshal, Michael Hardman, 
+Jonathan Rad, Domenico Scaduto, 
+Jeremy Siprelle, Loren G. Skeels 
+
+<title>Manager of Operations
+Jeremy Johnson
+
+<title>Operations Team Leads
+Steven Davis, Thomas Delzer, 
+Greg Herzbrun, Rob Matzker, David Prestin
+
+<title>Operations Team
+Ben Cole, Eric Flynn, Anthony Gervais, 
+Rob Matzker, Robert Maul, Chris Richard, 
+Roger Sewell, Chris Trichel, Jesus Zarzosa
+
+<title>Manager of Operational Engineering
+Wilson Yeung
+
+<title>Operational Engineering Developers
+Jordan Albert, Timothy Arland, Chad Folz, 
+Ted Garrington, Dan Gorman, Jeff Jones, 
+Patrick McCuller, David Taylor, 
+Gordon Tetlow, Matthew Reynolds, 
+Casey Winn
+
+<title>Installer
+Patrick McCuller, Casey Winn
+
+<title>Launchpad
+Dan Gorman
+
+<heading>SALES AND MARKETING
+
+<title>Senior Vice President of Sales
+Don Vercelli
+
+<title>Vice President of Marketing
+Michael Lustenberger
+
+<title>Director of Public Relations
+Chris Kramer
+
+<title>Product Marketing Manager
+Christopher E. Sturr
+
+<title>Public Relations Manager
+Sean Kauppinen
+
+<title>Marketing Coordinator
+Christina Greenberg
+
+<title>Sales & Marketing Team
+Jen Belfield, Casey Dickenson, 
+Kirsten Kinney, Mike Meyer, Laura Naviaux, 
+Brian Patience, Tamara Sanderson, 
+Thomas Taylor, Katie Thomas, 
+DebySue Wolfcale, Lauren Zeiger, Ari Ziegel
+
+<heading>PLATFORM SERVICES
+
+<title>Vice President of Technology
+Christopher Yates
+
+<title>Director of Platform Engineering
+David Dhunjishaw
+
+<title>Project Management
+Bonnie Davison, Wayne Kao, Jenne McPherson 
+
+<title>Manager of Application Engineering
+Mick Giles
+
+<title>Application Engineering Team
+Pierce Courtney, David Keene, Devon Kim, 
+Duy Le, Grant Olson, Jason Parrott, 
+Michael W. Tucker II, John Van Roekel
+
+<title>Manager of Systems Engineering
+Thomas Farthing
+
+<title>Systems Engineering Team
+Brian Buhr, Ron Grierson, Pablo Herrero, 
+Graeme Ing, Bob Kline, Tavish Margers, 
+Jose Rodriguez, Chris Rosa, Rick Smith
+
+<title>Creative Director, Web Presence
+Nathan Pearce
+
+<title>Director of Operations, Web Presence
+Greg Short
+
+<title>Project Manager
+Steve Fuller
+
+<title>Content Team
+Elliot Feldman, Adam Stevens 
+
+<title>Web Production Team
+Travis Ball, Tim Cox, Nick Davison, Tim Dunn, 
+Monte Greene, Dan Jones, Jacob Robinson, 
+Paul Tighe
+
+<title>Director of Database Services
+Deepak Thapliyal
+
+<title>Database Services Team
+Natik Ameen, David Green, John McGovern, 
+Archana Pansuria, Taylor Steil, 
+Aaron Valdes, Stefan Ward
+
+<title>Station Store Management
+Bonnie Davison 
+
+<heading>INTERNATIONAL OPERATIONS
+<title>Director of International Operations
+Matt Sivertson
+
+<title>Localization Managers
+David Kim, Stacey Sofia-McDaniel
+
+<title>Technical Lead for International Operations 
+Bill Mauer
+
+<title>Localization Team
+Stacy Griebel, Christopher Lee, 
+Robert McEntee, Jason Polk, Steven Riley
+
+<heading>CUSTOMER SERV. & QUALITY ASSURANCE
+
+<title>Vice President of Customer Service and Quality Assurance
+George Scotto
+
+<title>Director of Quality Assurance
+Tony Rado
+
+<title>Quality Assurance Manager
+Ed Hocking
+
+<title>Quality Assurance Supervisors
+Jason Boone, Will Figgins, Rob Thompson
+
+<title>Technical Liaison
+Jennifer Gerull
+
+<title>PlanetSide Quality Assurance Team
+Saurabh Arora, Brian Bosch, Chris Fritchoff,
+Pramod Lohani, Shashank Mathur, 
+Narendra Singh, Eric Sison, Francis Xavier
+
+<title>Compatibility Lab Lead Tester
+Ryan Antonelli
+
+<title>Compatibility Lab Testers
+Gary Binkley, Chris Johnson, Todd Luttmers
+
+<title>Platform Quality Assurance Lead
+Carl Flaherty
+
+<title>Platform Quality Assurance Testers
+Heather Guthridge, Eric Shell, Emily Smith, 
+Adam Stevens
+
+<title>Executive Director of In-Game Support
+D. Scott Mattson
+
+<title>Customer Service Manager
+Gary Matthews
+
+<title>In-Game Customer Service Supervisor
+Tom Lockard
+
+<title>In-Game Customer Service Representatives
+Johnny Ah Sue, Dan Binter, Chris Lindsay
+
+<title>CS/QA Office Manager
+Brandie Brody
+
+<title>CS/QA Coordinator
+Allison Needham 
+
+<title>Training Specialists
+Justin Allen, Patrick Horne, Sean Michael, 
+Robert Nelson 
+
+<title>Director of Customer Service
+Thom Terrazas
+
+<title>Customer Service Manager
+Victor Ramirez
+
+<title>Technical Support Supervisors
+Gordon Dapkus, Nate Wright
+
+<title>Senior Technical Support Representatives
+Dan Clifford, Timothy Zarza
+
+<title>Technical Support Representatives
+David Bauer, Ron Corning, Robert Ellison, 
+Tony Flores, Brad Griffin, Shawn Holmes, 
+Geoffrey Kressel, Michael Lafond, 
+Derek Livingston, Rowena Luansing, 
+Aaron Mckenna, Joseph Nelson, Eric Rabelas, 
+Christopher Reeves, Stephen Rodgers, 
+Joel Sasaki, Jacob Thompson, Chad Toews
+
+<title>Customer Service Localization Manager
+Ima Somers
+
+<title>Customer Service Localization Specialists
+Ryan Robinson, Douglas Wright
+
+<heading>BUSINESS DEVELOPMENT
+
+<title>Business Development
+Cindy Armstrong, Louis Figueroa
+
+<heading>PRODUCT DEVELOPMENT
+
+<title>Director of Technology
+Rich Lawrence
+
+<title>Project Management
+Mike Gaylord
+
+<title>Senior Editor
+Clayton Kroh
+
+<heading>LEGAL DEPARTMENT
+
+<title>Vice President, Legal and Business Affairs
+Steve Weiss
+
+<title>Executive Director, Legal and Business Affairs
+Rick Herman
+
+<title>Staff Counsel
+Kelly Conway
+
+<title>Legal Administrator
+Kate Estok-Wiesman
+
+<heading>EXECUTIVES - SONY ONLINE ENTERTAINMENT
+
+<title>Chairman of the Board
+Yair Landau
+
+<title>President
+John Smedley
+
+<title>Senior Vice President and Chief Operating Officer
+Russell Shanks
+
+<title>Senior Vice President and Chief Financial Officer
+John Needham
+
+<title>Chief Technology Officer
+Adam Joffe
+
+<title>Chief Creative Officer
+Raph Koster
+
+<title>Senior Vice President and General Counsel
+Andy Zaffron
+
+<title>Executive Assistants
+Krista Benson, Marsha Gygax, Pam Impson, 
+Christine Lena
+
+PlanetSide made with Karma Game 
+Dynamics. Math Engine, Karma and 
+The Math Engine and Karma Logos 
+are registered trademarks or
+trademarks of Math Engine PLC, 
+used under license
+ 
+PlanetSide uses Bink Video.
+©1997-2003 by RAD Game Tools, Inc.
+ 
+PlanetSide uses Granny Animation.
+©1999-2003 by RAD Game Tools, Inc.
+ 
+PlanetSide uses Miles Sound System.
+©1991-2003 by RAD Game Tools, Inc.
+ 
+Real-time voice communications powered 
+by TeamSound™, © 2000-2003, WiredRed Corporation. 
+TeamSound and the TeamSound logo are 
+trademarks of WiredRed Corporation. 
+All rights reserved. This software includes 
+voice compression provided by HawkVoice,
+copyright 2002 by Hawk Software. The full 
+source code to HawkVoice can be downloaded 
+from http://www.hawksoft.com
+
+
 <heading>PLANETSIDE: CORE COMBAT CREDITS
 
 <title>Executive Producers
@@ -6,6 +411,7 @@ Gordon Walton
 
 <title>Producer
 Dallas "TSlothrop" Dickinson
+Raj Altenhoff
 
 <title>Project Manager
 Mike "Stelmo" Gaylord
@@ -40,6 +446,7 @@ Bob "Condor" Mitchell
 Scott "NothingMan" Musler
 Robert "SitDog" Sitton
 Stephen "TheMotherB!&@$" Wang
+Eric "Syzygy" Swanson
 
 <title>Art Team
 Doug "EZpickins" Batson
@@ -54,6 +461,8 @@ Andrew "rogue13" Risch
 Josh "theFerret" Robinson
 Lance Thornblad
 Jason "Spyder" Webb
+Mort D. Muss
+Richard James Bei
 
 <title>Designer
 Terrence "SolisInvictis" Yee
@@ -389,6 +798,7 @@ Andrew "rogue13" Risch
 Josh "theFerret" Robinson
 Lance Thornblad
 Jason "Spyder" Webb
+Ian Wall
 
 <title>Designer
 Terrence "SolisInvictis" Yee
@@ -430,7 +840,7 @@ Chris "Freakshot" Woodum
 <heading>VOICE IP/API
 
 Real-time voice communications 
-powered by TeamSound™, 
+powered by TeamSound (TM), 
 © 2000-2003, WiredRed Corporation. 
 TeamSound and the TeamSound logo are
 trademarks of WiredRed Corporation. 
@@ -751,7 +1161,6 @@ properties of their respective owners.
 
 © 2003 Sony Online Entertainment Inc.
 All rights reserved.
-
 
 
 

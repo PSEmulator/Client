@@ -15,6 +15,8 @@
 <FontCharacter Advance='34' Code='77' Name='M - Not looking' SourceFile='ui_font_misc_2_00' SourceRect='0,0,34,26'/>
 <FontCharacter Advance='17' Code='78' Name='N - Voice Connected' SourceFile='ui_font_misc_2_00' SourceRect='33,1,50,19'/>
 <FontCharacter Advance='9' Code='79' Name='O - Voice Host' SourceFile='ui_font_misc_2_00' SourceRect='34,26,43,44'/>
+<FontCharacter Advance='34' Code='80' Name='P - SquadWaypoint' SourceFile='ui_overhead_waypoints' SourceRect='23,42,39,63'/>
+<FontCharacter Advance='34' Code='81' Name='Q - SquadWaypointBevel' SourceFile='ui_overhead_waypoints' SourceRect='41,42,57,63'/>
 </TextStyle>
 <TextStyle Leading='21' Name='TabIcons'>
 <FontCharacter Advance='42' Code='65' Name='A - Certifications' SourceFile='ui_font_tabs_1_00' SourceRect='0,0,42,21'/>

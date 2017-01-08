@@ -1,0 +1,3809 @@
+################################################
+# frame hit detection sphere info
+################################################
+
+################################################
+frame_hit_detection_type aphelion
+
+sphere_cookie   left_calf_lower
+sphere_radius   0.540
+sphere_bone_tie leftshin
+sphere_offset   -0.120 0.000 -1.280
+sphere_end_info
+
+sphere_cookie   left_calf_upper
+sphere_radius   0.500
+sphere_bone_tie leftshin
+sphere_offset   -0.150 0.000 -0.440
+sphere_end_info
+
+sphere_cookie   right_calf_lower
+sphere_radius   0.540
+sphere_bone_tie rightshin
+sphere_offset   -0.120 0.000 -1.280
+sphere_end_info
+
+sphere_cookie   right_calf_upper
+sphere_radius   0.500
+sphere_bone_tie rightshin
+sphere_offset   -0.150 0.000 -0.440
+sphere_end_info
+
+sphere_cookie   left_thigh_lower
+sphere_radius   0.450
+sphere_bone_tie leftthigh
+sphere_offset   0.050 -0.050 -1.000
+sphere_end_info
+
+sphere_cookie   right_thigh_lower
+sphere_radius   0.450
+sphere_bone_tie rightthigh
+sphere_offset   0.050 0.050 -1.000
+sphere_end_info
+
+sphere_cookie   left_thigh_upper
+sphere_radius   0.510
+sphere_bone_tie leftthigh
+sphere_offset   0.000 -0.050 -0.200
+sphere_end_info
+
+sphere_cookie   right_thigh_upper
+sphere_radius   0.510
+sphere_bone_tie rightthigh
+sphere_offset   0.000 0.050 -0.200
+sphere_end_info
+
+sphere_cookie   pelvis
+sphere_radius   0.610
+sphere_bone_tie hips
+sphere_offset   0.090 0.000 -0.080
+sphere_end_info
+
+sphere_cookie   chest
+sphere_radius   1.030
+sphere_bone_tie torso
+sphere_offset   0.090 0.000 1.060
+sphere_end_info
+
+sphere_cookie   head
+sphere_radius   0.500
+sphere_bone_tie head
+sphere_offset   0.010 0.000 0.080
+sphere_end_info
+
+sphere_cookie   left_shoulder
+sphere_radius   0.500
+sphere_bone_tie leftshoulder
+sphere_offset   0.000 0.320 -0.060
+sphere_end_info
+
+sphere_cookie   right_shoulder
+sphere_radius   0.500
+sphere_bone_tie rightshoulder
+sphere_offset   0.000 -0.320 -0.060
+sphere_end_info
+
+sphere_cookie   left_bicep
+sphere_radius   0.500
+sphere_bone_tie leftupperarm
+sphere_offset   0.000 0.060 -1.040
+sphere_end_info
+
+sphere_cookie   right_bicep
+sphere_radius   0.500
+sphere_bone_tie rightupperarm
+sphere_offset   0.000 -0.060 -1.040
+sphere_end_info
+
+sphere_cookie   shield
+sphere_radius   5.000
+sphere_bone_tie torso
+sphere_offset   0.230 0.000 -0.980
+sphere_shield
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_air_pack
+
+sphere_cookie   barrela
+sphere_radius   0.940
+sphere_bone_tie aphelion_air_pack
+sphere_offset   -0.270 0.000 0.770
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.940
+sphere_bone_tie aphelion_air_pack
+sphere_offset   -0.640 0.000 1.340
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.560
+sphere_bone_tie left_winga
+sphere_offset   0.000 0.490 -0.140
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.560
+sphere_bone_tie left_wingc
+sphere_offset   0.000 -0.490 -0.140
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.400
+sphere_bone_tie left_wingb
+sphere_offset   -0.090 0.200 -0.500
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.350
+sphere_bone_tie left_wingd
+sphere_offset   -0.090 -0.200 -0.500
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.400
+sphere_bone_tie left_wingb
+sphere_offset   -0.090 0.200 -1.130
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.400
+sphere_bone_tie left_wingd
+sphere_offset   -0.090 -0.200 -1.130
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.400
+sphere_bone_tie left_wingb
+sphere_offset   -0.090 0.160 -1.760
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.400
+sphere_bone_tie left_wingd
+sphere_offset   -0.090 -0.180 -1.760
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.400
+sphere_bone_tie left_wingb
+sphere_offset   -0.090 0.120 -2.440
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.400
+sphere_bone_tie left_wingd
+sphere_offset   -0.090 -0.120 -2.440
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_armor_siphon
+
+sphere_cookie   barrela
+sphere_radius   0.230
+sphere_bone_tie barrel
+sphere_offset   0.330 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.230
+sphere_bone_tie barrel
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.300
+sphere_bone_tie barrel
+sphere_offset   -0.270 0.000 -0.030
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.340
+sphere_bone_tie barrel
+sphere_offset   -0.560 0.000 -0.070
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.340
+sphere_bone_tie barrel
+sphere_offset   -0.970 0.000 -0.070
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.370
+sphere_bone_tie barrel
+sphere_offset   -1.420 0.000 -0.090
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.370
+sphere_bone_tie barrel
+sphere_offset   -1.920 0.000 -0.080
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.300
+sphere_bone_tie aphelion_armor_siphon
+sphere_offset   0.290 0.000 -0.250
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.300
+sphere_bone_tie aphelion_armor_siphon
+sphere_offset   -0.190 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.360
+sphere_bone_tie null
+sphere_offset   0.000 0.000 0.090
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_armor_siphon_left
+duplicate aphelion_armor_siphon
+
+################################################
+frame_hit_detection_type aphelion_armor_siphon_right
+duplicate aphelion_armor_siphon
+
+################################################
+frame_hit_detection_type aphelion_continuous_laser
+
+sphere_cookie   barrela
+sphere_radius   0.420
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.260 0.000 0.080
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.460
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.690 0.000 0.150
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.460
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.250 0.000 0.180
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.560 0.000 0.430
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.940 0.000 0.040
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.100 0.000 0.450
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.380
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   0.400 0.000 -0.800
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.380
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   -0.110 0.000 -0.780
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.380
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   -0.560 0.000 -0.800
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.380
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   -0.600 0.000 -0.580
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.360
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   0.010 0.000 -0.310
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.360
+sphere_bone_tie aphelion_continuous_laser
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_continuous_laser_left
+duplicate aphelion_continuous_laser
+
+################################################
+frame_hit_detection_type aphelion_continuous_laser_right
+duplicate aphelion_continuous_laser
+
+################################################
+frame_hit_detection_type aphelion_generator
+
+shield_generator
+sphere_cookie   a
+sphere_radius   0.330
+sphere_bone_tie aphelion_generator
+sphere_offset   -0.270 0.000 0.020
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_ground_pack
+
+sphere_cookie   barrela
+sphere_radius   0.560
+sphere_bone_tie aphelion_ground_pack
+sphere_offset   0.000 -0.600 0.460
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.560
+sphere_bone_tie aphelion_ground_pack
+sphere_offset   0.000 0.600 0.460
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.560
+sphere_bone_tie aphelion_ground_pack
+sphere_offset   -0.420 -0.510 0.690
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.560
+sphere_bone_tie aphelion_ground_pack
+sphere_offset   -0.420 0.520 0.690
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.800
+sphere_bone_tie aphelion_ground_pack
+sphere_offset   -0.490 0.000 0.610
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.650
+sphere_bone_tie ef_steamrelease_left
+sphere_offset   0.650 -0.140 0.100
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.650
+sphere_bone_tie ef_steamrelease_right
+sphere_offset   0.440 0.140 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.560
+sphere_bone_tie weapon_base
+sphere_offset   -0.360 0.000 -0.380
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.460
+sphere_bone_tie weapon_base
+sphere_offset   0.240 -0.650 -0.240
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.460
+sphere_bone_tie weapon_base
+sphere_offset   0.240 0.650 -0.240
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_immolation_cannon
+
+sphere_cookie   barrela
+sphere_radius   0.300
+sphere_bone_tie aphelion_immolation_cannon_main
+sphere_offset   0.180 -0.020 0.100
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.300
+sphere_bone_tie aphelion_immolation_cannon_main
+sphere_offset   0.620 0.000 0.100
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.300
+sphere_bone_tie aphelion_immolation_cannon_main
+sphere_offset   0.580 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.340
+sphere_bone_tie aphelion_immolation_cannon_main
+sphere_offset   0.880 0.000 0.470
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.300
+sphere_bone_tie barrel
+sphere_offset   -0.200 0.000 -0.160
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.250
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.390 0.000 0.120
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.140 0.000 0.010
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.110
+sphere_bone_tie aphelion_immolation_cannon
+sphere_offset   0.210 0.000 0.920
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_ntu_siphon
+
+sphere_cookie   barrela
+sphere_radius   0.300
+sphere_bone_tie barrel
+sphere_offset   0.670 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.300
+sphere_bone_tie barrel
+sphere_offset   0.250 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.360
+sphere_bone_tie barrel
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.410
+sphere_bone_tie barrel
+sphere_offset   -0.450 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.410
+sphere_bone_tie barrel
+sphere_offset   -1.000 0.000 -0.080
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.410
+sphere_bone_tie barrel
+sphere_offset   -1.560 0.000 -0.050
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.360
+sphere_bone_tie barrel
+sphere_offset   -2.090 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.300
+sphere_bone_tie aphelion_ntu_siphon
+sphere_offset   -0.200 0.000 -0.280
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.300
+sphere_bone_tie aphelion_ntu_siphon
+sphere_offset   0.200 0.000 -0.280
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.410
+sphere_bone_tie aphelion_ntu_siphon
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_ntu_siphon_left
+duplicate aphelion_ntu_siphon
+
+################################################
+frame_hit_detection_type aphelion_ntu_siphon_right
+duplicate aphelion_ntu_siphon
+
+################################################
+frame_hit_detection_type aphelion_particle_cannon
+
+sphere_cookie   barrela
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.220 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.410
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.620 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.300
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.000 0.000 0.070
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.260
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.350 0.000 0.050
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.260
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.730 0.000 0.080
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.200 0.000 0.080
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.280
+sphere_bone_tie aphelion_particle_cannon
+sphere_offset   0.020 0.000 0.560
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.280
+sphere_bone_tie aphelion_particle_cannon
+sphere_offset   0.240 0.000 0.670
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.220
+sphere_bone_tie aphelion_particle_cannon
+sphere_offset   0.000 0.000 0.140
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_pulse_gun
+
+sphere_cookie   barrela
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.250 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.250 0.000 -0.510
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.630 0.000 0.150
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.790 0.000 -0.330
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.040 0.000 0.080
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.200 0.000 -0.360
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.380
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.420 0.000 -0.260
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.350
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.850 0.000 -0.170
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.350
+sphere_bone_tie aphelion_pulse_gun
+sphere_offset   0.350 0.000 -0.560
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.350
+sphere_bone_tie aphelion_pulse_gun
+sphere_offset   0.340 0.000 -0.910
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.350
+sphere_bone_tie aphelion_pulse_gun
+sphere_offset   -0.020 0.000 -0.700
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.350
+sphere_bone_tie aphelion_pulse_gun
+sphere_offset   -0.170 0.000 -0.520
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.350
+sphere_bone_tie aphelion_pulse_gun
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_pulse_gun_left
+duplicate aphelion_pulse_gun
+
+################################################
+frame_hit_detection_type aphelion_pulse_gun_right
+duplicate aphelion_pulse_gun
+
+################################################
+frame_hit_detection_type aphelion_rocket_launcher
+
+sphere_cookie   barrela
+sphere_radius   0.450
+sphere_bone_tie ef_muzzlea
+sphere_offset   0.020 0.000 0.080
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlee
+sphere_offset   -0.200 0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlec
+sphere_offset   -0.200 -0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlee
+sphere_offset   -0.490 0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlec
+sphere_offset   -0.490 -0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlee
+sphere_offset   -0.700 0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlec
+sphere_offset   -0.700 -0.090 -0.020
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.170
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.190 -0.230 0.280
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.170
+sphere_bone_tie ef_muzzled
+sphere_offset   -0.140 0.230 0.280
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.170
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.480 -0.280 0.280
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.170
+sphere_bone_tie ef_muzzled
+sphere_offset   -0.410 0.230 0.270
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.170
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.710 -0.230 0.260
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.170
+sphere_bone_tie ef_muzzled
+sphere_offset   -0.710 0.230 0.260
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.350
+sphere_bone_tie aphelion_rocket_launcher_main
+sphere_offset   0.130 0.000 0.440
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.180
+sphere_bone_tie arm_bot
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.180
+sphere_bone_tie arm_bot
+sphere_offset   -0.260 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.180
+sphere_bone_tie arm_top
+sphere_offset   0.210 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.130
+sphere_bone_tie arm_top
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_starfire_pod
+
+sphere_cookie   barrela
+sphere_radius   0.410
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.320 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.410
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.770 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.410
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.180 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.410
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.560 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.390
+sphere_bone_tie aphelion_starfire_pod
+sphere_offset   0.570 0.000 -0.490
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.330
+sphere_bone_tie aphelion_starfire_pod
+sphere_offset   0.130 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.430
+sphere_bone_tie aphelion_starfire_pod
+sphere_offset   0.040 0.000 0.020
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_starfire_pod_left
+duplicate aphelion_starfire_pod
+
+################################################
+frame_hit_detection_type aphelion_starfire_pod_right
+duplicate aphelion_starfire_pod
+
+################################################
+frame_hit_detection_type aphelion_thruster_l
+
+sphere_cookie   barrelb
+sphere_radius   0.420
+sphere_bone_tie aphelion_thruster_l
+sphere_offset   -0.330 0.000 -0.650
+sphere_end_info
+
+sphere_cookie   barrela
+sphere_radius   0.420
+sphere_bone_tie aphelion_thruster_l
+sphere_offset   -0.490 -0.060 -0.970
+sphere_end_info
+
+################################################
+frame_hit_detection_type aphelion_thruster_r
+
+sphere_cookie   barrela
+sphere_radius   0.420
+sphere_bone_tie aphelion_thruster_r
+sphere_offset   -0.490 -0.060 -0.970
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.360
+sphere_bone_tie aphelion_thruster_r
+sphere_offset   -0.370 0.000 -0.600
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus
+
+sphere_cookie   left_knee
+sphere_radius   0.550
+sphere_bone_tie left_thigh
+sphere_offset   0.830 0.000 -1.000
+sphere_end_info
+
+sphere_cookie   left_knee_shin
+sphere_radius   0.460
+sphere_bone_tie left_shin
+sphere_offset   -0.800 0.000 -0.200
+sphere_end_info
+
+sphere_cookie   left_ankle
+sphere_radius   0.760
+sphere_bone_tie left_calf
+sphere_offset   -0.420 0.000 -0.140
+sphere_end_info
+
+sphere_cookie   left_foot
+sphere_radius   0.990
+sphere_bone_tie left_calf
+sphere_offset   0.000 0.000 -1.500
+sphere_end_info
+
+sphere_cookie   left_toes
+sphere_radius   0.600
+sphere_bone_tie left_toe
+sphere_offset   0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   left_thigh
+sphere_radius   0.700
+sphere_bone_tie left_thigh
+sphere_offset   0.270 0.000 -0.230
+sphere_end_info
+
+sphere_cookie   right_ankle
+sphere_radius   0.760
+sphere_bone_tie right_calf
+sphere_offset   -0.420 0.000 -0.140
+sphere_end_info
+
+sphere_cookie   right_foot
+sphere_radius   0.990
+sphere_bone_tie right_calf
+sphere_offset   0.000 0.000 -1.500
+sphere_end_info
+
+sphere_cookie   right_knee
+sphere_radius   0.550
+sphere_bone_tie right_thigh
+sphere_offset   0.830 0.000 -1.000
+sphere_end_info
+
+sphere_cookie   right_knee_shin
+sphere_radius   0.460
+sphere_bone_tie right_shin
+sphere_offset   -0.800 0.000 -0.200
+sphere_end_info
+
+sphere_cookie   right_thigh
+sphere_radius   0.700
+sphere_bone_tie right_thigh
+sphere_offset   0.270 0.000 -0.230
+sphere_end_info
+
+sphere_cookie   right_toes
+sphere_radius   0.600
+sphere_bone_tie right_toe
+sphere_offset   0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   head
+sphere_radius   1.500
+sphere_bone_tie colossus_frame
+sphere_offset   0.500 0.000 1.000
+sphere_end_info
+
+sphere_cookie   head_rear
+sphere_radius   1.500
+sphere_bone_tie colossus_frame
+sphere_offset   -1.000 0.000 1.000
+sphere_end_info
+
+sphere_cookie   left_gun_rear
+sphere_radius   0.700
+sphere_bone_tie colossus_frame
+sphere_offset   -0.900 1.430 0.080
+sphere_end_info
+
+sphere_cookie   left_gun_mid
+sphere_radius   0.700
+sphere_bone_tie colossus_frame
+sphere_offset   0.150 1.430 -0.100
+sphere_end_info
+
+sphere_cookie   left_gun_front
+sphere_radius   0.600
+sphere_bone_tie colossus_frame
+sphere_offset   0.910 1.430 -0.380
+sphere_end_info
+
+sphere_cookie   right_gun_front
+sphere_radius   0.600
+sphere_bone_tie colossus_frame
+sphere_offset   0.910 -1.430 -0.380
+sphere_end_info
+
+sphere_cookie   right_gun_mid
+sphere_radius   0.700
+sphere_bone_tie colossus_frame
+sphere_offset   0.150 -1.430 -0.100
+sphere_end_info
+
+sphere_cookie   right_gun_rear
+sphere_radius   0.700
+sphere_bone_tie colossus_frame
+sphere_offset   -0.900 -1.430 0.080
+sphere_end_info
+
+sphere_cookie   left_ear
+sphere_radius   0.900
+sphere_bone_tie colossus_frame
+sphere_offset   -0.890 1.700 1.470
+sphere_end_info
+
+sphere_cookie   right_ear
+sphere_radius   0.900
+sphere_bone_tie colossus_frame
+sphere_offset   -0.890 -1.700 1.470
+sphere_end_info
+
+sphere_cookie   shield
+sphere_radius   5.000
+sphere_bone_tie colossus_frame
+sphere_offset   0.000 0.000 -0.680
+sphere_shield
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_armorsiphon_l
+
+sphere_cookie   barrela
+sphere_radius   0.200
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.070 -0.360 0.110
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.200
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.070 0.360 0.110
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.200
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.300 -0.360 0.110
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.200
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.290 0.350 0.110
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.250
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.600 -0.300 0.060
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.250
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.600 0.300 0.060
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.300
+sphere_bone_tie trneedlel
+sphere_offset   0.310 0.100 -0.030
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.330
+sphere_bone_tie trneedler
+sphere_offset   0.000 -0.070 -0.110
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.340
+sphere_bone_tie trneedler
+sphere_offset   -0.410 0.170 -0.090
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.340
+sphere_bone_tie trneedler
+sphere_offset   -0.410 -0.330 -0.090
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.340
+sphere_bone_tie trsiphon_resistor
+sphere_offset   -0.990 0.260 0.080
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.340
+sphere_bone_tie trsiphon_resistor
+sphere_offset   -0.990 -0.240 0.080
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.350
+sphere_bone_tie trsiphon_resistor
+sphere_offset   -1.570 -0.290 0.080
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.350
+sphere_bone_tie trsiphon_resistor
+sphere_offset   -1.600 0.300 0.080
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.350
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   -0.060 0.240 0.000
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.360
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   -0.220 0.380 0.000
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.370
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   -0.230 0.900 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.260
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   0.200 1.310 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.240
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   0.530 1.310 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.260
+sphere_bone_tie colossus_armorsiphon_l
+sphere_offset   0.940 1.310 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_armorsiphon_r
+
+sphere_cookie   barrela
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   -0.060 -0.420 0.060
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   0.000 0.420 0.060
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   -0.340 -0.420 0.060
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   -0.340 0.420 0.060
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   -0.590 0.420 0.060
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.220
+sphere_bone_tie muzzlea
+sphere_offset   -0.610 -0.420 0.060
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.350
+sphere_bone_tie trneedlel
+sphere_offset   0.200 -0.050 0.060
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.300
+sphere_bone_tie trneedlel
+sphere_offset   -0.310 0.180 -0.140
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.300
+sphere_bone_tie trneedlel
+sphere_offset   -0.310 -0.300 -0.140
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.300
+sphere_bone_tie trneedler
+sphere_offset   -0.780 -0.140 -0.140
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.300
+sphere_bone_tie trneedlel
+sphere_offset   -0.780 0.200 -0.140
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.300
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.810 -0.410 0.000
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.300
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.800 -0.930 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.300
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.300 -0.910 0.000
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.300
+sphere_bone_tie null
+sphere_offset   0.300 -0.360 0.000
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.230
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   -0.030 -0.090 0.000
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.320
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   -0.240 -0.880 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.340
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   -0.230 -0.380 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.240
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.170 -1.330 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.230
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.570 -1.330 0.000
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.230
+sphere_bone_tie colossus_armorsiphon_r
+sphere_offset   0.960 -1.330 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_cannon_l
+
+sphere_cookie   barrela
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.700 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.700 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.050 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.050 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.400 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.400 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   0.320 0.000 0.030
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   0.320 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -0.260 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -0.260 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -0.820 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -0.820 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -1.400 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -1.400 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -1.890 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -1.890 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -2.320 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -2.320 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.300
+sphere_bone_tie colossus_cannon_l
+sphere_offset   0.000 0.160 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_cannon_r
+
+sphere_cookie   barrela
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.240 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.240 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.600 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.600 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.960 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.960 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.330 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.233
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.330 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   0.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   0.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -0.820 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -0.820 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -1.380 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -1.380 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -1.920 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -1.920 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_top
+sphere_offset   -2.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.350
+sphere_bone_tie trcannon_barrel_bot
+sphere_offset   -2.300 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.300
+sphere_bone_tie colossus_cannon_r
+sphere_offset   0.000 -0.150 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_chaingun_l
+
+sphere_cookie   barrela
+sphere_radius   0.470
+sphere_bone_tie chaingunl_barrel
+sphere_offset   0.170 0.000 0.000
+sphere_end_info
+
+sphere_cookie   gear_rear
+sphere_radius   0.470
+sphere_bone_tie chaingunl_gearb
+sphere_offset   -0.430 0.000 -0.070
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.470
+sphere_bone_tie chaingunl_barrel
+sphere_offset   -0.440 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.470
+sphere_bone_tie chaingunl_barrel
+sphere_offset   -1.160 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.470
+sphere_bone_tie chaingunl_barrel
+sphere_offset   -1.910 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.470
+sphere_bone_tie chaingunl_barrel
+sphere_offset   -2.650 0.000 0.000
+sphere_end_info
+
+sphere_cookie   gear_fwd
+sphere_radius   0.470
+sphere_bone_tie chaingunl_gearb
+sphere_offset   0.310 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_chaingun_r
+
+sphere_cookie   barrela
+sphere_radius   0.470
+sphere_bone_tie chaingunr_barrel
+sphere_offset   0.190 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.480
+sphere_bone_tie chaingunr_barrel
+sphere_offset   -0.490 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.470
+sphere_bone_tie chaingunr_barrel
+sphere_offset   -1.160 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.470
+sphere_bone_tie chaingunr_geara
+sphere_offset   0.130 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.470
+sphere_bone_tie chaingunr_geara
+sphere_offset   -0.620 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.470
+sphere_bone_tie chaingunr_gearb
+sphere_offset   -0.490 0.110 -0.130
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.470
+sphere_bone_tie chaingunr_gearb
+sphere_offset   0.310 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_clustercannon_l
+
+sphere_cookie   barrela
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   2.910 0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   2.200 0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   1.440 0.780 0.040
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.580
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   0.660 0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.640
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   -0.180 0.720 0.040
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.310
+sphere_bone_tie colossus_clustercannon_l
+sphere_offset   -0.020 0.230 -0.020
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_clustercannon_r
+
+sphere_cookie   barrela
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   2.890 -0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   2.090 -0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   1.280 -0.780 0.040
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   0.520 -0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.560
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   -0.210 -0.780 0.040
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.330
+sphere_bone_tie colossus_clustercannon_r
+sphere_offset   -0.050 -0.200 0.040
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_flightpak
+
+sphere_cookie   barrela
+sphere_radius   0.610
+sphere_bone_tie ef_thrusta
+sphere_offset   -0.250 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.710
+sphere_bone_tie ef_thrusta
+sphere_offset   -0.780 0.000 0.030
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.480
+sphere_bone_tie ef_contraila
+sphere_offset   0.000 -0.500 -0.770
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.480
+sphere_bone_tie flight_body
+sphere_offset   -0.870 -0.340 0.560
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.480
+sphere_bone_tie flight_body
+sphere_offset   -0.870 0.280 0.560
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.610
+sphere_bone_tie ef_thrustb
+sphere_offset   -0.080 1.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.610
+sphere_bone_tie ef_thrustc
+sphere_offset   -0.080 -1.030 0.000
+sphere_end_info
+
+sphere_cookie   barrrelh
+sphere_radius   0.550
+sphere_bone_tie ef_thrustc
+sphere_offset   0.120 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.550
+sphere_bone_tie ef_thrustb
+sphere_offset   0.120 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.530
+sphere_bone_tie wingcoverb
+sphere_offset   1.110 -0.160 -0.580
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.530
+sphere_bone_tie wingcovera
+sphere_offset   1.110 0.160 -0.580
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.530
+sphere_bone_tie wingcovera
+sphere_offset   0.410 0.000 -0.260
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.530
+sphere_bone_tie wingcoverb
+sphere_offset   0.410 0.000 -0.260
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.530
+sphere_bone_tie wingcovera
+sphere_offset   -0.400 0.000 -0.150
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.530
+sphere_bone_tie wingcoverb
+sphere_offset   -0.400 0.000 -0.150
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.530
+sphere_bone_tie wingcovera
+sphere_offset   -1.140 0.000 -0.080
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.530
+sphere_bone_tie wingcoverb
+sphere_offset   -1.140 0.000 -0.080
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.470
+sphere_bone_tie wingcovera
+sphere_offset   -2.010 0.120 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.470
+sphere_bone_tie wingcoverb
+sphere_offset   -2.020 -0.120 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.420
+sphere_bone_tie wingcovera
+sphere_offset   -2.720 0.300 0.000
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.420
+sphere_bone_tie wingcoverb
+sphere_offset   -2.720 -0.250 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_gunnerpak
+
+sphere_cookie   barrela
+sphere_radius   1.000
+sphere_bone_tie gunner_seat
+sphere_offset   0.650 0.000 -0.310
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   1.000
+sphere_bone_tie gunner_seat
+sphere_offset   0.150 0.000 0.520
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.680
+sphere_bone_tie rear_telescope
+sphere_offset   1.000 0.660 -0.180
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.650
+sphere_bone_tie ef_damagea
+sphere_offset   1.290 -0.010 0.430
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.680
+sphere_bone_tie rear_telescope
+sphere_offset   1.000 -0.660 -0.180
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.360
+sphere_bone_tie colossus_gunnerpak
+sphere_offset   -0.410 -1.650 0.670
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.360
+sphere_bone_tie colossus_gunnerpak
+sphere_offset   -0.410 1.650 0.670
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   1.000 0.300 -0.670
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   1.000 -0.890 -0.670
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   1.760 0.260 -0.700
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   1.760 -0.830 -0.700
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   2.570 0.120 -0.830
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   2.570 -0.760 -0.830
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   3.320 0.020 -1.150
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.530
+sphere_bone_tie ef_damageb
+sphere_offset   3.320 -0.610 -1.150
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_legrocket_l
+
+sphere_cookie   barrela
+sphere_radius   0.330
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.650 0.460 -0.790
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.330
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.650 -0.460 -0.790
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.360
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.450 0.550 -1.320
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.360
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.450 -0.550 -1.320
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.330
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.400 0.670 -1.810
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.330
+sphere_bone_tie colossus_legrocket_l
+sphere_offset   -0.400 -0.670 -1.810
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_legrocket_r
+
+sphere_cookie   barrela
+sphere_radius   0.360
+sphere_bone_tie colossus_legrocket_r
+sphere_offset   -0.620 0.460 -0.840
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.360
+sphere_bone_tie null
+sphere_offset   -0.620 -0.460 -0.780
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.360
+sphere_bone_tie colossus_legrocket_r
+sphere_offset   -0.450 0.540 -1.350
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.360
+sphere_bone_tie colossus_legrocket_r
+sphere_offset   -0.450 -0.540 -1.350
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.300
+sphere_bone_tie colossus_legrocket_r
+sphere_offset   -0.450 0.690 -1.800
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.300
+sphere_bone_tie colossus_legrocket_r
+sphere_offset   -0.420 -0.690 -1.800
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_ntusiphon_l
+
+sphere_cookie   barrela
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.240 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.240 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.670 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.670 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.080 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.080 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.520 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.520 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.940 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.940 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.320
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.450 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.320
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.450 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.240
+sphere_bone_tie colossus_ntusiphon_l
+sphere_offset   0.000 0.110 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.320
+sphere_bone_tie colossus_ntusiphon_l
+sphere_offset   -0.080 0.770 -0.060
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.320
+sphere_bone_tie null
+sphere_offset   0.380 0.770 -0.060
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.320
+sphere_bone_tie colossus_ntusiphon_l
+sphere_offset   0.850 0.770 -0.060
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_ntusiphon_r
+
+sphere_cookie   barrela
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.240 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.240 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.660 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.283
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.660 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.080 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.080 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.520 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.280
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.520 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.290
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.990 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.290
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.990 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.310
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.500 0.000 0.240
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.310
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.500 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.220
+sphere_bone_tie colossus_ntusiphon_r
+sphere_offset   0.000 -0.080 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.320
+sphere_bone_tie null
+sphere_offset   -0.050 -0.750 -0.060
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.320
+sphere_bone_tie colossus_ntusiphon_r
+sphere_offset   0.420 -0.750 -0.060
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.320
+sphere_bone_tie null
+sphere_offset   0.850 -0.750 -0.060
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_pod_cannon
+
+sphere_cookie   barrela
+sphere_radius   0.200
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.190 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.200
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.190 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.220
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.480 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.220
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.480 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.850 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.250
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.850 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.260 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.260 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.650 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.650 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.080 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -2.080 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.500 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.230
+sphere_bone_tie ef_muzzleb
+sphere_offset   -2.500 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.260
+sphere_bone_tie ef_muzzlea
+sphere_offset   -2.900 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.260
+sphere_bone_tie ef_muzzleb
+sphere_offset   -2.900 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.290
+sphere_bone_tie trcannon_barrell
+sphere_offset   -0.650 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.290
+sphere_bone_tie trcannon_barrelr
+sphere_offset   -0.650 -0.030 0.000
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.460
+sphere_bone_tie trcannon_housingl
+sphere_offset   1.060 0.260 0.100
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.460
+sphere_bone_tie trcannon_housingr
+sphere_offset   1.060 -0.260 0.100
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.460
+sphere_bone_tie trcannon_housingl
+sphere_offset   0.350 0.340 0.140
+sphere_end_info
+
+sphere_cookie   barrelv
+sphere_radius   0.460
+sphere_bone_tie trcannon_housingr
+sphere_offset   0.350 -0.340 0.140
+sphere_end_info
+
+sphere_cookie   barrelw
+sphere_radius   0.460
+sphere_bone_tie trcannon_housingl
+sphere_offset   -0.350 0.280 0.200
+sphere_end_info
+
+sphere_cookie   barrelx
+sphere_radius   0.430
+sphere_bone_tie trcannon_housingr
+sphere_offset   -0.350 -0.280 0.200
+sphere_end_info
+
+sphere_cookie   barrely
+sphere_radius   0.550
+sphere_bone_tie trcannon_support
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelz
+sphere_radius   0.650
+sphere_bone_tie colossus_pod_cannon
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   shield
+sphere_radius   2.450
+sphere_bone_tie trcannon_support
+sphere_offset   2.820 -0.040 0.000
+sphere_shield
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_rocketpod
+
+sphere_cookie   barrela
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   0.570 -0.210 -0.150
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   0.590 0.210 -0.150
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.420
+sphere_bone_tie pod_housing
+sphere_offset   0.040 0.000 -0.150
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   0.010 -0.650 -0.150
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   0.000 0.650 -0.150
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   -0.450 0.320 -0.150
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.320
+sphere_bone_tie pod_housing
+sphere_offset   -0.450 -0.320 -0.150
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.240
+sphere_bone_tie pod_housing
+sphere_offset   -0.770 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.200
+sphere_bone_tie pod_housing
+sphere_offset   -0.850 0.310 -0.150
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.200
+sphere_bone_tie pod_housing
+sphere_offset   -0.850 -0.340 -0.150
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.480
+sphere_bone_tie pod_sideflapl
+sphere_offset   0.560 -0.130 0.150
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.480
+sphere_bone_tie pod_sideflapr
+sphere_offset   0.560 0.130 0.150
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.420
+sphere_bone_tie pod_sideflapl
+sphere_offset   -0.030 -0.130 0.150
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.420
+sphere_bone_tie pod_sideflapr
+sphere_offset   -0.030 0.130 0.150
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.420
+sphere_bone_tie pod_sideflapl
+sphere_offset   -0.600 -0.130 0.150
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.420
+sphere_bone_tie pod_sideflapr
+sphere_offset   -0.600 0.130 0.150
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.560
+sphere_bone_tie pod_sideflapr
+sphere_offset   0.560 0.950 0.110
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.560
+sphere_bone_tie pod_sideflapr
+sphere_offset   -0.560 0.940 0.110
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.560
+sphere_bone_tie pod_sideflapl
+sphere_offset   0.560 -0.950 0.110
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.560
+sphere_bone_tie pod_sideflapl
+sphere_offset   -0.420 -0.950 0.110
+sphere_end_info
+
+################################################
+frame_hit_detection_type colossus_shieldgenerator
+
+shield_generator
+sphere_cookie   a
+sphere_radius   0.550
+sphere_bone_tie colossus_shieldgenerator
+sphere_offset   -1.440 -1.440 0.340
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine
+
+sphere_cookie   left_foot
+sphere_radius   0.890
+sphere_bone_tie foot_left
+sphere_offset   0.790 0.150 -1.620
+sphere_end_info
+
+sphere_cookie   left_calf
+sphere_radius   0.860
+sphere_bone_tie foot_left
+sphere_offset   0.230 0.150 -0.330
+sphere_end_info
+
+sphere_cookie   right_foot
+sphere_radius   0.890
+sphere_bone_tie foot_right
+sphere_offset   0.790 -0.150 -1.620
+sphere_end_info
+
+sphere_cookie   left_knee
+sphere_radius   0.950
+sphere_bone_tie leg_shin_left
+sphere_offset   0.000 0.150 0.000
+sphere_end_info
+
+sphere_cookie   right_calf
+sphere_radius   0.860
+sphere_bone_tie foot_right
+sphere_offset   0.230 -0.150 -0.330
+sphere_end_info
+
+sphere_cookie   right_knee
+sphere_radius   0.950
+sphere_bone_tie leg_shin_right
+sphere_offset   0.000 -0.150 0.000
+sphere_end_info
+
+sphere_cookie   main
+sphere_radius   1.680
+sphere_bone_tie peregrine_body
+sphere_offset   0.080 0.000 1.100
+sphere_end_info
+
+sphere_cookie   main_back
+sphere_radius   1.300
+sphere_bone_tie hp_body
+sphere_offset   0.390 0.000 -0.140
+sphere_end_info
+
+sphere_cookie   left_thigh
+sphere_radius   1.000
+sphere_bone_tie leg_thigh_left
+sphere_offset   0.000 -0.070 0.200
+sphere_end_info
+
+sphere_cookie   right_thigh
+sphere_radius   1.000
+sphere_bone_tie leg_thigh_right
+sphere_offset   0.000 0.070 0.200
+sphere_end_info
+
+sphere_cookie   shield
+sphere_radius   5.000
+sphere_bone_tie peregrine_body
+sphere_offset   -0.400 0.000 -0.280
+sphere_shield
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_armor_siphon
+
+sphere_cookie   barrela
+sphere_radius   0.150
+sphere_bone_tie armor_siphon_shaft
+sphere_offset   0.390 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.160
+sphere_bone_tie armor_siphon_shaft
+sphere_offset   0.200 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.250
+sphere_bone_tie armor_siphon_sprouta
+sphere_offset   -0.120 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.230
+sphere_bone_tie armor_siphon_sprouta
+sphere_offset   -0.510 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie armor_siphon_sprouta
+sphere_offset   -0.510 0.000 -0.260
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.230
+sphere_bone_tie null
+sphere_offset   0.420 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.140
+sphere_bone_tie armor_siphon_shaft
+sphere_offset   -0.150 0.000 0.270
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.140
+sphere_bone_tie armor_siphon_sprouta
+sphere_offset   -0.560 0.000 0.230
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_armor_siphon_left
+duplicate peregrine_armor_siphon
+
+################################################
+frame_hit_detection_type peregrine_armor_siphon_right
+duplicate peregrine_armor_siphon
+
+################################################
+frame_hit_detection_type peregrine_cannon
+
+sphere_cookie   barrela
+sphere_radius   0.350
+sphere_bone_tie cannon_barrel
+sphere_offset   0.400 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.230
+sphere_bone_tie cannon_barrel
+sphere_offset   -0.040 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.230
+sphere_bone_tie cannon_barrel
+sphere_offset   -0.410 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.230
+sphere_bone_tie cannon_barrel
+sphere_offset   -0.800 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie cannon_barrel
+sphere_offset   -1.200 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.380
+sphere_bone_tie cannon_shaft
+sphere_offset   0.450 -0.140 -0.150
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.410
+sphere_bone_tie cannon_shaft
+sphere_offset   -0.020 -0.140 -0.110
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.490
+sphere_bone_tie cannon_shaft
+sphere_offset   -0.680 -0.140 -0.100
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.370
+sphere_bone_tie peregrine_cannon
+sphere_offset   -0.210 0.440 0.330
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.370
+sphere_bone_tie peregrine_cannon
+sphere_offset   0.320 0.440 0.330
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.400
+sphere_bone_tie peregrine_cannon
+sphere_offset   0.930 0.420 0.330
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.220
+sphere_bone_tie peregrine_cannon
+sphere_offset   0.000 0.860 0.190
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.220
+sphere_bone_tie peregrine_cannon
+sphere_offset   0.300 0.860 0.190
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.220
+sphere_bone_tie peregrine_cannon
+sphere_offset   0.610 0.860 0.190
+sphere_end_info
+
+sphere_cookie   shield
+sphere_radius   1.110
+sphere_bone_tie cannon_barrel
+sphere_offset   -0.340 0.000 0.000
+sphere_shield
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_dual_gun_left
+
+sphere_cookie   barrela
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.130 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.130 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.370 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.370 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.620 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.620 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.870 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.870 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.110 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.110 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   1.000 -0.020 0.060
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.200
+sphere_bone_tie null
+sphere_offset   1.000 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.700 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.700 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.350 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.350 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.220
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.140 0.000 0.070
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.250
+sphere_bone_tie peregrine_dual_gun_left
+sphere_offset   0.380 0.060 0.190
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_dual_gun_right
+
+sphere_cookie   barrela
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.140 0.000 -0.020
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.140 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.370 0.000 -0.020
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.370 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.600 0.000 -0.020
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.600 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.830 0.000 -0.020
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -0.830 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.150
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.080 0.000 -0.020
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.150
+sphere_bone_tie ef_muzzleb
+sphere_offset   -1.080 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   1.000 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   1.000 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   0.690 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   0.690 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.200
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   0.360 0.000 0.350
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.200
+sphere_bone_tie null
+sphere_offset   0.350 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.230
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   0.140 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.250
+sphere_bone_tie peregrine_dual_gun_right
+sphere_offset   0.430 -0.060 0.190
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_gunner
+
+sphere_cookie   barrela
+sphere_radius   0.360
+sphere_bone_tie gunner_seat
+sphere_offset   0.810 -0.270 -0.470
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.360
+sphere_bone_tie gunner_seat
+sphere_offset   0.810 0.270 -0.470
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.680
+sphere_bone_tie gunner_seat
+sphere_offset   0.230 0.000 -0.360
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.680
+sphere_bone_tie gunner_seat
+sphere_offset   -0.650 0.000 -0.270
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.660
+sphere_bone_tie lift_bar_bottom
+sphere_offset   0.070 0.000 -0.490
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.560
+sphere_bone_tie lift_bar_bottom
+sphere_offset   -0.050 0.000 0.180
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   -0.030 -0.260 -0.330
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   -0.030 0.260 -0.330
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   0.360 0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   0.360 -0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   0.780 0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   0.780 -0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   1.190 0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.260
+sphere_bone_tie lift_bar_top
+sphere_offset   1.190 -0.260 -0.310
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.470
+sphere_bone_tie lift_bar_middle
+sphere_offset   1.610 -0.810 -0.360
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.470
+sphere_bone_tie lift_bar_middle
+sphere_offset   1.610 0.810 -0.360
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.470
+sphere_bone_tie lift_bar_middle
+sphere_offset   1.020 -0.810 -0.400
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.470
+sphere_bone_tie lift_bar_middle
+sphere_offset   1.020 0.810 -0.360
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.490
+sphere_bone_tie lift_bar_middle
+sphere_offset   0.380 -0.810 -0.370
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.490
+sphere_bone_tie lift_bar_middle
+sphere_offset   0.380 0.810 -0.370
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_jetpack
+
+sphere_cookie   barrela
+sphere_radius   0.390
+sphere_bone_tie left_wing
+sphere_offset   0.090 -0.490 -0.120
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.390
+sphere_bone_tie left_wing
+sphere_offset   -0.470 -0.490 -0.120
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.490
+sphere_bone_tie left_wing
+sphere_offset   -1.180 -0.490 -0.240
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.480
+sphere_bone_tie left_wing
+sphere_offset   -1.850 -0.490 -0.260
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.340
+sphere_bone_tie left_wing
+sphere_offset   0.290 0.180 -0.040
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.380
+sphere_bone_tie left_wing
+sphere_offset   -0.200 0.220 -0.040
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.380
+sphere_bone_tie left_wing
+sphere_offset   -0.640 0.200 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.390
+sphere_bone_tie right_wing
+sphere_offset   0.090 0.470 -0.120
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.390
+sphere_bone_tie right_wing
+sphere_offset   -0.470 0.490 -0.120
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.490
+sphere_bone_tie right_wing
+sphere_offset   -1.180 0.490 0.000
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.480
+sphere_bone_tie right_wing
+sphere_offset   -1.850 0.490 -0.260
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.340
+sphere_bone_tie right_wing
+sphere_offset   0.290 -0.180 -0.040
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.340
+sphere_bone_tie right_wing
+sphere_offset   -0.200 -0.220 -0.040
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.340
+sphere_bone_tie right_wing
+sphere_offset   -0.640 -0.200 0.000
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.490
+sphere_bone_tie ef_thrusta
+sphere_offset   -0.060 0.000 0.010
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.700
+sphere_bone_tie ef_thrustb
+sphere_offset   -0.120 0.000 -0.340
+sphere_end_info
+
+sphere_cookie   barrelq
+sphere_radius   0.700
+sphere_bone_tie ef_thrustb
+sphere_offset   -0.900 0.000 0.130
+sphere_end_info
+
+sphere_cookie   barrelr
+sphere_radius   0.700
+sphere_bone_tie ef_thrustb
+sphere_offset   -0.210 0.000 0.620
+sphere_end_info
+
+sphere_cookie   barrels
+sphere_radius   0.760
+sphere_bone_tie peregrine_jetpack
+sphere_offset   -0.250 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelt
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   -0.320 -0.250 0.610
+sphere_end_info
+
+sphere_cookie   barrelu
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   -0.320 0.250 0.610
+sphere_end_info
+
+sphere_cookie   barrelv
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   0.360 -0.250 0.610
+sphere_end_info
+
+sphere_cookie   barrelw
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   0.360 0.250 0.610
+sphere_end_info
+
+sphere_cookie   barrelx
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   1.070 0.250 0.610
+sphere_end_info
+
+sphere_cookie   barrely
+sphere_radius   0.380
+sphere_bone_tie peregrine_jetpack
+sphere_offset   1.070 -0.250 0.610
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_mechhammer
+
+sphere_cookie   barrela
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.180 0.000 -0.170
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.180 0.000 0.050
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.460 0.000 0.050
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.460 0.000 -0.170
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.750 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.190
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.750 0.000 -0.220
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.190
+sphere_bone_tie mechhammer_slide
+sphere_offset   -0.470 0.000 -0.090
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.190
+sphere_bone_tie mechhammer_slide
+sphere_offset   -0.470 0.000 -0.310
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.220
+sphere_bone_tie mechhammer_slide
+sphere_offset   -0.870 0.000 -0.040
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.190
+sphere_bone_tie mechhammer_slide
+sphere_offset   -0.800 0.000 -0.280
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.250
+sphere_bone_tie mechhammer_body
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_mechhammer_left
+duplicate peregrine_mechhammer
+
+################################################
+frame_hit_detection_type peregrine_mechhammer_right
+duplicate peregrine_mechhammer
+
+################################################
+frame_hit_detection_type peregrine_missile
+
+sphere_cookie   barrela
+sphere_radius   0.150
+sphere_bone_tie peregrine_missile
+sphere_offset   0.980 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.150
+sphere_bone_tie peregrine_missile
+sphere_offset   0.760 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   0.550 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.280 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.560 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.820 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.190
+sphere_bone_tie peregrine_missile
+sphere_offset   -1.040 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.180
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.790 0.000 0.280
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.200
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.790 -0.230 -0.160
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.200
+sphere_bone_tie peregrine_missile
+sphere_offset   -0.790 0.230 -0.160
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_missile_launcher
+
+sphere_cookie   barrela
+sphere_radius   0.360
+sphere_bone_tie ef_muzzlea
+sphere_offset   0.760 0.000 0.330
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.400
+sphere_bone_tie ef_muzzlea
+sphere_offset   0.390 0.000 0.220
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.430
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.160 0.000 0.230
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.430
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.760 0.000 0.250
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.500
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.220 0.000 0.290
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.510
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   -0.120 0.000 0.600
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.490
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   -0.560 0.000 0.700
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.260
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   -0.350 -0.690 0.320
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.260
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   0.140 -0.690 0.320
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.260
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   0.140 0.690 0.320
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.260
+sphere_bone_tie peregrine_missile_launcher
+sphere_offset   -0.340 0.690 0.320
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_ntu_siphon
+
+sphere_cookie   barrela
+sphere_radius   0.170
+sphere_bone_tie ef_muzzlea
+sphere_offset   0.150 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.210
+sphere_bone_tie ef_muzzlea
+sphere_offset   0.000 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.220
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.290 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.270
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.530 0.000 0.020
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.200
+sphere_bone_tie peregrine_ntu_siphon
+sphere_offset   0.080 0.000 0.060
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.120
+sphere_bone_tie peregrine_ntu_siphon
+sphere_offset   0.240 -0.080 0.090
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.120
+sphere_bone_tie peregrine_ntu_siphon
+sphere_offset   0.240 0.080 0.090
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_ntu_siphon_left
+duplicate peregreine_ntu_siphon
+
+################################################
+frame_hit_detection_type peregrine_ntu_siphon_right
+duplicate peregreine_ntu_siphon
+
+################################################
+frame_hit_detection_type peregrine_rocket_pod
+
+sphere_cookie   barrela
+sphere_radius   0.590
+sphere_bone_tie ef_muzzlec
+sphere_offset   -0.400 0.040 0.100
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.590
+sphere_bone_tie ef_muzzlef
+sphere_offset   -0.400 -0.070 0.100
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.560
+sphere_bone_tie ef_muzzled
+sphere_offset   -1.380 -0.090 -0.170
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.560
+sphere_bone_tie ef_muzzlec
+sphere_offset   -1.380 0.110 0.120
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.450
+sphere_bone_tie ef_muzzlec
+sphere_offset   -2.290 0.070 0.120
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.460
+sphere_bone_tie ef_muzzlef
+sphere_offset   -2.280 -0.120 0.000
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.340
+sphere_bone_tie rocket_pods
+sphere_offset   0.770 0.000 -0.300
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.440
+sphere_bone_tie rocket_pods
+sphere_offset   0.160 0.000 -0.240
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.440
+sphere_bone_tie rocket_pods
+sphere_offset   -0.150 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.410
+sphere_bone_tie rocket_pods
+sphere_offset   -0.720 0.000 -0.150
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_shield_generator
+
+shield_generator
+sphere_cookie   barrela
+sphere_radius   0.140
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   0.290 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.140
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   0.110 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.280
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.160 0.000 0.000
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.070
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.080 0.270 0.190
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.070
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.080 0.120 0.310
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.100
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.040 -0.100 0.280
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.110
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.060 -0.290 0.020
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.100
+sphere_bone_tie peregrine_shield_generator
+sphere_offset   -0.060 -0.100 -0.290
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_sparrow
+
+sphere_cookie   barrela
+sphere_radius   0.300
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.100 0.000 -0.120
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.300
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.410 0.000 -0.120
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.300
+sphere_bone_tie ef_muzzlea
+sphere_offset   -0.770 0.000 -0.120
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.300
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.120 0.000 -0.120
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.230
+sphere_bone_tie ef_muzzlea
+sphere_offset   -1.480 -0.010 -0.080
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_sparrow_left
+duplicate peregrine_sparrow
+
+################################################
+frame_hit_detection_type peregrine_sparrow_right
+duplicate peregrine_sparrow
+
+################################################
+frame_hit_detection_type peregrine_thruster_l
+
+sphere_cookie   barrela
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.560 0.220 -0.660
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.560 -0.220 -0.660
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.350 -0.140 -0.750
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.350 0.130 -0.750
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.790 -0.140 -0.750
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.790 0.140 -0.750
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.240 -0.140 -1.060
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.240 0.140 -1.060
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.120 -0.140 -1.300
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.250
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.120 0.140 -1.300
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.740 -0.140 -1.100
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.740 0.140 -1.100
+sphere_end_info
+
+sphere_cookie   barrelm
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.490 0.140 -1.300
+sphere_end_info
+
+sphere_cookie   barreln
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.490 -0.140 -1.300
+sphere_end_info
+
+sphere_cookie   barrelo
+sphere_radius   0.280
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.200 0.140 -1.460
+sphere_end_info
+
+sphere_cookie   barrelp
+sphere_radius   0.280
+sphere_bone_tie peregrine_thruster_l
+sphere_offset   -0.200 -0.140 -1.460
+sphere_end_info
+
+################################################
+frame_hit_detection_type peregrine_thruster_r
+
+sphere_cookie   barrela
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.460 0.140 -0.660
+sphere_end_info
+
+sphere_cookie   barrelb
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.460 -0.140 -0.660
+sphere_end_info
+
+sphere_cookie   barrelc
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.760 -0.140 -0.730
+sphere_end_info
+
+sphere_cookie   barreld
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.760 0.140 -0.730
+sphere_end_info
+
+sphere_cookie   barrele
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.290 -0.140 -0.990
+sphere_end_info
+
+sphere_cookie   barrelf
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.290 0.140 -0.990
+sphere_end_info
+
+sphere_cookie   barrelg
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.800 -0.140 -1.040
+sphere_end_info
+
+sphere_cookie   barrelh
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.800 0.140 -1.040
+sphere_end_info
+
+sphere_cookie   barreli
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.100 -0.140 -1.450
+sphere_end_info
+
+sphere_cookie   barrelj
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.100 0.140 -1.450
+sphere_end_info
+
+sphere_cookie   barrelk
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.440 -0.140 -1.300
+sphere_end_info
+
+sphere_cookie   barrell
+sphere_radius   0.300
+sphere_bone_tie peregrine_thruster_r
+sphere_offset   -0.440 0.140 -1.300
+sphere_end_info

@@ -1,0 +1,19 @@
+<Page AbsorbsInput='false' HideSound='true' Name='SplashScreen' PackLocation='center,center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768'>
+<Text Font='/Fonts.HudFont1' Location='3,733' Name='LegalText1' PackLocation='center,bottom' PackLocationProp='-509/0001,-035/0001' ScrollExtent='1018,34' Size='1018,34' TextAlignment='Center' TextAlignmentVertical='Center'></Text>
+<Text Font='/Fonts.HudFont1' Location='3,682' Name='LegalText2' PackLocation='center,bottom' PackLocationProp='-509/0001,-086/0001' ScrollExtent='1018,85' Size='1018,85' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Text Font='/Fonts.HudFont1' Location='3,696' Name='LegalText3' PackLocation='center,bottom' PackLocationProp='-509/0001,-072/0001' ScrollExtent='1018,71' Size='1018,71' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Text Font='/Fonts.Agency20' Location='106,622' Name='LegalText4' PackLocation='center,bottom' PackLocationProp='-406/0001,-146/0001' ScrollExtent='780,126' Size='780,126' TextAlignment='Center' TextAlignmentVertical='Center' Visible='false'></Text>
+<Image Location='0,256' Name='CoolmanLogo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0384/0768' scrollextend='1024,768' ScrollExtent='1025,256' Size='1025,256' Stretch='false' Style='/Plates.CoolmanLogo' Visible='false'/>
+<Image Name='SOELogo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0384/0768' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.SOELogo' Visible='false'/>
+<Image Name='RatingLogo' PackLocation='center,center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.RatingLogo' Visible='false'/>
+<Image Name='nVidiaLogo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0385/0768' ScrollExtent='1024,770' Size='1024,770' Stretch='false' Style='/Plates.nVidiaLogo' Visible='false'/>
+<Image Location='62,120' Name='PSLogo' PackLocation='center,center' PackLocationProp='-450/0001,-264/0001' ScrollExtent='900,450' Size='900,450' Style='/Plates.PSLogoFreeplay' Visible='false'/>
+<Image Name='BendingMovie' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0385/0768' ScrollExtent='1024,770' Size='1024,770' SourceRect='0,0,512,512' SourceResource='bink_bending'/>
+<Image Name='BFRMovie' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0385/0768' ScrollExtent='1024,770' Size='1024,770' SourceRect='0,0,512,512' SourceResource='bink_bfr'/>
+<Image Name='CoreCombatBeta' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0385/0768' ScrollExtent='1024,770' Size='1024,770' Stretch='false' Style='/Plates.CoreCombatBeta' Visible='false'/>
+<Image Name='CoreCombatLogo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0385/0768' ScrollExtent='1024,770' Size='1024,770' Stretch='false' Style='/Plates.CoreCombatLogo' Visible='false'/>
+<Image Location='256,275' Name='CNGovWarning' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0403/0768' ScrollExtent='512,256' Size='512,256' Stretch='false' Style='/Plates.CNGovWarning' Visible='false'/>
+<Image Location='0,-4' Name='CNPSLogo' PackLocation='center,center' PackLocationProp='-512/0001,-388/0001' ScrollExtent='1025,772' Size='1025,772' Stretch='false' Style='/Plates.CNPSLogo' Visible='false'/>
+<Image Name='CNSOELogo' PackLocation='proportional,proportional' PackLocationProp='0512/1024,0384/0768' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.CNSOELogo' Visible='false'/>
+<Image Name='PlanetBackground' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground' Visible='false'/>
+</Page>

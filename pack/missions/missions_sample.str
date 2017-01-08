@@ -1,0 +1,16 @@
+@mission_sample=Sample
+@mission_sample_complete=Congratulations!\n\nYou have completed this sample mission.
+@mission_sample_enter_zone=Go to Solsar (z1).
+@mission_sample_reequip=You must reequip your weapon to continue.
+@mission_sample_reload=Reload your weapon.
+@mission_sample_equip_heavy_sniper=Equip your Heavy Scout Rifle.
+@mission_sample_equip_bolt_driver=Equip your Bolt Driver.
+@mission_sample_child_added=Acquire a Bolt Driver or Heavy Scout Rifle.
+@mission_sample_inspect_object=Inspect an AMS or ANT.
+@mission_sample_location_reverse=Now move AWAY from the red waypoint.
+@mission_sample_location=Go to the green waypoint.
+@mission_sample_one_second=One second...
+@mission_sample_two_seconds=Two seconds...
+@mission_sample_start=This is a sample mission, designed to show off many of the actions and triggers that are available.\nThe mission will begin in three seconds.
+@mission_sample_died=Your mission was canceled because you died.
+@mission_sample_change_armor=Change into medium armor.

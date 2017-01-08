@@ -11077,3 +11077,5 @@ pse_exactobject  earthtreec                                21075    4725.90    1
 pse_exactobject  earthtreec                                21076    4894.40    1982.69      44.22 0.80 0.80 0.48      0      0  10811
 pse_exactobject  earthtreee                                21077    5043.28    2074.93      51.06 0.90 0.90 0.81      0      0   4096
 pse_exactobject  hst                                       21078    5364.40    2560.16      44.87 1.00 1.00 1.00      0      0      0 "GW_Forseral_S"
+pse_gameobject   monolith                                  21079    3262.10    3230.25     162.78 1.00 1.00 1.00      0      0      0 monolith_forseral
+pse_exactobject  force_dome_cryo_physics                   21080    4350.00    4238.00      76.17 1.00 1.00 1.00      0      0   1911

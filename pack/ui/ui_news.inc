@@ -1,25 +1,39 @@
-<Page Name='News' OnHide='Parent.NavBar.Visible = false' OnShow='Parent.NavBar.Visible = true
-News.SelectedItemIndex = 0
-Title.Text = News.SelectedItem.Name
-Body.Text = News.SelectedItem.Body
-Body.ScrollLocation = 0,0' PackLocation='Center,Center' PackLocationProp='-512/0001,-384/0001' ScrollExtent='800,600' Size='800,600' Visible='false'>
-<Text Color='#FFFF00' Font='/Fonts.DefaultFont' LocalText='SelectedItem.Name' Location='270,77' Name='Title' ScrollExtent='480,43' Size='480,43' TextAlignment='Center'>SelectedItem.Name</Text>
-<Text Font='/Fonts.DefaultFont' LocalText='SelectedItem.Body' Location='270,130' Name='Body' ScrollExtent='460,410' Size='460,410'>SelectedItem.Body</Text>
-<Scrollbar Control='Body' Location='730,130' PackLocation='Right, Top' PackLocationProp='-070/0001,xxxx/xxxx' ScrollExtent='20,410' Size='20,410' Style='/VScrollbar.style'/>
-<Template Name='NewsTemplate' Size='200,20'>\<text font = \'/Fonts.DefaultFont\' location = \'2,2\' size = \'80,16\'\>
-$Date$
-\</text\>
-\<text font = \'/Fonts.DefaultFont\' location = \'82,2\' size = \'118,16\'\>
-$Name$
-\</text\></Template>
-<Listbox DataSource='/DataSources.News' Location='40,70' Name='News' ondatasourcechanged='SelectedItemIndex = 1
+<Page Name='News' ScrollExtent='1024,768' Size='1024,768' Visible='false'>
+<Page body.scrolllocation='0,0' body.text='SelectedItem.Body' Location='806,118' Name='ArchivePage' PackLocation='right,bottom' PackLocationProp='-218/0001,-650/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='143,183' Size='143,183' title.text='SelectedItem.Name'>
+<Image Location='121,7' Name='Toggle' PackLocation='right,top' PackLocationProp='-022/0001,0007/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='10,20' Size='10,20' Stretch='false' Style='/Frontend.CloseIcon'/>
+<Button LocalText='[@SelectServerNewsArchive]' Location='2,2' Name='NewsArchive' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='139,30' Size='139,30' Style='/Buttons.FrontendTitleButton.style' TooltipStyle='/Tooltips.Default'>@SelectServerNewsArchive</Button>
+<Listbox DataSource='/DataSources.News' Location='10,37' Name='NewsSelection' ondatasourcechanged='SelectedItemIndex = 1
 Parent.Title.Text = SelectedItem.Name
 Parent.Body.Text = SelectedItem.Body
 Parent.Body.ScrollLocation = 0,0' OnSelect='Parent.Title.Text = SelectedItem.Name
 Parent.Body.Text = SelectedItem.Body
-Parent.Body.ScrollLocation = 0,0' RowTemplate='NewsTemplate' ScrollExtent='200,480' Size='200,480' Style='/Listboxes.EmbeddedListbox16.style'/>
-<Page BackgroundOpacity='1.000' Location='40,70' Name='Tint' ScrollExtent='200,480' Size='200,480'/>
-<Image Name='Border' ScrollExtent='930,640' Size='930,640' Stretch='false' Style='/Plates.Border'/>
-<Page BackgroundOpacity='1.000' Location='260,70' Name='Tint' ScrollExtent='500,480' Size='500,480'/>
-<3DPlanet Color='#000000' Name='Planet' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='800,600' Size='800,600'/>
+Parent.Body.ScrollLocation = 0,0' PackSize='absolute,absolute' PackSizeProp='0033/0001,0044/0001' RowTemplate='NewsTemplate' ScrollExtent='110,139' Size='110,139' Style='/Listboxes.Frontend.style' TooltipStyle='/Tooltips.Default'/>
+<Scrollbar Control='NewsSelection' Location='126,37' Name='NewsSelectionScrollbar' PackLocation='right,top' PackLocationProp='-017/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0044/0001' ScrollExtent='10,139' Size='10,139' Style='/ScrollBars.frontend_vertical.style'/>
+<Template Name='NewsTemplate' Size='110,28'>\<text color = \'#72C9D1\' font = \'/Fonts.Agency20\' location = \'10,2\' size = \'110,24\' textalignment = \'left\'\>
+$Date$
+\</text\></Template>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='143,183' Size='143,183' Stretch='false' Style=' '/>
+</Page>
+<Page body.scrolllocation='0,0' body.text='SelectedItem.Body' Location='53,55' Name='NewsPage' PackLocation='left,bottom' PackLocationProp='0053/0001,-713/0001' PackSize='absolute,fixed' PackSizeProp='0106/0001,0002/0003' ScrollExtent='918,650' Size='918,650' title.text='SelectedItem.Name'>
+<Text Color='#72C9D1' Font='/Fonts.Agency24' LocalText='Jan 15' Location='556,10' Name='NewsDate' PackSize='right,bottom' ScrollExtent='181,32' Size='181,32' TextAlignment='Right' TextAlignmentVertical='Center' TooltipStyle='/Tooltips.Default'>Jan 15</Text>
+<Image Location='874,21' Name='Toggle' PackLocation='right,top' PackLocationProp='-044/0001,0021/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='10,10' Size='10,10' Stretch='false' Style='/Frontend.OpenIcon'/>
+<Button Enabled='false' LocalText='[@NewsTopic]' LocalTooltip='[@SelectServerNewsTopicHeadingTooltip]' Location='10,10' Name='NewsTopicHeading' PackLocation='left,top' PackLocationProp='0010/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0183/0001,0002/0003' ScrollExtent='735,30' Size='735,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNewsTopicHeadingTooltip' TooltipStyle='/Tooltips.Default'>@NewsTopic</Button>
+<Button LocalText='[@SelectServerNewsArchive]' LocalTooltip='[@SelectServerNewsArchiveTooltip]' Location='755,10' Name='NewsArchive' PackLocation='right,top' PackLocationProp='-163/0001,0010/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='139,30' Size='139,30' Style='/Buttons.FrontendTitleButton.style' Tooltip='@SelectServerNewsArchiveTooltip' TooltipStyle='/Tooltips.Default'>@SelectServerNewsArchive</Button>
+<Text Color='#72C9D1' Font='/Fonts.Agency18' LocalText='Slow news day?' Location='10,45' Name='NewsText' PackSize='absolute,absolute' PackSizeProp='0033/0001,0050/0001' ScrollExtent='885,600' Size='885,600' TooltipStyle='/Tooltips.Default'>Slow news day?</Text>
+<Scrollbar Control='NewsText' Location='898,45' Name='NewsTextScrollbar' PackLocation='right,top' PackLocationProp='-020/0001,0045/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0050/0001' ScrollExtent='10,600' Size='10,600' Style='/ScrollBars.frontend_vertical.style'/>
+<Image BackgroundOpacity='1.000' Name='Box' PackLocation='left,top' PackLocationProp='0000/0001,0000/0001' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' RStyleDefault='/Frontend.Box.style' ScrollExtent='918,650' Size='918,650' Stretch='false' Style=' '/>
+</Page>
+<Page Name='FrontendBasic' PackSize='1,1' PackSizeProp='0002/0003,0002/0003' ScrollExtent='1024,768' Size='1024,768'>
+<Button IsDefaultButton='true' LocalText='[@FrontendCloseCreditsButton]' Location='452,723' Name='NextButton' PackLocation='cfc,bottom' PackLocationProp='0000/0001,-045/0001' PackSize='fixed,fixed' PackSizeProp='0002/0003,0002/0003' ScrollExtent='120,40' Size='120,40' Style='/Buttons.FrontendButton.style'>@FrontendCloseCreditsButton</Button>
+<Image BackgroundOpacity='1.000' Location='15,10' Name='ThickTop' PackLocation='left,top' PackLocationProp='0015/0001,0010/0001' PackSize='absolute,fixed' PackSizeProp='0029/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='995,4' Size='995,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,754' Name='ThickBottom' PackLocation='left,bottom' PackLocationProp='0011/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0583/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='441,4' Size='441,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='572,754' Name='ThickBottom2' PackLocation='left,bottom' PackLocationProp='0572/0001,-014/0001' PackSize='absolute,fixed' PackSizeProp='0582/0001,0002/0003' RStyleDefault='/Frontend.Thick.style' ScrollExtent='442,4' Size='442,4' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='11,10' Name='ThickLeft' PackLocation='left,top' PackLocationProp='0011/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0024/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,744' Size='4,744' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='1010,10' Name='ThickRight' PackLocation='right,top' PackLocationProp='-014/0001,0010/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0023/0001' RStyleDefault='/Frontend.Thick.style' ScrollExtent='4,745' Size='4,745' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='979,37' Name='EastBorder' PackLocation='right,top' PackLocationProp='-045/0001,0037/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0065/0001' RStyleDefault='/Frontend.EastBorder.style' ScrollExtent='21,703' Size='21,703' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,28' Name='WestBorder' PackLocation='left,top' PackLocationProp='0024/0001,0028/0001' PackSize='fixed,absolute' PackSizeProp='0002/0003,0065/0001' RStyleDefault='/Frontend.WestBorder.style' ScrollExtent='21,703' Size='21,703' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='33,722' Name='SouthBorder' PackLocation='left,bottom' PackLocationProp='0033/0001,-046/0001' PackSize='absolute,fixed' PackSizeProp='0057/0001,0002/0003' RStyleDefault='/Frontend.SouthBorder.style' ScrollExtent='967,22' Size='967,22' Stretch='false' Style=' '/>
+<Image BackgroundOpacity='1.000' Location='24,24' Name='NorthBorder' PackLocation='left,top' PackLocationProp='0024/0001,0024/0001' PackSize='absolute,fixed' PackSizeProp='0057/0001,0002/0003' RStyleDefault='/Frontend.NorthBorder.style' ScrollExtent='967,22' Size='967,22' Stretch='false' Style=' '/>
+<Image Color='#E9DAC0' Name='Planet' ScrollExtent='1024,768' Size='1024,768' Stretch='false' Style='/Plates.PlanetBackground'/>
+</Page>
 </Page>
