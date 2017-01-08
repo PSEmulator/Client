@@ -6,3 +6,4 @@
 *.pak
 *.adb
 ./LaunchPad.libs/*
+*LaunchPad*
