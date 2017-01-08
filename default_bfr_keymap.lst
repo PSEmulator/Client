@@ -1,0 +1,26 @@
+#############################################################
+# BFR SPECIFIC KEYMAPS
+#############################################################
+
+km_addbinding "W"           @GA_Forward
+km_addbinding "S"           @GA_Backward
+
+km_addbinding "A"           @GA_TurnLeft
+km_addbinding "Left Arrow"  @GA_TurnLeft
+km_addbinding "D"           @GA_TurnRight
+km_addbinding "Right Arrow" @GA_TurnRight
+
+km_addbinding "Shift+Q"     @GA_StrafeLeft
+km_addbinding "Shift+E"     @GA_StrafeRight
+
+km_addbinding "Space"       @GA_FlightElevate
+
+km_addbinding "C"           @GA_ToggleCrouch
+km_addbinding "Alt+G"       @GA_BailVehicle
+km_addbinding "Alt+R"       @GA_ResetControls
+
+km_addbinding "1"           @GA_SelectVehicleWeapon1
+km_addbinding "2"           @GA_SelectVehicleWeapon2
+km_addbinding "3"           @GA_SelectVehicleWeapon3
+km_addbinding "4"           @GA_SelectVehicleWeapon4
+

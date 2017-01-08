@@ -1,42 +1,48 @@
-############################################################
+#############################################################
 # OVERHEAD MAP SPECIFIC KEYMAPS
-############################################################
+#############################################################
 
-# Zoom Controls
+# View
 #----------------------------
-
-km_addbinding "Shift+Equal" "@GA_ZoomIn"
-km_addbinding "NumPadAdd"   "@GA_ZoomIn"
-km_addbinding "Z"           "@GA_ZoomIn"
-
-km_addbinding "Shift+Minus" "@GA_ZoomOut"
-km_addbinding "NumPadSub"   "@GA_ZoomOut"
-km_addbinding "X"           "@GA_ZoomOut"
+km_addbinding "C"           	@GA_CenteronPlayer
+km_addbinding "G"           	@GA_GlobalView
+km_unmapped           		@GA_ClusterView
 
 
-# Map Pan Controls
+# Zoom
 #----------------------------
+km_addbinding "Shift+Equal" 	@GA_ZoomIn
+km_addbinding "NumPadAdd"   	@GA_ZoomIn
+km_addbinding "Z"      		@GA_ZoomIn
 
-km_addbinding "UpArrow"     "@GA_PanMapUp"
-km_addbinding "DownArrow"   "@GA_PanMapDown"
-km_addbinding "LeftArrow"   "@GA_PanMapLeft"
-km_addbinding "RightArrow"  "@GA_PanMapRight"
+km_addbinding "Shift+Minus" 	@GA_ZoomOut
+km_addbinding "NumPadSub"   	@GA_ZoomOut
+km_addbinding "X"		@GA_ZoomOut
 
 
-# Other Keyboard Shortcuts
+# Panning
 #----------------------------
-km_addbinding "C"           "@GA_CenteronPlayer"
-km_addbinding "G"           "@GA_GlobalView"
-km_addbinding "B"           "@GA_ToggleBattleplans"
-km_addbinding "E"           "@GA_ToggleEquipment"
-km_addbinding "F"           "@GA_ToggleFacilityWarnings"
-km_addbinding "O"           "@GA_ToggleHotSpots"
-km_addbinding "R"           "@GA_ToggleRsrcFacilityInfo"
-km_addbinding "S"           "@GA_ToggleSOI"
-km_addbinding "Q"           "@GA_ToggleSquad"
-km_addbinding "T"           "@GA_ToggleText"
-km_addbinding "W"           "@GA_ToggleWeather"
-km_addbinding "P"           "@GA_ChangeMapView"
-km_addbinding ","           "@GA_ToggleCeilingBuildings"
-km_addbinding "."           "@GA_ToggleGroundBuildings"
-km_addbinding "L"           "@GA_ToggleZiplines"
+km_addbinding "UpArrow"     	@GA_PanMapUp
+km_addbinding "DownArrow"   	@GA_PanMapDown
+km_addbinding "LeftArrow"   	@GA_PanMapLeft
+km_addbinding "RightArrow"  	@GA_PanMapRight
+
+
+# Display toggles
+#----------------------------
+km_unbound           		@GA_ToggleBattleplans
+km_unbound                  	@GA_ToggleCeilingBuildings
+km_unbound              	@GA_ToggleContInfo
+km_unbound           		@GA_ToggleEquipment
+km_unbound                  	@GA_ToggleFacilityWarnings
+km_unbound                  	@GA_ToggleGroundBuildings
+km_unbound           		@GA_ToggleHotSpots
+km_unbound           		@GA_ToggleMapGrid
+km_unbound                  	@GA_TogglePopList
+km_unbound             		@GA_ToggleRsrcFacilityInfo
+km_unbound           		@GA_ToggleSOI
+km_unbound           		@GA_ToggleSquad
+km_unbound           		@GA_ToggleTactical
+km_unbound           		@GA_ToggleText
+km_unbound           		@GA_ToggleWaypoints
+km_unbound                  	@GA_ToggleZiplines

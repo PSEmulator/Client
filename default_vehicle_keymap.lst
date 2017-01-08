@@ -1,33 +1,34 @@
-############################################################
+#############################################################
 # VEHICLE SPECIFIC KEYMAPS - 
 # This keymap always has ground or air as a child
-############################################################
+#############################################################
 
-km_addbinding "`" "@GA_Cruise0PercentPower"
-km_addbinding "1" "@GA_Cruise10PercentPower"
-km_addbinding "2" "@GA_Cruise20PercentPower"
-km_addbinding "3" "@GA_Cruise30PercentPower"
-km_addbinding "4" "@GA_Cruise40PercentPower"
-km_addbinding "5" "@GA_Cruise50PercentPower"
-km_addbinding "6" "@GA_Cruise60PercentPower"
-km_addbinding "7" "@GA_Cruise70PercentPower"
-km_addbinding "8" "@GA_Cruise80PercentPower"
-km_addbinding "9" "@GA_Cruise90PercentPower"
-km_addbinding "0" "@GA_Cruise100PercentPower"
-km_addbinding "." "@GA_CruiseIncrementPower"
-km_addbinding "," "@GA_CruiseDecrementPower"
+km_addbinding "`"        @GA_Cruise0PercentPower
+km_addbinding "1"        @GA_Cruise10PercentPower
+km_addbinding "2"        @GA_Cruise20PercentPower
+km_addbinding "3"        @GA_Cruise30PercentPower
+km_addbinding "4"        @GA_Cruise40PercentPower
+km_addbinding "5"        @GA_Cruise50PercentPower
+km_addbinding "6"        @GA_Cruise60PercentPower
+km_addbinding "7"        @GA_Cruise70PercentPower
+km_addbinding "8"        @GA_Cruise80PercentPower
+km_addbinding "9"        @GA_Cruise90PercentPower
+km_addbinding "0"        @GA_Cruise100PercentPower
+km_addbinding "."        @GA_CruiseIncrementPower
+km_addbinding ","        @GA_CruiseDecrementPower
 
-km_addbinding "NumPad1" "@GA_Cruise10PercentPower"
-km_addbinding "NumPad2" "@GA_Cruise20PercentPower"
-km_addbinding "NumPad3" "@GA_Cruise30PercentPower"
-km_addbinding "NumPad4" "@GA_Cruise40PercentPower"
-km_addbinding "NumPad5" "@GA_Cruise50PercentPower"
-km_addbinding "NumPad6" "@GA_Cruise60PercentPower"
-km_addbinding "NumPad7" "@GA_Cruise70PercentPower"
-km_addbinding "NumPad8" "@GA_Cruise80PercentPower"
-km_addbinding "NumPad9" "@GA_Cruise90PercentPower"
-km_addbinding "NumPad0" "@GA_Cruise100PercentPower"
+km_addbinding "NumPad1"  @GA_Cruise10PercentPower
+km_addbinding "NumPad2"  @GA_Cruise20PercentPower
+km_addbinding "NumPad3"  @GA_Cruise30PercentPower
+km_addbinding "NumPad4"  @GA_Cruise40PercentPower
+km_addbinding "NumPad5"  @GA_Cruise50PercentPower
+km_addbinding "NumPad6"  @GA_Cruise60PercentPower
+km_addbinding "NumPad7"  @GA_Cruise70PercentPower
+km_addbinding "NumPad8"  @GA_Cruise80PercentPower
+km_addbinding "NumPad9"  @GA_Cruise90PercentPower
+km_addbinding "NumPad0"  @GA_Cruise100PercentPower
 
-km_addbinding "Alt+G" "@GA_BailVehicle"
-km_addbinding "Alt+R" "@GA_ResetControls"
-km_addbinding "J" "@GA_VehicleSpecial"
+km_addbinding "Alt+G"    @GA_BailVehicle
+km_addbinding "Alt+R"    @GA_ResetControls
+km_addbinding "B"        @GA_VehicleSpecial
+km_addbinding "F"        @GA_VehicleHorn

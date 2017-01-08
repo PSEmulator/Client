@@ -1,71 +1,85 @@
-############################################################
+#############################################################
 # HUD SPECIFIC KEYMAPS
 # This keymap will have either soldier or vehicle keymap as a child
-############################################################
+#############################################################
 
 # Weapon Controls
 #----------------------------
-km_addbinding "LeftMouseButton" "@GA_WeaponFire"
-km_addbinding "JoystickButton 1" "WeaponFire"
+km_addbinding "LeftMouseButton"  	@GA_WeaponFire
+km_addbinding "JoystickButton1"  	@GA_WeaponFire
+km_addbinding "RightMouseButton" 	@GA_ChangeFireMode
+km_addbinding "JoystickButton2"  	@GA_ChangeFireMode
+km_addbinding "X"                  	@GA_ChangeAmmunition
+km_addbinding "R"                  	@GA_Reload
+km_addbinding "JoystickButton3"  	@GA_Reload
+km_addbinding "Z"                	@GA_Zoom
+km_addbinding "MouseWheelUp"     	@GA_ZoomIn
+km_addbinding "MouseWheelDown"   	@GA_ZoomOut
+km_addbinding "SHIFT+Z"          	@GA_SmoothZoom
 
-km_addbinding "RightMouseButton" "@GA_ChangeFireMode"
-km_addbinding "JoystickButton2" "@GA_ChangeFireMode"
 
-km_addbinding x "@GA_ChangeAmmunition"
-
-km_addbinding r "Reload"
-km_addbinding "JoystickButton3" "@GA_Reload"
-
-# Most Used Controls
+# Misc control
 #----------------------------
-km_addbinding "tab" "@GA_ToggleMouseLook"
-km_addbinding g "@GA_UseItem"
-km_addbinding f "@GA_DropItem"
-km_addbinding t "@GA_ToggleThirdPersonCamera"
-
-# Inventory Controls
-#----------------------------
-km_addbinding i "@GA_ToggleInventory"
-
-# Miscellaneous Controls
-#----------------------------
-km_addbinding "q" "@GA_Autorun"
-
-km_addbinding "Z" "@GA_Zoom"
-km_addbinding "SHIFT+Z" "@GA_SmoothZoom"
-
-km_addbinding "]" "@GA_RadarIncrease"
-km_addbinding "[" "@GA_RadarDecrease"
-
-km_addbinding "Shift+C" "@GA_ToggleChatPane"
-km_addbinding "O" "@GA_ToggleCharacterPane"
-km_addbinding "Shift+M" "@GA_ToggleManagementPane"
-km_addbinding "Shift+O" "@GA_ToggleOutfitPane"
-km_addbinding "P" "@GA_TogglePlayerPane"
-km_addbinding "Shift+R" "@GA_ToggleProximityMap"
-km_addbinding "Shift+V" "@GA_ToggleVehiclePane"
-
-km_addbinding "SHIFT+P" "@GA_ToggleHelp"
-
-km_addbinding "ALT+n" "@GA_CycleCharacterNames"
-km_addbinding "K" "@GA_ToggleStealthSuit"
-
-# Shortcut hotbar keys
-#----------------------------
-km_addbinding "F1" "@GA_UseQuickslot1"
-km_addbinding "F2" "@GA_UseQuickslot2"
-km_addbinding "F3" "@GA_UseQuickslot3"
-km_addbinding "F4" "@GA_UseQuickslot4"
-km_addbinding "F5" "@GA_UseQuickslot5"
-km_addbinding "F6" "@GA_UseQuickslot6"
-km_addbinding "F7" "@GA_UseQuickslot7"
-km_addbinding "F8" "@GA_UseQuickslot8"
+km_addbinding "Tab"              	@GA_ToggleMouseLook
+km_addbinding "G"                  	@GA_UseItem
+km_addbinding "Q"              		@GA_Autorun
+km_addbinding "T"                  	@GA_ToggleThirdPersonCamera
+km_addbinding "]"                	@GA_RadarIncrease
+km_addbinding "["                	@GA_RadarDecrease
+km_addbinding "Alt+L"                	@GA_ToggleLFS
 
 
 # Camera Controls
 #----------------------------
-km_addbinding "numpadsub" "@GA_MoveCameraIn"
-km_addbinding "numpadadd" "@GA_MoveCameraOut"
+km_addbinding "NumPadSub"        	@GA_MoveCameraIn
+km_addbinding "NumPadAdd"        	@GA_MoveCameraOut
+km_addbinding "MouseWheelUp"     	@GA_MoveCameraIn
+km_addbinding "MouseWheelDown"   	@GA_MoveCameraOut
 
 
+# Windows
+#----------------------------
+km_addbinding "U"               	@GA_ToggleCharacterPane
+km_addbinding "I"                 	@GA_ToggleInventory
+km_addbinding "O"         		@GA_ToggleOutfitPane
+km_addbinding "P"               	@GA_TogglePlayerPane
+km_addbinding "Alt+V"         		@GA_ToggleVehiclePane
+km_addbinding "Alt+S"          		@GA_ToggleSessionStats
+km_addbinding "Alt+P"   		@GA_TogglePerformance
+km_addbinding "Alt+E"          		@GA_ToggleCombatEngineering
+km_addbinding "Alt+W"                   @GA_ToggleManagementPane
+km_addbinding "H"         		@GA_ToggleHelpPage
+km_unbound          			@GA_ToggleProximityMap
+km_unbound          			@GA_ToggleHelp
+km_addbinding "Alt+I"         		@GA_ToggleMailPane
 
+
+# Misc display
+#----------------------------
+km_addbinding "ALT+N"            	@GA_CycleCharacterNames
+km_unbound            			@GA_ToggleSquadHomeBaseWaypoint
+km_unbound		 		@GA_ToggleSquadExperienceWaypoint
+km_unbound            			@GA_ToggleSquadExperienceRadarGlowRing
+km_unbound                       	@GA_ToggleVehicleStatus
+km_unbound                       	@GA_ToggleVehicleDirectionIndicator
+
+
+# Shortcut hotbar keys
+#----------------------------
+km_addbinding "F1"               	@GA_UseQuickslot1
+km_addbinding "F2"               	@GA_UseQuickslot2
+km_addbinding "F3"               	@GA_UseQuickslot3
+km_addbinding "F4"               	@GA_UseQuickslot4
+km_addbinding "F5"               	@GA_UseQuickslot5
+km_addbinding "F6"               	@GA_UseQuickslot6
+km_addbinding "F7"               	@GA_UseQuickslot7
+km_addbinding "F8"               	@GA_UseQuickslot8
+
+km_addbinding "Ctrl+F1"          	@GA_UseQuickslotBank1
+km_addbinding "Ctrl+F2"          	@GA_UseQuickslotBank2
+km_addbinding "Ctrl+F3"          	@GA_UseQuickslotBank3
+km_addbinding "Ctrl+F4"          	@GA_UseQuickslotBank4
+km_addbinding "Ctrl+F5"          	@GA_UseQuickslotBank5
+km_addbinding "Ctrl+F6"          	@GA_UseQuickslotBank6
+km_addbinding "Ctrl+F7"          	@GA_UseQuickslotBank7
+km_addbinding "Ctrl+F8"          	@GA_UseQuickslotBank8

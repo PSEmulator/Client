@@ -1,36 +1,43 @@
-############################################################
+#############################################################
 # SOLDIER SPECIFIC KEYMAPS
-############################################################
+#############################################################
 
 # Movement Controls
 #----------------------------
 
-km_addbinding "shift" "@GA_Walk/Run"
+km_addbinding "W"          @GA_Forward
+km_addbinding "Num Pad 8"  @GA_Forward
+km_addbinding "UpArrow"    @GA_Forward
+km_addbinding "S"          @GA_Backward
+km_addbinding "Num Pad 2"  @GA_Backward
+km_addbinding "DownArrow"  @GA_Backward
 
-km_addbinding "w" "@GA_Forward"
-km_addbinding "s" "@GA_Backward"
-km_addbinding "num pad 8" @GA_Forward
-km_addbinding "num pad 2" @GA_Backward
-km_addbinding "uparrow" "@GA_Forward"
-km_addbinding "downarrow" "@GA_Backward"
+km_addbinding "Shift"      @GA_Walk/Run
 
-km_addbinding "a" "@GA_StrafeLeft"
-km_addbinding "d" "@GA_StrafeRight"
+km_addbinding "A"          @GA_StrafeLeft
+km_addbinding "LeftArrow"  @GA_StrafeLeft
+km_addbinding "D"          @GA_StrafeRight
+km_addbinding "RightArrow" @GA_StrafeRight
 
-km_addbinding "leftarrow" "@GA_StrafeLeft"
-km_addbinding "rightarrow" "@GA_StrafeRight"
+km_addbinding "C"          @GA_ToggleCrouch
+km_addbinding "Ctrl"       @GA_Crouch
 
-km_addbinding "C" "@GA_ToggleCrouch"
-km_addbinding "ctrl" "@GA_Crouch"
+km_addbinding "Space"      @GA_Jump
 
-km_addbinding "space" "@GA_Jump"
+km_addbinding "F"          @GA_DropItem
+km_addbinding "Shift+G"    @GA_DropSpecialItem
 
-km_addbinding "shift+g" "@GA_DropSpecialItem"
+km_addbinding "B"          @GA_ToggleStealthSuit
 
 # Weapon Controls
 #----------------------------
-km_addbinding 1 "@GA_UseRightHipHolster"
-km_addbinding 2 "@GA_UseRightBackHolster"
-km_addbinding 3 "@GA_UseLeftHipHolster"
-km_addbinding 4 "@GA_UseLeftBackHolster"
-km_addbinding 5 "@GA_UseKnifeHolster"
+km_addbinding "1"          @GA_UseRightHipHolster
+km_addbinding "2"          @GA_UseRightBackHolster
+km_addbinding "3"          @GA_UseLeftHipHolster
+km_addbinding "4"          @GA_UseLeftBackHolster
+km_addbinding "5"          @GA_UseKnifeHolster
+
+# Initially Unbound Actions
+#----------------------------
+km_unbound                 @GA_TurnLeft
+km_unbound                 @GA_TurnRight

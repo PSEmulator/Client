@@ -1,58 +1,53 @@
-############################################################
+#############################################################
 # GLOBAL KEYMAPS
 # This keymap will have either overhead or hud keymaps as a child
-############################################################
+#############################################################
 
 # Chat Specific Commands
 #-------------------------------------------
-km_addbinding "Enter" 		"@GA_OpenChat"
-km_addbinding "Slash" 		"@GA_OpenChatSlash"
-km_addbinding "NumPadDiv" 	"@GA_OpenChatSlash"
-km_addbinding "Backspace" 	"@GA_OpenChatReply"
-km_addbinding "pageup"   	"@GA_ChatWindowPgUp"
-km_addbinding "pagedown" 	"@GA_ChatWindowPgDn"
-km_addbinding "shift+pageup"   "@GA_StatusWindowPgUp"
-km_addbinding "shift+pagedown" "@GA_StatusWindowPgDn"
+km_unbound 			@GA_ToggleChatPane
+km_addbinding "Enter" 	       	@GA_OpenChat
+km_addbinding "Slash" 	       	@GA_OpenChatSlash
+km_addbinding "NumPadDiv"      	@GA_OpenChatSlash
+km_addbinding "Backspace"      	@GA_OpenChatReply
+km_addbinding "PageUp"         	@GA_ChatWindowPgUp
+km_addbinding "PageDown"       	@GA_ChatWindowPgDn
+km_addbinding "Shift+PageUp"   	@GA_StatusWindowPgUp
+km_addbinding "Shift+PageDown" 	@GA_StatusWindowPgDn
 
 
 # Squad Controls
 #----------------------------
-km_addbinding "Alt"  "@GA_ToggleSquadList"
-km_addbinding "Alt+1" "@GA_SquadMsg1"
-km_addbinding "Alt+2" "@GA_SquadMsg2"
-km_addbinding "Alt+3" "@GA_SquadMsg3"
-km_addbinding "Alt+4" "@GA_SquadMsg4"
-km_addbinding "Alt+5" "@GA_SquadMsg5"
-km_addbinding "Alt+6" "@GA_SquadMsg6"
-km_addbinding "Alt+7" "@GA_SquadMsg7"
-km_addbinding "Alt+8" "@GA_SquadMsg8"
-km_addbinding "Alt+9" "@GA_SquadMsg9"
-km_addbinding "Alt+0" "@GA_SquadMsg10"
+km_addbinding "Alt"            	@GA_ToggleSquadList
+km_addbinding "Alt+1"          	@GA_SquadMsg1
+km_addbinding "Alt+2"          	@GA_SquadMsg2
+km_addbinding "Alt+3"          	@GA_SquadMsg3
+km_addbinding "Alt+4"          	@GA_SquadMsg4
+km_addbinding "Alt+5"          	@GA_SquadMsg5
+km_addbinding "Alt+6"          	@GA_SquadMsg6
+km_addbinding "Alt+7"          	@GA_SquadMsg7
+km_addbinding "Alt+8"          	@GA_SquadMsg8
+km_addbinding "Alt+9"          	@GA_SquadMsg9
+km_addbinding "Alt+0"          	@GA_SquadMsg10
 
 
-# Bring up overhead map
+# Map
 #-------------------------------------------
-km_addbinding "M" "@GA_ToggleOverheadMap"
+km_addbinding "M"              	@GA_ToggleOverheadMap
 
 
 # Voice Macros
 #-------------------------------------------
-km_addbinding "V" "@GA_OpenVoiceMacros"
+km_addbinding "V"              	@GA_OpenVoiceMacros
 
 
 # Voice Chat
 #-------------------------------------------
-km_addbinding "Y" "@GA_VoiceTransmit"
+km_addbinding "Y"              	@GA_VoiceTransmit
 
-# Toggle performance
-#-------------------------------------------
-km_addbinding "Shift+Period" "@GA_TogglePerformance"
 
-# Misc Controls
+# Misc
 #----------------------------
-km_addbinding "Escape" "@GA_ClearHUD"
-km_addbinding "Equal" "@GA_Screenshot"
-km_addbinding "H" "@GA_ToggleHelpPage"
-
-
-
+km_addbinding "Escape"         	@GA_ClearHUD
+km_addbinding "PrintScreen"    	@GA_Screenshot
+km_addbinding "F10"          	@GA_ToggleUserInterface

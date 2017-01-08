@@ -1,0 +1,7 @@
+#############################################################
+# MAX SOLDIER SPECIFIC KEYMAPS
+#############################################################
+
+km_addbinding "Space" @GA_Jump
+km_addbinding "B"     @GA_ToggleStealthSuit
+km_addbinding "C"     @GA_DeployAnchors

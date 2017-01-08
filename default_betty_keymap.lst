@@ -1,3 +1,4 @@
+#
 km_addbinding "space" "@GA_AnnouncerNext"
 km_addbinding "Escape" "@GA_AnnouncerClose"
 
